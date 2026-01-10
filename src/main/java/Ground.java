@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!eg")
-public class class52 extends class67 {
+public class Ground extends class67 {
 
     @OriginalMember(owner = "client!eg", name = "L", descriptor = "I")
     public int field954 = 0;
@@ -14,16 +14,16 @@ public class class52 extends class67 {
     public class108[] field963 = new class108[5];
 
     @OriginalMember(owner = "client!eg", name = "A", descriptor = "I")
-    public int field945;
+    public int z;
 
     @OriginalMember(owner = "client!eg", name = "X", descriptor = "I")
-    public int field966;
+    public int level;
 
     @OriginalMember(owner = "client!eg", name = "R", descriptor = "I")
-    public int field960;
+    public int occludeLevel;
 
     @OriginalMember(owner = "client!eg", name = "S", descriptor = "I")
-    public int field961;
+    public int x;
 
     @OriginalMember(owner = "client!eg", name = "t", descriptor = "Li;")
     public static class88 field938 = class208.method1425(105, "und Ihr Passwort ein)3");
@@ -71,7 +71,7 @@ public class class52 extends class67 {
     public class239 field948;
 
     @OriginalMember(owner = "client!eg", name = "I", descriptor = "Leg;")
-    public class52 field951;
+    public Ground field951;
 
     @OriginalMember(owner = "client!eg", name = "V", descriptor = "Lf;")
     public class56 field964;
@@ -99,10 +99,10 @@ public class class52 extends class67 {
     }
 
     @OriginalMember(owner = "client!eg", name = "<init>", descriptor = "(III)V")
-    public class52(int arg0, int arg1, int arg2) {
-        this.field945 = arg2;
-        this.field960 = this.field966 = arg0;
-        this.field961 = arg1;
+    public Ground(int level, int x, int z) {
+        this.z = z;
+        this.occludeLevel = this.level = level;
+        this.x = x;
     }
 
     @OriginalMember(owner = "client!eg", name = "a", descriptor = "(IB)I")

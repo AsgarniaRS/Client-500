@@ -18,7 +18,7 @@ public class class161 implements Runnable {
     public static int field3103 = 0;
 
     @OriginalMember(owner = "client!oi", name = "g", descriptor = "I")
-    public static int field3107 = 0;
+    public static int setMinLevel = 0;
 
     @OriginalMember(owner = "client!oi", name = "a", descriptor = "I")
     public static int field3101 = 0;
@@ -52,7 +52,7 @@ public class class161 implements Runnable {
 
     @OriginalMember(owner = "client!oi", name = "a", descriptor = "(III)J")
     public static final long method1084(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 == null || var3.field956 == null ? 0L : var3.field956.field1158;
     }
 
@@ -152,17 +152,17 @@ public class class161 implements Runnable {
     public static final void method1087(int arg0, byte[] arg1) {
         field3106++;
         int var2 = class218.field4088 >> 2 << 10;
-        byte[][] var3 = new byte[class109.field1990][class44.field760];
+        byte[][] var3 = new byte[class109.field1990][scene.field760];
         int var4 = class70.field1270 >> 1;
         int var5 = 0;
         while (true) {
             while (arg1.length > var5) {
                 int var34 = (arg1[var5++] & 0xFF) * 64 - class16.field239;
                 int var35 = (arg1[var5++] & 0xFF) * 64 - class119.field2183;
-                if (var34 > 0 && var35 > 0 && var34 + 64 < class109.field1990 && var35 + 64 < class44.field760) {
+                if (var34 > 0 && var35 > 0 && var34 + 64 < class109.field1990 && var35 + 64 < scene.field760) {
                     for (int var36 = 0; var36 < 64; var36++) {
                         byte[] var37 = var3[var34 + var36];
-                        int var38 = class44.field760 - var35 - 1;
+                        int var38 = scene.field760 - var35 - 1;
                         for (int var39 = -64; var39 < 0; var39++) {
                             var37[var38--] = arg1[var5++];
                         }
@@ -171,7 +171,7 @@ public class class161 implements Runnable {
                     var5 += 4096;
                 }
             }
-            int var6 = class44.field760;
+            int var6 = scene.field760;
             int var7 = class109.field1990;
             int[] var8 = new int[var6];
             if (arg0 != -3131) {

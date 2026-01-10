@@ -243,68 +243,68 @@ public class class81 extends class145 {
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Leg;Z)V")
-    public static final void method542(class52 arg0, boolean arg1) {
+    public static final void method542(Ground arg0, boolean arg1) {
         class105.field1902.method1624(arg0, 109);
         while (true) {
-            class52 var2;
+            Ground var2;
             int var3;
             int var4;
             int var5;
             int var6;
-            class52[][] var7;
-            class52 var65;
+            Ground[][] var7;
+            Ground var65;
             do {
-                class52 var64;
+                Ground var64;
                 do {
-                    class52 var63;
+                    Ground var63;
                     do {
-                        class52 var62;
+                        Ground var62;
                         do {
                             do {
                                 do {
                                     while (true) {
                                         while (true) {
                                             do {
-                                                var2 = (class52) class105.field1902.method1615(-102);
+                                                var2 = (Ground) class105.field1902.method1615(-102);
                                                 if (var2 == null) {
                                                     return;
                                                 }
                                             } while (!var2.field965);
-                                            var3 = var2.field961;
-                                            var4 = var2.field945;
-                                            var5 = var2.field966;
-                                            var6 = var2.field960;
-                                            var7 = class29.field489[var5];
+                                            var3 = var2.x;
+                                            var4 = var2.z;
+                                            var5 = var2.level;
+                                            var6 = var2.occludeLevel;
+                                            var7 = class29.levelTiles[var5];
                                             if (!var2.field944) {
                                                 break;
                                             }
                                             if (arg1) {
                                                 if (var5 > 0) {
-                                                    class52 var8 = class29.field489[var5 - 1][var3][var4];
+                                                    Ground var8 = class29.levelTiles[var5 - 1][var3][var4];
                                                     if (var8 != null && var8.field965) {
                                                         continue;
                                                     }
                                                 }
                                                 if (var3 <= class79.field1435 && var3 > class156.field3009) {
-                                                    class52 var9 = var7[var3 - 1][var4];
+                                                    Ground var9 = var7[var3 - 1][var4];
                                                     if (var9 != null && var9.field965 && (var9.field944 || (var2.field954 & 0x1) == 0)) {
                                                         continue;
                                                     }
                                                 }
                                                 if (var3 >= class79.field1435 && var3 < class6.field84 - 1) {
-                                                    class52 var10 = var7[var3 + 1][var4];
+                                                    Ground var10 = var7[var3 + 1][var4];
                                                     if (var10 != null && var10.field965 && (var10.field944 || (var2.field954 & 0x4) == 0)) {
                                                         continue;
                                                     }
                                                 }
                                                 if (var4 <= class88.field1636 && var4 > class102.field1851) {
-                                                    class52 var11 = var7[var3][var4 - 1];
+                                                    Ground var11 = var7[var3][var4 - 1];
                                                     if (var11 != null && var11.field965 && (var11.field944 || (var2.field954 & 0x8) == 0)) {
                                                         continue;
                                                     }
                                                 }
                                                 if (var4 >= class88.field1636 && var4 < class230.field4316 - 1) {
-                                                    class52 var12 = var7[var3][var4 + 1];
+                                                    Ground var12 = var7[var3][var4 + 1];
                                                     if (var12 != null && var12.field965 && (var12.field944 || (var2.field954 & 0x2) == 0)) {
                                                         continue;
                                                     }
@@ -314,7 +314,7 @@ public class class81 extends class145 {
                                             }
                                             var2.field944 = false;
                                             if (var2.field951 != null) {
-                                                class52 var13 = var2.field951;
+                                                Ground var13 = var2.field951;
                                                 if (var13.field947 == null) {
                                                     if (var13.field964 != null) {
                                                         if (class239.method1583(0, var3, var4)) {
@@ -450,25 +450,25 @@ public class class81 extends class145 {
                                             int var30 = var2.field954;
                                             if (var30 != 0) {
                                                 if (var3 < class79.field1435 && (var30 & 0x4) != 0) {
-                                                    class52 var31 = var7[var3 + 1][var4];
+                                                    Ground var31 = var7[var3 + 1][var4];
                                                     if (var31 != null && var31.field965) {
                                                         class105.field1902.method1624(var31, 61);
                                                     }
                                                 }
                                                 if (var4 < class88.field1636 && (var30 & 0x2) != 0) {
-                                                    class52 var32 = var7[var3][var4 + 1];
+                                                    Ground var32 = var7[var3][var4 + 1];
                                                     if (var32 != null && var32.field965) {
                                                         class105.field1902.method1624(var32, 61);
                                                     }
                                                 }
                                                 if (var3 > class79.field1435 && (var30 & 0x1) != 0) {
-                                                    class52 var33 = var7[var3 - 1][var4];
+                                                    Ground var33 = var7[var3 - 1][var4];
                                                     if (var33 != null && var33.field965) {
                                                         class105.field1902.method1624(var33, 40);
                                                     }
                                                 }
                                                 if (var4 > class88.field1636 && (var30 & 0x8) != 0) {
-                                                    class52 var34 = var7[var3][var4 - 1];
+                                                    Ground var34 = var7[var3][var4 - 1];
                                                     if (var34 != null && var34.field965) {
                                                         class105.field1902.method1624(var34, 72);
                                                     }
@@ -504,7 +504,7 @@ public class class81 extends class145 {
                                                 if (class143.field2629 != var41.field1936) {
                                                     for (int var42 = var41.field1935; var42 <= var41.field1942; var42++) {
                                                         for (int var43 = var41.field1938; var43 <= var41.field1937; var43++) {
-                                                            class52 var44 = var7[var42][var43];
+                                                            Ground var44 = var7[var42][var43];
                                                             if (var44.field944) {
                                                                 var2.field958 = true;
                                                                 continue label562;
@@ -570,12 +570,12 @@ public class class81 extends class145 {
                                                 }
                                                 class108 var58 = class239.field4449[var51];
                                                 var58.field1936 = class143.field2629;
-                                                if (!client.method224(var6, var58.field1935, var58.field1942, var58.field1938, var58.field1937, var58.field1945.method88())) {
+                                                if (!Client.method224(var6, var58.field1935, var58.field1942, var58.field1938, var58.field1937, var58.field1945.method88())) {
                                                     var58.field1945.method87(var58.field1941, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var58.field1947 - class74.field1353, var58.field1940 - class241.field4463, var58.field1951 - class216.field4050, var58.field1950);
                                                 }
                                                 for (int var59 = var58.field1935; var59 <= var58.field1942; var59++) {
                                                     for (int var60 = var58.field1938; var60 <= var58.field1937; var60++) {
-                                                        class52 var61 = var7[var59][var60];
+                                                        Ground var61 = var7[var59][var60];
                                                         if (var61.field953 != 0) {
                                                             class105.field1902.method1624(var61, 95);
                                                         } else if ((var3 != var59 || var4 != var60) && var61.field965) {
@@ -668,31 +668,31 @@ public class class81 extends class145 {
                 }
             }
             if (var5 < class11.field152 - 1) {
-                class52 var75 = class29.field489[var5 + 1][var3][var4];
+                Ground var75 = class29.levelTiles[var5 + 1][var3][var4];
                 if (var75 != null && var75.field965) {
                     class105.field1902.method1624(var75, 88);
                 }
             }
             if (var3 < class79.field1435) {
-                class52 var76 = var7[var3 + 1][var4];
+                Ground var76 = var7[var3 + 1][var4];
                 if (var76 != null && var76.field965) {
                     class105.field1902.method1624(var76, 55);
                 }
             }
             if (var4 < class88.field1636) {
-                class52 var77 = var7[var3][var4 + 1];
+                Ground var77 = var7[var3][var4 + 1];
                 if (var77 != null && var77.field965) {
                     class105.field1902.method1624(var77, 65);
                 }
             }
             if (var3 > class79.field1435) {
-                class52 var78 = var7[var3 - 1][var4];
+                Ground var78 = var7[var3 - 1][var4];
                 if (var78 != null && var78.field965) {
                     class105.field1902.method1624(var78, 66);
                 }
             }
             if (var4 > class88.field1636) {
-                class52 var79 = var7[var3][var4 - 1];
+                Ground var79 = var7[var3][var4 - 1];
                 if (var79 != null && var79.field965) {
                     class105.field1902.method1624(var79, 74);
                 }

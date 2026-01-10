@@ -164,7 +164,7 @@ public class class135 extends class23 {
             if (arg0 >= -36) {
                 field2514 = -46;
             }
-            return arg1.method624(class240.field4458.field766, (byte) -121);
+            return arg1.method624(class240.field4458.name, (byte) -121);
         }
     }
 
@@ -1177,7 +1177,7 @@ public class class135 extends class23 {
                                                         if (var383 == 3624) {
                                                             --var6;
                                                             int var98 = class108.field1946[var6];
-                                                            if (class88.field1647 != null && class47.field885 > var98 && class88.field1647[var98].field1323.method624(class240.field4458.field766, (byte) 75)) {
+                                                            if (class88.field1647 != null && class47.field885 > var98 && class88.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
                                                                 class108.field1946[var6++] = 1;
                                                                 continue;
                                                             }
@@ -1824,8 +1824,8 @@ public class class135 extends class23 {
                                                                     }
                                                                     if (~var383 == -5016) {
                                                                         class88 var205;
-                                                                        if (class240.field4458 != null && class240.field4458.field766 != null) {
-                                                                            var205 = class240.field4458.field766;
+                                                                        if (class240.field4458 != null && class240.field4458.name != null) {
+                                                                            var205 = class240.field4458.name;
                                                                         } else {
                                                                             var205 = class209.field3969;
                                                                         }
@@ -2530,7 +2530,7 @@ public class class135 extends class23 {
                                                     continue;
                                                 }
                                                 if (var383 == 3326) {
-                                                    class108.field1946[var6++] = class240.field4458.field747;
+                                                    class108.field1946[var6++] = class240.field4458.combatLevel;
                                                     continue;
                                                 }
                                                 if (~var383 == -3328) {

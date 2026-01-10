@@ -73,7 +73,7 @@ public class class179 {
 
     @OriginalMember(owner = "client!qe", name = "a", descriptor = "(IIII)V")
     public static final void method1279(int arg0, int arg1, int arg2, int arg3) {
-        class14.field211 = new class52[arg0][arg1][arg2];
+        class14.field211 = new Ground[arg0][arg1][arg2];
         class145.field2723 = new int[arg0][arg1 + 1][arg2 + 1];
         class24.method131(false);
         class48.field899 = arg1;

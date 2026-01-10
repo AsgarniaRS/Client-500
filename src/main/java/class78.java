@@ -50,7 +50,7 @@ public class class78 extends class67 {
     public static class174[][] field1418;
 
     @OriginalMember(owner = "client!ha", name = "B", descriptor = "[[[Leg;")
-    public static class52[][][] field1416;
+    public static Ground[][][] field1416;
 
     @OriginalMember(owner = "client!ha", name = "b", descriptor = "(B)V")
     public static void method521(byte arg0) {
@@ -67,7 +67,7 @@ public class class78 extends class67 {
 
     @OriginalMember(owner = "client!ha", name = "a", descriptor = "(III)Lfh;")
     public static final class64 method522(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 == null ? null : var3.field956;
     }
 
@@ -201,7 +201,7 @@ public class class78 extends class67 {
             for (int var63 = 1; var63 < 103; var63++) {
                 for (int var66 = 1; var66 < 103; var66++) {
                     if (!arg1) {
-                        if (class245.field4499 && (class116.field2100[0][var63][var66] & 0x2) == 0 && ((class116.field2100[var12][var63][var66] & 0x10) != 0 || class234.method1557(4570, var66, var63, var12) != class157.field3028)) {
+                        if (class245.lowMemory && (class116.field2100[0][var63][var66] & 0x2) == 0 && ((class116.field2100[var12][var63][var66] & 0x10) != 0 || class234.method1557(4570, var66, var63, var12) != class157.field3028)) {
                             continue;
                         }
                         if (var12 < class28.field468) {

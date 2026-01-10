@@ -137,7 +137,7 @@ public class class37 {
         }
         if (class154.field2982) {
             class72.method478(arg1, arg4, arg0, arg2, 0);
-            client.method221(class242.field4480, false, -22717);
+            Client.method221(class242.field4480, false, -22717);
         }
         if (!class154.field2982 && !class108.field1960 && arg1 <= var15 && var15 < arg0 + arg1 && arg4 <= var16 && var16 < arg2 + arg4) {
             class204.method1400(var16, arg1, arg2, arg0, arg4, var15, -1450689187);

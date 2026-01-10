@@ -131,7 +131,7 @@ public class class110 {
                     var9 = class113.field2052[var3[var5++]] * 100 / 46875;
                 }
                 if (var7 == 8) {
-                    var9 = class240.field4458.field747;
+                    var9 = class240.field4458.combatLevel;
                 }
                 if (var7 == 9) {
                     for (int var15 = 0; var15 < 25; var15++) {
@@ -225,11 +225,11 @@ public class class110 {
         var10.field3029 = arg6;
         var10.field3026 = arg7;
         for (int var11 = arg0; var11 >= 0; var11--) {
-            if (class29.field489[var11][arg1][arg2] == null) {
-                class29.field489[var11][arg1][arg2] = new class52(var11, arg1, arg2);
+            if (class29.levelTiles[var11][arg1][arg2] == null) {
+                class29.levelTiles[var11][arg1][arg2] = new Ground(var11, arg1, arg2);
             }
         }
-        class29.field489[arg0][arg1][arg2].field959 = var10;
+        class29.levelTiles[arg0][arg1][arg2].field959 = var10;
     }
 
     @OriginalMember(owner = "client!ka", name = "a", descriptor = "()V")

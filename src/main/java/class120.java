@@ -31,7 +31,7 @@ public class class120 extends class23 {
     private int field2206 = 1;
 
     @OriginalMember(owner = "client!l", name = "T", descriptor = "I")
-    public static int field2188 = 0;
+    public static int tryMoveNearest = 0;
 
     @OriginalMember(owner = "client!l", name = "bb", descriptor = "Li;")
     public static class88 field2196 = class208.method1425(105, "::");
@@ -222,9 +222,9 @@ public class class120 extends class23 {
     @OriginalMember(owner = "client!l", name = "a", descriptor = "(IIIIBI)V")
     public static final void method822(int arg0, int arg1, int arg2, int arg3, byte arg4, int arg5) {
         ++field2192;
-        if (~class140.field2597 != ~arg2 || class110.field2016 != arg3 || ~class157.field3028 != ~arg0 && class245.field4499) {
+        if (~class140.field2597 != ~arg2 || class110.field2016 != arg3 || ~class157.field3028 != ~arg0 && class245.lowMemory) {
             class157.field3028 = arg0;
-            if (!class245.field4499) {
+            if (!class245.lowMemory) {
                 class157.field3028 = 0;
             }
             class110.field2016 = arg3;
@@ -233,7 +233,7 @@ public class class120 extends class23 {
                 field2196 = null;
             }
             class131.method883(25, 65536);
-            client.method221(class242.field4480, true, -22717);
+            Client.method221(class242.field4480, true, -22717);
             int var6 = class223.field4214;
             int var7 = class190.field3681;
             class190.field3681 = arg3 * 8 - 48;
@@ -254,7 +254,7 @@ public class class120 extends class23 {
                 }
             }
             for (int var13 = 0; var13 < 2048; ++var13) {
-                class44 var26 = class244.field4493[var13];
+                scene var26 = class244.field4493[var13];
                 if (var26 != null) {
                     for (int var27 = 0; ~var27 > -11; ++var27) {
                         var26.field4089[var27] -= var9;

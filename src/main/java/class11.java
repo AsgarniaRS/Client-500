@@ -91,10 +91,10 @@ public class class11 extends class23 {
             int var7 = 16776960;
             Runtime var8 = Runtime.getRuntime();
             int var9 = (int) ((var8.totalMemory() - var8.freeMemory()) / 1024L);
-            if (var9 > 32768 && class245.field4499) {
+            if (var9 > 32768 && class245.lowMemory) {
                 var7 = 16711680;
             }
-            if (var9 > 65536 && !class245.field4499) {
+            if (var9 > 65536 && !class245.lowMemory) {
                 var7 = 16711680;
             }
             class3.field30.method150(class166.method1142(new class88[] { class206.field3923, class170.method1214(var9, -127), class110.field2009 }, -3), var5, var10, var7, -1);
@@ -195,7 +195,7 @@ public class class11 extends class23 {
                         return;
                     }
                 }
-                if (var3.method597(-125, class240.field4458.field766)) {
+                if (var3.method597(-125, class240.field4458.name)) {
                     class223.method1501(field151, 12, 0, class174.field3455);
                 } else {
                     ++class159.field3060;
@@ -213,7 +213,7 @@ public class class11 extends class23 {
 
     @OriginalMember(owner = "client!aj", name = "a", descriptor = "(III)V")
     public static final void method56(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         if (var3 != null) {
             var3.field959 = null;
         }

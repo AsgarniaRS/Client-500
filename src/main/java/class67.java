@@ -88,7 +88,7 @@ public class class67 {
         if (var3 != null) {
             return var3;
         }
-        byte[] var4 = client.field567.method941((byte) 56, arg0, 5);
+        byte[] var4 = Client.field567.method941((byte) 56, arg0, 5);
         class114 var5 = new class114();
         if (var4 != null) {
             var5.method777(new Packet(var4), (byte) 83);

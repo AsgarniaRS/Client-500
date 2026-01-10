@@ -76,7 +76,7 @@ public class class164 implements class198 {
             field3138 = 87;
         }
         while (var2 > var3) {
-            class44 var4;
+            scene var4;
             long var5;
             if (arg0) {
                 var5 = 8791798054912L;
@@ -88,7 +88,7 @@ public class class164 implements class198 {
             if (var4 != null && var4.method287(-1)) {
                 int var7 = var4.field4138 >> 7;
                 var4.field743 = false;
-                if ((class245.field4499 && class55.field1027 > 50 || class55.field1027 > 200) && !arg0 && var4.field4108 == var4.field4107) {
+                if ((class245.lowMemory && class55.field1027 > 50 || class55.field1027 > 200) && !arg0 && var4.field4108 == var4.field4107) {
                     var4.field743 = true;
                 }
                 int var8 = var4.field4123 >> 7;

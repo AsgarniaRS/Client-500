@@ -5,7 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class200 {
 
     @OriginalMember(owner = "client!sd", name = "a", descriptor = "[I")
-    public static int[] field3814 = new int[] { 16776960, 16711680, 65280, 65535, 16711935, 16777215 };
+    public static int[] field3814 = new int[] {
+            16776960, 16711680, 65280,
+            65535, 16711935, 16777215
+    };
 
     @OriginalMember(owner = "client!sd", name = "c", descriptor = "Li;")
     public static class88 field3816 = class208.method1425(105, "0(U");

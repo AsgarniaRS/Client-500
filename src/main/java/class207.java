@@ -60,7 +60,7 @@ public class class207 extends class27 {
 
     @OriginalMember(owner = "client!t", name = "b", descriptor = "(III)V")
     public static final void method1421(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         if (var3 != null) {
             var3.field949 = null;
         }
@@ -93,7 +93,7 @@ public class class207 extends class27 {
         } else if (class240.field4458.field4105 > 2) {
             return class241.method1593(arg6, arg4, class240.field4458.field4105, arg7, arg3, arg5, arg2, arg9, arg11, 19661304, arg8, arg10, arg1);
         } else {
-            return class99.method692(arg3, arg7, arg11, arg5, arg4, arg1, arg2, arg0 + 5611, arg6, arg8, arg10, arg9);
+            return class99.tryMove(arg3, arg7, arg11, arg5, arg4, arg1, arg2, arg0 + 5611, arg6, arg8, arg10, arg9);
         }
     }
 

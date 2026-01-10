@@ -61,27 +61,27 @@ public class class12 {
         if (arg3 == 0) {
             class95 var20 = new class95(arg10, arg11, arg12, arg13, -1, arg18, false);
             for (int var21 = arg0; var21 >= 0; var21--) {
-                if (class29.field489[var21][arg1][arg2] == null) {
-                    class29.field489[var21][arg1][arg2] = new class52(var21, arg1, arg2);
+                if (class29.levelTiles[var21][arg1][arg2] == null) {
+                    class29.levelTiles[var21][arg1][arg2] = new Ground(var21, arg1, arg2);
                 }
             }
-            class29.field489[arg0][arg1][arg2].field947 = var20;
+            class29.levelTiles[arg0][arg1][arg2].field947 = var20;
         } else if (arg3 == 1) {
             class95 var22 = new class95(arg14, arg15, arg16, arg17, arg5, arg19, arg6 == arg7 && arg6 == arg8 && arg6 == arg9);
             for (int var23 = arg0; var23 >= 0; var23--) {
-                if (class29.field489[var23][arg1][arg2] == null) {
-                    class29.field489[var23][arg1][arg2] = new class52(var23, arg1, arg2);
+                if (class29.levelTiles[var23][arg1][arg2] == null) {
+                    class29.levelTiles[var23][arg1][arg2] = new Ground(var23, arg1, arg2);
                 }
             }
-            class29.field489[arg0][arg1][arg2].field947 = var22;
+            class29.levelTiles[arg0][arg1][arg2].field947 = var22;
         } else {
             class56 var24 = new class56(arg3, arg4, arg5, arg1, arg2, arg6, arg7, arg8, arg9, arg10, arg11, arg12, arg13, arg14, arg15, arg16, arg17, arg18, arg19);
             for (int var25 = arg0; var25 >= 0; var25--) {
-                if (class29.field489[var25][arg1][arg2] == null) {
-                    class29.field489[var25][arg1][arg2] = new class52(var25, arg1, arg2);
+                if (class29.levelTiles[var25][arg1][arg2] == null) {
+                    class29.levelTiles[var25][arg1][arg2] = new Ground(var25, arg1, arg2);
                 }
             }
-            class29.field489[arg0][arg1][arg2].field964 = var24;
+            class29.levelTiles[arg0][arg1][arg2].field964 = var24;
         }
     }
 
@@ -99,7 +99,7 @@ public class class12 {
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(DIZLnb;Lfe;IIZ)[I")
     public final int[] method60(double arg0, int arg1, boolean arg2, class144 arg3, class61 arg4, int arg5, int arg6, boolean arg7) {
-        class44.method282(arg0, (byte) -125);
+        scene.method282(arg0, (byte) -125);
         class244.field4490 = arg4;
         class39.field684 = arg3;
         class118.method804(arg1, 75, arg5);
@@ -251,7 +251,7 @@ public class class12 {
                     return;
                 }
             }
-            if (var3.method597(-122, class240.field4458.field766)) {
+            if (var3.method597(-122, class240.field4458.name)) {
                 class223.method1501(class24.field395, 12, 0, class174.field3455);
             } else {
                 class90.field1712++;

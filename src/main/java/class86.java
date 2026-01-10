@@ -46,7 +46,7 @@ public abstract class class86 {
 
     @OriginalMember(owner = "client!hi", name = "a", descriptor = "(IZ)V")
     public static final void method581(int arg0, boolean arg1) {
-        class44.field772 = arg0;
+        scene.field772 = arg0;
         if (arg1) {
             field1551++;
             class54.field1012 = 50;

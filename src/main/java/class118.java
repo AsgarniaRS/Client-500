@@ -144,11 +144,11 @@ public class class118 {
         int var9 = arg6 + 16;
         int var10 = arg7 - 16;
         int var11 = arg7 + 16;
-        for (int var12 = class161.field3107; var12 < class11.field152; var12++) {
-            class52[][] var38 = class29.field489[var12];
+        for (int var12 = class161.setMinLevel; var12 < class11.field152; var12++) {
+            Ground[][] var38 = class29.levelTiles[var12];
             for (int var39 = class156.field3009; var39 < class6.field84; var39++) {
                 for (int var40 = class102.field1851; var40 < class230.field4316; var40++) {
-                    class52 var41 = var38[var39][var40];
+                    Ground var41 = var38[var39][var40];
                     if (var41 != null) {
                         if (var41.field950 <= class155.field2995 && class18.field304[var39 + class150.field2913 - class79.field1435][var40 + class150.field2913 - class88.field1636] && (arg3 == null || var12 < arg4 || arg3[var12][var39][var40] != arg5)) {
                             var41.field944 = true;
@@ -175,8 +175,8 @@ public class class118 {
             }
         }
         boolean var13 = class62.field1137 == class154.field2981;
-        for (int var14 = class161.field3107; var14 < class11.field152; var14++) {
-            class52[][] var27 = class29.field489[var14];
+        for (int var14 = class161.setMinLevel; var14 < class11.field152; var14++) {
+            Ground[][] var27 = class29.levelTiles[var14];
             for (int var28 = -class150.field2913; var28 <= 0; var28++) {
                 int var29 = class79.field1435 + var28;
                 int var30 = class79.field1435 - var28;
@@ -186,13 +186,13 @@ public class class118 {
                         int var33 = class88.field1636 - var31;
                         if (var29 >= class156.field3009) {
                             if (var32 >= class102.field1851) {
-                                class52 var34 = var27[var29][var32];
+                                Ground var34 = var27[var29][var32];
                                 if (var34 != null && var34.field944) {
                                     class81.method542(var34, true);
                                 }
                             }
                             if (var33 < class230.field4316) {
-                                class52 var35 = var27[var29][var33];
+                                Ground var35 = var27[var29][var33];
                                 if (var35 != null && var35.field944) {
                                     class81.method542(var35, true);
                                 }
@@ -200,13 +200,13 @@ public class class118 {
                         }
                         if (var30 < class6.field84) {
                             if (var32 >= class102.field1851) {
-                                class52 var36 = var27[var30][var32];
+                                Ground var36 = var27[var30][var32];
                                 if (var36 != null && var36.field944) {
                                     class81.method542(var36, true);
                                 }
                             }
                             if (var33 < class230.field4316) {
-                                class52 var37 = var27[var30][var33];
+                                Ground var37 = var27[var30][var33];
                                 if (var37 != null && var37.field944) {
                                     class81.method542(var37, true);
                                 }
@@ -222,8 +222,8 @@ public class class118 {
                 }
             }
         }
-        for (int var15 = class161.field3107; var15 < class11.field152; var15++) {
-            class52[][] var16 = class29.field489[var15];
+        for (int var15 = class161.setMinLevel; var15 < class11.field152; var15++) {
+            Ground[][] var16 = class29.levelTiles[var15];
             for (int var17 = -class150.field2913; var17 <= 0; var17++) {
                 int var18 = class79.field1435 + var17;
                 int var19 = class79.field1435 - var17;
@@ -233,13 +233,13 @@ public class class118 {
                         int var22 = class88.field1636 - var20;
                         if (var18 >= class156.field3009) {
                             if (var21 >= class102.field1851) {
-                                class52 var23 = var16[var18][var21];
+                                Ground var23 = var16[var18][var21];
                                 if (var23 != null && var23.field944) {
                                     class81.method542(var23, false);
                                 }
                             }
                             if (var22 < class230.field4316) {
-                                class52 var24 = var16[var18][var22];
+                                Ground var24 = var16[var18][var22];
                                 if (var24 != null && var24.field944) {
                                     class81.method542(var24, false);
                                 }
@@ -247,13 +247,13 @@ public class class118 {
                         }
                         if (var19 < class6.field84) {
                             if (var21 >= class102.field1851) {
-                                class52 var25 = var16[var19][var21];
+                                Ground var25 = var16[var19][var21];
                                 if (var25 != null && var25.field944) {
                                     class81.method542(var25, false);
                                 }
                             }
                             if (var22 < class230.field4316) {
-                                class52 var26 = var16[var19][var22];
+                                Ground var26 = var16[var19][var22];
                                 if (var26 != null && var26.field944) {
                                     class81.method542(var26, false);
                                 }

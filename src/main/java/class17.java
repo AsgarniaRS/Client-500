@@ -190,12 +190,12 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
             return;
         }
         while (var5 < class55.field1027) {
-            class44 var6 = class244.field4493[class174.field3430[var5]];
-            if (var6 != null && var6.field766 != null && var6.field766.method624(var3, (byte) -91)) {
+            scene var6 = class244.field4493[class174.field3430[var5]];
+            if (var6 != null && var6.name != null && var6.name.method624(var3, (byte) -91)) {
                 class207.method1423(3044, 1, 0, var6.field4143[0], var6.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
                 var4 = true;
                 if (arg2 == 1) {
-                    class44.field770++;
+                    scene.field770++;
                     class146.out.method30((byte) -31, 65);
                     class146.out.method314(class174.field3430[var5], (byte) 71);
                 } else if (arg2 == 4) {

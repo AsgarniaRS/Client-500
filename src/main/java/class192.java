@@ -73,7 +73,7 @@ public class class192 extends class67 {
             class13 var3 = var1[var2];
             if (class246.field4512 != null) {
                 for (int var4 = 0; var4 < class246.field4512.length; var4++) {
-                    if (class246.field4512[var4] != -1000000 && (var3.field189 <= class246.field4512[var4] || var3.field196 <= class246.field4512[var4]) && (var3.field185 <= class184.field3607[var4] || var3.field193 <= class184.field3607[var4]) && (var3.field185 >= class44.field740[var4] || var3.field193 >= class44.field740[var4]) && (var3.field191 <= class144.field2715[var4] || var3.field205 <= class144.field2715[var4]) && (var3.field191 >= class204.field3884[var4] || var3.field205 >= class204.field3884[var4])) {
+                    if (class246.field4512[var4] != -1000000 && (var3.field189 <= class246.field4512[var4] || var3.field196 <= class246.field4512[var4]) && (var3.field185 <= class184.field3607[var4] || var3.field193 <= class184.field3607[var4]) && (var3.field185 >= scene.field740[var4] || var3.field193 >= scene.field740[var4]) && (var3.field191 <= class144.field2715[var4] || var3.field205 <= class144.field2715[var4]) && (var3.field191 >= class204.field3884[var4] || var3.field205 >= class204.field3884[var4])) {
                         continue label191;
                     }
                 }
@@ -195,7 +195,7 @@ public class class192 extends class67 {
 
     @OriginalMember(owner = "client!rg", name = "b", descriptor = "(III)Loe;")
     public static final class157 method1334(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 == null ? null : var3.field959;
     }
 

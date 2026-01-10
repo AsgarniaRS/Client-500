@@ -126,7 +126,7 @@ public class class147 {
         if (var2 != null) {
             return var2;
         }
-        byte[] var3 = class209.field3970.method941((byte) 56, class52.method387(arg0, (byte) -82), class101.method704(arg0, -321617529));
+        byte[] var3 = class209.field3970.method941((byte) 56, Ground.method387(arg0, (byte) -82), class101.method704(arg0, -321617529));
         class126 var4 = new class126();
         var4.field2316 = arg0;
         if (arg1 >= -72) {

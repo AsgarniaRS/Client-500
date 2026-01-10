@@ -478,25 +478,25 @@ public class class149 extends class136 {
     @OriginalMember(owner = "client!ng", name = "a", descriptor = "(Lnc;III)V")
     public static final void method1020(class145 arg0, int arg1, int arg2, int arg3) {
         if (arg2 < class48.field899) {
-            class52 var4 = class29.field489[arg1][arg2 + 1][arg3];
+            Ground var4 = class29.levelTiles[arg1][arg2 + 1][arg3];
             if (var4 != null && var4.field949 != null && var4.field949.field3196.method544()) {
                 arg0.method570(var4.field949.field3196, 128, 0, 0, true);
             }
         }
         if (arg3 < class48.field899) {
-            class52 var5 = class29.field489[arg1][arg2][arg3 + 1];
+            Ground var5 = class29.levelTiles[arg1][arg2][arg3 + 1];
             if (var5 != null && var5.field949 != null && var5.field949.field3196.method544()) {
                 arg0.method570(var5.field949.field3196, 0, 0, 128, true);
             }
         }
         if (arg2 < class48.field899 && arg3 < class66.field1202) {
-            class52 var6 = class29.field489[arg1][arg2 + 1][arg3 + 1];
+            Ground var6 = class29.levelTiles[arg1][arg2 + 1][arg3 + 1];
             if (var6 != null && var6.field949 != null && var6.field949.field3196.method544()) {
                 arg0.method570(var6.field949.field3196, 128, 0, 128, true);
             }
         }
         if (arg2 < class48.field899 && arg3 > 0) {
-            class52 var7 = class29.field489[arg1][arg2 + 1][arg3 - 1];
+            Ground var7 = class29.levelTiles[arg1][arg2 + 1][arg3 - 1];
             if (var7 != null && var7.field949 != null && var7.field949.field3196.method544()) {
                 arg0.method570(var7.field949.field3196, 128, 0, -128, true);
             }

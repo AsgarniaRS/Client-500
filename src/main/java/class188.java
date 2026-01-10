@@ -248,7 +248,7 @@ public abstract class class188 extends class136 {
                         } while (var14 >= 103);
                     } while (var15 >= 103);
                     var16 = class190.method1323(var6, -12450);
-                } while (var13 == 22 && class245.field4499 && var16.field2835 == 0 && var16.field2821 != 1 && !var16.field2828);
+                } while (var13 == 22 && class245.lowMemory && var16.field2835 == 0 && var16.field2821 != 1 && !var16.field2828);
                 var9 = true;
                 if (!var16.method992(-23555)) {
                     var5 = false;

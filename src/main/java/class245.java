@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class245 {
 
     @OriginalMember(owner = "client!wf", name = "b", descriptor = "Z")
-    public static boolean field4499 = false;
+    public static boolean lowMemory = false;
 
     @OriginalMember(owner = "client!wf", name = "g", descriptor = "I")
     public static int field4504 = -1;
@@ -30,7 +30,7 @@ public class class245 {
 
     @OriginalMember(owner = "client!wf", name = "a", descriptor = "(IIII)V")
     public static final void method1604(int arg0, int arg1, int arg2, int arg3) {
-        class52 var4 = class29.field489[arg0][arg1][arg2];
+        Ground var4 = class29.levelTiles[arg0][arg1][arg2];
         if (var4 == null) {
             return;
         }
@@ -72,8 +72,8 @@ public class class245 {
             class189.field3661 = -1;
             class34.field594 = -1;
         }
-        if (var4 > class44.field760) {
-            class157.field3035 = class44.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
+        if (var4 > scene.field760) {
+            class157.field3035 = scene.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
             class189.field3661 = -1;
             class34.field594 = -1;
         }

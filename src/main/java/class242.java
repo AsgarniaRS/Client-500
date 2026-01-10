@@ -65,7 +65,7 @@ public class class242 extends class136 {
                     if (var12 >= 0 && var12 < class48.field899) {
                         for (int var13 = var9; var13 <= var10; var13++) {
                             if (var13 >= 0 && var13 < class66.field1202 && (!var6 || var12 >= var8 || var13 >= var10 || var13 < arg3 && arg2 != var12)) {
-                                class52 var14 = class29.field489[var11][var12][var13];
+                                Ground var14 = class29.levelTiles[var11][var12][var13];
                                 if (var14 != null) {
                                     int var15 = (class62.field1137[var11][var12 + 1][var13] + class62.field1137[var11][var12][var13] + class62.field1137[var11][var12][var13 + 1] + class62.field1137[var11][var12 + 1][var13 + 1]) / 4 - (class62.field1137[arg1][arg2 + 1][arg3] + class62.field1137[arg1][arg2][arg3] + class62.field1137[arg1][arg2][arg3 + 1] + class62.field1137[arg1][arg2 + 1][arg3 + 1]) / 4;
                                     class157 var16 = var14.field959;

@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class244 extends class67 {
 
     @OriginalMember(owner = "client!we", name = "B", descriptor = "[Ldj;")
-    public static class44[] field4493 = new class44[2048];
+    public static scene[] field4493 = new scene[2048];
 
     @OriginalMember(owner = "client!we", name = "D", descriptor = "I")
     public static int field4495 = 0;
@@ -164,7 +164,7 @@ public class class244 extends class67 {
                 int var72 = (var71 & 0x7) + class150.field2912;
                 int var73 = (var71 >> 4 & 0x7) + class121.field2215;
                 int var74 = class230.field4314.method349(true);
-                class44 var75;
+                scene var75;
                 if (class220.field4166 == var60) {
                     var75 = class240.field4458;
                 } else {

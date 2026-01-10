@@ -298,7 +298,7 @@ public class ClientStream implements Runnable {
     public static final void method917(class108 arg0) {
         for (int var1 = arg0.field1935; var1 <= arg0.field1942; var1++) {
             for (int var2 = arg0.field1938; var2 <= arg0.field1937; var2++) {
-                class52 var3 = class29.field489[arg0.field1954][var1][var2];
+                Ground var3 = class29.levelTiles[arg0.field1954][var1][var2];
                 if (var3 != null) {
                     for (int var4 = 0; var4 < var3.field962; var4++) {
                         if (var3.field963[var4] == arg0) {

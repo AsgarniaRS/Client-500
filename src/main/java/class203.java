@@ -191,7 +191,7 @@ public class class203 extends class50 {
                         class146.out.method305(arg3 + 3769, arg2);
                     }
                     if (arg3 != -3655) {
-                        method1396(66, (class44) null, 57, -117);
+                        method1396(66, (scene) null, 57, -117);
                     }
                 }
             }
@@ -256,15 +256,15 @@ public class class203 extends class50 {
     }
 
     @OriginalMember(owner = "client!sg", name = "a", descriptor = "(ILdj;II)V")
-    public static final void method1396(int arg0, class44 arg1, int arg2, int arg3) {
+    public static final void method1396(int arg0, scene arg1, int arg2, int arg3) {
         ++field3865;
         if ((arg0 & 4) != 0) {
             arg1.field4073 = class230.field4314.gjstr(arg2 ^ -110);
             if (~arg1.field4073.method599(255, 0) == -127) {
                 arg1.field4073 = arg1.field4073.method635(1, -383902332);
-                class223.method1501(arg1.field4073, 12, 2, arg1.field766);
+                class223.method1501(arg1.field4073, 12, 2, arg1.name);
             } else if (class240.field4458 == arg1) {
-                class223.method1501(arg1.field4073, 12, 2, arg1.field766);
+                class223.method1501(arg1.field4073, 12, 2, arg1.name);
             }
             arg1.field4140 = 0;
             arg1.field4085 = 0;
@@ -313,7 +313,7 @@ public class class203 extends class50 {
             Packet var9 = new Packet(var8);
             class230.field4314.method307(false, var7, var8, 0);
             class77.field1397[arg3] = var9;
-            arg1.method285(var9, true);
+            arg1.setAppearance(var9, true);
         }
         if (~(128 & arg0) != -1) {
             int var10 = class230.field4314.method352(24758);
@@ -333,8 +333,8 @@ public class class203 extends class50 {
             int var16 = class230.field4314.method352(24758);
             int var17 = class230.field4314.g1(26119);
             int var18 = class230.field4314.pos;
-            if (arg1.field766 != null && arg1.field768 != null) {
-                long var19 = arg1.field766.method630(false);
+            if (arg1.name != null && arg1.field768 != null) {
+                long var19 = arg1.name.method630(false);
                 boolean var21 = false;
                 if (~var16 >= -2) {
                     if (var15 || ~class238.field4430 != -2 && class176.field3537 != 1) {
@@ -348,7 +348,7 @@ public class class203 extends class50 {
                         var21 = true;
                     }
                 }
-                if (!var21 && ~client.field563 == -1) {
+                if (!var21 && ~Client.field563 == -1) {
                     class54.field1006.pos = 0;
                     int var23 = -1;
                     class230.field4314.method315(class54.field1006.data, 0, var17, 109);
@@ -367,11 +367,11 @@ public class class203 extends class50 {
                     arg1.field4085 = var14 >> 8;
                     arg1.field4140 = var14 & 255;
                     if (~var16 == -3) {
-                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class28.field472, arg1.field766 }, -3), !var15 ? 1 : 17, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class28.field472, arg1.name}, -3), !var15 ? 1 : 17, (class88) null);
                     } else if (var16 != 1) {
-                        class118.method803(var24, (byte) 28, var23, arg1.field766, var15 ? 17 : 2, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, arg1.name, var15 ? 17 : 2, (class88) null);
                     } else {
-                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class166.field3203, arg1.field766 }, -3), var15 ? 17 : 1, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class166.field3203, arg1.name}, -3), var15 ? 17 : 1, (class88) null);
                     }
                 }
             }

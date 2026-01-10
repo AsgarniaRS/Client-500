@@ -119,7 +119,7 @@ public class class189 extends class136 {
                 field3665 = null;
             }
             if (class228.field4278 == 20) {
-                class161.method1087(-3131, class130.field2442.method962(0, class20.field319, client.field570));
+                class161.method1087(-3131, class130.field2442.method962(0, class20.field319, Client.field570));
                 class228.field4278 = 30;
                 class108.method740(false);
             } else if (class228.field4278 == 30) {
@@ -167,13 +167,13 @@ public class class189 extends class136 {
         class59.field1110 = 8.0D;
         class150.field2917 = 8.0D;
         class54.field1009 = new int[class151.field2925 + 1];
-        class44.field760 = (var5 - var3) * 64 + 64;
+        scene.field760 = (var5 - var3) * 64 + 64;
         class109.field1990 = (var4 + 1 - var2) * 64;
         int var8 = class190.field3681 + (class240.field4458.field4123 >> 7) - class119.field2183;
         int var9 = (class240.field4458.field4138 >> 7) + class223.field4214 - class16.field239;
         int var10 = var9 + (int) (Math.random() * 10.0D) - 5;
         int var11 = var8 + (int) (Math.random() * 10.0D) - 5;
-        int var12 = class44.field760 >> 6;
+        int var12 = scene.field760 >> 6;
         int var13 = class109.field1990 >> 6;
         class216.field4054 = new byte[var13][var12][];
         class7.field105 = new byte[var13][var12][];
@@ -182,11 +182,11 @@ public class class189 extends class136 {
         class220.field4168 = new byte[var13][var12][];
         int var14 = class70.field1270 >> 1;
         class117.field2128 = new byte[var13][var12][];
-        if (var10 >= 0 && var10 < class109.field1990 && var11 >= 0 && class44.field760 > var11) {
-            class157.field3035 = class44.field760 - var11;
+        if (var10 >= 0 && var10 < class109.field1990 && var11 >= 0 && scene.field760 > var11) {
+            class157.field3035 = scene.field760 - var11;
             class126.field2332 = var10;
         } else {
-            class157.field3035 = class119.field2183 + class44.field760 - var7 * 64;
+            class157.field3035 = class119.field2183 + scene.field760 - var7 * 64;
             class126.field2332 = var6 * 64 - class16.field239;
         }
         int var15 = class218.field4088 >> 2 << 10;

@@ -111,7 +111,7 @@ public class class39 extends class67 {
                 }
                 if (var2.field1387 < 0) {
                     int var4 = -var2.field1387 - 1;
-                    class44 var5;
+                    scene var5;
                     if (class220.field4166 == var4) {
                         var5 = class240.field4458;
                     } else {

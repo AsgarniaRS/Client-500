@@ -166,7 +166,7 @@ public class class113 extends class23 {
             }
         }
         class246.field4512 = arg7;
-        class44.field740 = arg8;
+        scene.field740 = arg8;
         class184.field3607 = arg9;
         class144.field2715 = arg10;
         class204.field3884 = arg11;

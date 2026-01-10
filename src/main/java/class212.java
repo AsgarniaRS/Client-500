@@ -136,7 +136,7 @@ public class class212 extends class23 {
                                     var25 = arg2[var26];
                                 }
                             }
-                            class223.method1505((byte) 43, !arg7, arg5, arg7, arg0 + var21 & 3, var20, class245.field4499, var11, arg5, var25, var24, var23);
+                            class223.method1505((byte) 43, !arg7, arg5, arg7, arg0 + var21 & 3, var20, class245.lowMemory, var11, arg5, var25, var24, var23);
                         }
                     }
                 }

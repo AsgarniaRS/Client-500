@@ -101,7 +101,7 @@ public class class64 {
     @OriginalMember(owner = "client!fh", name = "b", descriptor = "(I)V")
     public static final void method451(int arg0) {
         if (arg0 == 64) {
-            class245.field4499 = false;
+            class245.lowMemory = false;
             field1165++;
             class104.field1884 = false;
         }
@@ -109,7 +109,7 @@ public class class64 {
 
     @OriginalMember(owner = "client!fh", name = "a", descriptor = "(B)V")
     public static final void method452(byte arg0) {
-        class245.field4499 = true;
+        class245.lowMemory = true;
         if (arg0 <= 112) {
             field1173 = -25;
         }

@@ -184,7 +184,7 @@ public class class176 extends class136 {
                 }
                 class31.login.p1(255, class146.out.pos + class15.method72(class218.field4136, 1) + 141);
                 class31.login.p4(500);
-                class31.login.p1(255, class245.field4499 ? 1 : 0);
+                class31.login.p1(255, class245.lowMemory ? 1 : 0);
                 class4.pUid(class31.login, (byte) -91);
                 class31.login.method336(class218.field4136, (byte) 0);
                 class31.login.p4(class4.field46);

@@ -103,7 +103,7 @@ public class class190 {
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(Lnb;I)V")
     public static final void method1326(class144 arg0, int arg1) {
-        client.field567 = arg0;
+        Client.field567 = arg0;
         field3680++;
         int var2 = -38 % ((55 - arg1) / 40);
     }
@@ -154,7 +154,7 @@ public class class190 {
         if (arg0 != -25194) {
             method1330(-13);
         }
-        if (class245.field4499 && class157.field3028 != class149.field2909) {
+        if (class245.lowMemory && class157.field3028 != class149.field2909) {
             class120.method822(class149.field2909, class240.field4458.field4143[0], class140.field2597, class110.field2016, (byte) 126, class240.field4458.field4089[0]);
         } else if (class172.field3338 != class149.field2909) {
             class172.field3338 = class149.field2909;

@@ -127,7 +127,7 @@ public class class97 extends class136 {
             if (arg0.method624(class34.field583, (byte) 123)) {
                 class148.field2770 = false;
             }
-            arg0.method624(class44.field751, (byte) 68);
+            arg0.method624(scene.field751, (byte) 68);
             arg0.method624(class1.field6, (byte) -65);
             if (arg0.method624(class172.field3339, (byte) -99)) {
                 for (int var5 = 0; var5 < 4; var5++) {

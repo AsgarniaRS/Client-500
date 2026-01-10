@@ -111,7 +111,7 @@ public class class94 extends class23 {
         var9.field4448 = arg6;
         var9.field4450 = arg7;
         int var10 = 0;
-        class52 var11 = class29.field489[arg0][arg1][arg2];
+        Ground var11 = class29.levelTiles[arg0][arg1][arg2];
         if (var11 != null) {
             for (int var12 = 0; var12 < var11.field962; ++var12) {
                 class108 var13 = var11.field963[var12];
@@ -124,10 +124,10 @@ public class class94 extends class23 {
             }
         }
         var9.field4437 = -var10;
-        if (class29.field489[arg0][arg1][arg2] == null) {
-            class29.field489[arg0][arg1][arg2] = new class52(arg0, arg1, arg2);
+        if (class29.levelTiles[arg0][arg1][arg2] == null) {
+            class29.levelTiles[arg0][arg1][arg2] = new Ground(arg0, arg1, arg2);
         }
-        class29.field489[arg0][arg1][arg2].field948 = var9;
+        class29.levelTiles[arg0][arg1][arg2].field948 = var9;
     }
 
     @OriginalMember(owner = "client!ig", name = "b", descriptor = "(IB)[[I")

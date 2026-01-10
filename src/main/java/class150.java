@@ -134,9 +134,9 @@ public class class150 {
             while (var2 < arg0.length) {
                 int var3 = (arg0[var2++] & 0xFF) * 64 - class16.field239;
                 int var4 = (arg0[var2++] & 0xFF) * 64 - class119.field2183;
-                if (var3 > 0 && var4 > 0 && class109.field1990 > var3 + 64 && class44.field760 > var4 + 64) {
+                if (var3 > 0 && var4 > 0 && class109.field1990 > var3 + 64 && scene.field760 > var4 + 64) {
                     int var5 = var3 >> 6;
-                    int var6 = class44.field760 - var4 - 1 >> 6;
+                    int var6 = scene.field760 - var4 - 1 >> 6;
                     for (int var7 = 0; var7 < 64; var7++) {
                         for (int var8 = -64; var8 < 0; var8++) {
                             byte var9 = arg0[var2++];

@@ -94,10 +94,10 @@ public class class227 extends class136 {
         var12.field1169 = arg8;
         var12.field1167 = arg9;
         for (int var13 = arg0; var13 >= 0; var13--) {
-            if (class29.field489[var13][arg1][arg2] == null) {
-                class29.field489[var13][arg1][arg2] = new class52(var13, arg1, arg2);
+            if (class29.levelTiles[var13][arg1][arg2] == null) {
+                class29.levelTiles[var13][arg1][arg2] = new Ground(var13, arg1, arg2);
             }
         }
-        class29.field489[arg0][arg1][arg2].field956 = var12;
+        class29.levelTiles[arg0][arg1][arg2].field956 = var12;
     }
 }

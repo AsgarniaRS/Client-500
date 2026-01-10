@@ -124,7 +124,7 @@ public class class146 {
 
     @OriginalMember(owner = "client!nd", name = "a", descriptor = "(III)V")
     public static final void method976(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         if (var3 == null) {
             return;
         }

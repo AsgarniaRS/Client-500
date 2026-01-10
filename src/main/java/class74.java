@@ -66,7 +66,7 @@ public class class74 extends class50 {
 
     @OriginalMember(owner = "client!gh", name = "c", descriptor = "(III)J")
     public static final long method501(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 != null && var3.field949 != null ? var3.field949.field3204 : 0L;
     }
 

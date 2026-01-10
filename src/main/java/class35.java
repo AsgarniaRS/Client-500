@@ -181,10 +181,10 @@ public class class35 extends class23 {
             var8.field3192 = arg2 * 128 + 64;
             var8.field3195 = arg3;
             var8.field3204 = arg5;
-            if (class29.field489[arg0][arg1][arg2] == null) {
-                class29.field489[arg0][arg1][arg2] = new class52(arg0, arg1, arg2);
+            if (class29.levelTiles[arg0][arg1][arg2] == null) {
+                class29.levelTiles[arg0][arg1][arg2] = new Ground(arg0, arg1, arg2);
             }
-            class29.field489[arg0][arg1][arg2].field949 = var8;
+            class29.levelTiles[arg0][arg1][arg2].field949 = var8;
         }
     }
 

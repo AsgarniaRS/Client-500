@@ -110,7 +110,7 @@ public class class223 {
                             int var46 = var35[var44][var45];
                             if (var46 != 0) {
                                 class148 var47 = class190.method1323(var46 - 1, -12450);
-                                if (var14 && class44.field772 == var47.field2819) {
+                                if (var14 && scene.field772 == var47.field2819) {
                                     class65 var48 = new class65();
                                     var48.field1179 = var37;
                                     var48.field1180 = var47.field2819;
@@ -129,7 +129,7 @@ public class class223 {
                 int var17 = var16.field4485;
                 int var18 = var17 - class16.field239;
                 int var19 = var16.field4487;
-                int var20 = class119.field2183 + class44.field760 - var19;
+                int var20 = class119.field2183 + scene.field760 - var19;
                 int var21 = (arg3 - arg2) * (var18 - arg7) / (arg6 - arg7) + arg2;
                 int var22 = (arg4 - arg0) * (var20 - arg5) / (arg8 - arg5) + arg0;
                 int var23 = var16.field4494;

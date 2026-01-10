@@ -54,7 +54,7 @@ public abstract class class29 {
     public static int[] field482;
 
     @OriginalMember(owner = "client!cf", name = "m", descriptor = "[[[Leg;")
-    public static class52[][][] field489;
+    public static Ground[][][] levelTiles;
 
     @OriginalMember(owner = "client!cf", name = "a", descriptor = "(ILjava/awt/Component;)V")
     public abstract void method173(int arg0, Component arg1);
@@ -146,7 +146,7 @@ public abstract class class29 {
         field480 = null;
         field486 = null;
         field488 = null;
-        field489 = null;
+        levelTiles = null;
         field482 = null;
     }
 

@@ -467,7 +467,7 @@ public class class116 extends class23 {
                                                                     class65.field1185 += class161.field3113;
                                                                 }
                                                                 if (~(1 & var44) == -2) {
-                                                                    class52.field943 += class88.field1644;
+                                                                    Ground.field943 += class88.field1644;
                                                                 }
                                                             }
                                                             if (~class65.field1185 > 19) {
@@ -479,7 +479,7 @@ public class class116 extends class23 {
                                                             if (class33.field536 < -55) {
                                                                 class232.field4359 = 2;
                                                             }
-                                                            if (class52.field943 < -60) {
+                                                            if (Ground.field943 < -60) {
                                                                 class88.field1644 = 2;
                                                             }
                                                             if (class98.field1797 < -40) {
@@ -491,7 +491,7 @@ public class class116 extends class23 {
                                                             if (~class98.field1797 < -41) {
                                                                 class29.field481 = -1;
                                                             }
-                                                            if (~class52.field943 < -61) {
+                                                            if (~Ground.field943 < -61) {
                                                                 class88.field1644 = -2;
                                                             }
                                                             if (class223.field4201 < -50) {

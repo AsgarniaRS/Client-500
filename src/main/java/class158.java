@@ -53,7 +53,7 @@ public class class158 {
             class200.method1375(var5, -876775538);
         }
         class10.field145 = arg0;
-        client.field569 = arg3;
+        Client.field569 = arg3;
         class115.field2086 = arg2;
         field3039++;
         class16.field249 = arg1;

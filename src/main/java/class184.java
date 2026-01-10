@@ -102,7 +102,7 @@ public class class184 extends class23 {
                 class203.field3863 = 2;
             } else {
                 if (~class203.field3863 != -1) {
-                    client.method221(class166.method1142(new class88[] { class242.field4480, class222.field4192 }, -3), true, -22717);
+                    Client.method221(class166.method1142(new class88[] { class242.field4480, class222.field4192 }, -3), true, -22717);
                 }
                 class219.method1481(2);
                 class27.method167((byte) 61);
@@ -117,7 +117,7 @@ public class class184 extends class23 {
                         }
                     }
                 }
-                class44.method288(-25844);
+                scene.method288(-25844);
                 class219.method1481(2);
                 System.gc();
                 class219.method1481(2);
@@ -146,10 +146,10 @@ public class class184 extends class23 {
                 if (~var7 > ~(class149.field2909 + -1)) {
                     int var8 = class149.field2909 + -1;
                 }
-                if (class245.field4499) {
-                    class44.method281(class28.field468);
+                if (class245.lowMemory) {
+                    scene.setMinlevel(class28.field468);
                 } else {
-                    class44.method281(0);
+                    scene.setMinlevel(0);
                 }
                 class7.method39(26249);
                 for (int var9 = 0; ~var9 > -105; ++var9) {

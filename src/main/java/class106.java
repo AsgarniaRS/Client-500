@@ -101,7 +101,7 @@ public class class106 {
         class128.field2401 = 0;
         class31.field499 = 0;
         class230.field4301 = 0;
-        class44.field753 = 0;
+        scene.field753 = 0;
         class113.field2050 = 0;
         class14.field214 = 0;
         class119.field2175 = 0;
@@ -123,7 +123,7 @@ public class class106 {
         class154.field2985 = 0;
         class113.field2054 = 0;
         class206.field3920 = 0;
-        client.field559 = 0;
+        Client.field559 = 0;
         class113.field2055 = 0;
         class130.field2431 = 0;
         GameShell.field1560 = 0;
@@ -149,7 +149,7 @@ public class class106 {
         class205.field3912 = 0;
         class11.field164 = 0;
         class170.field3279 = 0;
-        class44.field763 = 0;
+        scene.field763 = 0;
         class88.field1603 = 0;
         class95.field1766 = 0;
         class53.field982 = 0;
@@ -217,7 +217,7 @@ public class class106 {
         class71.field1324 = 0;
         class144.field2672 = 0;
         class60.field1131 = 0;
-        client.field573 = 0;
+        Client.field573 = 0;
         class88.field1630 = 0;
         class67.field1205 = 0;
         class104.field1878 = 0;
@@ -231,7 +231,7 @@ public class class106 {
         class12.field171 = 0;
         class239.field4438 = 0;
         CollisionMap.field1662 = 0;
-        client.field575 = 0;
+        Client.field575 = 0;
         class160.field3098 = 0;
         class6.field85 = 0;
         class234.field4376 = 0;
@@ -285,7 +285,7 @@ public class class106 {
         class144.field2665 = 0;
         class232.field4351 = 0;
         class58.field1092 = 0;
-        client.field565 = 0;
+        Client.field565 = 0;
         class211.field3996 = 0;
         class204.field3882 = 0;
         class156.field3013 = 0;
@@ -306,7 +306,7 @@ public class class106 {
         class77.field1369 = 0;
         class220.field4153 = 0;
         class129.field2420 = 0;
-        class52.field940 = 0;
+        Ground.field940 = 0;
         class174.field3413 = 0;
         class1.field3 = 0;
         class248.field4543 = 0;
@@ -320,7 +320,7 @@ public class class106 {
         class231.field4337 = 0;
         class202.field3856 = 0;
         class45.field784 = 0;
-        class44.field746 = 0;
+        scene.field746 = 0;
         class248.field4539 = 0;
         class170.field3260 = 0;
         CollisionMap.field1663 = 0;
@@ -346,7 +346,7 @@ public class class106 {
         class32.field517 = 0;
         class248.field4541 = 0;
         class127.field2374 = 0;
-        class44.field771 = 0;
+        scene.field771 = 0;
         class108.field1939 = 0;
         class220.field4154 = 0;
         class34.field577 = 0;
@@ -362,7 +362,7 @@ public class class106 {
         class23.field366 = 0;
         class77.field1402 = 0;
         class15.field225 = 0;
-        client.field562 = 0;
+        Client.field562 = 0;
         class174.field3517 = 0;
         Packet.field837 = 0;
         class67.field1213 = 0;
@@ -413,13 +413,13 @@ public class class106 {
         class22.field336 = 0;
         class71.field1319 = 0;
         class47.field886 = 0;
-        class44.field765 = 0;
+        scene.field765 = 0;
         class109.field2004 = 0;
         class154.field2969 = 0;
         class92.field1727 = 0;
         class102.field1847 = 0;
         class43.field730 = 0;
-        client.field574 = 0;
+        Client.field574 = 0;
         class212.field4016 = 0;
         class116.field2094 = 0;
         class238.field4428 = 0;
@@ -428,7 +428,7 @@ public class class106 {
         class85.field1532 = 0;
         class143.field2651 = 0;
         class144.field2691 = 0;
-        client.field566 = 0;
+        Client.field566 = 0;
         class199.field3798 = 0;
         class155.field3005 = 0;
         class149.field2901 = 0;
@@ -454,7 +454,7 @@ public class class106 {
         class190.field3672 = 0;
         class138.field2567 = 0;
         class101.field1830 = 0;
-        class44.field748 = 0;
+        scene.field748 = 0;
         class114.field2068 = 0;
         class108.field1943 = 0;
         class211.field4004 = 0;
@@ -685,7 +685,7 @@ public class class106 {
         class207.field3926 = 0;
         class6.field81 = 0;
         class24.field382 = 0;
-        class44.field770 = 0;
+        scene.field770 = 0;
         class81.field1470 = 0;
         class230.field4306 = 0;
         class153.field2961 = 0;
@@ -709,8 +709,8 @@ public class class106 {
         class210.field3987 = 0;
         class88.field1600 = 0;
         class172.field3344 = 0;
-        class44.field754 = 0;
-        client.field564 = 0;
+        scene.field754 = 0;
+        Client.field564 = 0;
         class45.field785 = 0;
         class146.field2750 = 0;
         class126.field2325 = 0;
@@ -799,7 +799,7 @@ public class class106 {
         GameShell.field1563 = 0;
         class88.field1648 = 0;
         ClientStream.field2544 = 0;
-        client.field560 = 0;
+        Client.field560 = 0;
         class88.field1607 = 0;
         class99.field1813 = 0;
         class79.field1434 = 0;
@@ -874,7 +874,7 @@ public class class106 {
         class21.field327 = 0;
         class136.field2526 = 0;
         class81.field1464 = 0;
-        client.field572 = 0;
+        Client.field572 = 0;
         class37.field667 = 0;
         class212.field4027 = 0;
         class17.field264 = 0;
@@ -932,7 +932,7 @@ public class class106 {
         class170.field3272 = 0;
         class17.field270 = 0;
         class211.field3999 = 0;
-        class44.field742 = 0;
+        scene.field742 = 0;
         class17.field273 = 0;
         class227.field4266 = 0;
         class223.field4206 = 0;
@@ -1013,7 +1013,7 @@ public class class106 {
         class36.field622 = 0;
         class105.field1905 = 0;
         class94.field1755 = 0;
-        client.field568 = 0;
+        Client.field568 = 0;
         class70.field1256 = 0;
         class104.field1882 = 0;
         class118.field2151 = 0;
@@ -1108,7 +1108,7 @@ public class class106 {
         class34.field590 = 0;
         class79.field1431 = 0;
         class120.field2187 = 0;
-        client.field571 = 0;
+        Client.field571 = 0;
         class60.field1132 = 0;
         class111.field2028 = 0;
         class15.field231 = 0;
@@ -1210,7 +1210,7 @@ public class class106 {
         class97.field1790 = 0;
         class244.field4491 = 0;
         class148.field2814 = 0;
-        client.field557 = 0;
+        Client.field557 = 0;
         class36.field627 = 0;
         class36.field634 = 0;
         class199.field3806 = 0;
@@ -1315,7 +1315,7 @@ public class class106 {
         class109.field1978 = 0;
         class88.field1658 = 0;
         class88.field1645 = 0;
-        client.field558 = 0;
+        Client.field558 = 0;
         class131.field2455 = 0;
         class147.field2763 = 0;
         class15.field232 = 0;
@@ -1330,7 +1330,7 @@ public class class106 {
         class149.field2861 = 0;
         class109.field1981 = 0;
         class144.field2705 = 0;
-        class52.field942 = 0;
+        Ground.field942 = 0;
         class117.field2131 = 0;
         class171.field3325 = 0;
         GameShell.field1580 = 0;
@@ -1428,7 +1428,7 @@ public class class106 {
         class140.field2596 = 0;
         class65.field1185 = (int) (Math.random() * 30.0D) - 20;
         class116.field2104 = 0;
-        class52.field943 = (int) (Math.random() * 120.0D) - 60;
+        Ground.field943 = (int) (Math.random() * 120.0D) - 60;
         class55.field1027 = 0;
         class33.field536 = (int) (Math.random() * 110.0D) - 55;
         class207.field3932 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
@@ -1447,7 +1447,7 @@ public class class106 {
         for (int var4 = 0; var4 < 32768; var4++) {
             class225.field4225[var4] = null;
         }
-        class240.field4458 = class244.field4493[2047] = new class44();
+        class240.field4458 = class244.field4493[2047] = new scene();
         class167.field3222.method1618(-3);
         class42.field714.method1618(-3);
         for (int var5 = 0; var5 < 4; var5++) {

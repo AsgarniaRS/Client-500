@@ -84,7 +84,7 @@ public class class172 extends class23 {
         }
         while (~var1 > ~class192.field3704) {
             int var2 = class139.field2581[var1];
-            class44 var3 = class244.field4493[var2];
+            scene var3 = class244.field4493[var2];
             int var4 = class230.field4314.g1(26119);
             if (~(var4 & 2) != -1) {
                 var4 += class230.field4314.g1(26119) << 8;

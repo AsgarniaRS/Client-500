@@ -248,7 +248,7 @@ public class class143 extends class67 {
                                 class90.field1707 = var10;
                                 if (var22) {
                                     if (class247.field4513[82] && class67.field1208 > 0) {
-                                        int var28 = class119.field2183 + class44.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / class59.field1110) - class157.field3035;
+                                        int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / class59.field1110) - class157.field3035;
                                         int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / class59.field1110) + class126.field2332 + class16.field239;
                                         class88 var30 = class166.method1142(new class88[] { class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79) }, -3);
                                         var30.method610(-5446);
@@ -565,9 +565,9 @@ public class class143 extends class67 {
             while (var2 < arg0.length) {
                 int var3 = arg0[var2++] * 64 - class16.field239;
                 int var4 = arg0[var2++] * 64 - class119.field2183;
-                if (var3 > 0 && var4 > 0 && var3 + 64 < class109.field1990 && var4 + 64 < class44.field760) {
+                if (var3 > 0 && var4 > 0 && var3 + 64 < class109.field1990 && var4 + 64 < scene.field760) {
                     int var5 = var3 >> 6;
-                    int var6 = class44.field760 - var4 - 1 >> 6;
+                    int var6 = scene.field760 - var4 - 1 >> 6;
                     for (int var7 = 0; var7 < 64; var7++) {
                         for (int var8 = -64; var8 < 0; var8++) {
                             byte var9 = arg0[var2++];
@@ -602,7 +602,7 @@ public class class143 extends class67 {
                                     }
                                     class48.field895[var5][var6][(-(var8 + 1) << 6) + var7] = var13.field2833 + 1;
                                     class65 var14 = new class65();
-                                    var14.field1175 = class44.field760 - var4;
+                                    var14.field1175 = scene.field760 - var4;
                                     var14.field1180 = var13.field2819;
                                     var14.field1179 = var3;
                                     class232.field4361.method1624(var14, 105);

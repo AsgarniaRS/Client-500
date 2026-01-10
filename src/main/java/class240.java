@@ -23,7 +23,7 @@ public class class240 {
     public static int field4459;
 
     @OriginalMember(owner = "client!wa", name = "d", descriptor = "Ldj;")
-    public static class44 field4458;
+    public static scene field4458;
 
     @OriginalMember(owner = "client!wa", name = "h", descriptor = "[Lrh;")
     public static class193[] field4462;

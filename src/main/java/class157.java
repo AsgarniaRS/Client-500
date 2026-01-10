@@ -72,17 +72,17 @@ public class class157 {
 
     @OriginalMember(owner = "client!oe", name = "a", descriptor = "(III)J")
     public static final long method1064(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 == null || var3.field959 == null ? 0L : var3.field959.field3030;
     }
 
     @OriginalMember(owner = "client!oe", name = "a", descriptor = "(II)V")
     public static final void method1065(int arg0, int arg1) {
-        class52 var2 = class29.field489[0][arg0][arg1];
+        Ground var2 = class29.levelTiles[0][arg0][arg1];
         for (int var3 = 0; var3 < 3; var3++) {
-            class52 var4 = class29.field489[var3][arg0][arg1] = class29.field489[var3 + 1][arg0][arg1];
+            Ground var4 = class29.levelTiles[var3][arg0][arg1] = class29.levelTiles[var3 + 1][arg0][arg1];
             if (var4 != null) {
-                var4.field966--;
+                var4.level--;
                 for (int var5 = 0; var5 < var4.field962; var5++) {
                     class108 var6 = var4.field963[var5];
                     if ((var6.field1950 >> 29 & 0x3L) == 2L && var6.field1935 == arg0 && var6.field1938 == arg1) {
@@ -91,10 +91,10 @@ public class class157 {
                 }
             }
         }
-        if (class29.field489[0][arg0][arg1] == null) {
-            class29.field489[0][arg0][arg1] = new class52(0, arg0, arg1);
+        if (class29.levelTiles[0][arg0][arg1] == null) {
+            class29.levelTiles[0][arg0][arg1] = new Ground(0, arg0, arg1);
         }
-        class29.field489[0][arg0][arg1].field951 = var2;
-        class29.field489[3][arg0][arg1] = null;
+        class29.levelTiles[0][arg0][arg1].field951 = var2;
+        class29.levelTiles[3][arg0][arg1] = null;
     }
 }

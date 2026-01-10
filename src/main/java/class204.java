@@ -78,7 +78,7 @@ public class class204 extends class67 {
 
     @OriginalMember(owner = "client!sh", name = "a", descriptor = "(III)Ljj;")
     public static final class108 method1398(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         if (var3 == null) {
             return null;
         }
@@ -143,7 +143,7 @@ public class class204 extends class67 {
                     }
                     if (class28.field475 == 1) {
                         class98.method687(9746, var18, class35.field608, (short) 26, var16, class166.method1142(new class88[] { class78.field1414, class175.field3528, var22.field2775 }, arg6 + 1450689184), var19);
-                        class52.field942++;
+                        Ground.field942++;
                     } else if (!class10.field145) {
                         class43.field724++;
                         class88[] var23 = var22.field2818;
@@ -190,7 +190,7 @@ public class class204 extends class67 {
                             }
                         }
                         for (int var28 = 0; var28 < class55.field1027; var28++) {
-                            class44 var29 = class244.field4493[class174.field3430[var28]];
+                            scene var29 = class244.field4493[class174.field3430[var28]];
                             if (var29 != null && var26.field4138 == var29.field4138 && var26.field4123 == var29.field4123) {
                                 class139.method924(class174.field3430[var28], 31, var18, var19, var29);
                             }
@@ -199,7 +199,7 @@ public class class204 extends class67 {
                     class225.method1515(var26.field3684, var21, 14665, var19, var18);
                 }
                 if (var20 == 0) {
-                    class44 var31 = class244.field4493[var21];
+                    scene var31 = class244.field4493[var21];
                     if ((var31.field4138 & 0x7F) == 64 && (var31.field4123 & 0x7F) == 64) {
                         for (int var32 = 0; var32 < class55.field1041; var32++) {
                             class191 var35 = class225.field4225[class25.field402[var32]];
@@ -208,7 +208,7 @@ public class class204 extends class67 {
                             }
                         }
                         for (int var33 = 0; var33 < class55.field1027; var33++) {
-                            class44 var34 = class244.field4493[class174.field3430[var33]];
+                            scene var34 = class244.field4493[class174.field3430[var33]];
                             if (var34 != null && var31 != var34 && var31.field4138 == var34.field4138 && var31.field4123 == var34.field4123) {
                                 class139.method924(class174.field3430[var33], 31, var18, var19, var34);
                             }

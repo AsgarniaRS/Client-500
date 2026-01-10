@@ -169,8 +169,6 @@ public class class60 extends class23 {
 
     @OriginalMember(owner = "client!fd", name = "a", descriptor = "(IZIIILk;)V")
     public static final void method433(int arg0, boolean arg1, int arg2, int arg3, int arg4, class109 arg5) {
-        ++field1130;
-        int var6 = 26 % ((-49 - arg0) / 59);
         if (~class174.field3447 > -51) {
             if (arg5.field2003 != null && arg5.field2003.length >= 1 && ~arg3 > ~arg5.field2003.length && arg5.field2003[arg3] != null) {
                 int var7 = arg5.field2003[arg3][0];

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!client")
-public class client extends GameShell {
+public class Client extends GameShell {
 
     @OriginalMember(owner = "client!client", name = "T", descriptor = "Li;")
     public static class88 field561 = class208.method1425(105, "titlebox");
@@ -168,7 +168,7 @@ public class client extends GameShell {
         if (class167.field3224 != null) {
             class167.field3224.method173(64, class154.field2977);
         }
-        class52.field941 = class181.field3581;
+        Ground.field941 = class181.field3581;
         try {
             if (class126.field2326.field3592 != null) {
                 class18.field299 = new class119(class126.field2326.field3592, 5200, 0);
@@ -322,7 +322,7 @@ public class client extends GameShell {
             class4.field46 = 0;
             class218.field4136 = class174.field3455;
             class95.field1761 = "127.0.0.1";
-            client var1 = new client();
+            Client var1 = new Client();
             var1.method586(27, 503, 765, 500, class139.field2586 + 32, -11124, "runescape");
             class201.field3834.setLocation(40, 40);
         } catch (Exception var3) {
@@ -519,7 +519,7 @@ public class client extends GameShell {
                 class6.field83 = 20;
             }
         } else if (class32.field519 == 45) {
-            class44.method284(2, (byte) -104, !class245.field4499, 22050);
+            scene.method284(2, (byte) -104, !class245.lowMemory, 22050);
             class170 var35 = new class170();
             var35.method1211(9, 2059290670, 128);
             class27.field458 = class220.method1485(0, class154.field2977, class126.field2326, (byte) -120, 22050);
@@ -610,7 +610,7 @@ public class client extends GameShell {
                 ClientStream.method912((byte) 64, class85.field1546);
                 class135.method900(class85.field1546, 28809);
                 class199.method1366((byte) 113, class233.field4367, class85.field1546);
-                class27.method166(class109.field2006, -70, class233.field4367, class67.field1215, class245.field4499);
+                class27.method166(class109.field2006, -70, class233.field4367, class67.field1215, class245.lowMemory);
                 class47.method357(-96, class161.field3115, class233.field4367);
                 class189.method1320(class67.field1215, class248.field4552, class154.field2968, class233.field4367, (byte) 17);
                 class18.method91(class85.field1546, false);
@@ -775,7 +775,7 @@ public class client extends GameShell {
                 class131.method883(10, 65536);
             }
         } else if (class155.field2996.method964((byte) 105)) {
-            class68 var59 = new class68(class66.field1193, class155.field2996, class226.field4245, 20, class245.field4499);
+            class68 var59 = new class68(class66.field1193, class155.field2996, class226.field4245, 20, class245.lowMemory);
             class173.method1238(var59);
             class173.method1226(0.7F);
             class209.field3965 = class138.field2571;
@@ -843,7 +843,7 @@ public class client extends GameShell {
         } else if (class229.gameState > 0) {
             try {
                 Graphics var7 = var6.getGraphics();
-                class202.field3854.method246(0, -14013488, 0, var7);
+                class202.field3854.draw(0, 0, var7);
                 for (int var8 = 0; var8 < class206.field3925; var8++) {
                     class211.field4007[var8] = false;
                 }
@@ -875,7 +875,7 @@ public class client extends GameShell {
         Canvas var8 = class154.field2977;
         try {
             Graphics var9 = var8.getGraphics();
-            class202.field3854.method246(0, -14013488, 0, var9);
+            class202.field3854.draw(0, 0, var9);
         } catch (Exception var10) {
             var8.repaint();
         }
@@ -999,7 +999,7 @@ public class client extends GameShell {
         class188.method1315(true);
         class130.method882(-14445);
         class174.method1249((byte) -58);
-        class44.method283((byte) -59);
+        scene.method283((byte) -59);
         class248.method1616((byte) 106);
         class154.method1055(-1);
         class29.method178(arg0 - 16136);
@@ -1024,7 +1024,7 @@ public class client extends GameShell {
         class14.method68(95);
         class110.method762(true);
         class25.method136(true);
-        class52.method386(3353893);
+        Ground.method386(3353893);
         class108.method738((byte) 9);
         class13.method66(arg0 ^ 0x1A);
         class145.method973(-126);

@@ -61,13 +61,13 @@ public class class95 {
                     boolean var2 = false;
                     if (class244.field4493[var1] == null) {
                         var2 = true;
-                        class244.field4493[var1] = new class44();
+                        class244.field4493[var1] = new scene();
                         if (class77.field1397[var1] != null) {
-                            class244.field4493[var1].method285(class77.field1397[var1], true);
+                            class244.field4493[var1].setAppearance(class77.field1397[var1], true);
                         }
                     }
                     class174.field3430[class55.field1027++] = var1;
-                    class44 var3 = class244.field4493[var1];
+                    scene var3 = class244.field4493[var1];
                     var3.field4083 = class117.field2115;
                     int var4 = class6.field75[class230.field4314.method28(3, -315)];
                     if (var2) {

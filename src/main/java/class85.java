@@ -213,7 +213,7 @@ public class class85 extends class23 {
         for (int var0 = 0; var0 < class11.field152; ++var0) {
             for (int var5 = 0; var5 < class48.field899; ++var5) {
                 for (int var6 = 0; var6 < class66.field1202; ++var6) {
-                    class29.field489[var0][var5][var6] = null;
+                    class29.levelTiles[var0][var5][var6] = null;
                 }
             }
         }

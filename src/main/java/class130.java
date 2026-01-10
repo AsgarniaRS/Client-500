@@ -77,7 +77,7 @@ public abstract class class130 {
             return;
         }
         int var3 = -32 % ((-arg0 - 7) / 53);
-        class34.field594 = class44.field760 + class119.field2183 - var2.field4487;
+        class34.field594 = scene.field760 + class119.field2183 - var2.field4487;
         class189.field3661 = var2.field4485 - class16.field239;
         int var4 = class34.field594 - (int) ((double) class90.field1707.field3424 / class59.field1110);
         int var5 = class189.field3661 - (int) ((double) class90.field1707.field3382 / class59.field1110);
@@ -92,8 +92,8 @@ public abstract class class130 {
         if (var4 < 0) {
             class34.field594 = (int) ((double) class90.field1707.field3424 / class59.field1110);
         }
-        if (var7 > class44.field760) {
-            class34.field594 = class44.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
+        if (var7 > scene.field760) {
+            class34.field594 = scene.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
         }
     }
 

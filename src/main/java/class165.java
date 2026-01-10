@@ -528,9 +528,9 @@ public class class165 {
                                             if (class220.field4166 == var65) {
                                                 var65 = 2047;
                                             }
-                                            class44 var66 = class244.field4493[var65];
+                                            scene var66 = class244.field4493[var65];
                                             class109 var67 = var63 == -1 ? null : class15.method75(var63, (byte) -38);
-                                            if (var66 != null && (int) var66.field766.method630(false) << 11 == (var11.field3411 & 0xFFFFF800)) {
+                                            if (var66 != null && (int) var66.name.method630(false) << 11 == (var11.field3411 & 0xFFFFF800)) {
                                                 var62 = var66.field768.method1432(null, 1549114312, var11.field3381, 0, var67);
                                             }
                                         }
@@ -772,7 +772,7 @@ public class class165 {
     public static final void method1139(int arg0, int arg1, int arg2, int arg3, int arg4) {
         class126.field2332 = class109.field1990 * arg3 / arg1;
         field3161++;
-        class157.field3035 = class44.field760 * arg2 / arg4;
+        class157.field3035 = scene.field760 * arg2 / arg4;
         class34.field594 = -1;
         class189.field3661 = -1;
         class245.method1606(0);

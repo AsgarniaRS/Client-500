@@ -329,7 +329,7 @@ public class class99 {
     }
 
     @OriginalMember(owner = "client!ja", name = "a", descriptor = "(IIIIIIIIIIIZ)Z")
-    public static final boolean method692(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, boolean arg11) {
+    public static final boolean tryMove(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10, boolean arg11) {
         field1807++;
         for (int var12 = 0; var12 < 104; var12++) {
             for (int var31 = 0; var31 < 104; var31++) {
@@ -431,7 +431,7 @@ public class class99 {
                 var32 = var32 + 1 & 0xFFF;
             }
         }
-        class120.field2188 = 0;
+        class120.tryMoveNearest = 0;
         if (!var18) {
             if (!arg11) {
                 return false;
@@ -470,7 +470,7 @@ public class class99 {
             if (arg3 == var13 && arg2 == var14) {
                 return false;
             }
-            class120.field2188 = 1;
+            class120.tryMoveNearest = 1;
         }
         byte var27 = 0;
         class120.field2205[var27] = var13;

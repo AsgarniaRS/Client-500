@@ -21,7 +21,7 @@ public class class112 {
         class70.field1273 = class93.field1749;
         class71.field1326 = class20.field320;
         class236.field4400 = class237.field4416;
-        class16.field242 = class52.field938;
+        class16.field242 = Ground.field938;
         class33.field530 = class33.field552;
         class93.field1742 = class244.field4496;
         class57.field1086 = class32.field520;
@@ -70,7 +70,7 @@ public class class112 {
         class70.field1282 = class208.field3949;
         class230.field4297 = class229.field4288;
         class70.field1286 = class101.field1836;
-        class138.field2571 = class44.field767;
+        class138.field2571 = scene.field767;
         class192.field3697 = class189.field3663;
         class70.field1295 = class1.field5;
         class70.field1298 = class62.field1145;
@@ -229,7 +229,7 @@ public class class112 {
                 if (var13 < 0 || var20 < 0 || var13 >= class48.field899 || var20 >= class66.field1202) {
                     return false;
                 }
-                class52 var21 = class29.field489[arg0][var13][var20];
+                Ground var21 = class29.levelTiles[arg0][var13][var20];
                 if (var21 != null && var21.field962 >= 5) {
                     return false;
                 }
@@ -263,11 +263,11 @@ public class class112 {
                     var17 += 2;
                 }
                 for (int var18 = arg0; var18 >= 0; var18--) {
-                    if (class29.field489[var18][var15][var16] == null) {
-                        class29.field489[var18][var15][var16] = new class52(var18, var15, var16);
+                    if (class29.levelTiles[var18][var15][var16] == null) {
+                        class29.levelTiles[var18][var15][var16] = new Ground(var18, var15, var16);
                     }
                 }
-                class52 var19 = class29.field489[arg0][var15][var16];
+                Ground var19 = class29.levelTiles[arg0][var15][var16];
                 var19.field963[var19.field962] = var14;
                 var19.field957[var19.field962] = var17;
                 var19.field954 |= var17;
@@ -291,7 +291,7 @@ public class class112 {
 
     @OriginalMember(owner = "client!kc", name = "a", descriptor = "(III)J")
     public static final long method772(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         if (var3 == null) {
             return 0L;
         }

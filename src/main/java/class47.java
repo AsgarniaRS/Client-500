@@ -198,7 +198,7 @@ public class class47 extends class136 {
         if (!class10.field145 || arg0 > -79) {
             return;
         }
-        class174 var1 = class36.method238(client.field569, class16.field249, true);
+        class174 var1 = class36.method238(Client.field569, class16.field249, true);
         if (var1 != null && var1.field3442 != null) {
             class39 var2 = new class39();
             var2.field678 = var1;

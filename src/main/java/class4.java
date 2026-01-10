@@ -67,7 +67,7 @@ public class class4 extends class136 {
         }
         int var4 = arg1 - arg3.field3424 / 2;
         int var5 = arg0 - arg3.field3382 / 2;
-        int var6 = class52.field943 + class207.field3932 & 0x7FF;
+        int var6 = Ground.field943 + class207.field3932 & 0x7FF;
         int var7 = class173.field3356[var6];
         int var8 = class173.field3361[var6];
         int var9 = (class65.field1185 + 256) * var7 >> 8;
@@ -87,12 +87,12 @@ public class class4 extends class136 {
         class146.out.p1(255, var4);
         class146.out.method305(99, class207.field3932);
         class146.out.p1(255, 57);
-        class146.out.p1(255, class52.field943);
+        class146.out.p1(255, Ground.field943);
         class146.out.p1(255, class65.field1185);
         class146.out.p1(arg2 + 11792, 89);
         class146.out.method305(101, class240.field4458.field4138);
         class146.out.method305(110, class240.field4458.field4123);
-        class146.out.p1(255, class120.field2188);
+        class146.out.p1(255, class120.tryMoveNearest);
         class146.out.p1(arg2 + 11792, 63);
     }
 

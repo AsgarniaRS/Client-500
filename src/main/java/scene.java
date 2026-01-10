@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!dj")
-public class class44 extends class218 {
+public class scene extends class218 {
 
     @OriginalMember(owner = "client!dj", name = "Qb", descriptor = "I")
     public int field750 = -1;
 
     @OriginalMember(owner = "client!dj", name = "Nb", descriptor = "I")
-    public int field747 = 0;
+    public int combatLevel = 0;
 
     @OriginalMember(owner = "client!dj", name = "Sb", descriptor = "I")
     public int field752 = 0;
@@ -101,18 +101,18 @@ public class class44 extends class218 {
     public class30 field758;
 
     @OriginalMember(owner = "client!dj", name = "gc", descriptor = "Li;")
-    public class88 field766;
+    public class88 name;
 
     @OriginalMember(owner = "client!dj", name = "Gb", descriptor = "[I")
     public static int[] field740;
 
     @OriginalMember(owner = "client!dj", name = "e", descriptor = "(I)V")
-    public static final void method281(int arg0) {
-        class161.field3107 = arg0;
-        for (int var1 = 0; var1 < class48.field899; ++var1) {
-            for (int var2 = 0; var2 < class66.field1202; ++var2) {
-                if (class29.field489[arg0][var1][var2] == null) {
-                    class29.field489[arg0][var1][var2] = new class52(arg0, var1, var2);
+    public static final void setMinlevel(int level) {
+        class161.setMinLevel = level;
+        for (int x = 0; x < class48.field899; ++x) {
+            for (int z = 0; z < class66.field1202; ++z) {
+                if (class29.levelTiles[level][x][z] == null) {
+                    class29.levelTiles[level][x][z] = new Ground(level, x, z);
                 }
             }
         }
@@ -145,7 +145,7 @@ public class class44 extends class218 {
                                 this.method286(arg2, 360000, arg3, arg7, arg1, arg5, arg0, var20, arg4, var15.field2138, var13, arg6, var19);
                             }
                             if (var15.field2141 == 10 && var15.field2148 >= 0 && var15.field2148 < class244.field4493.length) {
-                                class44 var21 = class244.field4493[var15.field2148];
+                                scene var21 = class244.field4493[var15.field2148];
                                 if (var21 != null) {
                                     int var22 = var21.field4138 / 32 - class240.field4458.field4138 / 32;
                                     int var23 = var21.field4123 / 32 + -(class240.field4458.field4123 / 32);
@@ -312,7 +312,7 @@ public class class44 extends class218 {
     }
 
     @OriginalMember(owner = "client!dj", name = "a", descriptor = "(Lea;Z)V")
-    public final void method285(Packet arg0, boolean arg1) {
+    public final void setAppearance(Packet arg0, boolean arg1) {
         arg0.pos = 0;
         int var3 = arg0.g1(26119);
         ++field746;
@@ -392,8 +392,8 @@ public class class44 extends class218 {
             if (~super.field4106 == -65536) {
                 super.field4106 = -1;
             }
-            this.field766 = class200.method1377(arg0.method321(1054632416), (byte) 61).method614((byte) 83);
-            this.field747 = arg0.g1(26119);
+            this.name = class200.method1377(arg0.method321(1054632416), (byte) 61).method614((byte) 83);
+            this.combatLevel = arg0.g1(26119);
             if (!var5) {
                 this.field749 = 0;
             } else {

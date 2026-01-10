@@ -57,7 +57,7 @@ public class class226 extends class136 {
     public static class22 field4245;
 
     @OriginalMember(owner = "client!uh", name = "a", descriptor = "(BIILdj;)V")
-    public static final void method1517(byte arg0, int arg1, int arg2, class44 arg3) {
+    public static final void method1517(byte arg0, int arg1, int arg2, scene arg3) {
         if (arg0 != -31) {
             field4249 = 74;
         }

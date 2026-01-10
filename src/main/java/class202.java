@@ -127,7 +127,7 @@ public class class202 {
 
     @OriginalMember(owner = "client!sf", name = "d", descriptor = "(I)V")
     public static final void method1387(int arg0) {
-        client.field563 = 0;
+        Client.field563 = 0;
         int var1 = (class240.field4458.field4138 >> 7) + class223.field4214;
         if (arg0 != 0) {
             method1387(18);
@@ -135,19 +135,19 @@ public class class202 {
         field3846++;
         int var2 = (class240.field4458.field4123 >> 7) + class190.field3681;
         if (var1 >= 3053 && var1 <= 3156 && var2 >= 3056 && var2 <= 3136) {
-            client.field563 = 1;
+            Client.field563 = 1;
         }
         if (var1 >= 3072 && var1 <= 3118 && var2 >= 9492 && var2 <= 9535) {
-            client.field563 = 1;
+            Client.field563 = 1;
         }
-        if (client.field563 == 1 && var1 >= 3139 && var1 <= 3199 && var2 >= 3008 && var2 <= 3062) {
-            client.field563 = 0;
+        if (Client.field563 == 1 && var1 >= 3139 && var1 <= 3199 && var2 >= 3008 && var2 <= 3062) {
+            Client.field563 = 0;
         }
     }
 
     @OriginalMember(owner = "client!sf", name = "a", descriptor = "(IIIJ)Z")
     public static final boolean method1388(int arg0, int arg1, int arg2, long arg3) {
-        class52 var5 = class29.field489[arg0][arg1][arg2];
+        Ground var5 = class29.levelTiles[arg0][arg1][arg2];
         if (var5 == null) {
             return false;
         } else if (var5.field959 != null && var5.field959.field3030 == arg3) {

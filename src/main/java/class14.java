@@ -47,7 +47,7 @@ public class class14 extends RuntimeException {
     public static short[] field219;
 
     @OriginalMember(owner = "client!bb", name = "e", descriptor = "[[[Leg;")
-    public static class52[][][] field211;
+    public static Ground[][][] field211;
 
     @OriginalMember(owner = "client!bb", name = "a", descriptor = "(I)V")
     public static void method68(int arg0) {

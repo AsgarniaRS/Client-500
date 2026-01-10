@@ -95,13 +95,13 @@ public class class16 {
                 arg1.field3411 = -1;
                 arg1.field3432 = 5;
             } else if (var2 == 328) {
-                if (class240.field4458.field766 == null) {
+                if (class240.field4458.name == null) {
                     arg1.field3411 = 0;
                 } else {
                     arg1.field3457 = 150;
                     arg1.field3511 = (int) (Math.sin((double) class117.field2115 / 40.0D) * 256.0D) & 0x7FF;
                     arg1.field3432 = 5;
-                    arg1.field3411 = ((int) class240.field4458.field766.method630(false) << 11) + 2047;
+                    arg1.field3411 = ((int) class240.field4458.name.method630(false) << 11) + 2047;
                     arg1.field3406 = class240.field4458.field4108;
                     arg1.field3381 = class240.field4458.field4129;
                 }
@@ -125,7 +125,7 @@ public class class16 {
         class55.field1027 = 0;
         for (int var4 = 0; var4 < var1; var4++) {
             int var5 = class174.field3430[var4];
-            class44 var6 = class244.field4493[var5];
+            scene var6 = class244.field4493[var5];
             int var7 = class230.field4314.method28(1, -315);
             if (var7 == 0) {
                 class174.field3430[class55.field1027++] = var5;

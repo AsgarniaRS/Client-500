@@ -148,7 +148,7 @@ public class class153 extends class67 {
             } else {
                 var5 = class174.field3430[var1];
             }
-            class44 var6 = class244.field4493[var5];
+            scene var6 = class244.field4493[var5];
             if (var6 != null && var6.field4114 > 0) {
                 var6.field4114--;
                 if (var6.field4114 == 0) {

@@ -104,7 +104,7 @@ public class class65 extends class67 {
                     class221.method1495(35);
                     return;
                 }
-                class88 var8 = class166.method1142(new class88[] { class95.field1772, var6.field1262, class159.field3078, class170.method1214(class126.field2350, -80), class4.field63, class170.method1214(class245.field4499 ? 1 : 0, -116), class2.field21, class170.method1214(class143.field2659, -102), class74.field1351, class170.method1214(class70.field1281, -89) }, -3);
+                class88 var8 = class166.method1142(new class88[] { class95.field1772, var6.field1262, class159.field3078, class170.method1214(class126.field2350, -80), class4.field63, class170.method1214(class245.lowMemory ? 1 : 0, -116), class2.field21, class170.method1214(class143.field2659, -102), class74.field1351, class170.method1214(class70.field1281, -89) }, -3);
                 try {
                     arg0.getAppletContext().showDocument(var8.method606(true), "_self");
                 } catch (Exception var10) {

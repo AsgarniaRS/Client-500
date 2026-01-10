@@ -891,7 +891,7 @@ public class Packet extends class67 {
             var9++;
         }
         int var12 = (arg0 - arg4 << 16) / var10;
-        if (class44.field760 > arg5) {
+        if (scene.field760 > arg5) {
             var10++;
         }
         for (int var13 = 0; var13 < var9; var13++) {

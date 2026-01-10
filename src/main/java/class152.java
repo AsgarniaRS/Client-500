@@ -69,7 +69,7 @@ public class class152 extends class23 {
     public static final void method1040(class144 arg0, class144 arg1, int arg2, class144 arg3) {
         class110.field2011 = arg1.method966(class39.field689, (byte) -3);
         class151.field2934 = arg3.method966(class62.field1143, (byte) -3);
-        class104.field1898 = arg3.method966(client.field561, (byte) -3);
+        class104.field1898 = arg3.method966(Client.field561, (byte) -3);
         ++field2948;
         class157.field3021 = arg3.method966(class116.field2091, (byte) -3);
         class245.field4504 = arg3.method966(class20.field316, (byte) -3);

@@ -1,6 +1,5 @@
 import java.awt.Component;
 import java.awt.Graphics;
-import java.awt.Point;
 import java.awt.Shape;
 import java.awt.image.BufferedImage;
 import java.awt.image.DataBufferInt;
@@ -15,40 +14,34 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class76 extends class228 {
 
     @OriginalMember(owner = "client!gj", name = "q", descriptor = "Ljava/awt/Component;")
-    private Component field1365;
+    private Component component;
 
     @OriginalMember(owner = "client!gj", name = "a", descriptor = "(IIZLjava/awt/Component;)V")
-    public final void method243(int arg0, int arg1, boolean arg2, Component arg3) {
-        this.field4273 = arg0;
-        this.field4271 = new int[arg0 * arg1 + 1];
-        this.field4276 = arg1;
+    public final void method243(int arg0, int arg1, boolean arg2, Component component) {
+        this.height = arg0;
+        this.data = new int[arg0 * arg1 + 1];
+        this.width = arg1;
         if (!arg2) {
             return;
         }
-        DataBufferInt var5 = new DataBufferInt(this.field4271, this.field4271.length);
+        DataBufferInt var5 = new DataBufferInt(this.data, this.data.length);
         DirectColorModel var6 = new DirectColorModel(32, 16711680, 65280, 255);
-        WritableRaster var7 = Raster.createWritableRaster(var6.createCompatibleSampleModel(this.field4276, this.field4273), var5, null);
-        this.field4274 = new BufferedImage(var6, var7, false, new Hashtable());
-        this.field1365 = arg3;
+        WritableRaster var7 = Raster.createWritableRaster(var6.createCompatibleSampleModel(this.width, this.height), var5, null);
+        this.image = new BufferedImage(var6, var7, false, new Hashtable());
+        this.component = component;
         this.method1523(3739);
     }
 
     @OriginalMember(owner = "client!gj", name = "a", descriptor = "(BIIIILjava/awt/Graphics;)V")
-    public final void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5) {
-        Shape var7 = arg5.getClip();
-        if (arg0 < 66) {
-            this.field1365 = null;
-        }
-        arg5.clipRect(arg4, arg3, arg2, arg1);
-        arg5.drawImage(this.field4274, 0, 0, this.field1365);
-        arg5.setClip(var7);
+    public final void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics g) {
+        Shape shape = g.getClip();
+        g.clipRect(arg4, arg3, arg2, arg1);
+        g.drawImage(this.image, 0, 0, this.component);
+        g.setClip(shape);
     }
 
     @OriginalMember(owner = "client!gj", name = "a", descriptor = "(IIILjava/awt/Graphics;)V")
-    public final void method246(int arg0, int arg1, int arg2, Graphics arg3) {
-        if (arg1 != -14013488) {
-            this.method246(-50, -94, -81, null);
-        }
-        arg3.drawImage(this.field4274, arg2, arg0, this.field1365);
+    public final void draw(int y, int x, Graphics g) {
+        g.drawImage(this.image, x, y, this.component);
     }
 }

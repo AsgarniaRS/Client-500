@@ -318,7 +318,6 @@ public class class209 {
     @OriginalMember(owner = "client!tb", name = "a", descriptor = "(BII)V")
     public final void method1434(byte arg0, int arg1, int arg2) {
         this.field3964[arg2] = arg1;
-        int var4 = 83 % ((-arg0 - 16) / 51);
         field3962++;
         this.method1431(0);
     }
@@ -333,7 +332,6 @@ public class class209 {
         field3970 = null;
         field3978 = null;
         field3969 = null;
-        int var1 = -49 / ((-arg0 - 5) / 62);
         field3965 = null;
         field3983 = null;
     }

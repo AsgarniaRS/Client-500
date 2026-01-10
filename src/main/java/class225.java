@@ -91,7 +91,7 @@ public class class225 {
         }
         class88 var5 = arg0.field2343;
         if (arg0.field2333 != 0) {
-            var5 = class166.method1142(new class88[] { var5, class168.method1154(arg0.field2333, class240.field4458.field747, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.field2333, arg2 ^ 0x394D), class104.field1881 }, arg2 ^ 0xFFFFC6B4);
+            var5 = class166.method1142(new class88[] { var5, class168.method1154(arg0.field2333, class240.field4458.combatLevel, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.field2333, arg2 ^ 0x394D), class104.field1881 }, arg2 ^ 0xFFFFC6B4);
         }
         if (class28.field475 == 1) {
             class24.field384++;
@@ -131,7 +131,7 @@ public class class225 {
                     if (var6[var9] != null && var6[var9].method624(class158.field3043, (byte) 55)) {
                         class110.field2021++;
                         short var10 = 0;
-                        if (arg0.field2333 > class240.field4458.field747) {
+                        if (arg0.field2333 > class240.field4458.combatLevel) {
                             var10 = 2000;
                         }
                         short var11 = 0;
@@ -172,7 +172,7 @@ public class class225 {
         int var8 = 15 % ((arg5 + 12) / 36);
         field4223++;
         if (arg1 == arg2) {
-            client.method216(arg2, arg6, arg4, arg7, -14871, arg0, arg3);
+            Client.method216(arg2, arg6, arg4, arg7, -14871, arg0, arg3);
         } else if (arg3 - arg2 >= class67.field1207 && arg2 + arg3 <= class12.field183 && class49.field919 <= arg7 - arg1 && class18.field279 >= arg1 + arg7) {
             class23.method126(arg3, arg0, arg1, arg6, arg4, -81, arg7, arg2);
         } else {

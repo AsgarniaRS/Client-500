@@ -105,16 +105,16 @@ public class class139 extends class23 {
     }
 
     @OriginalMember(owner = "client!mh", name = "a", descriptor = "(IIIILdj;)V")
-    public static final void method924(int arg0, int arg1, int arg2, int arg3, class44 arg4) {
+    public static final void method924(int arg0, int arg1, int arg2, int arg3, scene arg4) {
         ++field2583;
         if (arg1 == 31) {
             if (class240.field4458 != arg4) {
                 if (class203.field3864 < 400) {
                     class88 var5;
                     if (~arg4.field749 == -1) {
-                        var5 = class166.method1142(new class88[] { arg4.field766, class168.method1154(arg4.field747, class240.field4458.field747, arg1 ^ 14069), class68.field1238, class145.field2719, class170.method1214(arg4.field747, arg1 + -150), class104.field1881 }, -3);
+                        var5 = class166.method1142(new class88[] { arg4.name, class168.method1154(arg4.combatLevel, class240.field4458.combatLevel, arg1 ^ 14069), class68.field1238, class145.field2719, class170.method1214(arg4.combatLevel, arg1 + -150), class104.field1881 }, -3);
                     } else {
-                        var5 = class166.method1142(new class88[] { arg4.field766, class68.field1238, class143.field2639, class170.method1214(arg4.field749, arg1 ^ -116), class104.field1881 }, -3);
+                        var5 = class166.method1142(new class88[] { arg4.name, class68.field1238, class143.field2639, class170.method1214(arg4.field749, arg1 ^ -116), class104.field1881 }, -3);
                     }
                     if (class28.field475 != 1) {
                         if (!class10.field145) {
@@ -123,7 +123,7 @@ public class class139 extends class23 {
                                     ++class143.field2650;
                                     short var7 = 0;
                                     if (~class47.field884 == -1 && class130.field2438[var6].method624(class158.field3043, (byte) 123)) {
-                                        if (arg4.field747 > class240.field4458.field747) {
+                                        if (arg4.combatLevel > class240.field4458.combatLevel) {
                                             var7 = 2000;
                                         }
                                         if (~class240.field4458.field752 != -1 && arg4.field752 != 0) {

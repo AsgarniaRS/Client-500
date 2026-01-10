@@ -118,7 +118,7 @@ public class class115 {
         int var2 = 14 % ((arg0 + 76) / 46);
         class110.field2014 = false;
         class2.field25 = -1;
-        class44.method288(-25844);
+        scene.method288(-25844);
         class131.method883(10, 65536);
     }
 

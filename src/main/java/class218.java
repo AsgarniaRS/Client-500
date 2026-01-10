@@ -237,9 +237,9 @@ public abstract class class218 extends class145 {
             while (var3 < arg0.length) {
                 int var4 = (arg0[var3++] & 0xFF) * 64 - class16.field239;
                 int var5 = (arg0[var3++] & 0xFF) * 64 - class119.field2183;
-                if (var4 > 0 && var5 > 0 && var4 + 64 < class109.field1990 && class44.field760 > var5 + 64) {
+                if (var4 > 0 && var5 > 0 && var4 + 64 < class109.field1990 && scene.field760 > var5 + 64) {
                     int var6 = var4 >> 6;
-                    int var7 = class44.field760 - var5 - 1 >> 6;
+                    int var7 = scene.field760 - var5 - 1 >> 6;
                     for (int var8 = 0; var8 < 64; var8++) {
                         for (int var9 = -64; var9 < 0; var9++) {
                             byte var10 = arg0[var3++];

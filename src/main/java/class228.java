@@ -32,13 +32,13 @@ public abstract class class228 {
     public static int field4270;
 
     @OriginalMember(owner = "client!uj", name = "e", descriptor = "I")
-    public int field4273;
+    public int height;
 
     @OriginalMember(owner = "client!uj", name = "g", descriptor = "I")
     public static int field4275;
 
     @OriginalMember(owner = "client!uj", name = "h", descriptor = "I")
-    public int field4276;
+    public int width;
 
     @OriginalMember(owner = "client!uj", name = "k", descriptor = "I")
     public static int field4279;
@@ -50,17 +50,14 @@ public abstract class class228 {
     public static int field4284;
 
     @OriginalMember(owner = "client!uj", name = "f", descriptor = "Ljava/awt/Image;")
-    public Image field4274;
+    public Image image;
 
     @OriginalMember(owner = "client!uj", name = "c", descriptor = "[I")
-    public int[] field4271;
+    public int[] data;
 
     @OriginalMember(owner = "client!uj", name = "a", descriptor = "(I)V")
     public final void method1523(int arg0) {
-        if (arg0 != 3739) {
-            field4282 = null;
-        }
-        class72.method496(this.field4271, this.field4276, this.field4273);
+        class72.method496(this.data, this.width, this.height);
         field4281++;
     }
 
@@ -113,7 +110,7 @@ public abstract class class228 {
     }
 
     @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIILjava/awt/Graphics;)V")
-    public abstract void method246(int arg0, int arg1, int arg2, Graphics arg3);
+    public abstract void draw(int x, int y, Graphics g);
 
     @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIBI)I")
     public static final int method1527(int arg0, int arg1, byte arg2, int arg3) {

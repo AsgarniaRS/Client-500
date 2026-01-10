@@ -233,7 +233,7 @@ public class class57 extends class23 {
     public static final void method418(int arg0, int arg1, int arg2, int arg3, class174 arg4, class188 arg5, int arg6) {
         ++field1082;
         if (arg5 != null) {
-            int var7 = 2047 & class52.field943 + class207.field3932;
+            int var7 = 2047 & Ground.field943 + class207.field3932;
             int var8 = arg3 * arg3 + arg6 * arg6;
             int var9 = 10 + Math.max(arg4.field3382 / 2, arg4.field3424 / 2);
             if (~var8 >= ~(var9 * var9)) {

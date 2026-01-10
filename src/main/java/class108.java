@@ -199,7 +199,7 @@ public class class108 {
                 class228.field4269[var13 + 1][var14 + 1] = var30;
             }
         }
-        class120.field2188 = 0;
+        class120.tryMoveNearest = 0;
         if (!var16) {
             if (!arg0) {
                 return false;
@@ -238,7 +238,7 @@ public class class108 {
             if (arg5 == var13 && arg1 == var14) {
                 return false;
             }
-            class120.field2188 = 1;
+            class120.tryMoveNearest = 1;
         }
         byte var27 = 0;
         class120.field2205[var27] = var13;

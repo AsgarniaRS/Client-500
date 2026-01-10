@@ -58,12 +58,12 @@ public class class24 {
     public static final void method131(boolean arg0) {
         if (arg0) {
             class62.field1137 = class154.field2981;
-            class29.field489 = class78.field1416;
+            class29.levelTiles = class78.field1416;
         } else {
             class62.field1137 = class145.field2723;
-            class29.field489 = class14.field211;
+            class29.levelTiles = class14.field211;
         }
-        class11.field152 = class29.field489.length;
+        class11.field152 = class29.levelTiles.length;
     }
 
     @OriginalMember(owner = "client!ca", name = "a", descriptor = "(B)V")

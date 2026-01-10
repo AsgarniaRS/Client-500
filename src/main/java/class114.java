@@ -173,7 +173,7 @@ public class class114 extends class136 {
         if (arg7 < 1 || arg2 < 1 || arg7 > 102 || arg2 > 102) {
             return;
         }
-        if (class245.field4499 && (class116.field2100[0][arg7][arg2] & 0x2) == 0) {
+        if (class245.lowMemory && (class116.field2100[0][arg7][arg2] & 0x2) == 0) {
             int var8 = arg0;
             if ((class116.field2100[arg0][arg7][arg2] & 0x8) != 0) {
                 var8 = 0;

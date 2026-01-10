@@ -82,7 +82,7 @@ public class class54 {
 
     @OriginalMember(owner = "client!ei", name = "a", descriptor = "(III)Lpc;")
     public static final class166 method397(int arg0, int arg1, int arg2) {
-        class52 var3 = class29.field489[arg0][arg1][arg2];
+        Ground var3 = class29.levelTiles[arg0][arg1][arg2];
         return var3 == null || var3.field949 == null ? null : var3.field949;
     }
 }

@@ -300,7 +300,7 @@ public class class119 {
 
     @OriginalMember(owner = "client!kj", name = "a", descriptor = "([IIIIII)V")
     public static final void method817(int[] arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
-        class52 var6 = class29.field489[arg3][arg4][arg5];
+        Ground var6 = class29.levelTiles[arg3][arg4][arg5];
         if (var6 == null) {
             return;
         }

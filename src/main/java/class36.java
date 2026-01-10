@@ -129,10 +129,10 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
     public static class174 field635;
 
     @OriginalMember(owner = "client!db", name = "y", descriptor = "Ljava/awt/image/ColorModel;")
-    private ColorModel field630;
+    private ColorModel colorModel;
 
     @OriginalMember(owner = "client!db", name = "F", descriptor = "Ljava/awt/image/ImageConsumer;")
-    private ImageConsumer field637;
+    private ImageConsumer consumer;
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IIZ)Lq;")
     public static final class174 method238(int arg0, int arg1, boolean arg2) {
@@ -150,16 +150,14 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
 
     @OriginalMember(owner = "client!db", name = "startProduction", descriptor = "(Ljava/awt/image/ImageConsumer;)V")
     public final void startProduction(ImageConsumer arg0) {
-        ++field638;
         this.addConsumer(arg0);
     }
 
     @OriginalMember(owner = "client!db", name = "removeConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)V")
     public final synchronized void removeConsumer(ImageConsumer arg0) {
-        if (this.field637 == arg0) {
-            this.field637 = null;
+        if (this.consumer == arg0) {
+            this.consumer = null;
         }
-        ++field622;
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IZ)V")
@@ -202,7 +200,6 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
         field649 = null;
         field656 = null;
         field635 = null;
-        int var1 = -102 % ((-53 - arg0) / 34);
         field659 = null;
         field652 = null;
         field644 = null;
@@ -245,104 +242,84 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
     public final void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5) {
         ++field648;
         if (arg0 <= 66) {
-            this.method245(-33);
+            this.setPixels();
         }
         this.method247(arg1, arg3, arg2, -120, arg4);
         Shape var7 = arg5.getClip();
         arg5.clipRect(arg4, arg3, arg2, arg1);
-        arg5.drawImage(super.field4274, 0, 0, this);
+        arg5.drawImage(super.image, 0, 0, this);
         arg5.setClip(var7);
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IIZLjava/awt/Component;)V")
     public final void method243(int arg0, int arg1, boolean arg2, Component arg3) {
-        ++field647;
-        super.field4276 = arg1;
-        super.field4273 = arg0;
-        super.field4271 = new int[arg0 * arg1 + 1];
-        this.field630 = new DirectColorModel(32, 16711680, 65280, 255);
-        super.field4274 = arg3.createImage(this);
-        if (arg2) {
-            this.method245(-1871211965);
-            arg3.prepareImage(super.field4274, this);
-            this.method245(-1871211965);
-            arg3.prepareImage(super.field4274, this);
-            this.method245(-1871211965);
-            arg3.prepareImage(super.field4274, this);
-            this.method1523(3739);
-        }
+        super.width = arg1;
+        super.height = arg0;
+        super.data = new int[arg0 * arg1 + 1];
+        this.colorModel = new DirectColorModel(32, 16711680, 65280, 255);
+
+        super.image = arg3.createImage(this);
+
+        this.setPixels();
+        arg3.prepareImage(super.image, this);
+
+        this.setPixels();
+        arg3.prepareImage(super.image, this);
+
+        this.setPixels();
+        arg3.prepareImage(super.image, this);
+
+        this.method1523(3739);
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "([BZILud;)V")
     public static final void method244(byte[] arg0, boolean arg1, int arg2, class222 arg3) {
-        ++field639;
         class90 var4 = new class90();
         var4.field1714 = arg3;
         var4.field1706 = arg0;
         var4.field1702 = 0;
         var4.field1219 = (long) arg2;
-        class248 var5 = class227.field4254;
-        synchronized (class227.field4254) {
-            class227.field4254.method1624(var4, 126);
-        }
+        class227.field4254.method1624(var4, 126);
         class146.method979((byte) -128);
-        if (!arg1) {
-            field658 = null;
-        }
     }
 
     @OriginalMember(owner = "client!db", name = "d", descriptor = "(I)V")
-    private final synchronized void method245(int arg0) {
-        ++field660;
-        if (this.field637 != null) {
-            if (arg0 != -1871211965) {
-                this.startProduction((ImageConsumer) null);
-            }
-            this.field637.setPixels(0, 0, super.field4276, super.field4273, this.field630, super.field4271, 0, super.field4276);
-            this.field637.imageComplete(2);
+    private synchronized void setPixels() {
+        if (this.consumer != null) {
+            this.consumer.setPixels(0, 0, super.width, super.height, this.colorModel, super.data, 0, super.width);
+            this.consumer.imageComplete(2);
         }
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IIILjava/awt/Graphics;)V")
-    public final void method246(int arg0, int arg1, int arg2, Graphics arg3) {
-        this.method245(-1871211965);
-        ++field641;
-        arg3.drawImage(super.field4274, arg2, arg0, this);
-        if (arg1 != -14013488) {
-            method239(-14, true);
-        }
+    public final void draw(int y, int x, Graphics g) {
+        this.setPixels();
+        g.drawImage(super.image, x, y, this);
     }
 
     @OriginalMember(owner = "client!db", name = "requestTopDownLeftRightResend", descriptor = "(Ljava/awt/image/ImageConsumer;)V")
     public final void requestTopDownLeftRightResend(ImageConsumer arg0) {
-        ++field627;
     }
 
     @OriginalMember(owner = "client!db", name = "addConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)V")
-    public final synchronized void addConsumer(ImageConsumer arg0) {
-        this.field637 = arg0;
-        ++field646;
-        arg0.setDimensions(super.field4276, super.field4273);
-        arg0.setProperties((Hashtable) null);
-        arg0.setColorModel(this.field630);
-        arg0.setHints(14);
+    public final synchronized void addConsumer(ImageConsumer c) {
+        this.consumer = c;
+        c.setDimensions(super.width, super.height);
+        c.setProperties((Hashtable) null);
+        c.setColorModel(this.colorModel);
+        c.setHints(14);
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IIIII)V")
-    private final synchronized void method247(int arg0, int arg1, int arg2, int arg3, int arg4) {
-        ++field636;
-        if (this.field637 != null) {
-            this.field637.setPixels(arg4, arg1, arg2, arg0, this.field630, super.field4271, super.field4276 * arg1 + arg4, super.field4276);
-            this.field637.imageComplete(2);
-            if (arg3 >= -96) {
-                field645 = null;
-            }
+    private synchronized void method247(int arg0, int arg1, int arg2, int arg3, int arg4) {
+        if (this.consumer != null) {
+            this.consumer.setPixels(arg4, arg1, arg2, arg0, this.colorModel, super.data, super.width * arg1 + arg4, super.width);
+            this.consumer.imageComplete(2);
         }
     }
 
     @OriginalMember(owner = "client!db", name = "isConsumer", descriptor = "(Ljava/awt/image/ImageConsumer;)Z")
-    public final synchronized boolean isConsumer(ImageConsumer arg0) {
-        ++field629;
-        return this.field637 == arg0;
+    public final synchronized boolean isConsumer(ImageConsumer consumer) {
+        return this.consumer == consumer;
     }
 }

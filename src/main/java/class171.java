@@ -224,7 +224,7 @@ public class class171 extends class23 {
             } else {
                 var2 = class174.field3430[var1];
             }
-            class44 var3 = class244.field4493[var2];
+            scene var3 = class244.field4493[var2];
             if (var3 != null) {
                 class77.method514(var3.field4105, var3, 24550);
             }
@@ -237,7 +237,7 @@ public class class171 extends class23 {
         for (int var3 = 0; var3 < class11.field152; ++var3) {
             for (int var4 = 0; var4 < class48.field899; ++var4) {
                 for (int var5 = 0; var5 < class66.field1202; ++var5) {
-                    class52 var6 = class29.field489[var3][var4][var5];
+                    Ground var6 = class29.levelTiles[var3][var4][var5];
                     if (var6 != null) {
                         class157 var7 = var6.field959;
                         if (var7 != null && var7.field3023.method544()) {

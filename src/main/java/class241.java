@@ -56,7 +56,7 @@ public abstract class class241 {
             return;
         }
         var8 -= 10;
-        int var9 = class52.field943 + class207.field3932 & 0x7FF;
+        int var9 = Ground.field943 + class207.field3932 & 0x7FF;
         int var10 = class173.field3356[var9];
         int var11 = var10 * 256 / (class65.field1185 + 256);
         int var12 = class173.field3361[var9];
@@ -94,24 +94,24 @@ public abstract class class241 {
         if (class245.field4502 == null) {
             class169 var5 = new class169(arg2, arg3);
             class72.method496(var5.field3249, arg2, arg3);
-            Packet.method348(arg3, arg2, 0, (byte) 78, 0, class44.field760, 0, class109.field1990, 0);
+            Packet.method348(arg3, arg2, 0, (byte) 78, 0, scene.field760, 0, class109.field1990, 0);
             class245.field4502 = var5;
             class202.field3854.method1523(3739);
         }
         class245.field4502.method1163(arg1, arg0);
         int var6 = class39.field693 * arg2 / class109.field1990 + arg1;
         int var7 = class71.field1309 * arg2 / class109.field1990;
-        int var8 = class43.field727 * arg3 / class44.field760 + arg0;
-        int var9 = class164.field3138 * arg3 / class44.field760;
+        int var8 = class43.field727 * arg3 / scene.field760 + arg0;
+        int var9 = class164.field3138 * arg3 / scene.field760;
         class72.method497(var6, var8, var7, var9, 16711680, arg4);
         class72.method476(var6, var8, var7, var9, 16711680);
         if (class54.field1012 <= 0 || class54.field1012 % 10 >= 5) {
             return;
         }
         for (class65 var10 = (class65) class232.field4361.method1612(false); var10 != null; var10 = (class65) class232.field4361.method1621(82)) {
-            if (class44.field772 == var10.field1180) {
+            if (scene.field772 == var10.field1180) {
                 int var11 = arg1 + var10.field1179 * arg2 / class109.field1990;
-                int var12 = var10.field1175 * arg3 / class44.field760 + arg0;
+                int var12 = var10.field1175 * arg3 / scene.field760 + arg0;
                 class72.method478(var11 - 2, var12 + -2, 4, 4, 16776960);
             }
         }
@@ -295,7 +295,7 @@ public abstract class class241 {
                 class228.field4269[var14 + 1][var15 + 1] = var31;
             }
         }
-        class120.field2188 = 0;
+        class120.tryMoveNearest = 0;
         if (!var17) {
             if (!arg7) {
                 return false;
@@ -334,7 +334,7 @@ public abstract class class241 {
             if (arg5 == var14 && arg8 == var15) {
                 return false;
             }
-            class120.field2188 = 1;
+            class120.tryMoveNearest = 1;
         }
         byte var28 = 0;
         class120.field2205[var28] = var14;
@@ -386,9 +386,9 @@ public abstract class class241 {
         class72.method487(arg5 + 1, arg3 + 16 + var7, var6, class230.field4318);
         class72.method489(arg5, arg3 + var7 + 16, 16, class230.field4318);
         class72.method489(arg5, arg1 + arg3 + var7, 16, class230.field4318);
-        class72.method487(arg5 + 15, arg3 + var7 + 16, var6, class52.field939);
-        class72.method487(arg5 + 14, arg3 - -var7 + 17, var6 - 1, class52.field939);
-        class72.method489(arg5, arg3 + var7 + var6 + 15, 16, class52.field939);
-        class72.method489(arg5 + 1, arg3 + 14 + var7 + var6, 15, class52.field939);
+        class72.method487(arg5 + 15, arg3 + var7 + 16, var6, Ground.field939);
+        class72.method487(arg5 + 14, arg3 - -var7 + 17, var6 - 1, Ground.field939);
+        class72.method489(arg5, arg3 + var7 + var6 + 15, 16, Ground.field939);
+        class72.method489(arg5 + 1, arg3 + 14 + var7 + var6, 15, Ground.field939);
     }
 }

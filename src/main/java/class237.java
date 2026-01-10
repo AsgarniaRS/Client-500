@@ -137,9 +137,9 @@ public class class237 extends class136 {
 
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(IIII)V")
     public static final void method1572(int arg0, int arg1, int arg2, int arg3) {
-        class52 var4 = class29.field489[arg0][arg1][arg2];
+        Ground var4 = class29.levelTiles[arg0][arg1][arg2];
         if (var4 != null) {
-            class29.field489[arg0][arg1][arg2].field950 = arg3;
+            class29.levelTiles[arg0][arg1][arg2].field950 = arg3;
         }
     }
 

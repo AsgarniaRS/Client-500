@@ -128,7 +128,7 @@ public class class18 extends class145 {
                             var19 = arg0[var20];
                         }
                     }
-                    class223.method1505((byte) 102, !arg4, var14, arg4, var16, var18, class245.field4499, var7, var14, var19, var15, var17);
+                    class223.method1505((byte) 102, !arg4, var14, arg4, var16, var18, class245.lowMemory, var7, var14, var19, var15, var17);
                 }
             }
         }
@@ -155,7 +155,7 @@ public class class18 extends class145 {
             if (class220.field4166 == var5) {
                 var5 = 2047;
             }
-            class44 var6 = class244.field4493[var5];
+            scene var6 = class244.field4493[var5];
             if (var6 != null) {
                 int var7 = arg0.field4138 - var6.field4138;
                 int var8 = arg0.field4123 - var6.field4123;

@@ -51,7 +51,7 @@ public class class121 {
         if (class247.field4514 == 2 || class247.field4514 == 5) {
             class72.method491(arg2, arg4, 0, arg0.field3404, arg0.field3423);
         } else {
-            int var5 = class52.field943 + class207.field3932 & 0x7FF;
+            int var5 = Ground.field943 + class207.field3932 & 0x7FF;
             int var6 = 464 - class240.field4458.field4123 / 32;
             int var7 = class240.field4458.field4138 / 32 + 48;
             ((class169) class110.field2012).method1178(arg2, arg4, arg0.field3382, arg0.field3424, var7, var6, var5, class65.field1185 + 256, arg0.field3404, arg0.field3423);
@@ -92,12 +92,12 @@ public class class121 {
                 }
             }
             for (int var11 = 0; var11 < class55.field1027; var11++) {
-                class44 var25 = class244.field4493[class174.field3430[var11]];
+                scene var25 = class244.field4493[class174.field3430[var11]];
                 if (var25 != null && var25.method287(arg3 - 59)) {
                     int var26 = var25.field4138 / 32 - class240.field4458.field4138 / 32;
                     int var27 = var25.field4123 / 32 - class240.field4458.field4123 / 32;
                     boolean var28 = false;
-                    long var29 = var25.field766.method630(false);
+                    long var29 = var25.name.method630(false);
                     for (int var31 = 0; var31 < class146.field2731; var31++) {
                         if (class115.field2088[var31] == var29 && class160.field3094[var31] != 0) {
                             var28 = true;
@@ -135,7 +135,7 @@ public class class121 {
                         class241.method1590(arg0, var20, arg4, var21, var16.field2139, (byte) 127, arg2);
                     }
                     if (var16.field2141 == 10 && var16.field2148 >= 0 && var16.field2148 < class244.field4493.length) {
-                        class44 var22 = class244.field4493[var16.field2148];
+                        scene var22 = class244.field4493[var16.field2148];
                         if (var22 != null) {
                             int var23 = var22.field4138 / 32 - class240.field4458.field4138 / 32;
                             int var24 = var22.field4123 / 32 - class240.field4458.field4123 / 32;

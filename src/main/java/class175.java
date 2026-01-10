@@ -111,7 +111,7 @@ public class class175 {
         }
         int var7 = (int) class74.field1352[arg1];
         if (var4 == 31) {
-            class44 var8 = class244.field4493[var7];
+            scene var8 = class244.field4493[var7];
             if (var8 != null) {
                 class116.field2102++;
                 class207.method1423(3044, 1, 0, var8.field4143[0], var8.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -162,9 +162,9 @@ public class class175 {
             return;
         }
         if (var4 == 30) {
-            class44 var10 = class244.field4493[var7];
+            scene var10 = class244.field4493[var7];
             if (var10 != null) {
-                class44.field770++;
+                scene.field770++;
                 class207.method1423(3044, 1, 0, var10.field4143[0], var10.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
                 class45.field796 = 0;
                 class157.field3019 = 2;
@@ -177,7 +177,7 @@ public class class175 {
         if (var4 == 40) {
             class58.field1092++;
             class146.out.method30((byte) -54, 196);
-            class146.out.method344(client.field569, (byte) -51);
+            class146.out.method344(Client.field569, (byte) -51);
             class146.out.p4(class16.field249);
             class146.out.method326(-1, var3);
             class146.out.method331(var2, 18975);
@@ -196,7 +196,7 @@ public class class175 {
             }
         }
         if (var4 == 58) {
-            class44 var12 = class244.field4493[var7];
+            scene var12 = class244.field4493[var7];
             if (var12 != null) {
                 class207.method1423(3044, 1, 0, var12.field4143[0], var12.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
                 class45.field796 = 0;
@@ -224,7 +224,7 @@ public class class175 {
         if (var4 == 39) {
             class146.out.method30((byte) -127, 35);
             class146.out.method344(var7, (byte) -51);
-            class146.out.method305(88, client.field569);
+            class146.out.method305(88, Client.field569);
             field3532++;
             class146.out.method316(class16.field249, arg0 + 15726);
             class146.out.method331(var2, 18975);
@@ -258,7 +258,7 @@ public class class175 {
             class93.field1743 = var2;
         }
         if (var4 == 1) {
-            class44 var17 = class244.field4493[var7];
+            scene var17 = class244.field4493[var7];
             if (var17 != null) {
                 class209.field3975++;
                 class207.method1423(3044, 1, 0, var17.field4143[0], var17.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -310,7 +310,7 @@ public class class175 {
             class146.out.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
         }
         if (var4 == 29) {
-            class44 var18 = class244.field4493[var7];
+            scene var18 = class244.field4493[var7];
             if (var18 != null) {
                 class120.field2203++;
                 class207.method1423(3044, 1, 0, var18.field4143[0], var18.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -394,7 +394,7 @@ public class class175 {
             return;
         }
         if (var4 == 23) {
-            class44 var24 = class244.field4493[var7];
+            scene var24 = class244.field4493[var7];
             if (var24 != null) {
                 class207.method1423(3044, 1, 0, var24.field4143[0], var24.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
                 class157.field3019 = 2;
@@ -404,7 +404,7 @@ public class class175 {
                 class145.field2717++;
                 class146.out.method30((byte) -71, 6);
                 class146.out.method344(var7, (byte) -51);
-                class146.out.method331(client.field569, 18975);
+                class146.out.method331(Client.field569, 18975);
                 class146.out.method326(-1, class16.field249);
             }
         }
@@ -521,7 +521,7 @@ public class class175 {
             class146.out.method344(class48.field905, (byte) -51);
         }
         if (var4 == 45) {
-            class44 var31 = class244.field4493[var7];
+            scene var31 = class244.field4493[var7];
             if (var31 != null) {
                 class28.field463++;
                 class207.method1423(3044, 1, 0, var31.field4143[0], var31.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -548,7 +548,7 @@ public class class175 {
             class146.out.method305(arg0 + 104, var7);
             class146.out.method314(var3 + class190.field3681, (byte) -3);
             class146.out.method351(false, class16.field249);
-            class146.out.method314(client.field569, (byte) -107);
+            class146.out.method314(Client.field569, (byte) -107);
         }
         if (var4 == 22) {
             class202.field3853++;
@@ -582,7 +582,7 @@ public class class175 {
             class34.field579++;
             class146.out.method30((byte) -80, 234);
             class146.out.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) 97);
-            class146.out.method314(client.field569, (byte) 88);
+            class146.out.method314(Client.field569, (byte) 88);
             class146.out.method316(class16.field249, 15728);
             class146.out.method314(class223.field4214 + var2, (byte) -124);
             class146.out.method305(105, class190.field3681 + var3);
@@ -697,7 +697,7 @@ public class class175 {
             class93.field1743 = var2;
         }
         if (var4 == 37) {
-            class44 var44 = class244.field4493[var7];
+            scene var44 = class244.field4493[var7];
             if (var44 != null) {
                 class151.field2926++;
                 class207.method1423(3044, 1, 0, var44.field4143[0], var44.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -710,7 +710,7 @@ public class class175 {
             }
         }
         if (var4 == 16) {
-            class44 var45 = class244.field4493[var7];
+            scene var45 = class244.field4493[var7];
             if (var45 != null) {
                 class207.method1423(3044, 1, 0, var45.field4143[0], var45.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
                 class45.field796 = 0;
@@ -732,7 +732,7 @@ public class class175 {
             class146.out.method331(var7, 18975);
         }
         if (var4 == 50) {
-            class44 var46 = class244.field4493[var7];
+            scene var46 = class244.field4493[var7];
             if (var46 != null) {
                 class14.field214++;
                 class207.method1423(3044, 1, 0, var46.field4143[0], var46.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
@@ -756,7 +756,7 @@ public class class175 {
                 class146.out.method30((byte) -51, 145);
                 class146.out.method351(false, class16.field249);
                 class146.out.method314(var7, (byte) 55);
-                class146.out.method305(123, client.field569);
+                class146.out.method305(123, Client.field569);
             }
         }
         if (var4 == 46) {
