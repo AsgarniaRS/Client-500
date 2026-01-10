@@ -120,7 +120,7 @@ public class class21 {
     }
 
     @OriginalMember(owner = "client!bi", name = "a", descriptor = "(Lea;I)Li;")
-    public static final class88 method103(class46 arg0, int arg1) {
+    public static final class88 method103(Packet arg0, int arg1) {
         field327++;
         return arg1 <= 40 ? null : class78.method524(true, arg0, 32767);
     }

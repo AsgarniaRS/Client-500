@@ -81,7 +81,7 @@ public class class152 extends class23 {
             field2947 = null;
         }
         class120.field2197 = arg3.method966(class7.field102, (byte) -3);
-        class226.field4249 = arg3.method966(class89.field1683, (byte) -3);
+        class226.field4249 = arg3.method966(CollisionMap.field1683, (byte) -3);
         class86.field1552 = arg0.method966(class119.field2158, (byte) -3);
     }
 

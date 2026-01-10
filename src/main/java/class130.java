@@ -62,9 +62,9 @@ public abstract class class130 {
         if (var2 != null) {
             return var2;
         }
-        class129 var3 = class46.method309(class148.field2780, arg0, class142.field2626, false, (byte) -122);
+        class129 var3 = Packet.method309(class148.field2780, arg0, class142.field2626, false, (byte) -122);
         if (var3 != null) {
-            class210.field3991.method664((long) arg0, var3, false);
+            class210.field3991.put((long) arg0, var3, false);
         }
         return var3;
     }

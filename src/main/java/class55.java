@@ -45,7 +45,7 @@ public class class55 {
     public static int[] field1023 = new int[] { 8, 11, 4, 6, 9, 7, 10 };
 
     @OriginalMember(owner = "client!ej", name = "s", descriptor = "Lhj;")
-    public static class87 field1032 = null;
+    public static GameShell field1032 = null;
 
     @OriginalMember(owner = "client!ej", name = "u", descriptor = "Li;")
     private static class88 field1034 = class208.method1425(105, "Please check your message)2centre for details)3");
@@ -153,6 +153,8 @@ public class class55 {
         } catch (Exception var2) {
             this.method408();
             this.field1045 = class206.method1420(false) + 2000L;
+        } catch (Throwable e) {
+            throw new RuntimeException(e);
         }
         if (arg0 >= -108) {
             this.field1044 = -67L;
@@ -543,7 +545,7 @@ public class class55 {
     }
 
     @OriginalMember(owner = "client!ej", name = "d", descriptor = "()V")
-    public void method413() throws Exception {
+    public void method413() throws Throwable {
         field1047++;
     }
 

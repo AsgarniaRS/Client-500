@@ -92,21 +92,21 @@ public class class185 {
     }
 
     @OriginalMember(owner = "client!r", name = "a", descriptor = "(Lea;Lvf;)V")
-    public final void method1307(class46 arg0, class235 arg1) {
-        int var3 = arg0.method347(26119);
+    public final void method1307(Packet arg0, class235 arg1) {
+        int var3 = arg0.g1(26119);
         this.field3622[0] = var3 >> 4;
         this.field3622[1] = var3 & 0xF;
         if (var3 == 0) {
             this.field3619[0] = this.field3619[1] = 0;
             return;
         }
-        this.field3619[0] = arg0.method301(125);
-        this.field3619[1] = arg0.method301(113);
-        int var4 = arg0.method347(26119);
+        this.field3619[0] = arg0.g2(125);
+        this.field3619[1] = arg0.g2(113);
+        int var4 = arg0.g1(26119);
         for (int var5 = 0; var5 < 2; var5++) {
             for (int var8 = 0; var8 < this.field3622[var5]; var8++) {
-                this.field3616[var5][0][var8] = arg0.method301(92);
-                this.field3618[var5][0][var8] = arg0.method301(61);
+                this.field3616[var5][0][var8] = arg0.g2(92);
+                this.field3618[var5][0][var8] = arg0.g2(61);
             }
         }
         for (int var6 = 0; var6 < 2; var6++) {
@@ -115,8 +115,8 @@ public class class185 {
                     this.field3616[var6][1][var7] = this.field3616[var6][0][var7];
                     this.field3618[var6][1][var7] = this.field3618[var6][0][var7];
                 } else {
-                    this.field3616[var6][1][var7] = arg0.method301(63);
-                    this.field3618[var6][1][var7] = arg0.method301(119);
+                    this.field3616[var6][1][var7] = arg0.g2(63);
+                    this.field3618[var6][1][var7] = arg0.g2(119);
                 }
             }
         }

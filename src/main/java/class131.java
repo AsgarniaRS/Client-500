@@ -64,22 +64,22 @@ public class class131 {
     @OriginalMember(owner = "client!m", name = "a", descriptor = "(II)V")
     public static final void method883(int arg0, int arg1) {
         field2447++;
-        if (class229.field4286 == arg0 || arg1 != 65536) {
+        if (class229.gameState == arg0 || arg1 != 65536) {
             return;
         }
-        if (class229.field4286 == 0) {
+        if (class229.gameState == 0) {
             class134.method896(arg1 ^ 0x752457A1);
         }
         if (arg0 == 20 || arg0 == 40) {
-            class117.field2119 = 0;
+            class117.loginState = 0;
             class6.field71 = 0;
             class196.field3760 = 0;
         }
-        if (arg0 != 20 && arg0 != 40 && class89.field1666 != null) {
-            class89.field1666.method919(true);
-            class89.field1666 = null;
+        if (arg0 != 20 && arg0 != 40 && CollisionMap.field1666 != null) {
+            CollisionMap.field1666.close(true);
+            CollisionMap.field1666 = null;
         }
-        if (class229.field4286 == 25) {
+        if (class229.gameState == 25) {
             class113.field2047 = 0;
             class203.field3863 = 0;
             class146.field2753 = 1;
@@ -91,7 +91,7 @@ public class class131 {
         } else {
             class202.method1386(-118);
         }
-        class229.field4286 = arg0;
+        class229.gameState = arg0;
     }
 
     @OriginalMember(owner = "client!m", name = "a", descriptor = "(I)I")
@@ -222,12 +222,12 @@ public class class131 {
     }
 
     @OriginalMember(owner = "client!m", name = "<init>", descriptor = "(Lea;)V")
-    public class131(class46 arg0) {
+    public class131(Packet arg0) {
         this.field2458 = arg0.method324(123);
-        this.field2457 = arg0.method301(36);
-        this.field2456 = arg0.method323((byte) -97);
-        this.field2452 = arg0.method323((byte) -80);
-        this.field2459 = arg0.method323((byte) -116);
-        this.field2461 = arg0.method323((byte) -118);
+        this.field2457 = arg0.g2(36);
+        this.field2456 = arg0.g4((byte) -97);
+        this.field2452 = arg0.g4((byte) -80);
+        this.field2459 = arg0.g4((byte) -116);
+        this.field2461 = arg0.g4((byte) -118);
     }
 }

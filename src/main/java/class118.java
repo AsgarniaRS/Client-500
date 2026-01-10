@@ -302,13 +302,13 @@ public class class118 {
         }
         if (class167.field3219 != null) {
             short var3 = 280;
-            if (class27.field461[0] == 0 && class89.field1687[0] == 0) {
+            if (class27.field461[0] == 0 && CollisionMap.field1687[0] == 0) {
                 class167.field3219[2].method878(var3, 4);
             } else {
                 class167.field3219[0].method878(var3, 4);
             }
             short var4 = 390;
-            if (class27.field461[0] == 0 && class89.field1687[0] == 1) {
+            if (class27.field461[0] == 0 && CollisionMap.field1687[0] == 1) {
                 class167.field3219[3].method878(var3 + 15, 4);
             } else {
                 class167.field3219[1].method878(var3 + 15, 4);
@@ -316,34 +316,34 @@ public class class118 {
             short var5 = 610;
             arg1.method154(class71.field1312, var3 + 32, 17, 16777215, -1);
             short var6 = 500;
-            if (class27.field461[0] == 1 && class89.field1687[0] == 0) {
+            if (class27.field461[0] == 1 && CollisionMap.field1687[0] == 0) {
                 class167.field3219[2].method878(var4, 4);
             } else {
                 class167.field3219[0].method878(var4, 4);
             }
-            if (class27.field461[0] == 1 && class89.field1687[0] == 1) {
+            if (class27.field461[0] == 1 && CollisionMap.field1687[0] == 1) {
                 class167.field3219[3].method878(var4 + 15, 4);
             } else {
                 class167.field3219[1].method878(var4 + 15, 4);
             }
             arg1.method154(class232.field4364, var4 + 32, 17, 16777215, -1);
-            if (class27.field461[0] == 2 && class89.field1687[0] == 0) {
+            if (class27.field461[0] == 2 && CollisionMap.field1687[0] == 0) {
                 class167.field3219[2].method878(var6, 4);
             } else {
                 class167.field3219[0].method878(var6, 4);
             }
-            if (class27.field461[0] == 2 && class89.field1687[0] == 1) {
+            if (class27.field461[0] == 2 && CollisionMap.field1687[0] == 1) {
                 class167.field3219[3].method878(var6 + 15, 4);
             } else {
                 class167.field3219[1].method878(var6 + 15, 4);
             }
             arg1.method154(class146.field2736, var6 + 32, 17, 16777215, -1);
-            if (class27.field461[0] == 3 && class89.field1687[0] == 0) {
+            if (class27.field461[0] == 3 && CollisionMap.field1687[0] == 0) {
                 class167.field3219[2].method878(var5, 4);
             } else {
                 class167.field3219[0].method878(var5, 4);
             }
-            if (class27.field461[0] == 3 && class89.field1687[0] == 1) {
+            if (class27.field461[0] == 3 && CollisionMap.field1687[0] == 1) {
                 class167.field3219[3].method878(var5 + 15, 4);
             } else {
                 class167.field3219[1].method878(var5 + 15, 4);
@@ -352,7 +352,7 @@ public class class118 {
         }
         class72.method478(700, 4, 58, 16, 0);
         arg0.method141(class6.field76, 729, 16, 16777215, -1);
-        class87.field1581 = -1;
+        GameShell.field1581 = -1;
         if (class80.field1448 == null) {
             return;
         }
@@ -400,7 +400,7 @@ public class class118 {
                 var22 = false;
             }
             if (class28.field471 >= var16 && class239.field4451 >= var18 && class28.field471 < var7 + var16 && class239.field4451 < var8 + var18 && var22) {
-                class87.field1581 = var20;
+                GameShell.field1581 = var20;
                 class80.field1448[var21.field1257 ? 1 : 0].method1162(var16, var18, 128, 16777215);
             } else {
                 class80.field1448[var21.field1257 ? 1 : 0].method1163(var16, var18);

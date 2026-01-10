@@ -61,7 +61,7 @@ public abstract class class29 {
 
     @OriginalMember(owner = "client!cf", name = "a", descriptor = "(I)V")
     public static final void method174(int arg0) {
-        class146.field2749.method30((byte) -75, 24);
+        class146.out.method30((byte) -75, 24);
         class71.field1329++;
         class168 var1 = (class168) class128.field2397.method1049(0);
         if (arg0 > -2) {
@@ -163,9 +163,9 @@ public abstract class class29 {
         }
         class237 var4 = new class237();
         if (var3 != null) {
-            var4.method1574(arg1, new class46(var3), -1);
+            var4.method1574(arg1, new Packet(var3), -1);
         }
-        class236.field4404.method664((long) arg1, var4, false);
+        class236.field4404.put((long) arg1, var4, false);
         return var4;
     }
 }

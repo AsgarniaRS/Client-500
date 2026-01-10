@@ -85,9 +85,9 @@ public class class43 extends class23 {
     }
 
     @OriginalMember(owner = "client!di", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            this.field725 = arg0.method301(46);
+            this.field725 = arg0.g2(46);
         }
         if (arg1 == -3) {
             ++field726;
@@ -115,11 +115,11 @@ public class class43 extends class23 {
 
     @OriginalMember(owner = "client!di", name = "a", descriptor = "(ZB)V")
     public static final void method278(boolean arg0, byte arg1) {
-        class137.field2557 = arg0;
+        ClientStream.field2557 = arg0;
         int var2 = 100 % ((arg1 - -62) / 49);
         ++field737;
-        if (!class137.field2557) {
-            int var3 = (-class230.field4314.field831 + class228.field4272) / 16;
+        if (!ClientStream.field2557) {
+            int var3 = (-class230.field4314.pos + class228.field4272) / 16;
             class17.field268 = new int[var3][4];
             for (int var4 = 0; ~var3 < ~var4; ++var4) {
                 for (int var15 = 0; var15 < 4; ++var15) {
@@ -129,9 +129,9 @@ public class class43 extends class23 {
             int var5 = class230.field4314.method349(true);
             boolean var6 = false;
             int var7 = class230.field4314.method302(255);
-            int var8 = class230.field4314.method301(93);
+            int var8 = class230.field4314.g2(93);
             int var9 = class230.field4314.method352(24758);
-            int var10 = class230.field4314.method301(42);
+            int var10 = class230.field4314.g2(42);
             class128.field2404 = new int[var3];
             class146.field2733 = new int[var3];
             class45.field774 = new byte[var3][];
@@ -161,7 +161,7 @@ public class class43 extends class23 {
             }
             class120.method822(var9, var10, var8, var5, (byte) 120, var7);
         } else {
-            int var16 = class230.field4314.method347(26119);
+            int var16 = class230.field4314.g1(26119);
             int var17 = class230.field4314.method343(62);
             int var18 = class230.field4314.method302(255);
             class230.field4314.method34(8);
@@ -178,15 +178,15 @@ public class class43 extends class23 {
                 }
             }
             class230.field4314.method35(8);
-            int var20 = (-class230.field4314.field831 + class228.field4272) / 16;
+            int var20 = (-class230.field4314.pos + class228.field4272) / 16;
             class17.field268 = new int[var20][4];
             for (int var21 = 0; ~var20 < ~var21; ++var21) {
                 for (int var35 = 0; var35 < 4; ++var35) {
-                    class17.field268[var21][var35] = class230.field4314.method323((byte) -58);
+                    class17.field268[var21][var35] = class230.field4314.g4((byte) -58);
                 }
             }
             int var22 = class230.field4314.method343(66);
-            int var23 = class230.field4314.method301(122);
+            int var23 = class230.field4314.g2(122);
             class27.field453 = new int[var20];
             class128.field2404 = new int[var20];
             class167.field3223 = new byte[var20][];
@@ -234,7 +234,7 @@ public class class43 extends class23 {
             if (~class48.field898 == ~class203.field3860) {
                 return false;
             } else {
-                class137.field2558 = class174.field3440[class203.field3860];
+                ClientStream.field2558 = class174.field3440[class203.field3860];
                 class219.field4150 = class105.field1910[class203.field3860];
                 class203.field3860 = class203.field3860 + 1 & 127;
                 return true;

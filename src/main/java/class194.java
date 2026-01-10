@@ -113,9 +113,9 @@ public class class194 extends class23 {
     }
 
     @OriginalMember(owner = "client!ri", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 == 0) {
-            super.field369 = ~arg0.method347(26119) == -2;
+            super.field369 = ~arg0.g1(26119) == -2;
         }
         ++field3708;
         if (arg1 != -3) {
@@ -151,7 +151,7 @@ public class class194 extends class23 {
         if (arg1 != -2) {
             method1347((class174) null, -107);
         }
-        if (~class87.method592(1281959627, class80.method530(arg1 + -881710558, arg0)) == -1) {
+        if (~GameShell.method592(1281959627, class80.method530(arg1 + -881710558, arg0)) == -1) {
             return null;
         } else if (arg0.field3514 != null && ~arg0.field3514.method602(-125).method604((byte) -53) != -1) {
             return arg0.field3514;

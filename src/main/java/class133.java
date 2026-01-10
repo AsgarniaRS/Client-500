@@ -41,11 +41,11 @@ public class class133 extends class23 {
     private class50[] field2492;
 
     @OriginalMember(owner = "client!mb", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 == 0) {
-            this.field2492 = new class50[arg0.method347(26119)];
+            this.field2492 = new class50[arg0.g1(26119)];
             for (int var4 = 0; ~var4 > ~this.field2492.length; ++var4) {
-                int var5 = arg0.method347(arg1 ^ -26118);
+                int var5 = arg0.g1(arg1 ^ -26118);
                 if (~var5 != -1) {
                     if (var5 != 1) {
                         if (var5 != 2) {
@@ -63,7 +63,7 @@ public class class133 extends class23 {
                 }
             }
         } else if (~arg2 == -2) {
-            super.field369 = arg0.method347(26119) == 1;
+            super.field369 = arg0.g1(26119) == 1;
         }
         ++field2482;
         if (arg1 != -3) {

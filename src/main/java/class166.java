@@ -1,7 +1,7 @@
 import java.awt.Color;
 import java.awt.Font;
 import java.awt.Graphics;
-import java.awt.image.ImageObserver;
+
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
@@ -12,7 +12,7 @@ public class class166 {
     public static class88 field3191 = class208.method1425(105, "(U2");
 
     @OriginalMember(owner = "client!pc", name = "n", descriptor = "[Lia;")
-    public static class89[] field3202 = new class89[4];
+    public static CollisionMap[] field3202 = new CollisionMap[4];
 
     @OriginalMember(owner = "client!pc", name = "l", descriptor = "Li;")
     private static class88 field3200 = class208.method1425(105, "The server is being updated)3");

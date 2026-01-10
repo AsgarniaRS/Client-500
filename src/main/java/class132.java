@@ -64,17 +64,17 @@ public class class132 extends class23 {
     }
 
     @OriginalMember(owner = "client!ma", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (~arg2 != -2) {
                 if (arg2 == 3) {
-                    this.field2477 = arg0.method347(26119);
+                    this.field2477 = arg0.g1(26119);
                 }
             } else {
-                this.field2480 = arg0.method347(26119);
+                this.field2480 = arg0.g1(26119);
             }
         } else {
-            this.field2478 = arg0.method347(arg1 ^ -26118);
+            this.field2478 = arg0.g1(arg1 ^ -26118);
         }
         if (arg1 != -3) {
             method890((byte) -44);

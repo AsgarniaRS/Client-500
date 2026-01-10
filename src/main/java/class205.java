@@ -91,25 +91,25 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(BLea;I)V")
-    private final void method1410(byte arg0, class46 arg1, int arg2) {
+    private final void method1410(byte arg0, Packet arg1, int arg2) {
         if (arg2 == 1) {
-            this.field3903 = arg1.method298(-128).method600((byte) 52, 60);
+            this.field3903 = arg1.gjstr(-128).method600((byte) 52, 60);
         } else if (arg2 == 2) {
-            int var4 = arg1.method347(26119);
+            int var4 = arg1.g1(26119);
             this.field3918 = new int[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field3918[var5] = arg1.method301(class180.method1287(arg0, 50));
+                this.field3918[var5] = arg1.g2(class180.method1287(arg0, 50));
             }
         } else if (arg2 == 3) {
-            int var6 = arg1.method347(26119);
+            int var6 = arg1.g1(26119);
             this.field3911 = new int[var6][];
             this.field3907 = new int[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                int var8 = arg1.method301(arg0);
+                int var8 = arg1.g2(arg0);
                 this.field3907[var7] = var8;
                 this.field3911[var7] = new int[class92.field1732[var8]];
                 for (int var9 = 0; var9 < class92.field1732[var8]; var9++) {
-                    this.field3911[var7][var9] = arg1.method301(class180.method1287(arg0, 62));
+                    this.field3911[var7][var9] = arg1.g2(class180.method1287(arg0, 62));
                 }
             }
         }
@@ -120,7 +120,7 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(Lea;I)Li;")
-    public final class88 method1411(class46 arg0, int arg1) {
+    public final class88 method1411(Packet arg0, int arg1) {
         if (arg1 != 80) {
             return null;
         }
@@ -155,11 +155,11 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(Lea;B)V")
-    public final void method1413(class46 arg0, byte arg1) {
+    public final void method1413(Packet arg0, byte arg1) {
         field3915++;
         int var3 = 124 / ((54 - arg1) / 62);
         while (true) {
-            int var4 = arg0.method347(26119);
+            int var4 = arg0.g1(26119);
             if (var4 == 0) {
                 return;
             }
@@ -197,7 +197,7 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(ILea;[I)V")
-    public final void method1416(int arg0, class46 arg1, int[] arg2) {
+    public final void method1416(int arg0, Packet arg1, int[] arg2) {
         field3908++;
         if (this.field3907 == null) {
             return;

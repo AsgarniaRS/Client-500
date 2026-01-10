@@ -32,7 +32,7 @@ public class class214 {
     public static int field4041;
 
     @OriginalMember(owner = "client!tg", name = "a", descriptor = "Lmf;")
-    public static class137 field4035;
+    public static ClientStream clientStream;
 
     @OriginalMember(owner = "client!tg", name = "a", descriptor = "(IILnb;I)Llj;")
     public static final class130 method1456(int arg0, int arg1, class144 arg2, int arg3) {
@@ -50,9 +50,9 @@ public class class214 {
     public static void method1457(int arg0) {
         field4042 = null;
         field4044 = null;
-        field4035 = null;
+        clientStream = null;
         if (arg0 > -60) {
-            field4035 = null;
+            clientStream = null;
         }
     }
 

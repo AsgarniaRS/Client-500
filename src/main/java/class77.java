@@ -56,7 +56,7 @@ public class class77 extends class145 {
     public static class88 field1370 = class208.method1425(105, " <col=ffff00>");
 
     @OriginalMember(owner = "client!h", name = "K", descriptor = "I")
-    public static int field1389 = 0;
+    public static int ioErrorCount = 0;
 
     @OriginalMember(owner = "client!h", name = "G", descriptor = "Li;")
     public static class88 field1385 = class208.method1425(105, "k");
@@ -65,7 +65,7 @@ public class class77 extends class145 {
     public static class88 field1377 = class208.method1425(105, "Ladevorgang )2 bitte warten Sie)3");
 
     @OriginalMember(owner = "client!h", name = "S", descriptor = "[Lea;")
-    public static class46[] field1397 = new class46[2048];
+    public static Packet[] field1397 = new Packet[2048];
 
     @OriginalMember(owner = "client!h", name = "Y", descriptor = "Li;")
     public static class88 field1403 = class208.method1425(105, "blinken3:");

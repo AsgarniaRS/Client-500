@@ -20,7 +20,7 @@ public class class78 extends class67 {
     public int[][] field1423;
 
     @OriginalMember(owner = "client!ha", name = "t", descriptor = "Lea;")
-    public static class46 field1408 = new class46(8);
+    public static Packet field1408 = new Packet(8);
 
     @OriginalMember(owner = "client!ha", name = "w", descriptor = "Li;")
     public static class88 field1411 = class208.method1425(105, "");
@@ -72,7 +72,7 @@ public class class78 extends class67 {
     }
 
     @OriginalMember(owner = "client!ha", name = "a", descriptor = "(ZZ[Lia;)V")
-    public static final void method523(boolean arg0, boolean arg1, class89[] arg2) {
+    public static final void method523(boolean arg0, boolean arg1, CollisionMap[] arg2) {
         field1419++;
         if (!arg1) {
             for (int var3 = 0; var3 < 4; var3++) {
@@ -454,7 +454,7 @@ public class class78 extends class67 {
     }
 
     @OriginalMember(owner = "client!ha", name = "a", descriptor = "(ZLea;I)Li;")
-    public static final class88 method524(boolean arg0, class46 arg1, int arg2) {
+    public static final class88 method524(boolean arg0, Packet arg1, int arg2) {
         field1413++;
         try {
             if (!arg0) {
@@ -466,7 +466,7 @@ public class class78 extends class67 {
                 var3.field1660 = arg2;
             }
             var3.field1643 = new byte[var3.field1660];
-            arg1.field831 += class112.field2035.method1459(-124, 0, var3.field1643, arg1.field842, var3.field1660, arg1.field831);
+            arg1.pos += class112.field2035.method1459(-124, 0, var3.field1643, arg1.data, var3.field1660, arg1.pos);
             return var3;
         } catch (Exception var4) {
             return class150.field2920;
@@ -486,23 +486,23 @@ public class class78 extends class67 {
     @OriginalMember(owner = "client!ha", name = "<init>", descriptor = "(I[B)V")
     public class78(int arg0, byte[] arg1) {
         this.field1412 = arg0;
-        class46 var3 = new class46(arg1);
-        this.field1422 = var3.method347(26119);
+        Packet var3 = new Packet(arg1);
+        this.field1422 = var3.g1(26119);
         this.field1410 = new boolean[this.field1422];
         this.field1409 = new int[this.field1422];
         this.field1423 = new int[this.field1422][];
         for (int var4 = 0; var4 < this.field1422; var4++) {
-            this.field1409[var4] = var3.method347(26119);
+            this.field1409[var4] = var3.g1(26119);
         }
         for (int var5 = 0; var5 < this.field1422; var5++) {
-            this.field1410[var5] = var3.method347(26119) == 1;
+            this.field1410[var5] = var3.g1(26119) == 1;
         }
         for (int var6 = 0; var6 < this.field1422; var6++) {
-            this.field1423[var6] = new int[var3.method347(26119)];
+            this.field1423[var6] = new int[var3.g1(26119)];
         }
         for (int var7 = 0; var7 < this.field1422; var7++) {
             for (int var8 = 0; var8 < this.field1423[var7].length; var8++) {
-                this.field1423[var7][var8] = var3.method347(26119);
+                this.field1423[var7][var8] = var3.g1(26119);
             }
         }
     }

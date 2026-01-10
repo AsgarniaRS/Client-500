@@ -106,12 +106,12 @@ public class class153 extends class67 {
         byte[] var3 = class204.field3885.method941((byte) 56, class71.method473((byte) 44, arg1), class240.method1587(arg0 ^ 0xFFFFC1B3, arg1));
         class226 var4 = new class226();
         if (var3 != null) {
-            var4.method1518(new class46(var3), arg0 ^ 0x3E29);
+            var4.method1518(new Packet(var3), arg0 ^ 0x3E29);
         }
         if (arg0 != 15913) {
             field2965 = null;
         }
-        class108.field1957.method664((long) arg1, var4, false);
+        class108.field1957.put((long) arg1, var4, false);
         return var4;
     }
 
@@ -122,7 +122,7 @@ public class class153 extends class67 {
 
     @OriginalMember(owner = "client!oa", name = "c", descriptor = "(I)V")
     public static final void method1046(int arg0) {
-        class137.field2535.method671(122);
+        ClientStream.field2535.method671(122);
         class230.field4304.method134(50);
         field2963++;
         if (arg0 != -28151) {

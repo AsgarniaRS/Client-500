@@ -155,13 +155,13 @@ public class class189 extends class136 {
             }
             return;
         }
-        class46 var1 = new class46(class130.field2442.method962(0, class20.field319, class80.field1444));
-        int var2 = var1.method301(101);
-        int var3 = var1.method301(82);
-        int var4 = var1.method301(68);
-        int var5 = var1.method301(47);
-        int var6 = var1.method301(72);
-        int var7 = var1.method301(71);
+        Packet var1 = new Packet(class130.field2442.method962(0, class20.field319, class80.field1444));
+        int var2 = var1.g2(101);
+        int var3 = var1.g2(82);
+        int var4 = var1.g2(68);
+        int var5 = var1.g2(47);
+        int var6 = var1.g2(72);
+        int var7 = var1.g2(71);
         class119.field2183 = var3 * 64;
         class16.field239 = var2 * 64;
         class59.field1110 = 8.0D;

@@ -236,7 +236,7 @@ public class class110 {
     public static final void method765() {
         for (int var0 = 0; var0 < class25.field396; var0++) {
             class108 var1 = class149.field2908[var0];
-            class137.method917(var1);
+            ClientStream.method917(var1);
             class149.field2908[var0] = null;
         }
         class25.field396 = 0;

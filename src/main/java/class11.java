@@ -56,13 +56,13 @@ public class class11 extends class23 {
     public static int field165;
 
     @OriginalMember(owner = "client!aj", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (~arg2 == -2) {
-                this.field167 = arg0.method347(26119);
+                this.field167 = arg0.g1(26119);
             }
         } else {
-            this.field163 = arg0.method347(26119);
+            this.field163 = arg0.g1(26119);
         }
         if (arg1 != -3) {
             field166 = true;
@@ -202,9 +202,9 @@ public class class11 extends class23 {
                     class95.field1765[class67.field1221] = arg1;
                     class146.field2743[class67.field1221++] = class200.method1377(arg1, (byte) 104);
                     class20.field313 = class67.field1211;
-                    class146.field2749.method30((byte) -48, 28);
+                    class146.out.method30((byte) -48, 28);
                     if (arg0 == -8) {
-                        class146.field2749.method328(arg1, (byte) -123);
+                        class146.out.method328(arg1, (byte) -123);
                     }
                 }
             }

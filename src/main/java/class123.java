@@ -272,30 +272,30 @@ public class class123 {
     }
 
     @OriginalMember(owner = "client!lc", name = "a", descriptor = "(Lea;)V")
-    public final void method836(class46 arg0) {
+    public final void method836(Packet arg0) {
         this.field2234 = new class235();
         this.field2234.method1565(arg0);
         this.field2255 = new class235();
         this.field2255.method1565(arg0);
-        int var2 = arg0.method347(26119);
+        int var2 = arg0.g1(26119);
         if (var2 != 0) {
-            arg0.field831--;
+            arg0.pos--;
             this.field2246 = new class235();
             this.field2246.method1565(arg0);
             this.field2239 = new class235();
             this.field2239.method1565(arg0);
         }
-        int var3 = arg0.method347(26119);
+        int var3 = arg0.g1(26119);
         if (var3 != 0) {
-            arg0.field831--;
+            arg0.pos--;
             this.field2258 = new class235();
             this.field2258.method1565(arg0);
             this.field2251 = new class235();
             this.field2251.method1565(arg0);
         }
-        int var4 = arg0.method347(26119);
+        int var4 = arg0.g1(26119);
         if (var4 != 0) {
-            arg0.field831--;
+            arg0.pos--;
             this.field2249 = new class235();
             this.field2249.method1565(arg0);
             this.field2257 = new class235();
@@ -312,8 +312,8 @@ public class class123 {
         }
         this.field2240 = arg0.method350(123);
         this.field2241 = arg0.method350(118);
-        this.field2243 = arg0.method301(73);
-        this.field2238 = arg0.method301(126);
+        this.field2243 = arg0.g2(73);
+        this.field2238 = arg0.g2(126);
         this.field2242 = new class185();
         this.field2245 = new class235();
         this.field2242.method1307(arg0, this.field2245);

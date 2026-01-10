@@ -89,7 +89,7 @@ public class class160 {
         int var2 = 0;
         int var3 = -68 % ((36 - arg0) / 63);
         while (var2 < this.field3089) {
-            this.field3097[var2] = class87.field1572;
+            this.field3097[var2] = GameShell.field1572;
             var2++;
         }
         return this.field3093;
@@ -126,7 +126,7 @@ public class class160 {
         }
         if (this.field3090 == this.field3089) {
             this.field3100 = this.field3097[arg1] == null;
-            this.field3097[arg1] = class87.field1572;
+            this.field3097[arg1] = GameShell.field1572;
             return this.field3093[arg1];
         } else if (this.field3089 == 1) {
             this.field3100 = this.field3088 != arg1;

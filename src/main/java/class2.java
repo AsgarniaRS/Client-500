@@ -187,17 +187,17 @@ public class class2 extends class23 {
     }
 
     @OriginalMember(owner = "client!aa", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field22;
         if (arg1 != -3) {
             field20 = null;
         }
         if (~arg2 != -1) {
             if (~arg2 == -2) {
-                this.field14 = arg0.method347(26119) == 1;
+                this.field14 = arg0.g1(26119) == 1;
             }
         } else {
-            this.field17 = arg0.method301(105);
+            this.field17 = arg0.g2(105);
         }
     }
 }

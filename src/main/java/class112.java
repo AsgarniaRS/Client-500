@@ -78,7 +78,7 @@ public class class112 {
         class139.field2589 = class14.field220;
         class71.field1322 = class164.field3145;
         class232.field4366 = class11.field155;
-        class46.field817 = class209.field3978;
+        Packet.field817 = class209.field3978;
         class223.field4202 = class217.field4071;
         class70.field1306 = class1.field5;
         class231.field4345 = class170.field3282;
@@ -137,7 +137,7 @@ public class class112 {
         class1.field8 = class167.field3218;
         class6.field76 = class134.field2500;
         class192.field3693 = class225.field4224;
-        class89.field1698 = class127.field2390;
+        CollisionMap.field1698 = class127.field2390;
         class48.field901 = class57.field1080;
         class117.field2125 = class194.field3717;
         class65.field1186 = class207.field3938;
@@ -185,7 +185,7 @@ public class class112 {
         class70.field1303 = class1.field5;
         class109.field1973 = class139.field2584;
         class177.field3551 = class168.field3245;
-        class87.field1591 = class238.field4435;
+        GameShell.field1591 = class238.field4435;
         class70.field1297 = class1.field5;
         class42.field713 = class154.field2966;
         class70.field1299 = class217.field4071;
@@ -217,7 +217,7 @@ public class class112 {
         class154.field2990 = class85.field1534;
         class200.field3825 = class117.field2116;
         class48.field896 = class2.field23;
-        class129.field2427 = class87.field1573;
+        class129.field2427 = GameShell.field1573;
         class24.field395 = class58.field1100;
         class115.field2078 = class131.field2448;
     }

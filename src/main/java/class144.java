@@ -504,8 +504,8 @@ public abstract class class144 {
                 var10 = class67.method457(false, this.field2708[arg0], 0);
             } else {
                 var10 = class67.method457(true, this.field2708[arg0], 0);
-                class46 var11 = new class46(var10);
-                var11.method322(5, var11.field842.length, arg1, 4);
+                Packet var11 = new Packet(var10);
+                var11.method322(5, var11.data.length, arg1, 4);
             }
             byte[] var12;
             try {
@@ -521,13 +521,13 @@ public abstract class class144 {
                 int var32 = var14 - 1;
                 int var15 = var12[var32] & 0xFF;
                 int var16 = var32 - var15 * 4 * var4;
-                class46 var17 = new class46(var12);
+                Packet var17 = new Packet(var12);
                 int[] var18 = new int[var4];
-                var17.field831 = var16;
+                var17.pos = var16;
                 for (int var19 = 0; var19 < var15; var19++) {
                     int var20 = 0;
                     for (int var21 = 0; var21 < var4; var21++) {
-                        var20 += var17.method323((byte) -65);
+                        var20 += var17.g4((byte) -65);
                         var18[var21] += var20;
                     }
                 }
@@ -536,12 +536,12 @@ public abstract class class144 {
                     var22[var23] = new byte[var18[var23]];
                     var18[var23] = 0;
                 }
-                var17.field831 = var16;
+                var17.pos = var16;
                 int var24 = 0;
                 for (int var25 = 0; var25 < var15; var25++) {
                     int var26 = 0;
                     for (int var27 = 0; var27 < var4; var27++) {
-                        var26 += var17.method323((byte) -119);
+                        var26 += var17.g4((byte) -119);
                         class124.method838(var12, var24, var22[var27], var18[var27], var26);
                         var24 += var26;
                         var18[var27] += var26;
@@ -753,7 +753,7 @@ public abstract class class144 {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(III[Lia;IB[BZ)V")
-    public static final void method965(int arg0, int arg1, int arg2, class89[] arg3, int arg4, byte arg5, byte[] arg6, boolean arg7) {
+    public static final void method965(int arg0, int arg1, int arg2, CollisionMap[] arg3, int arg4, byte arg5, byte[] arg6, boolean arg7) {
         field2664++;
         if (!arg7) {
             for (int var8 = 0; var8 < 4; var8++) {
@@ -772,11 +772,11 @@ public abstract class class144 {
         } else {
             var11 = 4;
         }
-        class46 var12 = new class46(arg6);
+        Packet var12 = new Packet(arg6);
         for (int var13 = 0; var13 < var11; var13++) {
             for (int var14 = 0; var14 < 64; var14++) {
                 for (int var15 = 0; var15 < 64; var15++) {
-                    class137.method916(var14 + arg1, var12, arg5 - 92, arg7, arg0, arg2, var15 + arg4, 0, var13);
+                    ClientStream.method916(var14 + arg1, var12, arg5 - 92, arg7, arg0, arg2, var15 + arg4, 0, var13);
                 }
             }
         }
@@ -833,21 +833,21 @@ public abstract class class144 {
     public final void method969(byte[] arg0, boolean arg1) {
         field2672++;
         this.field2714 = class81.method541(arg0, (byte) -106, arg0.length);
-        class46 var3 = new class46(class23.method119(arg0, -1));
-        int var4 = var3.method347(26119);
+        Packet var3 = new Packet(class23.method119(arg0, -1));
+        int var4 = var3.g1(26119);
         if (var4 != 5 && var4 != 6) {
             throw new RuntimeException("Incorrect JS5 protocol number: " + var4);
         }
         if (var4 >= 6) {
-            var3.method323((byte) -43);
+            var3.g4((byte) -43);
         }
         int var5 = 0;
-        int var6 = var3.method347(26119);
-        this.field2701 = var3.method301(22);
+        int var6 = var3.g1(26119);
+        this.field2701 = var3.g2(22);
         this.field2710 = new int[this.field2701];
         int var7 = -1;
         for (int var8 = 0; var8 < this.field2701; var8++) {
-            this.field2710[var8] = var5 += var3.method301(86);
+            this.field2710[var8] = var5 += var3.g2(86);
             if (var7 < this.field2710[var8]) {
                 var7 = this.field2710[var8];
             }
@@ -865,18 +865,18 @@ public abstract class class144 {
                 this.field2684[var9] = -1;
             }
             for (int var10 = 0; var10 < this.field2701; var10++) {
-                this.field2684[this.field2710[var10]] = var3.method323((byte) -114);
+                this.field2684[this.field2710[var10]] = var3.g4((byte) -114);
             }
             this.field2690 = new class99(this.field2684);
         }
         for (int var11 = 0; var11 < this.field2701; var11++) {
-            this.field2692[this.field2710[var11]] = var3.method323((byte) -61);
+            this.field2692[this.field2710[var11]] = var3.g4((byte) -61);
         }
         for (int var12 = 0; var12 < this.field2701; var12++) {
-            this.field2670[this.field2710[var12]] = var3.method323((byte) -123);
+            this.field2670[this.field2710[var12]] = var3.g4((byte) -123);
         }
         for (int var13 = 0; var13 < this.field2701; var13++) {
-            this.field2685[this.field2710[var13]] = var3.method301(100);
+            this.field2685[this.field2710[var13]] = var3.g2(100);
         }
         int var14 = 0;
         if (arg1) {
@@ -889,7 +889,7 @@ public abstract class class144 {
             this.field2680[var21] = new int[var22];
             int var24 = -1;
             for (int var25 = 0; var25 < var22; var25++) {
-                int var26 = this.field2680[var21][var25] = var23 += var3.method301(100);
+                int var26 = this.field2680[var21][var25] = var23 += var3.g2(100);
                 if (var24 < var26) {
                     var24 = var26;
                 }
@@ -919,7 +919,7 @@ public abstract class class144 {
                 } else {
                     var20 = this.field2680[var16][var19];
                 }
-                this.field2698[var16][var20] = var3.method323((byte) -112);
+                this.field2698[var16][var20] = var3.g4((byte) -112);
             }
             this.field2675[var16] = new class99(this.field2698[var16]);
         }

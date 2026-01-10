@@ -1,8 +1,5 @@
 import java.awt.Component;
-import javax.sound.sampled.AudioFormat;
-import javax.sound.sampled.AudioSystem;
-import javax.sound.sampled.LineUnavailableException;
-import javax.sound.sampled.SourceDataLine;
+import javax.sound.sampled.*;
 import javax.sound.sampled.DataLine.Info;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
@@ -51,7 +48,7 @@ public class class96 extends class55 {
     }
 
     @OriginalMember(owner = "client!ii", name = "d", descriptor = "()V")
-    public final void method413() throws LineUnavailableException {
+    public final void method413() throws Throwable {
         this.field1776.flush();
         if (!this.field1778) {
             return;
@@ -67,7 +64,12 @@ public class class96 extends class55 {
     @OriginalMember(owner = "client!ii", name = "c", descriptor = "(I)V")
     public final void method409(int arg0) throws LineUnavailableException {
         try {
-            Info var2 = new Info(field1781 == null ? (field1781 = method680("javax.sound.sampled.SourceDataLine")) : field1781, this.field1777, arg0 << (class7.field99 ? 2 : 1));
+            Info var2 = null;
+            try {
+                var2 = new Info(field1781 == null ? (field1781 = method680("javax.sound.sampled.SourceDataLine")) : field1781, this.field1777, arg0 << (class7.field99 ? 2 : 1));
+            } catch (Throwable e) {
+                throw new RuntimeException(e);
+            }
             this.field1776 = (SourceDataLine) AudioSystem.getLine(var2);
             this.field1776.open();
             this.field1776.start();
@@ -110,7 +112,7 @@ public class class96 extends class55 {
     }
 
     @OriginalMember(owner = "client!ii", name = "a", descriptor = "(Ljava/lang/String;)Ljava/lang/Class;")
-    public static Class method680(String arg0) {
+    public static Class method680(String arg0) throws Throwable {
         try {
             return Class.forName(arg0);
         } catch (ClassNotFoundException var2) {

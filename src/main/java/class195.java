@@ -108,22 +108,22 @@ public class class195 extends class67 {
 
     @OriginalMember(owner = "client!rj", name = "a", descriptor = "([B)V")
     private final void method1348(byte[] arg0) {
-        class46 var2 = new class46(arg0);
-        this.field3719 = var2.method323((byte) -53);
-        this.field3731 = var2.method323((byte) -52);
-        this.field3738 = var2.method323((byte) -36);
-        this.field3732 = var2.method323((byte) -49);
+        Packet var2 = new Packet(arg0);
+        this.field3719 = var2.g4((byte) -53);
+        this.field3731 = var2.g4((byte) -52);
+        this.field3738 = var2.g4((byte) -36);
+        this.field3732 = var2.g4((byte) -49);
         if (this.field3732 < 0) {
             this.field3732 = ~this.field3732;
             this.field3740 = true;
         }
-        int var3 = var2.method323((byte) -34);
+        int var3 = var2.g4((byte) -34);
         this.field3735 = new byte[var3][];
         for (int var4 = 0; var4 < var3; var4++) {
             int var5 = 0;
             int var6;
             do {
-                var6 = var2.method347(26119);
+                var6 = var2.g1(26119);
                 var5 += var6;
             } while (var6 >= 255);
             byte[] var7 = new byte[var5];

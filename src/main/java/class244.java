@@ -50,19 +50,19 @@ public class class244 extends class67 {
             return;
         }
         if (class238.field4432 == 123) {
-            int var1 = class230.field4314.method347(26119);
+            int var1 = class230.field4314.g1(26119);
             int var2 = (var1 & 0xF) + class150.field2912 * 2;
             int var3 = (var1 >> 4 & 0xF) + class121.field2215 * 2;
             int var4 = class230.field4314.method324(34) + var3;
             int var5 = var2 + class230.field4314.method324(arg0 ^ 0xFFFFDCAC);
             int var6 = class230.field4314.method334((byte) -73);
-            int var7 = class230.field4314.method301(107);
-            int var8 = class230.field4314.method347(arg0 + 35182) * 4;
-            int var9 = class230.field4314.method347(arg0 + 35182) * 4;
-            int var10 = class230.field4314.method301(12);
-            int var11 = class230.field4314.method301(127);
-            int var12 = class230.field4314.method347(arg0 ^ 0xFFFFBA9E);
-            int var13 = class230.field4314.method347(26119);
+            int var7 = class230.field4314.g2(107);
+            int var8 = class230.field4314.g1(arg0 + 35182) * 4;
+            int var9 = class230.field4314.g1(arg0 + 35182) * 4;
+            int var10 = class230.field4314.g2(12);
+            int var11 = class230.field4314.g2(127);
+            int var12 = class230.field4314.g1(arg0 ^ 0xFFFFBA9E);
+            int var13 = class230.field4314.g1(26119);
             if (var3 >= 0 && var2 >= 0 && var3 < 208 && var2 < 208 && var4 >= 0 && var5 >= 0 && var4 < 208 && var5 < 208 && var7 != 65535) {
                 int var14 = var2 * 64;
                 int var15 = var3 * 64;
@@ -90,12 +90,12 @@ public class class244 extends class67 {
                 class29.method175(21280, var21, var20);
             }
         } else if (class238.field4432 == 173) {
-            int var26 = class230.field4314.method347(26119);
+            int var26 = class230.field4314.g1(26119);
             int var27 = class150.field2912 + (var26 & 0x7);
             int var28 = (var26 >> 4 & 0x7) + class121.field2215;
-            int var29 = class230.field4314.method301(arg0 ^ 0xFFFFDCD4);
-            int var30 = class230.field4314.method347(26119);
-            int var31 = class230.field4314.method301(arg0 ^ 0xFFFFDC82);
+            int var29 = class230.field4314.g2(arg0 ^ 0xFFFFDCD4);
+            int var30 = class230.field4314.g1(26119);
+            int var31 = class230.field4314.g2(arg0 ^ 0xFFFFDC82);
             if (var28 >= 0 && var27 >= 0 && var28 < 104 && var27 < 104) {
                 int var32 = var28 * 128 + 64;
                 int var33 = var27 * 128 + 64;
@@ -103,12 +103,12 @@ public class class244 extends class67 {
                 class42.field714.method1624(new class242(var34), 124);
             }
         } else if (class238.field4432 == 232) {
-            int var35 = class230.field4314.method347(26119);
+            int var35 = class230.field4314.g1(26119);
             int var36 = (var35 & 0x7) + class150.field2912;
             int var37 = (var35 >> 4 & 0x7) + class121.field2215;
-            int var38 = class230.field4314.method301(arg0 + 9177);
-            int var39 = class230.field4314.method301(18);
-            int var40 = class230.field4314.method301(90);
+            int var38 = class230.field4314.g2(arg0 + 9177);
+            int var39 = class230.field4314.g2(18);
+            int var40 = class230.field4314.g2(90);
             if (var37 >= 0 && var36 >= 0 && var37 < 104 && var36 < 104) {
                 class248 var41 = class134.field2499[class149.field2909][var37][var36];
                 if (var41 != null) {
@@ -123,7 +123,7 @@ public class class244 extends class67 {
                 }
             }
         } else if (class238.field4432 == 44) {
-            int var44 = class230.field4314.method347(26119);
+            int var44 = class230.field4314.g1(26119);
             int var45 = var44 >> 2;
             int var46 = var44 & 0x3;
             int var47 = class98.field1794[var45];
@@ -149,18 +149,18 @@ public class class244 extends class67 {
             class113.method776(var54, var58, 12019, var55, var53, class149.field2909, var59, var56);
         } else {
             if (class238.field4432 == 61) {
-                int var60 = class230.field4314.method301(arg0 ^ 0xFFFFDCCF);
+                int var60 = class230.field4314.g2(arg0 ^ 0xFFFFDCCF);
                 int var61 = class230.field4314.method295((byte) -114);
                 int var62 = var61 >> 2;
                 int var63 = var61 & 0x3;
                 int var64 = class98.field1794[var62];
-                int var65 = class230.field4314.method301(73);
+                int var65 = class230.field4314.g2(73);
                 byte var66 = class230.field4314.method303(16777215);
                 byte var67 = class230.field4314.method335(0);
                 byte var68 = class230.field4314.method324(34);
                 byte var69 = class230.field4314.method335(arg0 ^ 0xFFFFDC99);
-                int var70 = class230.field4314.method301(120);
-                int var71 = class230.field4314.method347(26119);
+                int var70 = class230.field4314.g2(120);
+                int var71 = class230.field4314.g1(26119);
                 int var72 = (var71 & 0x7) + class150.field2912;
                 int var73 = (var71 >> 4 & 0x7) + class121.field2215;
                 int var74 = class230.field4314.method349(true);
@@ -220,7 +220,7 @@ public class class244 extends class67 {
                 }
             }
             if (class238.field4432 == 99) {
-                int var91 = class230.field4314.method347(26119);
+                int var91 = class230.field4314.g1(26119);
                 int var92 = (var91 & 0x7) + class150.field2912;
                 int var93 = (var91 >> 4 & 0x7) + class121.field2215;
                 int var94 = class230.field4314.method349(true);
@@ -236,19 +236,19 @@ public class class244 extends class67 {
                     class29.method175(arg0 + 30343, var93, var92);
                 }
             } else if (class238.field4432 == 150) {
-                int var97 = class230.field4314.method347(26119);
+                int var97 = class230.field4314.g1(26119);
                 int var98 = class121.field2215 + (var97 >> 4 & 0x7);
                 int var99 = (var97 & 0x7) + class150.field2912;
                 int var100 = var98 + class230.field4314.method324(111);
                 int var101 = class230.field4314.method324(arg0 ^ 0xFFFFDC94) + var99;
                 int var102 = class230.field4314.method334((byte) -73);
-                int var103 = class230.field4314.method301(arg0 + 9111);
-                int var104 = class230.field4314.method347(26119) * 4;
-                int var105 = class230.field4314.method347(26119) * 4;
-                int var106 = class230.field4314.method301(24);
-                int var107 = class230.field4314.method301(91);
-                int var108 = class230.field4314.method347(26119);
-                int var109 = class230.field4314.method347(arg0 ^ 0xFFFFBA9E);
+                int var103 = class230.field4314.g2(arg0 + 9111);
+                int var104 = class230.field4314.g1(26119) * 4;
+                int var105 = class230.field4314.g1(26119) * 4;
+                int var106 = class230.field4314.g2(24);
+                int var107 = class230.field4314.g2(91);
+                int var108 = class230.field4314.g1(26119);
+                int var109 = class230.field4314.g1(arg0 ^ 0xFFFFBA9E);
                 if (var98 >= 0 && var99 >= 0 && var98 < 104 && var99 < 104 && var100 >= 0 && var101 >= 0 && var100 < 104 && var101 < 104 && var103 != 65535) {
                     int var110 = var98 * 128 + 64;
                     int var111 = var101 * 128 + 64;
@@ -279,7 +279,7 @@ public class class244 extends class67 {
                     }
                 }
             } else if (class238.field4432 == 75) {
-                int var121 = class230.field4314.method347(arg0 ^ 0xFFFFBA9E);
+                int var121 = class230.field4314.g1(arg0 ^ 0xFFFFBA9E);
                 int var122 = var121 >> 2;
                 int var123 = class98.field1794[var122];
                 int var124 = var121 & 0x3;
@@ -290,16 +290,16 @@ public class class244 extends class67 {
                     class220.method1488(0, var126, var123, var124, -1, var122, class149.field2909, var127, arg0 + 9063, -1);
                 }
             } else if (class238.field4432 == 52) {
-                int var128 = class230.field4314.method347(arg0 + 35182);
+                int var128 = class230.field4314.g1(arg0 + 35182);
                 int var129 = class150.field2912 + (var128 & 0x7);
                 int var130 = (var128 >> 4 & 0x7) + class121.field2215;
-                int var131 = class230.field4314.method301(35);
-                int var132 = class230.field4314.method347(26119);
+                int var131 = class230.field4314.g2(35);
+                int var132 = class230.field4314.g1(26119);
                 if (var131 == 65535) {
                     var131 = -1;
                 }
                 int var133 = var132 & 0x7;
-                int var134 = class230.field4314.method347(26119);
+                int var134 = class230.field4314.g1(26119);
                 int var135 = var132 >> 4 & 0xF;
                 if (var130 >= 0 && var129 >= 0 && var130 < 104 && var129 < 104) {
                     int var136 = var135 + 1;
@@ -467,36 +467,36 @@ public class class244 extends class67 {
     @OriginalMember(owner = "client!we", name = "a", descriptor = "(I[B)V")
     public static final void method1603(int arg0, byte[] arg1) {
         field4486++;
-        class46 var2 = new class46(arg1);
-        var2.field831 = arg1.length - 2;
-        class172.field3347 = var2.method301(82);
+        Packet var2 = new Packet(arg1);
+        var2.pos = arg1.length - 2;
+        class172.field3347 = var2.g2(82);
         class67.field1218 = new int[class172.field3347];
         class116.field2106 = new byte[class172.field3347][];
         class135.field2512 = new int[class172.field3347];
         class247.field4530 = new int[class172.field3347];
         class102.field1853 = new int[class172.field3347];
-        var2.field831 = arg1.length - class172.field3347 * 8 - 7;
-        class15.field229 = var2.method301(101);
-        class129.field2426 = var2.method301(41);
-        int var3 = (var2.method347(arg0 + 26055) & 0xFF) + 1;
+        var2.pos = arg1.length - class172.field3347 * 8 - 7;
+        class15.field229 = var2.g2(101);
+        class129.field2426 = var2.g2(41);
+        int var3 = (var2.g1(arg0 + 26055) & 0xFF) + 1;
         int var4 = 0;
         if (arg0 != 64) {
             method1602(null, 35);
         }
         while (class172.field3347 > var4) {
-            class247.field4530[var4] = var2.method301(62);
+            class247.field4530[var4] = var2.g2(62);
             var4++;
         }
         for (int var5 = 0; var5 < class172.field3347; var5++) {
-            class135.field2512[var5] = var2.method301(47);
+            class135.field2512[var5] = var2.g2(47);
         }
         for (int var6 = 0; var6 < class172.field3347; var6++) {
-            class102.field1853[var6] = var2.method301(class180.method1287(arg0, 44));
+            class102.field1853[var6] = var2.g2(class180.method1287(arg0, 44));
         }
         for (int var7 = 0; var7 < class172.field3347; var7++) {
-            class67.field1218[var7] = var2.method301(61);
+            class67.field1218[var7] = var2.g2(61);
         }
-        var2.field831 = arg1.length - class172.field3347 * 8 - (var3 + -1) * 3 - 7;
+        var2.pos = arg1.length - class172.field3347 * 8 - (var3 + -1) * 3 - 7;
         class27.field456 = new int[var3];
         for (int var8 = 1; var8 < var3; var8++) {
             class27.field456[var8] = var2.method304(-29629);
@@ -504,14 +504,14 @@ public class class244 extends class67 {
                 class27.field456[var8] = 1;
             }
         }
-        var2.field831 = 0;
+        var2.pos = 0;
         for (int var9 = 0; var9 < class172.field3347; var9++) {
             int var10 = class67.field1218[var9];
             int var11 = class102.field1853[var9];
             int var12 = var10 * var11;
             byte[] var13 = new byte[var12];
             class116.field2106[var9] = var13;
-            int var14 = var2.method347(26119);
+            int var14 = var2.g1(26119);
             if (var14 == 0) {
                 for (int var15 = 0; var15 < var12; var15++) {
                     var13[var15] = var2.method324(arg0 - 43);

@@ -50,13 +50,13 @@ public class class60 extends class23 {
     public static int field1135;
 
     @OriginalMember(owner = "client!fd", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (~arg2 == -2) {
-                super.field369 = ~arg0.method347(arg1 ^ -26118) == -2;
+                super.field369 = ~arg0.g1(arg1 ^ -26118) == -2;
             }
         } else {
-            this.field1129 = arg0.method301(48) << 4;
+            this.field1129 = arg0.g2(48) << 4;
         }
         if (arg1 != -3) {
             method433(-92, false, 56, -26, 45, (class109) null);
@@ -103,7 +103,7 @@ public class class60 extends class23 {
     public final int[] method54(int arg0, byte arg1) {
         int[] var3 = super.field379.method1080(false, arg0);
         if (arg1 <= 19) {
-            this.method11((class46) null, -69, 111);
+            this.method11((Packet) null, -69, 111);
         }
         if (super.field379.field3100) {
             int[] var4 = this.method120(arg0, false, 1);
@@ -156,8 +156,8 @@ public class class60 extends class23 {
                 class225.field4225[var3] = null;
             }
         }
-        if (~class228.field4272 != ~class230.field4314.field831) {
-            throw new RuntimeException("gnp1 pos:" + class230.field4314.field831 + " psize:" + class228.field4272);
+        if (~class228.field4272 != ~class230.field4314.pos) {
+            throw new RuntimeException("gnp1 pos:" + class230.field4314.pos + " psize:" + class228.field4272);
         } else {
             for (int var2 = 0; ~class55.field1041 < ~var2; ++var2) {
                 if (class225.field4225[class25.field402[var2]] == null) {

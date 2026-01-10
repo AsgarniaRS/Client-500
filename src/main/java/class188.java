@@ -81,7 +81,7 @@ public abstract class class188 extends class136 {
         if (arg1 < 53) {
             method1315(false);
         }
-        if (class229.field4286 == 0 || class229.field4286 == 5) {
+        if (class229.gameState == 0 || class229.gameState == 5) {
             byte var3 = 20;
             int var4 = 253 - var3;
             arg2.method141(class132.field2468, 382, 245 - var3, 16777215, -1);
@@ -91,7 +91,7 @@ public abstract class class188 extends class136 {
             class72.method478(class6.field83 * 3 + 232, var4 + 2, 300 - class6.field83 * 3, 30, 0);
             arg2.method141(class209.field3965, 382, 276 - var3, 16777215, -1);
         }
-        if (class229.field4286 == 20) {
+        if (class229.gameState == 20) {
             class242.field4475.method878(382 - class242.field4475.field2436 / 2, 271 - class242.field4475.field2439 / 2);
             short var5 = 211;
             arg2.method141(class209.field3983, 382, var5, 16776960, 0);
@@ -103,10 +103,10 @@ public abstract class class188 extends class136 {
             int var26 = var25 + 10;
             arg2.method154(class166.method1142(new class88[] { class42.field713, class26.method162(class209.field3969) }, -3), 272, var26, 16777215, 0);
             int var28 = var26 + 15;
-            arg2.method154(class166.method1142(new class88[] { class89.field1698, class209.field3972.method596(true) }, -3), 274, var28, 16777215, 0);
+            arg2.method154(class166.method1142(new class88[] { CollisionMap.field1698, class209.field3972.method596(true) }, -3), 274, var28, 16777215, 0);
             int var30 = var28 + 15;
         }
-        if (class229.field4286 == 10) {
+        if (class229.gameState == 10) {
             class242.field4475.method878(202, 171);
             if (class65.field1182 == 0) {
                 short var15 = 302;
@@ -144,7 +144,7 @@ public abstract class class188 extends class136 {
                     var10 = false;
                 }
                 var27 += 15;
-                arg2.method154(class166.method1142(new class88[] { class89.field1698, class209.field3972.method596(true), var10 ? class202.field3845 : class209.field3974 }, -3), 274, var27, 16777215, 0);
+                arg2.method154(class166.method1142(new class88[] { CollisionMap.field1698, class209.field3972.method596(true), var10 ? class202.field3845 : class209.field3974 }, -3), 274, var27, 16777215, 0);
                 class129.field2418.method878(var7 - 73, var8 + -20);
                 var27 += 15;
                 arg2.method141(class218.field4119, var7, var8 + 5, 16777215, 0);
@@ -158,7 +158,7 @@ public abstract class class188 extends class136 {
                 arg2.method141(class196.field3755, 382, var13, 16777215, 0);
                 short var14 = 321;
                 int var31 = var13 + 15;
-                arg2.method141(class87.field1591, 382, var31, 16777215, 0);
+                arg2.method141(GameShell.field1591, 382, var31, 16777215, 0);
                 int var32 = var31 + 15;
                 arg2.method141(class62.field1152, 382, var32, 16777215, 0);
                 int var33 = var32 + 15;
@@ -176,7 +176,7 @@ public abstract class class188 extends class136 {
             class186.method1309(false);
         }
         class116.field2097[class131.field2462 ? 1 : 0].method878(725, 463);
-        if (class229.field4286 <= 5 || class143.field2659 == 2) {
+        if (class229.gameState <= 5 || class143.field2659 == 2) {
             return;
         }
         if (class32.field518 == null) {
@@ -205,7 +205,7 @@ public abstract class class188 extends class136 {
             field3653 = null;
         }
         field3657++;
-        class46 var4 = new class46(arg0);
+        Packet var4 = new Packet(arg0);
         boolean var5 = true;
         int var6 = -1;
         label72: while (true) {
@@ -231,7 +231,7 @@ public abstract class class188 extends class136 {
                                         if (var17 == 0) {
                                             continue label72;
                                         }
-                                        var4.method347(26119);
+                                        var4.g1(26119);
                                     }
                                     int var10 = var4.method350(112);
                                     if (var10 == 0) {
@@ -240,7 +240,7 @@ public abstract class class188 extends class136 {
                                     var8 += var10 - 1;
                                     int var11 = var8 >> 6 & 0x3F;
                                     int var12 = var8 & 0x3F;
-                                    var13 = var4.method347(26119) >> 2;
+                                    var13 = var4.g1(26119) >> 2;
                                     var14 = arg3 + var11;
                                     var15 = var12 + arg1;
                                 } while (var14 <= 0);

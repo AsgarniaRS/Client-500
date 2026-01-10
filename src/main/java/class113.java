@@ -223,7 +223,7 @@ public class class113 extends class23 {
     }
 
     @OriginalMember(owner = "client!kd", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             field2051 = null;
         }
@@ -231,13 +231,13 @@ public class class113 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (arg2 == 2) {
-                    super.field369 = arg0.method347(arg1 + 26122) == 1;
+                    super.field369 = arg0.g1(arg1 + 26122) == 1;
                 }
             } else {
-                this.field2046 = arg0.method301(25);
+                this.field2046 = arg0.g2(25);
             }
         } else {
-            this.field2053 = arg0.method301(45);
+            this.field2053 = arg0.g2(45);
         }
     }
 

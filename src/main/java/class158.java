@@ -165,7 +165,7 @@ public class class158 {
             }
         }
         if (var2 == 6) {
-            class137.field2550 = var3;
+            ClientStream.field2550 = var3;
         }
         if (var2 == 9) {
             class155.field2993 = var3;

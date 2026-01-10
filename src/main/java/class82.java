@@ -479,34 +479,34 @@ public class class82 extends class145 {
 
     @OriginalMember(owner = "client!he", name = "a", descriptor = "([B)V")
     private final void method556(byte[] arg0) {
-        class46 var2 = new class46(arg0);
-        class46 var3 = new class46(arg0);
-        class46 var4 = new class46(arg0);
-        class46 var5 = new class46(arg0);
-        class46 var6 = new class46(arg0);
-        class46 var7 = new class46(arg0);
-        class46 var8 = new class46(arg0);
-        var2.field831 = arg0.length - 23;
-        int var9 = var2.method301(16);
-        int var10 = var2.method301(52);
-        int var11 = var2.method347(26119);
-        int var12 = var2.method347(26119);
-        int var13 = var2.method347(26119);
-        int var14 = var2.method347(26119);
-        int var15 = var2.method347(26119);
-        int var16 = var2.method347(26119);
-        int var17 = var2.method347(26119);
-        int var18 = var2.method301(106);
-        int var19 = var2.method301(76);
-        int var20 = var2.method301(80);
-        int var21 = var2.method301(85);
-        int var22 = var2.method301(20);
+        Packet var2 = new Packet(arg0);
+        Packet var3 = new Packet(arg0);
+        Packet var4 = new Packet(arg0);
+        Packet var5 = new Packet(arg0);
+        Packet var6 = new Packet(arg0);
+        Packet var7 = new Packet(arg0);
+        Packet var8 = new Packet(arg0);
+        var2.pos = arg0.length - 23;
+        int var9 = var2.g2(16);
+        int var10 = var2.g2(52);
+        int var11 = var2.g1(26119);
+        int var12 = var2.g1(26119);
+        int var13 = var2.g1(26119);
+        int var14 = var2.g1(26119);
+        int var15 = var2.g1(26119);
+        int var16 = var2.g1(26119);
+        int var17 = var2.g1(26119);
+        int var18 = var2.g2(106);
+        int var19 = var2.g2(76);
+        int var20 = var2.g2(80);
+        int var21 = var2.g2(85);
+        int var22 = var2.g2(20);
         int var23 = 0;
         int var24 = 0;
         int var25 = 0;
         if (var11 > 0) {
             this.field1521 = new byte[var11];
-            var2.field831 = 0;
+            var2.pos = 0;
             for (int var26 = 0; var26 < var11; var26++) {
                 byte var27 = this.field1521[var26] = var2.method324(94);
                 if (var27 == 0) {
@@ -608,16 +608,16 @@ public class class82 extends class145 {
                 this.field1502 = new byte[var25];
             }
         }
-        var2.field831 = var11;
-        var3.field831 = var44;
-        var4.field831 = var46;
-        var5.field831 = var48;
-        var6.field831 = var36;
+        var2.pos = var11;
+        var3.pos = var44;
+        var4.pos = var46;
+        var5.pos = var48;
+        var6.pos = var36;
         int var63 = 0;
         int var64 = 0;
         int var65 = 0;
         for (int var66 = 0; var66 < var9; var66++) {
-            int var79 = var2.method347(26119);
+            int var79 = var2.g1(26119);
             int var80 = 0;
             if ((var79 & 0x1) != 0) {
                 var80 = var3.method342(true);
@@ -637,18 +637,18 @@ public class class82 extends class145 {
             var64 = this.field1476[var66];
             var65 = this.field1506[var66];
             if (var17 == 1) {
-                this.field1483[var66] = var6.method347(26119);
+                this.field1483[var66] = var6.g1(26119);
             }
         }
-        var2.field831 = var42;
-        var3.field831 = var31;
-        var4.field831 = var34;
-        var5.field831 = var37;
-        var6.field831 = var35;
-        var7.field831 = var40;
-        var8.field831 = var39;
+        var2.pos = var42;
+        var3.pos = var31;
+        var4.pos = var34;
+        var5.pos = var37;
+        var6.pos = var35;
+        var7.pos = var40;
+        var8.pos = var39;
         for (int var67 = 0; var67 < var10; var67++) {
-            this.field1482[var67] = (short) var2.method301(63);
+            this.field1482[var67] = (short) var2.g2(63);
             if (var12 == 1) {
                 this.field1480[var67] = var3.method324(93);
             }
@@ -659,27 +659,27 @@ public class class82 extends class145 {
                 this.field1510[var67] = var5.method324(106);
             }
             if (var15 == 1) {
-                this.field1514[var67] = var6.method347(26119);
+                this.field1514[var67] = var6.g1(26119);
             }
             if (var16 == 1) {
-                this.field1503[var67] = (short) (var7.method301(30) - 1);
+                this.field1503[var67] = (short) (var7.g2(30) - 1);
             }
             if (this.field1488 != null) {
                 if (this.field1503[var67] == -1) {
                     this.field1488[var67] = -1;
                 } else {
-                    this.field1488[var67] = (byte) (var8.method347(26119) - 1);
+                    this.field1488[var67] = (byte) (var8.g1(26119) - 1);
                 }
             }
         }
-        var2.field831 = var33;
-        var3.field831 = var30;
+        var2.pos = var33;
+        var3.pos = var30;
         int var68 = 0;
         int var69 = 0;
         int var70 = 0;
         int var71 = 0;
         for (int var72 = 0; var72 < var10; var72++) {
-            int var75 = var3.method347(26119);
+            int var75 = var3.g1(26119);
             if (var75 == 1) {
                 var68 = var2.method342(true) + var71;
                 var69 = var2.method342(true) + var68;
@@ -716,37 +716,37 @@ public class class82 extends class145 {
                 this.field1505[var72] = var70;
             }
         }
-        var2.field831 = var50;
-        var3.field831 = var52;
-        var4.field831 = var54;
-        var5.field831 = var56;
-        var6.field831 = var58;
-        var7.field831 = var60;
+        var2.pos = var50;
+        var3.pos = var52;
+        var4.pos = var54;
+        var5.pos = var56;
+        var6.pos = var58;
+        var7.pos = var60;
         for (int var73 = 0; var73 < var11; var73++) {
             int var74 = this.field1521[var73] & 0xFF;
             if (var74 == 0) {
-                this.field1501[var73] = (short) var2.method301(73);
-                this.field1495[var73] = (short) var2.method301(49);
-                this.field1477[var73] = (short) var2.method301(122);
+                this.field1501[var73] = (short) var2.g2(73);
+                this.field1495[var73] = (short) var2.g2(49);
+                this.field1477[var73] = (short) var2.g2(122);
             }
             if (var74 == 1) {
-                this.field1501[var73] = (short) var3.method301(69);
-                this.field1495[var73] = (short) var3.method301(35);
-                this.field1477[var73] = (short) var3.method301(83);
-                this.field1484[var73] = (short) var4.method301(25);
-                this.field1508[var73] = (short) var4.method301(73);
-                this.field1475[var73] = (short) var4.method301(40);
+                this.field1501[var73] = (short) var3.g2(69);
+                this.field1495[var73] = (short) var3.g2(35);
+                this.field1477[var73] = (short) var3.g2(83);
+                this.field1484[var73] = (short) var4.g2(25);
+                this.field1508[var73] = (short) var4.g2(73);
+                this.field1475[var73] = (short) var4.g2(40);
                 this.field1478[var73] = var5.method324(65);
                 this.field1517[var73] = var6.method324(71);
                 this.field1516[var73] = var7.method324(78);
             }
             if (var74 == 2) {
-                this.field1501[var73] = (short) var3.method301(113);
-                this.field1495[var73] = (short) var3.method301(96);
-                this.field1477[var73] = (short) var3.method301(67);
-                this.field1484[var73] = (short) var4.method301(58);
-                this.field1508[var73] = (short) var4.method301(56);
-                this.field1475[var73] = (short) var4.method301(53);
+                this.field1501[var73] = (short) var3.g2(113);
+                this.field1495[var73] = (short) var3.g2(96);
+                this.field1477[var73] = (short) var3.g2(67);
+                this.field1484[var73] = (short) var4.g2(58);
+                this.field1508[var73] = (short) var4.g2(56);
+                this.field1475[var73] = (short) var4.g2(53);
                 this.field1478[var73] = var5.method324(92);
                 this.field1517[var73] = var6.method324(64);
                 this.field1516[var73] = var7.method324(53);
@@ -754,12 +754,12 @@ public class class82 extends class145 {
                 this.field1502[var73] = var7.method324(78);
             }
             if (var74 == 3) {
-                this.field1501[var73] = (short) var3.method301(96);
-                this.field1495[var73] = (short) var3.method301(89);
-                this.field1477[var73] = (short) var3.method301(50);
-                this.field1484[var73] = (short) var4.method301(118);
-                this.field1508[var73] = (short) var4.method301(35);
-                this.field1475[var73] = (short) var4.method301(109);
+                this.field1501[var73] = (short) var3.g2(96);
+                this.field1495[var73] = (short) var3.g2(89);
+                this.field1477[var73] = (short) var3.g2(50);
+                this.field1484[var73] = (short) var4.g2(118);
+                this.field1508[var73] = (short) var4.g2(35);
+                this.field1475[var73] = (short) var4.g2(109);
                 this.field1478[var73] = var5.method324(127);
                 this.field1517[var73] = var6.method324(21);
                 this.field1516[var73] = var7.method324(35);
@@ -1146,24 +1146,24 @@ public class class82 extends class145 {
     private final void method571(byte[] arg0) {
         boolean var2 = false;
         boolean var3 = false;
-        class46 var4 = new class46(arg0);
-        class46 var5 = new class46(arg0);
-        class46 var6 = new class46(arg0);
-        class46 var7 = new class46(arg0);
-        class46 var8 = new class46(arg0);
-        var4.field831 = arg0.length - 18;
-        int var9 = var4.method301(31);
-        int var10 = var4.method301(101);
-        int var11 = var4.method347(26119);
-        int var12 = var4.method347(26119);
-        int var13 = var4.method347(26119);
-        int var14 = var4.method347(26119);
-        int var15 = var4.method347(26119);
-        int var16 = var4.method347(26119);
-        int var17 = var4.method301(20);
-        int var18 = var4.method301(13);
-        int var19 = var4.method301(83);
-        int var20 = var4.method301(75);
+        Packet var4 = new Packet(arg0);
+        Packet var5 = new Packet(arg0);
+        Packet var6 = new Packet(arg0);
+        Packet var7 = new Packet(arg0);
+        Packet var8 = new Packet(arg0);
+        var4.pos = arg0.length - 18;
+        int var9 = var4.g2(31);
+        int var10 = var4.g2(101);
+        int var11 = var4.g1(26119);
+        int var12 = var4.g1(26119);
+        int var13 = var4.g1(26119);
+        int var14 = var4.g1(26119);
+        int var15 = var4.g1(26119);
+        int var16 = var4.g1(26119);
+        int var17 = var4.g2(20);
+        int var18 = var4.g2(13);
+        int var19 = var4.g2(83);
+        int var20 = var4.g2(75);
         byte var21 = 0;
         int var23 = var9 + var21;
         int var25 = var10 + var23;
@@ -1228,16 +1228,16 @@ public class class82 extends class145 {
             this.field1514 = new int[var10];
         }
         this.field1482 = new short[var10];
-        var4.field831 = var21;
-        var5.field831 = var36;
-        var6.field831 = var38;
-        var7.field831 = var40;
-        var8.field831 = var29;
+        var4.pos = var21;
+        var5.pos = var36;
+        var6.pos = var38;
+        var7.pos = var40;
+        var8.pos = var29;
         int var43 = 0;
         int var44 = 0;
         int var45 = 0;
         for (int var46 = 0; var46 < var9; var46++) {
-            int var62 = var4.method347(26119);
+            int var62 = var4.g1(26119);
             int var63 = 0;
             if ((var62 & 0x1) != 0) {
                 var63 = var5.method342(true);
@@ -1257,18 +1257,18 @@ public class class82 extends class145 {
             var44 = this.field1476[var46];
             var45 = this.field1506[var46];
             if (var16 == 1) {
-                this.field1483[var46] = var8.method347(26119);
+                this.field1483[var46] = var8.g1(26119);
             }
         }
-        var4.field831 = var32;
-        var5.field831 = var28;
-        var6.field831 = var26;
-        var7.field831 = var30;
-        var8.field831 = var27;
+        var4.pos = var32;
+        var5.pos = var28;
+        var6.pos = var26;
+        var7.pos = var30;
+        var8.pos = var27;
         for (int var47 = 0; var47 < var10; var47++) {
-            this.field1482[var47] = (short) var4.method301(99);
+            this.field1482[var47] = (short) var4.g2(99);
             if (var12 == 1) {
-                int var61 = var5.method347(26119);
+                int var61 = var5.g1(26119);
                 if ((var61 & 0x1) == 1) {
                     this.field1480[var47] = 1;
                     var2 = true;
@@ -1294,17 +1294,17 @@ public class class82 extends class145 {
                 this.field1510[var47] = var7.method324(97);
             }
             if (var15 == 1) {
-                this.field1514[var47] = var8.method347(26119);
+                this.field1514[var47] = var8.g1(26119);
             }
         }
-        var4.field831 = var25;
-        var5.field831 = var23;
+        var4.pos = var25;
+        var5.pos = var23;
         int var48 = 0;
         int var49 = 0;
         int var50 = 0;
         int var51 = 0;
         for (int var52 = 0; var52 < var10; var52++) {
-            int var57 = var5.method347(26119);
+            int var57 = var5.g1(26119);
             if (var57 == 1) {
                 var48 = var4.method342(true) + var51;
                 var49 = var4.method342(true) + var48;
@@ -1341,12 +1341,12 @@ public class class82 extends class145 {
                 this.field1505[var52] = var50;
             }
         }
-        var4.field831 = var34;
+        var4.pos = var34;
         for (int var53 = 0; var53 < var11; var53++) {
             this.field1521[var53] = 0;
-            this.field1501[var53] = (short) var4.method301(124);
-            this.field1495[var53] = (short) var4.method301(45);
-            this.field1477[var53] = (short) var4.method301(98);
+            this.field1501[var53] = (short) var4.g2(124);
+            this.field1495[var53] = (short) var4.g2(45);
+            this.field1477[var53] = (short) var4.g2(98);
         }
         if (this.field1488 != null) {
             boolean var54 = false;

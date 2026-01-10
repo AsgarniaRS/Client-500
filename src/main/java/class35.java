@@ -86,7 +86,7 @@ public class class35 extends class23 {
     private short[] field609;
 
     @OriginalMember(owner = "client!da", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 == -3) {
             if (arg2 != 0) {
                 if (~arg2 != -2) {
@@ -95,16 +95,16 @@ public class class35 extends class23 {
                             if (~arg2 != -5) {
                                 if (~arg2 != -6) {
                                     if (arg2 == 6) {
-                                        this.field596 = arg0.method347(arg1 + 26122);
+                                        this.field596 = arg0.g1(arg1 + 26122);
                                     }
                                 } else {
-                                    this.field601 = arg0.method347(26119);
+                                    this.field601 = arg0.g1(26119);
                                 }
                             } else {
-                                this.field600 = arg0.method347(26119);
+                                this.field600 = arg0.g1(26119);
                             }
                         } else {
-                            this.field601 = this.field596 = arg0.method347(26119);
+                            this.field601 = this.field596 = arg0.g1(26119);
                         }
                     } else {
                         this.field607 = arg0.method334((byte) -73);
@@ -116,10 +116,10 @@ public class class35 extends class23 {
                         }
                     }
                 } else {
-                    this.field595 = arg0.method347(26119);
+                    this.field595 = arg0.g1(26119);
                 }
             } else {
-                this.field610 = ~arg0.method347(arg1 + 26122) == -2;
+                this.field610 = ~arg0.g1(arg1 + 26122) == -2;
             }
             ++field605;
         }

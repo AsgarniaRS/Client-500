@@ -65,22 +65,22 @@ public class class220 extends class23 {
     }
 
     @OriginalMember(owner = "client!ub", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             field4152 = null;
         }
         ++field4154;
         if (arg2 == 0) {
-            int var4 = arg0.method347(26119);
+            int var4 = arg0.g1(26119);
             if (~var4 != -1) {
                 this.method1489((byte) -79, var4);
             } else {
-                this.field4155 = new int[arg0.method347(26119)][4];
+                this.field4155 = new int[arg0.g1(26119)][4];
                 for (int var5 = 0; ~var5 > ~this.field4155.length; ++var5) {
-                    this.field4155[var5][0] = arg0.method301(63);
-                    this.field4155[var5][1] = arg0.method347(class180.method1287(arg1, -26118)) << 4;
-                    this.field4155[var5][2] = arg0.method347(26119) << 4;
-                    this.field4155[var5][3] = arg0.method347(arg1 + 26122) << 4;
+                    this.field4155[var5][0] = arg0.g2(63);
+                    this.field4155[var5][1] = arg0.g1(class180.method1287(arg1, -26118)) << 4;
+                    this.field4155[var5][2] = arg0.g1(26119) << 4;
+                    this.field4155[var5][3] = arg0.g1(arg1 + 26122) << 4;
                 }
             }
         }

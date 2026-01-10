@@ -3,13 +3,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ea")
-public class class46 extends class67 {
+public class Packet extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "ib", descriptor = "[B")
-    public byte[] field842;
+    public byte[] data;
 
     @OriginalMember(owner = "client!ea", name = "X", descriptor = "I")
-    public int field831;
+    public int pos;
 
     @OriginalMember(owner = "client!ea", name = "z", descriptor = "I")
     public static volatile int field807 = 0;
@@ -49,9 +49,6 @@ public class class46 extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "y", descriptor = "I")
     public static int field806;
-
-    @OriginalMember(owner = "client!ea", name = "A", descriptor = "I")
-    public static int field808;
 
     @OriginalMember(owner = "client!ea", name = "B", descriptor = "I")
     public static int field809;
@@ -218,7 +215,7 @@ public class class46 extends class67 {
         if (arg0 > -50) {
             field859 = -24;
         }
-        return -this.field842[this.field831++] & 0xFF;
+        return -this.data[this.pos++] & 0xFF;
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BJ)V")
@@ -234,24 +231,24 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(II)V")
     public final void method297(int arg0, int arg1) {
         field865++;
-        this.field842[this.field831++] = (byte) (arg1 - arg0);
+        this.data[this.pos++] = (byte) (arg1 - arg0);
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(I)Li;")
-    public final class88 method298(int arg0) {
+    public final class88 gjstr(int arg0) {
         field847++;
-        int var2 = this.field831;
-        while (this.field842[this.field831++] != 0) {
+        int var2 = this.pos;
+        while (this.data[this.pos++] != 0) {
         }
-        return arg0 >= -124 ? null : class54.method395(var2, (byte) -105, this.field842, this.field831 - var2 - 1);
+        return arg0 >= -124 ? null : class54.method395(var2, (byte) -105, this.data, this.pos - var2 - 1);
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(I)I")
     public final int method299(int arg0) {
         field825++;
         int var2 = -78 % ((-arg0 - 16) / 55);
-        this.field831 += 4;
-        return (this.field842[this.field831 - 4] & 0xFF) + (((this.field842[this.field831 - 1] & 0xFF) << 24) + ((this.field842[this.field831 - 3] & 0xFF) << 8) + ((this.field842[this.field831 + -2] & 0xFF) << 16));
+        this.pos += 4;
+        return (this.data[this.pos - 4] & 0xFF) + (((this.data[this.pos - 1] & 0xFF) << 24) + ((this.data[this.pos - 3] & 0xFF) << 8) + ((this.data[this.pos + -2] & 0xFF) << 16));
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(II)J")
@@ -265,20 +262,20 @@ public class class46 extends class67 {
         int var4 = var7 * 8;
         long var5 = 0L;
         while (var4 >= 0) {
-            var5 |= ((long) this.field842[this.field831++] & 0xFFL) << var4;
+            var5 |= ((long) this.data[this.pos++] & 0xFFL) << var4;
             var4 -= 8;
         }
         return var5;
     }
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(I)I")
-    public final int method301(int arg0) {
+    public final int g2(int arg0) {
         if (arg0 <= 11) {
             return -54;
         } else {
             field835++;
-            this.field831 += 2;
-            return ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 - 1] & 0xFF);
+            this.pos += 2;
+            return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] & 0xFF);
         }
     }
 
@@ -286,8 +283,8 @@ public class class46 extends class67 {
     public final int method302(int arg0) {
         if (arg0 == 255) {
             field855++;
-            this.field831 += 2;
-            return ((this.field842[this.field831 - 1] & 0xFF) << 8) + (this.field842[this.field831 - 2] - 128 & 0xFF);
+            this.pos += 2;
+            return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] - 128 & 0xFF);
         } else {
             return -16;
         }
@@ -296,25 +293,25 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "f", descriptor = "(I)B")
     public final byte method303(int arg0) {
         field837++;
-        return arg0 == 16777215 ? (byte) (this.field842[this.field831++] - 128) : 125;
+        return arg0 == 16777215 ? (byte) (this.data[this.pos++] - 128) : 125;
     }
 
     @OriginalMember(owner = "client!ea", name = "g", descriptor = "(I)I")
     public final int method304(int arg0) {
-        this.field831 += 3;
+        this.pos += 3;
         field869++;
         if (arg0 != -29629) {
             this.method296((byte) 85, 112L);
         }
-        return ((this.field842[this.field831 - 3] & 0xFF) << 16) + ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 + -1] & 0xFF);
+        return ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(II)V")
     public final void method305(int arg0, int arg1) {
-        this.field842[this.field831++] = (byte) (arg1 >> 8);
+        this.data[this.pos++] = (byte) (arg1 >> 8);
         if (arg0 >= 77) {
             field814++;
-            this.field842[this.field831++] = (byte) arg1;
+            this.data[this.pos++] = (byte) arg1;
         }
     }
 
@@ -329,7 +326,7 @@ public class class46 extends class67 {
             throw new IllegalArgumentException();
         }
         for (int var5 = var6 * 8; var5 >= 0; var5 -= 8) {
-            this.field842[this.field831++] = (byte) (arg2 >> var5);
+            this.data[this.pos++] = (byte) (arg2 >> var5);
         }
     }
 
@@ -338,7 +335,7 @@ public class class46 extends class67 {
         field806++;
         if (!arg0) {
             for (int var5 = arg3; var5 < arg3 + arg1; var5++) {
-                arg2[var5] = this.field842[this.field831++];
+                arg2[var5] = this.data[this.pos++];
             }
         }
     }
@@ -350,7 +347,7 @@ public class class46 extends class67 {
         }
         field860++;
         if (arg1 >= 0 && arg1 < 128) {
-            this.method346(255, arg1);
+            this.p1(255, arg1);
         } else if (arg1 >= 0 && arg1 < 32768) {
             this.method305(105, arg1 + 32768);
         } else {
@@ -409,23 +406,23 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(ILjava/math/BigInteger;Ljava/math/BigInteger;)V")
     public final void method311(int arg0, BigInteger arg1, BigInteger arg2) {
         field853++;
-        int var4 = this.field831;
+        int var4 = this.pos;
         byte[] var5 = new byte[var4];
-        this.field831 = arg0;
+        this.pos = arg0;
         this.method307(false, var4, var5, 0);
         BigInteger var6 = new BigInteger(var5);
         BigInteger var7 = var6.modPow(arg1, arg2);
         byte[] var8 = var7.toByteArray();
-        this.field831 = 0;
-        this.method346(255, var8.length);
+        this.pos = 0;
+        this.p1(255, var8.length);
         this.method325((byte) 34, var8.length, var8, 0);
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(B)I")
     public final int method312(byte arg0) {
         field802++;
-        this.field831 += 2;
-        int var2 = ((this.field842[this.field831 - 1] & 0xFF) << 8) + (this.field842[this.field831 - 2] - 128 & 0xFF);
+        this.pos += 2;
+        int var2 = ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] - 128 & 0xFF);
         if (var2 > 32767) {
             var2 -= 65536;
         }
@@ -438,19 +435,19 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "h", descriptor = "(I)I")
     public final int method313(int arg0) {
         field868++;
-        this.field831 += 4;
+        this.pos += 4;
         if (arg0 < 100) {
             this.method343(29);
         }
-        return ((this.field842[this.field831 - 1] & 0xFF) << 8) + (this.field842[this.field831 - 2] & 0xFF) + ((this.field842[this.field831 + -3] & 0xFF) << 24) + ((this.field842[this.field831 + -4] & 0xFF) << 16);
+        return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] & 0xFF) + ((this.data[this.pos + -3] & 0xFF) << 24) + ((this.data[this.pos + -4] & 0xFF) << 16);
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(IB)V")
     public final void method314(int arg0, byte arg1) {
         int var3 = 23 / ((-arg1 - 55) / 39);
         field829++;
-        this.field842[this.field831++] = (byte) arg0;
-        this.field842[this.field831++] = (byte) (arg0 >> 8);
+        this.data[this.pos++] = (byte) arg0;
+        this.data[this.pos++] = (byte) (arg0 >> 8);
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "([BIII)V")
@@ -458,7 +455,7 @@ public class class46 extends class67 {
         int var5 = -104 % ((64 - arg3) / 43);
         field854++;
         for (int var6 = arg1 + arg2 - 1; var6 >= arg1; var6--) {
-            arg0[var6] = this.field842[this.field831++];
+            arg0[var6] = this.data[this.pos++];
         }
     }
 
@@ -467,11 +464,11 @@ public class class46 extends class67 {
         if (arg1 != 15728) {
             return;
         }
-        this.field842[this.field831++] = (byte) (arg0 >> 16);
-        this.field842[this.field831++] = (byte) (arg0 >> 24);
+        this.data[this.pos++] = (byte) (arg0 >> 16);
+        this.data[this.pos++] = (byte) (arg0 >> 24);
         field811++;
-        this.field842[this.field831++] = (byte) arg0;
-        this.field842[this.field831++] = (byte) (arg0 >> 8);
+        this.data[this.pos++] = (byte) arg0;
+        this.data[this.pos++] = (byte) (arg0 >> 8);
     }
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(B)I")
@@ -480,11 +477,11 @@ public class class46 extends class67 {
         if (arg0 != -39) {
             return -39;
         }
-        byte var2 = this.field842[this.field831++];
+        byte var2 = this.data[this.pos++];
         int var3 = 0;
         while (var2 < 0) {
             var3 = (var3 | var2 & 0x7F) << 7;
-            var2 = this.field842[this.field831++];
+            var2 = this.data[this.pos++];
         }
         return var3 | var2;
     }
@@ -540,17 +537,17 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "i", descriptor = "(I)I")
     public final int method319(int arg0) {
         field858++;
-        return arg0 == 4633 ? this.field842[this.field831++] - 128 & 0xFF : -52;
+        return arg0 == 4633 ? this.data[this.pos++] - 128 & 0xFF : -52;
     }
 
     @OriginalMember(owner = "client!ea", name = "j", descriptor = "(I)I")
     public final int method320(int arg0) {
         field844++;
-        this.field831 += 4;
+        this.pos += 4;
         if (arg0 != 3) {
             field848 = -83;
         }
-        return ((this.field842[this.field831 - 1] & 0xFF) << 16) + ((this.field842[this.field831 - 4] & 0xFF) << 8) + ((this.field842[this.field831 + -2] & 0xFF) << 24) + (this.field842[this.field831 + -3] & 0xFF);
+        return ((this.data[this.pos - 1] & 0xFF) << 16) + ((this.data[this.pos - 4] & 0xFF) << 8) + ((this.data[this.pos + -2] & 0xFF) << 24) + (this.data[this.pos + -3] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "k", descriptor = "(I)J")
@@ -558,9 +555,9 @@ public class class46 extends class67 {
         if (arg0 != 1054632416) {
             field810 = null;
         }
-        long var2 = (long) this.method323((byte) -123) & 0xFFFFFFFFL;
+        long var2 = (long) this.g4((byte) -123) & 0xFFFFFFFFL;
         field852++;
-        long var4 = (long) this.method323((byte) -52) & 0xFFFFFFFFL;
+        long var4 = (long) this.g4((byte) -52) & 0xFFFFFFFFL;
         return (var2 << 32) + var4;
     }
 
@@ -568,11 +565,11 @@ public class class46 extends class67 {
     public final void method322(int arg0, int arg1, int[] arg2, int arg3) {
         int var5 = (arg1 - arg0) / 8;
         field861++;
-        int var6 = this.field831;
-        this.field831 = arg0;
+        int var6 = this.pos;
+        this.pos = arg0;
         for (int var7 = 0; var7 < var5; var7++) {
-            int var8 = this.method323((byte) -115);
-            int var9 = this.method323((byte) -66);
+            int var8 = this.g4((byte) -115);
+            int var9 = this.g4((byte) -66);
             int var10 = -1640531527;
             int var11 = -957401312;
             int var12 = 32;
@@ -581,24 +578,24 @@ public class class46 extends class67 {
                 var11 -= var10;
                 var8 -= (var9 >>> 5 ^ var9 << 4) + var9 ^ arg2[var11 & 0x3] + var11;
             }
-            this.field831 -= 8;
-            this.method338(2112555600, var8);
-            this.method338(arg3 ^ 0x7DEB0A54, var9);
+            this.pos -= 8;
+            this.p4(var8);
+            this.p4(var9);
         }
-        this.field831 = var6;
+        this.pos = var6;
         if (arg3 != 4) {
             this.method336(null, (byte) 124);
         }
     }
 
     @OriginalMember(owner = "client!ea", name = "e", descriptor = "(B)I")
-    public final int method323(byte arg0) {
-        this.field831 += 4;
+    public final int g4(byte arg0) {
+        this.pos += 4;
         if (arg0 > -31) {
             this.method304(47);
         }
         field824++;
-        return ((this.field842[this.field831 - 4] & 0xFF) << 24) + ((this.field842[this.field831 - 3] & 0xFF) << 16) + ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 + -1] & 0xFF);
+        return ((this.data[this.pos - 4] & 0xFF) << 24) + ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "l", descriptor = "(I)B")
@@ -607,7 +604,7 @@ public class class46 extends class67 {
         if (arg0 < 6) {
             field807 = 102;
         }
-        return this.field842[this.field831++];
+        return this.data[this.pos++];
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI[BI)V")
@@ -615,41 +612,41 @@ public class class46 extends class67 {
         field863++;
         if (arg0 == 34) {
             for (int var5 = arg3; var5 < arg3 + arg1; var5++) {
-                this.field842[this.field831++] = arg2[var5];
+                this.data[this.pos++] = arg2[var5];
             }
         }
     }
 
     @OriginalMember(owner = "client!ea", name = "f", descriptor = "(II)V")
     public final void method326(int arg0, int arg1) {
-        this.field842[this.field831++] = (byte) (arg1 >> 8);
-        this.field842[this.field831++] = (byte) arg1;
+        this.data[this.pos++] = (byte) (arg1 >> 8);
+        this.data[this.pos++] = (byte) arg1;
         if (arg0 == -1) {
-            this.field842[this.field831++] = (byte) (arg1 >> 24);
+            this.data[this.pos++] = (byte) (arg1 >> 24);
             field813++;
-            this.field842[this.field831++] = (byte) (arg1 >> 16);
+            this.data[this.pos++] = (byte) (arg1 >> 16);
         }
     }
 
     @OriginalMember(owner = "client!ea", name = "g", descriptor = "(II)V")
     public final void method327(int arg0, int arg1) {
-        this.field842[this.field831++] = (byte) (128 - arg1);
+        this.data[this.pos++] = (byte) (128 - arg1);
         field846++;
         int var3 = 114 % ((-arg0 - 24) / 58);
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(JB)V")
     public final void method328(long arg0, byte arg1) {
-        this.field842[this.field831++] = (byte) (arg0 >> 56);
-        this.field842[this.field831++] = (byte) (arg0 >> 48);
+        this.data[this.pos++] = (byte) (arg0 >> 56);
+        this.data[this.pos++] = (byte) (arg0 >> 48);
         field823++;
-        this.field842[this.field831++] = (byte) (arg0 >> 40);
-        this.field842[this.field831++] = (byte) (arg0 >> 32);
-        this.field842[this.field831++] = (byte) (arg0 >> 24);
-        this.field842[this.field831++] = (byte) (arg0 >> 16);
-        this.field842[this.field831++] = (byte) (arg0 >> 8);
+        this.data[this.pos++] = (byte) (arg0 >> 40);
+        this.data[this.pos++] = (byte) (arg0 >> 32);
+        this.data[this.pos++] = (byte) (arg0 >> 24);
+        this.data[this.pos++] = (byte) (arg0 >> 16);
+        this.data[this.pos++] = (byte) (arg0 >> 8);
         if (arg1 < -119) {
-            this.field842[this.field831++] = (byte) arg0;
+            this.data[this.pos++] = (byte) arg0;
         }
     }
 
@@ -662,15 +659,15 @@ public class class46 extends class67 {
             if ((arg1 & 0xFFFFC000) != 0) {
                 if ((arg1 & 0xFFE00000) != 0) {
                     if ((arg1 & 0xF0000000) != 0) {
-                        this.method346(255, arg1 >>> 28 | 0x80);
+                        this.p1(255, arg1 >>> 28 | 0x80);
                     }
-                    this.method346(255, arg1 >>> 21 | 0x80);
+                    this.p1(255, arg1 >>> 21 | 0x80);
                 }
-                this.method346(255, arg1 >>> 14 | 0x80);
+                this.p1(255, arg1 >>> 14 | 0x80);
             }
-            this.method346(arg0 + 247, arg1 >>> 7 | 0x80);
+            this.p1(arg0 + 247, arg1 >>> 7 | 0x80);
         }
-        this.method346(255, arg1 & 0x7F);
+        this.p1(255, arg1 & 0x7F);
         field862++;
     }
 
@@ -709,8 +706,8 @@ public class class46 extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "i", descriptor = "(II)V")
     public final void method331(int arg0, int arg1) {
-        this.field842[this.field831++] = (byte) (arg0 >> 8);
-        this.field842[this.field831++] = (byte) (arg0 + 128);
+        this.data[this.pos++] = (byte) (arg0 >> 8);
+        this.data[this.pos++] = (byte) (arg0 + 128);
         if (arg1 == 18975) {
             field841++;
         }
@@ -734,13 +731,13 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI)V")
     public final void method333(byte arg0, int arg1) {
         field812++;
-        this.field842[this.field831 - arg1 - 4] = (byte) (arg1 >> 24);
-        this.field842[this.field831 - arg1 - 3] = (byte) (arg1 >> 16);
+        this.data[this.pos - arg1 - 4] = (byte) (arg1 >> 24);
+        this.data[this.pos - arg1 - 3] = (byte) (arg1 >> 16);
         if (arg0 != -68) {
             field848 = -104;
         }
-        this.field842[this.field831 - arg1 - 2] = (byte) (arg1 >> 8);
-        this.field842[this.field831 - arg1 - 1] = (byte) arg1;
+        this.data[this.pos - arg1 - 2] = (byte) (arg1 >> 8);
+        this.data[this.pos - arg1 - 1] = (byte) arg1;
     }
 
     @OriginalMember(owner = "client!ea", name = "g", descriptor = "(B)I")
@@ -749,8 +746,8 @@ public class class46 extends class67 {
             return -128;
         }
         field864++;
-        this.field831 += 2;
-        int var2 = ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 - 1] & 0xFF);
+        this.pos += 2;
+        int var2 = ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] & 0xFF);
         if (var2 > 32767) {
             var2 -= 65536;
         }
@@ -763,44 +760,36 @@ public class class46 extends class67 {
             field817 = null;
         }
         field819++;
-        return (byte) -this.field842[this.field831++];
+        return (byte) -this.data[this.pos++];
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Li;B)V")
     public final void method336(class88 arg0, byte arg1) {
         field857++;
-        this.field831 += arg0.method612(0, arg0.method604((byte) -53), arg1 ^ 0xFFFFC7B2, this.field831, this.field842);
-        this.field842[this.field831++] = arg1;
+        this.pos += arg0.method612(0, arg0.method604((byte) -53), arg1 ^ 0xFFFFC7B2, this.pos, this.data);
+        this.data[this.pos++] = arg1;
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(IB)V")
-    public final void method337(int arg0, byte arg1) {
-        if (arg1 != -61) {
-            this.method350(-95);
-        }
-        this.field842[this.field831++] = (byte) (arg0 >> 16);
-        field808++;
-        this.field842[this.field831++] = (byte) (arg0 >> 8);
-        this.field842[this.field831++] = (byte) arg0;
+    public final void p3(int val) {
+        this.data[this.pos++] = (byte) (val >> 16);
+        this.data[this.pos++] = (byte) (val >> 8);
+        this.data[this.pos++] = (byte) val;
     }
 
     @OriginalMember(owner = "client!ea", name = "j", descriptor = "(II)V")
-    public final void method338(int arg0, int arg1) {
-        field856++;
-        this.field842[this.field831++] = (byte) (arg1 >> 24);
-        this.field842[this.field831++] = (byte) (arg1 >> 16);
-        if (arg0 != 2112555600) {
-            field833 = -56;
-        }
-        this.field842[this.field831++] = (byte) (arg1 >> 8);
-        this.field842[this.field831++] = (byte) arg1;
+    public final void p4(int arg1) {
+        this.data[this.pos++] = (byte) (arg1 >> 24);
+        this.data[this.pos++] = (byte) (arg1 >> 16);
+        this.data[this.pos++] = (byte) (arg1 >> 8);
+        this.data[this.pos++] = (byte) arg1;
     }
 
     @OriginalMember(owner = "client!ea", name = "n", descriptor = "(I)I")
     public final int method339(int arg0) {
-        this.field831 += arg0;
+        this.pos += arg0;
         field840++;
-        int var2 = ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 - 1] - 128 & 0xFF);
+        int var2 = ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
         if (var2 > 32767) {
             var2 -= 65536;
         }
@@ -811,29 +800,29 @@ public class class46 extends class67 {
     public final int method340(byte arg0) {
         field801++;
         int var2 = -81 / ((arg0 - 34) / 54);
-        this.field831 += 3;
-        return ((this.field842[this.field831 - 2] & 0xFF) << 16) + (this.field842[this.field831 - 1] & 0xFF) + ((this.field842[this.field831 + -3] & 0xFF) << 8);
+        this.pos += 3;
+        return ((this.data[this.pos - 2] & 0xFF) << 16) + (this.data[this.pos - 1] & 0xFF) + ((this.data[this.pos + -3] & 0xFF) << 8);
     }
 
     @OriginalMember(owner = "client!ea", name = "k", descriptor = "(II)V")
     public final void method341(int arg0, int arg1) {
         field851++;
-        this.field842[this.field831 - arg0 - 1] = (byte) arg0;
+        this.data[this.pos - arg0 - 1] = (byte) arg0;
         int var3 = 83 / ((arg1 + 58) / 61);
     }
 
     @OriginalMember(owner = "client!ea", name = "<init>", descriptor = "(I)V")
-    public class46(int arg0) {
-        this.field842 = class102.method711((byte) -117, arg0);
-        this.field831 = 0;
+    public Packet(int arg0) {
+        this.data = class102.method711((byte) -117, arg0);
+        this.pos = 0;
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(Z)I")
     public final int method342(boolean arg0) {
         if (arg0) {
-            int var2 = this.field842[this.field831] & 0xFF;
+            int var2 = this.data[this.pos] & 0xFF;
             field809++;
-            return var2 < 128 ? this.method347(26119) - 64 : this.method301(49) + -49152;
+            return var2 < 128 ? this.g1(26119) - 64 : this.g2(49) + -49152;
         } else {
             return -94;
         }
@@ -841,41 +830,41 @@ public class class46 extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "o", descriptor = "(I)I")
     public final int method343(int arg0) {
-        this.field831 += 2;
+        this.pos += 2;
         if (arg0 <= 37) {
             this.method335(93);
         }
         field815++;
-        return ((this.field842[this.field831 - 1] & 0xFF) << 8) + (this.field842[this.field831 - 2] & 0xFF);
+        return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(IB)V")
     public final void method344(int arg0, byte arg1) {
-        this.field842[this.field831++] = (byte) (arg0 + 128);
+        this.data[this.pos++] = (byte) (arg0 + 128);
         if (arg1 == -51) {
-            this.field842[this.field831++] = (byte) (arg0 >> 8);
+            this.data[this.pos++] = (byte) (arg0 >> 8);
             field803++;
         }
     }
 
     @OriginalMember(owner = "client!ea", name = "<init>", descriptor = "([B)V")
-    public class46(byte[] arg0) {
-        this.field831 = 0;
-        this.field842 = arg0;
+    public Packet(byte[] arg0) {
+        this.pos = 0;
+        this.data = arg0;
     }
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(IB)I")
     public final int method345(int arg0, byte arg1) {
         field805++;
-        int var3 = class231.method1544((byte) 6, arg0, this.field842, this.field831);
+        int var3 = class231.method1544((byte) 6, arg0, this.data, this.pos);
         int var4 = -44 / ((18 - arg1) / 34);
-        this.method338(2112555600, var3);
+        this.p4(var3);
         return var3;
     }
 
     @OriginalMember(owner = "client!ea", name = "l", descriptor = "(II)V")
-    public final void method346(int arg0, int arg1) {
-        this.field842[this.field831++] = (byte) arg1;
+    public final void p1(int arg0, int val) {
+        this.data[this.pos++] = (byte) val;
         field839++;
         if (arg0 != 255) {
             field859 = -109;
@@ -883,10 +872,10 @@ public class class46 extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "p", descriptor = "(I)I")
-    public final int method347(int arg0) {
+    public final int g1(int arg0) {
         if (arg0 == 26119) {
             field818++;
-            return this.field842[this.field831++] & 0xFF;
+            return this.data[this.pos++] & 0xFF;
         } else {
             return -103;
         }
@@ -1076,10 +1065,10 @@ public class class46 extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(Z)I")
     public final int method349(boolean arg0) {
-        this.field831 += 2;
+        this.pos += 2;
         if (arg0) {
             field826++;
-            return ((this.field842[this.field831 - 2] & 0xFF) << 8) + (this.field842[this.field831 - 1] - 128 & 0xFF);
+            return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
         } else {
             return 22;
         }
@@ -1088,26 +1077,26 @@ public class class46 extends class67 {
     @OriginalMember(owner = "client!ea", name = "q", descriptor = "(I)I")
     public final int method350(int arg0) {
         field849++;
-        int var2 = this.field842[this.field831] & 0xFF;
+        int var2 = this.data[this.pos] & 0xFF;
         if (arg0 < 104) {
             return 61;
         } else if (var2 < 128) {
-            return this.method347(26119);
+            return this.g1(26119);
         } else {
-            return this.method301(19) - 32768;
+            return this.g2(19) - 32768;
         }
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(ZI)V")
     public final void method351(boolean arg0, int arg1) {
         field828++;
-        this.field842[this.field831++] = (byte) arg1;
+        this.data[this.pos++] = (byte) arg1;
         if (arg0) {
             this.method321(-107);
         }
-        this.field842[this.field831++] = (byte) (arg1 >> 8);
-        this.field842[this.field831++] = (byte) (arg1 >> 16);
-        this.field842[this.field831++] = (byte) (arg1 >> 24);
+        this.data[this.pos++] = (byte) (arg1 >> 8);
+        this.data[this.pos++] = (byte) (arg1 >> 16);
+        this.data[this.pos++] = (byte) (arg1 >> 24);
     }
 
     @OriginalMember(owner = "client!ea", name = "r", descriptor = "(I)I")
@@ -1116,19 +1105,19 @@ public class class46 extends class67 {
             field807 = 14;
         }
         field804++;
-        return 128 - this.field842[this.field831++] & 0xFF;
+        return 128 - this.data[this.pos++] & 0xFF;
     }
 
     @OriginalMember(owner = "client!ea", name = "s", descriptor = "(I)Li;")
-    public final class88 method353(int arg0) {
+    public final class88 fastgstr(int arg0) {
         field836++;
         if (arg0 < 48) {
             return null;
-        } else if (this.field842[this.field831] == 0) {
-            this.field831++;
+        } else if (this.data[this.pos] == 0) {
+            this.pos++;
             return null;
         } else {
-            return this.method298(-128);
+            return this.gjstr(-128);
         }
     }
 

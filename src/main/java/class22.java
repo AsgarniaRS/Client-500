@@ -134,9 +134,9 @@ public class class22 extends class144 {
             byte[] var3 = class34.field584.method941((byte) 56, arg1, 26);
             class176 var4 = new class176();
             if (var3 != null) {
-                var4.method1266(new class46(var3), 126);
+                var4.method1266(new Packet(var3), 126);
             }
-            class168.field3230.method664((long) arg1, var4, false);
+            class168.field3230.put((long) arg1, var4, false);
             return var4;
         }
     }
@@ -265,21 +265,21 @@ public class class22 extends class144 {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
-            class46 var9;
+            Packet var9;
             try {
-                var9 = new class46(class23.method119(arg0, -1));
+                var9 = new Packet(class23.method119(arg0, -1));
             } catch (RuntimeException var12) {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
-            int var10 = var9.method347(26119);
+            int var10 = var9.g1(26119);
             if (~var10 != -6 && var10 != 6) {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             int var11 = 0;
             if (~var10 <= -7) {
-                var11 = var9.method323((byte) -116);
+                var11 = var9.g4((byte) -116);
             }
             if (~this.field347 != ~var11) {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
@@ -396,7 +396,7 @@ public class class22 extends class144 {
             class173.field3366 = false;
             class188 var9 = class77.method516(arg2, arg3, arg5, arg0, true, false, false, arg4);
             if (var9 != null && !class173.field3366) {
-                class206.field3922.method664(var6, var9, false);
+                class206.field3922.put(var6, var9, false);
             }
             return var9;
         }

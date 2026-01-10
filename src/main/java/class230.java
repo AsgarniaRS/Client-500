@@ -115,7 +115,7 @@ public class class230 {
         if (class67.field1207 <= arg0 - arg1 && class12.field183 >= arg0 + arg1 && arg2 - arg1 >= class49.field919 && class18.field279 >= arg1 + arg2) {
             class109.method747(116, arg2, arg3, arg1, arg0);
         } else {
-            class46.method318(-61, arg3, arg0, arg1, arg2);
+            Packet.method318(-61, arg3, arg0, arg1, arg2);
         }
         if (arg4 != 34) {
             method1537(null, 71, 10, null);
@@ -162,11 +162,11 @@ public class class230 {
     }
 
     @OriginalMember(owner = "client!va", name = "a", descriptor = "(Lqg;IILea;)V")
-    public static final void method1537(class181 arg0, int arg1, int arg2, class46 arg3) {
+    public static final void method1537(class181 arg0, int arg1, int arg2, Packet arg3) {
         field4310++;
         class9 var4 = new class9();
-        var4.field124 = arg3.method347(26119);
-        var4.field136 = arg3.method323((byte) -62);
+        var4.field124 = arg3.g1(26119);
+        var4.field136 = arg3.g4((byte) -62);
         var4.field129 = new int[var4.field124];
         var4.field139 = new class163[var4.field124];
         if (arg1 != 0) {
@@ -178,29 +178,29 @@ public class class230 {
         var4.field138 = new class163[var4.field124];
         for (int var5 = 0; var5 < var4.field124; var5++) {
             try {
-                int var6 = arg3.method347(26119);
+                int var6 = arg3.g1(26119);
                 if (var6 == 0 || var6 == 1 || var6 == 2) {
-                    String var17 = new String(arg3.method298(-125).method613(-67));
-                    String var18 = new String(arg3.method298(-126).method613(-87));
+                    String var17 = new String(arg3.gjstr(-125).method613(-67));
+                    String var18 = new String(arg3.gjstr(-126).method613(-87));
                     int var19 = 0;
                     if (var6 == 1) {
-                        var19 = arg3.method323((byte) -61);
+                        var19 = arg3.g4((byte) -61);
                     }
                     var4.field128[var5] = var6;
                     var4.field129[var5] = var19;
                     var4.field139[var5] = arg0.method1293(var18, 15, class237.method1576(var17, 10608));
                 } else if (var6 == 3 || var6 == 4) {
-                    String var7 = new String(arg3.method298(-127).method613(-81));
-                    String var8 = new String(arg3.method298(-126).method613(arg1 - 123));
-                    int var9 = arg3.method347(26119);
+                    String var7 = new String(arg3.gjstr(-127).method613(-81));
+                    String var8 = new String(arg3.gjstr(-126).method613(arg1 - 123));
+                    int var9 = arg3.g1(26119);
                     String[] var10 = new String[var9];
                     for (int var11 = 0; var11 < var9; var11++) {
-                        var10[var11] = new String(arg3.method298(-126).method613(arg1 - 103));
+                        var10[var11] = new String(arg3.gjstr(-126).method613(arg1 - 103));
                     }
                     byte[][] var12 = new byte[var9][];
                     if (var6 == 3) {
                         for (int var13 = 0; var13 < var9; var13++) {
-                            int var14 = arg3.method323((byte) -34);
+                            int var14 = arg3.g4((byte) -34);
                             var12[var13] = new byte[var14];
                             arg3.method307(false, var14, var12[var13], 0);
                         }
@@ -225,7 +225,7 @@ public class class230 {
                 var4.field132[var5] = -5;
             }
         }
-        class89.field1695.method1624(var4, 115);
+        CollisionMap.field1695.method1624(var4, 115);
     }
 
     @OriginalMember(owner = "client!va", name = "a", descriptor = "(IZ[Lq;)V")
@@ -243,7 +243,7 @@ public class class230 {
                     }
                     class168 var5 = (class168) class128.field2397.method1051(-1, (long) var4.field3425);
                     if (var5 != null) {
-                        class137.method914(var5.field3231, arg0, 4);
+                        ClientStream.method914(var5.field3231, arg0, 4);
                     }
                 }
                 if (arg0 == 0 && var4.field3436 != null) {

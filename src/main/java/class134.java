@@ -110,10 +110,10 @@ public class class134 {
             return;
         }
         class31.field498++;
-        class146.field2749.method30((byte) -102, 19);
+        class146.out.method30((byte) -102, 19);
         try {
-            class33.field556.method913(class146.field2749.field831, 0, class146.field2749.field842, 17492);
-            class146.field2749.field831 = 0;
+            class33.field556.write(class146.out.data, 0, class146.out.pos);
+            class146.out.pos = 0;
         } catch (IOException var2) {
             class58.field1097 = true;
         }

@@ -59,11 +59,11 @@ public class class180 extends class23 {
     }
 
     @OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field3575;
         if (arg1 == -3) {
             if (~arg2 == -1) {
-                this.field3580 = arg0.method301(79);
+                this.field3580 = arg0.g2(79);
             }
         }
     }

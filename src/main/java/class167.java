@@ -99,11 +99,11 @@ public class class167 extends class23 {
                         if (class27.field461[var9] != 2) {
                             if (class27.field461[var9] == 1) {
                                 var10 = var7.field1255;
-                                if (var10 == -1 && ~class89.field1687[var9] == -2) {
+                                if (var10 == -1 && ~CollisionMap.field1687[var9] == -2) {
                                     var10 = 2001;
                                 }
                                 var11 = arg1[var6].field1255;
-                                if (var11 == -1 && ~class89.field1687[var9] == -2) {
+                                if (var11 == -1 && ~CollisionMap.field1687[var9] == -2) {
                                     var11 = 2001;
                                 }
                             } else if (class27.field461[var9] == 3) {
@@ -118,7 +118,7 @@ public class class167 extends class23 {
                             var10 = var7.field1258;
                         }
                         if (~var10 != ~var11) {
-                            if ((class89.field1687[var9] != 1 || ~var11 >= ~var10) && (class89.field1687[var9] != 0 || ~var11 <= ~var10)) {
+                            if ((CollisionMap.field1687[var9] != 1 || ~var11 >= ~var10) && (CollisionMap.field1687[var9] != 0 || ~var11 <= ~var10)) {
                                 var8 = false;
                             }
                             break;
@@ -145,11 +145,11 @@ public class class167 extends class23 {
                                 }
                             } else {
                                 var14 = arg1[var4].field1255;
-                                if (~var14 == 0 && ~class89.field1687[var13] == -2) {
+                                if (~var14 == 0 && ~CollisionMap.field1687[var13] == -2) {
                                     var14 = 2001;
                                 }
                                 var15 = var7.field1255;
-                                if (var15 == -1 && class89.field1687[var13] == 1) {
+                                if (var15 == -1 && CollisionMap.field1687[var13] == 1) {
                                     var15 = 2001;
                                 }
                             }
@@ -158,7 +158,7 @@ public class class167 extends class23 {
                             var15 = var7.field1258;
                         }
                         if (~var14 != ~var15) {
-                            if ((class89.field1687[var13] != 1 || var14 >= var15) && (~class89.field1687[var13] != -1 || ~var14 >= ~var15)) {
+                            if ((CollisionMap.field1687[var13] != 1 || var14 >= var15) && (~CollisionMap.field1687[var13] != -1 || ~var14 >= ~var15)) {
                                 var12 = false;
                             }
                             break;
@@ -183,7 +183,7 @@ public class class167 extends class23 {
     }
 
     @OriginalMember(owner = "client!pd", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field3217;
         if (arg1 != -3) {
             this.method1148(121, 29, 96, 18);
@@ -384,9 +384,9 @@ public class class167 extends class23 {
             byte[] var3 = class202.field3851.method941((byte) 56, class201.method1381(arg0, 255), class188.method1316((byte) 52, arg0));
             class47 var4 = new class47();
             if (var3 != null) {
-                var4.method355((byte) 33, new class46(var3));
+                var4.method355((byte) 33, new Packet(var3));
             }
-            class1.field2.method664((long) arg0, var4, false);
+            class1.field2.put((long) arg0, var4, false);
             return var4;
         }
     }

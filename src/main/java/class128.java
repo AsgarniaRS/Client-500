@@ -60,7 +60,7 @@ public class class128 extends class23 {
 
     @OriginalMember(owner = "client!lh", name = "c", descriptor = "(B)V")
     public static final void method871(byte arg0) {
-        class89.field1695 = new class248();
+        CollisionMap.field1695 = new class248();
         ++field2405;
         if (arg0 != 88) {
             method871((byte) -62);
@@ -143,7 +143,7 @@ public class class128 extends class23 {
     }
 
     @OriginalMember(owner = "client!lh", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 != -1) {
             if (~arg2 != -2) {
                 if (~arg2 != -3) {
@@ -155,16 +155,16 @@ public class class128 extends class23 {
                             this.field2409[2] = class70.method470(255, var5) >> 12;
                         }
                     } else {
-                        this.field2412 = arg0.method301(arg1 + 73);
+                        this.field2412 = arg0.g2(arg1 + 73);
                     }
                 } else {
-                    this.field2408 = arg0.method301(arg1 + 55);
+                    this.field2408 = arg0.g2(arg1 + 55);
                 }
             } else {
-                this.field2398 = arg0.method301(arg1 ^ -26);
+                this.field2398 = arg0.g2(arg1 ^ -26);
             }
         } else {
-            this.field2407 = arg0.method301(68);
+            this.field2407 = arg0.g2(68);
         }
         if (arg1 != -3) {
             field2413 = null;

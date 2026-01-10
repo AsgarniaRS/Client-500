@@ -56,7 +56,7 @@ public class class64 {
     public class145 field1160;
 
     @OriginalMember(owner = "client!fh", name = "a", descriptor = "(IIZIII[Lia;I[BII)V")
-    public static final void method449(int arg0, int arg1, boolean arg2, int arg3, int arg4, int arg5, class89[] arg6, int arg7, byte[] arg8, int arg9, int arg10) {
+    public static final void method449(int arg0, int arg1, boolean arg2, int arg3, int arg4, int arg5, CollisionMap[] arg6, int arg7, byte[] arg8, int arg9, int arg10) {
         field1166++;
         byte var11;
         if (arg2) {
@@ -73,7 +73,7 @@ public class class64 {
                 }
             }
         }
-        class46 var14 = new class46(arg8);
+        Packet var14 = new Packet(arg8);
         if (arg1 != 4) {
             method451(111);
         }
@@ -81,9 +81,9 @@ public class class64 {
             for (int var16 = 0; var16 < 64; var16++) {
                 for (int var17 = 0; var17 < 64; var17++) {
                     if (arg7 == var15 && var16 >= arg4 && var16 < arg4 + 8 && var17 >= arg5 && var17 < arg5 + 8) {
-                        class137.method916(class245.method1608(-1, arg3, var16 & 0x7, var17 & 0x7) + arg0, var14, 0, arg2, 0, 0, arg9 + class159.method1071(arg1 + 114, var17 & 0x7, var16 & 0x7, arg3), arg3, arg10);
+                        ClientStream.method916(class245.method1608(-1, arg3, var16 & 0x7, var17 & 0x7) + arg0, var14, 0, arg2, 0, 0, arg9 + class159.method1071(arg1 + 114, var17 & 0x7, var16 & 0x7, arg3), arg3, arg10);
                     } else {
-                        class137.method916(-1, var14, arg1 - 4, arg2, 0, 0, -1, 0, 0);
+                        ClientStream.method916(-1, var14, arg1 - 4, arg2, 0, 0, -1, 0, 0);
                     }
                 }
             }

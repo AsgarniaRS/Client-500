@@ -56,7 +56,7 @@ public class class33 extends class136 {
     public static class88 field553 = class208.method1425(105, "<col=40ff00>");
 
     @OriginalMember(owner = "client!cj", name = "gb", descriptor = "Lid;")
-    public static class92 field555 = new class92(128);
+    public static class92 cache = new class92(128);
 
     @OriginalMember(owner = "client!cj", name = "J", descriptor = "I")
     public static int field532;
@@ -80,7 +80,7 @@ public class class33 extends class136 {
     private int field547;
 
     @OriginalMember(owner = "client!cj", name = "hb", descriptor = "Lmf;")
-    public static class137 field556;
+    public static ClientStream field556;
 
     @OriginalMember(owner = "client!cj", name = "G", descriptor = "[S")
     private short[] field529;
@@ -110,39 +110,39 @@ public class class33 extends class136 {
     }
 
     @OriginalMember(owner = "client!cj", name = "a", descriptor = "(ILea;B)V")
-    private final void method208(int arg0, class46 arg1, byte arg2) {
+    private final void method208(int arg0, Packet arg1, byte arg2) {
         field546++;
         if (arg0 == 1) {
-            this.field547 = arg1.method301(75);
+            this.field547 = arg1.g2(75);
         } else if (arg0 == 2) {
-            this.field542 = arg1.method301(arg2 + 34);
+            this.field542 = arg1.g2(arg2 + 34);
         } else if (arg0 == 4) {
-            this.field540 = arg1.method301(arg2 ^ 0x7B);
+            this.field540 = arg1.g2(arg2 ^ 0x7B);
         } else if (arg0 == 5) {
-            this.field534 = arg1.method301(47);
+            this.field534 = arg1.g2(47);
         } else if (arg0 == 6) {
-            this.field545 = arg1.method301(arg2 - 36);
+            this.field545 = arg1.g2(arg2 - 36);
         } else if (arg0 == 7) {
-            this.field550 = arg1.method347(26119);
+            this.field550 = arg1.g1(26119);
         } else if (arg0 == 8) {
-            this.field531 = arg1.method347(arg2 + 26069);
+            this.field531 = arg1.g1(arg2 + 26069);
         } else if (arg0 == 9) {
             this.field527 = true;
         } else if (arg0 == 40) {
-            int var6 = arg1.method347(26119);
+            int var6 = arg1.g1(26119);
             this.field537 = new short[var6];
             this.field549 = new short[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                this.field537[var7] = (short) arg1.method301(arg2 - 12);
-                this.field549[var7] = (short) arg1.method301(51);
+                this.field537[var7] = (short) arg1.g2(arg2 - 12);
+                this.field549[var7] = (short) arg1.g2(51);
             }
         } else if (arg0 == 41) {
-            int var4 = arg1.method347(26119);
+            int var4 = arg1.g1(26119);
             this.field548 = new short[var4];
             this.field529 = new short[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field529[var5] = (short) arg1.method301(111);
-                this.field548[var5] = (short) arg1.method301(67);
+                this.field529[var5] = (short) arg1.g2(111);
+                this.field548[var5] = (short) arg1.g2(67);
             }
         }
         if (arg2 != 50) {
@@ -211,8 +211,8 @@ public class class33 extends class136 {
                 class244.field4493[var3] = null;
             }
         }
-        if (class228.field4272 != class230.field4314.field831) {
-            throw new RuntimeException("gpp1 pos:" + class230.field4314.field831 + " psize:" + class228.field4272);
+        if (class228.field4272 != class230.field4314.pos) {
+            throw new RuntimeException("gpp1 pos:" + class230.field4314.pos + " psize:" + class228.field4272);
         }
         for (int var2 = 0; var2 < class55.field1027; var2++) {
             if (class244.field4493[class174.field3430[var2]] == null) {
@@ -225,13 +225,13 @@ public class class33 extends class136 {
     }
 
     @OriginalMember(owner = "client!cj", name = "a", descriptor = "(Lea;B)V")
-    public final void method211(class46 arg0, byte arg1) {
+    public final void method211(Packet arg0, byte arg1) {
         if (arg1 < 8) {
             method212((byte) -84);
         }
         field543++;
         while (true) {
-            int var3 = arg0.method347(26119);
+            int var3 = arg0.g1(26119);
             if (var3 == 0) {
                 return;
             }
@@ -251,7 +251,7 @@ public class class33 extends class136 {
         field553 = null;
         field533 = null;
         field530 = null;
-        field555 = null;
+        cache = null;
         field552 = null;
     }
 }

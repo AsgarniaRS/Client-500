@@ -90,18 +90,18 @@ public class class212 extends class23 {
             return this.field4028;
         } else {
             if (arg1 != -114) {
-                this.method11((class46) null, -12, -15);
+                this.method11((Packet) null, -12, -15);
             }
             return this.field4026[arg0];
         }
     }
 
     @OriginalMember(owner = "client!te", name = "a", descriptor = "(II[Lia;III[BZIII)V")
-    public static final void method1449(int arg0, int arg1, class89[] arg2, int arg3, int arg4, int arg5, byte[] arg6, boolean arg7, int arg8, int arg9, int arg10) {
+    public static final void method1449(int arg0, int arg1, CollisionMap[] arg2, int arg3, int arg4, int arg5, byte[] arg6, boolean arg7, int arg8, int arg9, int arg10) {
         ++field4023;
         if (arg3 > 48) {
             int var11 = -1;
-            class46 var12 = new class46(arg6);
+            Packet var12 = new Packet(arg6);
             while (true) {
                 int var13 = var12.method332((byte) -112);
                 if (var13 == 0) {
@@ -118,7 +118,7 @@ public class class212 extends class23 {
                     int var16 = var14 >> 6 & 63;
                     int var17 = 63 & var14;
                     int var18 = var14 >> 12;
-                    int var19 = var12.method347(26119);
+                    int var19 = var12.g1(26119);
                     int var20 = var19 >> 2;
                     int var21 = var19 & 3;
                     if (~arg8 == ~var18 && ~arg1 >= ~var16 && ~var16 > ~(arg1 + 8) && arg4 <= var17 && var17 < arg4 + 8) {
@@ -126,7 +126,7 @@ public class class212 extends class23 {
                         int var23 = class70.method469(var22.field2776, arg0, var17 & 7, 7 & var16, (byte) 126, var22.field2796, var21) + arg10;
                         int var24 = class109.method744(7 & var17, var16 & 7, var21, var22.field2796, false, var22.field2776, arg0) + arg9;
                         if (var23 > 0 && var24 > 0 && ~var23 > -104 && var24 < 103) {
-                            class89 var25 = null;
+                            CollisionMap var25 = null;
                             if (!arg7) {
                                 int var26 = arg5;
                                 if ((2 & class116.field2100[1][var23][var24]) == 2) {
@@ -304,13 +304,13 @@ public class class212 extends class23 {
     }
 
     @OriginalMember(owner = "client!te", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            this.field4019 = arg0.method347(arg1 ^ -26118);
-            this.field4026 = new int[arg0.method347(arg1 ^ -26118)][2];
+            this.field4019 = arg0.g1(arg1 ^ -26118);
+            this.field4026 = new int[arg0.g1(arg1 ^ -26118)][2];
             for (int var4 = 0; ~this.field4026.length < ~var4; ++var4) {
-                this.field4026[var4][0] = arg0.method301(38);
-                this.field4026[var4][1] = arg0.method301(121);
+                this.field4026[var4][0] = arg0.g2(38);
+                this.field4026[var4][1] = arg0.g2(121);
             }
         }
         if (arg1 == -3) {

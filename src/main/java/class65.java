@@ -44,7 +44,7 @@ public class class65 extends class67 {
     public static class174 field1177;
 
     @OriginalMember(owner = "client!fi", name = "a", descriptor = "(Lhj;B)V")
-    public static final void method453(class87 arg0, byte arg1) {
+    public static final void method453(GameShell arg0, byte arg1) {
         field1184++;
         if (class36.field625 == 1) {
             short var2 = 280;
@@ -88,15 +88,15 @@ public class class65 extends class67 {
                 class221.method1495(35);
                 return;
             }
-            if (class87.field1581 != -1) {
-                class70 var6 = class202.field3847[class87.field1581];
+            if (GameShell.field1581 != -1) {
+                class70 var6 = class202.field3847[GameShell.field1581];
                 if (class67.field1215 == var6.field1257) {
                     byte[] var7 = class166.method1142(new class88[] { var6.field1262, class206.field3924 }, -3).method613(-114);
                     class95.field1761 = new String(var7, 0, var7.length);
                     class28.field470 = var6.field1261;
-                    if (class115.field2073 != 0) {
+                    if (class115.modewhere != 0) {
                         class49.field911 = 443;
-                        class115.field2073 = 0;
+                        class115.modewhere = 0;
                         class168.field3248 = 43594;
                         class220.field4158 = 43594;
                     }

@@ -85,9 +85,9 @@ public abstract class class23 extends class67 {
 
     @OriginalMember(owner = "client!c", name = "a", descriptor = "([BI)[B")
     public static final byte[] method119(byte[] arg0, int arg1) {
-        class46 var2 = new class46(arg0);
-        int var3 = var2.method347(26119);
-        int var4 = var2.method323((byte) -68);
+        Packet var2 = new Packet(arg0);
+        int var3 = var2.g1(26119);
+        int var4 = var2.g4((byte) -68);
         field371++;
         if (var4 < 0 || class159.field3075 != 0 && var4 > class159.field3075) {
             throw new RuntimeException();
@@ -96,7 +96,7 @@ public abstract class class23 extends class67 {
             var2.method307(false, var4, var5, 0);
             return var5;
         } else {
-            int var6 = var2.method323((byte) -99);
+            int var6 = var2.g4((byte) -99);
             if (var6 < 0 || class159.field3075 != 0 && class159.field3075 < var6) {
                 throw new RuntimeException();
             }
@@ -120,7 +120,7 @@ public abstract class class23 extends class67 {
     }
 
     @OriginalMember(owner = "client!c", name = "a", descriptor = "(Lea;II)V")
-    public void method11(class46 arg0, int arg1, int arg2) {
+    public void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             this.field379 = null;
         }

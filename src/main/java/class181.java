@@ -57,10 +57,10 @@ public class class181 implements Runnable {
     private static String field3587;
 
     @OriginalMember(owner = "client!qg", name = "m", descriptor = "Ljava/lang/String;")
-    public static String field3593;
+    public static String javaVersion;
 
     @OriginalMember(owner = "client!qg", name = "p", descriptor = "Ljava/lang/String;")
-    public static String field3596;
+    public static String javaVendor;
 
     @OriginalMember(owner = "client!qg", name = "c", descriptor = "Ljava/lang/reflect/Method;")
     public static Method field3583;
@@ -321,11 +321,11 @@ public class class181 implements Runnable {
     @OriginalMember(owner = "client!qg", name = "<init>", descriptor = "(ZLjava/applet/Applet;ILjava/lang/String;I)V")
     public class181(boolean arg0, Applet arg1, int arg2, String arg3, int arg4) {
         this.field3599 = arg1;
-        field3593 = "1.1";
-        field3596 = "Unknown";
+        javaVersion = "1.1";
+        javaVendor = "Unknown";
         try {
-            field3596 = System.getProperty("java.vendor");
-            field3593 = System.getProperty("java.version");
+            javaVendor = System.getProperty("java.vendor");
+            javaVersion = System.getProperty("java.version");
         } catch (Exception var10) {
         }
         try {

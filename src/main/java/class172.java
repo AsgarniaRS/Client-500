@@ -85,9 +85,9 @@ public class class172 extends class23 {
         while (~var1 > ~class192.field3704) {
             int var2 = class139.field2581[var1];
             class44 var3 = class244.field4493[var2];
-            int var4 = class230.field4314.method347(26119);
+            int var4 = class230.field4314.g1(26119);
             if (~(var4 & 2) != -1) {
-                var4 += class230.field4314.method347(26119) << 8;
+                var4 += class230.field4314.g1(26119) << 8;
             }
             class203.method1396(var4, var3, 16, var2);
             ++var1;
@@ -125,15 +125,15 @@ public class class172 extends class23 {
     }
 
     @OriginalMember(owner = "client!pi", name = "a", descriptor = "(Lea;Li;B)I")
-    public static final int method1222(class46 arg0, class88 arg1, byte arg2) {
+    public static final int method1222(Packet arg0, class88 arg1, byte arg2) {
         if (arg2 != 113) {
             return -107;
         } else {
             ++field3344;
-            int var3 = arg0.field831;
+            int var3 = arg0.pos;
             arg0.method308(true, arg1.field1660);
-            arg0.field831 += class112.field2035.method1458(arg1.field1643, arg0.field831, arg1.field1660, 0, arg0.field842, true);
-            return -var3 + arg0.field831;
+            arg0.pos += class112.field2035.method1458(arg1.field1643, arg0.pos, arg1.field1660, 0, arg0.data, true);
+            return -var3 + arg0.pos;
         }
     }
 
@@ -155,12 +155,12 @@ public class class172 extends class23 {
     }
 
     @OriginalMember(owner = "client!pi", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             method1223(35, -38);
         }
         if (arg2 == 0) {
-            this.field3348 = (arg0.method347(26119) << 12) / 255;
+            this.field3348 = (arg0.g1(26119) << 12) / 255;
         }
         ++field3334;
     }

@@ -35,7 +35,7 @@ public class class115 {
     private static class88 field2074 = class208.method1425(105, "Loading fonts )2 ");
 
     @OriginalMember(owner = "client!kf", name = "a", descriptor = "I")
-    public static int field2073 = 0;
+    public static int modewhere = 0;
 
     @OriginalMember(owner = "client!kf", name = "f", descriptor = "Li;")
     public static class88 field2078 = field2074;
@@ -73,12 +73,12 @@ public class class115 {
         }
         class117 var4 = new class117();
         if (var3 != null) {
-            var4.method796((byte) -45, new class46(var3));
+            var4.method796((byte) -45, new Packet(var3));
         }
         if (arg0 >= 32768) {
             var4.method799(true);
         }
-        class149.field2858.method664((long) arg0, var4, false);
+        class149.field2858.put((long) arg0, var4, false);
         return var4;
     }
 
@@ -104,7 +104,7 @@ public class class115 {
     public static final void method787(byte arg0) {
         field2089++;
         if (class33.field556 != null) {
-            class33.field556.method919(true);
+            class33.field556.close(true);
             class33.field556 = null;
         }
         class27.method167((byte) 61);

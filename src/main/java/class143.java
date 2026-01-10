@@ -546,12 +546,12 @@ public class class143 extends class67 {
     }
 
     @OriginalMember(owner = "client!na", name = "a", descriptor = "(BLea;)Lje;")
-    public static final class103 method938(byte arg0, class46 arg1) {
+    public static final class103 method938(byte arg0, Packet arg1) {
         if (arg0 > -44) {
             field2661 = null;
         }
         field2660++;
-        return new class103(arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method304(-29629), arg1.method347(26119));
+        return new class103(arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method304(-29629), arg1.g1(26119));
     }
 
     @OriginalMember(owner = "client!na", name = "a", descriptor = "([BB)V")

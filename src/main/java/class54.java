@@ -8,7 +8,7 @@ public class class54 {
     public static class88 field1005 = class208.method1425(105, "; version=1; path=)4; domain=");
 
     @OriginalMember(owner = "client!ei", name = "e", descriptor = "Lea;")
-    public static class46 field1006 = new class46(new byte[5000]);
+    public static Packet field1006 = new Packet(new byte[5000]);
 
     @OriginalMember(owner = "client!ei", name = "i", descriptor = "Li;")
     public static class88 field1010 = class208.method1425(105, "Konfig geladen)3");

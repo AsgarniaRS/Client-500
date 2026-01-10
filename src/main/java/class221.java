@@ -62,7 +62,7 @@ public class class221 {
             String var6 = var5.replace('&', '_');
             String var7 = var6.replace('#', '_');
             if (class6.field93.field3599 != null && arg0 == 0) {
-                class163 var8 = class6.field93.method1295(false, new URL(class6.field93.field3599.getCodeBase(), "clienterror.ws?c=" + class225.field4228 + "&u=" + class36.field631 + "&v1=" + class181.field3596 + "&v2=" + class181.field3593 + "&e=" + var7));
+                class163 var8 = class6.field93.method1295(false, new URL(class6.field93.field3599.getCodeBase(), "clienterror.ws?c=" + class225.field4228 + "&u=" + class36.field631 + "&v1=" + class181.javaVendor + "&v2=" + class181.javaVersion + "&e=" + var7));
                 while (var8.field3136 == 0) {
                     class21.method98(1L, (byte) 38);
                 }

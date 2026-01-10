@@ -60,7 +60,7 @@ public class class92 {
     public static int[] field1735;
 
     @OriginalMember(owner = "client!id", name = "a", descriptor = "(JLme;Z)V")
-    public final void method664(long arg0, class136 arg1, boolean arg2) {
+    public final void put(long arg0, class136 arg1, boolean arg2) {
         field1719++;
         if (this.field1731 == 0) {
             class136 var5 = this.field1728.method1384(0);
@@ -119,13 +119,13 @@ public class class92 {
     }
 
     @OriginalMember(owner = "client!id", name = "a", descriptor = "(BLea;)Ltj;")
-    public static final class217 method668(byte arg0, class46 arg1) {
+    public static final class217 method668(byte arg0, Packet arg1) {
         field1724++;
         if (arg0 != -15) {
             method669(-7, -118, -106, 60);
         }
         class217 var2 = new class217();
-        var2.field4060 = arg1.method301(79);
+        var2.field4060 = arg1.g2(79);
         var2.field4067 = class168.method1152((byte) 62, var2.field4060);
         return var2;
     }

@@ -86,18 +86,18 @@ public class class139 extends class23 {
     }
 
     @OriginalMember(owner = "client!mh", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field2576;
         if (~arg2 != -1) {
             if (~arg2 != -2) {
                 if (~arg2 == -3) {
-                    this.field2585 = arg0.method301(123);
+                    this.field2585 = arg0.g2(123);
                 }
             } else {
-                this.field2588 = arg0.method301(56);
+                this.field2588 = arg0.g2(56);
             }
         } else {
-            this.field2578 = arg0.method301(14);
+            this.field2578 = arg0.g2(14);
         }
         if (arg1 != -3) {
             field2589 = null;

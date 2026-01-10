@@ -607,7 +607,7 @@ public class class165 {
                                             }
                                         }
                                     }
-                                    if (var11.field3392 == 8 && class36.field635 == var11 && class46.field859 == class138.field2565) {
+                                    if (var11.field3392 == 8 && class36.field635 == var11 && Packet.field859 == class138.field2565) {
                                         int var84 = 0;
                                         class88 var85 = var11.field3385;
                                         class26 var86 = class3.field30;
@@ -807,6 +807,6 @@ public class class165 {
         int var7 = class248.field4547.get(11);
         int var8 = class248.field4547.get(12);
         int var9 = class248.field4547.get(13);
-        return class166.method1142(new class88[] { class89.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), class109.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), class109.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
+        return class166.method1142(new class88[] { CollisionMap.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), class109.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), class109.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
     }
 }

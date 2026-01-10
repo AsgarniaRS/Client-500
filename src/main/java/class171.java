@@ -202,14 +202,14 @@ public class class171 extends class23 {
 
     @OriginalMember(owner = "client!ph", name = "a", descriptor = "(Li;II)V")
     public static final void method1215(class88 arg0, int arg1, int arg2) {
-        class146.field2749.method30((byte) -72, 40);
+        class146.out.method30((byte) -72, 40);
         ++class145.field2721;
         ++field3325;
         if (arg2 != 0) {
             method1218(true);
         }
-        class146.field2749.method296((byte) -109, arg0.method630(false));
-        class146.field2749.method346(arg2 ^ 255, arg1);
+        class146.out.method296((byte) -109, arg0.method630(false));
+        class146.out.p1(arg2 ^ 255, arg1);
     }
 
     @OriginalMember(owner = "client!ph", name = "e", descriptor = "(I)V")
@@ -268,14 +268,14 @@ public class class171 extends class23 {
     }
 
     @OriginalMember(owner = "client!ph", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field3322;
         if (arg2 != 0) {
             if (arg2 == 1) {
-                super.field369 = ~arg0.method347(26119) == -2;
+                super.field369 = ~arg0.g1(26119) == -2;
             }
         } else {
-            this.field3328 = arg0.method347(26119);
+            this.field3328 = arg0.g1(26119);
         }
         if (arg1 != -3) {
             method1216(-34);

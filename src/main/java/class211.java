@@ -102,18 +102,18 @@ public class class211 extends class23 {
     }
 
     @OriginalMember(owner = "client!td", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field3996;
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (arg2 == 2) {
-                    this.field4010 = arg0.method301(67);
+                    this.field4010 = arg0.g2(67);
                 }
             } else {
-                this.field4003 = arg0.method347(arg1 ^ -26118);
+                this.field4003 = arg0.g1(arg1 ^ -26118);
             }
         } else {
-            this.field3998 = arg0.method347(26119);
+            this.field3998 = arg0.g1(26119);
         }
         if (arg1 != -3) {
             this.method54(103, (byte) 83);
@@ -231,9 +231,9 @@ public class class211 extends class23 {
                             class78.field1418[arg1][var3] = new class174();
                             class78.field1418[arg1][var3].field3425 = (arg1 << 16) + var3;
                             if (var4[0] == -1) {
-                                class78.field1418[arg1][var3].method1252((byte) 55, new class46(var4));
+                                class78.field1418[arg1][var3].method1252((byte) 55, new Packet(var4));
                             } else {
-                                class78.field1418[arg1][var3].method1257(-119, new class46(var4));
+                                class78.field1418[arg1][var3].method1257(-119, new Packet(var4));
                             }
                         }
                     }

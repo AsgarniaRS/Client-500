@@ -8,7 +8,7 @@ public class class229 extends class136 {
     public int field4290 = 0;
 
     @OriginalMember(owner = "client!v", name = "E", descriptor = "I")
-    public static int field4286 = 0;
+    public static int gameState = 0;
 
     @OriginalMember(owner = "client!v", name = "F", descriptor = "[I")
     public static int[] field4287 = new int[] { 76, 8, 137, 4, 0, 1, 38, 2, 19 };
@@ -38,24 +38,24 @@ public class class229 extends class136 {
     }
 
     @OriginalMember(owner = "client!v", name = "a", descriptor = "(ILea;B)V")
-    private final void method1529(int arg0, class46 arg1, byte arg2) {
+    private final void method1529(int arg0, Packet arg1, byte arg2) {
         if (arg2 != -82) {
             method1528(-55, -1);
         }
         field4289++;
         if (arg0 == 5) {
-            this.field4290 = arg1.method301(112);
+            this.field4290 = arg1.g2(112);
         }
     }
 
     @OriginalMember(owner = "client!v", name = "a", descriptor = "(ZLea;)V")
-    public final void method1530(boolean arg0, class46 arg1) {
+    public final void method1530(boolean arg0, Packet arg1) {
         field4292++;
         if (!arg0) {
             field4288 = null;
         }
         while (true) {
-            int var3 = arg1.method347(26119);
+            int var3 = arg1.g1(26119);
             if (var3 == 0) {
                 return;
             }

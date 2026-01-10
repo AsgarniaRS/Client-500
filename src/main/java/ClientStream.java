@@ -7,31 +7,31 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!mf")
-public class class137 implements Runnable {
+public class ClientStream implements Runnable {
 
     @OriginalMember(owner = "client!mf", name = "k", descriptor = "I")
-    private int field2545 = 0;
+    private int tcyl = 0;
 
     @OriginalMember(owner = "client!mf", name = "h", descriptor = "Z")
-    private boolean field2542 = false;
+    private boolean dummy = false;
 
     @OriginalMember(owner = "client!mf", name = "r", descriptor = "I")
-    private int field2552 = 0;
+    private int tnum = 0;
 
     @OriginalMember(owner = "client!mf", name = "s", descriptor = "Z")
-    private boolean field2553 = false;
+    private boolean ioerror = false;
 
     @OriginalMember(owner = "client!mf", name = "f", descriptor = "Lqg;")
-    private class181 field2540;
+    private class181 signlink;
 
     @OriginalMember(owner = "client!mf", name = "u", descriptor = "Ljava/net/Socket;")
-    private Socket field2555;
+    private Socket socket;
 
     @OriginalMember(owner = "client!mf", name = "l", descriptor = "Ljava/io/InputStream;")
-    private InputStream field2546;
+    private InputStream in;
 
     @OriginalMember(owner = "client!mf", name = "i", descriptor = "Ljava/io/OutputStream;")
-    private OutputStream field2543;
+    private OutputStream out;
 
     @OriginalMember(owner = "client!mf", name = "p", descriptor = "I")
     public static int field2550 = 0;
@@ -76,10 +76,10 @@ public class class137 implements Runnable {
     public static int field2558;
 
     @OriginalMember(owner = "client!mf", name = "b", descriptor = "Lp;")
-    private class163 field2536;
+    private class163 writer;
 
     @OriginalMember(owner = "client!mf", name = "t", descriptor = "[B")
-    private byte[] field2554;
+    private byte[] buf;
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(I)V")
     public static void method910(int arg0) {
@@ -92,13 +92,13 @@ public class class137 implements Runnable {
     @OriginalMember(owner = "client!mf", name = "b", descriptor = "(I)I")
     public final int method911(int arg0) throws IOException {
         field2544++;
-        if (this.field2542) {
+        if (this.dummy) {
             return 0;
         } else {
             if (arg0 != 1) {
                 method912((byte) 91, null);
             }
-            return this.field2546.available();
+            return this.in.available();
         }
     }
 
@@ -113,31 +113,28 @@ public class class137 implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(II[BI)V")
-    public final void method913(int arg0, int arg1, byte[] arg2, int arg3) throws IOException {
+    public final void write(byte[] data, int arg1, int arg0) throws IOException {
         field2547++;
-        if (this.field2542) {
+        if (this.dummy) {
             return;
         }
-        if (this.field2553) {
-            this.field2553 = false;
+        if (this.ioerror) {
+            this.ioerror = false;
             throw new IOException();
         }
-        if (arg3 != 17492) {
-            method917(null);
-        }
-        if (this.field2554 == null) {
-            this.field2554 = new byte[5000];
+        if (this.buf == null) {
+            this.buf = new byte[5000];
         }
         synchronized (this) {
             for (int var6 = 0; var6 < arg0; var6++) {
-                this.field2554[this.field2552] = arg2[arg1 + var6];
-                this.field2552 = (this.field2552 + 1) % 5000;
-                if ((this.field2545 + 4900) % 5000 == this.field2552) {
+                this.buf[this.tnum] = data[arg1 + var6];
+                this.tnum = (this.tnum + 1) % 5000;
+                if ((this.tcyl + 4900) % 5000 == this.tnum) {
                     throw new IOException();
                 }
             }
-            if (this.field2536 == null) {
-                this.field2536 = this.field2540.method1289(2, this, 3);
+            if (this.writer == null) {
+                this.writer = this.signlink.method1289(2, this, 3);
             }
             this.notifyAll();
         }
@@ -162,8 +159,8 @@ public class class137 implements Runnable {
                 int var2;
                 int var3;
                 synchronized (this) {
-                    if (this.field2552 == this.field2545) {
-                        if (this.field2542) {
+                    if (this.tnum == this.tcyl) {
+                        if (this.dummy) {
                             break;
                         }
                         try {
@@ -171,42 +168,42 @@ public class class137 implements Runnable {
                         } catch (InterruptedException var10) {
                         }
                     }
-                    var2 = this.field2545;
-                    if (this.field2545 <= this.field2552) {
-                        var3 = this.field2552 - this.field2545;
+                    var2 = this.tcyl;
+                    if (this.tcyl <= this.tnum) {
+                        var3 = this.tnum - this.tcyl;
                     } else {
-                        var3 = 5000 - this.field2545;
+                        var3 = 5000 - this.tcyl;
                     }
                 }
                 if (var3 > 0) {
                     try {
-                        this.field2543.write(this.field2554, var2, var3);
+                        this.out.write(this.buf, var2, var3);
                     } catch (IOException var9) {
-                        this.field2553 = true;
+                        this.ioerror = true;
                     }
-                    this.field2545 = (this.field2545 + var3) % 5000;
+                    this.tcyl = (this.tcyl + var3) % 5000;
                     try {
-                        if (this.field2552 == this.field2545) {
-                            this.field2543.flush();
+                        if (this.tnum == this.tcyl) {
+                            this.out.flush();
                         }
                     } catch (IOException var8) {
-                        this.field2553 = true;
+                        this.ioerror = true;
                     }
                 }
             }
             try {
-                if (this.field2546 != null) {
-                    this.field2546.close();
+                if (this.in != null) {
+                    this.in.close();
                 }
-                if (this.field2543 != null) {
-                    this.field2543.close();
+                if (this.out != null) {
+                    this.out.close();
                 }
-                if (this.field2555 != null) {
-                    this.field2555.close();
+                if (this.socket != null) {
+                    this.socket.close();
                 }
             } catch (IOException var7) {
             }
-            this.field2554 = null;
+            this.buf = null;
         } catch (Exception var12) {
             class221.method1490((byte) 0, null, var12);
         }
@@ -218,11 +215,11 @@ public class class137 implements Runnable {
         if (arg2 != -93) {
             this.run();
         }
-        if (this.field2542) {
+        if (this.dummy) {
             return;
         }
         while (arg3 > 0) {
-            int var5 = this.field2546.read(arg1, arg0, arg3);
+            int var5 = this.in.read(arg1, arg0, arg3);
             if (var5 <= 0) {
                 throw new EOFException();
             }
@@ -232,23 +229,23 @@ public class class137 implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(ILea;IZIIIII)V")
-    public static final void method916(int arg0, class46 arg1, int arg2, boolean arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {
+    public static final void method916(int arg0, Packet arg1, int arg2, boolean arg3, int arg4, int arg5, int arg6, int arg7, int arg8) {
         field2551++;
         if (arg2 != 0) {
             method910(27);
         }
         if (arg0 < 0 || arg0 >= 104 || arg6 < 0 || arg6 >= 104) {
             while (true) {
-                int var11 = arg1.method347(arg2 ^ 0x6607);
+                int var11 = arg1.g1(arg2 ^ 0x6607);
                 if (var11 == 0) {
                     return;
                 }
                 if (var11 == 1) {
-                    arg1.method347(26119);
+                    arg1.g1(26119);
                     return;
                 }
                 if (var11 <= 49) {
-                    arg1.method347(26119);
+                    arg1.g1(26119);
                 }
             }
         }
@@ -256,7 +253,7 @@ public class class137 implements Runnable {
             class116.field2100[arg8][arg0][arg6] = 0;
         }
         while (true) {
-            int var9 = arg1.method347(26119);
+            int var9 = arg1.g1(26119);
             if (var9 == 0) {
                 if (arg3) {
                     class62.field1137[0][arg0][arg6] = class145.field2723[0][arg0][arg6];
@@ -270,7 +267,7 @@ public class class137 implements Runnable {
                 }
             }
             if (var9 == 1) {
-                int var10 = arg1.method347(26119);
+                int var10 = arg1.g1(26119);
                 if (!arg3) {
                     if (var10 == 1) {
                         var10 = 0;
@@ -325,50 +322,50 @@ public class class137 implements Runnable {
 
     @OriginalMember(owner = "client!mf", name = "finalize", descriptor = "()V")
     protected final void finalize() {
-        this.method919(true);
+        this.close(true);
         field2549++;
     }
 
     @OriginalMember(owner = "client!mf", name = "c", descriptor = "(I)I")
     public final int method918(int arg0) throws IOException {
         if (arg0 != 0) {
-            this.field2554 = null;
+            this.buf = null;
         }
         field2539++;
-        return this.field2542 ? 0 : this.field2546.read();
+        return this.dummy ? 0 : this.in.read();
     }
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(Z)V")
-    public final void method919(boolean arg0) {
+    public final void close(boolean arg0) {
         field2548++;
-        if (this.field2542) {
+        if (this.dummy) {
             return;
         }
         synchronized (this) {
-            this.field2542 = arg0;
+            this.dummy = arg0;
             this.notifyAll();
         }
-        if (this.field2536 != null) {
-            while (this.field2536.field3136 == 0) {
+        if (this.writer != null) {
+            while (this.writer.field3136 == 0) {
                 class21.method98(1L, (byte) 38);
             }
-            if (this.field2536.field3136 == 1) {
+            if (this.writer.field3136 == 1) {
                 try {
-                    ((Thread) this.field2536.field3131).join();
+                    ((Thread) this.writer.field3131).join();
                 } catch (InterruptedException var3) {
                 }
             }
         }
-        this.field2536 = null;
+        this.writer = null;
     }
 
     @OriginalMember(owner = "client!mf", name = "<init>", descriptor = "(Ljava/net/Socket;Lqg;)V")
-    public class137(Socket arg0, class181 arg1) throws IOException {
-        this.field2540 = arg1;
-        this.field2555 = arg0;
-        this.field2555.setSoTimeout(30000);
-        this.field2555.setTcpNoDelay(true);
-        this.field2546 = this.field2555.getInputStream();
-        this.field2543 = this.field2555.getOutputStream();
+    public ClientStream(Socket arg0, class181 arg1) throws IOException {
+        this.signlink = arg1;
+        this.socket = arg0;
+        this.socket.setSoTimeout(30000);
+        this.socket.setTcpNoDelay(true);
+        this.in = this.socket.getInputStream();
+        this.out = this.socket.getOutputStream();
     }
 }

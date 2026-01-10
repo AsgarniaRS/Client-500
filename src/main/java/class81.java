@@ -169,12 +169,12 @@ public class class81 extends class145 {
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Lea;I)Lsg;")
-    public static final class203 method538(class46 arg0, int arg1) {
+    public static final class203 method538(Packet arg0, int arg1) {
         if (arg1 >= -14) {
             field1455 = null;
         }
         field1461++;
-        return new class203(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method347(26119));
+        return new class203(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.g1(26119));
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Z)V")

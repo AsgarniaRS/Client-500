@@ -152,7 +152,7 @@ public class class159 extends class67 {
                 var3[var7] = var3[511 - var6] = var9;
             }
             var2 = new class189(var3);
-            class24.field388.method664((long) arg0, var2, false);
+            class24.field388.put((long) arg0, var2, false);
         }
         return var2.field3660;
     }

@@ -378,7 +378,7 @@ public class class53 implements KeyListener, FocusListener {
             class25.field401 = class207.field3940[var9];
             class33.field541 = class207.field3942[var9] = var11;
             class88 var15 = class207.field3935[var9];
-            if (class137.field2550 == 0) {
+            if (ClientStream.field2550 == 0) {
                 int var16 = 16776960;
                 if (class207.field3939[var9] < 6) {
                     var16 = class200.field3814[class207.field3939[var9]];

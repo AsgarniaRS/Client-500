@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class40 {
 
     @OriginalMember(owner = "client!df", name = "b", descriptor = "Lea;")
-    private class46 field701 = new class46(null);
+    private Packet field701 = new Packet(null);
 
     @OriginalMember(owner = "client!df", name = "a", descriptor = "[B")
     private static byte[] field700 = new byte[] { 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 2, 0, 1, 2, 1, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0, 0 };
@@ -33,7 +33,7 @@ public class class40 {
 
     @OriginalMember(owner = "client!df", name = "a", descriptor = "(I)V")
     public final void method259(int arg0) {
-        this.field708[arg0] = this.field701.field831;
+        this.field708[arg0] = this.field701.pos;
     }
 
     @OriginalMember(owner = "client!df", name = "a", descriptor = "()Z")
@@ -49,7 +49,7 @@ public class class40 {
 
     @OriginalMember(owner = "client!df", name = "b", descriptor = "(I)V")
     public final void method261(int arg0) {
-        this.field701.field831 = this.field708[arg0];
+        this.field701.pos = this.field708[arg0];
     }
 
     @OriginalMember(owner = "client!df", name = "c", descriptor = "(I)J")
@@ -59,7 +59,7 @@ public class class40 {
 
     @OriginalMember(owner = "client!df", name = "b", descriptor = "()Z")
     public final boolean method263() {
-        return this.field701.field842 != null;
+        return this.field701.data != null;
     }
 
     @OriginalMember(owner = "client!df", name = "a", descriptor = "(J)V")
@@ -69,15 +69,15 @@ public class class40 {
         for (int var4 = 0; var4 < var3; var4++) {
             this.field704[var4] = 0;
             this.field702[var4] = 0;
-            this.field701.field831 = this.field703[var4];
+            this.field701.pos = this.field703[var4];
             this.method274(var4);
-            this.field708[var4] = this.field701.field831;
+            this.field708[var4] = this.field701.pos;
         }
     }
 
     @OriginalMember(owner = "client!df", name = "c", descriptor = "()V")
     public final void method265() {
-        this.field701.field842 = null;
+        this.field701.data = null;
         this.field703 = null;
         this.field708 = null;
         this.field704 = null;
@@ -95,17 +95,17 @@ public class class40 {
             byte var7 = field700[arg1 - 128];
             int var8 = arg1;
             if (var7 >= 1) {
-                var8 = arg1 | this.field701.method347(26119) << 8;
+                var8 = arg1 | this.field701.g1(26119) << 8;
             }
             if (var7 >= 2) {
-                var8 |= this.field701.method347(26119) << 16;
+                var8 |= this.field701.g1(26119) << 16;
             }
             return var8;
         }
-        int var3 = this.field701.method347(26119);
+        int var3 = this.field701.g1(26119);
         int var4 = this.field701.method317((byte) -39);
         if (var3 == 47) {
-            this.field701.field831 += var4;
+            this.field701.pos += var4;
             return 1;
         } else if (var3 == 81) {
             int var5 = this.field701.method304(-29629);
@@ -113,10 +113,10 @@ public class class40 {
             int var6 = this.field704[arg0];
             this.field707 += (long) (this.field705 - var5) * (long) var6;
             this.field705 = var5;
-            this.field701.field831 += var4;
+            this.field701.pos += var4;
             return 2;
         } else {
-            this.field701.field831 += var4;
+            this.field701.pos += var4;
             return 3;
         }
     }
@@ -128,12 +128,12 @@ public class class40 {
 
     @OriginalMember(owner = "client!df", name = "d", descriptor = "(I)I")
     private final int method269(int arg0) {
-        byte var2 = this.field701.field842[this.field701.field831];
+        byte var2 = this.field701.data[this.field701.pos];
         int var3;
         if (var2 < 0) {
             var3 = var2 & 0xFF;
             this.field702[arg0] = var3;
-            this.field701.field831++;
+            this.field701.pos++;
         } else {
             var3 = this.field702[arg0];
         }
@@ -142,34 +142,34 @@ public class class40 {
         }
         int var4 = this.field701.method317((byte) -39);
         if (var3 == 247 && var4 > 0) {
-            int var5 = this.field701.field842[this.field701.field831] & 0xFF;
+            int var5 = this.field701.data[this.field701.pos] & 0xFF;
             if (var5 >= 241 && var5 <= 243 || var5 == 246 || var5 == 248 || var5 >= 250 && var5 <= 252 || var5 == 254) {
-                this.field701.field831++;
+                this.field701.pos++;
                 this.field702[arg0] = var5;
                 return this.method267(arg0, var5);
             }
         }
-        this.field701.field831 += var4;
+        this.field701.pos += var4;
         return 0;
     }
 
     @OriginalMember(owner = "client!df", name = "a", descriptor = "([B)V")
     public final void method270(byte[] arg0) {
-        this.field701.field842 = arg0;
-        this.field701.field831 = 10;
-        int var2 = this.field701.method301(80);
-        this.field706 = this.field701.method301(109);
+        this.field701.data = arg0;
+        this.field701.pos = 10;
+        int var2 = this.field701.g2(80);
+        this.field706 = this.field701.g2(109);
         this.field705 = 500000;
         this.field703 = new int[var2];
         int var3 = 0;
         while (var3 < var2) {
-            int var5 = this.field701.method323((byte) -111);
-            int var6 = this.field701.method323((byte) -34);
+            int var5 = this.field701.g4((byte) -111);
+            int var6 = this.field701.g4((byte) -34);
             if (var5 == 1297379947) {
-                this.field703[var3] = this.field701.field831;
+                this.field703[var3] = this.field701.pos;
                 var3++;
             }
-            this.field701.field831 += var6;
+            this.field701.pos += var6;
         }
         this.field707 = 0L;
         this.field708 = new int[var2];
@@ -201,7 +201,7 @@ public class class40 {
 
     @OriginalMember(owner = "client!df", name = "g", descriptor = "()V")
     public final void method273() {
-        this.field701.field831 = -1;
+        this.field701.pos = -1;
     }
 
     @OriginalMember(owner = "client!df", name = "f", descriptor = "(I)V")

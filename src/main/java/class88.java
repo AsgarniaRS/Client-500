@@ -345,7 +345,7 @@ public class class88 implements class187 {
     public final class88 method601(int arg0) {
         field1642++;
         long var2 = this.method637((byte) 84);
-        synchronized (field1661 == null ? (field1661 = method640("i")) : field1661) {
+        synchronized (field1661 == null ? (field1661 = method640("client")) : field1661) {
             if (class230.field4315 == null) {
                 class230.field4315 = new class154(4096);
             } else {

@@ -97,15 +97,15 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public final synchronized void mousePressed(MouseEvent arg0) {
         if (class43.field732 != null) {
             class190.field3670 = 0;
-            class46.field833 = arg0.getX();
+            Packet.field833 = arg0.getX();
             class139.field2577 = arg0.getY();
             class186.field3633 = class206.method1420(false);
             if (arg0.isMetaDown()) {
                 class158.field3046 = 2;
-                class46.field807 = 2;
+                Packet.field807 = 2;
             } else {
                 class158.field3046 = 1;
-                class46.field807 = 1;
+                Packet.field807 = 1;
             }
             int var2 = arg0.getModifiers();
         }
@@ -119,7 +119,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public final synchronized void focusLost(FocusEvent arg0) {
         field258++;
         if (class43.field732 != null) {
-            class46.field807 = 0;
+            Packet.field807 = 0;
         }
     }
 
@@ -196,20 +196,20 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
                 var4 = true;
                 if (arg2 == 1) {
                     class44.field770++;
-                    class146.field2749.method30((byte) -31, 65);
-                    class146.field2749.method314(class174.field3430[var5], (byte) 71);
+                    class146.out.method30((byte) -31, 65);
+                    class146.out.method314(class174.field3430[var5], (byte) 71);
                 } else if (arg2 == 4) {
                     class28.field463++;
-                    class146.field2749.method30((byte) -51, 214);
-                    class146.field2749.method331(class174.field3430[var5], 18975);
+                    class146.out.method30((byte) -51, 214);
+                    class146.out.method331(class174.field3430[var5], 18975);
                 } else if (arg2 == 6) {
-                    class146.field2749.method30((byte) -125, 161);
-                    class146.field2749.method331(class174.field3430[var5], 18975);
+                    class146.out.method30((byte) -125, 161);
+                    class146.out.method331(class174.field3430[var5], 18975);
                     class28.field462++;
                 } else if (arg2 == 7) {
                     class209.field3975++;
-                    class146.field2749.method30((byte) -69, 47);
-                    class146.field2749.method344(class174.field3430[var5], (byte) -51);
+                    class146.out.method30((byte) -69, 47);
+                    class146.out.method344(class174.field3430[var5], (byte) -51);
                 }
                 break;
             }
@@ -316,7 +316,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
         field254++;
         if (class43.field732 != null) {
             class190.field3670 = 0;
-            class46.field807 = 0;
+            Packet.field807 = 0;
             int var2 = arg0.getModifiers();
         }
         if (arg0.isPopupTrigger()) {

@@ -98,7 +98,7 @@ public class class147 {
             }
         }
         if (!arg4) {
-            method990((byte) 98, false);
+            sendLoginLogoutPacket((byte) 98, false);
         }
     }
 
@@ -133,10 +133,10 @@ public class class147 {
             field2754 = null;
         }
         if (var3 != null) {
-            var4.method855(new class46(var3), 1);
+            var4.method855(new Packet(var3), 1);
         }
         var4.method860(-42);
-        class231.field4333.method664((long) arg0, var4, false);
+        class231.field4333.put((long) arg0, var4, false);
         return var4;
     }
 
@@ -179,26 +179,25 @@ public class class147 {
     }
 
     @OriginalMember(owner = "client!ne", name = "a", descriptor = "(BZ)V")
-    public static final void method990(byte arg0, boolean arg1) {
-        field2763++;
-        if (class214.field4035 == null) {
+    public static final void sendLoginLogoutPacket(byte arg0, boolean loggedIn) {
+        if (class214.clientStream == null) {
             return;
         }
         try {
             if (arg0 > -88) {
                 method989(25);
             }
-            class46 var2 = new class46(4);
-            var2.method346(255, arg1 ? 2 : 3);
-            var2.method337(0, (byte) -61);
-            class214.field4035.method913(4, 0, var2.field842, 17492);
-        } catch (IOException var4) {
+            Packet packet = new Packet(4);
+            packet.p1(255, loggedIn ? 2 : 3);
+            packet.p3(0);
+            class214.clientStream.write(packet.data, 0, 4);
+        } catch (IOException e) {
             try {
-                class214.field4035.method919(true);
-            } catch (Exception var3) {
+                class214.clientStream.close(true);
+            } catch (Exception ignored) {
             }
-            class214.field4035 = null;
-            class77.field1389++;
+            class214.clientStream = null;
+            class77.ioErrorCount++;
         }
     }
 }

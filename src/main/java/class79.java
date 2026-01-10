@@ -45,28 +45,28 @@ public class class79 extends class23 {
     public static int field1436;
 
     @OriginalMember(owner = "client!hb", name = "T", descriptor = "Lea;")
-    public static class46 field1427;
+    public static Packet field1427;
 
     @OriginalMember(owner = "client!hb", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 != -1) {
             if (~arg2 != -2) {
                 if (arg2 != 2) {
                     if (arg2 != 3) {
                         if (arg2 == 4) {
-                            this.field1432 = arg0.method301(71);
+                            this.field1432 = arg0.g2(71);
                         }
                     } else {
-                        this.field1429 = arg0.method301(127);
+                        this.field1429 = arg0.g2(127);
                     }
                 } else {
-                    this.field1433 = arg0.method347(26119);
+                    this.field1433 = arg0.g1(26119);
                 }
             } else {
-                this.field1437 = arg0.method301(34);
+                this.field1437 = arg0.g2(34);
             }
         } else {
-            this.field1430 = arg0.method347(26119);
+            this.field1430 = arg0.g1(26119);
         }
         if (arg1 == -3) {
             ++field1431;
@@ -128,7 +128,7 @@ public class class79 extends class23 {
     @OriginalMember(owner = "client!hb", name = "b", descriptor = "(B)V")
     public final void method123(byte arg0) {
         if (arg0 != -69) {
-            this.method11((class46) null, -66, 66);
+            this.method11((Packet) null, -66, 66);
         }
         class108.method742(-10798);
         ++field1436;

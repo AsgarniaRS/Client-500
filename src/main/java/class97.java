@@ -138,10 +138,10 @@ public class class97 extends class136 {
                     }
                 }
             }
-            if (arg0.method619(-4205, class226.field4251) && class115.field2073 != 0) {
+            if (arg0.method619(-4205, class226.field4251) && class115.modewhere != 0) {
                 class159.method1075(arg0.method635(6, -383902332).method603(false), 30594);
             }
-            if (arg0.method624(class22.field344, (byte) 125) && class115.field2073 == 2) {
+            if (arg0.method624(class22.field344, (byte) 125) && class115.modewhere == 2) {
                 throw new RuntimeException();
             }
             if (arg0.method619(-4205, class58.field1103)) {
@@ -153,8 +153,8 @@ public class class97 extends class136 {
             }
         }
         class131.field2450++;
-        class146.field2749.method30((byte) -51, 175);
-        class146.field2749.method346(255, arg0.method604((byte) -53) - 1);
-        class146.field2749.method336(arg0.method635(2, -383902332), (byte) 0);
+        class146.out.method30((byte) -51, 175);
+        class146.out.p1(255, arg0.method604((byte) -53) - 1);
+        class146.out.method336(arg0.method635(2, -383902332), (byte) 0);
     }
 }

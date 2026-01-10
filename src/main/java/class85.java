@@ -158,23 +158,23 @@ public class class85 extends class23 {
     }
 
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;I)Llb;")
-    public static final class122 method577(class46 arg0, int arg1) {
+    public static final class122 method577(Packet arg0, int arg1) {
         ++field1533;
-        return arg1 != 255 ? null : new class122(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(arg1 + -29884), arg0.method347(26119));
+        return arg1 != 255 ? null : new class122(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(arg1 + -29884), arg0.g1(26119));
     }
 
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    this.field1538 = arg0.method301(35);
+                    this.field1538 = arg0.g2(35);
                 }
             } else {
-                this.field1543 = arg0.method301(86);
+                this.field1543 = arg0.g2(86);
             }
         } else {
-            this.field1530 = arg0.method301(46);
+            this.field1530 = arg0.g2(46);
         }
         if (arg1 != -3) {
             field1546 = null;

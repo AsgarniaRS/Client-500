@@ -83,7 +83,7 @@ public class class105 extends class51 {
                 class109.method755(arg2, arg3, -87, arg0, arg1);
             }
         } else if (var6 == 0) {
-            class46.method310(arg3, arg5, arg0, (byte) 84, arg2);
+            Packet.method310(arg3, arg5, arg0, (byte) 84, arg2);
         } else {
             if (var7 < 0) {
                 var7 = -var7;
@@ -216,18 +216,18 @@ public class class105 extends class51 {
     }
 
     @OriginalMember(owner = "client!jg", name = "a", descriptor = "(Lea;Z)V")
-    public static final void method727(class46 arg0, boolean arg1) {
+    public static final void method727(Packet arg0, boolean arg1) {
         if (arg1) {
             return;
         }
         if (class175.field3531 != null) {
             try {
                 class175.field3531.method820((byte) 110, 0L);
-                class175.field3531.method808(arg0.field842, 24, arg0.field831, -6668);
+                class175.field3531.method808(arg0.data, 24, arg0.pos, -6668);
             } catch (Exception var2) {
             }
         }
-        arg0.field831 += 24;
+        arg0.pos += 24;
         field1917++;
     }
 

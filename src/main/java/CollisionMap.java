@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ia")
-public class class89 {
+public class CollisionMap {
 
     @OriginalMember(owner = "client!ia", name = "w", descriptor = "I")
     private int field1684 = 0;
@@ -107,7 +107,7 @@ public class class89 {
     public static int field1690;
 
     @OriginalMember(owner = "client!ia", name = "e", descriptor = "Lmf;")
-    public static class137 field1666;
+    public static ClientStream field1666;
 
     @OriginalMember(owner = "client!ia", name = "o", descriptor = "Lpf;")
     public static class169 field1676;
@@ -870,7 +870,7 @@ public class class89 {
     }
 
     @OriginalMember(owner = "client!ia", name = "<init>", descriptor = "(II)V")
-    public class89(int arg0, int arg1) {
+    public CollisionMap(int arg0, int arg1) {
         this.field1667 = arg1;
         this.field1685 = arg0;
         this.field1668 = new int[this.field1685][this.field1667];

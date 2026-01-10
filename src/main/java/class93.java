@@ -76,7 +76,7 @@ public class class93 {
         class108.field1960 = false;
         class126.method863(class47.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -127);
         if (class43.field723 != -1) {
-            class137.method914(class43.field723, 1, 4);
+            ClientStream.method914(class43.field723, 1, 4);
         }
     }
 

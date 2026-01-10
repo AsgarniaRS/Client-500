@@ -15,10 +15,10 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!hj")
-public abstract class class87 extends Applet implements Runnable, FocusListener, WindowListener {
+public abstract class GameShell extends Applet implements Runnable, FocusListener, WindowListener {
 
     @OriginalMember(owner = "client!hj", name = "y", descriptor = "Z")
-    private boolean field1582 = false;
+    private boolean alreadyerrored = false;
 
     @OriginalMember(owner = "client!hj", name = "u", descriptor = "S")
     public static short field1578 = 1;
@@ -263,7 +263,7 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
             return;
         }
         class53.field971 = true;
-        if (class181.field3593 == null || !class181.field3593.startsWith("1.5") || class206.method1420(false) - class116.field2093 <= 1000L) {
+        if (class181.javaVersion == null || !class181.javaVersion.startsWith("1.5") || class206.method1420(false) - class116.field2093 <= 1000L) {
             return;
         }
         Rectangle var2 = arg0.getClipBounds();
@@ -374,12 +374,12 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
     }
 
     @OriginalMember(owner = "client!hj", name = "a", descriptor = "(BLjava/lang/String;)V")
-    public final void method588(byte arg0, String arg1) {
+    public final void error(byte arg0, String arg1) {
         field1562++;
-        if (this.field1582) {
+        if (this.alreadyerrored) {
             return;
         }
-        this.field1582 = true;
+        this.alreadyerrored = true;
         System.out.println("error_game_" + arg1);
         if (arg0 != -49) {
             this.method222((byte) 104);
@@ -399,8 +399,8 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
     private final void method589(int arg0) {
         field1587++;
         long var2 = class206.method1420(false);
-        long var4 = class89.field1697[class116.field2103];
-        class89.field1697[class116.field2103] = var2;
+        long var4 = CollisionMap.field1697[class116.field2103];
+        CollisionMap.field1697[class116.field2103] = var2;
         class116.field2103 = class116.field2103 + 1 & 0x1F;
         if (var4 != 0L && var4 < var2) {
             int var6 = (int) (var2 - var4);
@@ -451,7 +451,7 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
             if (var2.endsWith("192.168.1.")) {
                 return true;
             } else {
-                this.method588((byte) -49, "invalidhost");
+                this.error((byte) -49, "invalidhost");
                 return false;
             }
         }
@@ -513,17 +513,17 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
     public final void run() {
         field1561++;
         try {
-            if (class181.field3596 != null) {
-                String var1 = class181.field3596.toLowerCase();
+            if (class181.javaVendor != null) {
+                String var1 = class181.javaVendor.toLowerCase();
                 if (var1.indexOf("sun") != -1 || var1.indexOf("apple") != -1) {
-                    String var2 = class181.field3593;
+                    String var2 = class181.javaVersion;
                     if (var2.equals("1.1") || var2.startsWith("1.1.") || var2.equals("1.2") || var2.startsWith("1.2.")) {
-                        this.method588((byte) -49, "wrongjava");
+                        this.error((byte) -49, "wrongjava");
                         return;
                     }
                     class130.field2444 = 5;
-                } else if (var1.indexOf("ibm") != -1 && (class181.field3593 == null || class181.field3593.equals("1.4.2"))) {
-                    this.method588((byte) -49, "wrongjava");
+                } else if (var1.indexOf("ibm") != -1 && (class181.javaVersion == null || class181.javaVersion.equals("1.4.2"))) {
+                    this.error((byte) -49, "wrongjava");
                     return;
                 }
             }
@@ -550,7 +550,7 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
             }
         } catch (Exception var7) {
             class221.method1490((byte) 0, null, var7);
-            this.method588((byte) -49, "crash");
+            this.error((byte) -49, "crash");
         }
         this.method587(0, true);
     }
@@ -583,7 +583,7 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
             if (class55.field1032 != null) {
                 class8.field121++;
                 if (class8.field121 >= 3) {
-                    this.method588((byte) -49, "alreadyloaded");
+                    this.error((byte) -49, "alreadyloaded");
                 } else {
                     this.getAppletContext().showDocument(this.getDocumentBase(), "_self");
                 }
@@ -599,7 +599,7 @@ public abstract class class87 extends Applet implements Runnable, FocusListener,
             }
         } catch (Exception var7) {
             class221.method1490((byte) 0, null, var7);
-            this.method588((byte) -49, "crash");
+            this.error((byte) -49, "crash");
         }
     }
 

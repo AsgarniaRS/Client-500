@@ -91,9 +91,9 @@ public class class67 {
         byte[] var4 = client.field567.method941((byte) 56, arg0, 5);
         class114 var5 = new class114();
         if (var4 != null) {
-            var5.method777(new class46(var4), (byte) 83);
+            var5.method777(new Packet(var4), (byte) 83);
         }
-        class17.field251.method664((long) arg0, var5, false);
+        class17.field251.put((long) arg0, var5, false);
         return var5;
     }
 

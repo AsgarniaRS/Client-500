@@ -67,12 +67,12 @@ public class class90 extends class67 {
         while (var6 < 4) {
             if (class27.field461[var6] != arg0) {
                 var5[var4] = class27.field461[var6];
-                var3[var4] = class89.field1687[var6];
+                var3[var4] = CollisionMap.field1687[var6];
                 var4++;
             }
             var6++;
         }
-        class89.field1687 = var3;
+        CollisionMap.field1687 = var3;
         class27.field461 = var5;
         class167.method1145(0, class202.field3847, 1, class202.field3847.length - 1);
     }
@@ -90,18 +90,18 @@ public class class90 extends class67 {
 
     @OriginalMember(owner = "client!ib", name = "a", descriptor = "([BB)V")
     public static final void method659(byte[] arg0, byte arg1) {
-        class46 var2 = new class46(arg0);
-        int var3 = var2.method301(61);
+        Packet var2 = new Packet(arg0);
+        int var3 = var2.g2(61);
         int var4 = 0;
         if (arg1 > -22) {
             method657(21, 72, -49);
         }
         while (var3 > var4) {
             class244 var5 = new class244();
-            class88 var6 = var2.method298(-125);
-            var5.field4485 = var2.method301(56);
-            var5.field4487 = var2.method301(36);
-            var5.field4494 = var2.method347(26119);
+            class88 var6 = var2.gjstr(-125);
+            var5.field4485 = var2.g2(56);
+            var5.field4487 = var2.g2(36);
+            var5.field4494 = var2.g1(26119);
             var5.field4488 = var6.method626(47, true, 32);
             var5.field4492 = var6.method600((byte) 107, 47);
             class159.field3051.method1624(var5, 57);
@@ -118,7 +118,7 @@ public class class90 extends class67 {
         if (class49.field919 <= arg1 && arg1 <= class18.field279) {
             int var5 = class156.method1060(class67.field1207, class12.field183, -102, arg3);
             int var6 = class156.method1060(class67.field1207, class12.field183, -105, arg0);
-            class46.method310(arg1, var6, var5, (byte) 84, arg2);
+            Packet.method310(arg1, var6, var5, (byte) 84, arg2);
         }
         field1704++;
     }

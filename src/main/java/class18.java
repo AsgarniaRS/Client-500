@@ -89,12 +89,12 @@ public class class18 extends class145 {
     public static boolean[][] field304;
 
     @OriginalMember(owner = "client!bf", name = "a", descriptor = "([Lia;[BIIZI)V")
-    public static final void method85(class89[] arg0, byte[] arg1, int arg2, int arg3, boolean arg4, int arg5) {
+    public static final void method85(CollisionMap[] arg0, byte[] arg1, int arg2, int arg3, boolean arg4, int arg5) {
         if (arg3 >= -4) {
             method85(null, null, -82, 92, true, -110);
         }
         field291++;
-        class46 var6 = new class46(arg1);
+        Packet var6 = new Packet(arg1);
         int var7 = -1;
         while (true) {
             int var8 = var6.method332((byte) -112);
@@ -111,14 +111,14 @@ public class class18 extends class145 {
                 var9 += var10 - 1;
                 int var11 = var9 & 0x3F;
                 int var12 = var9 >> 6 & 0x3F;
-                int var13 = var6.method347(26119);
+                int var13 = var6.g1(26119);
                 int var14 = var9 >> 12;
                 int var15 = arg5 + var11;
                 int var16 = var13 & 0x3;
                 int var17 = var12 + arg2;
                 int var18 = var13 >> 2;
                 if (var17 > 0 && var15 > 0 && var17 < 103 && var15 < 103) {
-                    class89 var19 = null;
+                    CollisionMap var19 = null;
                     if (!arg4) {
                         int var20 = var14;
                         if ((class116.field2100[1][var17][var15] & 0x2) == 2) {

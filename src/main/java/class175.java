@@ -119,11 +119,11 @@ public class class175 {
                 class147.field2759 = class226.field4241;
                 class45.field796 = 0;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -119, 192);
-                class146.field2749.method331(class48.field905, 18975);
-                class146.field2749.method351(false, class209.field3967);
-                class146.field2749.method305(arg0 ^ 0x56, class58.field1105);
-                class146.field2749.method305(117, var7);
+                class146.out.method30((byte) -119, 192);
+                class146.out.method331(class48.field905, 18975);
+                class146.out.method351(false, class209.field3967);
+                class146.out.method305(arg0 ^ 0x56, class58.field1105);
+                class146.out.method305(117, var7);
             }
         }
         if (var4 == 1006) {
@@ -132,22 +132,22 @@ public class class175 {
             class157.field3032++;
             class155.field2999 = class172.field3341;
             class157.field3019 = 2;
-            class146.field2749.method30((byte) -79, 191);
-            class146.field2749.method305(90, var7);
+            class146.out.method30((byte) -79, 191);
+            class146.out.method305(90, var7);
         }
         if (var4 == 7) {
             class45.field784++;
             class101.method707(0, var3, var5, var2);
-            class146.field2749.method30((byte) -114, 53);
-            class146.field2749.method305(arg0 + 95, (int) (var5 >>> 32) & Integer.MAX_VALUE);
-            class146.field2749.method344(class190.field3681 + var3, (byte) -51);
-            class146.field2749.method344(var2 + class223.field4214, (byte) -51);
+            class146.out.method30((byte) -114, 53);
+            class146.out.method305(arg0 + 95, (int) (var5 >>> 32) & Integer.MAX_VALUE);
+            class146.out.method344(class190.field3681 + var3, (byte) -51);
+            class146.out.method344(var2 + class223.field4214, (byte) -51);
         }
         if (var4 == 15) {
             class174 var9 = class36.method238(var2, var3, true);
             if (var9 != null) {
                 class47.method363(-86);
-                class158.method1066(true, var3, class87.method592(1281959627, class80.method530(-881710560, var9)), var2);
+                class158.method1066(true, var3, GameShell.method592(1281959627, class80.method530(-881710560, var9)), var2);
                 class28.field475 = 0;
                 class201.field3837 = class194.method1347(var9, arg0 - 4);
                 if (class201.field3837 == null) {
@@ -170,17 +170,17 @@ public class class175 {
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
                 class147.field2759 = class226.field4241;
-                class146.field2749.method30((byte) -88, 65);
-                class146.field2749.method314(var7, (byte) 52);
+                class146.out.method30((byte) -88, 65);
+                class146.out.method314(var7, (byte) 52);
             }
         }
         if (var4 == 40) {
             class58.field1092++;
-            class146.field2749.method30((byte) -54, 196);
-            class146.field2749.method344(client.field569, (byte) -51);
-            class146.field2749.method338(2112555600, class16.field249);
-            class146.field2749.method326(-1, var3);
-            class146.field2749.method331(var2, 18975);
+            class146.out.method30((byte) -54, 196);
+            class146.out.method344(client.field569, (byte) -51);
+            class146.out.p4(class16.field249);
+            class146.out.method326(-1, var3);
+            class146.out.method331(var2, 18975);
         }
         if (var4 == 34) {
             class191 var11 = class225.field4225[var7];
@@ -190,9 +190,9 @@ public class class175 {
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
                 class147.field2759 = class226.field4241;
-                class146.field2749.method30((byte) -120, 78);
+                class146.out.method30((byte) -120, 78);
                 class199.field3799++;
-                class146.field2749.method331(var7, arg0 ^ 0x4A1D);
+                class146.out.method331(var7, arg0 ^ 0x4A1D);
             }
         }
         if (var4 == 58) {
@@ -204,8 +204,8 @@ public class class175 {
                 class147.field2759 = class226.field4241;
                 class218.field4117++;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -128, 151);
-                class146.field2749.method305(80, var7);
+                class146.out.method30((byte) -128, 151);
+                class146.out.method305(80, var7);
             }
         }
         if (var4 == 4) {
@@ -217,25 +217,25 @@ public class class175 {
                 class45.field796 = 0;
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -124, 71);
-                class146.field2749.method305(115, var7);
+                class146.out.method30((byte) -124, 71);
+                class146.out.method305(115, var7);
             }
         }
         if (var4 == 39) {
-            class146.field2749.method30((byte) -127, 35);
-            class146.field2749.method344(var7, (byte) -51);
-            class146.field2749.method305(88, client.field569);
+            class146.out.method30((byte) -127, 35);
+            class146.out.method344(var7, (byte) -51);
+            class146.out.method305(88, client.field569);
             field3532++;
-            class146.field2749.method316(class16.field249, arg0 + 15726);
-            class146.field2749.method331(var2, 18975);
-            class146.field2749.method316(var3, arg0 ^ 0x3D72);
+            class146.out.method316(class16.field249, arg0 + 15726);
+            class146.out.method331(var2, 18975);
+            class146.out.method316(var3, arg0 ^ 0x3D72);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
         }
         if (var4 == 36) {
-            class146.field2749.method30((byte) -43, 109);
-            class146.field2749.method338(2112555600, var3);
+            class146.out.method30((byte) -43, 109);
+            class146.out.p4(var3);
             class246.field4511++;
             class174 var14 = class239.method1581(-64, var3);
             if (var14.field3394 != null && var14.field3394[0][0] == 5) {
@@ -247,8 +247,8 @@ public class class175 {
         if (var4 == 1001) {
             class174 var16 = class239.method1581(-64, var3);
             if (var16 == null || var16.field3476[var2] < 100000) {
-                class146.field2749.method30((byte) -108, 191);
-                class146.field2749.method305(110, var7);
+                class146.out.method30((byte) -108, 191);
+                class146.out.method305(110, var7);
                 class157.field3032++;
             } else {
                 class223.method1501(class166.method1142(new class88[] { class170.method1214(var16.field3476[var2], 51), class109.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
@@ -266,16 +266,16 @@ public class class175 {
                 class155.field2999 = class172.field3341;
                 class147.field2759 = class226.field4241;
                 class45.field796 = 0;
-                class146.field2749.method30((byte) -79, 47);
-                class146.field2749.method344(var7, (byte) -51);
+                class146.out.method30((byte) -79, 47);
+                class146.out.method344(var7, (byte) -51);
             }
         }
         if (var4 == 21) {
             class207.field3941++;
-            class146.field2749.method30((byte) -87, 160);
-            class146.field2749.method344(var2, (byte) -51);
-            class146.field2749.method351(false, var3);
-            class146.field2749.method331(var7, arg0 + 18973);
+            class146.out.method30((byte) -87, 160);
+            class146.out.method344(var2, (byte) -51);
+            class146.out.method351(false, var3);
+            class146.out.method331(var7, arg0 + 18973);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -284,30 +284,30 @@ public class class175 {
             return;
         }
         if (var4 == 2) {
-            class146.field2749.method30((byte) -60, 216);
-            class146.field2749.method316(var3, 15728);
-            class146.field2749.method314(var2, (byte) 48);
+            class146.out.method30((byte) -60, 216);
+            class146.out.method316(var3, 15728);
+            class146.out.method314(var2, (byte) 48);
             class16.field245++;
-            class146.field2749.method344(var7, (byte) -51);
+            class146.out.method344(var7, (byte) -51);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(arg0 ^ 0xFFFFFFC2, var3);
             class93.field1743 = var2;
         }
         if (var4 == 35) {
             class101.method707(0, var3, var5, var2);
-            class146.field2749.method30((byte) -57, 13);
-            class146.field2749.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
-            class146.field2749.method314(class223.field4214 + var2, (byte) -120);
-            class146.field2749.method314(class190.field3681 + var3, (byte) 11);
+            class146.out.method30((byte) -57, 13);
+            class146.out.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
+            class146.out.method314(class223.field4214 + var2, (byte) -120);
+            class146.out.method314(class190.field3681 + var3, (byte) 11);
             class134.field2504++;
         }
         if (var4 == 51) {
             class159.field3069++;
             class101.method707(0, var3, var5, var2);
-            class146.field2749.method30((byte) -71, 94);
-            class146.field2749.method331(var2 + class223.field4214, 18975);
-            class146.field2749.method305(84, class190.field3681 + var3);
-            class146.field2749.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
+            class146.out.method30((byte) -71, 94);
+            class146.out.method331(var2 + class223.field4214, 18975);
+            class146.out.method305(84, class190.field3681 + var3);
+            class146.out.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
         }
         if (var4 == 29) {
             class44 var18 = class244.field4493[var7];
@@ -318,8 +318,8 @@ public class class175 {
                 class157.field3019 = 2;
                 class147.field2759 = class226.field4241;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -78, 118);
-                class146.field2749.method331(var7, 18975);
+                class146.out.method30((byte) -78, 118);
+                class146.out.method331(var7, 18975);
             }
         }
         if (var4 == 48) {
@@ -331,19 +331,19 @@ public class class175 {
                 class45.field796 = 0;
                 class149.field2848++;
                 class157.field3019 = 2;
-                class146.field2749.method30((byte) -114, 30);
-                class146.field2749.method314(class58.field1105, (byte) 9);
-                class146.field2749.method326(-1, class209.field3967);
-                class146.field2749.method314(var7, (byte) 104);
-                class146.field2749.method344(class48.field905, (byte) -51);
+                class146.out.method30((byte) -114, 30);
+                class146.out.method314(class58.field1105, (byte) 9);
+                class146.out.method326(-1, class209.field3967);
+                class146.out.method314(var7, (byte) 104);
+                class146.out.method344(class48.field905, (byte) -51);
             }
         }
         if (var4 == 44) {
-            class146.field2749.method30((byte) -111, 112);
+            class146.out.method30((byte) -111, 112);
             class199.field3805++;
-            class146.field2749.method305(117, var2);
-            class146.field2749.method326(arg0 ^ 0xFFFFFFFD, var3);
-            class146.field2749.method344(var7, (byte) -51);
+            class146.out.method305(117, var2);
+            class146.out.method326(arg0 ^ 0xFFFFFFFD, var3);
+            class146.out.method344(var7, (byte) -51);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -360,8 +360,8 @@ public class class175 {
                 class227.field4263++;
                 class147.field2759 = class226.field4241;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -56, 164);
-                class146.field2749.method305(arg0 ^ 0x62, var7);
+                class146.out.method30((byte) -56, 164);
+                class146.out.method305(arg0 ^ 0x62, var7);
             }
         }
         if (var4 == 57) {
@@ -374,10 +374,10 @@ public class class175 {
             class147.field2759 = class226.field4241;
             class157.field3019 = 2;
             class45.field796 = 0;
-            class146.field2749.method30((byte) -123, 107);
-            class146.field2749.method314(class190.field3681 + var3, (byte) -118);
-            class146.field2749.method314(var7, (byte) -97);
-            class146.field2749.method344(class223.field4214 + var2, (byte) -51);
+            class146.out.method30((byte) -123, 107);
+            class146.out.method314(class190.field3681 + var3, (byte) -118);
+            class146.out.method314(var7, (byte) -97);
+            class146.out.method344(class223.field4214 + var2, (byte) -51);
         }
         if (var4 == 12) {
             class47.method363(-125);
@@ -402,18 +402,18 @@ public class class175 {
                 class45.field796 = 0;
                 class147.field2759 = class226.field4241;
                 class145.field2717++;
-                class146.field2749.method30((byte) -71, 6);
-                class146.field2749.method344(var7, (byte) -51);
-                class146.field2749.method331(client.field569, 18975);
-                class146.field2749.method326(-1, class16.field249);
+                class146.out.method30((byte) -71, 6);
+                class146.out.method344(var7, (byte) -51);
+                class146.out.method331(client.field569, 18975);
+                class146.out.method326(-1, class16.field249);
             }
         }
         if (var4 == 6) {
             class116.field2094++;
-            class146.field2749.method30((byte) -87, 150);
-            class146.field2749.method316(var3, 15728);
-            class146.field2749.method344(var2, (byte) -51);
-            class146.field2749.method305(arg0 + 106, var7);
+            class146.out.method30((byte) -87, 150);
+            class146.out.method316(var3, 15728);
+            class146.out.method344(var2, (byte) -51);
+            class146.out.method305(arg0 + 106, var7);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -424,10 +424,10 @@ public class class175 {
         if (var4 == 1004) {
             class101.method707(0, var3, var5, var2);
             class217.field4063++;
-            class146.field2749.method30((byte) -79, 97);
-            class146.field2749.method344(class190.field3681 + var3, (byte) -51);
-            class146.field2749.method344((int) (var5 >>> 32) & Integer.MAX_VALUE, (byte) -51);
-            class146.field2749.method314(var2 + class223.field4214, (byte) -121);
+            class146.out.method30((byte) -79, 97);
+            class146.out.method344(class190.field3681 + var3, (byte) -51);
+            class146.out.method344((int) (var5 >>> 32) & Integer.MAX_VALUE, (byte) -51);
+            class146.out.method314(var2 + class223.field4214, (byte) -121);
         }
         if (var4 == 43 || var4 == 1003) {
             class203.method1392(var7, class201.field3838[arg1], var2, -3655, var3);
@@ -442,27 +442,27 @@ public class class175 {
             class147.field2759 = class226.field4241;
             class157.field3019 = 2;
             class45.field796 = 0;
-            class146.field2749.method30((byte) -103, 138);
-            class146.field2749.method331(class190.field3681 + var3, 18975);
-            class146.field2749.method305(118, var7);
-            class146.field2749.method331(class223.field4214 + var2, 18975);
+            class146.out.method30((byte) -103, 138);
+            class146.out.method331(class190.field3681 + var3, 18975);
+            class146.out.method305(118, var7);
+            class146.out.method331(class223.field4214 + var2, 18975);
         }
         if (var4 == 8) {
             class227.field4262++;
-            class146.field2749.method30((byte) -106, 205);
-            class146.field2749.method314(var7, (byte) -104);
-            class146.field2749.method331(var2, 18975);
-            class146.field2749.method316(var3, 15728);
+            class146.out.method30((byte) -106, 205);
+            class146.out.method314(var7, (byte) -104);
+            class146.out.method331(var2, 18975);
+            class146.out.method316(var3, 15728);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
         }
         if (var4 == 13) {
             class135.field2509++;
-            class146.field2749.method30((byte) -73, 26);
-            class146.field2749.method305(107, var2);
-            class146.field2749.method305(94, var7);
-            class146.field2749.method338(arg0 ^ 0x7DEB0A52, var3);
+            class146.out.method30((byte) -73, 26);
+            class146.out.method305(107, var2);
+            class146.out.method305(94, var7);
+            class146.out.p4(var3);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -477,10 +477,10 @@ public class class175 {
             class45.field796 = 0;
             class147.field2759 = class226.field4241;
             class157.field3019 = 2;
-            class146.field2749.method30((byte) -57, 77);
-            class146.field2749.method344(var7, (byte) -51);
-            class146.field2749.method344(class190.field3681 + var3, (byte) -51);
-            class146.field2749.method305(113, var2 + class223.field4214);
+            class146.out.method30((byte) -57, 77);
+            class146.out.method344(var7, (byte) -51);
+            class146.out.method344(class190.field3681 + var3, (byte) -51);
+            class146.out.method305(113, var2 + class223.field4214);
         }
         if (var4 == 1002) {
             class147.field2759 = class226.field4241;
@@ -494,31 +494,31 @@ public class class175 {
                     var30 = var30.method864((byte) 28);
                 }
                 if (var30 != null) {
-                    class146.field2749.method30((byte) -95, 127);
-                    class146.field2749.method314(var30.field2316, (byte) -123);
+                    class146.out.method30((byte) -95, 127);
+                    class146.out.method314(var30.field2316, (byte) -123);
                     class207.field3937++;
                 }
             }
         }
         if (var4 == 49) {
             class110.field2013++;
-            class146.field2749.method30((byte) -120, 32);
-            class146.field2749.method344(var7, (byte) -51);
-            class146.field2749.method338(2112555600, var3);
-            class146.field2749.method344(var2, (byte) -51);
+            class146.out.method30((byte) -120, 32);
+            class146.out.method344(var7, (byte) -51);
+            class146.out.p4(var3);
+            class146.out.method344(var2, (byte) -51);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(arg0 - 66, var3);
             class93.field1743 = var2;
         }
         if (var4 == 26 && class101.method707(0, var3, var5, var2)) {
             class43.field728++;
-            class146.field2749.method30((byte) -76, 170);
-            class146.field2749.method331(class190.field3681 + var3, 18975);
-            class146.field2749.method338(2112555600, class209.field3967);
-            class146.field2749.method344(var2 + class223.field4214, (byte) -51);
-            class146.field2749.method314(class58.field1105, (byte) -115);
-            class146.field2749.method331(Integer.MAX_VALUE & (int) (var5 >>> 32), 18975);
-            class146.field2749.method344(class48.field905, (byte) -51);
+            class146.out.method30((byte) -76, 170);
+            class146.out.method331(class190.field3681 + var3, 18975);
+            class146.out.p4(class209.field3967);
+            class146.out.method344(var2 + class223.field4214, (byte) -51);
+            class146.out.method314(class58.field1105, (byte) -115);
+            class146.out.method331(Integer.MAX_VALUE & (int) (var5 >>> 32), 18975);
+            class146.out.method344(class48.field905, (byte) -51);
         }
         if (var4 == 45) {
             class44 var31 = class244.field4493[var7];
@@ -529,8 +529,8 @@ public class class175 {
                 class147.field2759 = class226.field4241;
                 class155.field2999 = class172.field3341;
                 class157.field3019 = 2;
-                class146.field2749.method30((byte) -117, 214);
-                class146.field2749.method331(var7, 18975);
+                class146.out.method30((byte) -117, 214);
+                class146.out.method331(var7, 18975);
             }
         }
         if (var4 == 25) {
@@ -543,12 +543,12 @@ public class class175 {
             class155.field2999 = class172.field3341;
             class147.field2759 = class226.field4241;
             class45.field796 = 0;
-            class146.field2749.method30((byte) -79, 84);
-            class146.field2749.method305(93, var2 + class223.field4214);
-            class146.field2749.method305(arg0 + 104, var7);
-            class146.field2749.method314(var3 + class190.field3681, (byte) -3);
-            class146.field2749.method351(false, class16.field249);
-            class146.field2749.method314(client.field569, (byte) -107);
+            class146.out.method30((byte) -79, 84);
+            class146.out.method305(93, var2 + class223.field4214);
+            class146.out.method305(arg0 + 104, var7);
+            class146.out.method314(var3 + class190.field3681, (byte) -3);
+            class146.out.method351(false, class16.field249);
+            class146.out.method314(client.field569, (byte) -107);
         }
         if (var4 == 22) {
             class202.field3853++;
@@ -560,10 +560,10 @@ public class class175 {
             class155.field2999 = class172.field3341;
             class147.field2759 = class226.field4241;
             class45.field796 = 0;
-            class146.field2749.method30((byte) -65, 39);
-            class146.field2749.method314(var2 + class223.field4214, (byte) 126);
-            class146.field2749.method331(var7, arg0 ^ 0x4A1D);
-            class146.field2749.method344(class190.field3681 + var3, (byte) -51);
+            class146.out.method30((byte) -65, 39);
+            class146.out.method314(var2 + class223.field4214, (byte) 126);
+            class146.out.method331(var7, arg0 ^ 0x4A1D);
+            class146.out.method344(class190.field3681 + var3, (byte) -51);
         }
         if (var4 == 38) {
             class191 var36 = class225.field4225[var7];
@@ -574,32 +574,32 @@ public class class175 {
                 class155.field2999 = class172.field3341;
                 class157.field3019 = 2;
                 class45.field796 = 0;
-                class146.field2749.method30((byte) -51, 33);
-                class146.field2749.method314(var7, (byte) -108);
+                class146.out.method30((byte) -51, 33);
+                class146.out.method314(var7, (byte) -108);
             }
         }
         if (var4 == 24 && class101.method707(0, var3, var5, var2)) {
             class34.field579++;
-            class146.field2749.method30((byte) -80, 234);
-            class146.field2749.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) 97);
-            class146.field2749.method314(client.field569, (byte) 88);
-            class146.field2749.method316(class16.field249, 15728);
-            class146.field2749.method314(class223.field4214 + var2, (byte) -124);
-            class146.field2749.method305(105, class190.field3681 + var3);
+            class146.out.method30((byte) -80, 234);
+            class146.out.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) 97);
+            class146.out.method314(client.field569, (byte) 88);
+            class146.out.method316(class16.field249, 15728);
+            class146.out.method314(class223.field4214 + var2, (byte) -124);
+            class146.out.method305(105, class190.field3681 + var3);
         }
         if (var4 == 28) {
             class39.field687++;
-            class146.field2749.method30((byte) -81, 154);
-            class146.field2749.method338(2112555600, var3);
-            class146.field2749.method344(var7, (byte) -51);
-            class146.field2749.method344(var2, (byte) -51);
+            class146.out.method30((byte) -81, 154);
+            class146.out.p4(var3);
+            class146.out.method344(var7, (byte) -51);
+            class146.out.method344(var2, (byte) -51);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(arg0 - 66, var3);
             class93.field1743 = var2;
         }
         if (var4 == 20) {
-            class146.field2749.method30((byte) -39, 109);
-            class146.field2749.method338(arg0 + 2112555598, var3);
+            class146.out.method30((byte) -39, 109);
+            class146.out.p4(var3);
             class246.field4511++;
             class174 var37 = class239.method1581(-64, var3);
             if (var37.field3394 != null && var37.field3394[0][0] == 5) {
@@ -612,10 +612,10 @@ public class class175 {
         }
         if (var4 == 18) {
             class153.field2954++;
-            class146.field2749.method30((byte) -100, 251);
-            class146.field2749.method305(104, var2);
-            class146.field2749.method331(var7, 18975);
-            class146.field2749.method338(2112555600, var3);
+            class146.out.method30((byte) -100, 251);
+            class146.out.method305(104, var2);
+            class146.out.method331(var7, 18975);
+            class146.out.p4(var3);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -634,17 +634,17 @@ public class class175 {
                 class157.field3019 = 2;
                 class45.field796 = 0;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -104, 195);
-                class146.field2749.method305(arg0 ^ 0x5A, var7);
+                class146.out.method30((byte) -104, 195);
+                class146.out.method305(arg0 ^ 0x5A, var7);
             }
         }
         if (var4 == 33) {
             class101.method707(0, var3, var5, var2);
             class28.field469++;
-            class146.field2749.method30((byte) -115, 169);
-            class146.field2749.method305(arg0 ^ 0x5E, var3 + class190.field3681);
-            class146.field2749.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -99);
-            class146.field2749.method344(class223.field4214 + var2, (byte) -51);
+            class146.out.method30((byte) -115, 169);
+            class146.out.method305(arg0 ^ 0x5E, var3 + class190.field3681);
+            class146.out.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -99);
+            class146.out.method344(class223.field4214 + var2, (byte) -51);
         }
         if (var4 == 11) {
             class174 var40 = class239.method1581(-64, var3);
@@ -653,17 +653,17 @@ public class class175 {
                 var41 = class53.method389(arg0 + 122, var40);
             }
             if (var41) {
-                class146.field2749.method30((byte) -65, 109);
+                class146.out.method30((byte) -65, 109);
                 class246.field4511++;
-                class146.field2749.method338(2112555600, var3);
+                class146.out.p4(var3);
             }
         }
         if (var4 == 9) {
-            class146.field2749.method30((byte) -50, 55);
-            class146.field2749.method314(var2, (byte) 91);
+            class146.out.method30((byte) -50, 55);
+            class146.out.method314(var2, (byte) 91);
             class99.field1810++;
-            class146.field2749.method351(false, var3);
-            class146.field2749.method331(var7, 18975);
+            class146.out.method351(false, var3);
+            class146.out.method331(var7, 18975);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -678,20 +678,20 @@ public class class175 {
             class157.field3019 = 2;
             class147.field2759 = class226.field4241;
             class155.field2999 = class172.field3341;
-            class146.field2749.method30((byte) -65, 211);
-            class146.field2749.method344(class223.field4214 + var2, (byte) -51);
-            class146.field2749.method314(class190.field3681 + var3, (byte) 89);
-            class146.field2749.method344(var7, (byte) -51);
+            class146.out.method30((byte) -65, 211);
+            class146.out.method344(class223.field4214 + var2, (byte) -51);
+            class146.out.method314(class190.field3681 + var3, (byte) 89);
+            class146.out.method344(var7, (byte) -51);
         }
         if (var4 == 42) {
-            class146.field2749.method30((byte) -124, 4);
-            class146.field2749.method305(95, class48.field905);
+            class146.out.method30((byte) -124, 4);
+            class146.out.method305(95, class48.field905);
             class39.field697++;
-            class146.field2749.method331(var7, 18975);
-            class146.field2749.method331(class58.field1105, arg0 + 18973);
-            class146.field2749.method326(-1, var3);
-            class146.field2749.method331(var2, 18975);
-            class146.field2749.method338(2112555600, class209.field3967);
+            class146.out.method331(var7, 18975);
+            class146.out.method331(class58.field1105, arg0 + 18973);
+            class146.out.method326(-1, var3);
+            class146.out.method331(var2, 18975);
+            class146.out.p4(class209.field3967);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -705,8 +705,8 @@ public class class175 {
                 class147.field2759 = class226.field4241;
                 class155.field2999 = class172.field3341;
                 class157.field3019 = 2;
-                class146.field2749.method30((byte) -76, 114);
-                class146.field2749.method305(116, var7);
+                class146.out.method30((byte) -76, 114);
+                class146.out.method305(116, var7);
             }
         }
         if (var4 == 16) {
@@ -718,8 +718,8 @@ public class class175 {
                 class155.field2999 = class172.field3341;
                 class28.field462++;
                 class157.field3019 = 2;
-                class146.field2749.method30((byte) -55, 161);
-                class146.field2749.method331(var7, 18975);
+                class146.out.method30((byte) -55, 161);
+                class146.out.method331(var7, 18975);
             }
         }
         if (var4 == 1005) {
@@ -728,8 +728,8 @@ public class class175 {
             class155.field2999 = class172.field3341;
             class45.field796 = 0;
             class147.field2759 = class226.field4241;
-            class146.field2749.method30((byte) -94, 166);
-            class146.field2749.method331(var7, 18975);
+            class146.out.method30((byte) -94, 166);
+            class146.out.method331(var7, 18975);
         }
         if (var4 == 50) {
             class44 var46 = class244.field4493[var7];
@@ -740,8 +740,8 @@ public class class175 {
                 class45.field796 = 0;
                 class155.field2999 = class172.field3341;
                 class147.field2759 = class226.field4241;
-                class146.field2749.method30((byte) -96, 204);
-                class146.field2749.method344(var7, (byte) -51);
+                class146.out.method30((byte) -96, 204);
+                class146.out.method344(var7, (byte) -51);
             }
         }
         if (var4 == 19) {
@@ -753,10 +753,10 @@ public class class175 {
                 class217.field4065++;
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
-                class146.field2749.method30((byte) -51, 145);
-                class146.field2749.method351(false, class16.field249);
-                class146.field2749.method314(var7, (byte) 55);
-                class146.field2749.method305(123, client.field569);
+                class146.out.method30((byte) -51, 145);
+                class146.out.method351(false, class16.field249);
+                class146.out.method314(var7, (byte) 55);
+                class146.out.method305(123, client.field569);
             }
         }
         if (var4 == 46) {
@@ -769,13 +769,13 @@ public class class175 {
             class45.field796 = 0;
             class155.field2999 = class172.field3341;
             class147.field2759 = class226.field4241;
-            class146.field2749.method30((byte) -120, 176);
-            class146.field2749.method314(class190.field3681 + var3, (byte) 1);
-            class146.field2749.method316(class209.field3967, 15728);
-            class146.field2749.method314(class58.field1105, (byte) 106);
-            class146.field2749.method344(class223.field4214 + var2, (byte) -51);
-            class146.field2749.method344(class48.field905, (byte) -51);
-            class146.field2749.method314(var7, (byte) 70);
+            class146.out.method30((byte) -120, 176);
+            class146.out.method314(class190.field3681 + var3, (byte) 1);
+            class146.out.method316(class209.field3967, 15728);
+            class146.out.method314(class58.field1105, (byte) 106);
+            class146.out.method344(class223.field4214 + var2, (byte) -51);
+            class146.out.method344(class48.field905, (byte) -51);
+            class146.out.method314(var7, (byte) 70);
         }
         if (class28.field475 != 0) {
             class28.field475 = 0;

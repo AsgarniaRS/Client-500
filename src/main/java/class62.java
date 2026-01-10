@@ -73,16 +73,16 @@ public class class62 extends class23 {
     }
 
     @OriginalMember(owner = "client!ff", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             method441(39, (byte) 0);
         }
         if (~arg2 != -1) {
             if (arg2 == 1) {
-                this.field1136 = arg0.method301(21);
+                this.field1136 = arg0.g2(21);
             }
         } else {
-            this.field1139 = arg0.method301(77);
+            this.field1139 = arg0.g2(77);
         }
         ++field1142;
     }
@@ -93,7 +93,7 @@ public class class62 extends class23 {
             method442((byte) -118);
         }
         ++field1138;
-        class33 var2 = (class33) class137.field2535.method666((long) arg0, 0);
+        class33 var2 = (class33) ClientStream.field2535.method666((long) arg0, 0);
         if (var2 != null) {
             return var2;
         } else {
@@ -101,9 +101,9 @@ public class class62 extends class23 {
             class33 var4 = new class33();
             var4.field539 = arg0;
             if (var3 != null) {
-                var4.method211(new class46(var3), (byte) 12);
+                var4.method211(new Packet(var3), (byte) 12);
             }
-            class137.field2535.method664((long) arg0, var4, false);
+            ClientStream.field2535.put((long) arg0, var4, false);
             return var4;
         }
     }

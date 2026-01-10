@@ -91,10 +91,10 @@ public class class226 extends class136 {
     }
 
     @OriginalMember(owner = "client!uh", name = "a", descriptor = "(Lea;I)V")
-    public final void method1518(class46 arg0, int arg1) {
+    public final void method1518(Packet arg0, int arg1) {
         field4240++;
         while (true) {
-            int var3 = arg0.method347(26119);
+            int var3 = arg0.g1(26119);
             if (var3 == 0) {
                 if (arg1 == 0) {
                     return;
@@ -121,12 +121,12 @@ public class class226 extends class136 {
     }
 
     @OriginalMember(owner = "client!uh", name = "a", descriptor = "(IILea;)V")
-    private final void method1520(int arg0, int arg1, class46 arg2) {
+    private final void method1520(int arg0, int arg1, Packet arg2) {
         field4237++;
         if (arg1 < -62 && arg0 == 1) {
-            this.field4235 = arg2.method301(98);
-            this.field4236 = arg2.method347(26119);
-            this.field4239 = arg2.method347(26119);
+            this.field4235 = arg2.g2(98);
+            this.field4236 = arg2.g1(26119);
+            this.field4239 = arg2.g1(26119);
         }
     }
 }

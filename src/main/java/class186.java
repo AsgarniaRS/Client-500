@@ -309,7 +309,7 @@ public class class186 extends class23 {
             for (int var14 = 0; ~var13 < ~var14; ++var14) {
                 int var10001 = var9++;
                 --var11;
-                class89.field1676.field3249[var10001] = class88.field1640.field3249[var11];
+                CollisionMap.field1676.field3249[var10001] = class88.field1640.field3249[var11];
             }
             for (int var15 = var13; ~var15 > -129; ++var15) {
                 int var16 = class190.field3669[var10++];
@@ -318,9 +318,9 @@ public class class186 extends class23 {
                 if (var16 != 0) {
                     int var19 = -var16 + 256;
                     int var20 = class157.field3036[var16];
-                    class89.field1676.field3249[var9++] = class70.method470(class70.method470(var17, 65280) * var19 + var16 * class70.method470(65280, var20), 16711680) + class70.method470(class70.method470(16711935, var17) * var19 + class70.method470(16711935, var20) * var16, -16711936) >> 8;
+                    CollisionMap.field1676.field3249[var9++] = class70.method470(class70.method470(var17, 65280) * var19 + var16 * class70.method470(65280, var20), 16711680) + class70.method470(class70.method470(16711935, var17) * var19 + class70.method470(16711935, var20) * var16, -16711936) >> 8;
                 } else {
-                    class89.field1676.field3249[var9++] = var17;
+                    CollisionMap.field1676.field3249[var9++] = var17;
                 }
             }
             var11 += class88.field1640.field3656 - -128;
@@ -329,7 +329,7 @@ public class class186 extends class23 {
         if (arg0) {
             field3640 = 26;
         }
-        class89.field1676.method1163(637, 9);
+        CollisionMap.field1676.method1163(637, 9);
     }
 
     @OriginalMember(owner = "client!ra", name = "a", descriptor = "(Ljava/util/Random;[[IIIIZI)V")
@@ -434,9 +434,9 @@ public class class186 extends class23 {
     }
 
     @OriginalMember(owner = "client!ra", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
-            this.method11((class46) null, -78, -69);
+            this.method11((Packet) null, -78, -69);
         }
         if (arg2 != 0) {
             if (arg2 != 1) {
@@ -447,31 +447,31 @@ public class class186 extends class23 {
                                 if (~arg2 != -7) {
                                     if (arg2 != 7) {
                                         if (arg2 == 8) {
-                                            this.field3624 = arg0.method301(80);
+                                            this.field3624 = arg0.g2(80);
                                         }
                                     } else {
-                                        this.field3628 = arg0.method301(72);
+                                        this.field3628 = arg0.g2(72);
                                     }
                                 } else {
-                                    this.field3644 = arg0.method347(26119);
+                                    this.field3644 = arg0.g1(26119);
                                 }
                             } else {
-                                this.field3626 = arg0.method301(44);
+                                this.field3626 = arg0.g2(44);
                             }
                         } else {
-                            this.field3643 = arg0.method301(13);
+                            this.field3643 = arg0.g2(13);
                         }
                     } else {
-                        this.field3636 = arg0.method301(arg1 + 67);
+                        this.field3636 = arg0.g2(arg1 + 67);
                     }
                 } else {
-                    this.field3637 = arg0.method301(69);
+                    this.field3637 = arg0.g2(69);
                 }
             } else {
-                this.field3639 = arg0.method301(83);
+                this.field3639 = arg0.g2(83);
             }
         } else {
-            this.field3641 = arg0.method347(26119);
+            this.field3641 = arg0.g1(26119);
         }
         ++field3635;
     }

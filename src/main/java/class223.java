@@ -229,7 +229,7 @@ public class class223 {
     }
 
     @OriginalMember(owner = "client!ue", name = "a", descriptor = "(BZIZIIZIILia;II)V")
-    public static final void method1505(byte arg0, boolean arg1, int arg2, boolean arg3, int arg4, int arg5, boolean arg6, int arg7, int arg8, class89 arg9, int arg10, int arg11) {
+    public static final void method1505(byte arg0, boolean arg1, int arg2, boolean arg3, int arg4, int arg5, boolean arg6, int arg7, int arg8, CollisionMap arg9, int arg10, int arg11) {
         field4205++;
         if (arg6 && (class116.field2100[0][arg11][arg10] & 0x2) == 0) {
             if ((class116.field2100[arg2][arg11][arg10] & 0x10) != 0) {

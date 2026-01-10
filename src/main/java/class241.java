@@ -94,7 +94,7 @@ public abstract class class241 {
         if (class245.field4502 == null) {
             class169 var5 = new class169(arg2, arg3);
             class72.method496(var5.field3249, arg2, arg3);
-            class46.method348(arg3, arg2, 0, (byte) 78, 0, class44.field760, 0, class109.field1990, 0);
+            Packet.method348(arg3, arg2, 0, (byte) 78, 0, class44.field760, 0, class109.field1990, 0);
             class245.field4502 = var5;
             class202.field3854.method1523(3739);
         }

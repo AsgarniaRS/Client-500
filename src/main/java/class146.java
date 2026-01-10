@@ -29,7 +29,7 @@ public class class146 {
     public static int field2753 = 1;
 
     @OriginalMember(owner = "client!nd", name = "u", descriptor = "Lae;")
-    public static class6 field2749 = new class6(5000);
+    public static class6 out = new class6(5000);
 
     @OriginalMember(owner = "client!nd", name = "b", descriptor = "I")
     private int field2730;
@@ -115,8 +115,8 @@ public class class146 {
                     field2743[var4] = field2743[var4 + 1];
                 }
                 class20.field313 = class67.field1211;
-                field2749.method30((byte) -67, 126);
-                field2749.method328(arg1, (byte) -122);
+                out.method30((byte) -67, 126);
+                out.method328(arg1, (byte) -122);
                 return;
             }
         }
@@ -131,7 +131,7 @@ public class class146 {
         for (int var4 = 0; var4 < var3.field962; var4++) {
             class108 var5 = var3.field963[var4];
             if ((var5.field1950 >> 29 & 0x3L) == 2L && var5.field1935 == arg1 && var5.field1938 == arg2) {
-                class137.method917(var5);
+                ClientStream.method917(var5);
                 return;
             }
         }
@@ -153,7 +153,7 @@ public class class146 {
 
     @OriginalMember(owner = "client!nd", name = "a", descriptor = "(Z)V")
     public static void method978(boolean arg0) {
-        field2749 = null;
+        out = null;
         field2740 = null;
         field2733 = null;
         field2737 = null;

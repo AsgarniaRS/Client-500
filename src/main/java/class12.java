@@ -191,9 +191,9 @@ public class class12 {
             class201.method1382(80);
             return true;
         } catch (Exception var5) {
-            String var2 = "T2 - " + class238.field4432 + "," + class46.field821 + "," + class88.field1634 + " - " + class228.field4272 + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
+            String var2 = "T2 - " + class238.field4432 + "," + Packet.field821 + "," + class88.field1634 + " - " + class228.field4272 + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
             for (int var3 = 0; class228.field4272 > var3 && var3 < 50; var3++) {
-                var2 = var2 + class230.field4314.field842[var3] + ",";
+                var2 = var2 + class230.field4314.data[var3] + ",";
             }
             class221.method1490((byte) 0, var2, var5);
             class115.method787((byte) -123);
@@ -202,12 +202,12 @@ public class class12 {
     }
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(Lea;I)Lgh;")
-    public static final class74 method62(class46 arg0, int arg1) {
+    public static final class74 method62(Packet arg0, int arg1) {
         if (arg1 >= -47) {
             method58(-51, 31, 123, -22, 116, -47, 31, -64, -53, 52, -116, -75, -64, -5, -109, 94, -11, -123, -36, 116);
         }
         field169++;
-        return new class74(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(-29629), arg0.method347(26119));
+        return new class74(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(-29629), arg0.g1(26119));
     }
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(Lfe;Lnb;I)Z")
@@ -259,12 +259,12 @@ public class class12 {
                 class115.field2088[class146.field2731] = arg1;
                 class160.field3094[class146.field2731] = 0;
                 class168.field3240[class146.field2731] = class174.field3455;
-                class46.field845[class146.field2731] = 0;
+                Packet.field845[class146.field2731] = 0;
                 class59.field1120[class146.field2731] = false;
                 class20.field313 = class67.field1211;
                 class146.field2731++;
-                class146.field2749.method30((byte) -66, 82);
-                class146.field2749.method328(arg1, (byte) -127);
+                class146.out.method30((byte) -66, 82);
+                class146.out.method328(arg1, (byte) -127);
             }
         }
     }
@@ -455,8 +455,8 @@ public class class12 {
     }
 
     @OriginalMember(owner = "client!b", name = "<init>", descriptor = "(Lea;)V")
-    public class12(class46 arg0) {
-        int var2 = arg0.method347(26119);
+    public class12(Packet arg0) {
+        int var2 = arg0.g1(26119);
         this.field168 = new class23[var2];
         int var3 = 0;
         int var4 = 0;
@@ -472,7 +472,7 @@ public class class12 {
             int var17 = var16.field376.length;
             var5[var6] = new int[var17];
             for (int var18 = 0; var18 < var17; var18++) {
-                var5[var6][var18] = arg0.method347(26119);
+                var5[var6][var18] = arg0.g1(26119);
             }
             this.field168[var6] = var16;
         }
@@ -497,7 +497,7 @@ public class class12 {
             var5[var9] = null;
         }
         Object var10 = null;
-        this.field179 = this.field168[arg0.method347(26119)];
-        this.field170 = this.field168[arg0.method347(26119)];
+        this.field179 = this.field168[arg0.g1(26119)];
+        this.field170 = this.field168[arg0.g1(26119)];
     }
 }

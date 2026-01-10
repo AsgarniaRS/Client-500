@@ -93,7 +93,7 @@ public class class3 {
                 }
                 this.field29 += this.field33.read(this.field39, this.field29, var2);
                 if (this.field29 == 4) {
-                    int var3 = (new class46(this.field39)).method323((byte) -118);
+                    int var3 = (new Packet(this.field39)).g4((byte) -118);
                     this.field36 = 2;
                     this.field35 = new byte[var3];
                 }

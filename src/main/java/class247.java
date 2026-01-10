@@ -44,13 +44,13 @@ public class class247 extends class136 {
     public int field4528;
 
     @OriginalMember(owner = "client!wh", name = "Y", descriptor = "Li;")
-    public class88 field4532;
+    public class88 name;
 
     @OriginalMember(owner = "client!wh", name = "N", descriptor = "[I")
-    public int[] field4521;
+    public int[] instructions;
 
     @OriginalMember(owner = "client!wh", name = "P", descriptor = "[I")
-    public int[] field4523;
+    public int[] intOperands;
 
     @OriginalMember(owner = "client!wh", name = "W", descriptor = "[I")
     public static int[] field4530;
@@ -62,7 +62,7 @@ public class class247 extends class136 {
     public static class188[] field4527;
 
     @OriginalMember(owner = "client!wh", name = "Q", descriptor = "[Li;")
-    public class88[] field4524;
+    public class88[] stringOperands;
 
     @OriginalMember(owner = "client!wh", name = "d", descriptor = "(B)V")
     public static void method1611(byte arg0) {

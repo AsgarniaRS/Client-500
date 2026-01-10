@@ -116,9 +116,9 @@ public class class202 {
         class221.field4171 = null;
         class15.field234 = null;
         class32.field518 = null;
-        class89.field1676 = null;
+        CollisionMap.field1676 = null;
         class117.method797(25335, 2);
-        class147.method990((byte) -99, true);
+        class147.sendLoginLogoutPacket((byte) -99, true);
         class90.field1708 = false;
         if (arg0 >= -53) {
             method1388(-67, -25, -67, -81L);

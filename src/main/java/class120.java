@@ -73,7 +73,7 @@ public class class120 extends class23 {
     public static int field2203;
 
     @OriginalMember(owner = "client!l", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field2195;
         if (arg2 != 0) {
             if (arg2 != 1) {
@@ -82,25 +82,25 @@ public class class120 extends class23 {
                         if (~arg2 != -5) {
                             if (arg2 != 5) {
                                 if (~arg2 == -7) {
-                                    this.field2185 = arg0.method347(26119);
+                                    this.field2185 = arg0.g1(26119);
                                 }
                             } else {
-                                this.field2204 = arg0.method347(26119);
+                                this.field2204 = arg0.g1(26119);
                             }
                         } else {
-                            this.field2206 = arg0.method347(26119);
+                            this.field2206 = arg0.g1(26119);
                         }
                     } else {
-                        this.field2189 = arg0.method347(26119);
+                        this.field2189 = arg0.g1(26119);
                     }
                 } else {
-                    this.field2199 = arg0.method301(119);
+                    this.field2199 = arg0.g2(119);
                 }
             } else {
-                this.field2202 = arg0.method347(arg1 ^ -26118);
+                this.field2202 = arg0.g1(arg1 ^ -26118);
             }
         } else {
-            this.field2204 = this.field2185 = arg0.method347(26119);
+            this.field2204 = this.field2185 = arg0.g1(26119);
         }
         if (arg1 != -3) {
             this.method823(-66);

@@ -54,20 +54,20 @@ public class class80 extends class23 {
     public static class188[] field1448;
 
     @OriginalMember(owner = "client!hc", name = "a", descriptor = "(ZILmf;)V")
-    public static final void method529(boolean arg0, int arg1, class137 arg2) {
-        if (class214.field4035 != null) {
+    public static final void method529(boolean arg0, int arg1, ClientStream arg2) {
+        if (class214.clientStream != null) {
             try {
-                class214.field4035.method919(true);
+                class214.clientStream.close(true);
             } catch (Exception var8) {
             }
-            class214.field4035 = null;
+            class214.clientStream = null;
         }
-        class214.field4035 = arg2;
-        class147.method990((byte) -118, arg0);
+        class214.clientStream = arg2;
+        class147.sendLoginLogoutPacket((byte) -118, arg0);
         class149.field2910 = null;
         class28.field473 = 0;
         class53.field990 = null;
-        class78.field1408.field831 = 0;
+        class78.field1408.pos = 0;
         field1450++;
         while (true) {
             class97 var3 = (class97) class151.field2924.method1049(0);
@@ -77,18 +77,18 @@ public class class80 extends class23 {
                     if (var4 == null) {
                         if (class18.field294 != 0) {
                             try {
-                                class46 var5 = new class46(4);
-                                var5.method346(255, 4);
-                                var5.method346(255, class18.field294);
+                                Packet var5 = new Packet(4);
+                                var5.p1(255, 4);
+                                var5.p1(255, class18.field294);
                                 var5.method305(117, 0);
-                                class214.field4035.method913(4, 0, var5.field842, 17492);
+                                class214.clientStream.write(var5.data, 0, 4);
                             } catch (IOException var7) {
                                 try {
-                                    class214.field4035.method919(true);
+                                    class214.clientStream.close(true);
                                 } catch (Exception var6) {
                                 }
-                                class214.field4035 = null;
-                                class77.field1389++;
+                                class214.clientStream = null;
+                                class77.ioErrorCount++;
                             }
                         }
                         class150.field2918 = 0;

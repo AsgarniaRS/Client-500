@@ -96,11 +96,11 @@ public class class140 extends class23 {
     }
 
     @OriginalMember(owner = "client!mi", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 == -3) {
             ++field2592;
             if (~arg2 == -1) {
-                this.field2594 = arg0.method301(83);
+                this.field2594 = arg0.g2(83);
             }
         }
     }

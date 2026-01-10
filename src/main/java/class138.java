@@ -133,15 +133,15 @@ public abstract class class138 extends class26 {
         class88.field1634 = -1;
         class114.field2063 = 0;
         class238.field4432 = -1;
-        class146.field2749.field831 = 0;
+        class146.out.pos = 0;
         class192.field3702 = 0;
         class203.field3864 = 0;
         class247.field4514 = 0;
         class101.field1843 = -1;
-        class230.field4314.field831 = 0;
+        class230.field4314.pos = 0;
         class228.field4272 = 0;
         field2570++;
-        class46.field821 = -1;
+        Packet.field821 = -1;
         class116.field2104 = 0;
         class108.field1960 = false;
         for (int var1 = 0; var1 < class244.field4493.length; var1++) {

@@ -132,63 +132,63 @@ public class class203 extends class50 {
                 if (class105.method728(100, arg0 - 1, class80.method530(-881710560, var5))) {
                     if (~arg0 == -2) {
                         ++class119.field2157;
-                        class146.field2749.method30((byte) -32, 44);
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(arg3 ^ -3617, arg2);
+                        class146.out.method30((byte) -32, 44);
+                        class146.out.p4(arg4);
+                        class146.out.method305(arg3 ^ -3617, arg2);
                     }
                     if (~arg0 == -3) {
                         ++class170.field3286;
-                        class146.field2749.method30((byte) -75, 50);
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(90, arg2);
+                        class146.out.method30((byte) -75, 50);
+                        class146.out.p4(arg4);
+                        class146.out.method305(90, arg2);
                     }
                     if (arg0 == 3) {
                         ++class236.field4403;
-                        class146.field2749.method30((byte) -103, 103);
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(83, arg2);
+                        class146.out.method30((byte) -103, 103);
+                        class146.out.p4(arg4);
+                        class146.out.method305(83, arg2);
                     }
                     if (~arg0 == -5) {
-                        class146.field2749.method30((byte) -114, 64);
-                        class146.field2749.method338(2112555600, arg4);
+                        class146.out.method30((byte) -114, 64);
+                        class146.out.p4(arg4);
                         ++class127.field2379;
-                        class146.field2749.method305(95, arg2);
+                        class146.out.method305(95, arg2);
                     }
                     if (arg0 == 5) {
-                        class146.field2749.method30((byte) -119, 178);
-                        class146.field2749.method338(arg3 + 2112559255, arg4);
+                        class146.out.method30((byte) -119, 178);
+                        class146.out.p4(arg4);
                         ++class37.field671;
-                        class146.field2749.method305(arg3 + 3757, arg2);
+                        class146.out.method305(arg3 + 3757, arg2);
                     }
                     if (~arg0 == -7) {
-                        class146.field2749.method30((byte) -30, 81);
+                        class146.out.method30((byte) -30, 81);
                         ++class128.field2411;
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(arg3 ^ -3637, arg2);
+                        class146.out.p4(arg4);
+                        class146.out.method305(arg3 ^ -3637, arg2);
                     }
                     if (arg0 == 7) {
                         ++class147.field2765;
-                        class146.field2749.method30((byte) -128, 236);
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(101, arg2);
+                        class146.out.method30((byte) -128, 236);
+                        class146.out.p4(arg4);
+                        class146.out.method305(101, arg2);
                     }
                     if (~arg0 == -9) {
                         ++class4.field48;
-                        class146.field2749.method30((byte) -81, 188);
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(81, arg2);
+                        class146.out.method30((byte) -81, 188);
+                        class146.out.p4(arg4);
+                        class146.out.method305(81, arg2);
                     }
                     if (arg0 == 9) {
-                        class146.field2749.method30((byte) -117, 128);
+                        class146.out.method30((byte) -117, 128);
                         ++class157.field3020;
-                        class146.field2749.method338(2112555600, arg4);
-                        class146.field2749.method305(arg3 ^ -3625, arg2);
+                        class146.out.p4(arg4);
+                        class146.out.method305(arg3 ^ -3625, arg2);
                     }
                     if (~arg0 == -11) {
-                        class146.field2749.method30((byte) -50, 254);
-                        class146.field2749.method338(arg3 ^ -2112554007, arg4);
+                        class146.out.method30((byte) -50, 254);
+                        class146.out.p4(arg4);
                         ++class15.field235;
-                        class146.field2749.method305(arg3 + 3769, arg2);
+                        class146.out.method305(arg3 + 3769, arg2);
                     }
                     if (arg3 != -3655) {
                         method1396(66, (class44) null, 57, -117);
@@ -200,13 +200,13 @@ public class class203 extends class50 {
 
     @OriginalMember(owner = "client!sg", name = "a", descriptor = "(IZI)V")
     public static final void method1393(int arg0, boolean arg1, int arg2) {
-        class146.field2749.method30((byte) -30, 95);
+        class146.out.method30((byte) -30, 95);
         ++class112.field2034;
         if (arg1) {
             field3872 = null;
         }
-        class146.field2749.method316(arg2, 15728);
-        class146.field2749.method314(arg0, (byte) -14);
+        class146.out.method316(arg2, 15728);
+        class146.out.method314(arg0, (byte) -14);
         ++field3870;
     }
 
@@ -259,7 +259,7 @@ public class class203 extends class50 {
     public static final void method1396(int arg0, class44 arg1, int arg2, int arg3) {
         ++field3865;
         if ((arg0 & 4) != 0) {
-            arg1.field4073 = class230.field4314.method298(arg2 ^ -110);
+            arg1.field4073 = class230.field4314.gjstr(arg2 ^ -110);
             if (~arg1.field4073.method599(255, 0) == -127) {
                 arg1.field4073 = arg1.field4073.method635(1, -383902332);
                 class223.method1501(arg1.field4073, 12, 2, arg1.field766);
@@ -286,7 +286,7 @@ public class class203 extends class50 {
             arg1.field4101 = class230.field4314.method302(255);
         }
         if ((512 & arg0) != 0) {
-            arg1.field4082 = class230.field4314.method301(68);
+            arg1.field4082 = class230.field4314.g2(68);
             int var4 = class230.field4314.method313(121);
             if (arg1.field4082 == 65535) {
                 arg1.field4082 = -1;
@@ -300,24 +300,24 @@ public class class203 extends class50 {
             }
         }
         if ((8 & arg0) != 0) {
-            int var5 = class230.field4314.method301(arg2 ^ 126);
+            int var5 = class230.field4314.g2(arg2 ^ 126);
             if (var5 == 65535) {
                 var5 = -1;
             }
-            int var6 = class230.field4314.method347(26119);
+            int var6 = class230.field4314.g1(26119);
             class226.method1517((byte) -31, var5, var6, arg1);
         }
         if ((64 & arg0) != 0) {
-            int var7 = class230.field4314.method347(26119);
+            int var7 = class230.field4314.g1(26119);
             byte[] var8 = new byte[var7];
-            class46 var9 = new class46(var8);
+            Packet var9 = new Packet(var8);
             class230.field4314.method307(false, var7, var8, 0);
             class77.field1397[arg3] = var9;
             arg1.method285(var9, true);
         }
         if (~(128 & arg0) != -1) {
             int var10 = class230.field4314.method352(24758);
-            int var11 = class230.field4314.method347(26119);
+            int var11 = class230.field4314.g1(26119);
             arg1.method1479(class117.field2115, 31632, var11, var10);
             arg1.field4120 = class117.field2115 + 300;
             arg1.field4111 = class230.field4314.method295((byte) -100);
@@ -331,8 +331,8 @@ public class class203 extends class50 {
             int var14 = class230.field4314.method349(true);
             boolean var15 = ~(32768 & var14) != -1;
             int var16 = class230.field4314.method352(24758);
-            int var17 = class230.field4314.method347(26119);
-            int var18 = class230.field4314.field831;
+            int var17 = class230.field4314.g1(26119);
+            int var18 = class230.field4314.pos;
             if (arg1.field766 != null && arg1.field768 != null) {
                 long var19 = arg1.field766.method630(false);
                 boolean var21 = false;
@@ -349,10 +349,10 @@ public class class203 extends class50 {
                     }
                 }
                 if (!var21 && ~client.field563 == -1) {
-                    class54.field1006.field831 = 0;
+                    class54.field1006.pos = 0;
                     int var23 = -1;
-                    class230.field4314.method315(class54.field1006.field842, 0, var17, 109);
-                    class54.field1006.field831 = 0;
+                    class230.field4314.method315(class54.field1006.data, 0, var17, 109);
+                    class54.field1006.pos = 0;
                     class88 var24;
                     if (!var15) {
                         var24 = class26.method162(class21.method103(class54.field1006, 106).method622(-29988));
@@ -375,10 +375,10 @@ public class class203 extends class50 {
                     }
                 }
             }
-            class230.field4314.field831 = var17 + var18;
+            class230.field4314.pos = var17 + var18;
         }
         if ((arg0 & 32) != 0) {
-            arg1.field4116 = class230.field4314.method301(112);
+            arg1.field4116 = class230.field4314.g2(112);
             if (arg1.field4116 == 65535) {
                 arg1.field4116 = -1;
                 return;

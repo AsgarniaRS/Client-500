@@ -17,7 +17,7 @@ public class class31 implements Runnable {
     public static class88 field507 = field504;
 
     @OriginalMember(owner = "client!ch", name = "g", descriptor = "Lae;")
-    public static class6 field501 = new class6(5000);
+    public static class6 login = new class6(5000);
 
     @OriginalMember(owner = "client!ch", name = "n", descriptor = "Li;")
     public static class88 field508 = class208.method1425(105, "Lade Konfiguration )2 ");
@@ -57,7 +57,7 @@ public class class31 implements Runnable {
         field504 = null;
         field506 = null;
         field507 = null;
-        field501 = null;
+        login = null;
         field508 = null;
         field503 = null;
         if (arg0 != -7524) {

@@ -178,7 +178,7 @@ public class class104 extends class23 {
     }
 
     @OriginalMember(owner = "client!jf", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (arg2 != 1) {
                 if (~arg2 != -3) {
@@ -186,25 +186,25 @@ public class class104 extends class23 {
                         if (~arg2 != -5) {
                             if (~arg2 != -6) {
                                 if (arg2 == 6) {
-                                    this.field1888 = arg0.method301(27);
+                                    this.field1888 = arg0.g2(27);
                                 }
                             } else {
-                                this.field1880 = arg0.method301(65);
+                                this.field1880 = arg0.g2(65);
                             }
                         } else {
-                            this.field1899 = arg0.method301(47);
+                            this.field1899 = arg0.g2(47);
                         }
                     } else {
-                        this.field1896 = arg0.method301(arg1 ^ -69);
+                        this.field1896 = arg0.g2(arg1 ^ -69);
                     }
                 } else {
-                    this.field1883 = arg0.method301(32);
+                    this.field1883 = arg0.g2(32);
                 }
             } else {
-                this.field1887 = arg0.method301(118);
+                this.field1887 = arg0.g2(118);
             }
         } else {
-            this.field1877 = arg0.method301(101);
+            this.field1877 = arg0.g2(101);
         }
         ++field1890;
         if (arg1 != -3) {
@@ -268,7 +268,7 @@ public class class104 extends class23 {
                 class71.field1309 = (int) ((double) (arg1 * 2) / class59.field1110);
                 int var10 = (int) ((double) arg1 / class59.field1110) + class126.field2332;
                 int var11 = (int) ((double) arg2 / class59.field1110) + class157.field3035;
-                class46.method348(arg2 + arg4, arg3 - -arg1, arg3, (byte) 78, arg4, var11, var8, var10, var9);
+                Packet.method348(arg2 + arg4, arg3 - -arg1, arg3, (byte) 78, arg4, var11, var8, var10, var9);
                 class223.method1502(arg4, -1, arg3, arg1 + arg3, arg2 + arg4, var9, var10, var8, var11);
                 if (class54.field1012 > 0) {
                     --class54.field1012;
@@ -318,7 +318,7 @@ public class class104 extends class23 {
         }
         class146.method974((byte) -87, arg2);
         if (class43.field723 != -1) {
-            class137.method914(class43.field723, 1, arg3 + -101);
+            ClientStream.method914(class43.field723, 1, arg3 + -101);
         }
         return var4;
     }

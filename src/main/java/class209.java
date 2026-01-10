@@ -143,8 +143,8 @@ public class class209 {
                 if (this.field3964[var11] < class7.field96[var11].length) {
                     var10.method564(class14.field219[var11], class7.field96[var11][this.field3964[var11]]);
                 }
-                if (this.field3964[var11] < class87.field1596[var11].length) {
-                    var10.method564(class146.field2752[var11], class87.field1596[var11][this.field3964[var11]]);
+                if (this.field3964[var11] < GameShell.field1596[var11].length) {
+                    var10.method564(class146.field2752[var11], GameShell.field1596[var11][this.field3964[var11]]);
                 }
             }
             var4 = var10.method546(64, 768, -50, -10, -50);
@@ -268,8 +268,8 @@ public class class209 {
                     if (this.field3964[var26] < class7.field96[var26].length) {
                         var25.method564(class14.field219[var26], class7.field96[var26][this.field3964[var26]]);
                     }
-                    if (class87.field1596[var26].length > this.field3964[var26]) {
-                        var25.method564(class146.field2752[var26], class87.field1596[var26][this.field3964[var26]]);
+                    if (GameShell.field1596[var26].length > this.field3964[var26]) {
+                        var25.method564(class146.field2752[var26], GameShell.field1596[var26][this.field3964[var26]]);
                     }
                 }
                 var10 = var25.method546(64, 850, -30, -50, -30);

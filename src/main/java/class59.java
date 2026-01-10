@@ -63,16 +63,16 @@ public class class59 {
     }
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lea;Z[B)V")
-    public final void method424(class46 arg0, boolean arg1, byte[] arg2) {
+    public final void method424(Packet arg0, boolean arg1, byte[] arg2) {
         field1109++;
-        if (arg0.field842[arg0.field831] != 31 || arg0.field842[arg0.field831 + 1] != -117) {
+        if (arg0.data[arg0.pos] != 31 || arg0.data[arg0.pos + 1] != -117) {
             throw new RuntimeException("Invalid GZIP header!");
         }
         if (this.field1112 == null) {
             this.field1112 = new Inflater(true);
         }
         try {
-            this.field1112.setInput(arg0.field842, arg0.field831 + 10, arg0.field842.length - arg0.field831 - 18);
+            this.field1112.setInput(arg0.data, arg0.pos + 10, arg0.data.length - arg0.pos - 18);
             this.field1112.inflate(arg2);
         } catch (Exception var4) {
             this.field1112.reset();
@@ -115,58 +115,65 @@ public class class59 {
     @OriginalMember(owner = "client!fc", name = "b", descriptor = "(II)Lwh;")
     public static final class247 method427(int arg0, int arg1) {
         field1107++;
-        class247 var2 = (class247) class33.field555.method666((long) arg0, arg1);
+        class247 var2 = (class247) class33.cache.method666((long) arg0, arg1);
         if (var2 != null) {
             return var2;
         }
+
         byte[] var3 = class18.field300.method941((byte) 56, 0, arg0);
         if (var3 == null) {
             return null;
         }
-        class247 var4 = new class247();
-        class46 var5 = new class46(var3);
-        var5.field831 = var5.field842.length - 2;
-        int var6 = var5.method301(31);
-        int var7 = var5.field842.length - var6 - 2 - 12;
-        var5.field831 = var7;
-        int var8 = var5.method323((byte) -34);
-        var4.field4528 = var5.method301(arg1 + 16);
-        var4.field4519 = var5.method301(arg1 ^ 0x34);
-        var4.field4522 = var5.method301(arg1 ^ 0x33);
-        var4.field4520 = var5.method301(24);
-        int var9 = var5.method347(arg1 + 26119);
+
+        class247 script = new class247();
+
+        Packet buf = new Packet(var3);
+        buf.pos = buf.data.length - 2;
+
+        int var6 = buf.g2(31);
+        int var7 = buf.data.length - var6 - 2 - 12;
+        buf.pos = var7;
+        int var8 = buf.g4((byte) -34);
+        script.field4528 = buf.g2(arg1 + 16);
+        script.field4519 = buf.g2(arg1 ^ 0x34);
+        script.field4522 = buf.g2(arg1 ^ 0x33);
+        script.field4520 = buf.g2(24);
+        int var9 = buf.g1(arg1 + 26119);
         if (var9 > 0) {
-            var4.field4516 = new class154[var9];
+            script.field4516 = new class154[var9];
             for (int var10 = 0; var10 < var9; var10++) {
-                int var11 = var5.method301(119);
+                int var11 = buf.g2(119);
                 class154 var12 = new class154(class184.method1298(true, var11));
-                var4.field4516[var10] = var12;
+                script.field4516[var10] = var12;
                 while (var11-- > 0) {
-                    int var13 = var5.method323((byte) -107);
-                    int var14 = var5.method323((byte) -62);
+                    int var13 = buf.g4((byte) -107);
+                    int var14 = buf.g4((byte) -62);
                     var12.method1054((long) var13, new class192(var14), ~arg1);
                 }
             }
         }
         int var15 = 0;
-        var5.field831 = 0;
-        var4.field4532 = var5.method353(arg1 ^ 0x39);
-        var4.field4524 = new class88[var8];
-        var4.field4521 = new int[var8];
-        var4.field4523 = new int[var8];
-        while (var7 > var5.field831) {
-            int var16 = var5.method301(70);
-            if (var16 == 3) {
-                var4.field4524[var15] = var5.method298(-128);
-            } else if (var16 >= 100 || var16 == 21 || var16 == 38 || var16 == 39) {
-                var4.field4523[var15] = var5.method347(26119);
+
+        buf.pos = 0;
+        script.name = buf.fastgstr(arg1 ^ 0x39);
+
+        script.stringOperands = new class88[var8];
+        script.instructions = new int[var8];
+        script.intOperands = new int[var8];
+
+        while (var7 > buf.pos) {
+            int op = buf.g2(70);
+            if (op == 3) {
+                script.stringOperands[var15] = buf.gjstr(-128);
+            } else if (op >= 100 || op == 21 || op == 38 || op == 39) {
+                script.intOperands[var15] = buf.g1(26119);
             } else {
-                var4.field4523[var15] = var5.method323((byte) -128);
+                script.intOperands[var15] = buf.g4((byte) -128);
             }
-            var4.field4521[var15++] = var16;
+            script.instructions[var15++] = op;
         }
-        class33.field555.method664((long) arg0, var4, false);
-        return var4;
+        class33.cache.put((long) arg0, script, false);
+        return script;
     }
 
     @OriginalMember(owner = "client!fc", name = "<init>", descriptor = "(III)V")

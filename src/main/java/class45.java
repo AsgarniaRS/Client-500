@@ -122,7 +122,7 @@ public class class45 extends class23 {
     }
 
     @OriginalMember(owner = "client!e", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             field789 = -31;
         }
@@ -134,28 +134,28 @@ public class class45 extends class23 {
                             if (~arg2 != -6) {
                                 if (~arg2 != -7) {
                                     if (arg2 == 7) {
-                                        this.field798 = arg0.method301(35);
+                                        this.field798 = arg0.g2(35);
                                     }
                                 } else {
-                                    this.field788 = arg0.method301(75);
+                                    this.field788 = arg0.g2(75);
                                 }
                             } else {
-                                this.field776 = arg0.method301(95);
+                                this.field776 = arg0.g2(95);
                             }
                         } else {
-                            this.field779 = arg0.method301(84);
+                            this.field779 = arg0.g2(84);
                         }
                     } else {
-                        this.field790 = arg0.method301(91);
+                        this.field790 = arg0.g2(91);
                     }
                 } else {
-                    this.field781 = arg0.method301(62);
+                    this.field781 = arg0.g2(62);
                 }
             } else {
-                this.field799 = arg0.method347(arg1 ^ -26118);
+                this.field799 = arg0.g1(arg1 ^ -26118);
             }
         } else {
-            this.field797 = arg0.method347(26119);
+            this.field797 = arg0.g1(26119);
         }
         ++field778;
     }
@@ -214,8 +214,8 @@ public class class45 extends class23 {
     @OriginalMember(owner = "client!e", name = "f", descriptor = "(I)V")
     public static final void method290(int arg0) {
         ++field794;
-        if (class214.field4035 != null) {
-            class214.field4035.method919(true);
+        if (class214.clientStream != null) {
+            class214.clientStream.close(true);
         }
         if (arg0 != 0) {
             field783 = null;

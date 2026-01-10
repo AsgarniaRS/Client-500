@@ -175,8 +175,8 @@ public class class48 extends class207 {
             class110.field2014 = false;
         } else if (class65.field1183 != 0 && class2.field25 != -1 && !class102.method709(100)) {
             class131.field2451++;
-            class146.field2749.method30((byte) -33, 133);
-            class146.field2749.method338(2112555600, class2.field25);
+            class146.out.method30((byte) -33, 133);
+            class146.out.p4(class2.field25);
             class2.field25 = -1;
         }
         if (arg0 != 11449) {

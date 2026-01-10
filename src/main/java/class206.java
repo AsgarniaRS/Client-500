@@ -33,9 +33,9 @@ public class class206 {
                 var1[var2++] = var3;
             }
         }
-        class89.field1699 = new int[var2];
+        CollisionMap.field1699 = new int[var2];
         for (int var4 = 0; var4 < var2; var4++) {
-            class89.field1699[var4] = var1[var4];
+            CollisionMap.field1699[var4] = var1[var4];
         }
     }
 

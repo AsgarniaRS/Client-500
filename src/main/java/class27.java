@@ -66,10 +66,10 @@ public class class27 {
         class196.method1359(false);
         class147.method985(true);
         ((class68) class173.field3358).method464(78);
-        class33.field555.method671(arg0 - 48);
+        class33.cache.method671(arg0 - 48);
         class67.field1204.method943(0);
         class223.field4203.method943(0);
-        class89.field1671.method943(0);
+        CollisionMap.field1671.method943(0);
         class12.field172.method943(0);
         field451.method943(0);
         class99.field1816.method943(0);

@@ -56,21 +56,21 @@ public class class57 extends class23 {
     public static class174 field1091;
 
     @OriginalMember(owner = "client!fa", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         ++field1079;
         if (arg1 != -3) {
-            this.method11((class46) null, -86, -108);
+            this.method11((Packet) null, -86, -108);
         }
         if (arg2 != 0) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    super.field369 = ~arg0.method347(26119) == -2;
+                    super.field369 = ~arg0.g1(26119) == -2;
                 }
             } else {
-                this.field1088 = ~arg0.method347(26119) == -2;
+                this.field1088 = ~arg0.g1(26119) == -2;
             }
         } else {
-            this.field1089 = arg0.method347(26119) == 1;
+            this.field1089 = arg0.g1(26119) == 1;
         }
     }
 

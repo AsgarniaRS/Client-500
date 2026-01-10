@@ -279,7 +279,7 @@ public class class108 {
         field1948++;
         class143.field2656.method205((byte) 126);
         for (int var1 = 0; var1 < 32; var1++) {
-            class89.field1697[var1] = 0L;
+            CollisionMap.field1697[var1] = 0L;
         }
         for (int var2 = 0; var2 < 32; var2++) {
             class48.field903[var2] = 0L;

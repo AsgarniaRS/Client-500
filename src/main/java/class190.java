@@ -38,7 +38,7 @@ public class class190 {
     public static int field3681;
 
     @OriginalMember(owner = "client!re", name = "n", descriptor = "Lmf;")
-    public static class137 field3682;
+    public static ClientStream field3682;
 
     @OriginalMember(owner = "client!re", name = "f", descriptor = "Lbj;")
     public static class22 field3674;
@@ -60,7 +60,7 @@ public class class190 {
             field3674 = null;
         }
         if (var3 != null) {
-            var4.method1004(new class46(var3), arg1 + 12451);
+            var4.method1004(new Packet(var3), arg1 + 12451);
         }
         var4.method1005(1);
         if (!class20.field317 && var4.field2836) {
@@ -70,7 +70,7 @@ public class class190 {
             var4.field2821 = 0;
             var4.field2791 = false;
         }
-        class179.field3560.method664((long) arg0, var4, false);
+        class179.field3560.put((long) arg0, var4, false);
         return var4;
     }
 

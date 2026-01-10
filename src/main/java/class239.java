@@ -85,7 +85,7 @@ public class class239 {
                 class79.field1428 = var1;
             }
         }
-        int var4 = class46.field848 * 128 + 64;
+        int var4 = Packet.field848 * 128 + 64;
         if (class184.field3610 > var2) {
             class184.field3610 -= class246.field4508 + (class184.field3610 - var2) * class160.field3095 / 1000;
             if (class184.field3610 < var2) {

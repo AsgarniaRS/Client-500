@@ -282,16 +282,16 @@ public class class199 extends class136 {
     }
 
     @OriginalMember(owner = "client!sc", name = "<init>", descriptor = "(Lea;)V")
-    public class199(class46 arg0) {
+    public class199(Packet arg0) {
         this.field3793 = new class12(arg0);
-        this.field3796 = arg0.method347(26119) == 1;
-        this.field3803 = arg0.method347(26119) == 1;
-        arg0.method347(26119);
-        arg0.method347(26119);
-        int var2 = arg0.method347(26119) & 0x3;
+        this.field3796 = arg0.g1(26119) == 1;
+        this.field3803 = arg0.g1(26119) == 1;
+        arg0.g1(26119);
+        arg0.g1(26119);
+        int var2 = arg0.g1(26119) & 0x3;
         this.field3792 = arg0.method324(32);
         this.field3809 = arg0.method324(45);
-        arg0.method347(26119);
-        arg0.method347(26119);
+        arg0.g1(26119);
+        arg0.g1(26119);
     }
 }

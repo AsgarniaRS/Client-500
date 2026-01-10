@@ -105,9 +105,9 @@ public class class103 extends class50 {
             byte[] var3 = class129.field2424.method941((byte) 56, arg0, 3);
             class231 var4 = new class231();
             if (var3 != null) {
-                var4.method1548(-1, new class46(var3));
+                var4.method1548(-1, new Packet(var3));
             }
-            class216.field4049.method664((long) arg0, var4, false);
+            class216.field4049.put((long) arg0, var4, false);
             return var4;
         }
     }

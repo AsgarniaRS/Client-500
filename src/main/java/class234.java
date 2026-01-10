@@ -136,13 +136,13 @@ public class class234 extends class23 {
     }
 
     @OriginalMember(owner = "client!ve", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             field4379 = null;
         }
         ++field4384;
         if (arg2 == 0) {
-            super.field369 = ~arg0.method347(arg1 ^ -26118) == -2;
+            super.field369 = ~arg0.g1(arg1 ^ -26118) == -2;
         }
     }
 

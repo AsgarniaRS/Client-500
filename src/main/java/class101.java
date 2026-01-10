@@ -78,8 +78,8 @@ public class class101 extends class136 {
         if (class88.field1647.length <= var2 || class88.field1647[var2] == null) {
             return;
         }
-        class146.field2749.method30((byte) -73, 49);
-        class146.field2749.method328(class88.field1647[var2].field1219, (byte) -123);
+        class146.out.method30((byte) -73, 49);
+        class146.out.method328(class88.field1647[var2].field1219, (byte) -123);
         class226.field4238++;
         if (arg1 > -86) {
             method706(110, false);
@@ -123,9 +123,9 @@ public class class101 extends class136 {
             byte[] var3 = class139.field2580.method941((byte) 56, arg0, 4);
             class7 var4 = new class7();
             if (var3 != null) {
-                var4.method38(73, new class46(var3), arg0);
+                var4.method38(73, new Packet(var3), arg0);
             }
-            class12.field174.method664((long) arg0, var4, false);
+            class12.field174.put((long) arg0, var4, false);
             return var4;
         } else {
             return null;

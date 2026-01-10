@@ -71,13 +71,13 @@ public class class47 extends class136 {
     public static class188 field887;
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(BLea;)V")
-    public final void method355(byte arg0, class46 arg1) {
+    public final void method355(byte arg0, Packet arg1) {
         field874++;
         if (arg0 != 33) {
             return;
         }
         while (true) {
-            int var3 = arg1.method347(26119);
+            int var3 = arg1.g1(26119);
             if (var3 == 0) {
                 return;
             }
@@ -210,25 +210,25 @@ public class class47 extends class136 {
     }
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IBLea;)V")
-    private final void method364(int arg0, byte arg1, class46 arg2) {
+    private final void method364(int arg0, byte arg1, Packet arg2) {
         if (arg0 == 1) {
-            this.field873 = arg2.method347(26119);
+            this.field873 = arg2.g1(26119);
         } else if (arg0 == 2) {
-            this.field882 = arg2.method347(arg1 + 26133);
+            this.field882 = arg2.g1(arg1 + 26133);
         } else if (arg0 == 3) {
-            this.field876 = arg2.method298(-128);
+            this.field876 = arg2.gjstr(-128);
         } else if (arg0 == 4) {
-            this.field877 = arg2.method323((byte) -41);
+            this.field877 = arg2.g4((byte) -41);
         } else if (arg0 == 5 || arg0 == 6) {
-            int var4 = arg2.method301(18);
+            int var4 = arg2.g2(18);
             this.field871 = new class154(class184.method1298(true, var4));
             for (int var5 = 0; var5 < var4; var5++) {
-                int var6 = arg2.method323((byte) -76);
+                int var6 = arg2.g4((byte) -76);
                 class67 var7;
                 if (arg0 == 5) {
-                    var7 = new class216(arg2.method298(-127));
+                    var7 = new class216(arg2.gjstr(-127));
                 } else {
-                    var7 = new class192(arg2.method323((byte) -105));
+                    var7 = new class192(arg2.g4((byte) -105));
                 }
                 this.field871.method1054((long) var6, var7, -1);
             }

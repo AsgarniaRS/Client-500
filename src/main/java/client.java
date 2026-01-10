@@ -1,5 +1,4 @@
 import java.awt.Canvas;
-import java.awt.Color;
 import java.awt.Graphics;
 import java.io.IOException;
 import java.net.Socket;
@@ -8,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!client")
-public class client extends class87 {
+public class client extends GameShell {
 
     @OriginalMember(owner = "client!client", name = "T", descriptor = "Li;")
     public static class88 field561 = class208.method1425(105, "titlebox");
@@ -74,17 +73,17 @@ public class client extends class87 {
     private final void method213(int arg0) {
         field573++;
         if (class151.field2940 >= 4) {
-            this.method588((byte) -49, "js5crc");
-            class229.field4286 = 1000;
+            this.error((byte) -49, "js5crc");
+            class229.gameState = 1000;
             return;
         }
-        if (class77.field1389 >= 4) {
-            if (class229.field4286 <= 5) {
-                this.method588((byte) -49, "js5io");
-                class229.field4286 = 1000;
+        if (class77.ioErrorCount >= 4) {
+            if (class229.gameState <= 5) {
+                this.error((byte) -49, "js5io");
+                class229.gameState = 1000;
                 return;
             }
-            class77.field1389 = 3;
+            class77.ioErrorCount = 3;
             class164.field3140 = 3000;
         }
         if (class164.field3140-- > 0) {
@@ -105,16 +104,16 @@ public class client extends class87 {
                 }
             }
             if (class244.field4495 == 2) {
-                class190.field3682 = new class137((Socket) class62.field1151.field3131, class126.field2326);
-                class46 var2 = new class46(5);
-                var2.method346(255, 15);
-                var2.method338(2112555600, 500);
-                class190.field3682.method913(5, 0, var2.field842, 17492);
+                class190.field3682 = new ClientStream((Socket) class62.field1151.field3131, class126.field2326);
+                Packet var2 = new Packet(5);
+                var2.p1(255, 15);
+                var2.p4(500);
+                class190.field3682.write(var2.data, 0, 5);
                 class244.field4495++;
                 class101.field1842 = class206.method1420(false);
             }
             if (class244.field4495 == 3) {
-                if (class229.field4286 <= 5 || class190.field3682.method911(arg0 - 9) > 0) {
+                if (class229.gameState <= 5 || class190.field3682.method911(arg0 - 9) > 0) {
                     int var3 = class190.field3682.method918(0);
                     if (var3 != 0) {
                         this.method217(var3, 1);
@@ -127,7 +126,7 @@ public class client extends class87 {
                 }
             }
             if (class244.field4495 == 4) {
-                class80.method529(class229.field4286 > 20, 113, class190.field3682);
+                class80.method529(class229.gameState > 20, 113, class190.field3682);
                 class244.field4495 = 0;
                 class119.field2161 = 0;
                 class62.field1151 = null;
@@ -150,17 +149,17 @@ public class client extends class87 {
         field574++;
         if (class47.field884 == 1) {
             class7.field96 = class99.field1812;
-            class87.field1596 = class202.field3852;
+            GameShell.field1596 = class202.field3852;
             class146.field2752 = class70.field1265;
             class14.field219 = class202.field3855;
         } else {
             class14.field219 = class208.field3957;
             class146.field2752 = class88.field1601;
             class7.field96 = class217.field4064;
-            class87.field1596 = class141.field2613;
+            GameShell.field1596 = class141.field2613;
         }
-        class220.field4158 = class115.field2073 == 0 ? 43594 : class28.field470 + 40000;
-        class49.field911 = class115.field2073 == 0 ? 443 : class28.field470 + 50000;
+        class220.field4158 = class115.modewhere == 0 ? 43594 : class28.field470 + 40000;
+        class49.field911 = class115.modewhere == 0 ? 443 : class28.field470 + 50000;
         class168.field3248 = class220.field4158;
         class204.method1403(-126);
         class143.method937((byte) 48, class154.field2977);
@@ -191,7 +190,7 @@ public class client extends class87 {
             class167.field3225 = null;
         }
         class147.field2754 = class132.field2468;
-        if (class115.field2073 != 0) {
+        if (class115.modewhere != 0) {
             class148.field2770 = true;
         }
     }
@@ -227,7 +226,7 @@ public class client extends class87 {
         }
         class28.field470 = Integer.parseInt(this.getParameter("worldid"));
         class139.field2586 = Integer.parseInt(this.getParameter("modewhat"));
-        class115.field2073 = Integer.parseInt(this.getParameter("modewhere"));
+        class115.modewhere = Integer.parseInt(this.getParameter("modewhere"));
         String var1 = this.getParameter("lowmem");
         if (var1 != null && var1.equals("1")) {
             class64.method452((byte) 116);
@@ -274,11 +273,11 @@ public class client extends class87 {
             }
             class28.field470 = Integer.parseInt(arg0[0]);
             if (arg0[1].equals("live")) {
-                class115.field2073 = 0;
+                class115.modewhere = 0;
             } else if (arg0[1].equals("office")) {
-                class115.field2073 = 1;
+                class115.modewhere = 1;
             } else if (arg0[1].equals("local")) {
-                class115.field2073 = 2;
+                class115.modewhere = 2;
             } else {
                 class114.method778(false);
             }
@@ -346,19 +345,19 @@ public class client extends class87 {
             class168.field3248 = class220.field4158;
         }
         if (class119.field2161 >= 2 && (arg0 == 7 || arg0 == 9)) {
-            if (class229.field4286 > 5) {
+            if (class229.gameState > 5) {
                 class164.field3140 = 3000;
             } else {
-                this.method588((byte) -49, "js5connect_full");
-                class229.field4286 = 1000;
+                this.error((byte) -49, "js5connect_full");
+                class229.gameState = 1000;
             }
         } else if (class119.field2161 >= 2 && arg0 == 6) {
-            this.method588((byte) -49, "js5connect_outofdate");
-            class229.field4286 = 1000;
+            this.error((byte) -49, "js5connect_outofdate");
+            class229.gameState = 1000;
         } else if (class119.field2161 >= 4) {
-            if (class229.field4286 <= 5) {
-                this.method588((byte) -49, "js5connect");
-                class229.field4286 = 1000;
+            if (class229.gameState <= 5) {
+                this.error((byte) -49, "js5connect");
+                class229.gameState = 1000;
             } else {
                 class164.field3140 = 3000;
             }
@@ -377,7 +376,7 @@ public class client extends class87 {
         }
         class219.field4145 = null;
         if (class33.field556 != null) {
-            class33.field556.method919(true);
+            class33.field556.close(true);
             class33.field556 = null;
         }
         class120.method821(class154.field2977, 88);
@@ -442,7 +441,7 @@ public class client extends class87 {
         } else if (class32.field519 == 10) {
             class179.method1279(4, 104, 104, 25);
             for (int var6 = 0; var6 < 4; var6++) {
-                class166.field3202[var6] = new class89(104, 104);
+                class166.field3202[var6] = new CollisionMap(104, 104);
             }
             class6.field83 = 10;
             class209.field3965 = class10.field144;
@@ -451,7 +450,7 @@ public class client extends class87 {
             class67.field1204 = class98.method686((byte) 38, 0, true, true, false);
             class223.field4203 = class98.method686((byte) -83, 1, true, true, false);
             class85.field1546 = class98.method686((byte) -100, 2, true, false, true);
-            class89.field1671 = class98.method686((byte) 26, 3, true, true, false);
+            CollisionMap.field1671 = class98.method686((byte) 26, 3, true, true, false);
             class12.field172 = class98.method686((byte) -107, 4, true, true, false);
             class27.field451 = class98.method686((byte) 100, 5, true, true, true);
             class99.field1816 = class98.method686((byte) 77, 6, false, true, true);
@@ -483,7 +482,7 @@ public class client extends class87 {
             int var8 = var7 + class67.field1204.method115(true) * 4 / 100;
             int var9 = var8 + class223.field4203.method115(true) * 4 / 100;
             int var10 = var9 + class85.field1546.method115(true) / 100;
-            int var11 = var10 + class89.field1671.method115(true) * 2 / 100;
+            int var11 = var10 + CollisionMap.field1671.method115(true) * 2 / 100;
             int var12 = var11 + class12.field172.method115(true) * 6 / 100;
             int var13 = var12 + class27.field451.method115(true) * 4 / 100;
             int var14 = var13 + class99.field1816.method115(true) * 2 / 100;
@@ -507,6 +506,7 @@ public class client extends class87 {
             int var32 = var31 + class20.field321.method115(true) / 100;
             int var33 = var32 + class203.field3872.method115(true) / 100;
             int var34 = var33 + class155.field2996.method115(true) / 100;
+
             if (var34 == 100) {
                 class6.field83 = 20;
                 class209.field3965 = class247.field4517;
@@ -561,10 +561,10 @@ public class client extends class87 {
                 class209.field3965 = class154.field2988;
             }
         } else if (class32.field519 == 60) {
-            int var37 = class46.method330(class9.field137, (byte) -110, class226.field4245);
+            int var37 = Packet.method330(class9.field137, (byte) -110, class226.field4245);
             int var38 = class104.method719((byte) 120);
             if (var37 < var38) {
-                class209.field3965 = class166.method1142(new class88[] { class46.field817, class170.method1214(var37 * 100 / var38, 75), class149.field2897 }, -3);
+                class209.field3965 = class166.method1142(new class88[] { Packet.field817, class170.method1214(var37 * 100 / var38, 75), class149.field2897 }, -3);
                 class6.field83 = 40;
             } else {
                 class6.field83 = 40;
@@ -607,7 +607,7 @@ public class client extends class87 {
                 class6.field83 = 50;
             } else {
                 class98.method688((byte) 104, class85.field1546);
-                class137.method912((byte) 64, class85.field1546);
+                ClientStream.method912((byte) 64, class85.field1546);
                 class135.method900(class85.field1546, 28809);
                 class199.method1366((byte) 113, class233.field4367, class85.field1546);
                 class27.method166(class109.field2006, -70, class233.field4367, class67.field1215, class245.field4499);
@@ -618,7 +618,7 @@ public class client extends class87 {
                 class211.method1445(94, class233.field4367, class17.field274);
                 class180.method1284(class238.field4433, (byte) -32);
                 class149.method1009(class85.field1546, 21644);
-                class126.method858(class226.field4245, 95, class89.field1671, class98.field1795, class233.field4367);
+                class126.method858(class226.field4245, 95, CollisionMap.field1671, class98.field1795, class233.field4367);
                 class190.method1326(class85.field1546, 99);
                 class74.method502(2, class190.field3674);
                 class153.method1047(class203.field3872, new class164(), class20.field321, (byte) -60);
@@ -751,8 +751,8 @@ public class client extends class87 {
                     class6.field83 = 80;
                 }
             } else if (class32.field519 == 130) {
-                if (!class89.field1671.method964((byte) 119)) {
-                    class209.field3965 = class166.method1142(new class88[] { class71.field1322, class170.method1214(class89.field1671.method952(false) * 4 / 5, -119), class149.field2897 }, -3);
+                if (!CollisionMap.field1671.method964((byte) 119)) {
+                    class209.field3965 = class166.method1142(new class88[] { class71.field1322, class170.method1214(CollisionMap.field1671.method952(false) * 4 / 5, -119), class149.field2897 }, -3);
                     class6.field83 = 85;
                 } else if (!class18.field300.method964((byte) 119)) {
                     class209.field3965 = class166.method1142(new class88[] { class71.field1322, class170.method1214(class18.field300.method952(false) / 6 + 80, -80), class149.field2897 }, -3);
@@ -771,7 +771,7 @@ public class client extends class87 {
                 class226.field4245.method967(true, true, -17541);
                 class98.field1795.method967(true, true, -17541);
                 class9.field137.method967(true, true, -17541);
-                class89.field1671.method967(true, true, -17541);
+                CollisionMap.field1671.method967(true, true, -17541);
                 class131.method883(10, 65536);
             }
         } else if (class155.field2996.method964((byte) 105)) {
@@ -799,11 +799,11 @@ public class client extends class87 {
             var2 = true;
             class53.field971 = false;
         }
-        if (class229.field4286 == 0) {
+        if (class229.gameState == 0) {
             class166.method1144(-484, null, class209.field3965, var2, class6.field83);
-        } else if (class229.field4286 == 5 || class229.field4286 == 10 || class229.field4286 == 20) {
+        } else if (class229.gameState == 5 || class229.gameState == 10 || class229.gameState == 20) {
             class188.method1312(class49.field917, (byte) 75, class54.field1011);
-        } else if (class229.field4286 == 25) {
+        } else if (class229.gameState == 25) {
             if (class203.field3863 == 1) {
                 if (class196.field3756 > class146.field2753) {
                     class146.field2753 = class196.field3756;
@@ -819,16 +819,16 @@ public class client extends class87 {
             } else {
                 method221(class242.field4480, false, -22717);
             }
-        } else if (class229.field4286 == 30) {
+        } else if (class229.gameState == 30) {
             class245.method1607(arg0 ^ 0x3D71);
-        } else if (class229.field4286 == 40) {
+        } else if (class229.gameState == 40) {
             method221(class166.method1142(new class88[] { class113.field2042, class142.field2620, class101.field1840 }, -3), false, arg0 - 38446);
         }
         if (arg0 != 15729) {
             field563 = -15;
         }
         Canvas var6 = class154.field2977;
-        if (class229.field4286 == 30 && class134.field2505 == 0 && !var2) {
+        if (class229.gameState == 30 && class134.field2505 == 0 && !var2) {
             try {
                 Graphics var9 = var6.getGraphics();
                 for (int var10 = 0; var10 < class206.field3925; var10++) {
@@ -840,7 +840,7 @@ public class client extends class87 {
             } catch (Exception var11) {
                 var6.repaint();
             }
-        } else if (class229.field4286 > 0) {
+        } else if (class229.gameState > 0) {
             try {
                 Graphics var7 = var6.getGraphics();
                 class202.field3854.method246(0, -14013488, 0, var7);
@@ -903,24 +903,24 @@ public class client extends class87 {
             int var3 = class167.field3224.method176((byte) -59);
             class90.field1709 = var3;
         }
-        if (class229.field4286 == 0) {
+        if (class229.gameState == 0) {
             this.method219((byte) 104);
             class108.method740(false);
-        } else if (class229.field4286 == 5) {
+        } else if (class229.gameState == 5) {
             class50.method376((byte) 66, this);
             this.method219((byte) -17);
             class108.method740(false);
-        } else if (class229.field4286 == 10) {
+        } else if (class229.gameState == 10) {
             class50.method376((byte) 66, this);
-        } else if (class229.field4286 == 20) {
+        } else if (class229.gameState == 20) {
             class50.method376((byte) 66, this);
             class176.method1263((byte) -107);
-        } else if (class229.field4286 == 25) {
+        } else if (class229.gameState == 25) {
             class184.method1299(false);
         }
-        if (class229.field4286 == 30) {
+        if (class229.gameState == 30) {
             class116.method791(-100);
-        } else if (class229.field4286 == 40) {
+        } else if (class229.gameState == 40) {
             class176.method1263((byte) -42);
             return;
         }
@@ -932,7 +932,7 @@ public class client extends class87 {
             field567 = null;
         }
         field558++;
-        if (class229.field4286 != 1000) {
+        if (class229.gameState != 1000) {
             boolean var2 = class99.method689(30203);
             if (!var2) {
                 this.method213(10);
@@ -982,20 +982,20 @@ public class client extends class87 {
         method215(-10);
         field575++;
         class88.method598(126);
-        class87.method591(arg0 ^ 0x4D9A);
+        GameShell.method591(arg0 ^ 0x4D9A);
         class86.method582(14642);
         class228.method1524(arg0 - 1978971683);
         class42.method275((byte) -83);
         class118.method802(-1);
-        class46.method354(0);
-        class137.method910(-81);
+        Packet.method354(0);
+        ClientStream.method910(-81);
         class22.method108(-6);
         class119.method813((byte) -119);
         class222.method1498(-22187);
         class191.method1331(-14327);
         class6.method32(false);
         class26.method159();
-        class89.method648(3661);
+        CollisionMap.method648(3661);
         class188.method1315(true);
         class130.method882(-14445);
         class174.method1249((byte) -58);

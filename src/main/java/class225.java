@@ -70,7 +70,7 @@ public class class225 {
         if (arg0 <= 100) {
             method1516(23, 87, 22, -99, 73, (byte) 77, 68, -29);
         }
-        class174 var2 = class87.method583(0, arg1);
+        class174 var2 = GameShell.method583(0, arg1);
         if (var2 == null) {
             var2 = arg1.field3504;
         }

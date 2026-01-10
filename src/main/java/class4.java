@@ -73,7 +73,7 @@ public class class4 extends class136 {
         int var9 = (class65.field1185 + 256) * var7 >> 8;
         int var10 = (class65.field1185 + 256) * var8 >> 8;
         if (arg2 != -11537) {
-            method19(null, (byte) 121);
+            pUid(null, (byte) 121);
         }
         int var11 = var4 * var10 + var5 * var9 >> 11;
         int var12 = class240.field4458.field4138 + var11 >> 7;
@@ -83,17 +83,17 @@ public class class4 extends class136 {
         if (!var15) {
             return;
         }
-        class146.field2749.method346(arg2 ^ 0xFFFFD210, var5);
-        class146.field2749.method346(255, var4);
-        class146.field2749.method305(99, class207.field3932);
-        class146.field2749.method346(255, 57);
-        class146.field2749.method346(255, class52.field943);
-        class146.field2749.method346(255, class65.field1185);
-        class146.field2749.method346(arg2 + 11792, 89);
-        class146.field2749.method305(101, class240.field4458.field4138);
-        class146.field2749.method305(110, class240.field4458.field4123);
-        class146.field2749.method346(255, class120.field2188);
-        class146.field2749.method346(arg2 + 11792, 63);
+        class146.out.p1(arg2 ^ 0xFFFFD210, var5);
+        class146.out.p1(255, var4);
+        class146.out.method305(99, class207.field3932);
+        class146.out.p1(255, 57);
+        class146.out.p1(255, class52.field943);
+        class146.out.p1(255, class65.field1185);
+        class146.out.p1(arg2 + 11792, 89);
+        class146.out.method305(101, class240.field4458.field4138);
+        class146.out.method305(110, class240.field4458.field4123);
+        class146.out.p1(255, class120.field2188);
+        class146.out.p1(arg2 + 11792, 63);
     }
 
     @OriginalMember(owner = "client!ac", name = "d", descriptor = "(I)Z")
@@ -118,7 +118,7 @@ public class class4 extends class136 {
     }
 
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(Lea;B)V")
-    public static final void method19(class46 arg0, byte arg1) {
+    public static final void pUid(Packet arg0, byte arg1) {
         if (arg1 > -81) {
             field50 = null;
         }
@@ -155,15 +155,15 @@ public class class4 extends class136 {
             var2.field3553[var3] = 0;
         }
         if (arg0 != -2) {
-            method19(null, (byte) -120);
+            pUid(null, (byte) -120);
         }
     }
 
     @OriginalMember(owner = "client!ac", name = "b", descriptor = "(Lea;B)V")
-    public final void method21(class46 arg0, byte arg1) {
+    public final void method21(Packet arg0, byte arg1) {
         field49++;
         while (true) {
-            int var3 = arg0.method347(26119);
+            int var3 = arg0.g1(26119);
             if (var3 == 0) {
                 if (arg1 <= 20) {
                     method18((byte) 115);
@@ -177,14 +177,14 @@ public class class4 extends class136 {
     }
 
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(ILea;I)V")
-    private final void method22(int arg0, class46 arg1, int arg2) {
+    private final void method22(int arg0, Packet arg1, int arg2) {
         field52++;
         if (arg0 == 1) {
-            this.field51 = arg1.method347(26119);
+            this.field51 = arg1.g1(26119);
         } else if (arg0 == 2) {
-            this.field53 = arg1.method323((byte) -87);
+            this.field53 = arg1.g4((byte) -87);
         } else if (arg0 == 5) {
-            this.field57 = arg1.method298(-128);
+            this.field57 = arg1.gjstr(-128);
         }
         if (arg2 > -60) {
             method18((byte) -78);

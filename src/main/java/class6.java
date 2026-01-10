@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ae")
-public class class6 extends class46 {
+public class class6 extends Packet {
 
     @OriginalMember(owner = "client!ae", name = "Lb", descriptor = "I")
     public static int field72 = 0;
@@ -112,15 +112,15 @@ public class class6 extends class46 {
         }
         int var5 = 0;
         while (~var4 > ~arg0) {
-            var5 += (class219.field4144[var4] & super.field842[var3++]) << -var4 + arg0;
+            var5 += (class219.field4144[var4] & super.data[var3++]) << -var4 + arg0;
             arg0 -= var4;
             var4 = 8;
         }
         int var6;
         if (~arg0 == ~var4) {
-            var6 = (super.field842[var3] & class219.field4144[var4]) + var5;
+            var6 = (super.data[var3] & class219.field4144[var4]) + var5;
         } else {
-            var6 = (super.field842[var3] >> -arg0 + var4 & class219.field4144[arg0]) + var5;
+            var6 = (super.data[var3] >> -arg0 + var4 & class219.field4144[arg0]) + var5;
         }
         return var6;
     }
@@ -132,7 +132,7 @@ public class class6 extends class46 {
             field72 = 103;
         }
         for (int var5 = 0; ~var5 > ~arg0; ++var5) {
-            arg1[arg3 + var5] = (byte) (super.field842[super.field831++] + -this.field91.method980(255));
+            arg1[arg3 + var5] = (byte) (super.data[super.pos++] + -this.field91.method980(255));
         }
     }
 
@@ -143,7 +143,7 @@ public class class6 extends class46 {
 
     @OriginalMember(owner = "client!ae", name = "b", descriptor = "(BI)V")
     public final void method30(byte arg0, int arg1) {
-        super.field842[super.field831++] = (byte) (arg1 + this.field91.method980(255));
+        super.data[super.pos++] = (byte) (arg1 + this.field91.method980(255));
         if (arg0 < -28) {
             ++field94;
         }
@@ -175,19 +175,19 @@ public class class6 extends class46 {
     @OriginalMember(owner = "client!ae", name = "i", descriptor = "(B)I")
     public final int method33(byte arg0) {
         ++field80;
-        return arg0 > -20 ? 103 : 255 & super.field842[super.field831++] - this.field91.method980(255);
+        return arg0 > -20 ? 103 : 255 & super.data[super.pos++] - this.field91.method980(255);
     }
 
     @OriginalMember(owner = "client!ae", name = "u", descriptor = "(I)V")
     public final void method34(int arg0) {
-        this.field78 = super.field831 * arg0;
+        this.field78 = super.pos * arg0;
         ++field81;
     }
 
     @OriginalMember(owner = "client!ae", name = "v", descriptor = "(I)V")
     public final void method35(int arg0) {
         ++field85;
-        super.field831 = (this.field78 + 7) / arg0;
+        super.pos = (this.field78 + 7) / arg0;
     }
 
     @OriginalMember(owner = "client!ae", name = "a", descriptor = "([IB)V")

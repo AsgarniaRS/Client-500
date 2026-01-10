@@ -62,7 +62,7 @@ public class class99 {
         class81.field1456 = var1;
         if (class231.field4335 == 0 && class203.field3878 == 0 && class220.field4159 == 0 && class208.field3945 == 0) {
             return true;
-        } else if (class214.field4035 == null) {
+        } else if (class214.clientStream == null) {
             return false;
         } else {
             try {
@@ -71,27 +71,27 @@ public class class99 {
                 }
                 while (class203.field3878 < 20 && class208.field3945 > 0) {
                     class97 var4 = (class97) class241.field4467.method1049(0);
-                    class46 var5 = new class46(4);
-                    var5.method346(255, 1);
-                    var5.method337((int) var4.field1219, (byte) -61);
-                    class214.field4035.method913(4, 0, var5.field842, 17492);
+                    Packet var5 = new Packet(4);
+                    var5.p1(255, 1);
+                    var5.p3((int) var4.field1219);
+                    class214.clientStream.write(var5.data, 0, 4);
                     class151.field2924.method1054(var4.field1219, var4, -1);
                     class208.field3945--;
                     class203.field3878++;
                 }
                 while (class231.field4335 < 20 && class220.field4159 > 0) {
                     class97 var6 = (class97) class138.field2561.method1383(13753);
-                    class46 var7 = new class46(4);
-                    var7.method346(arg0 ^ 0x7504, 0);
-                    var7.method337((int) var6.field1219, (byte) -61);
-                    class214.field4035.method913(4, 0, var7.field842, 17492);
+                    Packet var7 = new Packet(4);
+                    var7.p1(arg0 ^ 0x7504, 0);
+                    var7.p3((int) var6.field1219);
+                    class214.clientStream.write(var7.data, 0, 4);
                     var6.method909(arg0 ^ 0x753B);
                     class108.field1953.method1054(var6.field1219, var6, arg0 ^ 0xFFFF8A04);
                     class231.field4335++;
                     class220.field4159--;
                 }
                 for (int var8 = 0; var8 < 100; var8++) {
-                    int var9 = class214.field4035.method911(arg0 - 30202);
+                    int var9 = class214.clientStream.method911(arg0 - 30202);
                     if (var9 < 0) {
                         throw new IOException();
                     }
@@ -106,27 +106,27 @@ public class class99 {
                         var10 = 1;
                     }
                     if (var10 > 0) {
-                        int var11 = var10 - class78.field1408.field831;
+                        int var11 = var10 - class78.field1408.pos;
                         if (var9 < var11) {
                             var11 = var9;
                         }
-                        class214.field4035.method915(class78.field1408.field831, class78.field1408.field842, (byte) -93, var11);
+                        class214.clientStream.method915(class78.field1408.pos, class78.field1408.data, (byte) -93, var11);
                         if (class18.field294 != 0) {
                             for (int var12 = 0; var12 < var11; var12++) {
-                                class78.field1408.field842[class78.field1408.field831 + var12] = (byte) class180.method1287(class78.field1408.field842[class78.field1408.field831 + var12], class18.field294);
+                                class78.field1408.data[class78.field1408.pos + var12] = (byte) class180.method1287(class78.field1408.data[class78.field1408.pos + var12], class18.field294);
                             }
                         }
-                        class78.field1408.field831 += var11;
-                        if (var10 > class78.field1408.field831) {
+                        class78.field1408.pos += var11;
+                        if (var10 > class78.field1408.pos) {
                             break;
                         }
                         if (class53.field990 == null) {
-                            class78.field1408.field831 = 0;
-                            int var13 = class78.field1408.method347(26119);
-                            int var14 = class78.field1408.method301(arg0 - 30148);
+                            class78.field1408.pos = 0;
+                            int var13 = class78.field1408.g1(26119);
+                            int var14 = class78.field1408.g2(arg0 - 30148);
                             long var15 = (long) ((var13 << 16) + var14);
-                            int var17 = class78.field1408.method347(26119);
-                            int var18 = class78.field1408.method323((byte) -76);
+                            int var17 = class78.field1408.g1(26119);
+                            int var18 = class78.field1408.g4((byte) -76);
                             class97 var19 = (class97) class151.field2924.method1051(-1, var15);
                             class138.field2569 = true;
                             if (var19 == null) {
@@ -138,65 +138,65 @@ public class class99 {
                             }
                             class53.field990 = var19;
                             int var20 = var17 == 0 ? 5 : 9;
-                            class149.field2910 = new class46(var18 + var20 + class53.field990.field1784);
-                            class149.field2910.method346(255, var17);
-                            class149.field2910.method338(arg0 ^ 0x7DEB7FAB, var18);
-                            class78.field1408.field831 = 0;
+                            class149.field2910 = new Packet(var18 + var20 + class53.field990.field1784);
+                            class149.field2910.p1(255, var17);
+                            class149.field2910.p4(var18);
+                            class78.field1408.pos = 0;
                             class28.field473 = 8;
                         } else if (class28.field473 == 0) {
-                            if (class78.field1408.field842[0] == -1) {
-                                class78.field1408.field831 = 0;
+                            if (class78.field1408.data[0] == -1) {
+                                class78.field1408.pos = 0;
                                 class28.field473 = 1;
                             } else {
                                 class53.field990 = null;
                             }
                         }
                     } else {
-                        int var21 = class149.field2910.field842.length - class53.field990.field1784;
+                        int var21 = class149.field2910.data.length - class53.field990.field1784;
                         int var22 = 512 - class28.field473;
-                        if (var22 > var21 - class149.field2910.field831) {
-                            var22 = var21 - class149.field2910.field831;
+                        if (var22 > var21 - class149.field2910.pos) {
+                            var22 = var21 - class149.field2910.pos;
                         }
                         if (var9 < var22) {
                             var22 = var9;
                         }
-                        class214.field4035.method915(class149.field2910.field831, class149.field2910.field842, (byte) -93, var22);
+                        class214.clientStream.method915(class149.field2910.pos, class149.field2910.data, (byte) -93, var22);
                         if (class18.field294 != 0) {
                             for (int var23 = 0; var23 < var22; var23++) {
-                                class149.field2910.field842[class149.field2910.field831 + var23] = (byte) class180.method1287(class149.field2910.field842[class149.field2910.field831 + var23], class18.field294);
+                                class149.field2910.data[class149.field2910.pos + var23] = (byte) class180.method1287(class149.field2910.data[class149.field2910.pos + var23], class18.field294);
                             }
                         }
-                        class149.field2910.field831 += var22;
+                        class149.field2910.pos += var22;
                         class28.field473 += var22;
-                        if (class149.field2910.field831 == var21) {
+                        if (class149.field2910.pos == var21) {
                             if (class53.field990.field1219 == 16711935L) {
                                 class79.field1427 = class149.field2910;
                                 for (int var24 = 0; var24 < 256; var24++) {
                                     class22 var25 = class10.field141[var24];
                                     if (var25 != null) {
-                                        class79.field1427.field831 = var24 * 8 + 5;
-                                        int var26 = class79.field1427.method323((byte) -128);
-                                        int var27 = class79.field1427.method323((byte) -128);
+                                        class79.field1427.pos = var24 * 8 + 5;
+                                        int var26 = class79.field1427.g4((byte) -128);
+                                        int var27 = class79.field1427.g4((byte) -128);
                                         var25.method109(var26, 56, var27);
                                     }
                                 }
                             } else {
                                 class92.field1733.reset();
-                                class92.field1733.update(class149.field2910.field842, 0, var21);
+                                class92.field1733.update(class149.field2910.data, 0, var21);
                                 int var28 = (int) class92.field1733.getValue();
                                 if (class53.field990.field1782 != var28) {
                                     try {
-                                        class214.field4035.method919(true);
+                                        class214.clientStream.close(true);
                                     } catch (Exception var30) {
                                     }
                                     class18.field294 = (byte) (Math.random() * 255.0D + 1.0D);
                                     class151.field2940++;
-                                    class214.field4035 = null;
+                                    class214.clientStream = null;
                                     return false;
                                 }
                                 class151.field2940 = 0;
-                                class77.field1389 = 0;
-                                class53.field990.field1789.method105((int) (class53.field990.field1219 & 0xFFFFL), class149.field2910.field842, class138.field2569, 104, (class53.field990.field1219 & 0xFF0000L) == 16711680L);
+                                class77.ioErrorCount = 0;
+                                class53.field990.field1789.method105((int) (class53.field990.field1219 & 0xFFFFL), class149.field2910.data, class138.field2569, 104, (class53.field990.field1219 & 0xFF0000L) == 16711680L);
                             }
                             class53.field990.method460(true);
                             class28.field473 = 0;
@@ -218,11 +218,11 @@ public class class99 {
                 return true;
             } catch (IOException var31) {
                 try {
-                    class214.field4035.method919(true);
+                    class214.clientStream.close(true);
                 } catch (Exception var29) {
                 }
-                class77.field1389++;
-                class214.field4035 = null;
+                class77.ioErrorCount++;
+                class214.clientStream = null;
                 return false;
             }
         }
@@ -277,13 +277,13 @@ public class class99 {
                         var11.field676 = class122.field2219;
                         class200.method1375(var11, -876775538);
                     }
-                    if (class122.field2219 != null && class87.method583(0, class179.field3570) != null) {
-                        class146.field2749.method30((byte) -74, 135);
+                    if (class122.field2219 != null && GameShell.method583(0, class179.field3570) != null) {
+                        class146.out.method30((byte) -74, 135);
                         class42.field709++;
-                        class146.field2749.method314(class179.field3570.field3408, (byte) 72);
-                        class146.field2749.method316(class179.field3570.field3425, 15728);
-                        class146.field2749.method316(class122.field2219.field3425, 15728);
-                        class146.field2749.method344(class122.field2219.field3408, (byte) -51);
+                        class146.out.method314(class179.field3570.field3408, (byte) 72);
+                        class146.out.method316(class179.field3570.field3425, 15728);
+                        class146.out.method316(class122.field2219.field3425, 15728);
+                        class146.out.method344(class122.field2219.field3408, (byte) -51);
                     }
                 } else if ((class203.field3861 == 1 || class234.method1556(class203.field3864 - 1, -1)) && class203.field3864 > 2) {
                     class136.method906(arg0 + 32795);

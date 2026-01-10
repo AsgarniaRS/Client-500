@@ -96,12 +96,12 @@ public class class168 extends class67 {
         }
         class205 var4 = new class205();
         if (var3 != null) {
-            var4.method1413(new class46(var3), (byte) -125);
+            var4.method1413(new Packet(var3), (byte) -125);
         }
         if (arg1 >= 32768) {
             var4.method1417(-125);
         }
-        class131.field2449.method664((long) arg1, var4, false);
+        class131.field2449.put((long) arg1, var4, false);
         return var4;
     }
 

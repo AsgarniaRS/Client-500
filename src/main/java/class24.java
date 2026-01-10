@@ -50,7 +50,7 @@ public class class24 {
     public final void method130(int arg0, long arg1, class145 arg2) {
         if (arg0 == 37) {
             field382++;
-            this.field389.method664(arg1, new class101(arg2), false);
+            this.field389.put(arg1, new class101(arg2), false);
         }
     }
 

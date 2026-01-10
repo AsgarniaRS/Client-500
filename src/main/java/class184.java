@@ -91,7 +91,7 @@ public class class184 extends class23 {
                 if (var19 != null) {
                     int var20 = (class146.field2733[var4] >> 8) * 64 - class223.field4214;
                     int var21 = (class146.field2733[var4] & 255) * 64 + -class190.field3681;
-                    if (class137.field2557) {
+                    if (ClientStream.field2557) {
                         var20 = 10;
                         var21 = 10;
                     }
@@ -123,12 +123,12 @@ public class class184 extends class23 {
                 class219.method1481(2);
                 class134.method895(true, (byte) 49);
                 class208.method1427(1, arg0);
-                if (!class137.field2557) {
+                if (!ClientStream.field2557) {
                     class143.method936(false, 54);
                     class134.method895(true, (byte) 49);
                     class190.method1329(true, false);
                 }
-                if (class137.field2557) {
+                if (ClientStream.field2557) {
                     class36.method239(0, false);
                     class134.method895(true, (byte) 49);
                     class85.method576(false, 22711);
@@ -161,11 +161,11 @@ public class class184 extends class23 {
                 class210.method1439(0);
                 class27.method167((byte) 61);
                 if (class201.field3834 != null) {
-                    class146.field2749.method30((byte) -50, 198);
-                    class146.field2749.method338(2112555600, 1057001181);
+                    class146.out.method30((byte) -50, 198);
+                    class146.out.p4(1057001181);
                     ++class247.field4525;
                 }
-                if (!class137.field2557) {
+                if (!ClientStream.field2557) {
                     int var10 = (class140.field2597 + -6) / 8;
                     int var11 = (class110.field2016 + -6) / 8;
                     int var12 = (class140.field2597 + 6) / 8;
@@ -181,7 +181,7 @@ public class class184 extends class23 {
                 }
                 class131.method883(30, 65536);
                 class219.method1481(2);
-                class146.field2749.method30((byte) -43, 213);
+                class146.out.method30((byte) -43, 213);
                 class108.method740(false);
             }
         }
@@ -219,21 +219,21 @@ public class class184 extends class23 {
     }
 
     @OriginalMember(owner = "client!qj", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (arg2 != 2) {
                     if (arg2 == 3) {
-                        this.field3605 = arg0.method301(45);
+                        this.field3605 = arg0.g2(45);
                     }
                 } else {
-                    this.field3602 = arg0.method301(arg1 ^ -30);
+                    this.field3602 = arg0.g2(arg1 ^ -30);
                 }
             } else {
-                this.field3615 = arg0.method301(28);
+                this.field3615 = arg0.g2(28);
             }
         } else {
-            this.field3612 = arg0.method301(96);
+            this.field3612 = arg0.g2(96);
         }
         if (arg1 != -3) {
             method1300((class144) null, (Component) null, true, (class144) null);
@@ -313,11 +313,11 @@ public class class184 extends class23 {
             } else {
                 class117.method797(25335, 2);
             }
-            class147.method990((byte) -112, false);
+            class147.sendLoginLogoutPacket((byte) -112, false);
             class90.field1708 = arg2;
             class221.method1495(35);
             class34.field589 = new class169(128, 254);
-            class89.field1676 = new class169(128, 254);
+            CollisionMap.field1676 = new class169(128, 254);
         }
     }
 

@@ -108,7 +108,7 @@ public class class71 extends class67 {
         class149 var4 = new class149();
         var4.field2846 = arg0;
         if (var3 != null) {
-            var4.method1016(-1, new class46(var3));
+            var4.method1016(-1, new Packet(var3));
         }
         var4.method1015(-1);
         if (var4.field2869 != -1) {
@@ -124,7 +124,7 @@ public class class71 extends class67 {
             var4.field2894 = class176.field3535;
             var4.field2906 = null;
         }
-        class211.field4000.method664((long) arg0, var4, false);
+        class211.field4000.put((long) arg0, var4, false);
         return var4;
     }
 

@@ -131,7 +131,7 @@ public abstract class class50 {
     }
 
     @OriginalMember(owner = "client!ee", name = "a", descriptor = "(BLhj;)V")
-    public static final void method376(byte arg0, class87 arg1) {
+    public static final void method376(byte arg0, GameShell arg1) {
         field928++;
         if (class209.field3961) {
             class65.method453(arg1, (byte) 96);
@@ -145,11 +145,11 @@ public abstract class class50 {
                 class53.method388(0, class99.field1816, (byte) -78, false, class86.field1552, 255);
             }
         }
-        if (class229.field4286 == 5) {
+        if (class229.gameState == 5) {
             return;
         }
         class86.field1550++;
-        if (class229.field4286 != 10) {
+        if (class229.gameState != 10) {
             return;
         }
         if (class143.field2659 != 2) {
@@ -181,9 +181,9 @@ public abstract class class50 {
                 class65.field1182 = 3;
             }
             boolean var11 = false;
-            if (class115.field2073 != 0) {
+            if (class115.modewhere != 0) {
                 while (class43.method279((byte) 31)) {
-                    if (class137.field2558 == 84) {
+                    if (ClientStream.field2558 == 84) {
                         var11 = true;
                         break;
                     }
@@ -244,10 +244,10 @@ public abstract class class50 {
                         if (class142.field2622 != 0) {
                             continue label229;
                         }
-                        if (class137.field2558 == 85 && class209.field3969.method604((byte) -53) > 0) {
+                        if (ClientStream.field2558 == 85 && class209.field3969.method604((byte) -53) > 0) {
                             class209.field3969 = class209.field3969.method623(0, (byte) -118, class209.field3969.method604((byte) -53) - 1);
                         }
-                        if (class137.field2558 == 84 || class137.field2558 == 80) {
+                        if (ClientStream.field2558 == 84 || ClientStream.field2558 == 80) {
                             class142.field2622 = 1;
                         }
                         if (var19 && class209.field3969.method604((byte) -53) < 12) {
@@ -256,13 +256,13 @@ public abstract class class50 {
                     }
                     return;
                 } while (class142.field2622 != 1);
-                if (class137.field2558 == 85 && class209.field3972.method604((byte) -53) > 0) {
+                if (ClientStream.field2558 == 85 && class209.field3972.method604((byte) -53) > 0) {
                     class209.field3972 = class209.field3972.method623(0, (byte) -46, class209.field3972.method604((byte) -53) - 1);
                 }
-                if (class137.field2558 == 84 || class137.field2558 == 80) {
+                if (ClientStream.field2558 == 84 || ClientStream.field2558 == 80) {
                     class142.field2622 = 0;
                 }
-                if (class115.field2073 != 0 && class137.field2558 == 84) {
+                if (class115.modewhere != 0 && ClientStream.field2558 == 84) {
                     class209.field3969 = class209.field3969.method611(false).method614((byte) 83);
                     if (class209.field3969.method604((byte) -53) == 0) {
                         class34.method227((byte) -41, class70.field1285, class70.field1295, class3.field38);

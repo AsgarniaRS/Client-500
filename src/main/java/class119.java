@@ -291,9 +291,9 @@ public class class119 {
             class188.method1314(null, 255, 255, arg1, -439631408, 0, true);
             class10.field141[arg0] = arg2;
         } else {
-            class79.field1427.field831 = arg0 * 8 + 5;
-            int var3 = class79.field1427.method323((byte) -54);
-            int var4 = class79.field1427.method323((byte) -67);
+            class79.field1427.pos = arg0 * 8 + 5;
+            int var3 = class79.field1427.g4((byte) -54);
+            int var4 = class79.field1427.g4((byte) -67);
             arg2.method109(var3, arg1 + 55, var4);
         }
     }

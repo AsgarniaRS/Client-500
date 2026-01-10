@@ -166,7 +166,7 @@ public class class232 extends class23 {
     }
 
     @OriginalMember(owner = "client!vc", name = "a", descriptor = "(Lea;II)V")
-    public final void method11(class46 arg0, int arg1, int arg2) {
+    public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg1 != -3) {
             this.method54(3, (byte) 15);
         }
@@ -174,13 +174,13 @@ public class class232 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    this.field4353 = arg0.method347(arg1 ^ -26118);
+                    this.field4353 = arg0.g1(arg1 ^ -26118);
                 }
             } else {
-                this.field4354 = arg0.method301(41);
+                this.field4354 = arg0.g2(41);
             }
         } else {
-            this.field4358 = arg0.method347(arg1 + 26122);
+            this.field4358 = arg0.g1(arg1 + 26122);
         }
     }
 }

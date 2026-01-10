@@ -87,7 +87,7 @@ public abstract class class228 {
         long var3 = (long) ((arg0 << 16) + arg1);
         field4279++;
         if (class53.field990 != null && class53.field990.field1219 == var3) {
-            return arg2 == -14013488 ? class149.field2910.field831 * 99 / (class149.field2910.field842.length - class53.field990.field1784) + 1 : 81;
+            return arg2 == -14013488 ? class149.field2910.pos * 99 / (class149.field2910.data.length - class53.field990.field1784) + 1 : 81;
         } else {
             return 0;
         }

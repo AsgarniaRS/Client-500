@@ -161,9 +161,9 @@ public class class237 extends class136 {
     }
 
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(ILea;I)V")
-    public final void method1574(int arg0, class46 arg1, int arg2) {
+    public final void method1574(int arg0, Packet arg1, int arg2) {
         while (true) {
-            int var4 = arg1.method347(26119);
+            int var4 = arg1.g1(26119);
             if (var4 == 0) {
                 field4420++;
                 if (arg2 != -1) {
@@ -177,7 +177,7 @@ public class class237 extends class136 {
     }
 
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(IILea;I)V")
-    private final void method1575(int arg0, int arg1, class46 arg2, int arg3) {
+    private final void method1575(int arg0, int arg1, Packet arg2, int arg3) {
         if (arg0 > -19) {
             return;
         }
@@ -185,12 +185,12 @@ public class class237 extends class136 {
             this.field4424 = arg2.method304(-29629);
             this.method1571(false, this.field4424);
         } else if (arg1 == 2) {
-            this.field4418 = arg2.method301(124);
+            this.field4418 = arg2.g2(124);
             if (this.field4418 == 65535) {
                 this.field4418 = -1;
             }
         } else if (arg1 == 3) {
-            arg2.method301(16);
+            arg2.g2(16);
         }
         field4417++;
     }
