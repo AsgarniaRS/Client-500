@@ -134,7 +134,7 @@ public class class164 implements class198 {
             method1131(-1);
         }
         while (var2 < class67.field1221) {
-            if (arg1.method624(class146.field2743[var2], (byte) 83)) {
+            if (arg1.method624(Isaac.field2743[var2], (byte) 83)) {
                 return true;
             }
             var2++;

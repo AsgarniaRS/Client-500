@@ -148,26 +148,26 @@ public class class196 extends class23 {
         for (int var1 = 0; ~class192.field3704 < ~var1; ++var1) {
             int var2 = class139.field2581[var1];
             class191 var3 = class225.field4225[var2];
-            int var4 = class230.field4314.g1(26119);
+            int var4 = class230.in.g1(26119);
             if (~(var4 & 8) != -1) {
-                int var5 = class230.field4314.method302(255);
-                int var6 = class230.field4314.method352(24758);
+                int var5 = class230.in.g2_alt3(255);
+                int var6 = class230.in.g1_alt3(24758);
                 if (~var5 == -65536) {
                     var5 = -1;
                 }
                 class141.method927(var5, !arg0, var6, var3);
             }
             if (~(1 & var4) != -1) {
-                var3.field4073 = class230.field4314.gjstr(-128);
+                var3.field4073 = class230.in.gjstr(-128);
                 var3.field4114 = 100;
             }
             if ((32 & var4) != 0) {
-                var3.field4098 = class230.field4314.method302(255);
-                var3.field4101 = class230.field4314.g2(117);
+                var3.field4098 = class230.in.g2_alt3(255);
+                var3.field4101 = class230.in.g2(117);
             }
             if (~(128 & var4) != -1) {
-                var3.field4082 = class230.field4314.method343(104);
-                int var7 = class230.field4314.method313(126);
+                var3.field4082 = class230.in.method343(104);
+                int var7 = class230.in.method313(126);
                 if (var3.field4082 == 65535) {
                     var3.field4082 = -1;
                 }
@@ -180,13 +180,13 @@ public class class196 extends class23 {
                 }
             }
             if ((2 & var4) != 0) {
-                var3.field4116 = class230.field4314.method349(true);
+                var3.field4116 = class230.in.g2_alt2(true);
                 if (var3.field4116 == 65535) {
                     var3.field4116 = -1;
                 }
             }
             if ((16 & var4) != 0) {
-                var3.field3684 = class147.method987(class230.field4314.method349(true), -123);
+                var3.field3684 = class147.method987(class230.in.g2_alt2(true), -123);
                 var3.field4104 = var3.field3684.field2341;
                 var3.field4105 = var3.field3684.field2351;
                 var3.field4093 = var3.field3684.field2319;
@@ -198,16 +198,16 @@ public class class196 extends class23 {
                 var3.field4094 = var3.field3684.field2324;
             }
             if (~(var4 & 64) != -1) {
-                int var8 = class230.field4314.method319(4633);
-                int var9 = class230.field4314.method319(4633);
+                int var8 = class230.in.method319(4633);
+                int var9 = class230.in.method319(4633);
                 var3.method1479(class117.field2115, 31632, var9, var8);
             }
             if (~(var4 & 4) != -1) {
-                int var10 = class230.field4314.method295((byte) -115);
-                int var11 = class230.field4314.g1(26119);
+                int var10 = class230.in.method295((byte) -115);
+                int var11 = class230.in.g1(26119);
                 var3.method1479(class117.field2115, 31632, var11, var10);
                 var3.field4120 = class117.field2115 - -300;
-                var3.field4111 = class230.field4314.method319(4633);
+                var3.field4111 = class230.in.method319(4633);
             }
         }
         if (!arg0) {

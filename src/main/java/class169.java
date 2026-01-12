@@ -884,7 +884,7 @@ public class class169 extends class188 {
 
     @OriginalMember(owner = "client!pf", name = "c", descriptor = "()V")
     public final void method1169() {
-        class72.method496(this.field3249, super.field3656, super.field3654);
+        class72.bind(this.field3249, super.field3656, super.field3654);
     }
 
     @OriginalMember(owner = "client!pf", name = "e", descriptor = "(I)V")

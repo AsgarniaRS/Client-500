@@ -164,22 +164,22 @@ public class class55 {
 
     @OriginalMember(owner = "client!ej", name = "b", descriptor = "(I)V")
     public final synchronized void method402(int arg0) {
-        if (class146.field2740 != null) {
+        if (Isaac.field2740 != null) {
             boolean var2 = true;
             for (int var3 = 0; var3 < 2; var3++) {
-                if (class146.field2740.field3104[var3] == this) {
-                    class146.field2740.field3104[var3] = null;
+                if (Isaac.field2740.field3104[var3] == this) {
+                    Isaac.field2740.field3104[var3] = null;
                 }
-                if (class146.field2740.field3104[var3] != null) {
+                if (Isaac.field2740.field3104[var3] != null) {
                     var2 = false;
                 }
             }
             if (var2) {
-                class146.field2740.field3108 = true;
-                while (class146.field2740.field3109) {
+                Isaac.field2740.field3108 = true;
+                while (Isaac.field2740.field3109) {
                     class21.method98(50L, (byte) 38);
                 }
-                class146.field2740 = null;
+                Isaac.field2740 = null;
             }
         }
         this.method408();

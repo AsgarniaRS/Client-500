@@ -316,7 +316,7 @@ public class class104 extends class23 {
         if (var5 != null) {
             class110.method761(false, var5, (byte) -104);
         }
-        class146.method974((byte) -87, arg2);
+        Isaac.method974((byte) -87, arg2);
         if (class43.field723 != -1) {
             ClientStream.method914(class43.field723, 1, arg3 + -101);
         }

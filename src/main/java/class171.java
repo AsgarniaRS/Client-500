@@ -202,14 +202,14 @@ public class class171 extends class23 {
 
     @OriginalMember(owner = "client!ph", name = "a", descriptor = "(Li;II)V")
     public static final void method1215(class88 arg0, int arg1, int arg2) {
-        class146.out.method30((byte) -72, 40);
+        Isaac.out.method30((byte) -72, 40);
         ++class145.field2721;
         ++field3325;
         if (arg2 != 0) {
             method1218(true);
         }
-        class146.out.method296((byte) -109, arg0.method630(false));
-        class146.out.p1(arg2 ^ 255, arg1);
+        Isaac.out.method296((byte) -109, arg0.method630(false));
+        Isaac.out.p1(arg2 ^ 255, arg1);
     }
 
     @OriginalMember(owner = "client!ph", name = "e", descriptor = "(I)V")

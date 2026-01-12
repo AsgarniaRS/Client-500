@@ -80,7 +80,7 @@ public class class33 extends class136 {
     private int field547;
 
     @OriginalMember(owner = "client!cj", name = "hb", descriptor = "Lmf;")
-    public static ClientStream field556;
+    public static ClientStream stream;
 
     @OriginalMember(owner = "client!cj", name = "G", descriptor = "[S")
     private short[] field529;
@@ -211,8 +211,8 @@ public class class33 extends class136 {
                 class244.field4493[var3] = null;
             }
         }
-        if (class228.field4272 != class230.field4314.pos) {
-            throw new RuntimeException("gpp1 pos:" + class230.field4314.pos + " psize:" + class228.field4272);
+        if (class228.packetSize != class230.in.pos) {
+            throw new RuntimeException("gpp1 pos:" + class230.in.pos + " psize:" + class228.packetSize);
         }
         for (int var2 = 0; var2 < class55.field1027; var2++) {
             if (class244.field4493[class174.field3430[var2]] == null) {
@@ -244,7 +244,7 @@ public class class33 extends class136 {
         if (arg0 < 78) {
             return;
         }
-        field556 = null;
+        stream = null;
         field554 = null;
         field544 = null;
         field551 = null;

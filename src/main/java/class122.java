@@ -217,7 +217,7 @@ public class class122 extends class50 {
         synchronized (class227.field4254) {
             class227.field4254.method1624(var4, 80);
         }
-        class146.method979((byte) -128);
+        Isaac.method979((byte) -128);
     }
 
     @OriginalMember(owner = "client!lb", name = "<init>", descriptor = "(IIIIIII)V")

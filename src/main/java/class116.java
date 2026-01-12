@@ -135,18 +135,18 @@ public class class116 extends class23 {
             for (int var2 = 0; var2 < 100 && class12.method61(-122); ++var2) {
             }
             if (class229.gameState == 30) {
-                class15.method71(false, class146.out, 56);
+                class15.method71(false, Isaac.out, 56);
                 Object var3 = class219.field4145.field715;
                 synchronized (class219.field4145.field715) {
                     if (!class57.field1077) {
                         class219.field4145.field718 = 0;
                     } else if (~class36.field625 != -1 || class219.field4145.field718 >= 40) {
-                        class146.out.method30((byte) -63, 111);
+                        Isaac.out.method30((byte) -63, 111);
                         ++class226.field4242;
-                        class146.out.p1(255, 0);
-                        int var4 = class146.out.pos;
+                        Isaac.out.p1(255, 0);
+                        int var4 = Isaac.out.pos;
                         int var5 = 0;
-                        for (int var6 = 0; var6 < class219.field4145.field718 && ~(-var4 + class146.out.pos) > -241; ++var6) {
+                        for (int var6 = 0; var6 < class219.field4145.field718 && ~(-var4 + Isaac.out.pos) > -241; ++var6) {
                             ++var5;
                             int var7 = class219.field4145.field719[var6];
                             if (var7 >= 0) {
@@ -180,18 +180,18 @@ public class class116 extends class23 {
                                 if (~class147.field2767 > -9 && var11 >= -32 && var11 <= 31 && ~var10 <= 31 && var10 <= 31) {
                                     var10 += 32;
                                     var11 += 32;
-                                    class146.out.method305(95, (class147.field2767 << 12) - -(var11 << 6) + var10);
+                                    Isaac.out.method305(95, (class147.field2767 << 12) - -(var11 << 6) + var10);
                                     class147.field2767 = 0;
                                 } else if (class147.field2767 < 8) {
-                                    class146.out.p3((class147.field2767 << 19) + 8388608 + var9);
+                                    Isaac.out.p3((class147.field2767 << 19) + 8388608 + var9);
                                     class147.field2767 = 0;
                                 } else {
-                                    class146.out.p4((class147.field2767 << 19) + var9 + -1073741824);
+                                    Isaac.out.p4((class147.field2767 << 19) + var9 + -1073741824);
                                     class147.field2767 = 0;
                                 }
                             }
                         }
-                        class146.out.method341(-var4 + class146.out.pos, 65);
+                        Isaac.out.method341(-var4 + Isaac.out.pos, 65);
                         if (var5 < class219.field4145.field718) {
                             class219.field4145.field718 -= var5;
                             for (int var12 = 0; class219.field4145.field718 > var12; ++var12) {
@@ -231,9 +231,9 @@ public class class116 extends class23 {
                     if (class36.field625 == 2) {
                         var17 = 1;
                     }
-                    class146.out.method30((byte) -36, 63);
+                    Isaac.out.method30((byte) -36, 63);
                     int var19 = (int) var13;
-                    class146.out.method326(-1, (var17 << 19) + ((var19 << 20) - -var18));
+                    Isaac.out.method326(-1, (var17 << 19) + ((var19 << 20) - -var18));
                 }
                 if (class247.field4513[96] || class247.field4513[97] || class247.field4513[98] || class247.field4513[99]) {
                     class176.field3548 = true;
@@ -245,21 +245,21 @@ public class class116 extends class23 {
                     ++class67.field1203;
                     class176.field3548 = false;
                     class88.field1638 = 20;
-                    class146.out.method30((byte) -96, 173);
-                    class146.out.method331(class207.field3932, 18975);
-                    class146.out.method305(125, class64.field1173);
+                    Isaac.out.method30((byte) -96, 173);
+                    Isaac.out.method331(class207.field3932, 18975);
+                    Isaac.out.method305(125, class64.field1173);
                 }
                 if (class175.field3522 && !class22.field355) {
                     ++class66.field1187;
                     class22.field355 = true;
-                    class146.out.method30((byte) -118, 130);
-                    class146.out.p1(255, 1);
+                    Isaac.out.method30((byte) -118, 130);
+                    Isaac.out.p1(255, 1);
                 }
                 if (!class175.field3522 && class22.field355) {
                     ++class66.field1187;
                     class22.field355 = false;
-                    class146.out.method30((byte) -100, 130);
-                    class146.out.p1(255, 0);
+                    Isaac.out.method30((byte) -100, 130);
+                    Isaac.out.p1(255, 0);
                 }
                 class190.method1330(-25194);
                 if (class229.gameState == 30) {
@@ -329,11 +329,11 @@ public class class116 extends class23 {
                                                 }
                                             }
                                         }
-                                        class146.out.method30((byte) -64, 207);
-                                        class146.out.method351(false, class135.field2516.field3425);
-                                        class146.out.method314(class18.field305, (byte) -109);
-                                        class146.out.method327(-85, var21);
-                                        class146.out.method344(class172.field3335, (byte) -51);
+                                        Isaac.out.method30((byte) -64, 207);
+                                        Isaac.out.method351(false, class135.field2516.field3425);
+                                        Isaac.out.method314(class18.field305, (byte) -109);
+                                        Isaac.out.method327(-85, var21);
+                                        Isaac.out.method344(class172.field3335, (byte) -51);
                                     }
                                 } else if ((~class203.field3861 == -2 || class234.method1556(class203.field3864 + -1, -1)) && ~class203.field3864 < -3) {
                                     class136.method906(32768);
@@ -442,7 +442,7 @@ public class class116 extends class23 {
                                                                 class105.field1912 = 250;
                                                                 ++class36.field626;
                                                                 class151.method1033((byte) -113, 4000);
-                                                                class146.out.method30((byte) -89, 226);
+                                                                Isaac.out.method30((byte) -89, 226);
                                                             }
                                                             ++class111.field2029;
                                                             ++class77.field1384;
@@ -501,13 +501,13 @@ public class class116 extends class23 {
                                                                 class136.field2533 = -2;
                                                             }
                                                             if (~class144.field2709 < -51) {
-                                                                class146.out.method30((byte) -69, 19);
+                                                                Isaac.out.method30((byte) -69, 19);
                                                                 ++class31.field498;
                                                             }
                                                             try {
-                                                                if (class33.field556 != null && class146.out.pos > 0) {
-                                                                    class33.field556.write(class146.out.data, 0, class146.out.pos);
-                                                                    class146.out.pos = 0;
+                                                                if (class33.stream != null && Isaac.out.pos > 0) {
+                                                                    class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
+                                                                    Isaac.out.pos = 0;
                                                                     class144.field2709 = 0;
                                                                     return;
                                                                 }

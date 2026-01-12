@@ -91,7 +91,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static boolean field277;
 
     @OriginalMember(owner = "client!be", name = "s", descriptor = "[[I")
-    public static int[][] field268;
+    public static int[][] mapKeys;
 
     @OriginalMember(owner = "client!be", name = "mousePressed", descriptor = "(Ljava/awt/event/MouseEvent;)V")
     public final synchronized void mousePressed(MouseEvent arg0) {
@@ -147,7 +147,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
         field259 = null;
         field274 = null;
         field267 = null;
-        field268 = null;
+        mapKeys = null;
         field272 = null;
     }
 
@@ -196,20 +196,20 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
                 var4 = true;
                 if (arg2 == 1) {
                     scene.field770++;
-                    class146.out.method30((byte) -31, 65);
-                    class146.out.method314(class174.field3430[var5], (byte) 71);
+                    Isaac.out.method30((byte) -31, 65);
+                    Isaac.out.method314(class174.field3430[var5], (byte) 71);
                 } else if (arg2 == 4) {
                     class28.field463++;
-                    class146.out.method30((byte) -51, 214);
-                    class146.out.method331(class174.field3430[var5], 18975);
+                    Isaac.out.method30((byte) -51, 214);
+                    Isaac.out.method331(class174.field3430[var5], 18975);
                 } else if (arg2 == 6) {
-                    class146.out.method30((byte) -125, 161);
-                    class146.out.method331(class174.field3430[var5], 18975);
+                    Isaac.out.method30((byte) -125, 161);
+                    Isaac.out.method331(class174.field3430[var5], 18975);
                     class28.field462++;
                 } else if (arg2 == 7) {
                     class209.field3975++;
-                    class146.out.method30((byte) -69, 47);
-                    class146.out.method344(class174.field3430[var5], (byte) -51);
+                    Isaac.out.method30((byte) -69, 47);
+                    Isaac.out.method344(class174.field3430[var5], (byte) -51);
                 }
                 break;
             }

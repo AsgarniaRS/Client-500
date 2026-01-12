@@ -211,10 +211,6 @@ public class Packet extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(B)I")
     public final int method295(byte arg0) {
-        field816++;
-        if (arg0 > -50) {
-            field859 = -24;
-        }
         return -this.data[this.pos++] & 0xFF;
     }
 
@@ -244,9 +240,7 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(I)I")
-    public final int method299(int arg0) {
-        field825++;
-        int var2 = -78 % ((-arg0 - 16) / 55);
+    public final int g4_alt1(int arg0) {
         this.pos += 4;
         return (this.data[this.pos - 4] & 0xFF) + (((this.data[this.pos - 1] & 0xFF) << 24) + ((this.data[this.pos - 3] & 0xFF) << 8) + ((this.data[this.pos + -2] & 0xFF) << 16));
     }
@@ -280,14 +274,9 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "e", descriptor = "(I)I")
-    public final int method302(int arg0) {
-        if (arg0 == 255) {
-            field855++;
-            this.pos += 2;
-            return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] - 128 & 0xFF);
-        } else {
-            return -16;
-        }
+    public final int g2_alt3(int arg0) {
+        this.pos += 2;
+        return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] - 128 & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "f", descriptor = "(I)B")
@@ -404,14 +393,14 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(ILjava/math/BigInteger;Ljava/math/BigInteger;)V")
-    public final void method311(int arg0, BigInteger arg1, BigInteger arg2) {
+    public final void rsaenc(int arg0, BigInteger arg1, BigInteger arg2) {
         field853++;
         int var4 = this.pos;
         byte[] var5 = new byte[var4];
         this.pos = arg0;
         this.method307(false, var4, var5, 0);
         BigInteger var6 = new BigInteger(var5);
-        BigInteger var7 = var6.modPow(arg1, arg2);
+        BigInteger var7 = var6;//.modPow(arg1, arg2);
         byte[] var8 = var7.toByteArray();
         this.pos = 0;
         this.p1(255, var8.length);
@@ -584,7 +573,7 @@ public class Packet extends class67 {
         }
         this.pos = var6;
         if (arg3 != 4) {
-            this.method336(null, (byte) 124);
+            this.pjstr(null, (byte) 124);
         }
     }
 
@@ -609,11 +598,8 @@ public class Packet extends class67 {
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI[BI)V")
     public final void method325(byte arg0, int arg1, byte[] arg2, int arg3) {
-        field863++;
-        if (arg0 == 34) {
-            for (int var5 = arg3; var5 < arg3 + arg1; var5++) {
-                this.data[this.pos++] = arg2[var5];
-            }
+        for (int var5 = arg3; var5 < arg3 + arg1; var5++) {
+            this.data[this.pos++] = arg2[var5];
         }
     }
 
@@ -636,7 +622,7 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(JB)V")
-    public final void method328(long arg0, byte arg1) {
+    public final void p8(long arg0, byte arg1) {
         this.data[this.pos++] = (byte) (arg0 >> 56);
         this.data[this.pos++] = (byte) (arg0 >> 48);
         field823++;
@@ -764,7 +750,7 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Li;B)V")
-    public final void method336(class88 arg0, byte arg1) {
+    public final void pjstr(class88 arg0, byte arg1) {
         field857++;
         this.pos += arg0.method612(0, arg0.method604((byte) -53), arg1 ^ 0xFFFFC7B2, this.pos, this.data);
         this.data[this.pos++] = arg1;
@@ -1064,14 +1050,9 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(Z)I")
-    public final int method349(boolean arg0) {
+    public final int g2_alt2(boolean arg0) {
         this.pos += 2;
-        if (arg0) {
-            field826++;
-            return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
-        } else {
-            return 22;
-        }
+        return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "q", descriptor = "(I)I")
@@ -1100,12 +1081,8 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "r", descriptor = "(I)I")
-    public final int method352(int arg0) {
-        if (arg0 != 24758) {
-            field807 = 14;
-        }
-        field804++;
-        return 128 - this.data[this.pos++] & 0xFF;
+    public final int g1_alt3(int arg0) {
+       return 128 - this.data[this.pos++] & 0xFF;
     }
 
     @OriginalMember(owner = "client!ea", name = "s", descriptor = "(I)Li;")

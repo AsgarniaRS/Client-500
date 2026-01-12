@@ -337,7 +337,7 @@ public class class118 {
             } else {
                 class167.field3219[1].method878(var6 + 15, 4);
             }
-            arg1.method154(class146.field2736, var6 + 32, 17, 16777215, -1);
+            arg1.method154(Isaac.field2736, var6 + 32, 17, 16777215, -1);
             if (class27.field461[0] == 3 && CollisionMap.field1687[0] == 0) {
                 class167.field3219[2].method878(var5, 4);
             } else {

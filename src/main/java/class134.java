@@ -106,14 +106,14 @@ public class class134 {
             return;
         }
         class144.field2709 = 0;
-        if (class58.field1097 || class33.field556 == null) {
+        if (class58.field1097 || class33.stream == null) {
             return;
         }
         class31.field498++;
-        class146.out.method30((byte) -102, 19);
+        Isaac.out.method30((byte) -102, 19);
         try {
-            class33.field556.write(class146.out.data, 0, class146.out.pos);
-            class146.out.pos = 0;
+            class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
+            Isaac.out.pos = 0;
         } catch (IOException var2) {
             class58.field1097 = true;
         }

@@ -21,7 +21,7 @@ public class class220 extends class23 {
     public static byte[][] field4157 = new byte[1000][];
 
     @OriginalMember(owner = "client!ub", name = "gb", descriptor = "I")
-    public static int field4166 = -1;
+    public static int localPid = -1;
 
     @OriginalMember(owner = "client!ub", name = "hb", descriptor = "Li;")
     public static class88 field4167 = field4156;
@@ -106,16 +106,16 @@ public class class220 extends class23 {
                     var6.field1038 = 16384;
                 }
                 var6.method409(var6.field1038);
-                if (class221.field4169 > 0 && class146.field2740 == null) {
-                    class146.field2740 = new class161();
-                    class146.field2740.field3111 = arg2;
-                    arg2.method1289(2, class146.field2740, class221.field4169);
+                if (class221.field4169 > 0 && Isaac.field2740 == null) {
+                    Isaac.field2740 = new class161();
+                    Isaac.field2740.field3111 = arg2;
+                    arg2.method1289(2, Isaac.field2740, class221.field4169);
                 }
-                if (class146.field2740 != null) {
-                    if (class146.field2740.field3104[arg0] != null) {
+                if (Isaac.field2740 != null) {
+                    if (Isaac.field2740.field3104[arg0] != null) {
                         throw new IllegalArgumentException();
                     }
-                    class146.field2740.field3104[arg0] = var6;
+                    Isaac.field2740.field3104[arg0] = var6;
                 }
                 return var6;
             } catch (Throwable var9) {
@@ -126,16 +126,16 @@ public class class220 extends class23 {
                     var7.method412(arg1);
                     var7.field1038 = 16384;
                     var7.method409(var7.field1038);
-                    if (~class221.field4169 < -1 && class146.field2740 == null) {
-                        class146.field2740 = new class161();
-                        class146.field2740.field3111 = arg2;
-                        arg2.method1289(2, class146.field2740, class221.field4169);
+                    if (~class221.field4169 < -1 && Isaac.field2740 == null) {
+                        Isaac.field2740 = new class161();
+                        Isaac.field2740.field3111 = arg2;
+                        arg2.method1289(2, Isaac.field2740, class221.field4169);
                     }
-                    if (class146.field2740 != null) {
-                        if (class146.field2740.field3104[arg0] != null) {
+                    if (Isaac.field2740 != null) {
+                        if (Isaac.field2740.field3104[arg0] != null) {
                             throw new IllegalArgumentException();
                         }
-                        class146.field2740.field3104[arg0] = var7;
+                        Isaac.field2740.field3104[arg0] = var7;
                     }
                     return var7;
                 } catch (Throwable var8) {

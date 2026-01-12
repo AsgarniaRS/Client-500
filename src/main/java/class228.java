@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class228 {
 
     @OriginalMember(owner = "client!uj", name = "d", descriptor = "I")
-    public static int field4272 = 0;
+    public static int packetSize = 0;
 
     @OriginalMember(owner = "client!uj", name = "j", descriptor = "I")
     public static int field4278 = 0;
@@ -56,8 +56,8 @@ public abstract class class228 {
     public int[] data;
 
     @OriginalMember(owner = "client!uj", name = "a", descriptor = "(I)V")
-    public final void method1523(int arg0) {
-        class72.method496(this.data, this.width, this.height);
+    public final void bind() {
+        class72.bind(this.data, this.width, this.height);
         field4281++;
     }
 
@@ -72,7 +72,7 @@ public abstract class class228 {
         field4280 = null;
         field4282 = null;
         if (arg0 != -1978971583) {
-            field4272 = -127;
+            packetSize = -127;
         }
     }
 

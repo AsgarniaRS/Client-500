@@ -95,9 +95,9 @@ public class class176 extends class136 {
         field3542++;
         try {
             if (class117.loginState == 0) {
-                if (class33.field556 != null) {
-                    class33.field556.close(true);
-                    class33.field556 = null;
+                if (class33.stream != null) {
+                    class33.stream.close(true);
+                    class33.stream = null;
                 }
                 class6.field71 = 0;
                 class117.loginState = 1;
@@ -112,20 +112,20 @@ public class class176 extends class136 {
                     throw new IOException();
                 }
                 if (class98.field1801.field3136 == 1) {
-                    class33.field556 = new ClientStream((Socket) class98.field1801.field3131, class126.field2326);
+                    class33.stream = new ClientStream((Socket) class98.field1801.field3131, class126.field2326);
                     class117.loginState = 2;
                     class98.field1801 = null;
                 }
             }
             if (class117.loginState == 2) {
                 long var1 = class36.field631 = class209.field3969.method630(false);
-                class146.out.pos = 0;
-                class146.out.p1(255, 14);
+                Isaac.out.pos = 0;
+                Isaac.out.p1(255, 14);
                 int var3 = (int) (var1 >> 16 & 0x1FL);
-                class146.out.p1(255, var3);
-                class33.field556.write(class146.out.data, 0, 2);
+                Isaac.out.p1(255, var3);
+                class33.stream.write(Isaac.out.data, 0, 2);
                 class117.loginState = 3;
-                class230.field4314.pos = 0;
+                class230.in.pos = 0;
             }
             if (class117.loginState == 3) {
                 if (class27.field458 != null) {
@@ -134,7 +134,7 @@ public class class176 extends class136 {
                 if (class114.field2058 != null) {
                     class114.field2058.method403(true);
                 }
-                int var4 = class33.field556.method918(0);
+                int var4 = class33.stream.read(0);
                 if (class27.field458 != null) {
                     class27.field458.method403(true);
                 }
@@ -145,87 +145,91 @@ public class class176 extends class136 {
                     class57.method417(-106, var4);
                     return;
                 }
-                class230.field4314.pos = 0;
+                class230.in.pos = 0;
                 class117.loginState = 4;
             }
             if (class117.loginState == 4) {
-                if (class230.field4314.pos < 8) {
-                    int var5 = class33.field556.method911(1);
-                    if (8 - class230.field4314.pos < var5) {
-                        var5 = 8 - class230.field4314.pos;
+                if (class230.in.pos < 8) {
+                    int var5 = class33.stream.available(1);
+                    if (8 - class230.in.pos < var5) {
+                        var5 = 8 - class230.in.pos;
                     }
                     if (var5 > 0) {
-                        class33.field556.method915(class230.field4314.pos, class230.field4314.data, (byte) -93, var5);
-                        class230.field4314.pos += var5;
+                        class33.stream.read(class230.in.pos, class230.in.data, (byte) -93, var5);
+                        class230.in.pos += var5;
                     }
                 }
-                if (class230.field4314.pos == 8) {
-                    class230.field4314.pos = 0;
-                    class33.field528 = class230.field4314.method321(1054632416);
+                if (class230.in.pos == 8) {
+                    class230.in.pos = 0;
+                    class33.field528 = class230.in.method321(1054632416);
                     class117.loginState = 5;
                 }
             }
             if (class117.loginState == 5) {
-                class146.out.pos = 0;
+                Isaac.out.pos = 0;
                 int[] seed = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (class33.field528 >> 32), (int) class33.field528 };
-                class146.out.p1(255, 10);
-                class146.out.p4(seed[0]);
-                class146.out.p4(seed[1]);
-                class146.out.p4(seed[2]);
-                class146.out.p4(seed[3]);
-                class146.out.method328(class209.field3969.method630(false), (byte) -123);
-                class146.out.method336(class209.field3972, (byte) 0);
-                class146.out.method311(0, class32.field515, class58.field1098);
+                Isaac.out.p1(255, 10);
+                Isaac.out.p4(seed[0]);
+                Isaac.out.p4(seed[1]);
+                Isaac.out.p4(seed[2]);
+                Isaac.out.p4(seed[3]);
+                Isaac.out.p8(class209.field3969.method630(false), (byte) -123);
+                Isaac.out.pjstr(class209.field3972, (byte) 0);
+                Isaac.out.rsaenc(0, class32.field515, class58.field1098);
+
                 class31.login.pos = 0;
                 if (class229.gameState == 40) {
                     class31.login.p1(255, 18);
                 } else {
                     class31.login.p1(255, 16);
                 }
-                class31.login.p1(255, class146.out.pos + class15.method72(class218.field4136, 1) + 141);
+                class31.login.p1(255, Isaac.out.pos + class15.method72(class218.field4136, 1) + 141);
                 class31.login.p4(500);
                 class31.login.p1(255, class245.lowMemory ? 1 : 0);
                 class4.pUid(class31.login, (byte) -91);
-                class31.login.method336(class218.field4136, (byte) 0);
+                class31.login.pjstr(class218.field4136, (byte) 0);
                 class31.login.p4(class4.field46);
-                class31.login.p4(class67.field1204.field2714);
-                class31.login.p4(class223.field4203.field2714);
-                class31.login.p4(class85.field1546.field2714);
-                class31.login.p4(CollisionMap.field1671.field2714);
-                class31.login.p4(class12.field172.field2714);
-                class31.login.p4(class27.field451.field2714);
-                class31.login.p4(class99.field1816.field2714);
-                class31.login.p4(class233.field4367.field2714);
-                class31.login.p4(class226.field4245.field2714);
-                class31.login.p4(class66.field1193.field2714);
-                class31.login.p4(class9.field137.field2714);
-                class31.login.p4(class133.field2488.field2714);
-                class31.login.p4(class18.field300.field2714);
-                class31.login.p4(class98.field1795.field2714);
-                class31.login.p4(class18.field280.field2714);
-                class31.login.p4(class147.field2762.field2714);
-                class31.login.p4(class109.field2006.field2714);
-                class31.login.p4(class190.field3674.field2714);
-                class31.login.p4(class161.field3115.field2714);
-                class31.login.p4(class248.field4552.field2714);
-                class31.login.p4(class196.field3773.field2714);
-                class31.login.p4(class17.field274.field2714);
-                class31.login.p4(class238.field4433.field2714);
-                class31.login.p4(class130.field2442.field2714);
-                class31.login.p4(class20.field321.field2714);
-                class31.login.p4(class203.field3872.field2714);
-                class31.login.p4(class155.field2996.field2714);
-                class31.login.method325((byte) 34, class146.out.pos, class146.out.data, 0);
-                class33.field556.write(class31.login.data, 0, class31.login.pos);
-                class146.out.method36(seed, (byte) 75);
+                class31.login.p4(class67.field1204.crc);
+                class31.login.p4(class223.field4203.crc);
+                class31.login.p4(class85.field1546.crc);
+                class31.login.p4(CollisionMap.field1671.crc);
+                class31.login.p4(class12.field172.crc);
+                class31.login.p4(class27.field451.crc);
+                class31.login.p4(class99.field1816.crc);
+                class31.login.p4(class233.field4367.crc);
+                class31.login.p4(class226.field4245.crc);
+                class31.login.p4(class66.field1193.crc);
+                class31.login.p4(class9.field137.crc);
+                class31.login.p4(class133.field2488.crc);
+                class31.login.p4(class18.field300.crc);
+                class31.login.p4(class98.field1795.crc);
+                class31.login.p4(class18.field280.crc);
+                class31.login.p4(class147.field2762.crc);
+                class31.login.p4(class109.field2006.crc);
+                class31.login.p4(class190.field3674.crc);
+                class31.login.p4(class161.field3115.crc);
+                class31.login.p4(class248.field4552.crc);
+                class31.login.p4(class196.field3773.crc);
+                class31.login.p4(class17.field274.crc);
+                class31.login.p4(class238.field4433.crc);
+                class31.login.p4(class130.field2442.crc);
+                class31.login.p4(class20.field321.crc);
+                class31.login.p4(class203.field3872.crc);
+                class31.login.p4(class155.field2996.crc);
+                class31.login.method325((byte) 34, Isaac.out.pos, Isaac.out.data, 0);
+
+                class33.stream.write(class31.login.data, 0, class31.login.pos);
+                Isaac.out.method36(seed, (byte) 75);
+
                 for (int var7 = 0; var7 < 4; var7++) {
                     seed[var7] += 50;
                 }
-                class230.field4314.method36(seed, (byte) 75);
+                class230.in.method36(seed, (byte) 75);
+
                 class117.loginState = 6;
             }
-            if (class117.loginState == 6 && class33.field556.method911(1) > 0) {
-                int var8 = class33.field556.method918(0);
+            if (class117.loginState == 6 && class33.stream.available(1) > 0) {
+                int var8 = class33.stream.read(0);
                 if (var8 == 21 && class229.gameState == 20) {
                     class117.loginState = 7;
                 } else if (var8 == 2) {
@@ -241,8 +245,8 @@ public class class176 extends class136 {
                     return;
                 }
             }
-            if (class117.loginState == 7 && class33.field556.method911(1) > 0) {
-                class237.field4426 = (class33.field556.method918(0) + 3) * 60;
+            if (class117.loginState == 7 && class33.stream.available(1) > 0) {
+                class237.field4426 = (class33.stream.read(0) + 3) * 60;
                 class117.loginState = 8;
             }
             if (class117.loginState == 8) {
@@ -252,10 +256,10 @@ public class class176 extends class136 {
                     class117.loginState = 0;
                 }
             } else {
-                if (class117.loginState == 9 && class33.field556.method911(1) >= 9) {
-                    class67.field1208 = class33.field556.method918(0);
-                    class29.field479 = class33.field556.method918(0);
-                    class238.field4430 = class33.field556.method918(0);
+                if (class117.loginState == 9 && class33.stream.available(1) >= 9) {
+                    class67.field1208 = class33.stream.read(0);
+                    class29.field479 = class33.stream.read(0);
+                    class238.field4430 = class33.stream.read(0);
                     if (class238.field4430 == 1) {
                         try {
                             class59.field1118.method628(class126.field2326.field3599, true);
@@ -267,18 +271,20 @@ public class class176 extends class136 {
                         } catch (Throwable var9) {
                         }
                     }
-                    field3537 = class33.field556.method918(0);
-                    class57.field1077 = class33.field556.method918(0) == 1;
-                    class220.field4166 = class33.field556.method918(0);
-                    class220.field4166 <<= 0x8;
-                    class220.field4166 += class33.field556.method918(0);
-                    class6.field72 = class33.field556.method918(0);
-                    class33.field556.method915(0, class230.field4314.data, (byte) -93, 1);
-                    class230.field4314.pos = 0;
-                    class238.field4432 = class230.field4314.method33((byte) -53);
-                    class33.field556.method915(0, class230.field4314.data, (byte) -93, 2);
-                    class230.field4314.pos = 0;
-                    class228.field4272 = class230.field4314.g2(80);
+                    field3537 = class33.stream.read(0);
+                    class57.field1077 = class33.stream.read(0) == 1;
+                    class220.localPid = class33.stream.read(0);
+                    class220.localPid <<= 0x8;
+                    class220.localPid += class33.stream.read(0);
+                    class6.field72 = class33.stream.read(0);
+
+                    class33.stream.read(0, class230.in.data, (byte) -93, 1);
+                    class230.in.pos = 0;
+                    class238.packetType = class230.in.method33((byte) -53);
+
+                    class33.stream.read(0, class230.in.data, (byte) -93, 2);
+                    class230.in.pos = 0;
+                    class228.packetSize = class230.in.g2(80);
                     class117.loginState = 10;
                 }
                 if (class117.loginState != 10) {
@@ -299,13 +305,13 @@ public class class176 extends class136 {
                             class57.method417(-101, -3);
                         }
                     }
-                } else if (class33.field556.method911(1) >= class228.field4272) {
-                    class230.field4314.pos = 0;
-                    class33.field556.method915(0, class230.field4314.data, (byte) -93, class228.field4272);
+                } else if (class33.stream.available(1) >= class228.packetSize) {
+                    class230.in.pos = 0;
+                    class33.stream.read(0, class230.in.data, (byte) -93, class228.packetSize);
                     class106.method733(124);
                     class140.field2597 = -1;
                     class43.method278(false, (byte) 106);
-                    class238.field4432 = -1;
+                    class238.packetType = -1;
                 }
             }
         } catch (IOException var11) {

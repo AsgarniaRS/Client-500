@@ -166,7 +166,7 @@ public class class242 extends class136 {
                                 }
                             }
                         }
-                        class146.field2747[class50.field930] = var14.field2833;
+                        Isaac.field2747[class50.field930] = var14.field2833;
                         class139.field2579[class50.field930] = var16;
                         class134.field2503[class50.field930] = var17;
                         class50.field930++;
@@ -175,6 +175,6 @@ public class class242 extends class136 {
             }
         }
         class110.field2012 = var2;
-        class202.field3854.method1523(3739);
+        class202.field3854.bind();
     }
 }

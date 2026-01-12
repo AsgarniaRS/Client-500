@@ -113,8 +113,8 @@ public class Client extends GameShell {
                 class101.field1842 = class206.method1420(false);
             }
             if (class244.field4495 == 3) {
-                if (class229.gameState <= 5 || class190.field3682.method911(arg0 - 9) > 0) {
-                    int var3 = class190.field3682.method918(0);
+                if (class229.gameState <= 5 || class190.field3682.available(arg0 - 9) > 0) {
+                    int var3 = class190.field3682.read(0);
                     if (var3 != 0) {
                         this.method217(var3, 1);
                         return;
@@ -150,11 +150,11 @@ public class Client extends GameShell {
         if (class47.field884 == 1) {
             class7.field96 = class99.field1812;
             GameShell.field1596 = class202.field3852;
-            class146.field2752 = class70.field1265;
+            Isaac.field2752 = class70.field1265;
             class14.field219 = class202.field3855;
         } else {
             class14.field219 = class208.field3957;
-            class146.field2752 = class88.field1601;
+            Isaac.field2752 = class88.field1601;
             class7.field96 = class217.field4064;
             GameShell.field1596 = class141.field2613;
         }
@@ -375,16 +375,16 @@ public class Client extends GameShell {
             class219.field4145.field717 = false;
         }
         class219.field4145 = null;
-        if (class33.field556 != null) {
-            class33.field556.close(true);
-            class33.field556 = null;
+        if (class33.stream != null) {
+            class33.stream.close(true);
+            class33.stream = null;
         }
         class120.method821(class154.field2977, 88);
         class116.method792((byte) -122, class154.field2977);
         if (class167.field3224 != null) {
             class167.field3224.method177(-99999999, class154.field2977);
         }
-        class146.method977(52776016);
+        Isaac.method977(52776016);
         class47.method362(3);
         class167.field3224 = null;
         if (class27.field458 != null) {
@@ -805,10 +805,10 @@ public class Client extends GameShell {
             class188.method1312(class49.field917, (byte) 75, class54.field1011);
         } else if (class229.gameState == 25) {
             if (class203.field3863 == 1) {
-                if (class196.field3756 > class146.field2753) {
-                    class146.field2753 = class196.field3756;
+                if (class196.field3756 > Isaac.field2753) {
+                    Isaac.field2753 = class196.field3756;
                 }
-                int var5 = (class146.field2753 - class196.field3756) * 50 / class146.field2753;
+                int var5 = (Isaac.field2753 - class196.field3756) * 50 / Isaac.field2753;
                 method221(class166.method1142(new class88[] { class242.field4480, class31.field509, class170.method1214(var5, 49), class14.field216 }, -3), false, -22717);
             } else if (class203.field3863 == 2) {
                 if (class113.field2047 > class143.field2654) {
@@ -1014,7 +1014,7 @@ public class Client extends GameShell {
         class126.method865(arg0 ^ 0xFFFFFF9B);
         class168.method1151((byte) 113);
         class67.method461((byte) 109);
-        class146.method978(false);
+        Isaac.method978(false);
         class21.method104(-22);
         class24.method132((byte) -64);
         if (arg0 != 100) {

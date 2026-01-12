@@ -195,7 +195,7 @@ public class class112 {
         class31.field507 = class20.field318;
         class216.field4051 = class29.field490;
         class70.field1293 = class1.field5;
-        class146.field2736 = class90.field1710;
+        Isaac.field2736 = class90.field1710;
         class93.field1752 = class71.field1318;
         class145.field2719 = class104.field1892;
         class109.field2000 = class97.field1786;

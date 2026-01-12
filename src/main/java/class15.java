@@ -125,10 +125,10 @@ public class class15 {
                                 arg1.p1(255, 0);
                             } else if (var21 instanceof Number) {
                                 arg1.p1(255, 1);
-                                arg1.method328(((Number) var21).longValue(), (byte) -122);
+                                arg1.p8(((Number) var21).longValue(), (byte) -122);
                             } else if (var21 instanceof class88) {
                                 arg1.p1(255, 2);
-                                arg1.method336((class88) var21, (byte) 0);
+                                arg1.pjstr((class88) var21, (byte) 0);
                             } else {
                                 arg1.p1(255, 4);
                             }

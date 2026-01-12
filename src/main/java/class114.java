@@ -85,11 +85,11 @@ public class class114 extends class136 {
         if (arg1 == 0L) {
             return;
         }
-        for (int var4 = 0; var4 < class146.field2731; var4++) {
+        for (int var4 = 0; var4 < Isaac.field2731; var4++) {
             if (class115.field2088[var4] == arg1) {
                 class17.field257++;
-                class146.field2731--;
-                for (int var5 = var4; var5 < class146.field2731; var5++) {
+                Isaac.field2731--;
+                for (int var5 = var4; var5 < Isaac.field2731; var5++) {
                     class23.field370[var5] = class23.field370[var5 + 1];
                     class160.field3094[var5] = class160.field3094[var5 + 1];
                     class168.field3240[var5] = class168.field3240[var5 + 1];
@@ -98,8 +98,8 @@ public class class114 extends class136 {
                     class59.field1120[var5] = class59.field1120[var5 + 1];
                 }
                 class20.field313 = class67.field1211;
-                class146.out.method30((byte) -92, 121);
-                class146.out.method328(arg1, (byte) -126);
+                Isaac.out.method30((byte) -92, 121);
+                Isaac.out.p8(arg1, (byte) -126);
                 return;
             }
         }

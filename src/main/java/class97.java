@@ -153,8 +153,8 @@ public class class97 extends class136 {
             }
         }
         class131.field2450++;
-        class146.out.method30((byte) -51, 175);
-        class146.out.p1(255, arg0.method604((byte) -53) - 1);
-        class146.out.method336(arg0.method635(2, -383902332), (byte) 0);
+        Isaac.out.method30((byte) -51, 175);
+        Isaac.out.p1(255, arg0.method604((byte) -53) - 1);
+        Isaac.out.pjstr(arg0.method635(2, -383902332), (byte) 0);
     }
 }

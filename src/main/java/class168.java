@@ -107,40 +107,40 @@ public class class168 extends class67 {
 
     @OriginalMember(owner = "client!pe", name = "c", descriptor = "(B)V")
     public static final void method1153(byte arg0) {
-        class230.field4314.method34(8);
+        class230.in.method34(8);
         field3234++;
-        int var1 = class230.field4314.method28(1, -315);
+        int var1 = class230.in.method28(1, -315);
         if (var1 == 0) {
             return;
         }
-        int var2 = class230.field4314.method28(2, -315);
+        int var2 = class230.in.method28(2, -315);
         if (var2 == 0) {
             class139.field2581[class192.field3704++] = 2047;
         } else if (var2 == 1) {
-            int var3 = class230.field4314.method28(3, -315);
+            int var3 = class230.in.method28(3, -315);
             class240.field4458.method1478((byte) 127, false, var3);
-            int var4 = class230.field4314.method28(1, -315);
+            int var4 = class230.in.method28(1, -315);
             if (var4 == 1) {
                 class139.field2581[class192.field3704++] = 2047;
             }
         } else if (var2 == 2) {
-            int var5 = class230.field4314.method28(3, -315);
+            int var5 = class230.in.method28(3, -315);
             class240.field4458.method1478((byte) 127, true, var5);
-            int var6 = class230.field4314.method28(3, -315);
+            int var6 = class230.in.method28(3, -315);
             class240.field4458.method1478((byte) 127, true, var6);
-            int var7 = class230.field4314.method28(1, -315);
+            int var7 = class230.in.method28(1, -315);
             if (var7 == 1) {
                 class139.field2581[class192.field3704++] = 2047;
             }
         } else if (var2 == 3) {
-            int var8 = class230.field4314.method28(1, -315);
-            class149.field2909 = class230.field4314.method28(2, -315);
-            int var9 = class230.field4314.method28(1, -315);
+            int var8 = class230.in.method28(1, -315);
+            class149.field2909 = class230.in.method28(2, -315);
+            int var9 = class230.in.method28(1, -315);
             if (var9 == 1) {
                 class139.field2581[class192.field3704++] = 2047;
             }
-            int var10 = class230.field4314.method28(7, -315);
-            int var11 = class230.field4314.method28(7, -315);
+            int var10 = class230.in.method28(7, -315);
+            int var11 = class230.in.method28(7, -315);
             class240.field4458.method1476(var8 == 1, var10, 0, var11);
         } else if (arg0 >= -79) {
             method1152((byte) -84, 3);

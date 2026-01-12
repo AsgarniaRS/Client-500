@@ -99,33 +99,33 @@ public class class248 {
         int var6 = arg2[arg3];
         int var7 = arg1[arg3];
         if (arg0 == 0) {
-            class146.out.method30((byte) -70, 200);
-            class146.out.p1(255, var5 + var5 + 3);
+            Isaac.out.method30((byte) -70, 200);
+            Isaac.out.p1(255, var5 + var5 + 3);
             class57.field1087++;
         }
         if (arg0 == 1) {
-            class146.out.method30((byte) -92, 199);
-            class146.out.p1(255, var5 + var5 + 17);
+            Isaac.out.method30((byte) -92, 199);
+            Isaac.out.p1(255, var5 + var5 + 17);
             class134.field2496++;
         }
         if (arg0 == 2) {
-            class146.out.method30((byte) -98, 159);
-            class146.out.p1(255, var5 + var5 + 3);
+            Isaac.out.method30((byte) -98, 159);
+            Isaac.out.p1(255, var5 + var5 + 3);
             class24.field383++;
         }
         if (arg4 <= 16) {
             field4550 = null;
         }
-        class146.out.method305(103, var6 + class190.field3681);
-        class146.out.method297(class247.field4513[82] ? 1 : 0, 0);
+        Isaac.out.method305(103, var6 + class190.field3681);
+        Isaac.out.method297(class247.field4513[82] ? 1 : 0, 0);
         class116.field2104 = arg1[0];
         class140.field2596 = arg2[0];
         for (int var8 = 1; var8 < var5; var8++) {
             arg3--;
-            class146.out.method327(59, arg1[arg3] - var7);
-            class146.out.method297(arg2[arg3] - var6, 0);
+            Isaac.out.method327(59, arg1[arg3] - var7);
+            Isaac.out.method297(arg2[arg3] - var6, 0);
         }
-        class146.out.method331(var7 + class223.field4214, 18975);
+        Isaac.out.method331(var7 + class223.field4214, 18975);
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(B)Lg;")
@@ -254,10 +254,10 @@ public class class248 {
 
     @OriginalMember(owner = "client!wi", name = "e", descriptor = "(B)V")
     public static final void method1623(byte arg0) {
-        class146.out.method30((byte) -80, 58);
+        Isaac.out.method30((byte) -80, 58);
         class210.field3988++;
         field4553++;
-        class146.out.method328(0L, (byte) -120);
+        Isaac.out.p8(0L, (byte) -120);
         if (arg0 != -113) {
             method1623((byte) -12);
         }

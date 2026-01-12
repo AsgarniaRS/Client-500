@@ -525,7 +525,7 @@ public class class165 {
                                             var62 = class130.field2443.method1432(null, 1549114312, -1, -1, null);
                                         } else {
                                             int var65 = var11.field3411 & 0x7FF;
-                                            if (class220.field4166 == var65) {
+                                            if (class220.localPid == var65) {
                                                 var65 = 2047;
                                             }
                                             scene var66 = class244.field4493[var65];

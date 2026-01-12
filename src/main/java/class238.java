@@ -11,7 +11,7 @@ public class class238 {
     public static int field4430 = 0;
 
     @OriginalMember(owner = "client!vi", name = "f", descriptor = "I")
-    public static int field4432 = 0;
+    public static int packetType = 0;
 
     @OriginalMember(owner = "client!vi", name = "h", descriptor = "I")
     public static int field4434 = 2301979;

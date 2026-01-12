@@ -74,7 +74,7 @@ public class class184 extends class23 {
                 }
             }
             if (class128.field2404[var2] != -1 && class45.field774[var2] == null) {
-                class45.field774[var2] = class27.field451.method951(-14531, class17.field268[var2], class128.field2404[var2], 0);
+                class45.field774[var2] = class27.field451.method951(-14531, class17.mapKeys[var2], class128.field2404[var2], 0);
                 if (class45.field774[var2] == null) {
                     var1 = false;
                     ++class196.field3756;
@@ -89,8 +89,8 @@ public class class184 extends class23 {
             for (int var4 = 0; ~class167.field3223.length < ~var4; ++var4) {
                 byte[] var19 = class45.field774[var4];
                 if (var19 != null) {
-                    int var20 = (class146.field2733[var4] >> 8) * 64 - class223.field4214;
-                    int var21 = (class146.field2733[var4] & 255) * 64 + -class190.field3681;
+                    int var20 = (Isaac.field2733[var4] >> 8) * 64 - class223.field4214;
+                    int var21 = (Isaac.field2733[var4] & 255) * 64 + -class190.field3681;
                     if (ClientStream.field2557) {
                         var20 = 10;
                         var21 = 10;
@@ -161,8 +161,8 @@ public class class184 extends class23 {
                 class210.method1439(0);
                 class27.method167((byte) 61);
                 if (class201.field3834 != null) {
-                    class146.out.method30((byte) -50, 198);
-                    class146.out.p4(1057001181);
+                    Isaac.out.method30((byte) -50, 198);
+                    Isaac.out.p4(1057001181);
                     ++class247.field4525;
                 }
                 if (!ClientStream.field2557) {
@@ -181,7 +181,7 @@ public class class184 extends class23 {
                 }
                 class131.method883(30, 65536);
                 class219.method1481(2);
-                class146.out.method30((byte) -43, 213);
+                Isaac.out.method30((byte) -43, 213);
                 class108.method740(false);
             }
         }

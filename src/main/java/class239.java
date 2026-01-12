@@ -129,21 +129,21 @@ public class class239 {
             var13 += 2048;
         }
         if (class207.field3936 < var11) {
-            class207.field3936 += (var11 - class207.field3936) * class146.field2744 / 1000 + class9.field130;
+            class207.field3936 += (var11 - class207.field3936) * Isaac.field2744 / 1000 + class9.field130;
             if (class207.field3936 > var11) {
                 class207.field3936 = var11;
             }
         }
         if (var13 > 0) {
-            class170.field3259 += class146.field2744 * var13 / 1000 + class9.field130;
+            class170.field3259 += Isaac.field2744 * var13 / 1000 + class9.field130;
             class170.field3259 &= 0x7FF;
         }
         if (var13 < 0) {
-            class170.field3259 -= class9.field130 + -var13 * class146.field2744 / 1000;
+            class170.field3259 -= class9.field130 + -var13 * Isaac.field2744 / 1000;
             class170.field3259 &= 0x7FF;
         }
         if (class207.field3936 > var11) {
-            class207.field3936 -= (class207.field3936 - var11) * class146.field2744 / 1000 + class9.field130;
+            class207.field3936 -= (class207.field3936 - var11) * Isaac.field2744 / 1000 + class9.field130;
             if (class207.field3936 < var11) {
                 class207.field3936 = var11;
             }

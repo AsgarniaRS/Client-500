@@ -362,7 +362,7 @@ public class class120 extends class23 {
             return -1;
         } else {
             int var2 = -48 / ((-29 - arg1) / 58);
-            for (int var3 = 0; var3 < class146.field2731; ++var3) {
+            for (int var3 = 0; var3 < Isaac.field2731; ++var3) {
                 if (arg0.method624(class23.field370[var3], (byte) 81)) {
                     return var3;
                 }

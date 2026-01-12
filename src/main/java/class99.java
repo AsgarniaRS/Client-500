@@ -91,7 +91,7 @@ public class class99 {
                     class220.field4159--;
                 }
                 for (int var8 = 0; var8 < 100; var8++) {
-                    int var9 = class214.clientStream.method911(arg0 - 30202);
+                    int var9 = class214.clientStream.available(arg0 - 30202);
                     if (var9 < 0) {
                         throw new IOException();
                     }
@@ -110,7 +110,7 @@ public class class99 {
                         if (var9 < var11) {
                             var11 = var9;
                         }
-                        class214.clientStream.method915(class78.field1408.pos, class78.field1408.data, (byte) -93, var11);
+                        class214.clientStream.read(class78.field1408.pos, class78.field1408.data, (byte) -93, var11);
                         if (class18.field294 != 0) {
                             for (int var12 = 0; var12 < var11; var12++) {
                                 class78.field1408.data[class78.field1408.pos + var12] = (byte) class180.method1287(class78.field1408.data[class78.field1408.pos + var12], class18.field294);
@@ -160,7 +160,7 @@ public class class99 {
                         if (var9 < var22) {
                             var22 = var9;
                         }
-                        class214.clientStream.method915(class149.field2910.pos, class149.field2910.data, (byte) -93, var22);
+                        class214.clientStream.read(class149.field2910.pos, class149.field2910.data, (byte) -93, var22);
                         if (class18.field294 != 0) {
                             for (int var23 = 0; var23 < var22; var23++) {
                                 class149.field2910.data[class149.field2910.pos + var23] = (byte) class180.method1287(class149.field2910.data[class149.field2910.pos + var23], class18.field294);
@@ -278,12 +278,12 @@ public class class99 {
                         class200.method1375(var11, -876775538);
                     }
                     if (class122.field2219 != null && GameShell.method583(0, class179.field3570) != null) {
-                        class146.out.method30((byte) -74, 135);
+                        Isaac.out.method30((byte) -74, 135);
                         class42.field709++;
-                        class146.out.method314(class179.field3570.field3408, (byte) 72);
-                        class146.out.method316(class179.field3570.field3425, 15728);
-                        class146.out.method316(class122.field2219.field3425, 15728);
-                        class146.out.method344(class122.field2219.field3408, (byte) -51);
+                        Isaac.out.method314(class179.field3570.field3408, (byte) 72);
+                        Isaac.out.method316(class179.field3570.field3425, 15728);
+                        Isaac.out.method316(class122.field2219.field3425, 15728);
+                        Isaac.out.method344(class122.field2219.field3408, (byte) -51);
                     }
                 } else if ((class203.field3861 == 1 || class234.method1556(class203.field3864 - 1, -1)) && class203.field3864 > 2) {
                     class136.method906(arg0 + 32795);

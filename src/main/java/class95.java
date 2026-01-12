@@ -55,8 +55,8 @@ public class class95 {
     @OriginalMember(owner = "client!ih", name = "a", descriptor = "(Z)V")
     public static final void method677(boolean arg0) {
         while (true) {
-            if (class230.field4314.method31(false, class228.field4272) >= 11) {
-                int var1 = class230.field4314.method28(11, -315);
+            if (class230.in.method31(false, class228.packetSize) >= 11) {
+                int var1 = class230.in.method28(11, -315);
                 if (var1 != 2047) {
                     boolean var2 = false;
                     if (class244.field4493[var1] == null) {
@@ -69,28 +69,28 @@ public class class95 {
                     class174.field3430[class55.field1027++] = var1;
                     scene var3 = class244.field4493[var1];
                     var3.field4083 = class117.field2115;
-                    int var4 = class6.field75[class230.field4314.method28(3, -315)];
+                    int var4 = class6.field75[class230.in.method28(3, -315)];
                     if (var2) {
                         var3.field4121 = var3.field4087 = var4;
                     }
-                    int var5 = class230.field4314.method28(1, -315);
+                    int var5 = class230.in.method28(1, -315);
                     if (var5 == 1) {
                         class139.field2581[class192.field3704++] = var1;
                     }
-                    int var6 = class230.field4314.method28(5, -315);
+                    int var6 = class230.in.method28(5, -315);
                     if (var6 > 15) {
                         var6 -= 32;
                     }
-                    int var7 = class230.field4314.method28(5, -315);
+                    int var7 = class230.in.method28(5, -315);
                     if (var7 > 15) {
                         var7 -= 32;
                     }
-                    int var8 = class230.field4314.method28(1, -315);
+                    int var8 = class230.in.method28(1, -315);
                     var3.method1476(var8 == 1, class240.field4458.field4089[0] + var7, 0, class240.field4458.field4143[0] + var6);
                     continue;
                 }
             }
-            class230.field4314.method35(8);
+            class230.in.method35(8);
             if (!arg0) {
                 return;
             }

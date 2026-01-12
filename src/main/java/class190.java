@@ -137,8 +137,8 @@ public class class190 {
         for (int var4 = 0; var4 < var3; var4++) {
             byte[] var5 = var2[var4];
             if (var5 != null) {
-                int var6 = (class146.field2733[var4] >> 8) * 64 - class223.field4214;
-                int var7 = (class146.field2733[var4] & 0xFF) * 64 - field3681;
+                int var6 = (Isaac.field2733[var4] >> 8) * 64 - class223.field4214;
+                int var7 = (Isaac.field2733[var4] & 0xFF) * 64 - field3681;
                 class219.method1481(2);
                 class18.method85(class166.field3202, var5, var6, -109, arg1, var7);
             }

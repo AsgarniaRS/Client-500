@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!nd")
-public class class146 {
+public class Isaac {
 
     @OriginalMember(owner = "client!nd", name = "a", descriptor = "[I")
     private int[] field2729;
@@ -116,7 +116,7 @@ public class class146 {
                 }
                 class20.field313 = class67.field1211;
                 out.method30((byte) -67, 126);
-                out.method328(arg1, (byte) -122);
+                out.p8(arg1, (byte) -122);
                 return;
             }
         }
@@ -191,7 +191,7 @@ public class class146 {
             this.method982(-68);
             this.field2751 = 255;
         }
-        return this.field2745[this.field2751];
+        return 0; //this.field2745[this.field2751];
     }
 
     @OriginalMember(owner = "client!nd", name = "b", descriptor = "(Z)V")
@@ -348,11 +348,11 @@ public class class146 {
     }
 
     @OriginalMember(owner = "client!nd", name = "<init>", descriptor = "()V")
-    private class146() {
+    private Isaac() {
     }
 
     @OriginalMember(owner = "client!nd", name = "<init>", descriptor = "([I)V")
-    public class146(int[] arg0) {
+    public Isaac(int[] arg0) {
         this.field2729 = new int[256];
         this.field2745 = new int[256];
         for (int var2 = 0; var2 < arg0.length; var2++) {

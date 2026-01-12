@@ -58,7 +58,7 @@ public class class121 {
             for (int var8 = 0; var8 < class50.field930; var8++) {
                 int var41 = class139.field2579[var8] * 4 + 2 - class240.field4458.field4138 / 32;
                 int var42 = class134.field2503[var8] * 4 + 2 - class240.field4458.field4123 / 32;
-                class148 var43 = class190.method1323(class146.field2747[var8], -12450);
+                class148 var43 = class190.method1323(Isaac.field2747[var8], -12450);
                 if (var43.field2772 != null) {
                     var43 = var43.method1000((byte) 126);
                     if (var43 == null || var43.field2819 == -1) {
@@ -98,7 +98,7 @@ public class class121 {
                     int var27 = var25.field4123 / 32 - class240.field4458.field4123 / 32;
                     boolean var28 = false;
                     long var29 = var25.name.method630(false);
-                    for (int var31 = 0; var31 < class146.field2731; var31++) {
+                    for (int var31 = 0; var31 < Isaac.field2731; var31++) {
                         if (class115.field2088[var31] == var29 && class160.field3094[var31] != 0) {
                             var28 = true;
                             break;

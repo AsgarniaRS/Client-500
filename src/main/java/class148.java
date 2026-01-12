@@ -247,7 +247,7 @@ public class class148 extends class136 {
             class7.method42(arg5, arg2, arg6);
         }
         if (arg4 == 2) {
-            class146.method976(arg5, arg2, arg6);
+            Isaac.method976(arg5, arg2, arg6);
             if (var15.field2821 != 0 && var15.field2776 + arg2 < 104 && var15.field2776 + arg6 < 104 && var15.field2796 + arg2 < 104 && arg6 + var15.field2796 < 104) {
                 arg0.method643(arg2, var15.field2791, var13, arg6, arg1 + 131072, var15.field2796, var15.field2776);
             }

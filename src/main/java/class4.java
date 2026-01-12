@@ -83,17 +83,17 @@ public class class4 extends class136 {
         if (!var15) {
             return;
         }
-        class146.out.p1(arg2 ^ 0xFFFFD210, var5);
-        class146.out.p1(255, var4);
-        class146.out.method305(99, class207.field3932);
-        class146.out.p1(255, 57);
-        class146.out.p1(255, Ground.field943);
-        class146.out.p1(255, class65.field1185);
-        class146.out.p1(arg2 + 11792, 89);
-        class146.out.method305(101, class240.field4458.field4138);
-        class146.out.method305(110, class240.field4458.field4123);
-        class146.out.p1(255, class120.tryMoveNearest);
-        class146.out.p1(arg2 + 11792, 63);
+        Isaac.out.p1(arg2 ^ 0xFFFFD210, var5);
+        Isaac.out.p1(255, var4);
+        Isaac.out.method305(99, class207.field3932);
+        Isaac.out.p1(255, 57);
+        Isaac.out.p1(255, Ground.field943);
+        Isaac.out.p1(255, class65.field1185);
+        Isaac.out.p1(arg2 + 11792, 89);
+        Isaac.out.method305(101, class240.field4458.field4138);
+        Isaac.out.method305(110, class240.field4458.field4123);
+        Isaac.out.p1(255, class120.tryMoveNearest);
+        Isaac.out.p1(arg2 + 11792, 63);
     }
 
     @OriginalMember(owner = "client!ac", name = "d", descriptor = "(I)Z")

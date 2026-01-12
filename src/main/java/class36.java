@@ -178,8 +178,8 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
                             int var11 = 3 & var8 >> 1;
                             int var12 = var8 >> 3 & 2047;
                             int var13 = (var10 / 8 << 8) + var12 / 8;
-                            for (int var14 = 0; ~class146.field2733.length < ~var14; ++var14) {
-                                if (~class146.field2733[var14] == ~var13 && var2[var14] != null) {
+                            for (int var14 = 0; ~Isaac.field2733.length < ~var14; ++var14) {
+                                if (~Isaac.field2733[var14] == ~var13 && var2[var14] != null) {
                                     class64.method449(var5 * 8, 4, arg1, var11, (7 & var10) * 8, (7 & var12) * 8, class166.field3202, var9, var2[var14], var6 * 8, var4);
                                     var7 = true;
                                     break;
@@ -239,37 +239,37 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(BIIIILjava/awt/Graphics;)V")
-    public final void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5) {
+    public final void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics g) {
         ++field648;
         if (arg0 <= 66) {
             this.setPixels();
         }
         this.method247(arg1, arg3, arg2, -120, arg4);
-        Shape var7 = arg5.getClip();
-        arg5.clipRect(arg4, arg3, arg2, arg1);
-        arg5.drawImage(super.image, 0, 0, this);
-        arg5.setClip(var7);
+        Shape shape = g.getClip();
+        g.clipRect(arg4, arg3, arg2, arg1);
+        g.drawImage(super.image, 0, 0, this);
+        g.setClip(shape);
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "(IIZLjava/awt/Component;)V")
-    public final void method243(int arg0, int arg1, boolean arg2, Component arg3) {
-        super.width = arg1;
-        super.height = arg0;
-        super.data = new int[arg0 * arg1 + 1];
+    public final void method243(int height, int width, boolean arg2, Component c) {
+        super.width = width;
+        super.height = height;
+        super.data = new int[height * width + 1];
         this.colorModel = new DirectColorModel(32, 16711680, 65280, 255);
 
-        super.image = arg3.createImage(this);
+        super.image = c.createImage(this);
 
         this.setPixels();
-        arg3.prepareImage(super.image, this);
+        c.prepareImage(super.image, this);
 
         this.setPixels();
-        arg3.prepareImage(super.image, this);
+        c.prepareImage(super.image, this);
 
         this.setPixels();
-        arg3.prepareImage(super.image, this);
+        c.prepareImage(super.image, this);
 
-        this.method1523(3739);
+        this.bind();
     }
 
     @OriginalMember(owner = "client!db", name = "a", descriptor = "([BZILud;)V")
@@ -280,7 +280,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
         var4.field1702 = 0;
         var4.field1219 = (long) arg2;
         class227.field4254.method1624(var4, 126);
-        class146.method979((byte) -128);
+        Isaac.method979((byte) -128);
     }
 
     @OriginalMember(owner = "client!db", name = "d", descriptor = "(I)V")

@@ -125,7 +125,7 @@ public abstract class class144 {
     public static int field2713;
 
     @OriginalMember(owner = "client!nb", name = "ab", descriptor = "I")
-    public int field2714;
+    public int crc;
 
     @OriginalMember(owner = "client!nb", name = "C", descriptor = "Lja;")
     private class99 field2690;
@@ -511,7 +511,7 @@ public abstract class class144 {
             try {
                 var12 = class23.method119(var10, -1);
             } catch (RuntimeException var31) {
-                throw class160.method1078(var31, "T3 - " + (arg1 != null) + "," + arg0 + "," + var10.length + "," + class81.method541(var10, (byte) -110, var10.length) + "," + class81.method541(var10, (byte) -122, var10.length - 2) + "," + this.field2692[arg0] + "," + this.field2714);
+                throw class160.method1078(var31, "T3 - " + (arg1 != null) + "," + arg0 + "," + var10.length + "," + class81.method541(var10, (byte) -110, var10.length) + "," + class81.method541(var10, (byte) -122, var10.length - 2) + "," + this.field2692[arg0] + "," + this.crc);
             }
             if (this.field2679) {
                 this.field2708[arg0] = null;
@@ -641,7 +641,7 @@ public abstract class class144 {
     public void method112(int arg0, boolean arg1) {
         field2683++;
         if (!arg1) {
-            this.field2714 = -3;
+            this.crc = -3;
         }
     }
 
@@ -832,7 +832,7 @@ public abstract class class144 {
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "([BZ)V")
     public final void method969(byte[] arg0, boolean arg1) {
         field2672++;
-        this.field2714 = class81.method541(arg0, (byte) -106, arg0.length);
+        this.crc = class81.method541(arg0, (byte) -106, arg0.length);
         Packet var3 = new Packet(class23.method119(arg0, -1));
         int var4 = var3.g1(26119);
         if (var4 != 5 && var4 != 6) {

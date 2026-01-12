@@ -109,8 +109,8 @@ public class class2 extends class23 {
     @OriginalMember(owner = "client!aa", name = "d", descriptor = "(B)V")
     public static final void method9(byte arg0) {
         ++field19;
-        class230.field4314.method34(8);
-        int var1 = class230.field4314.method28(8, -315);
+        class230.in.method34(8);
+        int var1 = class230.in.method28(8, -315);
         if (class55.field1041 > var1) {
             for (int var2 = var1; class55.field1041 > var2; ++var2) {
                 class53.field999[class223.field4198++] = class25.field402[var2];
@@ -125,12 +125,12 @@ public class class2 extends class23 {
             while (~var3 > ~var1) {
                 int var5 = class25.field402[var3];
                 class191 var6 = class225.field4225[var5];
-                int var7 = class230.field4314.method28(1, -315);
+                int var7 = class230.in.method28(1, -315);
                 if (~var7 == -1) {
                     class25.field402[class55.field1041++] = var5;
                     var6.field4083 = class117.field2115;
                 } else {
-                    int var8 = class230.field4314.method28(2, -315);
+                    int var8 = class230.in.method28(2, -315);
                     if (var8 == 0) {
                         class25.field402[class55.field1041++] = var5;
                         var6.field4083 = class117.field2115;
@@ -138,20 +138,20 @@ public class class2 extends class23 {
                     } else if (var8 == 1) {
                         class25.field402[class55.field1041++] = var5;
                         var6.field4083 = class117.field2115;
-                        int var9 = class230.field4314.method28(3, -315);
+                        int var9 = class230.in.method28(3, -315);
                         var6.method1478((byte) 127, false, var9);
-                        int var10 = class230.field4314.method28(1, -315);
+                        int var10 = class230.in.method28(1, -315);
                         if (~var10 == -2) {
                             class139.field2581[class192.field3704++] = var5;
                         }
                     } else if (var8 == 2) {
                         class25.field402[class55.field1041++] = var5;
                         var6.field4083 = class117.field2115;
-                        int var11 = class230.field4314.method28(3, -315);
+                        int var11 = class230.in.method28(3, -315);
                         var6.method1478((byte) 127, true, var11);
-                        int var12 = class230.field4314.method28(3, -315);
+                        int var12 = class230.in.method28(3, -315);
                         var6.method1478((byte) 127, true, var12);
-                        int var13 = class230.field4314.method28(1, -315);
+                        int var13 = class230.in.method28(1, -315);
                         if (~var13 == -2) {
                             class139.field2581[class192.field3704++] = var5;
                         }

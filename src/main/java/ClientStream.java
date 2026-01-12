@@ -90,7 +90,7 @@ public class ClientStream implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "b", descriptor = "(I)I")
-    public final int method911(int arg0) throws IOException {
+    public final int available(int arg0) throws IOException {
         field2544++;
         if (this.dummy) {
             return 0;
@@ -210,7 +210,7 @@ public class ClientStream implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(I[BBI)V")
-    public final void method915(int arg0, byte[] arg1, byte arg2, int arg3) throws IOException {
+    public final void read(int arg0, byte[] arg1, byte arg2, int arg3) throws IOException {
         field2538++;
         if (arg2 != -93) {
             this.run();
@@ -327,7 +327,7 @@ public class ClientStream implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "c", descriptor = "(I)I")
-    public final int method918(int arg0) throws IOException {
+    public final int read(int arg0) throws IOException {
         if (arg0 != 0) {
             this.buf = null;
         }

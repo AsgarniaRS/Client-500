@@ -406,8 +406,7 @@ public class class88 implements class187 {
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(B)I")
     public final int method604(byte arg0) {
-        field1631++;
-        return arg0 == -53 ? this.field1660 : 111;
+        return this.field1660;
     }
 
     @OriginalMember(owner = "client!i", name = "b", descriptor = "(B)I")
@@ -964,8 +963,8 @@ public class class88 implements class187 {
         if (arg0 != 31096) {
             method598(98);
         }
-        while (class230.field4314.method31(false, class228.field4272) >= 27) {
-            int var1 = class230.field4314.method28(15, -315);
+        while (class230.in.method31(false, class228.packetSize) >= 27) {
+            int var1 = class230.in.method28(15, -315);
             if (var1 == 32767) {
                 break;
             }
@@ -977,18 +976,18 @@ public class class88 implements class187 {
             class191 var3 = class225.field4225[var1];
             class25.field402[class55.field1041++] = var1;
             var3.field4083 = class117.field2115;
-            int var4 = class230.field4314.method28(1, arg0 - 31411);
-            int var5 = class230.field4314.method28(5, -315);
-            int var6 = class230.field4314.method28(1, -315);
+            int var4 = class230.in.method28(1, arg0 - 31411);
+            int var5 = class230.in.method28(5, -315);
+            int var6 = class230.in.method28(1, -315);
             if (var6 == 1) {
                 class139.field2581[class192.field3704++] = var1;
             }
-            int var7 = class6.field75[class230.field4314.method28(3, -315)];
+            int var7 = class6.field75[class230.in.method28(3, -315)];
             if (var2) {
                 var3.field4121 = var3.field4087 = var7;
             }
-            var3.field3684 = class147.method987(class230.field4314.method28(14, -315), arg0 ^ 0xFFFF86CB);
-            int var8 = class230.field4314.method28(5, -315);
+            var3.field3684 = class147.method987(class230.in.method28(14, -315), arg0 ^ 0xFFFF86CB);
+            int var8 = class230.in.method28(5, -315);
             if (var8 > 15) {
                 var8 -= 32;
             }
@@ -1009,7 +1008,7 @@ public class class88 implements class187 {
             var3.field4130 = var3.field3684.field2362;
             var3.method1476(var4 == 1, class240.field4458.field4089[0] + var5, arg0 ^ 0x7978, class240.field4458.field4143[0] + var8);
         }
-        class230.field4314.method35(8);
+        class230.in.method35(8);
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(IBLi;)I")

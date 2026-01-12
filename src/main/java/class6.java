@@ -74,7 +74,7 @@ public class class6 extends Packet {
     public static int field95;
 
     @OriginalMember(owner = "client!ae", name = "ec", descriptor = "Lnd;")
-    private class146 field91;
+    private Isaac field91;
 
     @OriginalMember(owner = "client!ae", name = "gc", descriptor = "Lqg;")
     public static class181 field93;
@@ -196,6 +196,6 @@ public class class6 extends Packet {
         if (arg1 != 75) {
             this.method31(true, -17);
         }
-        this.field91 = new class146(arg0);
+        this.field91 = new Isaac(arg0);
     }
 }

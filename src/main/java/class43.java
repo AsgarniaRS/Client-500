@@ -116,24 +116,22 @@ public class class43 extends class23 {
     @OriginalMember(owner = "client!di", name = "a", descriptor = "(ZB)V")
     public static final void method278(boolean arg0, byte arg1) {
         ClientStream.field2557 = arg0;
-        int var2 = 100 % ((arg1 - -62) / 49);
-        ++field737;
         if (!ClientStream.field2557) {
-            int var3 = (-class230.field4314.pos + class228.field4272) / 16;
-            class17.field268 = new int[var3][4];
+            int var3 = (-class230.in.pos + class228.packetSize) / 16;
+            class17.mapKeys = new int[var3][4];
             for (int var4 = 0; ~var3 < ~var4; ++var4) {
                 for (int var15 = 0; var15 < 4; ++var15) {
-                    class17.field268[var4][var15] = class230.field4314.method299(48);
+                    class17.mapKeys[var4][var15] = class230.in.g4_alt1(48);
                 }
             }
-            int var5 = class230.field4314.method349(true);
+            int var5 = class230.in.g2_alt2(true);
             boolean var6 = false;
-            int var7 = class230.field4314.method302(255);
-            int var8 = class230.field4314.g2(93);
-            int var9 = class230.field4314.method352(24758);
-            int var10 = class230.field4314.g2(42);
+            int var7 = class230.in.g2_alt3(255);
+            int var8 = class230.in.g2(93);
+            int var9 = class230.in.g1_alt3(24758);
+            int var10 = class230.in.g2(42);
             class128.field2404 = new int[var3];
-            class146.field2733 = new int[var3];
+            Isaac.field2733 = new int[var3];
             class45.field774 = new byte[var3][];
             class27.field453 = new int[var3];
             class167.field3223 = new byte[var3][];
@@ -148,11 +146,11 @@ public class class43 extends class23 {
                 for (int var13 = (var5 - 6) / 8; ~((var5 + 6) / 8) <= ~var13; ++var13) {
                     int var14 = (var12 << 8) + var13;
                     if (!var6 || ~var13 != -50 && ~var13 != -150 && var13 != 147 && ~var12 != -51 && (~var12 != -50 || var13 != 47)) {
-                        class146.field2733[var11] = var14;
+                        Isaac.field2733[var11] = var14;
                         class27.field453[var11] = class27.field451.method966(class166.method1142(new class88[] { class212.field4020, class170.method1214(var12, -113), class50.field933, class170.method1214(var13, -128) }, -3), (byte) -3);
                         class128.field2404[var11] = class27.field451.method966(class166.method1142(new class88[] { class106.field1930, class170.method1214(var12, 94), class50.field933, class170.method1214(var13, -125) }, -3), (byte) -3);
                     } else {
-                        class146.field2733[var11] = var14;
+                        Isaac.field2733[var11] = var14;
                         class27.field453[var11] = -1;
                         class128.field2404[var11] = -1;
                     }
@@ -161,36 +159,36 @@ public class class43 extends class23 {
             }
             class120.method822(var9, var10, var8, var5, (byte) 120, var7);
         } else {
-            int var16 = class230.field4314.g1(26119);
-            int var17 = class230.field4314.method343(62);
-            int var18 = class230.field4314.method302(255);
-            class230.field4314.method34(8);
+            int var16 = class230.in.g1(26119);
+            int var17 = class230.in.method343(62);
+            int var18 = class230.in.g2_alt3(255);
+            class230.in.method34(8);
             for (int var19 = 0; var19 < 4; ++var19) {
                 for (int var36 = 0; ~var36 > -14; ++var36) {
                     for (int var37 = 0; var37 < 13; ++var37) {
-                        int var38 = class230.field4314.method28(1, -315);
+                        int var38 = class230.in.method28(1, -315);
                         if (~var38 == -2) {
-                            class111.field2026[var19][var36][var37] = class230.field4314.method28(26, -315);
+                            class111.field2026[var19][var36][var37] = class230.in.method28(26, -315);
                         } else {
                             class111.field2026[var19][var36][var37] = -1;
                         }
                     }
                 }
             }
-            class230.field4314.method35(8);
-            int var20 = (-class230.field4314.pos + class228.field4272) / 16;
-            class17.field268 = new int[var20][4];
+            class230.in.method35(8);
+            int var20 = (-class230.in.pos + class228.packetSize) / 16;
+            class17.mapKeys = new int[var20][4];
             for (int var21 = 0; ~var20 < ~var21; ++var21) {
                 for (int var35 = 0; var35 < 4; ++var35) {
-                    class17.field268[var21][var35] = class230.field4314.g4((byte) -58);
+                    class17.mapKeys[var21][var35] = class230.in.g4((byte) -58);
                 }
             }
-            int var22 = class230.field4314.method343(66);
-            int var23 = class230.field4314.g2(122);
+            int var22 = class230.in.method343(66);
+            int var23 = class230.in.g2(122);
             class27.field453 = new int[var20];
             class128.field2404 = new int[var20];
             class167.field3223 = new byte[var20][];
-            class146.field2733 = new int[var20];
+            Isaac.field2733 = new int[var20];
             class45.field774 = new byte[var20][];
             int var24 = 0;
             for (int var25 = 0; ~var25 > -5; ++var25) {
@@ -202,13 +200,13 @@ public class class43 extends class23 {
                             int var30 = 1023 & var28 >> 14;
                             int var31 = (var30 / 8 << 8) + var29 / 8;
                             for (int var32 = 0; ~var32 > ~var24; ++var32) {
-                                if (~class146.field2733[var32] == ~var31) {
+                                if (~Isaac.field2733[var32] == ~var31) {
                                     var31 = -1;
                                     break;
                                 }
                             }
                             if (var31 != -1) {
-                                class146.field2733[var24] = var31;
+                                Isaac.field2733[var24] = var31;
                                 int var33 = (var31 & 65478) >> 8;
                                 int var34 = 255 & var31;
                                 class27.field453[var24] = class27.field451.method966(class166.method1142(new class88[] { class212.field4020, class170.method1214(var33, 47), class50.field933, class170.method1214(var34, 34) }, -3), (byte) -3);

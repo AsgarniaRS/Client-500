@@ -29,7 +29,7 @@ public class class76 extends class228 {
         WritableRaster var7 = Raster.createWritableRaster(var6.createCompatibleSampleModel(this.width, this.height), var5, null);
         this.image = new BufferedImage(var6, var7, false, new Hashtable());
         this.component = component;
-        this.method1523(3739);
+        this.bind();
     }
 
     @OriginalMember(owner = "client!gj", name = "a", descriptor = "(BIIIILjava/awt/Graphics;)V")

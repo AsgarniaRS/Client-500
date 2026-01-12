@@ -92,8 +92,8 @@ public class class85 extends class23 {
                                 int var10 = var7 >> 14 & 1023;
                                 int var11 = (var7 & 16376) >> 3;
                                 int var12 = (var10 / 8 << 8) - -(var11 / 8);
-                                for (int var13 = 0; ~var13 > ~class146.field2733.length; ++var13) {
-                                    if (~class146.field2733[var13] == ~var12 && var3[var13] != null) {
+                                for (int var13 = 0; ~var13 > ~Isaac.field2733.length; ++var13) {
+                                    if (~Isaac.field2733[var13] == ~var12 && var3[var13] != null) {
                                         class212.method1449(var9, (7 & var10) * 8, class166.field3202, 118, (var11 & 7) * 8, var4, var3[var13], arg0, var8, var6 * 8, var5 * 8);
                                         break;
                                     }

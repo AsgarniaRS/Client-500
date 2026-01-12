@@ -507,17 +507,17 @@ public class class143 extends class67 {
         byte var3 = 4;
         int var4 = var2.length;
         for (int var5 = 0; var5 < var4; var5++) {
-            int var11 = (class146.field2733[var5] >> 8) * 64 - class223.field4214;
+            int var11 = (Isaac.field2733[var5] >> 8) * 64 - class223.field4214;
             byte[] var12 = var2[var5];
-            int var13 = (class146.field2733[var5] & 0xFF) * 64 - class190.field3681;
+            int var13 = (Isaac.field2733[var5] & 0xFF) * 64 - class190.field3681;
             if (var12 != null) {
                 class219.method1481(2);
                 class144.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
             }
         }
         for (int var6 = 0; var6 < var4; var6++) {
-            int var7 = (class146.field2733[var6] >> 8) * 64 - class223.field4214;
-            int var8 = (class146.field2733[var6] & 0xFF) * 64 - class190.field3681;
+            int var7 = (Isaac.field2733[var6] >> 8) * 64 - class223.field4214;
+            int var8 = (Isaac.field2733[var6] & 0xFF) * 64 - class190.field3681;
             byte[] var9 = var2[var6];
             if (var9 == null && class110.field2016 < 800) {
                 class219.method1481(arg1 ^ 0x34);

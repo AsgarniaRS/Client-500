@@ -152,7 +152,7 @@ public class class18 extends class145 {
         }
         if (arg0.field4116 >= 32768) {
             int var5 = arg0.field4116 - 32768;
-            if (class220.field4166 == var5) {
+            if (class220.localPid == var5) {
                 var5 = 2047;
             }
             scene var6 = class244.field4493[var5];

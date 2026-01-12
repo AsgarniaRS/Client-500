@@ -103,9 +103,9 @@ public class class115 {
     @OriginalMember(owner = "client!kf", name = "a", descriptor = "(B)V")
     public static final void method787(byte arg0) {
         field2089++;
-        if (class33.field556 != null) {
-            class33.field556.close(true);
-            class33.field556 = null;
+        if (class33.stream != null) {
+            class33.stream.close(true);
+            class33.stream = null;
         }
         class27.method167((byte) 61);
         class85.method579();

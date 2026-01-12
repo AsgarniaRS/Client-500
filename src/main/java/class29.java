@@ -61,7 +61,7 @@ public abstract class class29 {
 
     @OriginalMember(owner = "client!cf", name = "a", descriptor = "(I)V")
     public static final void method174(int arg0) {
-        class146.out.method30((byte) -75, 24);
+        Isaac.out.method30((byte) -75, 24);
         class71.field1329++;
         class168 var1 = (class168) class128.field2397.method1049(0);
         if (arg0 > -2) {

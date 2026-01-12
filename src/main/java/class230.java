@@ -44,7 +44,7 @@ public class class230 {
     public static class88 field4313 = class208.method1425(105, "Diese Welt ist voll)3");
 
     @OriginalMember(owner = "client!va", name = "v", descriptor = "Lae;")
-    public static class6 field4314 = new class6(5000);
+    public static class6 in = new class6(5000);
 
     @OriginalMember(owner = "client!va", name = "z", descriptor = "I")
     public static int field4318 = 7759444;
@@ -298,7 +298,7 @@ public class class230 {
         field4297 = null;
         field4319 = null;
         field4304 = null;
-        field4314 = null;
+        in = null;
     }
 
     @OriginalMember(owner = "client!va", name = "a", descriptor = "(ZI)[[I")

@@ -191,9 +191,9 @@ public class class12 {
             class201.method1382(80);
             return true;
         } catch (Exception var5) {
-            String var2 = "T2 - " + class238.field4432 + "," + Packet.field821 + "," + class88.field1634 + " - " + class228.field4272 + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
-            for (int var3 = 0; class228.field4272 > var3 && var3 < 50; var3++) {
-                var2 = var2 + class230.field4314.data[var3] + ",";
+            String var2 = "T2 - " + class238.packetType + "," + Packet.field821 + "," + class88.field1634 + " - " + class228.packetSize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
+            for (int var3 = 0; class228.packetSize > var3 && var3 < 50; var3++) {
+                var2 = var2 + class230.in.data[var3] + ",";
             }
             class221.method1490((byte) 0, var2, var5);
             class115.method787((byte) -123);
@@ -235,11 +235,11 @@ public class class12 {
         if (arg1 == 0L) {
             return;
         }
-        if (class146.field2731 >= 100 && class6.field72 != 1 || class146.field2731 >= 200) {
+        if (Isaac.field2731 >= 100 && class6.field72 != 1 || Isaac.field2731 >= 200) {
             class223.method1501(class225.field4232, 12, 0, class174.field3455);
         } else if (arg0 <= -14) {
             class88 var3 = class200.method1377(arg1, (byte) 99).method614((byte) 83);
-            for (int var4 = 0; var4 < class146.field2731; var4++) {
+            for (int var4 = 0; var4 < Isaac.field2731; var4++) {
                 if (class115.field2088[var4] == arg1) {
                     class223.method1501(class166.method1142(new class88[] { var3, class1.field8 }, -3), 12, 0, class174.field3455);
                     return;
@@ -255,16 +255,16 @@ public class class12 {
                 class223.method1501(class24.field395, 12, 0, class174.field3455);
             } else {
                 class90.field1712++;
-                class23.field370[class146.field2731] = var3;
-                class115.field2088[class146.field2731] = arg1;
-                class160.field3094[class146.field2731] = 0;
-                class168.field3240[class146.field2731] = class174.field3455;
-                Packet.field845[class146.field2731] = 0;
-                class59.field1120[class146.field2731] = false;
+                class23.field370[Isaac.field2731] = var3;
+                class115.field2088[Isaac.field2731] = arg1;
+                class160.field3094[Isaac.field2731] = 0;
+                class168.field3240[Isaac.field2731] = class174.field3455;
+                Packet.field845[Isaac.field2731] = 0;
+                class59.field1120[Isaac.field2731] = false;
                 class20.field313 = class67.field1211;
-                class146.field2731++;
-                class146.out.method30((byte) -66, 82);
-                class146.out.method328(arg1, (byte) -127);
+                Isaac.field2731++;
+                Isaac.out.method30((byte) -66, 82);
+                Isaac.out.p8(arg1, (byte) -127);
             }
         }
     }
@@ -291,7 +291,7 @@ public class class12 {
             class204.field3888++;
         }
         if (arg2.field3370 == 4) {
-            class146.field2738++;
+            Isaac.field2738++;
             class98.method687(9746, 0, arg2.field3462, (short) 36, 0L, class174.field3455, arg2.field3425);
         }
         if (arg2.field3370 == 5) {

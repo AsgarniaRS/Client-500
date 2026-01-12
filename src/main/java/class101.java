@@ -78,8 +78,8 @@ public class class101 extends class136 {
         if (class88.field1647.length <= var2 || class88.field1647[var2] == null) {
             return;
         }
-        class146.out.method30((byte) -73, 49);
-        class146.out.method328(class88.field1647[var2].field1219, (byte) -123);
+        Isaac.out.method30((byte) -73, 49);
+        Isaac.out.p8(class88.field1647[var2].field1219, (byte) -123);
         class226.field4238++;
         if (arg1 > -86) {
             method706(110, false);

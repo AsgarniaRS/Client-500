@@ -62,7 +62,7 @@ public class class106 {
         field1926++;
         class128.method871((byte) 88);
         class88.field1634 = -1;
-        class146.out.pos = 0;
+        Isaac.out.pos = 0;
         Packet.field821 = -1;
         class120.field2186 = 0;
         Packet.field812 = 0;
@@ -465,7 +465,7 @@ public class class106 {
         class90.field1712 = 0;
         class164.field3139 = 0;
         class242.field4478 = 0;
-        class146.field2742 = 0;
+        Isaac.field2742 = 0;
         class4.field49 = 0;
         class131.field2450 = 0;
         class189.field3668 = 0;
@@ -620,7 +620,7 @@ public class class106 {
         class8.field118 = 0;
         class23.field362 = 0;
         class201.field3839 = 0;
-        class146.field2734 = 0;
+        Isaac.field2734 = 0;
         class229.field4292 = 0;
         class175.field3523 = 0;
         class88.field1657 = 0;
@@ -712,7 +712,7 @@ public class class106 {
         scene.field754 = 0;
         Client.field564 = 0;
         class45.field785 = 0;
-        class146.field2750 = 0;
+        Isaac.field2750 = 0;
         class126.field2325 = 0;
         class226.field4242 = 0;
         class170.field3267 = 0;
@@ -795,7 +795,7 @@ public class class106 {
         class174.field3418 = 0;
         class2.field19 = 0;
         class160.field3084 = 0;
-        class146.field2735 = 0;
+        Isaac.field2735 = 0;
         GameShell.field1563 = 0;
         class88.field1648 = 0;
         ClientStream.field2544 = 0;
@@ -880,7 +880,7 @@ public class class106 {
         class17.field264 = 0;
         class81.field1462 = 0;
         class212.field4012 = 0;
-        class146.field2732 = 0;
+        Isaac.field2732 = 0;
         class210.field3989 = 0;
         class167.field3217 = 0;
         class117.field2112 = 0;
@@ -940,7 +940,7 @@ public class class106 {
         class39.field695 = 0;
         class37.field671 = 0;
         class203.field3874 = 0;
-        class146.field2741 = 0;
+        Isaac.field2741 = 0;
         class14.field218 = 0;
         class48.field908 = 0;
         class85.field1539 = 0;
@@ -1196,7 +1196,7 @@ public class class106 {
         class113.field2044 = 0;
         class132.field2475 = 0;
         class234.field4380 = 0;
-        class146.field2738 = 0;
+        Isaac.field2738 = 0;
         class78.field1419 = 0;
         class88.field1651 = 0;
         class150.field2921 = 0;
@@ -1362,7 +1362,7 @@ public class class106 {
         class34.field585 = 0;
         class202.field3853 = 0;
         class60.field1126 = 0;
-        class146.field2748 = 0;
+        Isaac.field2748 = 0;
         class6.field90 = 0;
         class18.field285 = 0;
         class104.field1890 = 0;
@@ -1413,8 +1413,8 @@ public class class106 {
         class101.field1843 = -1;
         class114.field2063 = 0;
         class192.field3702 = 0;
-        class238.field4432 = -1;
-        class230.field4314.pos = 0;
+        class238.packetType = -1;
+        class230.in.pos = 0;
         for (int var1 = 0; var1 < class64.field1171.length; var1++) {
             class64.field1171[var1] = null;
         }
@@ -1458,7 +1458,7 @@ public class class106 {
             }
         }
         class62.field1140 = new class248();
-        class146.field2731 = 0;
+        Isaac.field2731 = 0;
         class115.field2080 = 0;
         for (int var6 = 0; var6 < class28.field465; var6++) {
             class229 var13 = method734(var6, (byte) -88);

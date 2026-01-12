@@ -210,7 +210,7 @@ public class class77 extends class145 {
         int[] var16 = new int[4];
         class72.method486(var16);
         class169 var17 = new class169(36, 32);
-        class72.method496(var17.field3249, 36, 32);
+        class72.bind(var17.field3249, 36, 32);
         class173.method1237();
         class173.method1230(16, 16);
         int var18 = var8.field2891;
@@ -228,7 +228,7 @@ public class class77 extends class145 {
             if (arg3 >= 2) {
                 var17.method1170(16777215);
             }
-            class72.method496(var17.field3249, 36, 32);
+            class72.bind(var17.field3249, 36, 32);
         }
         if (arg2 != 0) {
             var17.method1156(arg2);
@@ -236,14 +236,14 @@ public class class77 extends class145 {
         if (var8.field2869 != -1) {
             var12.method1157(0, 0);
         } else if (var8.field2886 != -1) {
-            class72.method496(var12.field3249, 36, 32);
+            class72.bind(var12.field3249, 36, 32);
             var17.method1157(0, 0);
             var17 = var12;
         }
         if (arg7 && (var8.field2854 == 1 || arg1 != 1) && arg1 != -1) {
             class180.field3573.method154(class133.method891(arg1, 100000), 0, 9, 16776960, 1);
         }
-        class72.method496(var13, var14, var15);
+        class72.bind(var13, var14, var15);
         class72.method494(var16);
         class173.method1237();
         class173.field3357 = arg4;

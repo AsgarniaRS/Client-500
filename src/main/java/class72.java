@@ -493,7 +493,7 @@ public class class72 {
     }
 
     @OriginalMember(owner = "client!gf", name = "a", descriptor = "([III)V")
-    public static final void method496(int[] arg0, int arg1, int arg2) {
+    public static final void bind(int[] arg0, int arg1, int arg2) {
         field1331 = arg0;
         field1333 = arg1;
         field1337 = arg2;

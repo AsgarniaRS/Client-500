@@ -94,8 +94,8 @@ public class class201 {
             class115.method787((byte) -127);
         } else {
             class131.method883(40, 65536);
-            CollisionMap.field1666 = class33.field556;
-            class33.field556 = null;
+            CollisionMap.field1666 = class33.stream;
+            class33.stream = null;
         }
     }
 }

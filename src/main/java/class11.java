@@ -189,7 +189,7 @@ public class class11 extends class23 {
                         return;
                     }
                 }
-                for (int var5 = 0; class146.field2731 > var5; ++var5) {
+                for (int var5 = 0; Isaac.field2731 > var5; ++var5) {
                     if (class115.field2088[var5] == arg1) {
                         class223.method1501(class166.method1142(new class88[] { class109.field1973, var3, class115.field2087 }, -3), arg0 + 20, 0, class174.field3455);
                         return;
@@ -200,11 +200,11 @@ public class class11 extends class23 {
                 } else {
                     ++class159.field3060;
                     class95.field1765[class67.field1221] = arg1;
-                    class146.field2743[class67.field1221++] = class200.method1377(arg1, (byte) 104);
+                    Isaac.field2743[class67.field1221++] = class200.method1377(arg1, (byte) 104);
                     class20.field313 = class67.field1211;
-                    class146.out.method30((byte) -48, 28);
+                    Isaac.out.method30((byte) -48, 28);
                     if (arg0 == -8) {
-                        class146.out.method328(arg1, (byte) -123);
+                        Isaac.out.p8(arg1, (byte) -123);
                     }
                 }
             }

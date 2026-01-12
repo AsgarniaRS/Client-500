@@ -82,7 +82,7 @@ public class class131 {
         if (class229.gameState == 25) {
             class113.field2047 = 0;
             class203.field3863 = 0;
-            class146.field2753 = 1;
+            Isaac.field2753 = 1;
             class143.field2654 = 1;
             class196.field3756 = 0;
         }
