@@ -113,36 +113,36 @@ public class class33 extends class136 {
     private final void method208(int arg0, Packet arg1, byte arg2) {
         field546++;
         if (arg0 == 1) {
-            this.field547 = arg1.g2(75);
+            this.field547 = arg1.g2();
         } else if (arg0 == 2) {
-            this.field542 = arg1.g2(arg2 + 34);
+            this.field542 = arg1.g2();
         } else if (arg0 == 4) {
-            this.field540 = arg1.g2(arg2 ^ 0x7B);
+            this.field540 = arg1.g2();
         } else if (arg0 == 5) {
-            this.field534 = arg1.g2(47);
+            this.field534 = arg1.g2();
         } else if (arg0 == 6) {
-            this.field545 = arg1.g2(arg2 - 36);
+            this.field545 = arg1.g2();
         } else if (arg0 == 7) {
-            this.field550 = arg1.g1(26119);
+            this.field550 = arg1.g1();
         } else if (arg0 == 8) {
-            this.field531 = arg1.g1(arg2 + 26069);
+            this.field531 = arg1.g1();
         } else if (arg0 == 9) {
             this.field527 = true;
         } else if (arg0 == 40) {
-            int var6 = arg1.g1(26119);
+            int var6 = arg1.g1();
             this.field537 = new short[var6];
             this.field549 = new short[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                this.field537[var7] = (short) arg1.g2(arg2 - 12);
-                this.field549[var7] = (short) arg1.g2(51);
+                this.field537[var7] = (short) arg1.g2();
+                this.field549[var7] = (short) arg1.g2();
             }
         } else if (arg0 == 41) {
-            int var4 = arg1.g1(26119);
+            int var4 = arg1.g1();
             this.field548 = new short[var4];
             this.field529 = new short[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field529[var5] = (short) arg1.g2(111);
-                this.field548[var5] = (short) arg1.g2(67);
+                this.field529[var5] = (short) arg1.g2();
+                this.field548[var5] = (short) arg1.g2();
             }
         }
         if (arg2 != 50) {
@@ -231,7 +231,7 @@ public class class33 extends class136 {
         }
         field543++;
         while (true) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 == 0) {
                 return;
             }

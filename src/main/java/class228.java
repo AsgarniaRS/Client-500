@@ -80,11 +80,10 @@ public abstract class class228 {
     public abstract void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5);
 
     @OriginalMember(owner = "client!uj", name = "a", descriptor = "(III)I")
-    public static final int method1525(int arg0, int arg1, int arg2) {
-        long var3 = (long) ((arg0 << 16) + arg1);
-        field4279++;
-        if (class53.field990 != null && class53.field990.field1219 == var3) {
-            return arg2 == -14013488 ? class149.field2910.pos * 99 / (class149.field2910.data.length - class53.field990.field1784) + 1 : 81;
+    public static final int transferProgress(int archiveId, int groupId) {
+        long key = (long) ((archiveId << 16) + groupId);
+        if (class53.incomingRequest != null && class53.incomingRequest.nodeId == key) {
+            return class149.incomingBuffer.pos * 99 / (class149.incomingBuffer.data.length - class53.incomingRequest.padding) + 1;
         } else {
             return 0;
         }
@@ -98,7 +97,7 @@ public abstract class class228 {
     public static final int method1526(int arg0, byte arg1, int arg2) {
         field4275++;
         if (arg1 != -77) {
-            method1525(-54, 103, 90);
+            transferProgress(-54, 103);
         }
         int var3 = 0;
         while (arg2 > 0) {

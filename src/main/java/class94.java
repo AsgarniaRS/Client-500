@@ -67,14 +67,14 @@ public class class94 extends class23 {
 
     @OriginalMember(owner = "client!ig", name = "a", descriptor = "(ILea;)Lc;")
     public static final class23 method675(int arg0, Packet arg1) {
-        arg1.g1(arg0 + 26119);
+        arg1.g1();
         ++field1756;
-        int var2 = arg1.g1(26119);
+        int var2 = arg1.g1();
         class23 var3 = class233.method1554(var2, (byte) 16);
-        var3.field363 = arg1.g1(26119);
-        int var4 = arg1.g1(26119);
+        var3.field363 = arg1.g1();
+        int var4 = arg1.g1();
         for (int var5 = arg0; var4 > var5; ++var5) {
-            int var6 = arg1.g1(arg0 ^ 26119);
+            int var6 = arg1.g1();
             var3.method11(arg1, arg0 ^ -3, var6);
         }
         var3.method123((byte) -69);
@@ -89,13 +89,13 @@ public class class94 extends class23 {
         if (~arg2 != -1) {
             if (~arg2 != -2) {
                 if (arg2 == 2) {
-                    super.field369 = ~arg0.g1(arg1 + 26122) == -2;
+                    super.field369 = ~arg0.g1() == -2;
                 }
             } else {
-                this.field1754 = arg0.g1(26119);
+                this.field1754 = arg0.g1();
             }
         } else {
-            this.field1759 = arg0.g1(26119);
+            this.field1759 = arg0.g1();
         }
         ++field1758;
     }

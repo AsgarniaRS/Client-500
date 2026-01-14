@@ -44,10 +44,10 @@ public class class67 {
     public static int field1217;
 
     @OriginalMember(owner = "client!g", name = "q", descriptor = "J")
-    public long field1219;
+    public long nodeId;
 
     @OriginalMember(owner = "client!g", name = "b", descriptor = "Lbj;")
-    public static class22 field1204;
+    public static Js5Local field1204;
 
     @OriginalMember(owner = "client!g", name = "j", descriptor = "Lg;")
     public class67 field1212;

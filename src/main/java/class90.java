@@ -35,7 +35,7 @@ public class class90 extends class67 {
     public static int field1713;
 
     @OriginalMember(owner = "client!ib", name = "y", descriptor = "Lnb;")
-    public static class144 field1705;
+    public static Js5Index field1705;
 
     @OriginalMember(owner = "client!ib", name = "A", descriptor = "Lq;")
     public static class174 field1707;
@@ -44,7 +44,7 @@ public class class90 extends class67 {
     public class222 field1714;
 
     @OriginalMember(owner = "client!ib", name = "w", descriptor = "Lbj;")
-    public class22 field1703;
+    public Js5Local field1703;
 
     @OriginalMember(owner = "client!ib", name = "B", descriptor = "Z")
     public static boolean field1708;
@@ -91,7 +91,7 @@ public class class90 extends class67 {
     @OriginalMember(owner = "client!ib", name = "a", descriptor = "([BB)V")
     public static final void method659(byte[] arg0, byte arg1) {
         Packet var2 = new Packet(arg0);
-        int var3 = var2.g2(61);
+        int var3 = var2.g2();
         int var4 = 0;
         if (arg1 > -22) {
             method657(21, 72, -49);
@@ -99,9 +99,9 @@ public class class90 extends class67 {
         while (var3 > var4) {
             class244 var5 = new class244();
             class88 var6 = var2.gjstr(-125);
-            var5.field4485 = var2.g2(56);
-            var5.field4487 = var2.g2(36);
-            var5.field4494 = var2.g1(26119);
+            var5.field4485 = var2.g2();
+            var5.field4487 = var2.g2();
+            var5.field4494 = var2.g1();
             var5.field4488 = var6.method626(47, true, 32);
             var5.field4492 = var6.method600((byte) 107, 47);
             class159.field3051.method1624(var5, 57);

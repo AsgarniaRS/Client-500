@@ -53,7 +53,7 @@ public class class43 extends class23 {
     public static int field738;
 
     @OriginalMember(owner = "client!di", name = "bb", descriptor = "Lnb;")
-    public static class144 field733;
+    public static Js5Index field733;
 
     @OriginalMember(owner = "client!di", name = "eb", descriptor = "[Llj;")
     public static class130[] field736;
@@ -87,7 +87,7 @@ public class class43 extends class23 {
     @OriginalMember(owner = "client!di", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            this.field725 = arg0.g2(46);
+            this.field725 = arg0.g2();
         }
         if (arg1 == -3) {
             ++field726;
@@ -122,14 +122,25 @@ public class class43 extends class23 {
             for (int var4 = 0; ~var3 < ~var4; ++var4) {
                 for (int var15 = 0; var15 < 4; ++var15) {
                     class17.mapKeys[var4][var15] = class230.in.g4_alt1(48);
+                    System.out.println(class17.mapKeys[var4][var15]);
                 }
             }
             int var5 = class230.in.g2_alt2(true);
+            System.out.println("var5 " + var5);
+
             boolean var6 = false;
             int var7 = class230.in.g2_alt3(255);
-            int var8 = class230.in.g2(93);
+            System.out.println("var7 " + var7);
+
+            int var8 = class230.in.g2();
+            System.out.println("var8 " + var8);
+
             int var9 = class230.in.g1_alt3(24758);
-            int var10 = class230.in.g2(42);
+            System.out.println("var9 " + var9);
+
+            int var10 = class230.in.g2();
+            System.out.println("var10 " + var10);
+
             class128.field2404 = new int[var3];
             Isaac.field2733 = new int[var3];
             class45.field774 = new byte[var3][];
@@ -159,7 +170,7 @@ public class class43 extends class23 {
             }
             class120.method822(var9, var10, var8, var5, (byte) 120, var7);
         } else {
-            int var16 = class230.in.g1(26119);
+            int var16 = class230.in.g1();
             int var17 = class230.in.method343(62);
             int var18 = class230.in.g2_alt3(255);
             class230.in.method34(8);
@@ -180,11 +191,11 @@ public class class43 extends class23 {
             class17.mapKeys = new int[var20][4];
             for (int var21 = 0; ~var20 < ~var21; ++var21) {
                 for (int var35 = 0; var35 < 4; ++var35) {
-                    class17.mapKeys[var21][var35] = class230.in.g4((byte) -58);
+                    class17.mapKeys[var21][var35] = class230.in.g4();
                 }
             }
             int var22 = class230.in.method343(66);
-            int var23 = class230.in.g2(122);
+            int var23 = class230.in.g2();
             class27.field453 = new int[var20];
             class128.field2404 = new int[var20];
             class167.field3223 = new byte[var20][];

@@ -85,9 +85,9 @@ public class class172 extends class23 {
         while (~var1 > ~class192.field3704) {
             int var2 = class139.field2581[var1];
             scene var3 = class244.field4493[var2];
-            int var4 = class230.in.g1(26119);
+            int var4 = class230.in.g1();
             if (~(var4 & 2) != -1) {
-                var4 += class230.in.g1(26119) << 8;
+                var4 += class230.in.g1() << 8;
             }
             class203.method1396(var4, var3, 16, var2);
             ++var1;
@@ -160,7 +160,7 @@ public class class172 extends class23 {
             method1223(35, -38);
         }
         if (arg2 == 0) {
-            this.field3348 = (arg0.g1(26119) << 12) / 255;
+            this.field3348 = (arg0.g1() << 12) / 255;
         }
         ++field3334;
     }

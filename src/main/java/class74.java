@@ -82,7 +82,7 @@ public class class74 extends class50 {
     }
 
     @OriginalMember(owner = "client!gh", name = "a", descriptor = "(ILnb;)V")
-    public static final void method502(int arg0, class144 arg1) {
+    public static final void method502(int arg0, Js5Index arg1) {
         if (arg0 != 2) {
             field1357 = null;
         }

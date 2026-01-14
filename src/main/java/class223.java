@@ -65,7 +65,7 @@ public class class223 {
     public static int field4214;
 
     @OriginalMember(owner = "client!ue", name = "i", descriptor = "Lbj;")
-    public static class22 field4203;
+    public static Js5Local field4203;
 
     @OriginalMember(owner = "client!ue", name = "a", descriptor = "(Li;IILi;)V")
     public static final void method1501(class88 arg0, int arg1, int arg2, class88 arg3) {
@@ -124,7 +124,7 @@ public class class223 {
                 }
             }
         }
-        if (class59.field1110 == class150.field2917) {
+        if (GZip.field1110 == class150.field2917) {
             for (class244 var16 = (class244) class159.field3051.method1612(false); var16 != null; var16 = (class244) class159.field3051.method1621(82)) {
                 int var17 = var16.field4485;
                 int var18 = var17 - class16.field239;
@@ -136,45 +136,45 @@ public class class223 {
                 int var24 = 16777215;
                 class75 var25 = null;
                 if (var23 == 0) {
-                    if (class59.field1110 == 3.0D) {
+                    if (GZip.field1110 == 3.0D) {
                         var25 = class12.field175;
                     }
-                    if (class59.field1110 == 4.0D) {
+                    if (GZip.field1110 == 4.0D) {
                         var25 = class118.field2149;
                     }
-                    if (class59.field1110 == 6.0D) {
+                    if (GZip.field1110 == 6.0D) {
                         var25 = class236.field4399;
                     }
-                    if (class59.field1110 == 8.0D) {
+                    if (GZip.field1110 == 8.0D) {
                         var25 = class196.field3764;
                     }
                 }
                 if (var23 == 1) {
-                    if (class59.field1110 == 3.0D) {
+                    if (GZip.field1110 == 3.0D) {
                         var25 = class236.field4399;
                     }
-                    if (class59.field1110 == 4.0D) {
+                    if (GZip.field1110 == 4.0D) {
                         var25 = class196.field3764;
                     }
-                    if (class59.field1110 == 6.0D) {
+                    if (GZip.field1110 == 6.0D) {
                         var25 = class167.field3207;
                     }
-                    if (class59.field1110 == 8.0D) {
+                    if (GZip.field1110 == 8.0D) {
                         var25 = class166.field3201;
                     }
                 }
                 if (var23 == 2) {
                     var24 = 16755200;
-                    if (class59.field1110 == 3.0D) {
+                    if (GZip.field1110 == 3.0D) {
                         var25 = class167.field3207;
                     }
-                    if (class59.field1110 == 4.0D) {
+                    if (GZip.field1110 == 4.0D) {
                         var25 = class166.field3201;
                     }
-                    if (class59.field1110 == 6.0D) {
+                    if (GZip.field1110 == 6.0D) {
                         var25 = class231.field4327;
                     }
-                    if (class59.field1110 == 8.0D) {
+                    if (GZip.field1110 == 8.0D) {
                         var25 = class227.field4252;
                     }
                 }

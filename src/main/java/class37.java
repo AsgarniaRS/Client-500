@@ -35,7 +35,7 @@ public class class37 {
     public static int field671;
 
     @OriginalMember(owner = "client!dc", name = "k", descriptor = "Lnb;")
-    public static class144 field672;
+    public static Js5Index field672;
 
     @OriginalMember(owner = "client!dc", name = "a", descriptor = "(IIIBI)V")
     public static final void method248(int arg0, int arg1, int arg2, byte arg3, int arg4) {
@@ -159,7 +159,7 @@ public class class37 {
     }
 
     @OriginalMember(owner = "client!dc", name = "a", descriptor = "(Lnb;BI)Lpf;")
-    public static final class169 method250(class144 arg0, byte arg1, int arg2) {
+    public static final class169 method250(Js5Index arg0, byte arg1, int arg2) {
         field670++;
         if (arg1 != 0) {
             field668 = null;

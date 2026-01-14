@@ -56,7 +56,7 @@ public class class222 {
         }
         int var3 = -67 / ((-arg1 - 53) / 53);
         if (arg0.field3375 == null || arg2 >= arg0.field3375.length || arg0.field3375[arg2] == null || arg0.field3375[arg2].method602(113).method604((byte) -53) == 0) {
-            return class116.field2105 ? class166.method1142(new class88[] { class99.field1804, class170.method1214(arg2, 115) }, -3) : null;
+            return class116.field2105 ? class166.method1142(new class88[] { IntHashTable.field1804, class170.method1214(arg2, 115) }, -3) : null;
         } else {
             return arg0.field3375[arg2];
         }

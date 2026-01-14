@@ -120,7 +120,7 @@ public class class154 {
         field2985++;
         class67 var4 = this.field2973[(int) (arg1 & (long) (this.field2974 + arg0))];
         for (this.field2983 = var4.field1220; this.field2983 != var4; this.field2983 = this.field2983.field1220) {
-            if (this.field2983.field1219 == arg1) {
+            if (this.field2983.nodeId == arg1) {
                 class67 var5 = this.field2983;
                 this.field2983 = this.field2983.field1220;
                 return var5;
@@ -268,7 +268,7 @@ public class class154 {
         }
         field2986++;
         class67 var5 = this.field2973[(int) (arg0 & (long) (this.field2974 + arg2))];
-        arg1.field1219 = arg0;
+        arg1.nodeId = arg0;
         arg1.field1212 = var5.field1212;
         arg1.field1220 = var5;
         arg1.field1212.field1220 = arg1;
@@ -305,7 +305,7 @@ public class class154 {
             this.method1050((byte) 76);
         }
         while (this.field2983 != var2) {
-            if (this.field2983.field1219 == this.field2987) {
+            if (this.field2983.nodeId == this.field2987) {
                 class67 var3 = this.field2983;
                 this.field2983 = this.field2983.field1220;
                 return var3;

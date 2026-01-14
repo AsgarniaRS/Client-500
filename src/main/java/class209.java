@@ -74,7 +74,7 @@ public class class209 {
     private long field3980;
 
     @OriginalMember(owner = "client!tb", name = "m", descriptor = "Lnb;")
-    public static class144 field3970;
+    public static Js5Index field3970;
 
     @OriginalMember(owner = "client!tb", name = "b", descriptor = "Z")
     public boolean field3959;

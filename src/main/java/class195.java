@@ -109,21 +109,21 @@ public class class195 extends class67 {
     @OriginalMember(owner = "client!rj", name = "a", descriptor = "([B)V")
     private final void method1348(byte[] arg0) {
         Packet var2 = new Packet(arg0);
-        this.field3719 = var2.g4((byte) -53);
-        this.field3731 = var2.g4((byte) -52);
-        this.field3738 = var2.g4((byte) -36);
-        this.field3732 = var2.g4((byte) -49);
+        this.field3719 = var2.g4();
+        this.field3731 = var2.g4();
+        this.field3738 = var2.g4();
+        this.field3732 = var2.g4();
         if (this.field3732 < 0) {
             this.field3732 = ~this.field3732;
             this.field3740 = true;
         }
-        int var3 = var2.g4((byte) -34);
+        int var3 = var2.g4();
         this.field3735 = new byte[var3][];
         for (int var4 = 0; var4 < var3; var4++) {
             int var5 = 0;
             int var6;
             do {
-                var6 = var2.g1(26119);
+                var6 = var2.g1();
                 var5 += var6;
             } while (var6 >= 255);
             byte[] var7 = new byte[var5];
@@ -258,7 +258,7 @@ public class class195 extends class67 {
     }
 
     @OriginalMember(owner = "client!rj", name = "a", descriptor = "(Lnb;)Z")
-    private static final boolean method1354(class144 arg0) {
+    private static final boolean method1354(Js5Index arg0) {
         if (!field3725) {
             byte[] var1 = arg0.method941((byte) 56, 0, 0);
             if (var1 == null) {
@@ -292,12 +292,12 @@ public class class195 extends class67 {
     }
 
     @OriginalMember(owner = "client!rj", name = "a", descriptor = "(Lnb;II)Lrj;")
-    public static final class195 method1356(class144 arg0, int arg1, int arg2) {
+    public static final class195 method1356(Js5Index arg0, int arg1, int arg2) {
         if (method1354(arg0)) {
             byte[] var3 = arg0.method941((byte) 56, arg2, arg1);
             return var3 == null ? null : new class195(var3);
         } else {
-            arg0.method961(arg1, arg2, (byte) 62);
+            arg0.download(arg1, arg2);
             return null;
         }
     }

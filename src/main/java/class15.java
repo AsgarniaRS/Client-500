@@ -89,7 +89,7 @@ public class class15 {
             if (var4) {
                 return;
             }
-            arg1.method30((byte) -54, arg2);
+            arg1.method30(arg2);
             arg1.p1(255, 0);
             int var6 = arg1.pos;
             arg1.p4(var3.field136);

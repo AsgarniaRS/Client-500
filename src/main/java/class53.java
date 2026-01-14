@@ -111,7 +111,7 @@ public class class53 implements KeyListener, FocusListener {
     public static int field982;
 
     @OriginalMember(owner = "client!eh", name = "x", descriptor = "Lij;")
-    public static class97 field990;
+    public static class97 incomingRequest;
 
     @OriginalMember(owner = "client!eh", name = "keyReleased", descriptor = "(Ljava/awt/event/KeyEvent;)V")
     public final synchronized void keyReleased(KeyEvent arg0) {
@@ -183,7 +183,7 @@ public class class53 implements KeyListener, FocusListener {
     }
 
     @OriginalMember(owner = "client!eh", name = "a", descriptor = "(ILnb;BZII)V")
-    public static final void method388(int arg0, class144 arg1, byte arg2, boolean arg3, int arg4, int arg5) {
+    public static final void method388(int arg0, Js5Index arg1, byte arg2, boolean arg3, int arg4, int arg5) {
         class11.field159 = arg5;
         if (arg2 > -38) {
             method391(-6, -128, -9, -47, -19, 12, 24);
@@ -478,7 +478,7 @@ public class class53 implements KeyListener, FocusListener {
         field986 = null;
         field993 = null;
         field987 = null;
-        field990 = null;
+        incomingRequest = null;
         if (arg0 != -3976) {
             field983 = null;
         }

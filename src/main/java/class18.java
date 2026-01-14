@@ -80,10 +80,10 @@ public class class18 extends class145 {
     public static class119 field299;
 
     @OriginalMember(owner = "client!bf", name = "p", descriptor = "Lbj;")
-    public static class22 field280;
+    public static Js5Local field280;
 
     @OriginalMember(owner = "client!bf", name = "K", descriptor = "Lbj;")
-    public static class22 field300;
+    public static Js5Local field300;
 
     @OriginalMember(owner = "client!bf", name = "O", descriptor = "[[Z")
     public static boolean[][] field304;
@@ -111,7 +111,7 @@ public class class18 extends class145 {
                 var9 += var10 - 1;
                 int var11 = var9 & 0x3F;
                 int var12 = var9 >> 6 & 0x3F;
-                int var13 = var6.g1(26119);
+                int var13 = var6.g1();
                 int var14 = var9 >> 12;
                 int var15 = arg5 + var11;
                 int var16 = var13 & 0x3;
@@ -267,7 +267,7 @@ public class class18 extends class145 {
     }
 
     @OriginalMember(owner = "client!bf", name = "a", descriptor = "(Lnb;Z)V")
-    public static final void method91(class144 arg0, boolean arg1) {
+    public static final void method91(Js5Index arg0, boolean arg1) {
         if (!arg1) {
             field297++;
             class34.field584 = arg0;

@@ -68,13 +68,13 @@ public class class132 extends class23 {
         if (arg2 != 0) {
             if (~arg2 != -2) {
                 if (arg2 == 3) {
-                    this.field2477 = arg0.g1(26119);
+                    this.field2477 = arg0.g1();
                 }
             } else {
-                this.field2480 = arg0.g1(26119);
+                this.field2480 = arg0.g1();
             }
         } else {
-            this.field2478 = arg0.g1(arg1 ^ -26118);
+            this.field2478 = arg0.g1();
         }
         if (arg1 != -3) {
             method890((byte) -44);
@@ -120,7 +120,7 @@ public class class132 extends class23 {
                 int var4 = class111.field2023[arg0];
                 int var5 = var4 + -2048 >> 1;
                 for (int var6 = 0; var6 < class70.field1276; ++var6) {
-                    int var7 = class22.field351[var6];
+                    int var7 = Js5Local.field351[var6];
                     int var8 = var7 + -2048 >> 1;
                     int var9;
                     if (~this.field2478 == -1) {

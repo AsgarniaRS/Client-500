@@ -118,7 +118,7 @@ public class class212 extends class23 {
                     int var16 = var14 >> 6 & 63;
                     int var17 = 63 & var14;
                     int var18 = var14 >> 12;
-                    int var19 = var12.g1(26119);
+                    int var19 = var12.g1();
                     int var20 = var19 >> 2;
                     int var21 = var19 & 3;
                     if (~arg8 == ~var18 && ~arg1 >= ~var16 && ~var16 > ~(arg1 + 8) && arg4 <= var17 && var17 < arg4 + 8) {
@@ -209,7 +209,7 @@ public class class212 extends class23 {
     }
 
     @OriginalMember(owner = "client!te", name = "a", descriptor = "(BILnb;)Z")
-    public static final boolean method1453(byte arg0, int arg1, class144 arg2) {
+    public static final boolean method1453(byte arg0, int arg1, Js5Index arg2) {
         ++field4016;
         byte[] var3 = arg2.method958(arg1, 0);
         if (arg0 != 53) {
@@ -306,11 +306,11 @@ public class class212 extends class23 {
     @OriginalMember(owner = "client!te", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            this.field4019 = arg0.g1(arg1 ^ -26118);
-            this.field4026 = new int[arg0.g1(arg1 ^ -26118)][2];
+            this.field4019 = arg0.g1();
+            this.field4026 = new int[arg0.g1()][2];
             for (int var4 = 0; ~this.field4026.length < ~var4; ++var4) {
-                this.field4026[var4][0] = arg0.g2(38);
-                this.field4026[var4][1] = arg0.g2(121);
+                this.field4026[var4][0] = arg0.g2();
+                this.field4026[var4][1] = arg0.g2();
             }
         }
         if (arg1 == -3) {

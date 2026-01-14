@@ -136,7 +136,7 @@ public class class232 extends class23 {
                 for (int var7 = 0; var7 < class70.field1276; ++var7) {
                     int var8 = 0;
                     short var9 = 0;
-                    int var10 = class22.field351[var7];
+                    int var10 = Js5Local.field351[var7];
                     int var11 = this.field4353;
                     if (var11 != 1) {
                         if (~var11 != -3) {
@@ -174,13 +174,13 @@ public class class232 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    this.field4353 = arg0.g1(arg1 ^ -26118);
+                    this.field4353 = arg0.g1();
                 }
             } else {
-                this.field4354 = arg0.g2(41);
+                this.field4354 = arg0.g2();
             }
         } else {
-            this.field4358 = arg0.g1(arg1 + 26122);
+            this.field4358 = arg0.g1();
         }
     }
 }

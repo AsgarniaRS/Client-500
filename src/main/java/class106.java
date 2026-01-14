@@ -32,13 +32,13 @@ public class class106 {
     public static int field1931;
 
     @OriginalMember(owner = "client!jh", name = "f", descriptor = "Lnb;")
-    public static class144 field1928;
+    public static Js5Index field1928;
 
     @OriginalMember(owner = "client!jh", name = "k", descriptor = "Lnb;")
-    public static class144 field1933;
+    public static Js5Index field1933;
 
     @OriginalMember(owner = "client!jh", name = "a", descriptor = "(IIZIILnb;I)V")
-    public static final void method732(int arg0, int arg1, boolean arg2, int arg3, int arg4, class144 arg5, int arg6) {
+    public static final void method732(int arg0, int arg1, boolean arg2, int arg3, int arg4, Js5Index arg5, int arg6) {
         if (arg0 != 0) {
             return;
         }
@@ -54,10 +54,10 @@ public class class106 {
 
     @OriginalMember(owner = "client!jh", name = "a", descriptor = "(I)V")
     public static final void method733(int arg0) {
-        class99.field1806 = 0L;
+        IntHashTable.field1806 = 0L;
         class219.field4145.field718 = 0;
         class147.field2767 = 0;
-        class22.field355 = true;
+        Js5Local.field355 = true;
         class175.field3522 = true;
         field1926++;
         class128.method871((byte) 88);
@@ -90,10 +90,10 @@ public class class106 {
         class132.field2465 = 0;
         class204.field3890 = 0;
         class120.field2203 = 0;
-        class144.field2686 = 0;
+        Js5Index.field2686 = 0;
         class31.field497 = 0;
         field1931 = 0;
-        class144.field2713 = 0;
+        Js5Index.field2713 = 0;
         class190.field3680 = 0;
         class17.field266 = 0;
         class119.field2179 = 0;
@@ -177,7 +177,7 @@ public class class106 {
         class149.field2848 = 0;
         class114.field2064 = 0;
         class120.field2198 = 0;
-        class144.field2693 = 0;
+        Js5Index.field2693 = 0;
         GameShell.field1568 = 0;
         class128.field2399 = 0;
         class68.field1244 = 0;
@@ -200,7 +200,7 @@ public class class106 {
         class32.field525 = 0;
         class218.field4112 = 0;
         CollisionMap.field1672 = 0;
-        class144.field2700 = 0;
+        Js5Index.field2700 = 0;
         class175.field3533 = 0;
         class111.field2030 = 0;
         class135.field2518 = 0;
@@ -215,7 +215,7 @@ public class class106 {
         class147.field2766 = 0;
         class88.field1618 = 0;
         class71.field1324 = 0;
-        class144.field2672 = 0;
+        Js5Index.field2672 = 0;
         class60.field1131 = 0;
         Client.field573 = 0;
         class88.field1630 = 0;
@@ -243,7 +243,7 @@ public class class106 {
         Packet.field819 = 0;
         Packet.field855 = 0;
         class190.field3678 = 0;
-        class144.field2681 = 0;
+        Js5Index.field2681 = 0;
         Packet.field844 = 0;
         class24.field386 = 0;
         class112.field2037 = 0;
@@ -282,7 +282,7 @@ public class class106 {
         class133.field2490 = 0;
         class31.field500 = 0;
         class234.field4383 = 0;
-        class144.field2665 = 0;
+        Js5Index.field2665 = 0;
         class232.field4351 = 0;
         class58.field1092 = 0;
         Client.field565 = 0;
@@ -290,7 +290,7 @@ public class class106 {
         class204.field3882 = 0;
         class156.field3013 = 0;
         class192.field3690 = 0;
-        class22.field339 = 0;
+        Js5Local.field339 = 0;
         class176.field3549 = 0;
         class148.field2825 = 0;
         class108.field1955 = 0;
@@ -301,7 +301,7 @@ public class class106 {
         class134.field2496 = 0;
         class88.field1625 = 0;
         class165.field3181 = 0;
-        class144.field2674 = 0;
+        Js5Index.field2674 = 0;
         class217.field4063 = 0;
         class77.field1369 = 0;
         class220.field4153 = 0;
@@ -410,7 +410,7 @@ public class class106 {
         class36.field647 = 0;
         class27.field455 = 0;
         class248.field4545 = 0;
-        class22.field336 = 0;
+        Js5Local.field336 = 0;
         class71.field1319 = 0;
         class47.field886 = 0;
         scene.field765 = 0;
@@ -427,7 +427,7 @@ public class class106 {
         class168.field3236 = 0;
         class85.field1532 = 0;
         class143.field2651 = 0;
-        class144.field2691 = 0;
+        Js5Index.field2691 = 0;
         Client.field566 = 0;
         class199.field3798 = 0;
         class155.field3005 = 0;
@@ -441,7 +441,7 @@ public class class106 {
         Packet.field868 = 0;
         class170.field3280 = 0;
         class148.field2829 = 0;
-        class22.field358 = 0;
+        Js5Local.field358 = 0;
         class218.field4092 = 0;
         class222.field4193 = 0;
         class67.field1217 = 0;
@@ -461,7 +461,7 @@ public class class106 {
         class43.field735 = 0;
         class147.field2757 = 0;
         class126.field2366 = 0;
-        class144.field2703 = 0;
+        Js5Index.field2703 = 0;
         class90.field1712 = 0;
         class164.field3139 = 0;
         class242.field4478 = 0;
@@ -470,9 +470,9 @@ public class class106 {
         class131.field2450 = 0;
         class189.field3668 = 0;
         class237.field4421 = 0;
-        class22.field337 = 0;
+        Js5Local.field337 = 0;
         class231.field4324 = 0;
-        class99.field1808 = 0;
+        IntHashTable.field1808 = 0;
         class136.field2534 = 0;
         class167.field3229 = 0;
         class148.field2786 = 0;
@@ -486,16 +486,16 @@ public class class106 {
         class241.field4466 = 0;
         class149.field2903 = 0;
         GameShell.field1587 = 0;
-        class22.field335 = 0;
+        Js5Local.field335 = 0;
         class226.field4238 = 0;
         class116.field2092 = 0;
-        class59.field1109 = 0;
+        GZip.field1109 = 0;
         class232.field4349 = 0;
         class105.field1916 = 0;
         class126.field2322 = 0;
         class205.field3914 = 0;
-        class144.field2688 = 0;
-        class59.field1111 = 0;
+        Js5Index.field2688 = 0;
+        GZip.field1111 = 0;
         class153.field2954 = 0;
         class205.field3908 = 0;
         class196.field3775 = 0;
@@ -541,7 +541,7 @@ public class class106 {
         class170.field3300 = 0;
         class92.field1719 = 0;
         Packet.field849 = 0;
-        class144.field2695 = 0;
+        Js5Index.field2695 = 0;
         class230.field4310 = 0;
         class36.field636 = 0;
         Packet.field820 = 0;
@@ -553,7 +553,7 @@ public class class106 {
         class147.field2755 = 0;
         class176.field3538 = 0;
         class244.field4486 = 0;
-        class144.field2664 = 0;
+        Js5Index.field2664 = 0;
         class64.field1162 = 0;
         class218.field4090 = 0;
         Packet.field802 = 0;
@@ -598,7 +598,7 @@ public class class106 {
         field1927 = 0;
         class160.field3079 = 0;
         class39.field680 = 0;
-        class144.field2662 = 0;
+        Js5Index.field2662 = 0;
         class142.field2617 = 0;
         class202.field3843 = 0;
         class226.field4240 = 0;
@@ -611,11 +611,11 @@ public class class106 {
         class36.field638 = 0;
         class118.field2150 = 0;
         class119.field2170 = 0;
-        class22.field350 = 0;
+        Js5Local.field350 = 0;
         Packet.field823 = 0;
         class16.field236 = 0;
         class240.field4457 = 0;
-        class22.field346 = 0;
+        Js5Local.field346 = 0;
         class128.field2400 = 0;
         class8.field118 = 0;
         class23.field362 = 0;
@@ -626,7 +626,7 @@ public class class106 {
         class88.field1657 = 0;
         class109.field1976 = 0;
         class55.field1047 = 0;
-        class22.field331 = 0;
+        Js5Local.field331 = 0;
         class135.field2523 = 0;
         class179.field3561 = 0;
         class209.field3971 = 0;
@@ -667,10 +667,10 @@ public class class106 {
         class161.field3105 = 0;
         class176.field3544 = 0;
         class53.field975 = 0;
-        class144.field2663 = 0;
+        Js5Index.field2663 = 0;
         class85.field1533 = 0;
         class129.field2417 = 0;
-        class144.field2707 = 0;
+        Js5Index.field2707 = 0;
         class93.field1736 = 0;
         class60.field1121 = 0;
         CollisionMap.field1679 = 0;
@@ -680,7 +680,7 @@ public class class106 {
         class16.field245 = 0;
         class236.field4408 = 0;
         class148.field2800 = 0;
-        class59.field1116 = 0;
+        GZip.field1116 = 0;
         class221.field4178 = 0;
         class207.field3926 = 0;
         class6.field81 = 0;
@@ -703,7 +703,7 @@ public class class106 {
         class241.field4471 = 0;
         CollisionMap.field1664 = 0;
         class236.field4403 = 0;
-        class144.field2697 = 0;
+        Js5Index.field2697 = 0;
         class45.field778 = 0;
         class199.field3799 = 0;
         class210.field3987 = 0;
@@ -732,7 +732,7 @@ public class class106 {
         class126.field2368 = 0;
         class9.field133 = 0;
         class222.field4191 = 0;
-        class144.field2694 = 0;
+        Js5Index.field2694 = 0;
         GameShell.field1589 = 0;
         class114.field2071 = 0;
         class48.field907 = 0;
@@ -780,7 +780,7 @@ public class class106 {
         class6.field80 = 0;
         class77.field1404 = 0;
         class161.field3106 = 0;
-        class144.field2687 = 0;
+        Js5Index.field2687 = 0;
         class130.field2432 = 0;
         class138.field2573 = 0;
         class109.field1983 = 0;
@@ -801,7 +801,7 @@ public class class106 {
         ClientStream.field2544 = 0;
         Client.field560 = 0;
         class88.field1607 = 0;
-        class99.field1813 = 0;
+        IntHashTable.field1813 = 0;
         class79.field1434 = 0;
         class194.field3714 = 0;
         class29.field484 = 0;
@@ -811,7 +811,7 @@ public class class106 {
         Packet.field852 = 0;
         ClientStream.field2549 = 0;
         class39.field699 = 0;
-        class144.field2673 = 0;
+        Js5Index.field2673 = 0;
         class180.field3575 = 0;
         Packet.field811 = 0;
         class186.field3632 = 0;
@@ -844,12 +844,12 @@ public class class106 {
         class88.field1624 = 0;
         class16.field244 = 0;
         class170.field3265 = 0;
-        class22.field341 = 0;
+        Js5Local.field341 = 0;
         class54.field1004 = 0;
         class42.field709 = 0;
         class204.field3893 = 0;
         GameShell.field1577 = 0;
-        class144.field2696 = 0;
+        Js5Index.field2696 = 0;
         class149.field2902 = 0;
         GameShell.field1592 = 0;
         class246.field4507 = 0;
@@ -861,7 +861,7 @@ public class class106 {
         class47.field888 = 0;
         class53.field974 = 0;
         class234.field4384 = 0;
-        class144.field2683 = 0;
+        Js5Index.field2683 = 0;
         class165.field3148 = 0;
         class109.field1994 = 0;
         class170.field3305 = 0;
@@ -970,7 +970,7 @@ public class class106 {
         class97.field1792 = 0;
         class158.field3039 = 0;
         class199.field3794 = 0;
-        class144.field2712 = 0;
+        Js5Index.field2712 = 0;
         class184.field3611 = 0;
         class191.field3688 = 0;
         class189.field3666 = 0;
@@ -989,7 +989,7 @@ public class class106 {
         class103.field1866 = 0;
         class55.field1024 = 0;
         class43.field728 = 0;
-        class144.field2711 = 0;
+        Js5Index.field2711 = 0;
         class168.field3233 = 0;
         class103.field1865 = 0;
         class209.field3979 = 0;
@@ -1005,7 +1005,7 @@ public class class106 {
         class36.field654 = 0;
         class119.field2182 = 0;
         class127.field2371 = 0;
-        class59.field1107 = 0;
+        GZip.field1107 = 0;
         class88.field1613 = 0;
         class98.field1799 = 0;
         class229.field4285 = 0;
@@ -1029,14 +1029,14 @@ public class class106 {
         GameShell.field1567 = 0;
         class201.field3835 = 0;
         class148.field2827 = 0;
-        class99.field1810 = 0;
+        IntHashTable.field1810 = 0;
         class248.field4533 = 0;
         class208.field3955 = 0;
         class230.field4311 = 0;
         class174.field3508 = 0;
-        class144.field2704 = 0;
+        Js5Index.field2704 = 0;
         class248.field4544 = 0;
-        class144.field2667 = 0;
+        Js5Index.field2667 = 0;
         Packet.field840 = 0;
         class90.field1704 = 0;
         class58.field1095 = 0;
@@ -1053,7 +1053,7 @@ public class class106 {
         class205.field3915 = 0;
         class119.field2184 = 0;
         CollisionMap.field1688 = 0;
-        class99.field1807 = 0;
+        IntHashTable.field1807 = 0;
         GameShell.field1594 = 0;
         class21.field328 = 0;
         class131.field2460 = 0;
@@ -1083,7 +1083,7 @@ public class class106 {
         class171.field3330 = 0;
         Packet.field850 = 0;
         class194.field3715 = 0;
-        class22.field338 = 0;
+        Js5Local.field338 = 0;
         class79.field1436 = 0;
         class200.field3817 = 0;
         class166.field3198 = 0;
@@ -1137,9 +1137,9 @@ public class class106 {
         class170.field3298 = 0;
         class86.field1555 = 0;
         class170.field3252 = 0;
-        class22.field345 = 0;
+        Js5Local.field345 = 0;
         class86.field1551 = 0;
-        class144.field2678 = 0;
+        Js5Index.field2678 = 0;
         class225.field4223 = 0;
         class151.field2926 = 0;
         class113.field2049 = 0;
@@ -1159,7 +1159,7 @@ public class class106 {
         class90.field1700 = 0;
         class17.field269 = 0;
         class11.field154 = 0;
-        class22.field343 = 0;
+        Js5Local.field343 = 0;
         class105.field1922 = 0;
         class241.field4468 = 0;
         Packet.field836 = 0;
@@ -1167,7 +1167,7 @@ public class class106 {
         class68.field1245 = 0;
         class212.field4018 = 0;
         Packet.field834 = 0;
-        class144.field2682 = 0;
+        Js5Index.field2682 = 0;
         class23.field375 = 0;
         class120.field2192 = 0;
         class205.field3913 = 0;
@@ -1243,14 +1243,14 @@ public class class106 {
         class205.field3904 = 0;
         class140.field2592 = 0;
         class150.field2915 = 0;
-        class144.field2669 = 0;
+        Js5Index.field2669 = 0;
         class23.field377 = 0;
         class80.field1440 = 0;
         class133.field2482 = 0;
-        class144.field2689 = 0;
+        Js5Index.field2689 = 0;
         class35.field598 = 0;
         class148.field2810 = 0;
-        class59.field1115 = 0;
+        GZip.field1115 = 0;
         class6.field92 = 0;
         class245.field4505 = 0;
         class23.field381 = 0;
@@ -1283,7 +1283,7 @@ public class class106 {
         }
         class149.field2866 = 0;
         class29.field483 = 0;
-        class22.field354 = 0;
+        Js5Local.field354 = 0;
         class105.field1913 = 0;
         class170.field3313 = 0;
         class35.field605 = 0;
@@ -1291,14 +1291,14 @@ public class class106 {
         class53.field976 = 0;
         class217.field4065 = 0;
         GameShell.field1583 = 0;
-        class144.field2671 = 0;
+        Js5Index.field2671 = 0;
         class39.field697 = 0;
         class34.field578 = 0;
         class88.field1629 = 0;
         class170.field3277 = 0;
         class226.field4244 = 0;
         class194.field3708 = 0;
-        class99.field1817 = 0;
+        IntHashTable.field1817 = 0;
         class109.field1986 = 0;
         class171.field3324 = 0;
         class109.field1998 = 0;
@@ -1329,7 +1329,7 @@ public class class106 {
         class101.field1835 = 0;
         class149.field2861 = 0;
         class109.field1981 = 0;
-        class144.field2705 = 0;
+        Js5Index.field2705 = 0;
         Ground.field942 = 0;
         class117.field2131 = 0;
         class171.field3325 = 0;
@@ -1367,7 +1367,7 @@ public class class106 {
         class18.field285 = 0;
         class104.field1890 = 0;
         class17.field275 = 0;
-        class144.field2677 = 0;
+        Js5Index.field2677 = 0;
         class192.field3699 = 0;
         class206.field3921 = 0;
         class188.field3658 = 0;
@@ -1546,7 +1546,7 @@ public class class106 {
     }
 
     @OriginalMember(owner = "client!jh", name = "a", descriptor = "(ILnb;IILnb;)Lcc;")
-    public static final class26 method737(int arg0, class144 arg1, int arg2, int arg3, class144 arg4) {
+    public static final class26 method737(int arg0, Js5Index arg1, int arg2, int arg3, Js5Index arg4) {
         field1924++;
         if (arg3 < 53) {
             return null;

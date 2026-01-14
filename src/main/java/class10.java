@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class10 {
 
     @OriginalMember(owner = "client!ai", name = "a", descriptor = "[Lbj;")
-    public static class22[] field141 = new class22[256];
+    public static Js5Local[] field141 = new Js5Local[256];
 
     @OriginalMember(owner = "client!ai", name = "h", descriptor = "Li;")
     private static class88 field148 = class208.method1425(105, "Unexpected loginserver response)3");

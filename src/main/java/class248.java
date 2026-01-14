@@ -67,7 +67,7 @@ public class class248 {
     public static class151 field4554;
 
     @OriginalMember(owner = "client!wi", name = "t", descriptor = "Lbj;")
-    public static class22 field4552;
+    public static Js5Local field4552;
 
     @OriginalMember(owner = "client!wi", name = "h", descriptor = "Lg;")
     private class67 field4540;
@@ -99,17 +99,17 @@ public class class248 {
         int var6 = arg2[arg3];
         int var7 = arg1[arg3];
         if (arg0 == 0) {
-            Isaac.out.method30((byte) -70, 200);
+            Isaac.out.method30(200);
             Isaac.out.p1(255, var5 + var5 + 3);
             class57.field1087++;
         }
         if (arg0 == 1) {
-            Isaac.out.method30((byte) -92, 199);
+            Isaac.out.method30(199);
             Isaac.out.p1(255, var5 + var5 + 17);
             class134.field2496++;
         }
         if (arg0 == 2) {
-            Isaac.out.method30((byte) -98, 159);
+            Isaac.out.method30(159);
             Isaac.out.p1(255, var5 + var5 + 3);
             class24.field383++;
         }
@@ -254,7 +254,7 @@ public class class248 {
 
     @OriginalMember(owner = "client!wi", name = "e", descriptor = "(B)V")
     public static final void method1623(byte arg0) {
-        Isaac.out.method30((byte) -80, 58);
+        Isaac.out.method30(58);
         class210.field3988++;
         field4553++;
         Isaac.out.p8(0L, (byte) -120);

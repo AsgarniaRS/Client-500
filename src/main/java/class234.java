@@ -127,7 +127,7 @@ public class class234 extends class23 {
     }
 
     @OriginalMember(owner = "client!ve", name = "a", descriptor = "(Lnb;ZII)Lrc;")
-    public static final class188 method1560(class144 arg0, boolean arg1, int arg2, int arg3) {
+    public static final class188 method1560(Js5Index arg0, boolean arg1, int arg2, int arg3) {
         ++field4386;
         if (arg1) {
             method1556(-106, -103);
@@ -142,7 +142,7 @@ public class class234 extends class23 {
         }
         ++field4384;
         if (arg2 == 0) {
-            super.field369 = ~arg0.g1(arg1 ^ -26118) == -2;
+            super.field369 = ~arg0.g1() == -2;
         }
     }
 

@@ -108,14 +108,14 @@ public class Isaac {
         }
         for (int var3 = 0; var3 < class67.field1221; var3++) {
             if (class95.field1765[var3] == arg1) {
-                class59.field1111++;
+                GZip.field1111++;
                 class67.field1221--;
                 for (int var4 = var3; var4 < class67.field1221; var4++) {
                     class95.field1765[var4] = class95.field1765[var4 + 1];
                     field2743[var4] = field2743[var4 + 1];
                 }
                 class20.field313 = class67.field1211;
-                out.method30((byte) -67, 126);
+                out.method30(126);
                 out.p8(arg1, (byte) -122);
                 return;
             }

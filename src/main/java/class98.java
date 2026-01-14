@@ -32,7 +32,7 @@ public class class98 {
     public static class163 field1801;
 
     @OriginalMember(owner = "client!j", name = "b", descriptor = "Lbj;")
-    public static class22 field1795;
+    public static Js5Local field1795;
 
     @OriginalMember(owner = "client!j", name = "a", descriptor = "(I)V")
     public static void method685(int arg0) {
@@ -45,14 +45,14 @@ public class class98 {
     }
 
     @OriginalMember(owner = "client!j", name = "a", descriptor = "(BIZZZ)Lbj;")
-    public static final class22 method686(byte arg0, int arg1, boolean arg2, boolean arg3, boolean arg4) {
+    public static final Js5Local method686(byte arg0, int arg1, boolean arg2, boolean arg3, boolean arg4) {
         field1800++;
         int var5 = -89 % ((arg0 + 40) / 39);
         class222 var6 = null;
         if (class18.field299 != null) {
             var6 = new class222(arg1, class18.field299, class246.field4506[arg1], 1000000);
         }
-        return new class22(var6, class167.field3225, arg1, arg4, arg3, arg2);
+        return new Js5Local(var6, class167.field3225, arg1, arg4, arg3, arg2);
     }
 
     @OriginalMember(owner = "client!j", name = "a", descriptor = "(IILi;SJLi;I)V")
@@ -74,7 +74,7 @@ public class class98 {
     }
 
     @OriginalMember(owner = "client!j", name = "a", descriptor = "(BLnb;)V")
-    public static final void method688(byte arg0, class144 arg1) {
+    public static final void method688(byte arg0, Js5Index arg1) {
         if (arg0 == 104) {
             class179.field3567 = arg1;
             field1802++;

@@ -47,7 +47,7 @@ public class class62 extends class23 {
     public static int field1142;
 
     @OriginalMember(owner = "client!ff", name = "ab", descriptor = "Lnb;")
-    public static class144 field1146;
+    public static Js5Index field1146;
 
     @OriginalMember(owner = "client!ff", name = "fb", descriptor = "Lp;")
     public static class163 field1151;
@@ -79,10 +79,10 @@ public class class62 extends class23 {
         }
         if (~arg2 != -1) {
             if (arg2 == 1) {
-                this.field1136 = arg0.g2(21);
+                this.field1136 = arg0.g2();
             }
         } else {
-            this.field1139 = arg0.g2(77);
+            this.field1139 = arg0.g2();
         }
         ++field1142;
     }
@@ -97,7 +97,7 @@ public class class62 extends class23 {
         if (var2 != null) {
             return var2;
         } else {
-            byte[] var3 = class59.field1114.method941((byte) 56, class118.method801(arg0, false), class142.method930(100, arg0));
+            byte[] var3 = GZip.field1114.method941((byte) 56, class118.method801(arg0, false), class142.method930(100, arg0));
             class33 var4 = new class33();
             var4.field539 = arg0;
             if (var3 != null) {

@@ -44,7 +44,7 @@ public class class202 {
     public static int field3858;
 
     @OriginalMember(owner = "client!sf", name = "i", descriptor = "Lnb;")
-    public static class144 field3851;
+    public static Js5Index field3851;
 
     @OriginalMember(owner = "client!sf", name = "l", descriptor = "Luj;")
     public static class228 field3854;

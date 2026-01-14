@@ -38,7 +38,7 @@ public class class194 extends class23 {
     private final void method1344(int arg0, boolean arg1, int arg2) {
         ++field3712;
         int var4 = class111.field2023[arg2];
-        int var5 = class22.field351[arg0];
+        int var5 = Js5Local.field351[arg0];
         float var6 = (float) Math.atan2((double) (var5 + -2048), (double) (var4 + -2048));
         if (!arg1) {
             this.method7(-71, (byte) 12);
@@ -115,7 +115,7 @@ public class class194 extends class23 {
     @OriginalMember(owner = "client!ri", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 == 0) {
-            super.field369 = ~arg0.g1(26119) == -2;
+            super.field369 = ~arg0.g1() == -2;
         }
         ++field3708;
         if (arg1 != -3) {

@@ -38,7 +38,7 @@ public class class112 {
         class101.field1844 = class25.field405;
         class184.field3603 = class17.field250;
         class232.field4350 = class139.field2587;
-        class58.field1093 = class144.field2668;
+        class58.field1093 = Js5Index.field2668;
         class4.field56 = class155.field2997;
         class151.field2941 = class104.field1895;
         class10.field143 = class68.field1234;
@@ -57,7 +57,7 @@ public class class112 {
         class151.field2928 = class115.field2075;
         class93.field1746 = class142.field2627;
         class53.field998 = class10.field150;
-        class59.field1117 = class110.field2019;
+        GZip.field1117 = class110.field2019;
         class223.field4199 = class24.field393;
         class70.field1288 = class1.field5;
         class159.field3073 = class115.field2083;
@@ -87,7 +87,7 @@ public class class112 {
         class54.field1007 = class58.field1096;
         class150.field2923 = class57.field1084;
         class70.field1272 = class64.field1170;
-        class118.field2144 = class144.field2699;
+        class118.field2144 = Js5Index.field2699;
         class10.field144 = class85.field1537;
         class65.field1174 = class205.field3917;
         class132.field2472 = class242.field4483;
@@ -119,7 +119,7 @@ public class class112 {
         class70.field1289 = class1.field5;
         class236.field4401 = class43.field734;
         class70.field1267 = class1.field5;
-        class200.field3831 = class59.field1119;
+        class200.field3831 = GZip.field1119;
         class122.field2228 = class156.field3007;
         class74.field1354 = class239.field4436;
         class34.field592 = class126.field2340;
@@ -132,7 +132,7 @@ public class class112 {
         class70.field1291 = class1.field5;
         class68.field1251 = class4.field62;
         class171.field3323 = class60.field1124;
-        class99.field1814 = class119.field2167;
+        IntHashTable.field1814 = class119.field2167;
         class227.field4261 = class23.field367;
         class1.field8 = class167.field3218;
         class6.field76 = class134.field2500;
@@ -153,7 +153,7 @@ public class class112 {
         class53.field983 = class3.field27;
         class101.field1840 = class93.field1744;
         class70.field1278 = class188.field3653;
-        class3.field38 = class22.field357;
+        class3.field38 = Js5Local.field357;
         class154.field2988 = class33.field554;
         class220.field4167 = class152.field2947;
         class62.field1152 = class6.field86;
@@ -176,7 +176,7 @@ public class class112 {
         class114.field2065 = class168.field3243;
         class114.field2066 = class14.field213;
         class175.field3524 = class212.field4025;
-        class55.field1016 = class22.field332;
+        class55.field1016 = Js5Local.field332;
         class208.field3952 = class199.field3807;
         class159.field3076 = class199.field3813;
         class196.field3765 = class154.field2972;

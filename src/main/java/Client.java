@@ -64,7 +64,7 @@ public class Client extends GameShell {
     public static int field575;
 
     @OriginalMember(owner = "client!client", name = "Z", descriptor = "Lnb;")
-    public static class144 field567;
+    public static Js5Index field567;
 
     @OriginalMember(owner = "client!client", name = "ib", descriptor = "Z")
     public static boolean field576;
@@ -148,7 +148,7 @@ public class Client extends GameShell {
         class117.field2110 = class120.field2194 = class7.field108 = class109.field1970 = new short[256];
         field574++;
         if (class47.field884 == 1) {
-            class7.field96 = class99.field1812;
+            class7.field96 = IntHashTable.field1812;
             GameShell.field1596 = class202.field3852;
             Isaac.field2752 = class70.field1265;
             class14.field219 = class202.field3855;
@@ -453,7 +453,7 @@ public class Client extends GameShell {
             CollisionMap.field1671 = class98.method686((byte) 26, 3, true, true, false);
             class12.field172 = class98.method686((byte) -107, 4, true, true, false);
             class27.field451 = class98.method686((byte) 100, 5, true, true, true);
-            class99.field1816 = class98.method686((byte) 77, 6, false, true, true);
+            IntHashTable.field1816 = class98.method686((byte) 77, 6, false, true, true);
             class233.field4367 = class98.method686((byte) 5, 7, true, true, false);
             class226.field4245 = class98.method686((byte) 32, 8, true, true, false);
             class66.field1193 = class98.method686((byte) -106, 9, true, true, false);
@@ -485,7 +485,7 @@ public class Client extends GameShell {
             int var11 = var10 + CollisionMap.field1671.method115(true) * 2 / 100;
             int var12 = var11 + class12.field172.method115(true) * 6 / 100;
             int var13 = var12 + class27.field451.method115(true) * 4 / 100;
-            int var14 = var13 + class99.field1816.method115(true) * 2 / 100;
+            int var14 = var13 + IntHashTable.field1816.method115(true) * 2 / 100;
             int var15 = var14 + class233.field4367.method115(true) * 50 / 100;
             int var16 = var15 + class226.field4245.method115(true) * 2 / 100;
             int var17 = var16 + class66.field1193.method115(true) * 2 / 100;
@@ -510,7 +510,7 @@ public class Client extends GameShell {
             if (var34 == 100) {
                 class6.field83 = 20;
                 class209.field3965 = class247.field4517;
-                class152.method1040(class99.field1816, class9.field137, 0, class226.field4245);
+                class152.method1040(IntHashTable.field1816, class9.field137, 0, class226.field4245);
                 class32.field519 = 45;
             } else {
                 if (var34 != 0) {
@@ -568,7 +568,7 @@ public class Client extends GameShell {
                 class6.field83 = 40;
             } else {
                 class6.field83 = 40;
-                class209.field3965 = class99.field1814;
+                class209.field3965 = IntHashTable.field1814;
                 class32.field519 = 65;
             }
         } else if (class32.field519 == 65) {
@@ -581,26 +581,26 @@ public class Client extends GameShell {
             class131.method883(5, 65536);
             class32.field519 = 70;
         } else if (class32.field519 == 70) {
-            class85.field1546.method964((byte) 99);
+            class85.field1546.fetchAll();
             byte var39 = 0;
             int var40 = var39 + class85.field1546.method952(false);
-            class109.field2006.method964((byte) 122);
+            class109.field2006.fetchAll();
             int var41 = var40 + class109.field2006.method952(false);
-            class190.field3674.method964((byte) 123);
+            class190.field3674.fetchAll();
             int var42 = var41 + class190.field3674.method952(false);
-            class161.field3115.method964((byte) 118);
+            class161.field3115.fetchAll();
             int var43 = var42 + class161.field3115.method952(false);
-            class248.field4552.method964((byte) 104);
+            class248.field4552.fetchAll();
             int var44 = var43 + class248.field4552.method952(false);
-            class196.field3773.method964((byte) 124);
+            class196.field3773.fetchAll();
             int var45 = var44 + class196.field3773.method952(false);
-            class17.field274.method964((byte) 106);
+            class17.field274.fetchAll();
             int var46 = var45 + class17.field274.method952(false);
-            class238.field4433.method964((byte) 123);
+            class238.field4433.fetchAll();
             int var47 = var46 + class238.field4433.method952(false);
-            class20.field321.method964((byte) 125);
+            class20.field321.fetchAll();
             int var48 = var47 + class20.field321.method952(false);
-            class203.field3872.method964((byte) 117);
+            class203.field3872.fetchAll();
             int var49 = var48 + class203.field3872.method952(false);
             if (var49 < 1000) {
                 class209.field3965 = class166.method1142(new class88[] { class49.field918, class170.method1214(var49 / 10, -96), class149.field2897 }, -3);
@@ -631,7 +631,7 @@ public class Client extends GameShell {
         } else if (class32.field519 == 80) {
             int var50 = 0;
             if (class47.field887 == null) {
-                class169 var51 = class9.method49(class59.field1106, (byte) -123, class226.field4245, class174.field3455);
+                class169 var51 = class9.method49(GZip.field1106, (byte) -123, class226.field4245, class174.field3455);
                 if (var51 != null) {
                     var51.method1180();
                     class47.field887 = var51;
@@ -650,7 +650,7 @@ public class Client extends GameShell {
                 var50++;
             }
             if (class145.field2720 == null) {
-                class145.field2720 = class239.method1584(class144.field2666, true, class226.field4245, class174.field3455);
+                class145.field2720 = class239.method1584(Js5Index.field2666, true, class226.field4245, class174.field3455);
             } else {
                 var50++;
             }
@@ -751,13 +751,13 @@ public class Client extends GameShell {
                     class6.field83 = 80;
                 }
             } else if (class32.field519 == 130) {
-                if (!CollisionMap.field1671.method964((byte) 119)) {
+                if (!CollisionMap.field1671.fetchAll()) {
                     class209.field3965 = class166.method1142(new class88[] { class71.field1322, class170.method1214(CollisionMap.field1671.method952(false) * 4 / 5, -119), class149.field2897 }, -3);
                     class6.field83 = 85;
-                } else if (!class18.field300.method964((byte) 119)) {
+                } else if (!class18.field300.fetchAll()) {
                     class209.field3965 = class166.method1142(new class88[] { class71.field1322, class170.method1214(class18.field300.method952(false) / 6 + 80, -80), class149.field2897 }, -3);
                     class6.field83 = 85;
-                } else if (class98.field1795.method964((byte) 108)) {
+                } else if (class98.field1795.fetchAll()) {
                     class6.field83 = 100;
                     class32.field519 = 140;
                     class209.field3965 = class24.field392;
@@ -767,14 +767,14 @@ public class Client extends GameShell {
                 }
             } else if (class32.field519 == 140) {
                 class27.field451.method967(false, true, -17541);
-                class99.field1816.method967(true, true, -17541);
+                IntHashTable.field1816.method967(true, true, -17541);
                 class226.field4245.method967(true, true, -17541);
                 class98.field1795.method967(true, true, -17541);
                 class9.field137.method967(true, true, -17541);
                 CollisionMap.field1671.method967(true, true, -17541);
                 class131.method883(10, 65536);
             }
-        } else if (class155.field2996.method964((byte) 105)) {
+        } else if (class155.field2996.fetchAll()) {
             class68 var59 = new class68(class66.field1193, class155.field2996, class226.field4245, 20, class245.lowMemory);
             class173.method1238(var59);
             class173.method1226(0.7F);
@@ -892,7 +892,7 @@ public class Client extends GameShell {
         this.method223(false);
         class45.method293(arg0 - 4344);
         field571++;
-        class22.method107(false);
+        Js5Local.method107(false);
         class219.method1481(2);
         class48.method366(121);
         if (arg0 != -18) {
@@ -933,7 +933,7 @@ public class Client extends GameShell {
         }
         field558++;
         if (class229.gameState != 1000) {
-            boolean var2 = class99.method689(30203);
+            boolean var2 = IntHashTable.method689(30203);
             if (!var2) {
                 this.method213(10);
             }
@@ -989,7 +989,7 @@ public class Client extends GameShell {
         class118.method802(-1);
         Packet.method354(0);
         ClientStream.method910(-81);
-        class22.method108(-6);
+        Js5Local.method108(-6);
         class119.method813((byte) -119);
         class222.method1498(-22187);
         class191.method1331(-14327);
@@ -1037,7 +1037,7 @@ public class Client extends GameShell {
         class115.method786(0);
         class148.method994(-125);
         class136.method905((byte) -3);
-        class144.method963(true);
+        Js5Index.method963(true);
         class92.method670((byte) -112);
         class82.method557();
         class210.method1438(108);
@@ -1058,8 +1058,8 @@ public class Client extends GameShell {
         class112.method771(arg0 ^ 0x65);
         class202.method1385((byte) -116);
         class97.method682((byte) 85);
-        class99.method691(false);
-        class59.method425((byte) -112);
+        IntHashTable.method691(false);
+        GZip.method425((byte) -112);
         class127.method870(true);
         class40.method268();
         class105.method729(-109);
@@ -1126,7 +1126,7 @@ public class Client extends GameShell {
         class185.method1306();
         class197.method1364();
         class239.method1582(false);
-        class215.method1465();
+        BZip2.method1465();
         class165.method1138((byte) -103);
         class78.method521((byte) 123);
         class90.method658(true);

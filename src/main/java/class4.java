@@ -163,7 +163,7 @@ public class class4 extends class136 {
     public final void method21(Packet arg0, byte arg1) {
         field49++;
         while (true) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 == 0) {
                 if (arg1 <= 20) {
                     method18((byte) 115);
@@ -180,9 +180,9 @@ public class class4 extends class136 {
     private final void method22(int arg0, Packet arg1, int arg2) {
         field52++;
         if (arg0 == 1) {
-            this.field51 = arg1.g1(26119);
+            this.field51 = arg1.g1();
         } else if (arg0 == 2) {
-            this.field53 = arg1.g4((byte) -87);
+            this.field53 = arg1.g4();
         } else if (arg0 == 5) {
             this.field57 = arg1.gjstr(-128);
         }

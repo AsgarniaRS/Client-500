@@ -41,7 +41,7 @@ public class class129 extends class136 {
     public static class130 field2418;
 
     @OriginalMember(owner = "client!li", name = "M", descriptor = "Lnb;")
-    public static class144 field2424;
+    public static Js5Index field2424;
 
     @OriginalMember(owner = "client!li", name = "R", descriptor = "Lq;")
     public static class174 field2428;
@@ -82,7 +82,7 @@ public class class129 extends class136 {
     }
 
     @OriginalMember(owner = "client!li", name = "<init>", descriptor = "(Lnb;Lnb;IZ)V")
-    public class129(class144 arg0, class144 arg1, int arg2, boolean arg3) {
+    public class129(Js5Index arg0, Js5Index arg1, int arg2, boolean arg3) {
         class248 var5 = new class248();
         int var6 = arg0.method944(128, arg2);
         this.field2423 = new class197[var6];

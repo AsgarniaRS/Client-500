@@ -82,7 +82,7 @@ public class class91 extends class67 {
     }
 
     @OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lnb;II)Lic;")
-    public static final class91 method663(class144 arg0, int arg1, int arg2) {
+    public static final class91 method663(Js5Index arg0, int arg1, int arg2) {
         byte[] var3 = arg0.method941((byte) 56, arg2, arg1);
         return var3 == null ? null : new class91(new Packet(var3));
     }
@@ -90,8 +90,8 @@ public class class91 extends class67 {
     @OriginalMember(owner = "client!ic", name = "<init>", descriptor = "(Lea;)V")
     private class91(Packet arg0) {
         arg0.pos = arg0.data.length - 3;
-        int var2 = arg0.g1(26119);
-        int var3 = arg0.g2(15);
+        int var2 = arg0.g1();
+        int var3 = arg0.g2();
         int var4 = var2 * 10 + 14;
         arg0.pos = 0;
         int var5 = 0;
@@ -105,7 +105,7 @@ public class class91 extends class67 {
         for (int var13 = 0; var13 < var2; var13++) {
             int var77 = -1;
             while (true) {
-                int var78 = arg0.g1(26119);
+                int var78 = arg0.g1();
                 if (var77 != var78) {
                     var4++;
                 }
@@ -158,7 +158,7 @@ public class class91 extends class67 {
         int var33 = 0;
         int var34 = 0;
         for (int var35 = 0; var35 < var6; var35++) {
-            var34 = var34 + arg0.g1(26119) & 0x7F;
+            var34 = var34 + arg0.g1() & 0x7F;
             if (var34 == 0 || var34 == 32) {
                 var12++;
             } else if (var34 == 1) {

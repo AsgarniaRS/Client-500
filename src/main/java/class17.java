@@ -85,7 +85,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static int field276;
 
     @OriginalMember(owner = "client!be", name = "y", descriptor = "Lbj;")
-    public static class22 field274;
+    public static Js5Local field274;
 
     @OriginalMember(owner = "client!be", name = "B", descriptor = "Z")
     public static boolean field277;
@@ -196,19 +196,19 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
                 var4 = true;
                 if (arg2 == 1) {
                     scene.field770++;
-                    Isaac.out.method30((byte) -31, 65);
+                    Isaac.out.method30(65);
                     Isaac.out.method314(class174.field3430[var5], (byte) 71);
                 } else if (arg2 == 4) {
                     class28.field463++;
-                    Isaac.out.method30((byte) -51, 214);
+                    Isaac.out.method30(214);
                     Isaac.out.method331(class174.field3430[var5], 18975);
                 } else if (arg2 == 6) {
-                    Isaac.out.method30((byte) -125, 161);
+                    Isaac.out.method30(161);
                     Isaac.out.method331(class174.field3430[var5], 18975);
                     class28.field462++;
                 } else if (arg2 == 7) {
                     class209.field3975++;
-                    Isaac.out.method30((byte) -69, 47);
+                    Isaac.out.method30(47);
                     Isaac.out.method344(class174.field3430[var5], (byte) -51);
                 }
                 break;

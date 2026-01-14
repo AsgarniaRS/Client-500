@@ -59,7 +59,7 @@ public class class39 extends class67 {
     public static int field699;
 
     @OriginalMember(owner = "client!de", name = "B", descriptor = "Lnb;")
-    public static class144 field684;
+    public static Js5Index field684;
 
     @OriginalMember(owner = "client!de", name = "t", descriptor = "Lq;")
     public class174 field676;

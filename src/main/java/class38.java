@@ -40,7 +40,7 @@ public class class38 {
     }
 
     @OriginalMember(owner = "client!dd", name = "a", descriptor = "(Lnb;II)Ldd;")
-    public static final class38 method252(class144 arg0, int arg1, int arg2) {
+    public static final class38 method252(Js5Index arg0, int arg1, int arg2) {
         byte[] var3 = arg0.method941((byte) 56, arg2, arg1);
         return var3 == null ? null : new class38(new Packet(var3));
     }
@@ -84,15 +84,15 @@ public class class38 {
     @OriginalMember(owner = "client!dd", name = "<init>", descriptor = "(Lea;)V")
     private class38(Packet arg0) {
         for (int var2 = 0; var2 < 10; var2++) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 != 0) {
                 arg0.pos--;
                 this.field673[var2] = new class123();
                 this.field673[var2].method836(arg0);
             }
         }
-        this.field674 = arg0.g2(98);
-        this.field675 = arg0.g2(45);
+        this.field674 = arg0.g2();
+        this.field675 = arg0.g2();
     }
 
     @OriginalMember(owner = "client!dd", name = "<init>", descriptor = "()V")

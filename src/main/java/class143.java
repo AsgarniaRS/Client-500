@@ -212,7 +212,7 @@ public class class143 extends class67 {
                         if (var22) {
                             class80.method532(class226.field4241 - var11, 2, class172.field3341 - var12, var10);
                         }
-                        if (class179.field3570 != null && class179.field3570 != var10 && var23 && class59.method423(class80.method530(arg2 ^ 0xCB722A3F, var10), -30)) {
+                        if (class179.field3570 != null && class179.field3570 != var10 && var23 && GZip.method423(class80.method530(arg2 ^ 0xCB722A3F, var10), -30)) {
                             class122.field2219 = var10;
                         }
                         if (class49.field923 == var10) {
@@ -248,8 +248,8 @@ public class class143 extends class67 {
                                 class90.field1707 = var10;
                                 if (var22) {
                                     if (class247.field4513[82] && class67.field1208 > 0) {
-                                        int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / class59.field1110) - class157.field3035;
-                                        int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / class59.field1110) + class126.field2332 + class16.field239;
+                                        int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / GZip.field1110) - class157.field3035;
+                                        int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / GZip.field1110) + class126.field2332 + class16.field239;
                                         class88 var30 = class166.method1142(new class88[] { class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79) }, -3);
                                         var30.method610(-5446);
                                         class97.method684(var30, arg2 - 29);
@@ -512,7 +512,7 @@ public class class143 extends class67 {
             int var13 = (Isaac.field2733[var5] & 0xFF) * 64 - class190.field3681;
             if (var12 != null) {
                 class219.method1481(2);
-                class144.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
+                Js5Index.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
             }
         }
         for (int var6 = 0; var6 < var4; var6++) {
@@ -551,7 +551,7 @@ public class class143 extends class67 {
             field2661 = null;
         }
         field2660++;
-        return new class103(arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method304(-29629), arg1.g1(26119));
+        return new class103(arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method304(-29629), arg1.g1());
     }
 
     @OriginalMember(owner = "client!na", name = "a", descriptor = "([BB)V")

@@ -11,10 +11,10 @@ public class class151 {
     private class154 field2939 = new class154(256);
 
     @OriginalMember(owner = "client!nj", name = "o", descriptor = "Lnb;")
-    private class144 field2938;
+    private Js5Index field2938;
 
     @OriginalMember(owner = "client!nj", name = "h", descriptor = "Lnb;")
-    private class144 field2931;
+    private Js5Index field2931;
 
     @OriginalMember(owner = "client!nj", name = "k", descriptor = "I")
     public static int field2934 = -1;
@@ -196,7 +196,7 @@ public class class151 {
     }
 
     @OriginalMember(owner = "client!nj", name = "<init>", descriptor = "(Lnb;Lnb;)V")
-    public class151(class144 arg0, class144 arg1) {
+    public class151(Js5Index arg0, Js5Index arg1) {
         this.field2938 = arg1;
         this.field2931 = arg0;
     }

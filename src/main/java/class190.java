@@ -41,7 +41,7 @@ public class class190 {
     public static ClientStream field3682;
 
     @OriginalMember(owner = "client!re", name = "f", descriptor = "Lbj;")
-    public static class22 field3674;
+    public static Js5Local field3674;
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "[I")
     public static int[] field3669;
@@ -75,7 +75,7 @@ public class class190 {
     }
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(IILnb;B)[Lrh;")
-    public static final class193[] method1324(int arg0, int arg1, class144 arg2, byte arg3) {
+    public static final class193[] method1324(int arg0, int arg1, Js5Index arg2, byte arg3) {
         field3671++;
         if (class47.method358(854010832, arg2, arg0, arg1)) {
             if (arg3 != 24) {
@@ -102,14 +102,14 @@ public class class190 {
     }
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(Lnb;I)V")
-    public static final void method1326(class144 arg0, int arg1) {
+    public static final void method1326(Js5Index arg0, int arg1) {
         Client.field567 = arg0;
         field3680++;
         int var2 = -38 % ((55 - arg1) / 40);
     }
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(IBLnb;I)[Llj;")
-    public static final class130[] method1327(int arg0, byte arg1, class144 arg2, int arg3) {
+    public static final class130[] method1327(int arg0, byte arg1, Js5Index arg2, int arg3) {
         if (arg1 > -23) {
             field3675 = null;
         }

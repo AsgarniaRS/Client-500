@@ -48,10 +48,10 @@ public class class147 {
     public static int field2768;
 
     @OriginalMember(owner = "client!ne", name = "i", descriptor = "Lbj;")
-    public static class22 field2762;
+    public static Js5Local field2762;
 
     @OriginalMember(owner = "client!ne", name = "a", descriptor = "(ILi;Li;Lnb;)[Lrh;")
-    public static final class193[] method983(int arg0, class88 arg1, class88 arg2, class144 arg3) {
+    public static final class193[] method983(int arg0, class88 arg1, class88 arg2, Js5Index arg3) {
         field2755++;
         int var4 = arg3.method966(arg1, (byte) -3);
         if (arg0 != 2) {

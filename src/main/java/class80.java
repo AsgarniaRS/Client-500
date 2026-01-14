@@ -64,9 +64,9 @@ public class class80 extends class23 {
         }
         class214.clientStream = arg2;
         class147.sendLoginLogoutPacket((byte) -118, arg0);
-        class149.field2910 = null;
+        class149.incomingBuffer = null;
         class28.field473 = 0;
-        class53.field990 = null;
+        class53.incomingRequest = null;
         class78.field1408.pos = 0;
         field1450++;
         while (true) {
@@ -101,12 +101,12 @@ public class class80 extends class23 {
                         }
                     }
                     class138.field2561.method1390(var4, (byte) 43);
-                    class205.field3909.method1054(var4.field1219, var4, -1);
+                    class205.field3909.method1054(var4.nodeId, var4, -1);
                     class220.field4159++;
                     class231.field4335--;
                 }
             }
-            class241.field4467.method1054(var3.field1219, var3, -1);
+            class241.field4467.method1054(var3.nodeId, var3, -1);
             class203.field3878--;
             class208.field3945++;
         }
@@ -199,7 +199,7 @@ public class class80 extends class23 {
             method531(-88);
         }
         field1449++;
-        return class22.field351;
+        return Js5Local.field351;
     }
 
     @OriginalMember(owner = "client!hc", name = "b", descriptor = "(IBI)I")

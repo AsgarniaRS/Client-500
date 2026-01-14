@@ -113,7 +113,7 @@ public class CollisionMap {
     public static class169 field1676;
 
     @OriginalMember(owner = "client!ia", name = "j", descriptor = "Lbj;")
-    public static class22 field1671;
+    public static Js5Local field1671;
 
     @OriginalMember(owner = "client!ia", name = "L", descriptor = "[I")
     public static int[] field1699;

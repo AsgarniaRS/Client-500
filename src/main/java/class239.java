@@ -220,7 +220,7 @@ public class class239 {
     }
 
     @OriginalMember(owner = "client!w", name = "a", descriptor = "(Li;ZLnb;Li;)[Lrc;")
-    public static final class188[] method1584(class88 arg0, boolean arg1, class144 arg2, class88 arg3) {
+    public static final class188[] method1584(class88 arg0, boolean arg1, Js5Index arg2, class88 arg3) {
         int var4 = arg2.method966(arg0, (byte) -3);
         if (!arg1) {
             method1585(-86, null, 15, 1);
@@ -231,7 +231,7 @@ public class class239 {
     }
 
     @OriginalMember(owner = "client!w", name = "a", descriptor = "(ILnb;II)[Lpf;")
-    public static final class169[] method1585(int arg0, class144 arg1, int arg2, int arg3) {
+    public static final class169[] method1585(int arg0, Js5Index arg1, int arg2, int arg3) {
         field4447++;
         if (arg3 != 1) {
             field4436 = null;

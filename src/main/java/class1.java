@@ -41,7 +41,7 @@ public abstract class class1 {
     public abstract byte[] method1(byte arg0);
 
     @OriginalMember(owner = "client!a", name = "a", descriptor = "(Li;BLnb;Li;)[Llj;")
-    public static final class130[] method2(class88 arg0, byte arg1, class144 arg2, class88 arg3) {
+    public static final class130[] method2(class88 arg0, byte arg1, Js5Index arg2, class88 arg3) {
         field1++;
         if (arg1 <= 123) {
             field10 = -98L;

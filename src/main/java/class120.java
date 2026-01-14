@@ -82,25 +82,25 @@ public class class120 extends class23 {
                         if (~arg2 != -5) {
                             if (arg2 != 5) {
                                 if (~arg2 == -7) {
-                                    this.field2185 = arg0.g1(26119);
+                                    this.field2185 = arg0.g1();
                                 }
                             } else {
-                                this.field2204 = arg0.g1(26119);
+                                this.field2204 = arg0.g1();
                             }
                         } else {
-                            this.field2206 = arg0.g1(26119);
+                            this.field2206 = arg0.g1();
                         }
                     } else {
-                        this.field2189 = arg0.g1(26119);
+                        this.field2189 = arg0.g1();
                     }
                 } else {
-                    this.field2199 = arg0.g2(119);
+                    this.field2199 = arg0.g2();
                 }
             } else {
-                this.field2202 = arg0.g1(arg1 ^ -26118);
+                this.field2202 = arg0.g1();
             }
         } else {
-            this.field2204 = this.field2185 = arg0.g1(26119);
+            this.field2204 = this.field2185 = arg0.g1();
         }
         if (arg1 != -3) {
             this.method823(-66);
@@ -123,7 +123,7 @@ public class class120 extends class23 {
                 class102.field1852 = Integer.MAX_VALUE;
                 class199.field3811 = Integer.MAX_VALUE;
                 class132.field2474 = Integer.MAX_VALUE;
-                int var8 = class22.field351[var7] * this.field2204 + 2048;
+                int var8 = Js5Local.field351[var7] * this.field2204 + 2048;
                 int var9 = var8 >> 12;
                 int var10 = var9 - -1;
                 for (int var11 = var5 + -1; ~var6 <= ~var11; ++var11) {

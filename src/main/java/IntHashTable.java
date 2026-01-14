@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ja")
-public class class99 {
+public class IntHashTable {
 
     @OriginalMember(owner = "client!ja", name = "h", descriptor = "[I")
     private int[] field1811;
@@ -45,7 +45,7 @@ public class class99 {
     public static int field1817;
 
     @OriginalMember(owner = "client!ja", name = "m", descriptor = "Lbj;")
-    public static class22 field1816;
+    public static Js5Local field1816;
 
     @OriginalMember(owner = "client!ja", name = "a", descriptor = "(I)Z")
     public static final boolean method689(int arg0) {
@@ -73,9 +73,9 @@ public class class99 {
                     class97 var4 = (class97) class241.field4467.method1049(0);
                     Packet var5 = new Packet(4);
                     var5.p1(255, 1);
-                    var5.p3((int) var4.field1219);
+                    var5.p3((int) var4.nodeId);
                     class214.clientStream.write(var5.data, 0, 4);
-                    class151.field2924.method1054(var4.field1219, var4, -1);
+                    class151.field2924.method1054(var4.nodeId, var4, -1);
                     class208.field3945--;
                     class203.field3878++;
                 }
@@ -83,10 +83,10 @@ public class class99 {
                     class97 var6 = (class97) class138.field2561.method1383(13753);
                     Packet var7 = new Packet(4);
                     var7.p1(arg0 ^ 0x7504, 0);
-                    var7.p3((int) var6.field1219);
+                    var7.p3((int) var6.nodeId);
                     class214.clientStream.write(var7.data, 0, 4);
                     var6.method909(arg0 ^ 0x753B);
-                    class108.field1953.method1054(var6.field1219, var6, arg0 ^ 0xFFFF8A04);
+                    class108.field1953.method1054(var6.nodeId, var6, arg0 ^ 0xFFFF8A04);
                     class231.field4335++;
                     class220.field4159--;
                 }
@@ -100,7 +100,7 @@ public class class99 {
                     }
                     byte var10 = 0;
                     class150.field2918 = 0;
-                    if (class53.field990 == null) {
+                    if (class53.incomingRequest == null) {
                         var10 = 8;
                     } else if (class28.field473 == 0) {
                         var10 = 1;
@@ -120,13 +120,13 @@ public class class99 {
                         if (var10 > class78.field1408.pos) {
                             break;
                         }
-                        if (class53.field990 == null) {
+                        if (class53.incomingRequest == null) {
                             class78.field1408.pos = 0;
-                            int var13 = class78.field1408.g1(26119);
-                            int var14 = class78.field1408.g2(arg0 - 30148);
+                            int var13 = class78.field1408.g1();
+                            int var14 = class78.field1408.g2();
                             long var15 = (long) ((var13 << 16) + var14);
-                            int var17 = class78.field1408.g1(26119);
-                            int var18 = class78.field1408.g4((byte) -76);
+                            int var17 = class78.field1408.g1();
+                            int var18 = class78.field1408.g4();
                             class97 var19 = (class97) class151.field2924.method1051(-1, var15);
                             class138.field2569 = true;
                             if (var19 == null) {
@@ -136,11 +136,11 @@ public class class99 {
                             if (var19 == null) {
                                 throw new IOException();
                             }
-                            class53.field990 = var19;
+                            class53.incomingRequest = var19;
                             int var20 = var17 == 0 ? 5 : 9;
-                            class149.field2910 = new Packet(var18 + var20 + class53.field990.field1784);
-                            class149.field2910.p1(255, var17);
-                            class149.field2910.p4(var18);
+                            class149.incomingBuffer = new Packet(var18 + var20 + class53.incomingRequest.padding);
+                            class149.incomingBuffer.p1(255, var17);
+                            class149.incomingBuffer.p4(var18);
                             class78.field1408.pos = 0;
                             class28.field473 = 8;
                         } else if (class28.field473 == 0) {
@@ -148,43 +148,43 @@ public class class99 {
                                 class78.field1408.pos = 0;
                                 class28.field473 = 1;
                             } else {
-                                class53.field990 = null;
+                                class53.incomingRequest = null;
                             }
                         }
                     } else {
-                        int var21 = class149.field2910.data.length - class53.field990.field1784;
+                        int var21 = class149.incomingBuffer.data.length - class53.incomingRequest.padding;
                         int var22 = 512 - class28.field473;
-                        if (var22 > var21 - class149.field2910.pos) {
-                            var22 = var21 - class149.field2910.pos;
+                        if (var22 > var21 - class149.incomingBuffer.pos) {
+                            var22 = var21 - class149.incomingBuffer.pos;
                         }
                         if (var9 < var22) {
                             var22 = var9;
                         }
-                        class214.clientStream.read(class149.field2910.pos, class149.field2910.data, (byte) -93, var22);
+                        class214.clientStream.read(class149.incomingBuffer.pos, class149.incomingBuffer.data, (byte) -93, var22);
                         if (class18.field294 != 0) {
                             for (int var23 = 0; var23 < var22; var23++) {
-                                class149.field2910.data[class149.field2910.pos + var23] = (byte) class180.method1287(class149.field2910.data[class149.field2910.pos + var23], class18.field294);
+                                class149.incomingBuffer.data[class149.incomingBuffer.pos + var23] = (byte) class180.method1287(class149.incomingBuffer.data[class149.incomingBuffer.pos + var23], class18.field294);
                             }
                         }
-                        class149.field2910.pos += var22;
+                        class149.incomingBuffer.pos += var22;
                         class28.field473 += var22;
-                        if (class149.field2910.pos == var21) {
-                            if (class53.field990.field1219 == 16711935L) {
-                                class79.field1427 = class149.field2910;
+                        if (class149.incomingBuffer.pos == var21) {
+                            if (class53.incomingRequest.nodeId == 16711935L) {
+                                class79.field1427 = class149.incomingBuffer;
                                 for (int var24 = 0; var24 < 256; var24++) {
-                                    class22 var25 = class10.field141[var24];
+                                    Js5Local var25 = class10.field141[var24];
                                     if (var25 != null) {
                                         class79.field1427.pos = var24 * 8 + 5;
-                                        int var26 = class79.field1427.g4((byte) -128);
-                                        int var27 = class79.field1427.g4((byte) -128);
+                                        int var26 = class79.field1427.g4();
+                                        int var27 = class79.field1427.g4();
                                         var25.method109(var26, 56, var27);
                                     }
                                 }
                             } else {
                                 class92.field1733.reset();
-                                class92.field1733.update(class149.field2910.data, 0, var21);
+                                class92.field1733.update(class149.incomingBuffer.data, 0, var21);
                                 int var28 = (int) class92.field1733.getValue();
-                                if (class53.field990.field1782 != var28) {
+                                if (class53.incomingRequest.field1782 != var28) {
                                     try {
                                         class214.clientStream.close(true);
                                     } catch (Exception var30) {
@@ -196,17 +196,17 @@ public class class99 {
                                 }
                                 class151.field2940 = 0;
                                 class77.ioErrorCount = 0;
-                                class53.field990.field1789.method105((int) (class53.field990.field1219 & 0xFFFFL), class149.field2910.data, class138.field2569, 104, (class53.field990.field1219 & 0xFF0000L) == 16711680L);
+                                class53.incomingRequest.field1789.method105((int) (class53.incomingRequest.nodeId & 0xFFFFL), class149.incomingBuffer.data, class138.field2569, 104, (class53.incomingRequest.nodeId & 0xFF0000L) == 16711680L);
                             }
-                            class53.field990.method460(true);
+                            class53.incomingRequest.method460(true);
                             class28.field473 = 0;
                             if (class138.field2569) {
                                 class203.field3878--;
                             } else {
                                 class231.field4335--;
                             }
-                            class53.field990 = null;
-                            class149.field2910 = null;
+                            class53.incomingRequest = null;
+                            class149.incomingBuffer = null;
                         } else {
                             if (class28.field473 != 512) {
                                 break;
@@ -278,7 +278,7 @@ public class class99 {
                         class200.method1375(var11, -876775538);
                     }
                     if (class122.field2219 != null && GameShell.method583(0, class179.field3570) != null) {
-                        Isaac.out.method30((byte) -74, 135);
+                        Isaac.out.method30(135);
                         class42.field709++;
                         Isaac.out.method314(class179.field3570.field3408, (byte) 72);
                         Isaac.out.method316(class179.field3570.field3425, 15728);
@@ -310,7 +310,7 @@ public class class99 {
     }
 
     @OriginalMember(owner = "client!ja", name = "<init>", descriptor = "([I)V")
-    public class99(int[] arg0) {
+    public IntHashTable(int[] arg0) {
         int var2;
         for (var2 = 1; var2 <= arg0.length + (arg0.length >> 1); var2 <<= 0x1) {
         }
@@ -507,7 +507,7 @@ public class class99 {
     }
 
     @OriginalMember(owner = "client!ja", name = "a", descriptor = "(II)I")
-    public final int method693(int arg0, int arg1) {
+    public final int get(int arg0, int arg1) {
         if (arg1 != 3598) {
             return -31;
         }

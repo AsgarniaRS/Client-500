@@ -314,12 +314,12 @@ public class scene extends class218 {
     @OriginalMember(owner = "client!dj", name = "a", descriptor = "(Lea;Z)V")
     public final void setAppearance(Packet arg0, boolean arg1) {
         arg0.pos = 0;
-        int var3 = arg0.g1(26119);
+        int var3 = arg0.g1();
         ++field746;
         if (arg1) {
             if ((var3 & 2) == 2) {
-                this.field769 = (short) (arg0.g1(26119) << 2);
-                this.field761 = (short) (arg0.g1(26119) << 2);
+                this.field769 = (short) (arg0.g1() << 2);
+                this.field761 = (short) (arg0.g1() << 2);
             } else {
                 this.field761 = 0;
                 this.field769 = 0;
@@ -333,14 +333,14 @@ public class scene extends class218 {
             this.field750 = arg0.method324(63);
             this.field752 = 0;
             for (int var8 = 0; ~var8 > -13; ++var8) {
-                int var9 = arg0.g1(26119);
+                int var9 = arg0.g1();
                 if (var9 == 0) {
                     var7[var8] = 0;
                 } else {
-                    int var10 = arg0.g1(26119);
+                    int var10 = arg0.g1();
                     int var11 = (var9 << 8) + var10;
                     if (~var8 == -1 && var11 == 65535) {
-                        var6 = arg0.g2(43);
+                        var6 = arg0.g2();
                         break;
                     }
                     if (~var11 <= -32769) {
@@ -357,47 +357,47 @@ public class scene extends class218 {
             }
             int[] var12 = new int[5];
             for (int var13 = 0; var13 < 5; ++var13) {
-                int var14 = arg0.g1(26119);
+                int var14 = arg0.g1();
                 if (var14 < 0 || var14 >= class7.field96[var13].length) {
                     var14 = 0;
                 }
                 var12[var13] = var14;
             }
-            super.field4107 = arg0.g2(93);
+            super.field4107 = arg0.g2();
             if (super.field4107 == 65535) {
                 super.field4107 = -1;
             }
-            super.field4093 = arg0.g2(112);
+            super.field4093 = arg0.g2();
             if (super.field4093 == 65535) {
                 super.field4093 = -1;
             }
             super.field4130 = super.field4093;
-            super.field4094 = arg0.g2(125);
+            super.field4094 = arg0.g2();
             if (~super.field4094 == -65536) {
                 super.field4094 = -1;
             }
-            super.field4125 = arg0.g2(22);
+            super.field4125 = arg0.g2();
             if (~super.field4125 == -65536) {
                 super.field4125 = -1;
             }
-            super.field4086 = arg0.g2(47);
+            super.field4086 = arg0.g2();
             if (~super.field4086 == -65536) {
                 super.field4086 = -1;
             }
-            super.field4124 = arg0.g2(125);
+            super.field4124 = arg0.g2();
             if (~super.field4124 == -65536) {
                 super.field4124 = -1;
             }
-            super.field4106 = arg0.g2(71);
+            super.field4106 = arg0.g2();
             if (~super.field4106 == -65536) {
                 super.field4106 = -1;
             }
             this.name = class200.method1377(arg0.method321(1054632416), (byte) 61).method614((byte) 83);
-            this.combatLevel = arg0.g1(26119);
+            this.combatLevel = arg0.g1();
             if (!var5) {
                 this.field749 = 0;
             } else {
-                this.field749 = arg0.g2(13);
+                this.field749 = arg0.g2();
             }
             if (this.field768 == null) {
                 this.field768 = new class209();

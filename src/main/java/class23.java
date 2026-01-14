@@ -86,25 +86,25 @@ public abstract class class23 extends class67 {
     @OriginalMember(owner = "client!c", name = "a", descriptor = "([BI)[B")
     public static final byte[] method119(byte[] arg0, int arg1) {
         Packet var2 = new Packet(arg0);
-        int var3 = var2.g1(26119);
-        int var4 = var2.g4((byte) -68);
+        int var3 = var2.g1();
+        int var4 = var2.g4();
         field371++;
-        if (var4 < 0 || class159.field3075 != 0 && var4 > class159.field3075) {
+        if (var4 < 0 || class159.maxsize != 0 && var4 > class159.maxsize) {
             throw new RuntimeException();
         } else if (~var3 == arg1) {
             byte[] var5 = new byte[var4];
             var2.method307(false, var4, var5, 0);
             return var5;
         } else {
-            int var6 = var2.g4((byte) -99);
-            if (var6 < 0 || class159.field3075 != 0 && class159.field3075 < var6) {
+            int var6 = var2.g4();
+            if (var6 < 0 || class159.maxsize != 0 && class159.maxsize < var6) {
                 throw new RuntimeException();
             }
             byte[] var7 = new byte[var6];
             if (var3 == 1) {
-                class215.method1460(var7, var6, arg0, var4, 9);
+                BZip2.decompress(var7, var6, arg0, var4, 9);
             } else {
-                class153.field2960.method424(var2, false, var7);
+                class153.gzip.decompress(var2, false, var7);
             }
             return var7;
         }

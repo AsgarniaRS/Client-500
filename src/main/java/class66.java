@@ -51,10 +51,10 @@ public class class66 extends Canvas {
     public static int field1202;
 
     @OriginalMember(owner = "client!fj", name = "m", descriptor = "Lnb;")
-    public static class144 field1199;
+    public static Js5Index field1199;
 
     @OriginalMember(owner = "client!fj", name = "g", descriptor = "Lbj;")
-    public static class22 field1193;
+    public static Js5Local field1193;
 
     @OriginalMember(owner = "client!fj", name = "a", descriptor = "(Ljava/awt/event/KeyEvent;I)I")
     public static final int method455(KeyEvent arg0, int arg1) {

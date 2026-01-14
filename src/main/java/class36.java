@@ -123,7 +123,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
     public static long field631;
 
     @OriginalMember(owner = "client!db", name = "B", descriptor = "Lnb;")
-    public static class144 field633;
+    public static Js5Index field633;
 
     @OriginalMember(owner = "client!db", name = "D", descriptor = "Lq;")
     public static class174 field635;
@@ -278,7 +278,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
         var4.field1714 = arg3;
         var4.field1706 = arg0;
         var4.field1702 = 0;
-        var4.field1219 = (long) arg2;
+        var4.nodeId = (long) arg2;
         class227.field4254.method1624(var4, 126);
         Isaac.method979((byte) -128);
     }

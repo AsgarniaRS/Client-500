@@ -142,7 +142,7 @@ public abstract class class50 {
             if (class131.field2462) {
                 class1.method5(31818);
             } else {
-                class53.method388(0, class99.field1816, (byte) -78, false, class86.field1552, 255);
+                class53.method388(0, IntHashTable.field1816, (byte) -78, false, class86.field1552, 255);
             }
         }
         if (class229.gameState == 5) {
@@ -220,7 +220,7 @@ public abstract class class50 {
                     class34.method227((byte) -37, class70.field1288, class70.field1290, class37.field662);
                     return;
                 }
-                class34.method227((byte) -43, class70.field1306, class70.field1275, class59.field1117);
+                class34.method227((byte) -43, class70.field1306, class70.field1275, GZip.field1117);
                 class131.method883(20, 65536);
                 return;
             }
@@ -272,7 +272,7 @@ public abstract class class50 {
                         class34.method227((byte) -70, class70.field1288, class70.field1290, class37.field662);
                         return;
                     }
-                    class34.method227((byte) 16, class70.field1306, class70.field1275, class59.field1117);
+                    class34.method227((byte) 16, class70.field1306, class70.field1275, GZip.field1117);
                     class131.method883(20, 65536);
                     return;
                 }

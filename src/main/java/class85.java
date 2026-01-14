@@ -53,10 +53,10 @@ public class class85 extends class23 {
     public static int field1548;
 
     @OriginalMember(owner = "client!hh", name = "fb", descriptor = "Lnb;")
-    public static class144 field1545;
+    public static Js5Index field1545;
 
     @OriginalMember(owner = "client!hh", name = "gb", descriptor = "Lbj;")
-    public static class22 field1546;
+    public static Js5Local field1546;
 
     @OriginalMember(owner = "client!hh", name = "bb", descriptor = "[I")
     public static int[] field1541;
@@ -160,7 +160,7 @@ public class class85 extends class23 {
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;I)Llb;")
     public static final class122 method577(Packet arg0, int arg1) {
         ++field1533;
-        return arg1 != 255 ? null : new class122(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(arg1 + -29884), arg0.g1(26119));
+        return arg1 != 255 ? null : new class122(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(arg1 + -29884), arg0.g1());
     }
 
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;II)V")
@@ -168,13 +168,13 @@ public class class85 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    this.field1538 = arg0.g2(35);
+                    this.field1538 = arg0.g2();
                 }
             } else {
-                this.field1543 = arg0.g2(86);
+                this.field1543 = arg0.g2();
             }
         } else {
-            this.field1530 = arg0.g2(46);
+            this.field1530 = arg0.g2();
         }
         if (arg1 != -3) {
             field1546 = null;

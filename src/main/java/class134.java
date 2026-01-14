@@ -97,20 +97,20 @@ public class class134 {
     @OriginalMember(owner = "client!mc", name = "a", descriptor = "(ZB)V")
     public static final void method895(boolean arg0, byte arg1) {
         class219.method1481(2);
-        class144.field2709++;
+        Js5Index.field2709++;
         if (arg1 != 49) {
             method897(false);
         }
         field2494++;
-        if (class144.field2709 < 50 && !arg0) {
+        if (Js5Index.field2709 < 50 && !arg0) {
             return;
         }
-        class144.field2709 = 0;
+        Js5Index.field2709 = 0;
         if (class58.field1097 || class33.stream == null) {
             return;
         }
         class31.field498++;
-        Isaac.out.method30((byte) -102, 19);
+        Isaac.out.method30(19);
         try {
             class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
             Isaac.out.pos = 0;

@@ -53,7 +53,7 @@ public class class101 extends class136 {
     public static int[] field1833;
 
     @OriginalMember(owner = "client!jc", name = "a", descriptor = "(Lnb;BI)[Llj;")
-    public static final class130[] method702(class144 arg0, byte arg1, int arg2) {
+    public static final class130[] method702(Js5Index arg0, byte arg1, int arg2) {
         if (arg1 != 30) {
             field1844 = null;
         }
@@ -72,14 +72,14 @@ public class class101 extends class136 {
         if (var3 == 0L) {
             return;
         }
-        while (var2 < class88.field1647.length && class88.field1647[var2].field1219 != var3) {
+        while (var2 < class88.field1647.length && class88.field1647[var2].nodeId != var3) {
             var2++;
         }
         if (class88.field1647.length <= var2 || class88.field1647[var2] == null) {
             return;
         }
-        Isaac.out.method30((byte) -73, 49);
-        Isaac.out.p8(class88.field1647[var2].field1219, (byte) -123);
+        Isaac.out.method30(49);
+        Isaac.out.p8(class88.field1647[var2].nodeId, (byte) -123);
         class226.field4238++;
         if (arg1 > -86) {
             method706(110, false);

@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!fc")
-public class class59 {
+public class GZip {
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "Li;")
     public static class88 field1106 = class208.method1425(105, "compass");
@@ -45,25 +45,23 @@ public class class59 {
     public static int field1116;
 
     @OriginalMember(owner = "client!fc", name = "i", descriptor = "Lnb;")
-    public static class144 field1114;
+    public static Js5Index field1114;
 
     @OriginalMember(owner = "client!fc", name = "g", descriptor = "Ljava/util/zip/Inflater;")
     private Inflater field1112;
 
     @OriginalMember(owner = "client!fc", name = "<init>", descriptor = "()V")
-    public class59() {
+    public GZip() {
         this(-1, 1000000, 1000000);
     }
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "(II)Z")
     public static final boolean method423(int arg0, int arg1) {
-        int var2 = -23 / ((arg1 - 37) / 39);
-        field1116++;
         return (arg0 >> 20 & 0x1) != 0;
     }
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "(Lea;Z[B)V")
-    public final void method424(Packet arg0, boolean arg1, byte[] arg2) {
+    public final void decompress(Packet arg0, boolean arg1, byte[] arg2) {
         field1109++;
         if (arg0.data[arg0.pos] != 31 || arg0.data[arg0.pos + 1] != -117) {
             throw new RuntimeException("Invalid GZIP header!");
@@ -130,24 +128,24 @@ public class class59 {
         Packet buf = new Packet(var3);
         buf.pos = buf.data.length - 2;
 
-        int var6 = buf.g2(31);
+        int var6 = buf.g2();
         int var7 = buf.data.length - var6 - 2 - 12;
         buf.pos = var7;
-        int var8 = buf.g4((byte) -34);
-        script.field4528 = buf.g2(arg1 + 16);
-        script.field4519 = buf.g2(arg1 ^ 0x34);
-        script.field4522 = buf.g2(arg1 ^ 0x33);
-        script.field4520 = buf.g2(24);
-        int var9 = buf.g1(arg1 + 26119);
+        int var8 = buf.g4();
+        script.field4528 = buf.g2();
+        script.field4519 = buf.g2();
+        script.field4522 = buf.g2();
+        script.field4520 = buf.g2();
+        int var9 = buf.g1();
         if (var9 > 0) {
             script.field4516 = new class154[var9];
             for (int var10 = 0; var10 < var9; var10++) {
-                int var11 = buf.g2(119);
+                int var11 = buf.g2();
                 class154 var12 = new class154(class184.method1298(true, var11));
                 script.field4516[var10] = var12;
                 while (var11-- > 0) {
-                    int var13 = buf.g4((byte) -107);
-                    int var14 = buf.g4((byte) -62);
+                    int var13 = buf.g4();
+                    int var14 = buf.g4();
                     var12.method1054((long) var13, new class192(var14), ~arg1);
                 }
             }
@@ -162,13 +160,13 @@ public class class59 {
         script.intOperands = new int[var8];
 
         while (var7 > buf.pos) {
-            int op = buf.g2(70);
+            int op = buf.g2();
             if (op == 3) {
                 script.stringOperands[var15] = buf.gjstr(-128);
             } else if (op >= 100 || op == 21 || op == 38 || op == 39) {
-                script.intOperands[var15] = buf.g1(26119);
+                script.intOperands[var15] = buf.g1();
             } else {
-                script.intOperands[var15] = buf.g4((byte) -128);
+                script.intOperands[var15] = buf.g4();
             }
             script.instructions[var15++] = op;
         }
@@ -177,6 +175,6 @@ public class class59 {
     }
 
     @OriginalMember(owner = "client!fc", name = "<init>", descriptor = "(III)V")
-    private class59(int arg0, int arg1, int arg2) {
+    private GZip(int arg0, int arg1, int arg2) {
     }
 }

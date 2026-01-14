@@ -27,7 +27,7 @@ public class class159 extends class67 {
     private static class88 field3072 = class208.method1425(105, "Login server offline)3");
 
     @OriginalMember(owner = "client!og", name = "R", descriptor = "I")
-    public static int field3075 = 0;
+    public static int maxsize = 0;
 
     @OriginalMember(owner = "client!og", name = "S", descriptor = "Li;")
     public static class88 field3076 = field3072;

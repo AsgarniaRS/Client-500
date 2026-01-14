@@ -66,7 +66,7 @@ public class class152 extends class23 {
     }
 
     @OriginalMember(owner = "client!o", name = "a", descriptor = "(Lnb;Lnb;ILnb;)V")
-    public static final void method1040(class144 arg0, class144 arg1, int arg2, class144 arg3) {
+    public static final void method1040(Js5Index arg0, Js5Index arg1, int arg2, Js5Index arg3) {
         class110.field2011 = arg1.method966(class39.field689, (byte) -3);
         class151.field2934 = arg3.method966(class62.field1143, (byte) -3);
         class104.field1898 = arg3.method966(Client.field561, (byte) -3);
@@ -101,7 +101,7 @@ public class class152 extends class23 {
     public final int[] method54(int arg0, byte arg1) {
         ++field2944;
         if (arg1 < 19) {
-            method1040((class144) null, (class144) null, 93, (class144) null);
+            method1040((Js5Index) null, (Js5Index) null, 93, (Js5Index) null);
         }
         int[] var3 = super.field379.method1080(false, arg0);
         if (super.field379.field3100) {

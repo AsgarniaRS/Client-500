@@ -263,14 +263,9 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(I)I")
-    public final int g2(int arg0) {
-        if (arg0 <= 11) {
-            return -54;
-        } else {
-            field835++;
-            this.pos += 2;
-            return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] & 0xFF);
-        }
+    public final int g2() {
+        this.pos += 2;
+        return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "e", descriptor = "(I)I")
@@ -345,7 +340,7 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Lnb;ILnb;ZB)Lli;")
-    public static final class129 method309(class144 arg0, int arg1, class144 arg2, boolean arg3, byte arg4) {
+    public static final class129 method309(Js5Index arg0, int arg1, Js5Index arg2, boolean arg3, byte arg4) {
         field832++;
         boolean var5 = true;
         int[] var6 = arg2.method950(41, arg1);
@@ -544,21 +539,21 @@ public class Packet extends class67 {
         if (arg0 != 1054632416) {
             field810 = null;
         }
-        long var2 = (long) this.g4((byte) -123) & 0xFFFFFFFFL;
+        long var2 = (long) this.g4() & 0xFFFFFFFFL;
         field852++;
-        long var4 = (long) this.g4((byte) -52) & 0xFFFFFFFFL;
+        long var4 = (long) this.g4() & 0xFFFFFFFFL;
         return (var2 << 32) + var4;
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(II[II)V")
-    public final void method322(int arg0, int arg1, int[] arg2, int arg3) {
+    public final void tinydec(int arg0, int arg1, int[] arg2, int arg3) {
         int var5 = (arg1 - arg0) / 8;
         field861++;
         int var6 = this.pos;
         this.pos = arg0;
         for (int var7 = 0; var7 < var5; var7++) {
-            int var8 = this.g4((byte) -115);
-            int var9 = this.g4((byte) -66);
+            int var8 = this.g4();
+            int var9 = this.g4();
             int var10 = -1640531527;
             int var11 = -957401312;
             int var12 = 32;
@@ -578,12 +573,8 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "e", descriptor = "(B)I")
-    public final int g4(byte arg0) {
+    public final int g4() {
         this.pos += 4;
-        if (arg0 > -31) {
-            this.method304(47);
-        }
-        field824++;
         return ((this.data[this.pos - 4] & 0xFF) << 24) + ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
     }
 
@@ -658,7 +649,7 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Lnb;BLnb;)I")
-    public static final int method330(class144 arg0, byte arg1, class144 arg2) {
+    public static final int method330(Js5Index arg0, byte arg1, Js5Index arg2) {
         int var3 = 0;
         field838++;
         if (arg0.method955(0, class110.field2011)) {
@@ -808,7 +799,7 @@ public class Packet extends class67 {
         if (arg0) {
             int var2 = this.data[this.pos] & 0xFF;
             field809++;
-            return var2 < 128 ? this.g1(26119) - 64 : this.g2(49) + -49152;
+            return var2 < 128 ? this.g1() - 64 : this.g2() + -49152;
         } else {
             return -94;
         }
@@ -858,13 +849,8 @@ public class Packet extends class67 {
     }
 
     @OriginalMember(owner = "client!ea", name = "p", descriptor = "(I)I")
-    public final int g1(int arg0) {
-        if (arg0 == 26119) {
-            field818++;
-            return this.data[this.pos++] & 0xFF;
-        } else {
-            return -103;
-        }
+    public final int g1() {
+        return this.data[this.pos++] & 0xFF;
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(IIIBIIIII)V")
@@ -1062,9 +1048,9 @@ public class Packet extends class67 {
         if (arg0 < 104) {
             return 61;
         } else if (var2 < 128) {
-            return this.g1(26119);
+            return this.g1();
         } else {
-            return this.g2(19) - 32768;
+            return this.g2() - 32768;
         }
     }
 

@@ -142,11 +142,8 @@ public class class6 extends Packet {
     }
 
     @OriginalMember(owner = "client!ae", name = "b", descriptor = "(BI)V")
-    public final void method30(byte arg0, int arg1) {
+    public final void method30(int arg1) {
         super.data[super.pos++] = (byte) (arg1 + this.field91.method980(255));
-        if (arg0 < -28) {
-            ++field94;
-        }
     }
 
     @OriginalMember(owner = "client!ae", name = "c", descriptor = "(ZI)I")

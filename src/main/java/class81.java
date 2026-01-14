@@ -174,7 +174,7 @@ public class class81 extends class145 {
             field1455 = null;
         }
         field1461++;
-        return new class203(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.g1(26119));
+        return new class203(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.g1());
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Z)V")
@@ -187,13 +187,13 @@ public class class81 extends class145 {
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Lbj;IILud;)V")
-    public static final void method540(class22 arg0, int arg1, int arg2, class222 arg3) {
+    public static final void method540(Js5Local arg0, int arg1, int arg2, class222 arg3) {
         field1464++;
         byte[] var4 = null;
         class248 var5 = class227.field4254;
         synchronized (class227.field4254) {
             for (class90 var6 = (class90) class227.field4254.method1612(false); var6 != null; var6 = (class90) class227.field4254.method1621(82)) {
-                if ((long) arg1 == var6.field1219 && var6.field1714 == arg3 && var6.field1702 == 0) {
+                if ((long) arg1 == var6.nodeId && var6.field1714 == arg3 && var6.field1702 == 0) {
                     var4 = var6.field1706;
                     break;
                 }
@@ -209,8 +209,6 @@ public class class81 extends class145 {
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "([BBI)I")
     public static final int method541(byte[] arg0, byte arg1, int arg2) {
-        field1473++;
-        int var3 = 84 % ((-arg1 - 4) / 61);
         return class231.method1544((byte) 1, 0, arg0, arg2);
     }
 
@@ -318,24 +316,24 @@ public class class81 extends class145 {
                                                 if (var13.field947 == null) {
                                                     if (var13.field964 != null) {
                                                         if (class239.method1583(0, var3, var4)) {
-                                                            class156.method1062(var13.field964, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
+                                                            class156.method1062(var13.field964, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
                                                         } else {
-                                                            class156.method1062(var13.field964, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
+                                                            class156.method1062(var13.field964, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
                                                         }
                                                     }
                                                 } else if (class239.method1583(0, var3, var4)) {
-                                                    class55.method411(var13.field947, 0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
+                                                    class55.method411(var13.field947, 0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
                                                 } else {
-                                                    class55.method411(var13.field947, 0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
+                                                    class55.method411(var13.field947, 0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
                                                 }
                                                 class157 var14 = var13.field959;
                                                 if (var14 != null) {
-                                                    var14.field3023.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var14.field3031 - class74.field1353, var14.field3033 - class241.field4463, var14.field3025 - class216.field4050, var14.field3030);
+                                                    var14.field3023.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var14.field3031 - class74.field1353, var14.field3033 - class241.field4463, var14.field3025 - class216.field4050, var14.field3030);
                                                 }
                                                 for (int var15 = 0; var15 < var13.field962; var15++) {
                                                     class108 var16 = var13.field963[var15];
                                                     if (var16 != null) {
-                                                        var16.field1945.method87(var16.field1941, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var16.field1947 - class74.field1353, var16.field1940 - class241.field4463, var16.field1951 - class216.field4050, var16.field1950);
+                                                        var16.field1945.method87(var16.field1941, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var16.field1947 - class74.field1353, var16.field1940 - class241.field4463, var16.field1951 - class216.field4050, var16.field1950);
                                                     }
                                                 }
                                             }
@@ -343,18 +341,18 @@ public class class81 extends class145 {
                                             if (var2.field947 == null) {
                                                 if (var2.field964 != null) {
                                                     if (class239.method1583(var6, var3, var4)) {
-                                                        class156.method1062(var2.field964, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
+                                                        class156.method1062(var2.field964, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
                                                     } else {
                                                         var17 = true;
-                                                        class156.method1062(var2.field964, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
+                                                        class156.method1062(var2.field964, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
                                                     }
                                                 }
                                             } else if (class239.method1583(var6, var3, var4)) {
-                                                class55.method411(var2.field947, var6, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
+                                                class55.method411(var2.field947, var6, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, true);
                                             } else {
                                                 var17 = true;
                                                 if (var2.field947.field1767 != 12345678 || class118.field2147 && var5 <= class133.field2486) {
-                                                    class55.method411(var2.field947, var6, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
+                                                    class55.method411(var2.field947, var6, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var3, var4, false);
                                                 }
                                             }
                                             int var18 = 0;
@@ -395,16 +393,16 @@ public class class81 extends class145 {
                                                     var2.field946 = class48.field904[var18];
                                                     var2.field955 = 9 - var2.field946;
                                                 }
-                                                if ((var20.field3029 & var19) != 0 && !class144.method947(var6, var3, var4, var20.field3029)) {
-                                                    var20.field3023.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var20.field3031 - class74.field1353, var20.field3033 - class241.field4463, var20.field3025 - class216.field4050, var20.field3030);
+                                                if ((var20.field3029 & var19) != 0 && !Js5Index.method947(var6, var3, var4, var20.field3029)) {
+                                                    var20.field3023.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var20.field3031 - class74.field1353, var20.field3033 - class241.field4463, var20.field3025 - class216.field4050, var20.field3030);
                                                 }
-                                                if ((var20.field3026 & var19) != 0 && !class144.method947(var6, var3, var4, var20.field3026)) {
-                                                    var20.field3034.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var20.field3031 - class74.field1353, var20.field3033 - class241.field4463, var20.field3025 - class216.field4050, var20.field3030);
+                                                if ((var20.field3026 & var19) != 0 && !Js5Index.method947(var6, var3, var4, var20.field3026)) {
+                                                    var20.field3034.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var20.field3031 - class74.field1353, var20.field3033 - class241.field4463, var20.field3025 - class216.field4050, var20.field3030);
                                                 }
                                             }
                                             if (var21 != null && !class189.method1322(var6, var3, var4, var21.field1159.method88())) {
                                                 if ((var21.field1164 & var19) != 0) {
-                                                    var21.field1159.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var21.field1157 + var21.field1169 - class74.field1353, var21.field1168 - class241.field4463, var21.field1161 + var21.field1167 - class216.field4050, var21.field1158);
+                                                    var21.field1159.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var21.field1157 + var21.field1169 - class74.field1353, var21.field1168 - class241.field4463, var21.field1161 + var21.field1167 - class216.field4050, var21.field1158);
                                                 } else if (var21.field1164 == 256) {
                                                     int var22 = var21.field1157 - class74.field1353;
                                                     int var23 = var21.field1168 - class241.field4463;
@@ -423,27 +421,27 @@ public class class81 extends class145 {
                                                         var27 = var24;
                                                     }
                                                     if (var27 < var26) {
-                                                        var21.field1159.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var21.field1169 + var22, var23, var21.field1167 + var24, var21.field1158);
+                                                        var21.field1159.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var21.field1169 + var22, var23, var21.field1167 + var24, var21.field1158);
                                                     } else if (var21.field1160 != null) {
-                                                        var21.field1160.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var22, var23, var24, var21.field1158);
+                                                        var21.field1160.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var22, var23, var24, var21.field1158);
                                                     }
                                                 }
                                             }
                                             if (var17) {
                                                 class166 var28 = var2.field949;
                                                 if (var28 != null) {
-                                                    var28.field3196.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var28.field3199 - class74.field1353, var28.field3195 - class241.field4463, var28.field3192 - class216.field4050, var28.field3204);
+                                                    var28.field3196.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var28.field3199 - class74.field1353, var28.field3195 - class241.field4463, var28.field3192 - class216.field4050, var28.field3204);
                                                 }
                                                 class239 var29 = var2.field948;
                                                 if (var29 != null && var29.field4437 == 0) {
                                                     if (var29.field4448 != null) {
-                                                        var29.field4448.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
+                                                        var29.field4448.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
                                                     }
                                                     if (var29.field4450 != null) {
-                                                        var29.field4450.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
+                                                        var29.field4450.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
                                                     }
                                                     if (var29.field4445 != null) {
-                                                        var29.field4445.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
+                                                        var29.field4445.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var29.field4453 - class74.field1353, var29.field4446 - class241.field4463, var29.field4441 - class216.field4050, var29.field4442);
                                                     }
                                                 }
                                             }
@@ -486,8 +484,8 @@ public class class81 extends class145 {
                                             }
                                             if (var35) {
                                                 class157 var37 = var2.field959;
-                                                if (!class144.method947(var6, var3, var4, var37.field3029)) {
-                                                    var37.field3023.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var37.field3031 - class74.field1353, var37.field3033 - class241.field4463, var37.field3025 - class216.field4050, var37.field3030);
+                                                if (!Js5Index.method947(var6, var3, var4, var37.field3029)) {
+                                                    var37.field3023.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var37.field3031 - class74.field1353, var37.field3033 - class241.field4463, var37.field3025 - class216.field4050, var37.field3030);
                                                 }
                                                 var2.field953 = 0;
                                             }
@@ -571,7 +569,7 @@ public class class81 extends class145 {
                                                 class108 var58 = class239.field4449[var51];
                                                 var58.field1936 = class143.field2629;
                                                 if (!Client.method224(var6, var58.field1935, var58.field1942, var58.field1938, var58.field1937, var58.field1945.method88())) {
-                                                    var58.field1945.method87(var58.field1941, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var58.field1947 - class74.field1353, var58.field1940 - class241.field4463, var58.field1951 - class216.field4050, var58.field1950);
+                                                    var58.field1945.method87(var58.field1941, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var58.field1947 - class74.field1353, var58.field1940 - class241.field4463, var58.field1951 - class216.field4050, var58.field1950);
                                                 }
                                                 for (int var59 = var58.field1935; var59 <= var58.field1942; var59++) {
                                                     for (int var60 = var58.field1938; var60 <= var58.field1937; var60++) {
@@ -619,20 +617,20 @@ public class class81 extends class145 {
             class239 var66 = var2.field948;
             if (var66 != null && var66.field4437 != 0) {
                 if (var66.field4448 != null) {
-                    var66.field4448.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
+                    var66.field4448.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
                 }
                 if (var66.field4450 != null) {
-                    var66.field4450.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
+                    var66.field4450.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
                 }
                 if (var66.field4445 != null) {
-                    var66.field4445.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
+                    var66.field4445.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var66.field4453 - class74.field1353, var66.field4446 - class241.field4463 - var66.field4437, var66.field4441 - class216.field4050, var66.field4442);
                 }
             }
             if (var2.field952 != 0) {
                 class64 var67 = var2.field956;
                 if (var67 != null && !class189.method1322(var6, var3, var4, var67.field1159.method88())) {
                     if ((var67.field1164 & var2.field952) != 0) {
-                        var67.field1159.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var67.field1157 + var67.field1169 - class74.field1353, var67.field1168 - class241.field4463, var67.field1161 + var67.field1167 - class216.field4050, var67.field1158);
+                        var67.field1159.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var67.field1157 + var67.field1169 - class74.field1353, var67.field1168 - class241.field4463, var67.field1161 + var67.field1167 - class216.field4050, var67.field1158);
                     } else if (var67.field1164 == 256) {
                         int var68 = var67.field1157 - class74.field1353;
                         int var69 = var67.field1168 - class241.field4463;
@@ -651,19 +649,19 @@ public class class81 extends class145 {
                             var73 = var70;
                         }
                         if (var73 >= var72) {
-                            var67.field1159.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var67.field1169 + var68, var69, var67.field1167 + var70, var67.field1158);
+                            var67.field1159.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var67.field1169 + var68, var69, var67.field1167 + var70, var67.field1158);
                         } else if (var67.field1160 != null) {
-                            var67.field1160.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var68, var69, var70, var67.field1158);
+                            var67.field1160.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var68, var69, var70, var67.field1158);
                         }
                     }
                 }
                 class157 var74 = var2.field959;
                 if (var74 != null) {
-                    if ((var74.field3026 & var2.field952) != 0 && !class144.method947(var6, var3, var4, var74.field3026)) {
-                        var74.field3034.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var74.field3031 - class74.field1353, var74.field3033 - class241.field4463, var74.field3025 - class216.field4050, var74.field3030);
+                    if ((var74.field3026 & var2.field952) != 0 && !Js5Index.method947(var6, var3, var4, var74.field3026)) {
+                        var74.field3034.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var74.field3031 - class74.field1353, var74.field3033 - class241.field4463, var74.field3025 - class216.field4050, var74.field3030);
                     }
-                    if ((var74.field3029 & var2.field952) != 0 && !class144.method947(var6, var3, var4, var74.field3029)) {
-                        var74.field3023.method87(0, class99.field1805, class201.field3840, class168.field3244, class159.field3068, var74.field3031 - class74.field1353, var74.field3033 - class241.field4463, var74.field3025 - class216.field4050, var74.field3030);
+                    if ((var74.field3029 & var2.field952) != 0 && !Js5Index.method947(var6, var3, var4, var74.field3029)) {
+                        var74.field3023.method87(0, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var74.field3031 - class74.field1353, var74.field3033 - class241.field4463, var74.field3025 - class216.field4050, var74.field3030);
                     }
                 }
             }

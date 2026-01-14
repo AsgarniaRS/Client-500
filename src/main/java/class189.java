@@ -35,16 +35,16 @@ public class class189 extends class136 {
     public static final void method1317(byte arg0) {
         int var1 = -65 / ((arg0 - 11) / 57);
         field3664++;
-        if (class150.field2917 > class59.field1110) {
-            class59.field1110 += class59.field1110 / 30.0D;
-            if (class59.field1110 > class150.field2917) {
-                class59.field1110 = class150.field2917;
+        if (class150.field2917 > GZip.field1110) {
+            GZip.field1110 += GZip.field1110 / 30.0D;
+            if (GZip.field1110 > class150.field2917) {
+                GZip.field1110 = class150.field2917;
             }
             class245.method1606(0);
-        } else if (class150.field2917 < class59.field1110) {
-            class59.field1110 -= class59.field1110 / 30.0D;
-            if (class150.field2917 > class59.field1110) {
-                class59.field1110 = class150.field2917;
+        } else if (class150.field2917 < GZip.field1110) {
+            GZip.field1110 -= GZip.field1110 / 30.0D;
+            if (class150.field2917 > GZip.field1110) {
+                GZip.field1110 = class150.field2917;
             }
             class245.method1606(0);
         }
@@ -69,7 +69,7 @@ public class class189 extends class136 {
     }
 
     @OriginalMember(owner = "client!rd", name = "a", descriptor = "(BLnb;Lnb;)V")
-    public static final void method1318(byte arg0, class144 arg1, class144 arg2) {
+    public static final void method1318(byte arg0, Js5Index arg1, Js5Index arg2) {
         if (arg0 < 110) {
             field3667 = null;
         }
@@ -89,7 +89,7 @@ public class class189 extends class136 {
     }
 
     @OriginalMember(owner = "client!rd", name = "a", descriptor = "(ZLnb;Ldg;Lnb;B)V")
-    public static final void method1320(boolean arg0, class144 arg1, class41 arg2, class144 arg3, byte arg4) {
+    public static final void method1320(boolean arg0, Js5Index arg1, class41 arg2, Js5Index arg3, byte arg4) {
         class156.field3010 = arg3;
         field3666++;
         class142.field2625 = arg0;
@@ -156,15 +156,15 @@ public class class189 extends class136 {
             return;
         }
         Packet var1 = new Packet(class130.field2442.method962(0, class20.field319, class80.field1444));
-        int var2 = var1.g2(101);
-        int var3 = var1.g2(82);
-        int var4 = var1.g2(68);
-        int var5 = var1.g2(47);
-        int var6 = var1.g2(72);
-        int var7 = var1.g2(71);
+        int var2 = var1.g2();
+        int var3 = var1.g2();
+        int var4 = var1.g2();
+        int var5 = var1.g2();
+        int var6 = var1.g2();
+        int var7 = var1.g2();
         class119.field2183 = var3 * 64;
         class16.field239 = var2 * 64;
-        class59.field1110 = 8.0D;
+        GZip.field1110 = 8.0D;
         class150.field2917 = 8.0D;
         class54.field1009 = new int[class151.field2925 + 1];
         scene.field760 = (var5 - var3) * 64 + 64;

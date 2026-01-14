@@ -105,7 +105,7 @@ public class class116 extends class23 {
         if (arg1 == -1 && !class110.field2014) {
             class1.method5(31818);
         } else if (~arg1 != 0 && (~class2.field25 != ~arg1 || !class102.method709(100)) && class65.field1183 != 0 && !class110.field2014) {
-            class106.method732(0, class65.field1183, false, arg1, 2, class99.field1816, 0);
+            class106.method732(0, class65.field1183, false, arg1, 2, IntHashTable.field1816, 0);
         }
         ++field2101;
         class2.field25 = arg1;
@@ -141,7 +141,7 @@ public class class116 extends class23 {
                     if (!class57.field1077) {
                         class219.field4145.field718 = 0;
                     } else if (~class36.field625 != -1 || class219.field4145.field718 >= 40) {
-                        Isaac.out.method30((byte) -63, 111);
+                        Isaac.out.method30(111);
                         ++class226.field4242;
                         Isaac.out.p1(255, 0);
                         int var4 = Isaac.out.pos;
@@ -205,8 +205,8 @@ public class class116 extends class23 {
                 }
                 if (~class36.field625 != -1) {
                     ++class202.field3856;
-                    long var13 = (class36.field623 - class99.field1806) / 50L;
-                    class99.field1806 = class36.field623;
+                    long var13 = (class36.field623 - IntHashTable.field1806) / 50L;
+                    IntHashTable.field1806 = class36.field623;
                     int var15 = class172.field3341;
                     int var16 = class226.field4241;
                     if (~var15 <= -1) {
@@ -231,7 +231,7 @@ public class class116 extends class23 {
                     if (class36.field625 == 2) {
                         var17 = 1;
                     }
-                    Isaac.out.method30((byte) -36, 63);
+                    Isaac.out.method30(63);
                     int var19 = (int) var13;
                     Isaac.out.method326(-1, (var17 << 19) + ((var19 << 20) - -var18));
                 }
@@ -245,20 +245,20 @@ public class class116 extends class23 {
                     ++class67.field1203;
                     class176.field3548 = false;
                     class88.field1638 = 20;
-                    Isaac.out.method30((byte) -96, 173);
+                    Isaac.out.method30(173);
                     Isaac.out.method331(class207.field3932, 18975);
                     Isaac.out.method305(125, class64.field1173);
                 }
-                if (class175.field3522 && !class22.field355) {
+                if (class175.field3522 && !Js5Local.field355) {
                     ++class66.field1187;
-                    class22.field355 = true;
-                    Isaac.out.method30((byte) -118, 130);
+                    Js5Local.field355 = true;
+                    Isaac.out.method30(130);
                     Isaac.out.p1(255, 1);
                 }
-                if (!class175.field3522 && class22.field355) {
+                if (!class175.field3522 && Js5Local.field355) {
                     ++class66.field1187;
-                    class22.field355 = false;
-                    Isaac.out.method30((byte) -100, 130);
+                    Js5Local.field355 = false;
+                    Isaac.out.method30(130);
                     Isaac.out.p1(255, 0);
                 }
                 class190.method1330(-25194);
@@ -329,7 +329,7 @@ public class class116 extends class23 {
                                                 }
                                             }
                                         }
-                                        Isaac.out.method30((byte) -64, 207);
+                                        Isaac.out.method30(207);
                                         Isaac.out.method351(false, class135.field2516.field3425);
                                         Isaac.out.method314(class18.field305, (byte) -109);
                                         Isaac.out.method327(-85, var21);
@@ -388,7 +388,7 @@ public class class116 extends class23 {
                                                                 class175.field3534 = false;
                                                             }
                                                             if (class179.field3570 != null) {
-                                                                class99.method690((byte) -27);
+                                                                IntHashTable.method690((byte) -27);
                                                             }
                                                             if (~class114.field2059 != 0) {
                                                                 int var37 = class114.field2059;
@@ -442,11 +442,11 @@ public class class116 extends class23 {
                                                                 class105.field1912 = 250;
                                                                 ++class36.field626;
                                                                 class151.method1033((byte) -113, 4000);
-                                                                Isaac.out.method30((byte) -89, 226);
+                                                                Isaac.out.method30(226);
                                                             }
                                                             ++class111.field2029;
                                                             ++class77.field1384;
-                                                            ++class144.field2709;
+                                                            ++Js5Index.field2709;
                                                             if (class111.field2029 > 500) {
                                                                 class111.field2029 = 0;
                                                                 int var43 = (int) (8.0D * Math.random());
@@ -500,15 +500,15 @@ public class class116 extends class23 {
                                                             if (class223.field4201 > 50) {
                                                                 class136.field2533 = -2;
                                                             }
-                                                            if (~class144.field2709 < -51) {
-                                                                Isaac.out.method30((byte) -69, 19);
+                                                            if (~Js5Index.field2709 < -51) {
+                                                                Isaac.out.method30(19);
                                                                 ++class31.field498;
                                                             }
                                                             try {
                                                                 if (class33.stream != null && Isaac.out.pos > 0) {
                                                                     class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
                                                                     Isaac.out.pos = 0;
-                                                                    class144.field2709 = 0;
+                                                                    Js5Index.field2709 = 0;
                                                                     return;
                                                                 }
                                                                 return;
@@ -617,13 +617,13 @@ public class class116 extends class23 {
         if (arg2 != 0) {
             if (arg2 != 1) {
                 if (arg2 == 2) {
-                    super.field369 = ~arg0.g1(26119) == -2;
+                    super.field369 = ~arg0.g1() == -2;
                 }
             } else {
-                this.field2090 = arg0.g2(arg1 + 97);
+                this.field2090 = arg0.g2();
             }
         } else {
-            this.field2099 = arg0.g2(55);
+            this.field2099 = arg0.g2();
         }
         if (arg1 != -3) {
             this.method7(59, (byte) -115);

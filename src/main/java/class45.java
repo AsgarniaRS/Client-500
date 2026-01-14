@@ -134,28 +134,28 @@ public class class45 extends class23 {
                             if (~arg2 != -6) {
                                 if (~arg2 != -7) {
                                     if (arg2 == 7) {
-                                        this.field798 = arg0.g2(35);
+                                        this.field798 = arg0.g2();
                                     }
                                 } else {
-                                    this.field788 = arg0.g2(75);
+                                    this.field788 = arg0.g2();
                                 }
                             } else {
-                                this.field776 = arg0.g2(95);
+                                this.field776 = arg0.g2();
                             }
                         } else {
-                            this.field779 = arg0.g2(84);
+                            this.field779 = arg0.g2();
                         }
                     } else {
-                        this.field790 = arg0.g2(91);
+                        this.field790 = arg0.g2();
                     }
                 } else {
-                    this.field781 = arg0.g2(62);
+                    this.field781 = arg0.g2();
                 }
             } else {
-                this.field799 = arg0.g1(arg1 ^ -26118);
+                this.field799 = arg0.g1();
             }
         } else {
-            this.field797 = arg0.g1(26119);
+            this.field797 = arg0.g1();
         }
         ++field778;
     }
@@ -164,7 +164,7 @@ public class class45 extends class23 {
     public final int[] method54(int arg0, byte arg1) {
         ++field792;
         if (arg1 <= 19) {
-            method291((class144) null, (byte) -64, (class144) null, (class144) null);
+            method291((Js5Index) null, (byte) -64, (Js5Index) null, (Js5Index) null);
         }
         int[] var3 = super.field379.method1080(false, arg0);
         if (super.field379.field3100) {
@@ -187,7 +187,7 @@ public class class45 extends class23 {
                     int var11 = var7 ? this.field779 : -this.field779;
                     int var12 = 0;
                     int var13;
-                    for (var13 = (this.field795 * var11 >> 12) + class22.field351[var10]; var13 < 0; var13 += 4096) {
+                    for (var13 = (this.field795 * var11 >> 12) + Js5Local.field351[var10]; var13 < 0; var13 += 4096) {
                     }
                     while (var13 > 4096) {
                         var13 -= 4096;
@@ -223,7 +223,7 @@ public class class45 extends class23 {
     }
 
     @OriginalMember(owner = "client!e", name = "a", descriptor = "(Lnb;BLnb;Lnb;)V")
-    public static final void method291(class144 arg0, byte arg1, class144 arg2, class144 arg3) {
+    public static final void method291(Js5Index arg0, byte arg1, Js5Index arg2, Js5Index arg3) {
         class142.field2626 = arg2;
         class37.field672 = arg0;
         int var4 = 41 % ((arg1 - 8) / 50);
@@ -271,7 +271,7 @@ public class class45 extends class23 {
             if (var2 == null) {
                 return;
             }
-            var2.field1703.method111(var2.field1706, (int) var2.field1219, var2.field1714, (byte) -72, false);
+            var2.field1703.method111(var2.field1706, (int) var2.nodeId, var2.field1714, (byte) -72, false);
         }
     }
 
@@ -285,7 +285,7 @@ public class class45 extends class23 {
         field774 = null;
         field783 = null;
         if (arg0 < 70) {
-            method291((class144) null, (byte) 77, (class144) null, (class144) null);
+            method291((Js5Index) null, (byte) 77, (Js5Index) null, (Js5Index) null);
         }
     }
 }

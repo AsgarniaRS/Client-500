@@ -65,20 +65,20 @@ public class class235 {
 
     @OriginalMember(owner = "client!vf", name = "a", descriptor = "(Lea;)V")
     public final void method1564(Packet arg0) {
-        this.field4391 = arg0.g1(26119);
+        this.field4391 = arg0.g1();
         this.field4392 = new int[this.field4391];
         this.field4387 = new int[this.field4391];
         for (int var2 = 0; var2 < this.field4391; var2++) {
-            this.field4392[var2] = arg0.g2(24);
-            this.field4387[var2] = arg0.g2(102);
+            this.field4392[var2] = arg0.g2();
+            this.field4387[var2] = arg0.g2();
         }
     }
 
     @OriginalMember(owner = "client!vf", name = "b", descriptor = "(Lea;)V")
     public final void method1565(Packet arg0) {
-        this.field4390 = arg0.g1(26119);
-        this.field4389 = arg0.g4((byte) -109);
-        this.field4388 = arg0.g4((byte) -32);
+        this.field4390 = arg0.g1();
+        this.field4389 = arg0.g4();
+        this.field4388 = arg0.g4();
         this.method1564(arg0);
     }
 

@@ -170,12 +170,12 @@ public class class48 extends class207 {
         }
         if (class110.field2014 && !class102.method709(100)) {
             if (class65.field1183 != 0 && class2.field25 != -1) {
-                class53.method388(0, class99.field1816, (byte) -105, false, class2.field25, class65.field1183);
+                class53.method388(0, IntHashTable.field1816, (byte) -105, false, class2.field25, class65.field1183);
             }
             class110.field2014 = false;
         } else if (class65.field1183 != 0 && class2.field25 != -1 && !class102.method709(100)) {
             class131.field2451++;
-            Isaac.out.method30((byte) -33, 133);
+            Isaac.out.method30(133);
             Isaac.out.p4(class2.field25);
             class2.field25 = -1;
         }

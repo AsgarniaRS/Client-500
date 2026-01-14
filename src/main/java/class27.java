@@ -26,7 +26,7 @@ public class class27 {
     public static int field460;
 
     @OriginalMember(owner = "client!cd", name = "a", descriptor = "Lbj;")
-    public static class22 field451;
+    public static Js5Local field451;
 
     @OriginalMember(owner = "client!cd", name = "h", descriptor = "Lej;")
     public static class55 field458;
@@ -38,7 +38,7 @@ public class class27 {
     public static int[] field456;
 
     @OriginalMember(owner = "client!cd", name = "a", descriptor = "(Lnb;ILnb;ZZ)V")
-    public static final void method166(class144 arg0, int arg1, class144 arg2, boolean arg3, boolean arg4) {
+    public static final void method166(Js5Index arg0, int arg1, Js5Index arg2, boolean arg3, boolean arg4) {
         field459++;
         class132.field2467 = arg4;
         class20.field317 = arg3;
@@ -72,7 +72,7 @@ public class class27 {
         CollisionMap.field1671.method943(0);
         class12.field172.method943(0);
         field451.method943(0);
-        class99.field1816.method943(0);
+        IntHashTable.field1816.method943(0);
         class233.field4367.method943(0);
         if (arg0 == 61) {
             class226.field4245.method943(0);

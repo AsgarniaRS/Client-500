@@ -54,19 +54,19 @@ public class class79 extends class23 {
                 if (arg2 != 2) {
                     if (arg2 != 3) {
                         if (arg2 == 4) {
-                            this.field1432 = arg0.g2(71);
+                            this.field1432 = arg0.g2();
                         }
                     } else {
-                        this.field1429 = arg0.g2(127);
+                        this.field1429 = arg0.g2();
                     }
                 } else {
-                    this.field1433 = arg0.g1(26119);
+                    this.field1433 = arg0.g1();
                 }
             } else {
-                this.field1437 = arg0.g2(34);
+                this.field1437 = arg0.g2();
             }
         } else {
-            this.field1430 = arg0.g1(26119);
+            this.field1430 = arg0.g1();
         }
         if (arg1 == -3) {
             ++field1431;

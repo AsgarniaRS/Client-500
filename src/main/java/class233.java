@@ -29,7 +29,7 @@ public class class233 {
     public static int field4374;
 
     @OriginalMember(owner = "client!vd", name = "a", descriptor = "Lbj;")
-    public static class22 field4367;
+    public static Js5Local field4367;
 
     @OriginalMember(owner = "client!vd", name = "a", descriptor = "(I)V")
     public static void method1552(int arg0) {
@@ -143,7 +143,7 @@ public class class233 {
     }
 
     @OriginalMember(owner = "client!vd", name = "a", descriptor = "(IILnb;I)Lrh;")
-    public static final class193 method1555(int arg0, int arg1, class144 arg2, int arg3) {
+    public static final class193 method1555(int arg0, int arg1, Js5Index arg2, int arg3) {
         int var4 = -50 % ((83 - arg1) / 42);
         field4371++;
         return class47.method358(854010832, arg2, arg3, arg0) ? class164.method1131(0) : null;

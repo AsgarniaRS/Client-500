@@ -29,7 +29,7 @@ public class class20 extends class136 {
     public static class88 field319 = null;
 
     @OriginalMember(owner = "client!bh", name = "O", descriptor = "Lbj;")
-    public static class22 field321;
+    public static Js5Local field321;
 
     @OriginalMember(owner = "client!bh", name = "K", descriptor = "Z")
     public static boolean field317;

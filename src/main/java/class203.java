@@ -68,21 +68,21 @@ public class class203 extends class50 {
     public static class174 field3873;
 
     @OriginalMember(owner = "client!sg", name = "w", descriptor = "Lbj;")
-    public static class22 field3872;
+    public static Js5Local field3872;
 
     @OriginalMember(owner = "client!sg", name = "a", descriptor = "(IIIII)Z")
     public static final boolean method1391(int arg0, int arg1, int arg2, int arg3, int arg4) {
         int var5 = class168.field3244 * arg3 + class159.field3068 * arg0 >> 16;
         int var6 = class159.field3068 * arg3 - class168.field3244 * arg0 >> 16;
-        int var7 = class99.field1805 * arg1 + class201.field3840 * var6 >> 16;
-        int var8 = class201.field3840 * arg1 - class99.field1805 * var6 >> 16;
+        int var7 = IntHashTable.field1805 * arg1 + class201.field3840 * var6 >> 16;
+        int var8 = class201.field3840 * arg1 - IntHashTable.field1805 * var6 >> 16;
         if (var7 < 1) {
             var7 = 1;
         }
         int var9 = (var5 << 9) / var7;
         int var10 = (var8 << 9) / var7;
-        int var11 = class99.field1805 * arg2 + class201.field3840 * var6 >> 16;
-        int var12 = class201.field3840 * arg2 - class99.field1805 * var6 >> 16;
+        int var11 = IntHashTable.field1805 * arg2 + class201.field3840 * var6 >> 16;
+        int var12 = class201.field3840 * arg2 - IntHashTable.field1805 * var6 >> 16;
         if (var11 < 1) {
             var11 = 1;
         }
@@ -132,60 +132,60 @@ public class class203 extends class50 {
                 if (class105.method728(100, arg0 - 1, class80.method530(-881710560, var5))) {
                     if (~arg0 == -2) {
                         ++class119.field2157;
-                        Isaac.out.method30((byte) -32, 44);
+                        Isaac.out.method30(44);
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(arg3 ^ -3617, arg2);
                     }
                     if (~arg0 == -3) {
                         ++class170.field3286;
-                        Isaac.out.method30((byte) -75, 50);
+                        Isaac.out.method30(50);
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(90, arg2);
                     }
                     if (arg0 == 3) {
                         ++class236.field4403;
-                        Isaac.out.method30((byte) -103, 103);
+                        Isaac.out.method30(103);
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(83, arg2);
                     }
                     if (~arg0 == -5) {
-                        Isaac.out.method30((byte) -114, 64);
+                        Isaac.out.method30(64);
                         Isaac.out.p4(arg4);
                         ++class127.field2379;
                         Isaac.out.method305(95, arg2);
                     }
                     if (arg0 == 5) {
-                        Isaac.out.method30((byte) -119, 178);
+                        Isaac.out.method30(178);
                         Isaac.out.p4(arg4);
                         ++class37.field671;
                         Isaac.out.method305(arg3 + 3757, arg2);
                     }
                     if (~arg0 == -7) {
-                        Isaac.out.method30((byte) -30, 81);
+                        Isaac.out.method30(81);
                         ++class128.field2411;
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(arg3 ^ -3637, arg2);
                     }
                     if (arg0 == 7) {
                         ++class147.field2765;
-                        Isaac.out.method30((byte) -128, 236);
+                        Isaac.out.method30(236);
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(101, arg2);
                     }
                     if (~arg0 == -9) {
                         ++class4.field48;
-                        Isaac.out.method30((byte) -81, 188);
+                        Isaac.out.method30(188);
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(81, arg2);
                     }
                     if (arg0 == 9) {
-                        Isaac.out.method30((byte) -117, 128);
+                        Isaac.out.method30(128);
                         ++class157.field3020;
                         Isaac.out.p4(arg4);
                         Isaac.out.method305(arg3 ^ -3625, arg2);
                     }
                     if (~arg0 == -11) {
-                        Isaac.out.method30((byte) -50, 254);
+                        Isaac.out.method30(254);
                         Isaac.out.p4(arg4);
                         ++class15.field235;
                         Isaac.out.method305(arg3 + 3769, arg2);
@@ -200,7 +200,7 @@ public class class203 extends class50 {
 
     @OriginalMember(owner = "client!sg", name = "a", descriptor = "(IZI)V")
     public static final void method1393(int arg0, boolean arg1, int arg2) {
-        Isaac.out.method30((byte) -30, 95);
+        Isaac.out.method30(95);
         ++class112.field2034;
         if (arg1) {
             field3872 = null;
@@ -286,7 +286,7 @@ public class class203 extends class50 {
             arg1.field4101 = class230.in.g2_alt3(255);
         }
         if ((512 & arg0) != 0) {
-            arg1.field4082 = class230.in.g2(68);
+            arg1.field4082 = class230.in.g2();
             int var4 = class230.in.method313(121);
             if (arg1.field4082 == 65535) {
                 arg1.field4082 = -1;
@@ -300,15 +300,15 @@ public class class203 extends class50 {
             }
         }
         if ((8 & arg0) != 0) {
-            int var5 = class230.in.g2(arg2 ^ 126);
+            int var5 = class230.in.g2();
             if (var5 == 65535) {
                 var5 = -1;
             }
-            int var6 = class230.in.g1(26119);
+            int var6 = class230.in.g1();
             class226.method1517((byte) -31, var5, var6, arg1);
         }
         if ((64 & arg0) != 0) {
-            int var7 = class230.in.g1(26119);
+            int var7 = class230.in.g1();
             byte[] var8 = new byte[var7];
             Packet var9 = new Packet(var8);
             class230.in.method307(false, var7, var8, 0);
@@ -317,7 +317,7 @@ public class class203 extends class50 {
         }
         if (~(128 & arg0) != -1) {
             int var10 = class230.in.g1_alt3(24758);
-            int var11 = class230.in.g1(26119);
+            int var11 = class230.in.g1();
             arg1.method1479(class117.field2115, 31632, var11, var10);
             arg1.field4120 = class117.field2115 + 300;
             arg1.field4111 = class230.in.method295((byte) -100);
@@ -331,7 +331,7 @@ public class class203 extends class50 {
             int var14 = class230.in.g2_alt2(true);
             boolean var15 = ~(32768 & var14) != -1;
             int var16 = class230.in.g1_alt3(24758);
-            int var17 = class230.in.g1(26119);
+            int var17 = class230.in.g1();
             int var18 = class230.in.pos;
             if (arg1.name != null && arg1.field768 != null) {
                 long var19 = arg1.name.method630(false);
@@ -378,7 +378,7 @@ public class class203 extends class50 {
             class230.in.pos = var17 + var18;
         }
         if ((arg0 & 32) != 0) {
-            arg1.field4116 = class230.in.g2(112);
+            arg1.field4116 = class230.in.g2();
             if (arg1.field4116 == 65535) {
                 arg1.field4116 = -1;
                 return;

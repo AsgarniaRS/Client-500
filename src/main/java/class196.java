@@ -65,7 +65,7 @@ public class class196 extends class23 {
     public static int field3775;
 
     @OriginalMember(owner = "client!s", name = "lb", descriptor = "Lbj;")
-    public static class22 field3773;
+    public static Js5Local field3773;
 
     @OriginalMember(owner = "client!s", name = "cb", descriptor = "Lgi;")
     public static class75 field3764;
@@ -113,7 +113,7 @@ public class class196 extends class23 {
     public final void method11(Packet arg0, int arg1, int arg2) {
         ++field3763;
         if (~arg2 == -1) {
-            this.field3762 = arg0.g2(114);
+            this.field3762 = arg0.g2();
         }
         if (arg1 != -3) {
             field3770 = null;
@@ -148,7 +148,7 @@ public class class196 extends class23 {
         for (int var1 = 0; ~class192.field3704 < ~var1; ++var1) {
             int var2 = class139.field2581[var1];
             class191 var3 = class225.field4225[var2];
-            int var4 = class230.in.g1(26119);
+            int var4 = class230.in.g1();
             if (~(var4 & 8) != -1) {
                 int var5 = class230.in.g2_alt3(255);
                 int var6 = class230.in.g1_alt3(24758);
@@ -163,7 +163,7 @@ public class class196 extends class23 {
             }
             if ((32 & var4) != 0) {
                 var3.field4098 = class230.in.g2_alt3(255);
-                var3.field4101 = class230.in.g2(117);
+                var3.field4101 = class230.in.g2();
             }
             if (~(128 & var4) != -1) {
                 var3.field4082 = class230.in.method343(104);
@@ -204,7 +204,7 @@ public class class196 extends class23 {
             }
             if (~(var4 & 4) != -1) {
                 int var10 = class230.in.method295((byte) -115);
-                int var11 = class230.in.g1(26119);
+                int var11 = class230.in.g1();
                 var3.method1479(class117.field2115, 31632, var11, var10);
                 var3.field4120 = class117.field2115 - -300;
                 var3.field4111 = class230.in.method319(4633);

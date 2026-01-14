@@ -71,16 +71,16 @@ public class class220 extends class23 {
         }
         ++field4154;
         if (arg2 == 0) {
-            int var4 = arg0.g1(26119);
+            int var4 = arg0.g1();
             if (~var4 != -1) {
                 this.method1489((byte) -79, var4);
             } else {
-                this.field4155 = new int[arg0.g1(26119)][4];
+                this.field4155 = new int[arg0.g1()][4];
                 for (int var5 = 0; ~var5 > ~this.field4155.length; ++var5) {
-                    this.field4155[var5][0] = arg0.g2(63);
-                    this.field4155[var5][1] = arg0.g1(class180.method1287(arg1, -26118)) << 4;
-                    this.field4155[var5][2] = arg0.g1(26119) << 4;
-                    this.field4155[var5][3] = arg0.g1(arg1 + 26122) << 4;
+                    this.field4155[var5][0] = arg0.g2();
+                    this.field4155[var5][1] = arg0.g1() << 4;
+                    this.field4155[var5][2] = arg0.g1() << 4;
+                    this.field4155[var5][3] = arg0.g1() << 4;
                 }
             }
         }

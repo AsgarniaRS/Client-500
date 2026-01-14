@@ -14,7 +14,7 @@ public class class153 extends class67 {
     public static class88 field2953 = field2955;
 
     @OriginalMember(owner = "client!oa", name = "A", descriptor = "Lfc;")
-    public static class59 field2960 = new class59();
+    public static GZip gzip = new GZip();
 
     @OriginalMember(owner = "client!oa", name = "u", descriptor = "I")
     public static int field2954;
@@ -38,7 +38,7 @@ public class class153 extends class67 {
     public static int field2964;
 
     @OriginalMember(owner = "client!oa", name = "x", descriptor = "Lnb;")
-    public static class144 field2957;
+    public static Js5Index field2957;
 
     @OriginalMember(owner = "client!oa", name = "F", descriptor = "[Li;")
     public static class88[] field2965;
@@ -51,7 +51,7 @@ public class class153 extends class67 {
         field2957 = null;
         field2965 = null;
         field2955 = null;
-        field2960 = null;
+        gzip = null;
         field2953 = null;
     }
 
@@ -131,7 +131,7 @@ public class class153 extends class67 {
     }
 
     @OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lnb;Lsb;Lnb;B)V")
-    public static final void method1047(class144 arg0, class198 arg1, class144 arg2, byte arg3) {
+    public static final void method1047(Js5Index arg0, class198 arg1, Js5Index arg2, byte arg3) {
         class78.field1417 = arg2;
         int var4 = -76 / ((8 - arg3) / 39);
         field2964++;

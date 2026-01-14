@@ -73,7 +73,7 @@ public class class7 extends class136 {
     @OriginalMember(owner = "client!af", name = "a", descriptor = "(ILea;I)V")
     public final void method38(int arg0, Packet arg1, int arg2) {
         while (true) {
-            int var4 = arg1.g1(26119);
+            int var4 = arg1.g1();
             if (var4 == 0) {
                 int var5 = 10 / (arg0 / 51);
                 field109++;
@@ -120,9 +120,9 @@ public class class7 extends class136 {
         if (arg0 == arg2) {
             this.field111 = class131.method885(arg3.method304(arg0 ^ 0xFFFF8C42), (byte) -84);
         } else if (arg2 == 2) {
-            this.field98 = arg3.g1(26119);
+            this.field98 = arg3.g1();
         } else if (arg2 == 3) {
-            this.field98 = arg3.g2(arg0 + 100);
+            this.field98 = arg3.g2();
             if (this.field98 == 65535) {
                 this.field98 = -1;
             }
@@ -133,15 +133,15 @@ public class class7 extends class136 {
         } else if (arg2 == 8) {
             class133.field2491 = arg1;
         } else if (arg2 == 9) {
-            arg3.g2(118);
+            arg3.g2();
         } else if (arg2 != 10) {
             if (arg2 == 11) {
-                arg3.g1(26119);
+                arg3.g1();
             } else if (arg2 != 12) {
                 if (arg2 == 13) {
                     this.field103 = arg3.method304(arg0 ^ 0xFFFF8C42);
                 } else if (arg2 == 14) {
-                    this.field112 = arg3.g1(26119);
+                    this.field112 = arg3.g1();
                 }
             }
         }

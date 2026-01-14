@@ -35,7 +35,7 @@ public class class156 extends class67 {
     public static long field3006;
 
     @OriginalMember(owner = "client!od", name = "x", descriptor = "Lnb;")
-    public static class144 field3010;
+    public static Js5Index field3010;
 
     @OriginalMember(owner = "client!od", name = "C", descriptor = "[I")
     public static int[] field3014;

@@ -50,7 +50,7 @@ public class class34 extends class23 {
     public static int field590;
 
     @OriginalMember(owner = "client!d", name = "X", descriptor = "Lnb;")
-    public static class144 field584;
+    public static Js5Index field584;
 
     @OriginalMember(owner = "client!d", name = "cb", descriptor = "Lpf;")
     public static class169 field589;
@@ -86,11 +86,11 @@ public class class34 extends class23 {
     @OriginalMember(owner = "client!d", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            super.field369 = arg0.g1(26119) == 1;
+            super.field369 = arg0.g1() == 1;
         }
         ++field586;
         if (arg1 != -3) {
-            method230(-50, (class144) null, -28, -72);
+            method230(-50, (Js5Index) null, -28, -72);
         }
     }
 
@@ -186,13 +186,13 @@ public class class34 extends class23 {
     }
 
     @OriginalMember(owner = "client!d", name = "a", descriptor = "(ILnb;II)[Lrc;")
-    public static final class188[] method230(int arg0, class144 arg1, int arg2, int arg3) {
+    public static final class188[] method230(int arg0, Js5Index arg1, int arg2, int arg3) {
         ++field578;
         if (!class47.method358(854010832, arg1, arg3, arg0)) {
             return null;
         } else {
             if (arg2 != -7722) {
-                method230(-15, (class144) null, -96, -12);
+                method230(-15, (Js5Index) null, -96, -12);
             }
             return class21.method100((byte) -85);
         }

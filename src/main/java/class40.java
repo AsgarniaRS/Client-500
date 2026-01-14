@@ -95,14 +95,14 @@ public class class40 {
             byte var7 = field700[arg1 - 128];
             int var8 = arg1;
             if (var7 >= 1) {
-                var8 = arg1 | this.field701.g1(26119) << 8;
+                var8 = arg1 | this.field701.g1() << 8;
             }
             if (var7 >= 2) {
-                var8 |= this.field701.g1(26119) << 16;
+                var8 |= this.field701.g1() << 16;
             }
             return var8;
         }
-        int var3 = this.field701.g1(26119);
+        int var3 = this.field701.g1();
         int var4 = this.field701.method317((byte) -39);
         if (var3 == 47) {
             this.field701.pos += var4;
@@ -157,14 +157,14 @@ public class class40 {
     public final void method270(byte[] arg0) {
         this.field701.data = arg0;
         this.field701.pos = 10;
-        int var2 = this.field701.g2(80);
-        this.field706 = this.field701.g2(109);
+        int var2 = this.field701.g2();
+        this.field706 = this.field701.g2();
         this.field705 = 500000;
         this.field703 = new int[var2];
         int var3 = 0;
         while (var3 < var2) {
-            int var5 = this.field701.g4((byte) -111);
-            int var6 = this.field701.g4((byte) -34);
+            int var5 = this.field701.g4();
+            int var6 = this.field701.g4();
             if (var5 == 1297379947) {
                 this.field703[var3] = this.field701.pos;
                 var3++;

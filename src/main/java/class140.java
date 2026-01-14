@@ -100,7 +100,7 @@ public class class140 extends class23 {
         if (arg1 == -3) {
             ++field2592;
             if (~arg2 == -1) {
-                this.field2594 = arg0.g2(83);
+                this.field2594 = arg0.g2();
             }
         }
     }

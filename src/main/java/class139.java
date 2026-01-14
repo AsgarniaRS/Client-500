@@ -50,7 +50,7 @@ public class class139 extends class23 {
     public static int field2583;
 
     @OriginalMember(owner = "client!mh", name = "W", descriptor = "Lnb;")
-    public static class144 field2580;
+    public static Js5Index field2580;
 
     @OriginalMember(owner = "client!mh", name = "b", descriptor = "(IB)[[I")
     public final int[][] method7(int arg0, byte arg1) {
@@ -91,13 +91,13 @@ public class class139 extends class23 {
         if (~arg2 != -1) {
             if (~arg2 != -2) {
                 if (~arg2 == -3) {
-                    this.field2585 = arg0.g2(123);
+                    this.field2585 = arg0.g2();
                 }
             } else {
-                this.field2588 = arg0.g2(56);
+                this.field2588 = arg0.g2();
             }
         } else {
-            this.field2578 = arg0.g2(14);
+            this.field2578 = arg0.g2();
         }
         if (arg1 != -3) {
             field2589 = null;

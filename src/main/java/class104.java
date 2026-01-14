@@ -186,25 +186,25 @@ public class class104 extends class23 {
                         if (~arg2 != -5) {
                             if (~arg2 != -6) {
                                 if (arg2 == 6) {
-                                    this.field1888 = arg0.g2(27);
+                                    this.field1888 = arg0.g2();
                                 }
                             } else {
-                                this.field1880 = arg0.g2(65);
+                                this.field1880 = arg0.g2();
                             }
                         } else {
-                            this.field1899 = arg0.g2(47);
+                            this.field1899 = arg0.g2();
                         }
                     } else {
-                        this.field1896 = arg0.g2(arg1 ^ -69);
+                        this.field1896 = arg0.g2();
                     }
                 } else {
-                    this.field1883 = arg0.g2(32);
+                    this.field1883 = arg0.g2();
                 }
             } else {
-                this.field1887 = arg0.g2(118);
+                this.field1887 = arg0.g2();
             }
         } else {
-            this.field1877 = arg0.g2(101);
+            this.field1877 = arg0.g2();
         }
         ++field1890;
         if (arg1 != -3) {
@@ -222,7 +222,7 @@ public class class104 extends class23 {
         if (super.field379.field3100) {
             int var4 = class111.field2023[arg0] + -2048;
             for (int var5 = 0; class70.field1276 > var5; ++var5) {
-                int var6 = class22.field351[var5] + -2048;
+                int var6 = Js5Local.field351[var5] + -2048;
                 int var7 = this.field1877 + var6;
                 int var8 = this.field1887 + var4;
                 int var9 = ~var8 <= 2047 ? var8 : var8 - -4096;
@@ -259,15 +259,15 @@ public class class104 extends class23 {
             class72.method478(var5 + -150 - -(class228.field4278 * 3), var7 - -2, -(class228.field4278 * 3) + 300, 30, 0);
             class54.field1011.method141(class196.field3765, var5, var7 - -var6, 16777215, -1);
         } else {
-            class39.field693 = -((int) ((double) arg1 / class59.field1110)) + class126.field2332;
-            int var8 = class126.field2332 - (int) ((double) arg1 / class59.field1110);
-            class43.field727 = class157.field3035 - (int) ((double) arg2 / class59.field1110);
-            class164.field3138 = (int) ((double) (arg2 * 2) / class59.field1110);
-            int var9 = -((int) ((double) arg2 / class59.field1110)) + class157.field3035;
+            class39.field693 = -((int) ((double) arg1 / GZip.field1110)) + class126.field2332;
+            int var8 = class126.field2332 - (int) ((double) arg1 / GZip.field1110);
+            class43.field727 = class157.field3035 - (int) ((double) arg2 / GZip.field1110);
+            class164.field3138 = (int) ((double) (arg2 * 2) / GZip.field1110);
+            int var9 = -((int) ((double) arg2 / GZip.field1110)) + class157.field3035;
             if (arg0 >= 0) {
-                class71.field1309 = (int) ((double) (arg1 * 2) / class59.field1110);
-                int var10 = (int) ((double) arg1 / class59.field1110) + class126.field2332;
-                int var11 = (int) ((double) arg2 / class59.field1110) + class157.field3035;
+                class71.field1309 = (int) ((double) (arg1 * 2) / GZip.field1110);
+                int var10 = (int) ((double) arg1 / GZip.field1110) + class126.field2332;
+                int var11 = (int) ((double) arg2 / GZip.field1110) + class157.field3035;
                 Packet.method348(arg2 + arg4, arg3 - -arg1, arg3, (byte) 78, arg4, var11, var8, var10, var9);
                 class223.method1502(arg4, -1, arg3, arg1 + arg3, arg2 + arg4, var9, var10, var8, var11);
                 if (class54.field1012 > 0) {

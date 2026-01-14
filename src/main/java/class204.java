@@ -62,7 +62,7 @@ public class class204 extends class67 {
     public static int field3901;
 
     @OriginalMember(owner = "client!sh", name = "x", descriptor = "Lnb;")
-    public static class144 field3885;
+    public static Js5Index field3885;
 
     @OriginalMember(owner = "client!sh", name = "w", descriptor = "[I")
     public static int[] field3884;
@@ -147,7 +147,7 @@ public class class204 extends class67 {
                     } else if (!class10.field145) {
                         class43.field724++;
                         class88[] var23 = var22.field2818;
-                        if (class99.field1809) {
+                        if (IntHashTable.field1809) {
                             var23 = class138.method923(var23, (byte) 72);
                         }
                         if (var23 != null) {
@@ -228,7 +228,7 @@ public class class204 extends class67 {
                             } else if (!class10.field145) {
                                 class126.field2322++;
                                 class88[] var40 = var39.field2900;
-                                if (class99.field1809) {
+                                if (IntHashTable.field1809) {
                                     var40 = class138.method923(var40, (byte) -123);
                                 }
                                 for (int var41 = 4; var41 >= 0; var41--) {
@@ -431,7 +431,7 @@ public class class204 extends class67 {
             var14[1] = 1;
             int var16 = 1;
             for (int var17 = 2; var17 < var11; var17++) {
-                int var18 = var2.g1(26119);
+                int var18 = var2.g1();
                 if (var18 == 0) {
                     var16 = var15++;
                 } else {
@@ -448,19 +448,19 @@ public class class204 extends class67 {
         class121[] var19 = new class121[var15];
         for (int var20 = 0; var20 < var19.length; var20++) {
             class121 var103 = var19[var20] = new class121();
-            int var104 = var2.g1(26119);
+            int var104 = var2.g1();
             if (var104 > 0) {
                 var103.field2218 = new byte[var104 * 2];
             }
-            int var105 = var2.g1(26119);
+            int var105 = var2.g1();
             if (var105 > 0) {
                 var103.field2207 = new byte[var105 * 2 + 2];
                 var103.field2207[1] = 64;
             }
         }
-        int var21 = var2.g1(26119);
+        int var21 = var2.g1();
         byte[] var22 = var21 > 0 ? new byte[var21 * 2] : null;
-        int var23 = var2.g1(26119);
+        int var23 = var2.g1();
         byte[] var24 = var23 <= 0 ? null : new byte[var23 * 2];
         int var25;
         for (var25 = 0; var2.data[var2.pos + var25] != 0; var25++) {
@@ -473,12 +473,12 @@ public class class204 extends class67 {
         var25++;
         int var28 = 0;
         for (int var29 = 0; var29 < 128; var29++) {
-            var28 += var2.g1(26119);
+            var28 += var2.g1();
             this.field3891[var29] = (short) var28;
         }
         int var30 = 0;
         for (int var31 = 0; var31 < 128; var31++) {
-            var30 += var2.g1(26119);
+            var30 += var2.g1();
             this.field3891[var31] = (short) (this.field3891[var31] + (var30 << 8));
         }
         int var32 = 0;
@@ -559,13 +559,13 @@ public class class204 extends class67 {
                     var50 = -1;
                 }
                 if (this.field3889[var51] > 0) {
-                    var49 = var2.g1(26119) + 1;
+                    var49 = var2.g1() + 1;
                 }
             }
             var50--;
             this.field3896[var51] = (byte) var49;
         }
-        this.field3898 = var2.g1(26119) + 1;
+        this.field3898 = var2.g1() + 1;
         for (int var52 = 0; var52 < var15; var52++) {
             class121 var100 = var19[var52];
             if (var100.field2218 != null) {
@@ -594,7 +594,7 @@ public class class204 extends class67 {
             if (var97.field2207 != null) {
                 int var98 = 0;
                 for (int var99 = 2; var99 < var97.field2207.length; var99 += 2) {
-                    var98 = var98 + var2.g1(26119) + 1;
+                    var98 = var98 + var2.g1() + 1;
                     var97.field2207[var99] = (byte) var98;
                 }
             }
@@ -604,16 +604,16 @@ public class class204 extends class67 {
             if (var94.field2218 != null) {
                 int var95 = 0;
                 for (int var96 = 2; var96 < var94.field2218.length; var96 += 2) {
-                    var95 = var95 + var2.g1(26119) + 1;
+                    var95 = var95 + var2.g1() + 1;
                     var94.field2218[var96] = (byte) var95;
                 }
             }
         }
         if (var22 != null) {
-            int var57 = var2.g1(26119);
+            int var57 = var2.g1();
             var22[0] = (byte) var57;
             for (int var58 = 2; var58 < var22.length; var58 += 2) {
-                var57 = var57 + var2.g1(26119) + 1;
+                var57 = var57 + var2.g1() + 1;
                 var22[var58] = (byte) var57;
             }
             byte var59 = var22[0];
@@ -641,10 +641,10 @@ public class class204 extends class67 {
             Object var64 = null;
         }
         if (var24 != null) {
-            int var70 = var2.g1(26119);
+            int var70 = var2.g1();
             var24[0] = (byte) var70;
             for (int var71 = 2; var71 < var24.length; var71 += 2) {
-                var70 = var70 + var2.g1(26119) + 1;
+                var70 = var70 + var2.g1() + 1;
                 var24[var71] = (byte) var70;
             }
             byte var72 = var24[0];
@@ -693,33 +693,33 @@ public class class204 extends class67 {
             Object var77 = null;
         }
         for (int var86 = 0; var86 < var15; var86++) {
-            var19[var86].field2210 = var2.g1(26119);
+            var19[var86].field2210 = var2.g1();
         }
         for (int var87 = 0; var87 < var15; var87++) {
             class121 var93 = var19[var87];
             if (var93.field2218 != null) {
-                var93.field2217 = var2.g1(26119);
+                var93.field2217 = var2.g1();
             }
             if (var93.field2207 != null) {
-                var93.field2214 = var2.g1(26119);
+                var93.field2214 = var2.g1();
             }
             if (var93.field2210 > 0) {
-                var93.field2209 = var2.g1(26119);
+                var93.field2209 = var2.g1();
             }
         }
         for (int var88 = 0; var88 < var15; var88++) {
-            var19[var88].field2211 = var2.g1(26119);
+            var19[var88].field2211 = var2.g1();
         }
         for (int var89 = 0; var89 < var15; var89++) {
             class121 var92 = var19[var89];
             if (var92.field2211 > 0) {
-                var92.field2213 = var2.g1(26119);
+                var92.field2213 = var2.g1();
             }
         }
         for (int var90 = 0; var90 < var15; var90++) {
             class121 var91 = var19[var90];
             if (var91.field2213 > 0) {
-                var91.field2212 = var2.g1(26119);
+                var91.field2212 = var2.g1();
             }
         }
     }

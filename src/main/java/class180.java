@@ -51,7 +51,7 @@ public class class180 extends class23 {
     }
 
     @OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lnb;B)V")
-    public static final void method1284(class144 arg0, byte arg1) {
+    public static final void method1284(Js5Index arg0, byte arg1) {
         ++field3578;
         if (arg1 == -32) {
             class204.field3885 = arg0;
@@ -63,7 +63,7 @@ public class class180 extends class23 {
         ++field3575;
         if (arg1 == -3) {
             if (~arg2 == -1) {
-                this.field3580 = arg0.g2(79);
+                this.field3580 = arg0.g2();
             }
         }
     }
@@ -78,7 +78,7 @@ public class class180 extends class23 {
         if (super.field379.field3100) {
             int var4 = class111.field2023[arg0];
             for (int var5 = 0; ~var5 > ~class70.field1276; ++var5) {
-                int var6 = class22.field351[var5];
+                int var6 = Js5Local.field351[var5];
                 if (var6 > this.field3580 && ~(4096 - this.field3580) < ~var6 && var4 > -this.field3580 + 2048 && ~var4 > ~(this.field3580 + 2048)) {
                     int var7 = -var6 + 2048;
                     int var8 = var7 >= 0 ? var7 : -var7;

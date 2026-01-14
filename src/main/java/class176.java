@@ -70,19 +70,19 @@ public class class176 extends class136 {
     @OriginalMember(owner = "client!qb", name = "a", descriptor = "(IILea;)V")
     private final void method1262(int arg0, int arg1, Packet arg2) {
         if (arg0 == arg1) {
-            int var4 = arg2.g1(26119);
+            int var4 = arg2.g1();
             if (this.field3541 == null) {
                 int var5 = class184.method1298(true, var4);
                 this.field3541 = new class154(var5);
             }
             for (int var6 = 0; var6 < var4; var6++) {
-                boolean var7 = arg2.g1(26119) == 1;
+                boolean var7 = arg2.g1() == 1;
                 int var8 = arg2.method304(-29629);
                 class67 var9;
                 if (var7) {
                     var9 = new class216(arg2.gjstr(arg0 ^ 0xFFFFFF79));
                 } else {
-                    var9 = new class192(arg2.g4((byte) -84));
+                    var9 = new class192(arg2.g4());
                 }
                 this.field3541.method1054((long) var8, var9, arg0 - 250);
             }
@@ -195,7 +195,7 @@ public class class176 extends class136 {
                 class31.login.p4(CollisionMap.field1671.crc);
                 class31.login.p4(class12.field172.crc);
                 class31.login.p4(class27.field451.crc);
-                class31.login.p4(class99.field1816.crc);
+                class31.login.p4(IntHashTable.field1816.crc);
                 class31.login.p4(class233.field4367.crc);
                 class31.login.p4(class226.field4245.crc);
                 class31.login.p4(class66.field1193.crc);
@@ -226,13 +226,18 @@ public class class176 extends class136 {
                 }
                 class230.in.method36(seed, (byte) 75);
 
+                System.out.println("We do get here at least");
+
                 class117.loginState = 6;
             }
             if (class117.loginState == 6 && class33.stream.available(1) > 0) {
                 int var8 = class33.stream.read(0);
+                System.out.println("var8" + var8);
+
                 if (var8 == 21 && class229.gameState == 20) {
                     class117.loginState = 7;
                 } else if (var8 == 2) {
+                    System.out.println("Did we ever get here to set login state? also var 8 " + var8);
                     class117.loginState = 9;
                 } else if (var8 == 15 && class229.gameState == 40) {
                     class138.method920(true);
@@ -258,11 +263,14 @@ public class class176 extends class136 {
             } else {
                 if (class117.loginState == 9 && class33.stream.available(1) >= 9) {
                     class67.field1208 = class33.stream.read(0);
+                    System.out.println("field1208" + class67.field1208);
                     class29.field479 = class33.stream.read(0);
+                    System.out.println("field479" + class29.field479);
                     class238.field4430 = class33.stream.read(0);
+                    System.out.println("field4430" + class238.field4430);
                     if (class238.field4430 == 1) {
                         try {
-                            class59.field1118.method628(class126.field2326.field3599, true);
+                            GZip.field1118.method628(class126.field2326.field3599, true);
                         } catch (Throwable var10) {
                         }
                     } else {
@@ -284,7 +292,7 @@ public class class176 extends class136 {
 
                     class33.stream.read(0, class230.in.data, (byte) -93, 2);
                     class230.in.pos = 0;
-                    class228.packetSize = class230.in.g2(80);
+                    class228.packetSize = class230.in.g2();
                     class117.loginState = 10;
                 }
                 if (class117.loginState != 10) {
@@ -358,7 +366,7 @@ public class class176 extends class136 {
         field3536++;
         int var3 = 93 % ((arg1 - 68) / 57);
         while (true) {
-            int var4 = arg0.g1(26119);
+            int var4 = arg0.g1();
             if (var4 == 0) {
                 return;
             }
@@ -384,7 +392,7 @@ public class class176 extends class136 {
     }
 
     @OriginalMember(owner = "client!qb", name = "a", descriptor = "(ZLnb;I)Lsh;")
-    public static final class204 method1268(boolean arg0, class144 arg1, int arg2) {
+    public static final class204 method1268(boolean arg0, Js5Index arg1, int arg2) {
         if (arg0) {
             return null;
         } else {

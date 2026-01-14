@@ -123,7 +123,7 @@ public class class109 extends class136 {
     public static int field2004;
 
     @OriginalMember(owner = "client!k", name = "xb", descriptor = "Lbj;")
-    public static class22 field2006;
+    public static Js5Local field2006;
 
     @OriginalMember(owner = "client!k", name = "J", descriptor = "[I")
     public int[] field1967;
@@ -201,62 +201,62 @@ public class class109 extends class136 {
         field1986++;
         int var4 = -42 / ((-arg2 - 57) / 59);
         if (arg1 == 1) {
-            int var5 = arg0.g2(58);
+            int var5 = arg0.g2();
             this.field1992 = new int[var5];
             for (int var6 = 0; var6 < var5; var6++) {
-                this.field1992[var6] = arg0.g2(52);
+                this.field1992[var6] = arg0.g2();
             }
             this.field1967 = new int[var5];
             for (int var7 = 0; var7 < var5; var7++) {
-                this.field1967[var7] = arg0.g2(123);
+                this.field1967[var7] = arg0.g2();
             }
             for (int var8 = 0; var8 < var5; var8++) {
-                this.field1967[var8] = (arg0.g2(100) << 16) + this.field1967[var8];
+                this.field1967[var8] = (arg0.g2() << 16) + this.field1967[var8];
             }
         } else if (arg1 == 2) {
-            this.field1974 = arg0.g2(24);
+            this.field1974 = arg0.g2();
         } else if (arg1 == 3) {
-            int var9 = arg0.g1(26119);
+            int var9 = arg0.g1();
             this.field1987 = new int[var9 + 1];
             for (int var10 = 0; var10 < var9; var10++) {
-                this.field1987[var10] = arg0.g1(26119);
+                this.field1987[var10] = arg0.g1();
             }
             this.field1987[var9] = 9999999;
         } else if (arg1 == 4) {
             this.field1962 = true;
         } else if (arg1 == 5) {
-            this.field2001 = arg0.g1(26119);
+            this.field2001 = arg0.g1();
         } else if (arg1 == 6) {
-            this.field2002 = arg0.g2(117);
+            this.field2002 = arg0.g2();
         } else if (arg1 == 7) {
-            this.field1977 = arg0.g2(104);
+            this.field1977 = arg0.g2();
         } else if (arg1 == 8) {
-            this.field1972 = arg0.g1(26119);
+            this.field1972 = arg0.g1();
         } else if (arg1 == 9) {
-            this.field1985 = arg0.g1(26119);
+            this.field1985 = arg0.g1();
         } else if (arg1 == 10) {
-            this.field1982 = arg0.g1(26119);
+            this.field1982 = arg0.g1();
         } else if (arg1 == 11) {
-            this.field1968 = arg0.g1(26119);
+            this.field1968 = arg0.g1();
         } else if (arg1 == 12) {
-            int var15 = arg0.g1(26119);
+            int var15 = arg0.g1();
             this.field2005 = new int[var15];
             for (int var16 = 0; var16 < var15; var16++) {
-                this.field2005[var16] = arg0.g2(88);
+                this.field2005[var16] = arg0.g2();
             }
             for (int var17 = 0; var17 < var15; var17++) {
-                this.field2005[var17] = (arg0.g2(39) << 16) + this.field2005[var17];
+                this.field2005[var17] = (arg0.g2() << 16) + this.field2005[var17];
             }
         } else if (arg1 == 13) {
-            int var11 = arg0.g2(45);
+            int var11 = arg0.g2();
             this.field2003 = new int[var11][];
             for (int var12 = 0; var12 < var11; var12++) {
-                int var13 = arg0.g1(26119);
+                int var13 = arg0.g1();
                 if (var13 > 0) {
                     this.field2003[var12] = new int[var13];
                     this.field2003[var12][0] = arg0.method304(-29629);
                     for (int var14 = 1; var14 < var13; var14++) {
-                        this.field2003[var12][var14] = arg0.g2(77);
+                        this.field2003[var12][var14] = arg0.g2();
                     }
                 }
             }
@@ -381,7 +381,7 @@ public class class109 extends class136 {
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(Lea;Z)V")
     public final void method753(Packet arg0, boolean arg1) {
         while (true) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 == 0) {
                 if (arg1) {
                     return;

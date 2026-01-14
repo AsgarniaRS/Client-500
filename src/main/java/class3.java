@@ -93,7 +93,7 @@ public class class3 {
                 }
                 this.field29 += this.field33.read(this.field39, this.field29, var2);
                 if (this.field29 == 4) {
-                    int var3 = (new Packet(this.field39)).g4((byte) -118);
+                    int var3 = (new Packet(this.field39)).g4();
                     this.field36 = 2;
                     this.field35 = new byte[var3];
                 }
@@ -140,7 +140,7 @@ public class class3 {
     }
 
     @OriginalMember(owner = "client!ab", name = "a", descriptor = "(Li;ZLi;Lnb;)[Lpf;")
-    public static final class169[] method15(class88 arg0, boolean arg1, class88 arg2, class144 arg3) {
+    public static final class169[] method15(class88 arg0, boolean arg1, class88 arg2, Js5Index arg3) {
         field28++;
         if (arg1) {
             field27 = null;

@@ -112,9 +112,9 @@ public class class118 {
     @OriginalMember(owner = "client!ki", name = "a", descriptor = "(III)V")
     public static final void method804(int arg0, int arg1, int arg2) {
         if (class70.field1276 != arg0) {
-            class22.field351 = new int[arg0];
+            Js5Local.field351 = new int[arg0];
             for (int var3 = 0; var3 < arg0; var3++) {
-                class22.field351[var3] = (var3 << 12) / arg0;
+                Js5Local.field351[var3] = (var3 << 12) / arg0;
             }
             class43.field738 = arg0 == 64 ? 2048 : 4096;
             class70.field1276 = arg0;
@@ -122,7 +122,7 @@ public class class118 {
         }
         if (class27.field460 != arg2) {
             if (class70.field1276 == arg2) {
-                class111.field2023 = class22.field351;
+                class111.field2023 = Js5Local.field351;
             } else {
                 class111.field2023 = new int[arg2];
                 for (int var4 = 0; var4 < arg2; var4++) {

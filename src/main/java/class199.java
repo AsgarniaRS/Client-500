@@ -92,7 +92,7 @@ public class class199 extends class136 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(BLnb;Lnb;)V")
-    public static final void method1366(byte arg0, class144 arg1, class144 arg2) {
+    public static final void method1366(byte arg0, Js5Index arg1, Js5Index arg2) {
         if (arg0 != 113) {
             method1366((byte) 117, null, null);
         }
@@ -113,7 +113,7 @@ public class class199 extends class136 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lnb;ZZLfe;)[I")
-    public final int[] method1368(class144 arg0, boolean arg1, boolean arg2, class61 arg3) {
+    public final int[] method1368(Js5Index arg0, boolean arg1, boolean arg2, class61 arg3) {
         field3808++;
         if (arg2) {
             return null;
@@ -157,7 +157,7 @@ public class class199 extends class136 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lfe;ILnb;)Z")
-    public final boolean method1370(class61 arg0, int arg1, class144 arg2) {
+    public final boolean method1370(class61 arg0, int arg1, Js5Index arg2) {
         field3801++;
         return arg1 == 13042 ? this.field3793.method63(arg0, arg2, -34) : true;
     }
@@ -169,7 +169,7 @@ public class class199 extends class136 {
     }
 
     @OriginalMember(owner = "client!sc", name = "a", descriptor = "(Lfe;FLnb;ZZ)[I")
-    public final int[] method1371(class61 arg0, float arg1, class144 arg2, boolean arg3, boolean arg4) {
+    public final int[] method1371(class61 arg0, float arg1, Js5Index arg2, boolean arg3, boolean arg4) {
         if (arg4) {
             this.field3810 = null;
         }
@@ -284,14 +284,14 @@ public class class199 extends class136 {
     @OriginalMember(owner = "client!sc", name = "<init>", descriptor = "(Lea;)V")
     public class199(Packet arg0) {
         this.field3793 = new class12(arg0);
-        this.field3796 = arg0.g1(26119) == 1;
-        this.field3803 = arg0.g1(26119) == 1;
-        arg0.g1(26119);
-        arg0.g1(26119);
-        int var2 = arg0.g1(26119) & 0x3;
+        this.field3796 = arg0.g1() == 1;
+        this.field3803 = arg0.g1() == 1;
+        arg0.g1();
+        arg0.g1();
+        int var2 = arg0.g1() & 0x3;
         this.field3792 = arg0.method324(32);
         this.field3809 = arg0.method324(45);
-        arg0.g1(26119);
-        arg0.g1(26119);
+        arg0.g1();
+        arg0.g1();
     }
 }

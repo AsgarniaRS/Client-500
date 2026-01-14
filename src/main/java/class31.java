@@ -41,7 +41,7 @@ public class class31 implements Runnable {
     public static int field500;
 
     @OriginalMember(owner = "client!ch", name = "l", descriptor = "Lnb;")
-    public static class144 field506;
+    public static Js5Index field506;
 
     @OriginalMember(owner = "client!ch", name = "i", descriptor = "Lpg;")
     public static class170 field503;
@@ -124,13 +124,13 @@ public class class31 implements Runnable {
                     }
                 } else {
                     if (var2.field1702 == 0) {
-                        var2.field1714.method1500(var2.field1706, 4, (int) var2.field1219, var2.field1706.length);
+                        var2.field1714.method1500(var2.field1706, 4, (int) var2.nodeId, var2.field1706.length);
                         class248 var3 = class227.field4254;
                         synchronized (class227.field4254) {
                             var2.method460(true);
                         }
                     } else if (var2.field1702 == 1) {
-                        var2.field1706 = var2.field1714.method1499((int) var2.field1219, (byte) -116);
+                        var2.field1706 = var2.field1714.method1499((int) var2.nodeId, (byte) -116);
                         class248 var4 = class227.field4254;
                         synchronized (class227.field4254) {
                             class131.field2463.method1624(var2, 110);

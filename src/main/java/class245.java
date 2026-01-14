@@ -53,27 +53,27 @@ public class class245 {
     @OriginalMember(owner = "client!wf", name = "a", descriptor = "(I)V")
     public static final void method1606(int arg0) {
         field4501++;
-        int var1 = class126.field2332 - (int) ((double) class90.field1707.field3382 / class59.field1110);
-        int var2 = class157.field3035 - (int) ((double) class90.field1707.field3424 / class59.field1110);
-        int var3 = class126.field2332 + (int) ((double) class90.field1707.field3382 / class59.field1110);
+        int var1 = class126.field2332 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
+        int var2 = class157.field3035 - (int) ((double) class90.field1707.field3424 / GZip.field1110);
+        int var3 = class126.field2332 + (int) ((double) class90.field1707.field3382 / GZip.field1110);
         if (arg0 > var1) {
-            class126.field2332 = (int) ((double) class90.field1707.field3382 / class59.field1110);
+            class126.field2332 = (int) ((double) class90.field1707.field3382 / GZip.field1110);
             class189.field3661 = -1;
             class34.field594 = -1;
         }
         if (class109.field1990 < var3) {
-            class126.field2332 = class109.field1990 - (int) ((double) class90.field1707.field3382 / class59.field1110);
+            class126.field2332 = class109.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
             class34.field594 = -1;
             class189.field3661 = -1;
         }
-        int var4 = (int) ((double) class90.field1707.field3424 / class59.field1110) + class157.field3035;
+        int var4 = (int) ((double) class90.field1707.field3424 / GZip.field1110) + class157.field3035;
         if (var2 < 0) {
-            class157.field3035 = (int) ((double) class90.field1707.field3424 / class59.field1110);
+            class157.field3035 = (int) ((double) class90.field1707.field3424 / GZip.field1110);
             class189.field3661 = -1;
             class34.field594 = -1;
         }
         if (var4 > scene.field760) {
-            class157.field3035 = scene.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
+            class157.field3035 = scene.field760 - (int) ((double) class90.field1707.field3424 / GZip.field1110);
             class189.field3661 = -1;
             class34.field594 = -1;
         }
@@ -107,7 +107,7 @@ public class class245 {
             class53.method393(class145.field2727, class43.field723, (byte) -39, 0, -1, 0, 0, 0, class222.field4194);
         }
         class72.method479();
-        class22.method118(28360);
+        Js5Local.method118(28360);
         if (class108.field1960) {
             class39.method258(92);
         } else if (class58.field1101 != -1) {

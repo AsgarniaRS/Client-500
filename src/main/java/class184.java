@@ -74,7 +74,7 @@ public class class184 extends class23 {
                 }
             }
             if (class128.field2404[var2] != -1 && class45.field774[var2] == null) {
-                class45.field774[var2] = class27.field451.method951(-14531, class17.mapKeys[var2], class128.field2404[var2], 0);
+                class45.field774[var2] = class27.field451.getFile(-14531, class17.mapKeys[var2], class128.field2404[var2], 0);
                 if (class45.field774[var2] == null) {
                     var1 = false;
                     ++class196.field3756;
@@ -161,7 +161,7 @@ public class class184 extends class23 {
                 class210.method1439(0);
                 class27.method167((byte) 61);
                 if (class201.field3834 != null) {
-                    Isaac.out.method30((byte) -50, 198);
+                    Isaac.out.method30(198);
                     Isaac.out.p4(1057001181);
                     ++class247.field4525;
                 }
@@ -181,7 +181,7 @@ public class class184 extends class23 {
                 }
                 class131.method883(30, 65536);
                 class219.method1481(2);
-                Isaac.out.method30((byte) -43, 213);
+                Isaac.out.method30(213);
                 class108.method740(false);
             }
         }
@@ -195,7 +195,7 @@ public class class184 extends class23 {
         }
         if (super.field379.field3100) {
             for (int var4 = 0; class70.field1276 > var4; ++var4) {
-                int var5 = (class22.field351[var4] << 12) / this.field3612 + this.field3602;
+                int var5 = (Js5Local.field351[var4] << 12) / this.field3612 + this.field3602;
                 int var6 = var5;
                 int var7 = (class111.field2023[arg0] << 12) / this.field3612 + this.field3605;
                 int var8 = var7;
@@ -224,25 +224,25 @@ public class class184 extends class23 {
             if (arg2 != 1) {
                 if (arg2 != 2) {
                     if (arg2 == 3) {
-                        this.field3605 = arg0.g2(45);
+                        this.field3605 = arg0.g2();
                     }
                 } else {
-                    this.field3602 = arg0.g2(arg1 ^ -30);
+                    this.field3602 = arg0.g2();
                 }
             } else {
-                this.field3615 = arg0.g2(28);
+                this.field3615 = arg0.g2();
             }
         } else {
-            this.field3612 = arg0.g2(96);
+            this.field3612 = arg0.g2();
         }
         if (arg1 != -3) {
-            method1300((class144) null, (Component) null, true, (class144) null);
+            method1300((Js5Index) null, (Component) null, true, (Js5Index) null);
         }
         ++field3614;
     }
 
     @OriginalMember(owner = "client!qj", name = "a", descriptor = "(Lnb;Ljava/awt/Component;ZLnb;)V")
-    public static final void method1300(class144 arg0, Component arg1, boolean arg2, class144 arg3) {
+    public static final void method1300(Js5Index arg0, Component arg1, boolean arg2, Js5Index arg3) {
         ++field3611;
         if (!class90.field1708) {
             class72.method481();
@@ -309,7 +309,7 @@ public class class184 extends class23 {
             class209.field3969 = class209.field3974;
             class190.field3669 = new int[32768];
             if (!class131.field2462) {
-                class106.method732(0, 255, false, class86.field1552, 2, class99.field1816, 0);
+                class106.method732(0, 255, false, class86.field1552, 2, IntHashTable.field1816, 0);
             } else {
                 class117.method797(25335, 2);
             }

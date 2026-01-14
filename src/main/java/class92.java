@@ -125,7 +125,7 @@ public class class92 {
             method669(-7, -118, -106, 60);
         }
         class217 var2 = new class217();
-        var2.field4060 = arg1.g2(79);
+        var2.field4060 = arg1.g2();
         var2.field4067 = class168.method1152((byte) 62, var2.field4060);
         return var2;
     }

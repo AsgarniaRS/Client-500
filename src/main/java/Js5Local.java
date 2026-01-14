@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!bj")
-public class class22 extends class144 {
+public class Js5Local extends Js5Index {
 
     @OriginalMember(owner = "client!bj", name = "ub", descriptor = "Z")
     private volatile boolean field348 = false;
@@ -106,7 +106,7 @@ public class class22 extends class144 {
                 this.field330[arg0] = true;
             }
             if (arg2) {
-                super.field2708[arg0] = class168.method1155(false, (byte) -55, arg1);
+                super.packed[arg0] = class168.method1155(false, (byte) -55, arg1);
                 return;
             }
         } else {
@@ -116,7 +116,7 @@ public class class22 extends class144 {
             if (this.field340 != null) {
                 class36.method244(arg1, true, this.field334, this.field340);
             }
-            this.method969(arg1, false);
+            this.decode(arg1);
             this.method113(103);
         }
     }
@@ -210,9 +210,9 @@ public class class22 extends class144 {
     public final void method110(int arg0, int arg1) {
         ++field350;
         if (this.method970(arg0 ^ -23856, arg1)) {
-            class59.method426(this.field334, 121, arg1);
+            GZip.method426(this.field334, 121, arg1);
             if (arg0 != -23896) {
-                this.method112(96, false);
+                this.fetchGroup(96, false);
             }
         }
     }
@@ -247,7 +247,7 @@ public class class22 extends class144 {
             }
             this.field330[arg1] = true;
             if (arg4) {
-                super.field2708[arg1] = class168.method1155(false, (byte) -109, arg0);
+                super.packed[arg1] = class168.method1155(false, (byte) -109, arg0);
                 return;
             }
         } else {
@@ -272,26 +272,26 @@ public class class22 extends class144 {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
-            int var10 = var9.g1(26119);
+            int var10 = var9.g1();
             if (~var10 != -6 && var10 != 6) {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             int var11 = 0;
             if (~var10 <= -7) {
-                var11 = var9.g4((byte) -116);
+                var11 = var9.g4();
             }
             if (~this.field347 != ~var11) {
                 class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
-            this.method969(arg0, false);
+            this.decode(arg0);
             this.method113(102);
         }
     }
 
     @OriginalMember(owner = "client!bj", name = "a", descriptor = "(IZ)V")
-    public final void method112(int arg0, boolean arg1) {
+    public final void fetchGroup(int arg0, boolean arg1) {
         ++field336;
         if (arg1) {
             if (this.method970(123, arg0)) {
@@ -307,7 +307,7 @@ public class class22 extends class144 {
     @OriginalMember(owner = "client!bj", name = "c", descriptor = "(I)V")
     private final void method113(int arg0) {
         ++field337;
-        this.field330 = new boolean[super.field2708.length];
+        this.field330 = new boolean[super.packed.length];
         for (int var2 = 0; ~var2 > ~this.field330.length; ++var2) {
             this.field330[var2] = false;
         }
@@ -319,7 +319,7 @@ public class class22 extends class144 {
                 method114((int[][]) null, (byte) -117);
             }
             for (int var3 = 0; var3 < this.field330.length; ++var3) {
-                if (~super.field2685[var3] < -1) {
+                if (~super.groupSizes[var3] < -1) {
                     class122.method830(-1, var3, this, this.field333);
                     this.field352 = var3;
                 }
@@ -346,10 +346,10 @@ public class class22 extends class144 {
             return 10;
         } else if (this.field348) {
             return 100;
-        } else if (super.field2708 != null) {
+        } else if (super.packed != null) {
             return 99;
         } else {
-            int var2 = class228.method1525(255, this.field334, -14013488);
+            int var2 = class228.transferProgress(255, this.field334);
             if (~var2 <= -101) {
                 var2 = 99;
             }
@@ -365,15 +365,15 @@ public class class22 extends class144 {
         }
         if (!this.method970(119, arg1)) {
             return 0;
-        } else if (super.field2708[arg1] != null) {
+        } else if (super.packed[arg1] != null) {
             return 100;
         } else {
-            return this.field330[arg1] ? 100 : class228.method1525(this.field334, arg1, arg0 ^ -14013503);
+            return this.field330[arg1] ? 100 : class228.transferProgress(this.field334, arg1);
         }
     }
 
     @OriginalMember(owner = "client!bj", name = "<init>", descriptor = "(Lud;Lud;IZZZ)V")
-    public class22(class222 arg0, class222 arg1, int arg2, boolean arg3, boolean arg4, boolean arg5) {
+    public Js5Local(class222 arg0, class222 arg1, int arg2, boolean arg3, boolean arg4, boolean arg5) {
         super(arg3, arg4);
         this.field340 = arg1;
         this.field342 = arg5;

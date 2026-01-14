@@ -103,7 +103,7 @@ public class ClientStream implements Runnable {
     }
 
     @OriginalMember(owner = "client!mf", name = "a", descriptor = "(BLnb;)V")
-    public static final void method912(byte arg0, class144 arg1) {
+    public static final void method912(byte arg0, Js5Index arg1) {
         class139.field2580 = arg1;
         field2556++;
         if (arg0 != 64) {
@@ -236,16 +236,16 @@ public class ClientStream implements Runnable {
         }
         if (arg0 < 0 || arg0 >= 104 || arg6 < 0 || arg6 >= 104) {
             while (true) {
-                int var11 = arg1.g1(arg2 ^ 0x6607);
+                int var11 = arg1.g1();
                 if (var11 == 0) {
                     return;
                 }
                 if (var11 == 1) {
-                    arg1.g1(26119);
+                    arg1.g1();
                     return;
                 }
                 if (var11 <= 49) {
-                    arg1.g1(26119);
+                    arg1.g1();
                 }
             }
         }
@@ -253,7 +253,7 @@ public class ClientStream implements Runnable {
             class116.field2100[arg8][arg0][arg6] = 0;
         }
         while (true) {
-            int var9 = arg1.g1(26119);
+            int var9 = arg1.g1();
             if (var9 == 0) {
                 if (arg3) {
                     class62.field1137[0][arg0][arg6] = class145.field2723[0][arg0][arg6];
@@ -267,7 +267,7 @@ public class ClientStream implements Runnable {
                 }
             }
             if (var9 == 1) {
-                int var10 = arg1.g1(26119);
+                int var10 = arg1.g1();
                 if (!arg3) {
                     if (var10 == 1) {
                         var10 = 0;

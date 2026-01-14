@@ -60,7 +60,7 @@ public class class114 extends class136 {
         field2056++;
         int var3 = 92 / ((arg1 + 84) / 41);
         while (true) {
-            int var4 = arg0.g1(26119);
+            int var4 = arg0.g1();
             if (var4 == 0) {
                 return;
             }
@@ -95,10 +95,10 @@ public class class114 extends class136 {
                     class168.field3240[var5] = class168.field3240[var5 + 1];
                     class115.field2088[var5] = class115.field2088[var5 + 1];
                     Packet.field845[var5] = Packet.field845[var5 + 1];
-                    class59.field1120[var5] = class59.field1120[var5 + 1];
+                    GZip.field1120[var5] = GZip.field1120[var5 + 1];
                 }
                 class20.field313 = class67.field1211;
-                Isaac.out.method30((byte) -92, 121);
+                Isaac.out.method30(121);
                 Isaac.out.p8(arg1, (byte) -126);
                 return;
             }
@@ -108,7 +108,7 @@ public class class114 extends class136 {
     @OriginalMember(owner = "client!ke", name = "a", descriptor = "(ILea;I)V")
     private final void method780(int arg0, Packet arg1, int arg2) {
         if (arg0 == 2) {
-            this.field2069 = arg1.g2(arg2 - 2715);
+            this.field2069 = arg1.g2();
         }
         if (arg2 != 2842) {
             this.method777(null, (byte) -15);
@@ -125,17 +125,17 @@ public class class114 extends class136 {
                 byte[] var1 = class129.field2416.method12(true);
                 if (var1 != null) {
                     Packet var2 = new Packet(var1);
-                    class104.field1897 = var2.g2(103);
+                    class104.field1897 = var2.g2();
                     class202.field3847 = new class70[class104.field1897];
                     for (int var3 = 0; var3 < class104.field1897; var3++) {
                         class70 var4 = class202.field3847[var3] = new class70();
-                        int var5 = var2.g2(45);
+                        int var5 = var2.g2();
                         var4.field1261 = var5 & 0x7FFF;
                         var4.field1257 = (var5 & 0x8000) != 0;
                         var4.field1262 = var2.gjstr(arg0 ^ 0xFFFF807F);
                         var4.field1255 = var2.method334((byte) -73);
                         var4.field1258 = var3;
-                        var4.field1260 = class79.method528(var2.g2(97), arg0 ^ 0x4030);
+                        var4.field1260 = class79.method528(var2.g2(), arg0 ^ 0x4030);
                     }
                     class167.method1145(0, class202.field3847, 1, class202.field3847.length - 1);
                     class209.field3961 = true;

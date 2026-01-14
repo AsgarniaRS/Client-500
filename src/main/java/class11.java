@@ -59,10 +59,10 @@ public class class11 extends class23 {
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (~arg2 == -2) {
-                this.field167 = arg0.g1(26119);
+                this.field167 = arg0.g1();
             }
         } else {
-            this.field163 = arg0.g1(26119);
+            this.field163 = arg0.g1();
         }
         if (arg1 != -3) {
             field166 = true;
@@ -202,7 +202,7 @@ public class class11 extends class23 {
                     class95.field1765[class67.field1221] = arg1;
                     Isaac.field2743[class67.field1221++] = class200.method1377(arg1, (byte) 104);
                     class20.field313 = class67.field1211;
-                    Isaac.out.method30((byte) -48, 28);
+                    Isaac.out.method30(28);
                     if (arg0 == -8) {
                         Isaac.out.p8(arg1, (byte) -123);
                     }

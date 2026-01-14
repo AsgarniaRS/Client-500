@@ -41,7 +41,7 @@ public class class155 extends class67 {
     public static int field3005;
 
     @OriginalMember(owner = "client!oc", name = "w", descriptor = "Lbj;")
-    public static class22 field2996;
+    public static Js5Local field2996;
 
     @OriginalMember(owner = "client!oc", name = "a", descriptor = "(IBZII[Lq;)V")
     public static final void method1057(int arg0, byte arg1, boolean arg2, int arg3, int arg4, class174[] arg5) {

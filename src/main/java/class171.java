@@ -202,7 +202,7 @@ public class class171 extends class23 {
 
     @OriginalMember(owner = "client!ph", name = "a", descriptor = "(Li;II)V")
     public static final void method1215(class88 arg0, int arg1, int arg2) {
-        Isaac.out.method30((byte) -72, 40);
+        Isaac.out.method30(40);
         ++class145.field2721;
         ++field3325;
         if (arg2 != 0) {
@@ -272,10 +272,10 @@ public class class171 extends class23 {
         ++field3322;
         if (arg2 != 0) {
             if (arg2 == 1) {
-                super.field369 = ~arg0.g1(26119) == -2;
+                super.field369 = ~arg0.g1() == -2;
             }
         } else {
-            this.field3328 = arg0.g1(26119);
+            this.field3328 = arg0.g1();
         }
         if (arg1 != -3) {
             method1216(-34);

@@ -165,8 +165,8 @@ public class class230 {
     public static final void method1537(class181 arg0, int arg1, int arg2, Packet arg3) {
         field4310++;
         class9 var4 = new class9();
-        var4.field124 = arg3.g1(26119);
-        var4.field136 = arg3.g4((byte) -62);
+        var4.field124 = arg3.g1();
+        var4.field136 = arg3.g4();
         var4.field129 = new int[var4.field124];
         var4.field139 = new class163[var4.field124];
         if (arg1 != 0) {
@@ -178,13 +178,13 @@ public class class230 {
         var4.field138 = new class163[var4.field124];
         for (int var5 = 0; var5 < var4.field124; var5++) {
             try {
-                int var6 = arg3.g1(26119);
+                int var6 = arg3.g1();
                 if (var6 == 0 || var6 == 1 || var6 == 2) {
                     String var17 = new String(arg3.gjstr(-125).method613(-67));
                     String var18 = new String(arg3.gjstr(-126).method613(-87));
                     int var19 = 0;
                     if (var6 == 1) {
-                        var19 = arg3.g4((byte) -61);
+                        var19 = arg3.g4();
                     }
                     var4.field128[var5] = var6;
                     var4.field129[var5] = var19;
@@ -192,7 +192,7 @@ public class class230 {
                 } else if (var6 == 3 || var6 == 4) {
                     String var7 = new String(arg3.gjstr(-127).method613(-81));
                     String var8 = new String(arg3.gjstr(-126).method613(arg1 - 123));
-                    int var9 = arg3.g1(26119);
+                    int var9 = arg3.g1();
                     String[] var10 = new String[var9];
                     for (int var11 = 0; var11 < var9; var11++) {
                         var10[var11] = new String(arg3.gjstr(-126).method613(arg1 - 103));
@@ -200,7 +200,7 @@ public class class230 {
                     byte[][] var12 = new byte[var9][];
                     if (var6 == 3) {
                         for (int var13 = 0; var13 < var9; var13++) {
-                            int var14 = arg3.g4((byte) -34);
+                            int var14 = arg3.g4();
                             var12[var13] = new byte[var14];
                             arg3.method307(false, var14, var12[var13], 0);
                         }

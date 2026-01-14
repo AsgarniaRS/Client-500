@@ -77,7 +77,7 @@ public class class47 extends class136 {
             return;
         }
         while (true) {
-            int var3 = arg1.g1(26119);
+            int var3 = arg1.g1();
             if (var3 == 0) {
                 return;
             }
@@ -100,7 +100,7 @@ public class class47 extends class136 {
     }
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(ILnb;Lnb;)V")
-    public static final void method357(int arg0, class144 arg1, class144 arg2) {
+    public static final void method357(int arg0, Js5Index arg1, Js5Index arg2) {
         field883++;
         if (arg0 > -69) {
             field879 = null;
@@ -110,7 +110,7 @@ public class class47 extends class136 {
     }
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(ILnb;II)Z")
-    public static final boolean method358(int arg0, class144 arg1, int arg2, int arg3) {
+    public static final boolean method358(int arg0, Js5Index arg1, int arg2, int arg3) {
         if (arg0 != 854010832) {
             method359(-5, 0, 41, 16, 98, 4, -115, -87);
         }
@@ -212,23 +212,23 @@ public class class47 extends class136 {
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IBLea;)V")
     private final void method364(int arg0, byte arg1, Packet arg2) {
         if (arg0 == 1) {
-            this.field873 = arg2.g1(26119);
+            this.field873 = arg2.g1();
         } else if (arg0 == 2) {
-            this.field882 = arg2.g1(arg1 + 26133);
+            this.field882 = arg2.g1();
         } else if (arg0 == 3) {
             this.field876 = arg2.gjstr(-128);
         } else if (arg0 == 4) {
-            this.field877 = arg2.g4((byte) -41);
+            this.field877 = arg2.g4();
         } else if (arg0 == 5 || arg0 == 6) {
-            int var4 = arg2.g2(18);
+            int var4 = arg2.g2();
             this.field871 = new class154(class184.method1298(true, var4));
             for (int var5 = 0; var5 < var4; var5++) {
-                int var6 = arg2.g4((byte) -76);
+                int var6 = arg2.g4();
                 class67 var7;
                 if (arg0 == 5) {
                     var7 = new class216(arg2.gjstr(-127));
                 } else {
-                    var7 = new class192(arg2.g4((byte) -105));
+                    var7 = new class192(arg2.g4());
                 }
                 this.field871.method1054((long) var6, var7, -1);
             }

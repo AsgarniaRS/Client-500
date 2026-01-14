@@ -35,7 +35,7 @@ public class class214 {
     public static ClientStream clientStream;
 
     @OriginalMember(owner = "client!tg", name = "a", descriptor = "(IILnb;I)Llj;")
-    public static final class130 method1456(int arg0, int arg1, class144 arg2, int arg3) {
+    public static final class130 method1456(int arg0, int arg1, Js5Index arg2, int arg3) {
         field4036++;
         if (arg0 < 109) {
             return null;

@@ -447,31 +447,31 @@ public class class186 extends class23 {
                                 if (~arg2 != -7) {
                                     if (arg2 != 7) {
                                         if (arg2 == 8) {
-                                            this.field3624 = arg0.g2(80);
+                                            this.field3624 = arg0.g2();
                                         }
                                     } else {
-                                        this.field3628 = arg0.g2(72);
+                                        this.field3628 = arg0.g2();
                                     }
                                 } else {
-                                    this.field3644 = arg0.g1(26119);
+                                    this.field3644 = arg0.g1();
                                 }
                             } else {
-                                this.field3626 = arg0.g2(44);
+                                this.field3626 = arg0.g2();
                             }
                         } else {
-                            this.field3643 = arg0.g2(13);
+                            this.field3643 = arg0.g2();
                         }
                     } else {
-                        this.field3636 = arg0.g2(arg1 + 67);
+                        this.field3636 = arg0.g2();
                     }
                 } else {
-                    this.field3637 = arg0.g2(69);
+                    this.field3637 = arg0.g2();
                 }
             } else {
-                this.field3639 = arg0.g2(83);
+                this.field3639 = arg0.g2();
             }
         } else {
-            this.field3641 = arg0.g1(26119);
+            this.field3641 = arg0.g1();
         }
         ++field3635;
     }

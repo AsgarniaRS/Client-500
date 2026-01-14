@@ -11,10 +11,10 @@ public class class68 implements class61 {
     private boolean field1248 = false;
 
     @OriginalMember(owner = "client!ga", name = "e", descriptor = "Lnb;")
-    private class144 field1226;
+    private Js5Index field1226;
 
     @OriginalMember(owner = "client!ga", name = "n", descriptor = "Lnb;")
-    private class144 field1235;
+    private Js5Index field1235;
 
     @OriginalMember(owner = "client!ga", name = "k", descriptor = "Lid;")
     private class92 field1232;
@@ -220,14 +220,14 @@ public class class68 implements class61 {
     }
 
     @OriginalMember(owner = "client!ga", name = "<init>", descriptor = "(Lnb;Lnb;Lnb;IZ)V")
-    public class68(class144 arg0, class144 arg1, class144 arg2, int arg3, boolean arg4) {
+    public class68(Js5Index arg0, Js5Index arg1, Js5Index arg2, int arg3, boolean arg4) {
         this.field1248 = arg4;
         this.field1226 = arg0;
         this.field1235 = arg2;
         this.field1227 = arg3;
         this.field1232 = new class92(this.field1227);
         Packet var6 = new Packet(arg1.method941((byte) 56, 0, 0));
-        int var7 = var6.g2(77);
+        int var7 = var6.g2();
         this.field1222 = new byte[var7];
         this.field1223 = new boolean[var7];
         this.field1252 = new boolean[var7];
@@ -239,26 +239,26 @@ public class class68 implements class61 {
         this.field1233 = new byte[var7];
         this.field1229 = new short[var7];
         for (int var8 = 0; var8 < var7; var8++) {
-            this.field1243[var8] = var6.g1(26119) == 1;
+            this.field1243[var8] = var6.g1() == 1;
         }
         for (int var9 = 0; var9 < var7; var9++) {
             if (this.field1243[var9]) {
-                this.field1223[var9] = var6.g1(26119) == 1;
+                this.field1223[var9] = var6.g1() == 1;
             }
         }
         for (int var10 = 0; var10 < var7; var10++) {
             if (this.field1243[var10]) {
-                this.field1252[var10] = var6.g1(26119) == 1;
+                this.field1252[var10] = var6.g1() == 1;
             }
         }
         for (int var11 = 0; var11 < var7; var11++) {
             if (this.field1243[var11]) {
-                this.field1237[var11] = var6.g1(26119) == 1;
+                this.field1237[var11] = var6.g1() == 1;
             }
         }
         for (int var12 = 0; var12 < var7; var12++) {
             if (this.field1243[var12]) {
-                this.field1241[var12] = var6.g1(26119) == 1;
+                this.field1241[var12] = var6.g1() == 1;
             }
         }
         for (int var13 = 0; var13 < var7; var13++) {
@@ -283,7 +283,7 @@ public class class68 implements class61 {
         }
         for (int var17 = 0; var17 < var7; var17++) {
             if (this.field1243[var17]) {
-                this.field1229[var17] = (short) var6.g2(87);
+                this.field1229[var17] = (short) var6.g2();
             }
         }
     }

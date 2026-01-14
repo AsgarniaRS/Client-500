@@ -194,10 +194,10 @@ public class class2 extends class23 {
         }
         if (~arg2 != -1) {
             if (~arg2 == -2) {
-                this.field14 = arg0.g1(26119) == 1;
+                this.field14 = arg0.g1() == 1;
             }
         } else {
-            this.field17 = arg0.g2(105);
+            this.field17 = arg0.g2();
         }
     }
 }

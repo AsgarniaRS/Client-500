@@ -41,7 +41,7 @@ public class class158 {
     public static int field3048;
 
     @OriginalMember(owner = "client!of", name = "d", descriptor = "Lnb;")
-    public static class144 field3041;
+    public static Js5Index field3041;
 
     @OriginalMember(owner = "client!of", name = "a", descriptor = "(ZIII)V")
     public static final void method1066(boolean arg0, int arg1, int arg2, int arg3) {
@@ -153,7 +153,7 @@ public class class158 {
             }
             if (class65.field1183 != var4) {
                 if (class65.field1183 == 0 && class2.field25 != -1) {
-                    class53.method388(0, class99.field1816, (byte) -124, false, class2.field25, var4);
+                    class53.method388(0, IntHashTable.field1816, (byte) -124, false, class2.field25, var4);
                     class110.field2014 = false;
                 } else if (var4 == 0) {
                     class1.method5(31818);

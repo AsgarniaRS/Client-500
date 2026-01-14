@@ -44,7 +44,7 @@ public abstract class class130 {
     public int field2441;
 
     @OriginalMember(owner = "client!lj", name = "m", descriptor = "Lbj;")
-    public static class22 field2442;
+    public static Js5Local field2442;
 
     @OriginalMember(owner = "client!lj", name = "a", descriptor = "[Lrc;")
     public static class188[] field2430;
@@ -79,21 +79,21 @@ public abstract class class130 {
         int var3 = -32 % ((-arg0 - 7) / 53);
         class34.field594 = scene.field760 + class119.field2183 - var2.field4487;
         class189.field3661 = var2.field4485 - class16.field239;
-        int var4 = class34.field594 - (int) ((double) class90.field1707.field3424 / class59.field1110);
-        int var5 = class189.field3661 - (int) ((double) class90.field1707.field3382 / class59.field1110);
-        int var6 = class189.field3661 + (int) ((double) class90.field1707.field3382 / class59.field1110);
+        int var4 = class34.field594 - (int) ((double) class90.field1707.field3424 / GZip.field1110);
+        int var5 = class189.field3661 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
+        int var6 = class189.field3661 + (int) ((double) class90.field1707.field3382 / GZip.field1110);
         if (var5 < 0) {
-            class189.field3661 = (int) ((double) class90.field1707.field3382 / class59.field1110);
+            class189.field3661 = (int) ((double) class90.field1707.field3382 / GZip.field1110);
         }
-        int var7 = (int) ((double) class90.field1707.field3424 / class59.field1110) + class34.field594;
+        int var7 = (int) ((double) class90.field1707.field3424 / GZip.field1110) + class34.field594;
         if (var6 > class109.field1990) {
-            class189.field3661 = class109.field1990 - (int) ((double) class90.field1707.field3382 / class59.field1110);
+            class189.field3661 = class109.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
         }
         if (var4 < 0) {
-            class34.field594 = (int) ((double) class90.field1707.field3424 / class59.field1110);
+            class34.field594 = (int) ((double) class90.field1707.field3424 / GZip.field1110);
         }
         if (var7 > scene.field760) {
-            class34.field594 = scene.field760 - (int) ((double) class90.field1707.field3424 / class59.field1110);
+            class34.field594 = scene.field760 - (int) ((double) class90.field1707.field3424 / GZip.field1110);
         }
     }
 

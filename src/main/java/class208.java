@@ -123,7 +123,7 @@ public class class208 extends class23 {
         if (super.field379.field3100) {
             int var4 = class111.field2023[arg0];
             for (int var5 = 0; ~class70.field1276 < ~var5; ++var5) {
-                var3[var5] = this.method1428(var4, class22.field351[var5], (byte) 116) % 4096;
+                var3[var5] = this.method1428(var4, Js5Local.field351[var5], (byte) 116) % 4096;
             }
         }
         if (arg1 < 19) {

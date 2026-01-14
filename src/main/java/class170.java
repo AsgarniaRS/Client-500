@@ -215,7 +215,7 @@ public class class170 extends class51 {
     private long field3319;
 
     @OriginalMember(owner = "client!pg", name = "L", descriptor = "Lnb;")
-    public static class144 field3264;
+    public static Js5Index field3264;
 
     @OriginalMember(owner = "client!pg", name = "Pb", descriptor = "Z")
     private boolean field3320;
@@ -255,7 +255,7 @@ public class class170 extends class51 {
     }
 
     @OriginalMember(owner = "client!pg", name = "a", descriptor = "(ILnj;Lic;ILnb;)Z")
-    public final synchronized boolean method1184(int arg0, class151 arg1, class91 arg2, int arg3, class144 arg4) {
+    public final synchronized boolean method1184(int arg0, class151 arg1, class91 arg2, int arg3, Js5Index arg4) {
         field3304++;
         arg2.method661();
         int[] var6 = null;
@@ -264,7 +264,7 @@ public class class170 extends class51 {
             var6 = new int[] { arg0 };
         }
         for (class153 var8 = (class153) arg2.field1716.method1049(0); var8 != null; var8 = (class153) arg2.field1716.method1050((byte) -73)) {
-            int var9 = (int) var8.field1219;
+            int var9 = (int) var8.nodeId;
             class204 var10 = (class204) this.field3254.method1051(-1, (long) var9);
             if (var10 == null) {
                 var10 = class176.method1268(false, arg4, var9);

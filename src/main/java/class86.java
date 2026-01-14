@@ -29,7 +29,7 @@ public abstract class class86 {
     public static int field1555;
 
     @OriginalMember(owner = "client!hi", name = "e", descriptor = "Lnb;")
-    public static class144 field1553;
+    public static Js5Index field1553;
 
     @OriginalMember(owner = "client!hi", name = "a", descriptor = "(IBIII)V")
     public static final void method580(int arg0, byte arg1, int arg2, int arg3, int arg4) {

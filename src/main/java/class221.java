@@ -94,7 +94,7 @@ public class class221 {
     }
 
     @OriginalMember(owner = "client!uc", name = "a", descriptor = "(Li;Li;BLnb;)Lrc;")
-    public static final class188 method1492(class88 arg0, class88 arg1, byte arg2, class144 arg3) {
+    public static final class188 method1492(class88 arg0, class88 arg1, byte arg2, Js5Index arg3) {
         int var4 = arg3.method966(arg0, (byte) -3);
         field4179++;
         int var5 = arg3.method968(arg1, var4, 105);
@@ -119,7 +119,7 @@ public class class221 {
         if (arg1) {
             return null;
         } else if (var2 == null) {
-            return class59.field1113;
+            return GZip.field1113;
         } else {
             return var2.field4488;
         }

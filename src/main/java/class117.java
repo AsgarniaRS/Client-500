@@ -108,12 +108,12 @@ public class class117 extends class136 {
         if (arg0 == 1) {
             this.field2130 = arg1.gjstr(-125);
         } else if (arg0 == 2) {
-            int var4 = arg1.g1(26119);
+            int var4 = arg1.g1();
             this.field2121 = new int[var4];
             this.field2118 = new int[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field2118[var5] = arg1.g2(56);
-                int var6 = arg1.g1(26119);
+                this.field2118[var5] = arg1.g2();
+                int var6 = arg1.g1();
                 if (var6 == 0) {
                     this.field2121[var5] = -1;
                 } else {
@@ -121,12 +121,12 @@ public class class117 extends class136 {
                 }
             }
         } else if (arg0 == 3) {
-            int var7 = arg1.g1(26119);
+            int var7 = arg1.g1();
             this.field2132 = new int[var7];
             this.field2123 = new int[var7];
             for (int var8 = 0; var8 < var7; var8++) {
-                this.field2123[var8] = arg1.g2(106);
-                int var9 = arg1.g1(26119);
+                this.field2123[var8] = arg1.g2();
+                int var9 = arg1.g1();
                 if (var9 == 0) {
                     this.field2132[var8] = -1;
                 } else {
@@ -147,7 +147,7 @@ public class class117 extends class136 {
             method800(false);
         }
         while (true) {
-            int var3 = arg1.g1(26119);
+            int var3 = arg1.g1();
             if (var3 == 0) {
                 return;
             }

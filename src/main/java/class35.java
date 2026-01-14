@@ -95,16 +95,16 @@ public class class35 extends class23 {
                             if (~arg2 != -5) {
                                 if (~arg2 != -6) {
                                     if (arg2 == 6) {
-                                        this.field596 = arg0.g1(arg1 + 26122);
+                                        this.field596 = arg0.g1();
                                     }
                                 } else {
-                                    this.field601 = arg0.g1(26119);
+                                    this.field601 = arg0.g1();
                                 }
                             } else {
-                                this.field600 = arg0.g1(26119);
+                                this.field600 = arg0.g1();
                             }
                         } else {
-                            this.field601 = this.field596 = arg0.g1(26119);
+                            this.field601 = this.field596 = arg0.g1();
                         }
                     } else {
                         this.field607 = arg0.method334((byte) -73);
@@ -116,10 +116,10 @@ public class class35 extends class23 {
                         }
                     }
                 } else {
-                    this.field595 = arg0.g1(26119);
+                    this.field595 = arg0.g1();
                 }
             } else {
-                this.field610 = ~arg0.g1(arg1 + 26122) == -2;
+                this.field610 = ~arg0.g1() == -2;
             }
             ++field605;
         }
@@ -239,13 +239,13 @@ public class class35 extends class23 {
             int var15 = this.field613[255 & var13] & 255;
             if (!this.field610) {
                 for (int var16 = 0; var16 < class70.field1276; ++var16) {
-                    int var17 = class22.field351[var16] * this.field601;
+                    int var17 = Js5Local.field351[var16] * this.field601;
                     int var18 = this.method231(var11, -1, var5 * var17 >> 12, var14, var15, var7, var12);
                     arg2[var16] = var8 * var18 >> 12;
                 }
             } else {
                 for (int var19 = 0; class70.field1276 > var19; ++var19) {
-                    int var20 = class22.field351[var19] * this.field601;
+                    int var20 = Js5Local.field351[var19] * this.field601;
                     int var21 = this.method231(var11, -1, var5 * var20 >> 12, var14, var15, var7, var12);
                     int var22 = var8 * var21 >> 12;
                     arg2[var19] = (var22 >> 1) + 2048;
@@ -268,7 +268,7 @@ public class class35 extends class23 {
                 int var32 = this.field613[var30 & 255] & 255;
                 int var33 = class92.field1721[var31];
                 for (int var34 = 0; ~var34 > ~class70.field1276; ++var34) {
-                    int var54 = class22.field351[var34] * this.field601;
+                    int var54 = Js5Local.field351[var34] * this.field601;
                     int var55 = this.method231(var31, -1, var24 * var54 >> 12, var28, var32, var29, var33);
                     arg2[var34] = var23 * var55 >> 12;
                 }
@@ -291,14 +291,14 @@ public class class35 extends class23 {
                     int var46 = class92.field1721[var44];
                     if (this.field610 && ~(this.field595 + -1) == ~var35) {
                         for (int var47 = 0; ~var47 > ~class70.field1276; ++var47) {
-                            int var48 = class22.field351[var47] * this.field601;
+                            int var48 = Js5Local.field351[var47] * this.field601;
                             int var49 = this.method231(var44, -1, var37 * var48 >> 12, var43, var45, var38, var46);
                             int var50 = arg2[var47] - -(var36 * var49 >> 12);
                             arg2[var47] = 2048 - -(var50 >> 1);
                         }
                     } else {
                         for (int var51 = 0; var51 < class70.field1276; ++var51) {
-                            int var52 = class22.field351[var51] * this.field601;
+                            int var52 = Js5Local.field351[var51] * this.field601;
                             int var53 = this.method231(var44, -1, var37 * var52 >> 12, var43, var45, var38, var46);
                             arg2[var51] += var36 * var53 >> 12;
                         }

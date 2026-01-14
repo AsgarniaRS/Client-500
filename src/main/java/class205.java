@@ -95,21 +95,21 @@ public class class205 extends class136 {
         if (arg2 == 1) {
             this.field3903 = arg1.gjstr(-128).method600((byte) 52, 60);
         } else if (arg2 == 2) {
-            int var4 = arg1.g1(26119);
+            int var4 = arg1.g1();
             this.field3918 = new int[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field3918[var5] = arg1.g2(class180.method1287(arg0, 50));
+                this.field3918[var5] = arg1.g2();
             }
         } else if (arg2 == 3) {
-            int var6 = arg1.g1(26119);
+            int var6 = arg1.g1();
             this.field3911 = new int[var6][];
             this.field3907 = new int[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                int var8 = arg1.g2(arg0);
+                int var8 = arg1.g2();
                 this.field3907[var7] = var8;
                 this.field3911[var7] = new int[class92.field1732[var8]];
                 for (int var9 = 0; var9 < class92.field1732[var8]; var9++) {
-                    this.field3911[var7][var9] = arg1.g2(class180.method1287(arg0, 62));
+                    this.field3911[var7][var9] = arg1.g2();
                 }
             }
         }
@@ -129,7 +129,7 @@ public class class205 extends class136 {
         if (this.field3907 != null) {
             for (int var4 = 0; var4 < this.field3907.length; var4++) {
                 var3.method616(this.field3903[var4], (byte) 57);
-                var3.method616(class144.method954(arg0.method300(class78.field1420[this.field3907[var4]], 51), 118, this.field3907[var4], this.field3911[var4]), (byte) -71);
+                var3.method616(Js5Index.method954(arg0.method300(class78.field1420[this.field3907[var4]], 51), 118, this.field3907[var4], this.field3911[var4]), (byte) -71);
             }
         }
         var3.method616(this.field3903[this.field3903.length - 1], (byte) 62);
@@ -159,7 +159,7 @@ public class class205 extends class136 {
         field3915++;
         int var3 = 124 / ((54 - arg1) / 62);
         while (true) {
-            int var4 = arg0.g1(26119);
+            int var4 = arg0.g1();
             if (var4 == 0) {
                 return;
             }
@@ -190,7 +190,7 @@ public class class205 extends class136 {
         int var3 = 50 % ((-arg0 - 39) / 33);
         for (class168 var4 = (class168) class128.field2397.method1049(0); var4 != null; var4 = (class168) class128.field2397.method1050((byte) -73)) {
             if (var4.field3231 == var2) {
-                return class239.method1581(-64, (int) var4.field1219);
+                return class239.method1581(-64, (int) var4.nodeId);
             }
         }
         return null;

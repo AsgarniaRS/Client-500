@@ -53,10 +53,10 @@ public class class60 extends class23 {
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 != 0) {
             if (~arg2 == -2) {
-                super.field369 = ~arg0.g1(arg1 ^ -26118) == -2;
+                super.field369 = ~arg0.g1() == -2;
             }
         } else {
-            this.field1129 = arg0.g2(48) << 4;
+            this.field1129 = arg0.g2() << 4;
         }
         if (arg1 != -3) {
             method433(-92, false, 56, -26, 45, (class109) null);
@@ -88,7 +88,7 @@ public class class60 extends class23 {
     }
 
     @OriginalMember(owner = "client!fd", name = "a", descriptor = "(Lnb;Lnb;Li;ILi;)Lcc;")
-    public static final class26 method429(class144 arg0, class144 arg1, class88 arg2, int arg3, class88 arg4) {
+    public static final class26 method429(Js5Index arg0, Js5Index arg1, class88 arg2, int arg3, class88 arg4) {
         ++field1131;
         int var5 = arg1.method966(arg4, (byte) -3);
         if (arg3 > -67) {
@@ -203,7 +203,7 @@ public class class60 extends class23 {
     public final int[][] method7(int arg0, byte arg1) {
         ++field1126;
         if (arg1 != 13) {
-            method429((class144) null, (class144) null, (class88) null, -119, (class88) null);
+            method429((Js5Index) null, (Js5Index) null, (class88) null, -119, (class88) null);
         }
         int[][] var3 = super.field364.method1541(true, arg0);
         if (super.field364.field4312) {

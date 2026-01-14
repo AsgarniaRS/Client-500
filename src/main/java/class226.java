@@ -54,7 +54,7 @@ public class class226 extends class136 {
     public static class224 field4250;
 
     @OriginalMember(owner = "client!uh", name = "O", descriptor = "Lbj;")
-    public static class22 field4245;
+    public static Js5Local field4245;
 
     @OriginalMember(owner = "client!uh", name = "a", descriptor = "(BIILdj;)V")
     public static final void method1517(byte arg0, int arg1, int arg2, scene arg3) {
@@ -94,7 +94,7 @@ public class class226 extends class136 {
     public final void method1518(Packet arg0, int arg1) {
         field4240++;
         while (true) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 == 0) {
                 if (arg1 == 0) {
                     return;
@@ -124,9 +124,9 @@ public class class226 extends class136 {
     private final void method1520(int arg0, int arg1, Packet arg2) {
         field4237++;
         if (arg1 < -62 && arg0 == 1) {
-            this.field4235 = arg2.g2(98);
-            this.field4236 = arg2.g1(26119);
-            this.field4239 = arg2.g1(26119);
+            this.field4235 = arg2.g2();
+            this.field4236 = arg2.g1();
+            this.field4239 = arg2.g1();
         }
     }
 }

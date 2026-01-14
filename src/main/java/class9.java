@@ -35,7 +35,7 @@ public class class9 extends class67 {
     public int field136;
 
     @OriginalMember(owner = "client!ah", name = "H", descriptor = "Lbj;")
-    public static class22 field137;
+    public static Js5Local field137;
 
     @OriginalMember(owner = "client!ah", name = "x", descriptor = "[I")
     public int[] field128;
@@ -157,7 +157,7 @@ public class class9 extends class67 {
     }
 
     @OriginalMember(owner = "client!ah", name = "a", descriptor = "(Li;BLnb;Li;)Lpf;")
-    public static final class169 method49(class88 arg0, byte arg1, class144 arg2, class88 arg3) {
+    public static final class169 method49(class88 arg0, byte arg1, Js5Index arg2, class88 arg3) {
         field127++;
         int var4 = -10 / ((arg1 + 77) / 42);
         int var5 = arg2.method966(arg0, (byte) -3);

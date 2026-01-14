@@ -98,7 +98,7 @@ public class class225 {
             class98.method687(arg2 ^ 0x1F5B, arg4, class35.field608, (short) 48, (long) arg1, class166.method1142(new class88[] { class78.field1414, class134.field2495, var5 }, -3), arg3);
         } else if (!class10.field145) {
             class88[] var6 = arg0.field2344;
-            if (class99.field1809) {
+            if (IntHashTable.field1809) {
                 var6 = class138.method923(var6, (byte) 41);
             }
             if (var6 != null) {

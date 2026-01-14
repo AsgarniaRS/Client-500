@@ -44,7 +44,7 @@ public class class78 extends class67 {
     public static int field1419;
 
     @OriginalMember(owner = "client!ha", name = "C", descriptor = "Lnb;")
-    public static class144 field1417;
+    public static Js5Index field1417;
 
     @OriginalMember(owner = "client!ha", name = "D", descriptor = "[[Lq;")
     public static class174[][] field1418;
@@ -487,22 +487,22 @@ public class class78 extends class67 {
     public class78(int arg0, byte[] arg1) {
         this.field1412 = arg0;
         Packet var3 = new Packet(arg1);
-        this.field1422 = var3.g1(26119);
+        this.field1422 = var3.g1();
         this.field1410 = new boolean[this.field1422];
         this.field1409 = new int[this.field1422];
         this.field1423 = new int[this.field1422][];
         for (int var4 = 0; var4 < this.field1422; var4++) {
-            this.field1409[var4] = var3.g1(26119);
+            this.field1409[var4] = var3.g1();
         }
         for (int var5 = 0; var5 < this.field1422; var5++) {
-            this.field1410[var5] = var3.g1(26119) == 1;
+            this.field1410[var5] = var3.g1() == 1;
         }
         for (int var6 = 0; var6 < this.field1422; var6++) {
-            this.field1423[var6] = new int[var3.g1(26119)];
+            this.field1423[var6] = new int[var3.g1()];
         }
         for (int var7 = 0; var7 < this.field1422; var7++) {
             for (int var8 = 0; var8 < this.field1423[var7].length; var8++) {
-                this.field1423[var7][var8] = var3.g1(26119);
+                this.field1423[var7][var8] = var3.g1();
             }
         }
     }

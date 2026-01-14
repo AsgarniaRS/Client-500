@@ -61,7 +61,7 @@ public class class211 extends class23 {
         } else {
             if (super.field379.field3100) {
                 for (int var4 = 0; ~var4 > ~class70.field1276; ++var4) {
-                    int var5 = class22.field351[var4];
+                    int var5 = Js5Local.field351[var4];
                     int var6 = class111.field2023[arg0];
                     int var7 = this.field3998 * var5 >> 12;
                     int var8 = this.field4003 * var6 >> 12;
@@ -107,13 +107,13 @@ public class class211 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (arg2 == 2) {
-                    this.field4010 = arg0.g2(67);
+                    this.field4010 = arg0.g2();
                 }
             } else {
-                this.field4003 = arg0.g1(arg1 ^ -26118);
+                this.field4003 = arg0.g1();
             }
         } else {
-            this.field3998 = arg0.g1(26119);
+            this.field3998 = arg0.g1();
         }
         if (arg1 != -3) {
             this.method54(103, (byte) 83);
@@ -169,10 +169,10 @@ public class class211 extends class23 {
     }
 
     @OriginalMember(owner = "client!td", name = "a", descriptor = "(ILnb;Lnb;)V")
-    public static final void method1445(int arg0, class144 arg1, class144 arg2) {
+    public static final void method1445(int arg0, Js5Index arg1, Js5Index arg2) {
         int var3 = 68 % ((arg0 - 26) / 61);
         class141.field2609 = arg1;
-        class59.field1114 = arg2;
+        GZip.field1114 = arg2;
         ++field4002;
     }
 

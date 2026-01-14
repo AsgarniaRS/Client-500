@@ -59,7 +59,7 @@ public class class93 {
     public static final void method673(byte arg0, class168 arg1, boolean arg2) {
         field1736++;
         int var3 = arg1.field3231;
-        int var4 = (int) arg1.field1219;
+        int var4 = (int) arg1.nodeId;
         arg1.method460(true);
         if (arg2) {
             class35.method233(var3, (byte) 96);

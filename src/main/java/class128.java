@@ -155,16 +155,16 @@ public class class128 extends class23 {
                             this.field2409[2] = class70.method470(255, var5) >> 12;
                         }
                     } else {
-                        this.field2412 = arg0.g2(arg1 + 73);
+                        this.field2412 = arg0.g2();
                     }
                 } else {
-                    this.field2408 = arg0.g2(arg1 + 55);
+                    this.field2408 = arg0.g2();
                 }
             } else {
-                this.field2398 = arg0.g2(arg1 ^ -26);
+                this.field2398 = arg0.g2();
             }
         } else {
-            this.field2407 = arg0.g2(68);
+            this.field2407 = arg0.g2();
         }
         if (arg1 != -3) {
             field2413 = null;

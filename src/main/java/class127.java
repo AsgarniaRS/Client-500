@@ -118,7 +118,7 @@ public class class127 extends class67 {
                     }
                 }
                 if (!var3) {
-                    int var6 = (int) var1.field1219;
+                    int var6 = (int) var1.nodeId;
                     class174 var7 = class239.method1581(-64, var6);
                     if (var7 != null) {
                         class200.method1373(65280, var7);

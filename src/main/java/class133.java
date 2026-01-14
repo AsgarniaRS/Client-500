@@ -35,7 +35,7 @@ public class class133 extends class23 {
     public static int field2493;
 
     @OriginalMember(owner = "client!mb", name = "W", descriptor = "Lbj;")
-    public static class22 field2488;
+    public static Js5Local field2488;
 
     @OriginalMember(owner = "client!mb", name = "ab", descriptor = "[Lee;")
     private class50[] field2492;
@@ -43,9 +43,9 @@ public class class133 extends class23 {
     @OriginalMember(owner = "client!mb", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (arg2 == 0) {
-            this.field2492 = new class50[arg0.g1(26119)];
+            this.field2492 = new class50[arg0.g1()];
             for (int var4 = 0; ~var4 > ~this.field2492.length; ++var4) {
-                int var5 = arg0.g1(arg1 ^ -26118);
+                int var5 = arg0.g1();
                 if (~var5 != -1) {
                     if (var5 != 1) {
                         if (var5 != 2) {
@@ -63,7 +63,7 @@ public class class133 extends class23 {
                 }
             }
         } else if (~arg2 == -2) {
-            super.field369 = arg0.g1(26119) == 1;
+            super.field369 = arg0.g1() == 1;
         }
         ++field2482;
         if (arg1 != -3) {
@@ -126,7 +126,7 @@ public class class133 extends class23 {
         ++field2493;
         int var3 = class70.field1276;
         int var4 = class27.field460;
-        class22.method114(arg0, (byte) 74);
+        Js5Local.method114(arg0, (byte) 74);
         class238.method1577(0, (byte) 60, class220.field4160, class45.field789, 0);
         if (arg1 == 105) {
             if (this.field2492 != null) {

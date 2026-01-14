@@ -48,10 +48,10 @@ public class class12 {
     public static int field181;
 
     @OriginalMember(owner = "client!b", name = "j", descriptor = "Lnb;")
-    public static class144 field177;
+    public static Js5Index field177;
 
     @OriginalMember(owner = "client!b", name = "e", descriptor = "Lbj;")
-    public static class22 field172;
+    public static Js5Local field172;
 
     @OriginalMember(owner = "client!b", name = "h", descriptor = "Lgi;")
     public static class75 field175;
@@ -98,7 +98,7 @@ public class class12 {
     }
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(DIZLnb;Lfe;IIZ)[I")
-    public final int[] method60(double arg0, int arg1, boolean arg2, class144 arg3, class61 arg4, int arg5, int arg6, boolean arg7) {
+    public final int[] method60(double arg0, int arg1, boolean arg2, Js5Index arg3, class61 arg4, int arg5, int arg6, boolean arg7) {
         scene.method282(arg0, (byte) -125);
         class244.field4490 = arg4;
         class39.field684 = arg3;
@@ -207,11 +207,11 @@ public class class12 {
             method58(-51, 31, 123, -22, 116, -47, 31, -64, -53, 52, -116, -75, -64, -5, -109, 94, -11, -123, -36, 116);
         }
         field169++;
-        return new class74(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(-29629), arg0.g1(26119));
+        return new class74(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(-29629), arg0.g1());
     }
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(Lfe;Lnb;I)Z")
-    public final boolean method63(class61 arg0, class144 arg1, int arg2) {
+    public final boolean method63(class61 arg0, Js5Index arg1, int arg2) {
         field181++;
         if (arg2 > -11) {
             this.field170 = null;
@@ -260,10 +260,10 @@ public class class12 {
                 class160.field3094[Isaac.field2731] = 0;
                 class168.field3240[Isaac.field2731] = class174.field3455;
                 Packet.field845[Isaac.field2731] = 0;
-                class59.field1120[Isaac.field2731] = false;
+                GZip.field1120[Isaac.field2731] = false;
                 class20.field313 = class67.field1211;
                 Isaac.field2731++;
-                Isaac.out.method30((byte) -66, 82);
+                Isaac.out.method30(82);
                 Isaac.out.p8(arg1, (byte) -127);
             }
         }
@@ -325,7 +325,7 @@ public class class12 {
                             } else if (!class10.field145 || !class60.method431((byte) -87, class80.method530(-881710560, arg2))) {
                                 class141.field2603++;
                                 class88[] var11 = var10.field2906;
-                                if (class99.field1809) {
+                                if (IntHashTable.field1809) {
                                     var11 = class138.method923(var11, (byte) 62);
                                 }
                                 if (class60.method431((byte) -22, class80.method530(-881710560, arg2))) {
@@ -368,7 +368,7 @@ public class class12 {
                                     }
                                 }
                                 class88[] var16 = arg2.field3513;
-                                if (class99.field1809) {
+                                if (IntHashTable.field1809) {
                                     var16 = class138.method923(var16, (byte) -114);
                                 }
                                 if (var16 != null) {
@@ -456,7 +456,7 @@ public class class12 {
 
     @OriginalMember(owner = "client!b", name = "<init>", descriptor = "(Lea;)V")
     public class12(Packet arg0) {
-        int var2 = arg0.g1(26119);
+        int var2 = arg0.g1();
         this.field168 = new class23[var2];
         int var3 = 0;
         int var4 = 0;
@@ -472,7 +472,7 @@ public class class12 {
             int var17 = var16.field376.length;
             var5[var6] = new int[var17];
             for (int var18 = 0; var18 < var17; var18++) {
-                var5[var6][var18] = arg0.g1(26119);
+                var5[var6][var18] = arg0.g1();
             }
             this.field168[var6] = var16;
         }
@@ -497,7 +497,7 @@ public class class12 {
             var5[var9] = null;
         }
         Object var10 = null;
-        this.field179 = this.field168[arg0.g1(26119)];
-        this.field170 = this.field168[arg0.g1(26119)];
+        this.field179 = this.field168[arg0.g1()];
+        this.field170 = this.field168[arg0.g1()];
     }
 }

@@ -113,7 +113,7 @@ public class class113 extends class23 {
         } else if (arg2 >= class66.field1202 * 128) {
             arg2 = class66.field1202 * 128 - 1;
         }
-        class99.field1805 = class173.field3361[arg3];
+        IntHashTable.field1805 = class173.field3361[arg3];
         class201.field3840 = class173.field3356[arg3];
         class168.field3244 = class173.field3361[arg4];
         class159.field3068 = class173.field3356[arg4];
@@ -168,7 +168,7 @@ public class class113 extends class23 {
         class246.field4512 = arg7;
         scene.field740 = arg8;
         class184.field3607 = arg9;
-        class144.field2715 = arg10;
+        Js5Index.field2715 = arg10;
         class204.field3884 = arg11;
         class192.method1333();
         class118.method805(arg0, arg1, arg2, arg6, arg12, arg13, arg14, arg15);
@@ -231,13 +231,13 @@ public class class113 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (arg2 == 2) {
-                    super.field369 = arg0.g1(arg1 + 26122) == 1;
+                    super.field369 = arg0.g1() == 1;
                 }
             } else {
-                this.field2046 = arg0.g2(25);
+                this.field2046 = arg0.g2();
             }
         } else {
-            this.field2053 = arg0.g2(45);
+            this.field2053 = arg0.g2();
         }
     }
 

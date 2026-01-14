@@ -179,7 +179,7 @@ public class class148 extends class136 {
     public int field2833;
 
     @OriginalMember(owner = "client!nf", name = "O", descriptor = "Lnb;")
-    public static class144 field2780;
+    public static Js5Index field2780;
 
     @OriginalMember(owner = "client!nf", name = "N", descriptor = "Lob;")
     private class154 field2779;
@@ -271,7 +271,7 @@ public class class148 extends class136 {
         boolean var2 = true;
         if (arg0 == -23555) {
             for (int var3 = 0; var3 < this.field2781.length; var3++) {
-                var2 &= class175.field3526.method961(this.field2781[var3] & 0xFFFF, 0, (byte) 65);
+                var2 &= class175.field3526.download(this.field2781[var3] & 0xFFFF, 0);
             }
             return var2;
         } else {
@@ -288,7 +288,7 @@ public class class148 extends class136 {
         if (this.field2813 != null) {
             for (int var5 = 0; var5 < this.field2813.length; var5++) {
                 if (this.field2813[var5] == arg1) {
-                    return class175.field3526.method961(this.field2781[var5] & 0xFFFF, 0, (byte) 79);
+                    return class175.field3526.download(this.field2781[var5] & 0xFFFF, 0);
                 }
             }
             return true;
@@ -297,7 +297,7 @@ public class class148 extends class136 {
         } else if (arg1 == 10) {
             boolean var3 = true;
             for (int var4 = 0; var4 < this.field2781.length; var4++) {
-                var3 &= class175.field3526.method961(this.field2781[var4] & 0xFFFF, 0, (byte) 93);
+                var3 &= class175.field3526.download(this.field2781[var4] & 0xFFFF, 0);
             }
             return var3;
         } else {
@@ -583,7 +583,7 @@ public class class148 extends class136 {
         }
         field2802++;
         if (arg1 == 1) {
-            int var4 = arg2.g1(26119);
+            int var4 = arg2.g1();
             if (var4 > 0) {
                 if (this.field2781 != null && !class132.field2467) {
                     arg2.pos += var4 * 3;
@@ -592,15 +592,15 @@ public class class148 extends class136 {
                 this.field2813 = new int[var4];
                 this.field2781 = new int[var4];
                 for (int var5 = 0; var5 < var4; var5++) {
-                    this.field2781[var5] = arg2.g2(112);
-                    this.field2813[var5] = arg2.g1(26119);
+                    this.field2781[var5] = arg2.g2();
+                    this.field2813[var5] = arg2.g1();
                 }
                 return;
             }
         } else if (arg1 == 2) {
             this.field2775 = arg2.gjstr(-127);
         } else if (arg1 == 5) {
-            int var23 = arg2.g1(arg0 ^ 0xFFFF99D3);
+            int var23 = arg2.g1();
             if (var23 > 0) {
                 if (this.field2781 != null && !class132.field2467) {
                     arg2.pos += var23 * 2;
@@ -609,15 +609,15 @@ public class class148 extends class136 {
                 this.field2781 = new int[var23];
                 this.field2813 = null;
                 for (int var24 = 0; var24 < var23; var24++) {
-                    this.field2781[var24] = arg2.g2(92);
+                    this.field2781[var24] = arg2.g2();
                 }
                 return;
             }
         } else if (arg1 == 14) {
-            this.field2776 = arg2.g1(26119);
+            this.field2776 = arg2.g1();
             return;
         } else if (arg1 == 15) {
-            this.field2796 = arg2.g1(26119);
+            this.field2796 = arg2.g1();
             return;
         } else if (arg1 == 17) {
             this.field2791 = false;
@@ -627,7 +627,7 @@ public class class148 extends class136 {
             this.field2791 = false;
             return;
         } else if (arg1 == 19) {
-            this.field2835 = arg2.g1(26119);
+            this.field2835 = arg2.g1();
             return;
         } else if (arg1 == 21) {
             this.field2815 = 1;
@@ -639,7 +639,7 @@ public class class148 extends class136 {
                 this.field2774 = true;
                 return;
             } else if (arg1 == 24) {
-                this.field2812 = arg2.g2(arg0 ^ 0xFFFFFF83);
+                this.field2812 = arg2.g2();
                 if (this.field2812 == 65535) {
                     this.field2812 = -1;
                     return;
@@ -648,7 +648,7 @@ public class class148 extends class136 {
                 this.field2821 = 1;
                 return;
             } else if (arg1 == 28) {
-                this.field2807 = arg2.g1(arg0 + 26163);
+                this.field2807 = arg2.g1();
                 return;
             } else if (arg1 == 29) {
                 this.field2811 = arg2.method324(30);
@@ -664,31 +664,31 @@ public class class148 extends class136 {
                         return;
                     }
                 } else if (arg1 == 40) {
-                    int var6 = arg2.g1(26119);
+                    int var6 = arg2.g1();
                     this.field2806 = new short[var6];
                     this.field2792 = new short[var6];
                     for (int var7 = 0; var7 < var6; var7++) {
-                        this.field2806[var7] = (short) arg2.g2(12);
-                        this.field2792[var7] = (short) arg2.g2(56);
+                        this.field2806[var7] = (short) arg2.g2();
+                        this.field2792[var7] = (short) arg2.g2();
                     }
                     return;
                 } else if (arg1 == 41) {
-                    int var21 = arg2.g1(26119);
+                    int var21 = arg2.g1();
                     this.field2816 = new short[var21];
                     this.field2778 = new short[var21];
                     for (int var22 = 0; var22 < var21; var22++) {
-                        this.field2778[var22] = (short) arg2.g2(arg0 + 147);
-                        this.field2816[var22] = (short) arg2.g2(119);
+                        this.field2778[var22] = (short) arg2.g2();
+                        this.field2816[var22] = (short) arg2.g2();
                     }
                 } else if (arg1 == 42) {
-                    int var8 = arg2.g1(arg0 ^ 0xFFFF99D3);
+                    int var8 = arg2.g1();
                     this.field2826 = new byte[var8];
                     for (int var9 = 0; var9 < var8; var9++) {
                         this.field2826[var9] = arg2.method324(34);
                     }
                     return;
                 } else if (arg1 == 60) {
-                    this.field2819 = arg2.g2(110);
+                    this.field2819 = arg2.g2();
                     return;
                 } else if (arg1 == 62) {
                     this.field2788 = true;
@@ -697,19 +697,19 @@ public class class148 extends class136 {
                     this.field2784 = false;
                     return;
                 } else if (arg1 == 65) {
-                    this.field2794 = arg2.g2(85);
+                    this.field2794 = arg2.g2();
                     return;
                 } else if (arg1 == 66) {
-                    this.field2823 = arg2.g2(77);
+                    this.field2823 = arg2.g2();
                     return;
                 } else if (arg1 == 67) {
-                    this.field2804 = arg2.g2(70);
+                    this.field2804 = arg2.g2();
                     return;
                 } else if (arg1 == 68) {
-                    this.field2834 = arg2.g2(73);
+                    this.field2834 = arg2.g2();
                     return;
                 } else if (arg1 == 69) {
-                    this.field2783 = arg2.g1(26119);
+                    this.field2783 = arg2.g1();
                     return;
                 } else if (arg1 == 70) {
                     this.field2832 = arg2.method334((byte) -73);
@@ -727,28 +727,28 @@ public class class148 extends class136 {
                     this.field2805 = true;
                     return;
                 } else if (arg1 == 75) {
-                    this.field2782 = arg2.g1(26119);
+                    this.field2782 = arg2.g1();
                     return;
                 } else if (arg1 == 77 || arg1 == 92) {
-                    this.field2769 = arg2.g2(88);
+                    this.field2769 = arg2.g2();
                     if (this.field2769 == 65535) {
                         this.field2769 = -1;
                     }
                     int var18 = -1;
-                    this.field2820 = arg2.g2(62);
+                    this.field2820 = arg2.g2();
                     if (this.field2820 == 65535) {
                         this.field2820 = -1;
                     }
                     if (arg1 == 92) {
-                        var18 = arg2.g2(78);
+                        var18 = arg2.g2();
                         if (var18 == 65535) {
                             var18 = -1;
                         }
                     }
-                    int var19 = arg2.g1(arg0 ^ 0xFFFF99D3);
+                    int var19 = arg2.g1();
                     this.field2772 = new int[var19 + 2];
                     for (int var20 = 0; var20 <= var19; var20++) {
-                        this.field2772[var20] = arg2.g2(120);
+                        this.field2772[var20] = arg2.g2();
                         if (this.field2772[var20] == 65535) {
                             this.field2772[var20] = -1;
                         }
@@ -756,22 +756,22 @@ public class class148 extends class136 {
                     this.field2772[var19 + 1] = var18;
                     return;
                 } else if (arg1 == 78) {
-                    this.field2808 = arg2.g2(68);
-                    this.field2773 = arg2.g1(26119);
+                    this.field2808 = arg2.g2();
+                    this.field2773 = arg2.g1();
                     return;
                 } else {
                     if (arg1 == 79) {
-                        this.field2809 = arg2.g2(104);
-                        this.field2797 = arg2.g2(arg0 + 85);
-                        this.field2773 = arg2.g1(arg0 ^ 0xFFFF99D3);
-                        int var16 = arg2.g1(26119);
+                        this.field2809 = arg2.g2();
+                        this.field2797 = arg2.g2();
+                        this.field2773 = arg2.g1();
+                        int var16 = arg2.g1();
                         this.field2817 = new int[var16];
                         for (int var17 = 0; var17 < var16; var17++) {
-                            this.field2817[var17] = arg2.g2(46);
+                            this.field2817[var17] = arg2.g2();
                         }
                     } else if (arg1 == 81) {
                         this.field2815 = 2;
-                        this.field2789 = (short) (arg2.g1(26119) * 256);
+                        this.field2789 = (short) (arg2.g1() * 256);
                         return;
                     } else if (arg1 != 82 && arg1 != 88) {
                         if (arg1 == 89) {
@@ -784,7 +784,7 @@ public class class148 extends class136 {
                             return;
                         } else if (arg1 == 93) {
                             this.field2815 = 3;
-                            this.field2789 = (short) arg2.g2(66);
+                            this.field2789 = (short) arg2.g2();
                             return;
                         } else if (arg1 == 94) {
                             this.field2815 = 4;
@@ -793,19 +793,19 @@ public class class148 extends class136 {
                             this.field2815 = 5;
                             return;
                         } else if (arg1 == 249) {
-                            int var10 = arg2.g1(26119);
+                            int var10 = arg2.g1();
                             if (this.field2779 == null) {
                                 int var11 = class184.method1298(true, var10);
                                 this.field2779 = new class154(var11);
                             }
                             for (int var12 = 0; var12 < var10; var12++) {
-                                boolean var13 = arg2.g1(26119) == 1;
+                                boolean var13 = arg2.g1() == 1;
                                 int var14 = arg2.method304(-29629);
                                 class67 var15;
                                 if (var13) {
                                     var15 = new class216(arg2.gjstr(-128));
                                 } else {
-                                    var15 = new class192(arg2.g4((byte) -71));
+                                    var15 = new class192(arg2.g4());
                                 }
                                 this.field2779.method1054((long) var14, var15, -1);
                             }
@@ -828,7 +828,7 @@ public class class148 extends class136 {
             return;
         }
         while (true) {
-            int var3 = arg0.g1(26119);
+            int var3 = arg0.g1();
             if (var3 == 0) {
                 return;
             }

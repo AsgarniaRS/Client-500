@@ -163,7 +163,7 @@ public class class237 extends class136 {
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(ILea;I)V")
     public final void method1574(int arg0, Packet arg1, int arg2) {
         while (true) {
-            int var4 = arg1.g1(26119);
+            int var4 = arg1.g1();
             if (var4 == 0) {
                 field4420++;
                 if (arg2 != -1) {
@@ -185,12 +185,12 @@ public class class237 extends class136 {
             this.field4424 = arg2.method304(-29629);
             this.method1571(false, this.field4424);
         } else if (arg1 == 2) {
-            this.field4418 = arg2.g2(124);
+            this.field4418 = arg2.g2();
             if (this.field4418 == 65535) {
                 this.field4418 = -1;
             }
         } else if (arg1 == 3) {
-            arg2.g2(16);
+            arg2.g2();
         }
         field4417++;
     }

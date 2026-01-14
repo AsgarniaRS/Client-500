@@ -20,7 +20,7 @@ public class class97 extends class136 {
     public static class88 field1793 = class208.method1425(105, "60 Sekunden noch einmal)3)3)3");
 
     @OriginalMember(owner = "client!ij", name = "G", descriptor = "B")
-    public byte field1784;
+    public byte padding;
 
     @OriginalMember(owner = "client!ij", name = "D", descriptor = "I")
     public int field1782;
@@ -35,7 +35,7 @@ public class class97 extends class136 {
     public static int field1792;
 
     @OriginalMember(owner = "client!ij", name = "L", descriptor = "Lbj;")
-    public class22 field1789;
+    public Js5Local field1789;
 
     @OriginalMember(owner = "client!ij", name = "K", descriptor = "[[[B")
     public static byte[][][] field1788;
@@ -141,7 +141,7 @@ public class class97 extends class136 {
             if (arg0.method619(-4205, class226.field4251) && class115.modewhere != 0) {
                 class159.method1075(arg0.method635(6, -383902332).method603(false), 30594);
             }
-            if (arg0.method624(class22.field344, (byte) 125) && class115.modewhere == 2) {
+            if (arg0.method624(Js5Local.field344, (byte) 125) && class115.modewhere == 2) {
                 throw new RuntimeException();
             }
             if (arg0.method619(-4205, class58.field1103)) {
@@ -153,7 +153,7 @@ public class class97 extends class136 {
             }
         }
         class131.field2450++;
-        Isaac.out.method30((byte) -51, 175);
+        Isaac.out.method30(175);
         Isaac.out.p1(255, arg0.method604((byte) -53) - 1);
         Isaac.out.pjstr(arg0.method635(2, -383902332), (byte) 0);
     }

@@ -115,34 +115,34 @@ public class class231 extends class136 {
             method1546(-123);
         }
         if (arg2 == 1) {
-            this.field4343 = arg0.g1(26119);
+            this.field4343 = arg0.g1();
         } else if (arg2 == 2) {
-            int var4 = arg0.g1(26119);
+            int var4 = arg0.g1();
             this.field4326 = new int[var4];
             for (int var5 = 0; var5 < var4; var5++) {
-                this.field4326[var5] = arg0.g2(79);
+                this.field4326[var5] = arg0.g2();
             }
         } else if (arg2 == 3) {
             this.field4339 = true;
         } else if (arg2 == 40) {
-            int var8 = arg0.g1(26119);
+            int var8 = arg0.g1();
             this.field4329 = new short[var8];
             this.field4338 = new short[var8];
             for (int var9 = 0; var9 < var8; var9++) {
-                this.field4338[var9] = (short) arg0.g2(87);
-                this.field4329[var9] = (short) arg0.g2(82);
+                this.field4338[var9] = (short) arg0.g2();
+                this.field4329[var9] = (short) arg0.g2();
             }
         } else if (arg2 == 41) {
-            int var6 = arg0.g1(26119);
+            int var6 = arg0.g1();
             this.field4323 = new short[var6];
             this.field4332 = new short[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                this.field4332[var7] = (short) arg0.g2(107);
-                this.field4323[var7] = (short) arg0.g2(89);
+                this.field4332[var7] = (short) arg0.g2();
+                this.field4323[var7] = (short) arg0.g2();
             }
             return;
         } else if (arg2 >= 60 && arg2 < 70) {
-            this.field4341[arg2 - 60] = arg0.g2(45);
+            this.field4341[arg2 - 60] = arg0.g2();
             return;
         }
     }
@@ -150,11 +150,9 @@ public class class231 extends class136 {
     @OriginalMember(owner = "client!vb", name = "a", descriptor = "(BI[BI)I")
     public static final int method1544(byte arg0, int arg1, byte[] arg2, int arg3) {
         int var4 = -1;
-        field4342++;
         for (int var5 = arg1; var5 < arg3; var5++) {
             var4 = var4 >>> 8 ^ class216.field4047[(var4 ^ arg2[var5]) & 0xFF];
         }
-        int var6 = -72 / ((64 - arg0) / 46);
         return ~var4;
     }
 
@@ -207,7 +205,7 @@ public class class231 extends class136 {
             this.field4341 = null;
         }
         while (var3 < 5) {
-            if (this.field4341[var3] != -1 && !class43.field733.method961(this.field4341[var3], 0, (byte) 62)) {
+            if (this.field4341[var3] != -1 && !class43.field733.download(this.field4341[var3], 0)) {
                 var2 = false;
             }
             var3++;
@@ -223,7 +221,7 @@ public class class231 extends class136 {
             this.field4338 = null;
         }
         while (true) {
-            int var3 = arg1.g1(arg0 ^ 0xFFFF99F8);
+            int var3 = arg1.g1();
             if (var3 == 0) {
                 return;
             }
@@ -240,7 +238,7 @@ public class class231 extends class136 {
         boolean var2 = true;
         int var3 = 40 % ((arg0 + 56) / 37);
         for (int var4 = 0; var4 < this.field4326.length; var4++) {
-            if (!class43.field733.method961(this.field4326[var4], 0, (byte) 96)) {
+            if (!class43.field733.download(this.field4326[var4], 0)) {
                 var2 = false;
             }
         }

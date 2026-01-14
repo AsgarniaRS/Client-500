@@ -2,13 +2,13 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!th")
-public class class215 {
+public class BZip2 {
 
     @OriginalMember(owner = "client!th", name = "a", descriptor = "Lpb;")
     private static class165 field4045 = new class165();
 
     @OriginalMember(owner = "client!th", name = "a", descriptor = "([BI[BII)I")
-    public static final int method1460(byte[] arg0, int arg1, byte[] arg2, int arg3, int arg4) {
+    public static final int decompress(byte[] arg0, int arg1, byte[] arg2, int arg3, int arg4) {
         class165 var5 = field4045;
         synchronized (field4045) {
             field4045.field3185 = arg2;

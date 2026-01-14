@@ -48,7 +48,7 @@ public class class161 implements Runnable {
     public class181 field3111;
 
     @OriginalMember(owner = "client!oi", name = "o", descriptor = "Lbj;")
-    public static class22 field3115;
+    public static Js5Local field3115;
 
     @OriginalMember(owner = "client!oi", name = "a", descriptor = "(III)J")
     public static final long method1084(int arg0, int arg1, int arg2) {

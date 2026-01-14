@@ -57,7 +57,7 @@ public class class32 extends class86 {
     public static class130 field518;
 
     @OriginalMember(owner = "client!ci", name = "a", descriptor = "(ZLnb;II)Lpf;")
-    public static final class169 method203(boolean arg0, class144 arg1, int arg2, int arg3) {
+    public static final class169 method203(boolean arg0, Js5Index arg1, int arg2, int arg3) {
         if (arg0) {
             field514++;
             return class47.method358(854010832, arg1, arg3, arg2) ? class237.method1573(-1) : null;

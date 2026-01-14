@@ -23,7 +23,7 @@ public class class238 {
     public static int field4428;
 
     @OriginalMember(owner = "client!vi", name = "g", descriptor = "Lbj;")
-    public static class22 field4433;
+    public static Js5Local field4433;
 
     @OriginalMember(owner = "client!vi", name = "a", descriptor = "[Lrc;")
     public static class188[] field4427;

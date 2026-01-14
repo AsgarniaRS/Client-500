@@ -316,9 +316,9 @@ public class class165 {
                                                 if (var33 + 32 > arg1 && var33 < arg9 && arg2 < var32 + 32 && var32 < arg5 || class135.field2516 == var11 && class18.field305 == var29) {
                                                     class188 var38;
                                                     if (class28.field475 == 1 && class58.field1105 == var29 && class209.field3967 == var11.field3425) {
-                                                        var38 = class22.method117(2, (byte) -109, var37, var11.field3476[var29], var11.field3466, 0);
+                                                        var38 = Js5Local.method117(2, (byte) -109, var37, var11.field3476[var29], var11.field3466, 0);
                                                     } else {
-                                                        var38 = class22.method117(1, (byte) -127, var37, var11.field3476[var29], var11.field3466, 3153952);
+                                                        var38 = Js5Local.method117(1, (byte) -127, var37, var11.field3476[var29], var11.field3466, 3153952);
                                                     }
                                                     if (class173.field3366) {
                                                         class225.field4230[var12] = true;
@@ -435,7 +435,7 @@ public class class165 {
                                                 var48 = class180.field3574;
                                             }
                                             if ((var50.field2854 == 1 || var11.field3484 != 1) && var11.field3484 != -1) {
-                                                var48 = class166.method1142(new class88[] { class136.field2531, var48, class32.field523, class144.method960(0, var11.field3484) }, -3);
+                                                var48 = class166.method1142(new class88[] { class136.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484) }, -3);
                                             }
                                         }
                                         if (class53.field967 == var11) {
@@ -455,7 +455,7 @@ public class class165 {
                                         if (var11.field3401 == -1) {
                                             var51 = var11.method1251(false, -100);
                                         } else {
-                                            var51 = class22.method117(var11.field3431, (byte) -101, var11.field3401, var11.field3484, var11.field3466, var11.field3427);
+                                            var51 = Js5Local.method117(var11.field3431, (byte) -101, var11.field3401, var11.field3484, var11.field3466, var11.field3427);
                                         }
                                         if (var51 != null) {
                                             int var52 = var51.field3651;
@@ -591,7 +591,7 @@ public class class165 {
                                                     if (var80.field2854 != 1 && var11.field3476[var77] == 1) {
                                                         var81 = class166.method1142(new class88[] { class136.field2531, var80.field2894, class120.field2201 }, -3);
                                                     } else {
-                                                        var81 = class166.method1142(new class88[] { class136.field2531, var80.field2894, class32.field523, class144.method960(0, var11.field3476[var77]) }, -3);
+                                                        var81 = class166.method1142(new class88[] { class136.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77]) }, -3);
                                                     }
                                                     int var82 = (var11.field3468 + 115) * var79 + var13;
                                                     int var83 = (var11.field3510 + 12) * var78 + var14;
@@ -738,7 +738,7 @@ public class class165 {
     }
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(BLnb;Lpg;Lnb;Lnb;)Z")
-    public static final boolean method1136(byte arg0, class144 arg1, class170 arg2, class144 arg3, class144 arg4) {
+    public static final boolean method1136(byte arg0, Js5Index arg1, class170 arg2, Js5Index arg3, Js5Index arg4) {
         class31.field503 = arg2;
         field3158++;
         class86.field1553 = arg1;

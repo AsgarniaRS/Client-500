@@ -44,7 +44,7 @@ public class class229 extends class136 {
         }
         field4289++;
         if (arg0 == 5) {
-            this.field4290 = arg1.g2(112);
+            this.field4290 = arg1.g2();
         }
     }
 
@@ -55,7 +55,7 @@ public class class229 extends class136 {
             field4288 = null;
         }
         while (true) {
-            int var3 = arg1.g1(26119);
+            int var3 = arg1.g1();
             if (var3 == 0) {
                 return;
             }

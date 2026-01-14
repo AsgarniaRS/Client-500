@@ -231,7 +231,7 @@ public abstract class class188 extends class136 {
                                         if (var17 == 0) {
                                             continue label72;
                                         }
-                                        var4.g1(26119);
+                                        var4.g1();
                                     }
                                     int var10 = var4.method350(112);
                                     if (var10 == 0) {
@@ -240,7 +240,7 @@ public abstract class class188 extends class136 {
                                     var8 += var10 - 1;
                                     int var11 = var8 >> 6 & 0x3F;
                                     int var12 = var8 & 0x3F;
-                                    var13 = var4.g1(26119) >> 2;
+                                    var13 = var4.g1() >> 2;
                                     var14 = arg3 + var11;
                                     var15 = var12 + arg1;
                                 } while (var14 <= 0);
@@ -262,7 +262,7 @@ public abstract class class188 extends class136 {
     public abstract void method1176(int arg0, int arg1, int arg2, int arg3, int arg4);
 
     @OriginalMember(owner = "client!rc", name = "a", descriptor = "(Lbj;IIBIIZ)V")
-    public static final void method1314(class22 arg0, int arg1, int arg2, byte arg3, int arg4, int arg5, boolean arg6) {
+    public static final void method1314(Js5Local arg0, int arg1, int arg2, byte arg3, int arg4, int arg5, boolean arg6) {
         field3659++;
         long var7 = (long) ((arg2 << 16) + arg1);
         class97 var9 = (class97) class241.field4467.method1051(-1, var7);
@@ -285,7 +285,7 @@ public abstract class class188 extends class136 {
                 }
             }
             class97 var13 = new class97();
-            var13.field1784 = arg3;
+            var13.padding = arg3;
             var13.field1782 = arg5;
             var13.field1789 = arg0;
             if (arg6) {

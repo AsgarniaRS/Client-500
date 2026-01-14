@@ -58,7 +58,7 @@ public class class197 {
         Packet var3 = new Packet(arg0);
         Packet var4 = new Packet(arg0);
         var3.pos = 2;
-        int var5 = var3.g1(26119);
+        int var5 = var3.g1();
         int var6 = 0;
         int var7 = -1;
         int var8 = -1;
@@ -67,7 +67,7 @@ public class class197 {
             if (this.field3788.field1409[var9] == 0) {
                 var7 = var9;
             }
-            int var11 = var3.g1(26119);
+            int var11 = var3.g1();
             if (var11 > 0) {
                 if (this.field3788.field1409[var9] == 0) {
                     var8 = var9;

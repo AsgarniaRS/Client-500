@@ -64,13 +64,13 @@ public class class57 extends class23 {
         if (arg2 != 0) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    super.field369 = ~arg0.g1(26119) == -2;
+                    super.field369 = ~arg0.g1() == -2;
                 }
             } else {
-                this.field1088 = ~arg0.g1(26119) == -2;
+                this.field1088 = ~arg0.g1() == -2;
             }
         } else {
-            this.field1089 = arg0.g1(26119) == 1;
+            this.field1089 = arg0.g1() == 1;
         }
     }
 
