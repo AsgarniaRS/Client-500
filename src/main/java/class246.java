@@ -37,7 +37,7 @@ public class class246 extends class219 {
     @OriginalMember(owner = "client!wg", name = "b", descriptor = "(III)I")
     public static final int method1610(int arg0, int arg1, int arg2) {
         field4507++;
-        class177 var3 = (class177) class64.field1163.method1051(-1, (long) arg0);
+        class177 var3 = (class177) class64.field1163.get(-1, (long) arg0);
         int var4 = 23 / ((arg1 + 62) / 43);
         if (var3 == null) {
             return 0;

@@ -23,7 +23,7 @@ public class class97 extends class136 {
     public byte padding;
 
     @OriginalMember(owner = "client!ij", name = "D", descriptor = "I")
-    public int field1782;
+    public int expectedCrc;
 
     @OriginalMember(owner = "client!ij", name = "J", descriptor = "I")
     public static int field1787;
@@ -35,7 +35,7 @@ public class class97 extends class136 {
     public static int field1792;
 
     @OriginalMember(owner = "client!ij", name = "L", descriptor = "Lbj;")
-    public Js5Local field1789;
+    public Js5Local provider;
 
     @OriginalMember(owner = "client!ij", name = "K", descriptor = "[[[B")
     public static byte[][][] field1788;

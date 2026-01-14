@@ -14,7 +14,7 @@ public class class205 extends class136 {
     public static class88 field3905 = field3916;
 
     @OriginalMember(owner = "client!si", name = "K", descriptor = "Lob;")
-    public static class154 field3909 = new class154(4096);
+    public static class154 pendingPrefetchQueue = new class154(4096);
 
     @OriginalMember(owner = "client!si", name = "D", descriptor = "I")
     public static int field3902;
@@ -73,7 +73,7 @@ public class class205 extends class136 {
     @OriginalMember(owner = "client!si", name = "d", descriptor = "(I)V")
     public static void method1408(int arg0) {
         int var1 = -122 / ((-arg0 - 82) / 37);
-        field3909 = null;
+        pendingPrefetchQueue = null;
         field3917 = null;
         field3916 = null;
         field3905 = null;

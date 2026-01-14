@@ -487,7 +487,7 @@ public class class143 extends class67 {
                         if (var10.field3467 != null) {
                             method935(var13, var18, 31, var11 - var10.field3395, var10.field3425, var17, var10.field3467, var16, var12 - var10.field3417);
                         }
-                        class168 var61 = (class168) class128.field2397.method1051(-1, (long) var10.field3425);
+                        class168 var61 = (class168) class128.field2397.get(-1, (long) var10.field3425);
                         if (var61 != null) {
                             class230.method1535(var12, var17, var13, var16, var18, 66, var61.field3231, var11);
                         }

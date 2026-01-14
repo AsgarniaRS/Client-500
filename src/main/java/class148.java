@@ -361,7 +361,7 @@ public class class148 extends class136 {
         if (arg0 != -63) {
             this.field2832 = 74;
         }
-        class192 var4 = (class192) this.field2779.method1051(arg0 + 62, (long) arg2);
+        class192 var4 = (class192) this.field2779.get(arg0 + 62, (long) arg2);
         return var4 == null ? arg1 : var4.field3700;
     }
 
@@ -370,7 +370,7 @@ public class class148 extends class136 {
         if (arg1 < 82) {
             field2780 = null;
         }
-        class177 var2 = (class177) class64.field1163.method1051(-1, (long) arg0);
+        class177 var2 = (class177) class64.field1163.get(-1, (long) arg0);
         field2786++;
         if (var2 != null) {
             var2.method460(true);
@@ -452,7 +452,7 @@ public class class148 extends class136 {
         if (this.field2779 == null) {
             return arg1;
         } else if (arg0 == -25925) {
-            class216 var4 = (class216) this.field2779.method1051(-1, (long) arg2);
+            class216 var4 = (class216) this.field2779.get(-1, (long) arg2);
             return var4 == null ? arg1 : var4.field4048;
         } else {
             return null;
@@ -807,7 +807,7 @@ public class class148 extends class136 {
                                 } else {
                                     var15 = new class192(arg2.g4());
                                 }
-                                this.field2779.method1054((long) var14, var15, -1);
+                                this.field2779.put((long) var14, var15, -1);
                             }
                             return;
                         }

@@ -37,14 +37,14 @@ public class class177 extends class67 {
 
     @OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)V")
     public static final void method1270(int arg0, int arg1, int arg2, int arg3, int arg4) {
-        class177 var5 = (class177) class64.field1163.method1051(arg0 ^ 0xFFFFFFFE, (long) arg1);
+        class177 var5 = (class177) class64.field1163.get(arg0 ^ 0xFFFFFFFE, (long) arg1);
         field3554++;
         if (arg0 != 1) {
             field3551 = null;
         }
         if (var5 == null) {
             var5 = new class177();
-            class64.field1163.method1054((long) arg1, var5, arg0 - 2);
+            class64.field1163.put((long) arg1, var5, arg0 - 2);
         }
         if (var5.field3555.length <= arg3) {
             int[] var6 = new int[arg3 + 1];

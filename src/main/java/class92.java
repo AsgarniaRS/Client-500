@@ -74,7 +74,7 @@ public class class92 {
         } else {
             this.field1731--;
         }
-        this.field1729.method1054(arg0, arg1, -1);
+        this.field1729.put(arg0, arg1, -1);
         this.field1728.method1389(-20038, arg1);
         if (arg2) {
             this.method672(true);
@@ -97,7 +97,7 @@ public class class92 {
         if (arg1 != 0) {
             return null;
         }
-        class136 var4 = (class136) this.field1729.method1051(~arg1, arg0);
+        class136 var4 = (class136) this.field1729.get(~arg1, arg0);
         if (var4 != null) {
             this.field1728.method1389(-20038, var4);
         }
@@ -110,7 +110,7 @@ public class class92 {
         if (!arg0) {
             return;
         }
-        class136 var4 = (class136) this.field1729.method1051(-1, arg1);
+        class136 var4 = (class136) this.field1729.get(-1, arg1);
         if (var4 != null) {
             var4.method460(true);
             var4.method909(192);

@@ -281,7 +281,7 @@ public class class165 {
                             if (var11.field3467 != null) {
                                 method1133(var11.field3467, var23, var20, true, var12, var22, var13 - var11.field3395, -var11.field3417 + var14, var11.field3425, var21);
                             }
-                            class168 var28 = (class168) class128.field2397.method1051(-1, (long) var11.field3425);
+                            class168 var28 = (class168) class128.field2397.get(-1, (long) var11.field3425);
                             if (var28 != null) {
                                 if (var28.field3235 == 0 && var23 <= class28.field471 && var20 <= class239.field4451 && class28.field471 < var21 && class239.field4451 < var22 && !class108.field1960 && !class116.field2105) {
                                     class53.field994[0] = 1007;

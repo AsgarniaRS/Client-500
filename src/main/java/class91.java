@@ -61,10 +61,10 @@ public class class91 extends class67 {
                         int var17 = var8 >> 16 & 0x7F;
                         if (var17 > 0) {
                             int var18 = var2[var15];
-                            class153 var19 = (class153) this.field1716.method1051(-1, (long) var18);
+                            class153 var19 = (class153) this.field1716.get(-1, (long) var18);
                             if (var19 == null) {
                                 var19 = new class153(new byte[128]);
-                                this.field1716.method1054((long) var18, var19, -1);
+                                this.field1716.put((long) var18, var19, -1);
                             }
                             var19.field2958[var16] = 1;
                         }

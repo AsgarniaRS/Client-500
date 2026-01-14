@@ -70,10 +70,10 @@ public class class80 extends class23 {
         class78.field1408.pos = 0;
         field1450++;
         while (true) {
-            class97 var3 = (class97) class151.field2924.method1049(0);
+            class97 var3 = (class97) class151.urgentQueue.method1049(0);
             if (var3 == null) {
                 while (true) {
-                    class97 var4 = (class97) class108.field1953.method1049(0);
+                    class97 var4 = (class97) class108.prefetchQueue.method1049(0);
                     if (var4 == null) {
                         if (class18.field294 != 0) {
                             try {
@@ -101,20 +101,20 @@ public class class80 extends class23 {
                         }
                     }
                     class138.field2561.method1390(var4, (byte) 43);
-                    class205.field3909.method1054(var4.nodeId, var4, -1);
-                    class220.field4159++;
+                    class205.pendingPrefetchQueue.put(var4.nodeId, var4, -1);
+                    class220.pendingPrefetchQueueSize++;
                     class231.field4335--;
                 }
             }
-            class241.field4467.method1054(var3.nodeId, var3, -1);
+            class241.pendingUrgentQueue.put(var3.nodeId, var3, -1);
             class203.field3878--;
-            class208.field3945++;
+            class208.pendingUrgentQueueSize++;
         }
     }
 
     @OriginalMember(owner = "client!hc", name = "a", descriptor = "(ILq;)I")
     public static final int method530(int arg0, class174 arg1) {
-        class192 var2 = (class192) class31.field495.method1051(-1, ((long) arg1.field3425 << 32) + ((long) arg1.field3408));
+        class192 var2 = (class192) class31.field495.get(-1, ((long) arg1.field3425 << 32) + ((long) arg1.field3408));
         field1438++;
         if (arg0 == -881710560) {
             return var2 == null ? arg1.field3496 : var2.field3700;

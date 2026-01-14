@@ -94,7 +94,7 @@ public class class47 extends class136 {
         if (this.field871 == null) {
             return this.field877;
         } else {
-            class192 var3 = (class192) this.field871.method1051(-1, (long) arg1);
+            class192 var3 = (class192) this.field871.get(-1, (long) arg1);
             return var3 == null ? this.field877 : var3.field3700;
         }
     }
@@ -163,7 +163,7 @@ public class class47 extends class136 {
         if (arg1 > -58) {
             method363(-52);
         }
-        class216 var3 = (class216) this.field871.method1051(-1, (long) arg0);
+        class216 var3 = (class216) this.field871.get(-1, (long) arg0);
         return var3 == null ? this.field876 : var3.field4048;
     }
 
@@ -230,7 +230,7 @@ public class class47 extends class136 {
                 } else {
                     var7 = new class192(arg2.g4());
                 }
-                this.field871.method1054((long) var6, var7, -1);
+                this.field871.put((long) var6, var7, -1);
             }
         }
         if (arg1 != -14) {

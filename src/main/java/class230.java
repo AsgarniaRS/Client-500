@@ -241,7 +241,7 @@ public class class230 {
                     if (var4.field3467 != null) {
                         method1538(arg0, false, var4.field3467);
                     }
-                    class168 var5 = (class168) class128.field2397.method1051(-1, (long) var4.field3425);
+                    class168 var5 = (class168) class128.field2397.get(-1, (long) var4.field3425);
                     if (var5 != null) {
                         ClientStream.method914(var5.field3231, arg0, 4);
                     }

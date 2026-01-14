@@ -312,7 +312,7 @@ public class class109 extends class136 {
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(BII)I")
     public static final int method749(byte arg0, int arg1, int arg2) {
         field2004++;
-        class177 var3 = (class177) class64.field1163.method1051(arg0 ^ 0x24, (long) arg1);
+        class177 var3 = (class177) class64.field1163.get(arg0 ^ 0x24, (long) arg1);
         if (var3 == null) {
             return 0;
         } else {

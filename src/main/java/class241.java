@@ -14,7 +14,7 @@ public abstract class class241 {
     public static class88 field4469 = field4464;
 
     @OriginalMember(owner = "client!wb", name = "e", descriptor = "Lob;")
-    public static class154 field4467 = new class154(4096);
+    public static class154 pendingUrgentQueue = new class154(4096);
 
     @OriginalMember(owner = "client!wb", name = "j", descriptor = "Lca;")
     public static class24 field4472 = new class24(50);
@@ -77,7 +77,7 @@ public abstract class class241 {
         field4469 = null;
         field4465 = null;
         field4474 = null;
-        field4467 = null;
+        pendingUrgentQueue = null;
         field4473 = null;
         field4464 = null;
         field4472 = null;

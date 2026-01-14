@@ -97,10 +97,10 @@ public class class158 {
         int var3 = arg1;
         field3048++;
         if (arg0) {
-            var3 = class208.field3945 + class203.field3878 + arg1;
+            var3 = class208.pendingUrgentQueueSize + class203.field3878 + arg1;
         }
         if (arg2) {
-            var3 += class231.field4335 + class220.field4159;
+            var3 += class231.field4335 + class220.pendingPrefetchQueueSize;
         }
         return var3;
     }

@@ -59,7 +59,7 @@ public class class110 {
         if (arg1.field3467 != null) {
             class155.method1057(var3, (byte) -99, arg0, arg1.field3425, var4, arg1.field3467);
         }
-        class168 var6 = (class168) class128.field2397.method1051(-1, (long) arg1.field3425);
+        class168 var6 = (class168) class128.field2397.get(-1, (long) arg1.field3425);
         if (var6 != null) {
             class212.method1451(var3, var6.field3231, (byte) 34, var4, arg0);
         }

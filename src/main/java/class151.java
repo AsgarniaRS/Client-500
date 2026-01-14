@@ -26,7 +26,7 @@ public class class151 {
     public static class88 field2928 = field2927;
 
     @OriginalMember(owner = "client!nj", name = "a", descriptor = "Lob;")
-    public static class154 field2924 = new class154(32);
+    public static class154 urgentQueue = new class154(32);
 
     @OriginalMember(owner = "client!nj", name = "t", descriptor = "Li;")
     private static class88 field2943 = class208.method1425(105, "Loading sprites )2 ");
@@ -68,7 +68,7 @@ public class class151 {
     public static void method1032(int arg0) {
         field2942 = null;
         field2943 = null;
-        field2924 = null;
+        urgentQueue = null;
         field2928 = null;
         if (arg0 != 1750) {
             field2928 = null;
@@ -107,27 +107,27 @@ public class class151 {
         int var5 = arg3 ^ ((arg1 & 0xD0000FFF) << 4 | arg1 >>> 12);
         int var6 = var5 | arg1 << 16;
         long var7 = (long) var6 ^ 0x100000000L;
-        class213 var9 = (class213) this.field2939.method1051(-1, var7);
+        class213 var9 = (class213) this.field2939.get(-1, var7);
         if (arg2 != -41513424) {
             method1033((byte) -37, -70);
         }
         if (var9 != null) {
             return var9;
         } else if (arg0 == null || arg0[0] > 0) {
-            class195 var10 = (class195) this.field2930.method1051(arg2 ^ 0x27971CF, var7);
+            class195 var10 = (class195) this.field2930.get(arg2 ^ 0x27971CF, var7);
             if (var10 == null) {
                 var10 = class195.method1356(this.field2938, arg1, arg3);
                 if (var10 == null) {
                     return null;
                 }
-                this.field2930.method1054(var7, var10, -1);
+                this.field2930.put(var7, var10, -1);
             }
             class213 var11 = var10.method1357(arg0);
             if (var11 == null) {
                 return null;
             } else {
                 var10.method460(true);
-                this.field2939.method1054(var7, var11, -1);
+                this.field2939.put(var7, var11, -1);
                 return var11;
             }
         } else {
@@ -139,12 +139,12 @@ public class class151 {
     private final class213 method1036(int arg0, int arg1, int[] arg2, int arg3) {
         field2929++;
         if (arg0 != -1673520700) {
-            field2924 = null;
+            urgentQueue = null;
         }
         int var5 = (arg3 << 4 & 0xFFF4 | arg3 >>> 12) ^ arg1;
         int var6 = var5 | arg3 << 16;
         long var7 = (long) var6;
-        class213 var9 = (class213) this.field2939.method1051(-1, var7);
+        class213 var9 = (class213) this.field2939.get(-1, var7);
         if (var9 != null) {
             return var9;
         } else if (arg2 == null || arg2[0] > 0) {
@@ -153,7 +153,7 @@ public class class151 {
                 return null;
             }
             class213 var11 = var10.method253();
-            this.field2939.method1054(var7, var11, -1);
+            this.field2939.put(var7, var11, -1);
             if (arg2 != null) {
                 arg2[0] -= var11.field4033.length;
             }

@@ -60,7 +60,7 @@ public class IntHashTable {
         }
         class150.field2918 += var3;
         class81.field1456 = var1;
-        if (class231.field4335 == 0 && class203.field3878 == 0 && class220.field4159 == 0 && class208.field3945 == 0) {
+        if (class231.field4335 == 0 && class203.field3878 == 0 && class220.pendingPrefetchQueueSize == 0 && class208.pendingUrgentQueueSize == 0) {
             return true;
         } else if (class214.clientStream == null) {
             return false;
@@ -69,26 +69,26 @@ public class IntHashTable {
                 if (class150.field2918 > 30000) {
                     throw new IOException();
                 }
-                while (class203.field3878 < 20 && class208.field3945 > 0) {
-                    class97 var4 = (class97) class241.field4467.method1049(0);
+                while (class203.field3878 < 20 && class208.pendingUrgentQueueSize > 0) {
+                    class97 var4 = (class97) class241.pendingUrgentQueue.method1049(0);
                     Packet var5 = new Packet(4);
                     var5.p1(255, 1);
                     var5.p3((int) var4.nodeId);
                     class214.clientStream.write(var5.data, 0, 4);
-                    class151.field2924.method1054(var4.nodeId, var4, -1);
-                    class208.field3945--;
+                    class151.urgentQueue.put(var4.nodeId, var4, -1);
+                    class208.pendingUrgentQueueSize--;
                     class203.field3878++;
                 }
-                while (class231.field4335 < 20 && class220.field4159 > 0) {
+                while (class231.field4335 < 20 && class220.pendingPrefetchQueueSize > 0) {
                     class97 var6 = (class97) class138.field2561.method1383(13753);
                     Packet var7 = new Packet(4);
                     var7.p1(arg0 ^ 0x7504, 0);
                     var7.p3((int) var6.nodeId);
                     class214.clientStream.write(var7.data, 0, 4);
                     var6.method909(arg0 ^ 0x753B);
-                    class108.field1953.method1054(var6.nodeId, var6, arg0 ^ 0xFFFF8A04);
+                    class108.prefetchQueue.put(var6.nodeId, var6, arg0 ^ 0xFFFF8A04);
                     class231.field4335++;
-                    class220.field4159--;
+                    class220.pendingPrefetchQueueSize--;
                 }
                 for (int var8 = 0; var8 < 100; var8++) {
                     int var9 = class214.clientStream.available(arg0 - 30202);
@@ -127,10 +127,10 @@ public class IntHashTable {
                             long var15 = (long) ((var13 << 16) + var14);
                             int var17 = class78.field1408.g1();
                             int var18 = class78.field1408.g4();
-                            class97 var19 = (class97) class151.field2924.method1051(-1, var15);
+                            class97 var19 = (class97) class151.urgentQueue.get(-1, var15);
                             class138.field2569 = true;
                             if (var19 == null) {
-                                var19 = (class97) class108.field1953.method1051(arg0 ^ 0xFFFF8A04, var15);
+                                var19 = (class97) class108.prefetchQueue.get(arg0 ^ 0xFFFF8A04, var15);
                                 class138.field2569 = false;
                             }
                             if (var19 == null) {
@@ -170,13 +170,13 @@ public class IntHashTable {
                         class28.field473 += var22;
                         if (class149.incomingBuffer.pos == var21) {
                             if (class53.incomingRequest.nodeId == 16711935L) {
-                                class79.field1427 = class149.incomingBuffer;
+                                class79.masterIndexBuffer = class149.incomingBuffer;
                                 for (int var24 = 0; var24 < 256; var24++) {
                                     Js5Local var25 = class10.field141[var24];
                                     if (var25 != null) {
-                                        class79.field1427.pos = var24 * 8 + 5;
-                                        int var26 = class79.field1427.g4();
-                                        int var27 = class79.field1427.g4();
+                                        class79.masterIndexBuffer.pos = var24 * 8 + 5;
+                                        int var26 = class79.masterIndexBuffer.g4();
+                                        int var27 = class79.masterIndexBuffer.g4();
                                         var25.method109(var26, 56, var27);
                                     }
                                 }
@@ -184,7 +184,7 @@ public class IntHashTable {
                                 class92.field1733.reset();
                                 class92.field1733.update(class149.incomingBuffer.data, 0, var21);
                                 int var28 = (int) class92.field1733.getValue();
-                                if (class53.incomingRequest.field1782 != var28) {
+                                if (class53.incomingRequest.expectedCrc != var28) {
                                     try {
                                         class214.clientStream.close(true);
                                     } catch (Exception var30) {
@@ -196,7 +196,7 @@ public class IntHashTable {
                                 }
                                 class151.field2940 = 0;
                                 class77.ioErrorCount = 0;
-                                class53.incomingRequest.field1789.method105((int) (class53.incomingRequest.nodeId & 0xFFFFL), class149.incomingBuffer.data, class138.field2569, 104, (class53.incomingRequest.nodeId & 0xFF0000L) == 16711680L);
+                                class53.incomingRequest.provider.method105((int) (class53.incomingRequest.nodeId & 0xFFFFL), class149.incomingBuffer.data, class138.field2569, 104, (class53.incomingRequest.nodeId & 0xFF0000L) == 16711680L);
                             }
                             class53.incomingRequest.method460(true);
                             class28.field473 = 0;

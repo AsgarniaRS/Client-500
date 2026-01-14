@@ -462,7 +462,7 @@ public class class135 extends class23 {
                         if (~var383 == -52) {
                             class154 var42 = var5.field4516[var9[var8]];
                             --var6;
-                            class192 var43 = (class192) var42.method1051(-1, (long) class108.field1946[var6]);
+                            class192 var43 = (class192) var42.get(-1, (long) class108.field1946[var6]);
                             if (var43 != null) {
                                 var8 += var43.field3700;
                             }
@@ -2645,7 +2645,7 @@ public class class135 extends class23 {
                                         if (~var383 == -2703) {
                                             --var6;
                                             int var354 = class108.field1946[var6];
-                                            class168 var355 = (class168) class128.field2397.method1051(-1, (long) var354);
+                                            class168 var355 = (class168) class128.field2397.get(-1, (long) var354);
                                             if (var355 == null) {
                                                 class108.field1946[var6++] = 0;
                                             } else {
@@ -2674,7 +2674,7 @@ public class class135 extends class23 {
                                             var6 -= 2;
                                             int var359 = class108.field1946[var6];
                                             int var360 = class108.field1946[var6 - -1];
-                                            class168 var361 = (class168) class128.field2397.method1051(-1, (long) var359);
+                                            class168 var361 = (class168) class128.field2397.get(-1, (long) var359);
                                             if (var361 != null && var361.field3231 == var360) {
                                                 class108.field1946[var6++] = 1;
                                                 continue;

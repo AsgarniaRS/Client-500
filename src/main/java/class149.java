@@ -311,7 +311,7 @@ public class class149 extends class136 {
         if (arg1 > -116) {
             method1007(123, -104);
         }
-        class216 var4 = (class216) this.field2871.method1051(-1, (long) arg2);
+        class216 var4 = (class216) this.field2871.get(-1, (long) arg2);
         return var4 == null ? arg0 : var4.field4048;
     }
 
@@ -324,7 +324,7 @@ public class class149 extends class136 {
         if (!arg0) {
             method1007(104, -83);
         }
-        class192 var4 = (class192) this.field2871.method1051(-1, (long) arg1);
+        class192 var4 = (class192) this.field2871.get(-1, (long) arg1);
         return var4 == null ? arg2 : var4.field3700;
     }
 
@@ -785,7 +785,7 @@ public class class149 extends class136 {
                 } else {
                     var11 = new class192(arg2.g4());
                 }
-                this.field2871.method1054((long) var10, var11, -1);
+                this.field2871.put((long) var10, var11, -1);
             }
         }
         if (arg1 == -87) {

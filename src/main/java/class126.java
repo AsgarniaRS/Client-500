@@ -210,7 +210,7 @@ public class class126 extends class136 {
         if (this.field2346 == null) {
             return arg1;
         } else if (arg0 == -8931) {
-            class192 var4 = (class192) this.field2346.method1051(-1, (long) arg2);
+            class192 var4 = (class192) this.field2346.get(-1, (long) arg2);
             return var4 == null ? arg1 : var4.field3700;
         } else {
             return 69;
@@ -368,7 +368,7 @@ public class class126 extends class136 {
                     } else {
                         var13 = new class192(arg2.g4());
                     }
-                    this.field2346.method1054((long) var12, var13, -1);
+                    this.field2346.put((long) var12, var13, -1);
                 }
             }
         }
@@ -420,7 +420,7 @@ public class class126 extends class136 {
         if (this.field2346 == null) {
             return arg2;
         } else {
-            class216 var5 = (class216) this.field2346.method1051(-1, (long) arg0);
+            class216 var5 = (class216) this.field2346.get(-1, (long) arg0);
             return var5 == null ? arg2 : var5.field4048;
         }
     }

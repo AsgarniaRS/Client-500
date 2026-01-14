@@ -15,7 +15,7 @@ public class class220 extends class23 {
     private static class88 field4156 = class208.method1425(105, "Login limit exceeded)3");
 
     @OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
-    public static int field4159 = 0;
+    public static int pendingPrefetchQueueSize = 0;
 
     @OriginalMember(owner = "client!ub", name = "X", descriptor = "[[B")
     public static byte[][] field4157 = new byte[1000][];

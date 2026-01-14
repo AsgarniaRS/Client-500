@@ -45,7 +45,7 @@ public class class79 extends class23 {
     public static int field1436;
 
     @OriginalMember(owner = "client!hb", name = "T", descriptor = "Lea;")
-    public static Packet field1427;
+    public static Packet masterIndexBuffer;
 
     @OriginalMember(owner = "client!hb", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
@@ -75,7 +75,7 @@ public class class79 extends class23 {
 
     @OriginalMember(owner = "client!hb", name = "c", descriptor = "(Z)V")
     public static void method526(boolean arg0) {
-        field1427 = null;
+        masterIndexBuffer = null;
         if (!arg0) {
             field1426 = null;
         }

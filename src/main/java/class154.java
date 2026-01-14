@@ -115,7 +115,7 @@ public class class154 {
     }
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(IJ)Lg;")
-    public final class67 method1051(int arg0, long arg1) {
+    public final class67 get(int arg0, long arg1) {
         this.field2987 = arg1;
         field2985++;
         class67 var4 = this.field2973[(int) (arg1 & (long) (this.field2974 + arg0))];
@@ -262,7 +262,7 @@ public class class154 {
     }
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(JLg;I)V")
-    public final void method1054(long arg0, class67 arg1, int arg2) {
+    public final void put(long arg0, class67 arg1, int arg2) {
         if (arg1.field1212 != null) {
             arg1.method460(true);
         }

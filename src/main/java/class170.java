@@ -265,14 +265,14 @@ public class class170 extends class51 {
         }
         for (class153 var8 = (class153) arg2.field1716.method1049(0); var8 != null; var8 = (class153) arg2.field1716.method1050((byte) -73)) {
             int var9 = (int) var8.nodeId;
-            class204 var10 = (class204) this.field3254.method1051(-1, (long) var9);
+            class204 var10 = (class204) this.field3254.get(-1, (long) var9);
             if (var10 == null) {
                 var10 = class176.method1268(false, arg4, var9);
                 if (var10 == null) {
                     var7 = false;
                     continue;
                 }
-                this.field3254.method1054((long) var9, var10, -1);
+                this.field3254.put((long) var9, var10, -1);
             }
             if (!var10.method1402(var6, -1, arg1, var8.field2958)) {
                 var7 = false;
@@ -947,7 +947,7 @@ public class class170 extends class51 {
                 }
             }
         }
-        class204 var7 = (class204) this.field3254.method1051(arg1 ^ 0xFFFFB05F, (long) this.field3307[arg2]);
+        class204 var7 = (class204) this.field3254.get(arg1 ^ 0xFFFFB05F, (long) this.field3307[arg2]);
         if (var7 == null) {
             return;
         }

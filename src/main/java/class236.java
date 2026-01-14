@@ -117,14 +117,14 @@ public class class236 extends class27 {
         if (class238.packetType == 239) {
             int var2 = class230.in.g4();
             int var3 = class230.in.g4();
-            class168 var4 = (class168) class128.field2397.method1051(-1, (long) var2);
-            class168 var5 = (class168) class128.field2397.method1051(-1, (long) var3);
+            class168 var4 = (class168) class128.field2397.get(-1, (long) var2);
+            class168 var5 = (class168) class128.field2397.get(-1, (long) var3);
             if (var5 != null) {
                 class93.method673((byte) -124, var5, var4 == null || var4.field3231 != var5.field3231);
             }
             if (var4 != null) {
                 var4.method460(arg0);
-                class128.field2397.method1054((long) var3, var4, -1);
+                class128.field2397.put((long) var3, var4, -1);
             }
             class174 var6 = class239.method1581(-64, var2);
             if (var6 != null) {
@@ -173,7 +173,7 @@ public class class236 extends class27 {
                 int var24 = class230.in.g4();
                 int var25 = class230.in.g2();
                 int var26 = class230.in.g1();
-                class168 var27 = (class168) class128.field2397.method1051(-1, (long) var24);
+                class168 var27 = (class168) class128.field2397.get(-1, (long) var24);
                 if (var27 != null && var27.field3231 != var25) {
                     class93.method673((byte) -121, var27, true);
                     var27 = null;
@@ -198,7 +198,7 @@ public class class236 extends class27 {
                 int var20 = class230.in.g4();
                 for (int var21 = var18; var21 <= var19; var21++) {
                     long var22 = ((long) var17 << 32) + (long) var21;
-                    class31.field495.method1054(var22, new class192(var20), -1);
+                    class31.field495.put(var22, new class192(var20), -1);
                 }
             }
             class238.packetType = -1;
@@ -423,11 +423,11 @@ public class class236 extends class27 {
             }
             for (int var79 = var77; var79 <= var78; var79++) {
                 long var80 = ((long) var76 << 32) + (long) var79;
-                class67 var82 = class31.field495.method1051(-1, var80);
+                class67 var82 = class31.field495.get(-1, var80);
                 if (var82 != null) {
                     var82.method460(true);
                 }
-                class31.field495.method1054(var80, new class192(var75), -1);
+                class31.field495.put(var80, new class192(var75), -1);
             }
             class238.packetType = -1;
             return true;
@@ -1114,7 +1114,7 @@ public class class236 extends class27 {
             int var247 = class230.in.g4();
             int var248 = class230.in.g2();
             int var249 = class230.in.g1();
-            class168 var250 = (class168) class128.field2397.method1051(-1, (long) var247);
+            class168 var250 = (class168) class128.field2397.get(-1, (long) var247);
             if (var250 != null) {
                 class93.method673((byte) -117, var250, var250.field3231 != var248);
             }
@@ -1448,7 +1448,7 @@ public class class236 extends class27 {
             return true;
         } else if (class238.packetType == 242) {
             int var323 = class230.in.g4();
-            class168 var324 = (class168) class128.field2397.method1051(-1, (long) var323);
+            class168 var324 = (class168) class128.field2397.get(-1, (long) var323);
             if (var324 != null) {
                 class93.method673((byte) -116, var324, true);
             }

@@ -17,7 +17,7 @@ public class class108 {
     public static class88 field1944 = class208.method1425(105, "blinken1:");
 
     @OriginalMember(owner = "client!jj", name = "s", descriptor = "Lob;")
-    public static class154 field1953 = new class154(4096);
+    public static class154 prefetchQueue = new class154(4096);
 
     @OriginalMember(owner = "client!jj", name = "w", descriptor = "Lid;")
     public static class92 field1957 = new class92(64);
@@ -91,7 +91,7 @@ public class class108 {
         }
         field1944 = null;
         field1957 = null;
-        field1953 = null;
+        prefetchQueue = null;
         field1958 = null;
         field1959 = null;
     }

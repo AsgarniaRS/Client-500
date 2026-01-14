@@ -178,7 +178,7 @@ public class class103 extends class50 {
                         if (var4.field3467 != null) {
                             method716(var4.field3425, (byte) 127, var4.field3467);
                         }
-                        class168 var5 = (class168) class128.field2397.method1051(-1, (long) var4.field3425);
+                        class168 var5 = (class168) class128.field2397.get(-1, (long) var4.field3425);
                         if (var5 != null) {
                             class217.method1473(var5.field3231, -119);
                         }

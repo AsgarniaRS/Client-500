@@ -199,7 +199,7 @@ public class Js5Local extends Js5Index {
         }
         this.field347 = arg2;
         if (this.field340 == null) {
-            class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+            class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
         } else {
             class81.method540(this, this.field334, 0, this.field340);
         }
@@ -230,7 +230,7 @@ public class Js5Local extends Js5Index {
             if (arg0 == null || ~arg0.length >= -3) {
                 this.field330[arg1] = false;
                 if (this.field342 || arg4) {
-                    class188.method1314(this, arg1, this.field334, (byte) 2, -439631408, super.field2692[arg1], arg4);
+                    class188.queueRequest(this, arg1, this.field334, (byte) 2, -439631408, super.field2692[arg1], arg4);
                 }
                 return;
             }
@@ -241,7 +241,7 @@ public class Js5Local extends Js5Index {
             if (super.field2692[arg1] != var6 || super.field2670[arg1] != var7) {
                 this.field330[arg1] = false;
                 if (this.field342 || arg4) {
-                    class188.method1314(this, arg1, this.field334, (byte) 2, -439631408, super.field2692[arg1], arg4);
+                    class188.queueRequest(this, arg1, this.field334, (byte) 2, -439631408, super.field2692[arg1], arg4);
                 }
                 return;
             }
@@ -255,26 +255,26 @@ public class Js5Local extends Js5Index {
                 throw new RuntimeException();
             }
             if (arg0 == null) {
-                class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+                class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             class226.field4243.reset();
             class226.field4243.update(arg0, 0, arg0.length);
             int var8 = (int) class226.field4243.getValue();
             if (this.field349 != var8) {
-                class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+                class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             Packet var9;
             try {
                 var9 = new Packet(class23.method119(arg0, -1));
             } catch (RuntimeException var12) {
-                class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+                class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             int var10 = var9.g1();
             if (~var10 != -6 && var10 != 6) {
-                class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+                class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             int var11 = 0;
@@ -282,7 +282,7 @@ public class Js5Local extends Js5Index {
                 var11 = var9.g4();
             }
             if (~this.field347 != ~var11) {
-                class188.method1314(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
+                class188.queueRequest(this, this.field334, 255, (byte) 0, -439631408, this.field349, true);
                 return;
             }
             this.decode(arg0);
@@ -298,7 +298,7 @@ public class Js5Local extends Js5Index {
                 if (this.field333 != null && this.field330 != null && this.field330[arg0]) {
                     class81.method540(this, arg0, 0, this.field333);
                 } else {
-                    class188.method1314(this, arg0, this.field334, (byte) 2, -439631408, super.field2692[arg0], true);
+                    class188.queueRequest(this, arg0, this.field334, (byte) 2, -439631408, super.field2692[arg0], true);
                 }
             }
         }

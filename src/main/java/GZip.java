@@ -101,7 +101,7 @@ public class GZip {
     public static final void method426(int arg0, int arg1, int arg2) {
         long var3 = (long) ((arg0 << 16) + arg2);
         field1115++;
-        class97 var5 = (class97) class205.field3909.method1051(-1, var3);
+        class97 var5 = (class97) class205.pendingPrefetchQueue.get(-1, var3);
         if (var5 != null) {
             class138.field2561.method1390(var5, (byte) 43);
             if (arg1 < 114) {
@@ -146,7 +146,7 @@ public class GZip {
                 while (var11-- > 0) {
                     int var13 = buf.g4();
                     int var14 = buf.g4();
-                    var12.method1054((long) var13, new class192(var14), ~arg1);
+                    var12.put((long) var13, new class192(var14), ~arg1);
                 }
             }
         }

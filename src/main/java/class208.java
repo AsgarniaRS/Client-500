@@ -14,7 +14,7 @@ public class class208 extends class23 {
     public static int[] field3951 = new int[] { 1, 2, 4, 8 };
 
     @OriginalMember(owner = "client!ta", name = "R", descriptor = "I")
-    public static int field3945 = 0;
+    public static int pendingUrgentQueueSize = 0;
 
     @OriginalMember(owner = "client!ta", name = "db", descriptor = "[S")
     public static short[] field3957 = new short[] { 6798, 8741, 25238, 4626, 4550 };

@@ -146,7 +146,7 @@ public class class4 extends class136 {
     @OriginalMember(owner = "client!ac", name = "b", descriptor = "(II)V")
     public static final void method20(int arg0, int arg1) {
         field59++;
-        class177 var2 = (class177) class64.field1163.method1051(-1, (long) arg1);
+        class177 var2 = (class177) class64.field1163.get(-1, (long) arg1);
         if (var2 == null) {
             return;
         }

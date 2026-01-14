@@ -287,13 +287,13 @@ public class class119 {
     @OriginalMember(owner = "client!kj", name = "a", descriptor = "(IBLbj;)V")
     public static final void method816(int arg0, byte arg1, Js5Local arg2) {
         field2155++;
-        if (class79.field1427 == null) {
-            class188.method1314(null, 255, 255, arg1, -439631408, 0, true);
+        if (class79.masterIndexBuffer == null) {
+            class188.queueRequest(null, 255, 255, arg1, -439631408, 0, true);
             class10.field141[arg0] = arg2;
         } else {
-            class79.field1427.pos = arg0 * 8 + 5;
-            int var3 = class79.field1427.g4();
-            int var4 = class79.field1427.g4();
+            class79.masterIndexBuffer.pos = arg0 * 8 + 5;
+            int var3 = class79.masterIndexBuffer.g4();
+            int var4 = class79.masterIndexBuffer.g4();
             arg2.method109(var3, arg1 + 55, var4);
         }
     }

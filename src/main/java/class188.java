@@ -262,45 +262,45 @@ public abstract class class188 extends class136 {
     public abstract void method1176(int arg0, int arg1, int arg2, int arg3, int arg4);
 
     @OriginalMember(owner = "client!rc", name = "a", descriptor = "(Lbj;IIBIIZ)V")
-    public static final void method1314(Js5Local arg0, int arg1, int arg2, byte arg3, int arg4, int arg5, boolean arg6) {
+    public static final void queueRequest(Js5Local provider, int groupId, int archive, byte padding, int arg4, int expectedCrc, boolean arg6) {
         field3659++;
-        long var7 = (long) ((arg2 << 16) + arg1);
-        class97 var9 = (class97) class241.field4467.method1051(-1, var7);
-        if (var9 != null) {
+        long key = (long) ((archive << 16) + groupId);
+        class97 pendingUrgentRequest = (class97) class241.pendingUrgentQueue.get(-1, key);
+        if (pendingUrgentRequest != null) {
             return;
         }
-        class97 var10 = (class97) class151.field2924.method1051(-1, var7);
+        class97 var10 = (class97) class151.urgentQueue.get(-1, key);
         if (arg4 != -439631408) {
             method1312(null, (byte) 126, null);
         }
         if (var10 != null) {
             return;
         }
-        class97 var11 = (class97) class205.field3909.method1051(-1, var7);
+        class97 var11 = (class97) class205.pendingPrefetchQueue.get(-1, key);
         if (var11 == null) {
             if (!arg6) {
-                class97 var12 = (class97) class108.field1953.method1051(-1, var7);
+                class97 var12 = (class97) class108.prefetchQueue.get(-1, key);
                 if (var12 != null) {
                     return;
                 }
             }
-            class97 var13 = new class97();
-            var13.padding = arg3;
-            var13.field1782 = arg5;
-            var13.field1789 = arg0;
+            class97 request = new class97();
+            request.padding = padding;
+            request.expectedCrc = expectedCrc;
+            request.provider = provider;
             if (arg6) {
-                class241.field4467.method1054(var7, var13, -1);
-                class208.field3945++;
+                class241.pendingUrgentQueue.put(key, request, -1);
+                class208.pendingUrgentQueueSize++;
             } else {
-                class138.field2561.method1389(-20038, var13);
-                class205.field3909.method1054(var7, var13, -1);
-                class220.field4159++;
+                class138.field2561.method1389(-20038, request);
+                class205.pendingPrefetchQueue.put(key, request, -1);
+                class220.pendingPrefetchQueueSize++;
             }
         } else if (arg6) {
             var11.method909(192);
-            class241.field4467.method1054(var7, var11, -1);
-            class220.field4159--;
-            class208.field3945++;
+            class241.pendingUrgentQueue.put(key, var11, -1);
+            class220.pendingPrefetchQueueSize--;
+            class208.pendingUrgentQueueSize++;
         }
     }
 
@@ -320,7 +320,7 @@ public abstract class class188 extends class136 {
     @OriginalMember(owner = "client!rc", name = "a", descriptor = "(BI)I")
     public static final int method1316(byte arg0, int arg1) {
         if (arg0 != 52) {
-            method1314(null, 47, 124, (byte) 7, 121, -28, true);
+            queueRequest(null, 47, 124, (byte) 7, 121, -28, true);
         }
         field3652++;
         return arg1 >>> 8;

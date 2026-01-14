@@ -82,7 +82,7 @@ public class class39 extends class67 {
             method255(-34, false, -102);
         }
         field695++;
-        class177 var3 = (class177) class64.field1163.method1051(-1, (long) arg2);
+        class177 var3 = (class177) class64.field1163.get(-1, (long) arg2);
         if (var3 == null) {
             return -1;
         } else if (arg0 >= 0 && arg0 < var3.field3555.length) {

@@ -349,7 +349,7 @@ public class class88 implements class187 {
             if (class230.field4315 == null) {
                 class230.field4315 = new class154(4096);
             } else {
-                for (class216 var5 = (class216) class230.field4315.method1051(-1, var2); var5 != null; var5 = (class216) class230.field4315.method1056(3)) {
+                for (class216 var5 = (class216) class230.field4315.get(-1, var2); var5 != null; var5 = (class216) class230.field4315.method1056(3)) {
                     if (this.method597(arg0 ^ 0x49, var5.field4048)) {
                         return var5.field4048;
                     }
@@ -361,7 +361,7 @@ public class class88 implements class187 {
             class216 var8 = new class216();
             var8.field4048 = this;
             this.field1606 = false;
-            class230.field4315.method1054(var2, var8, -1);
+            class230.field4315.put(var2, var8, -1);
             return this;
         }
     }
