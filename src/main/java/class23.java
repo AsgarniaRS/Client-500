@@ -90,7 +90,8 @@ public abstract class class23 extends class67 {
         int var4 = var2.g4();
         field371++;
         if (var4 < 0 || class159.maxsize != 0 && var4 > class159.maxsize) {
-            throw new RuntimeException();
+            //throw new RuntimeException();
+            return new byte[] {0};
         } else if (~var3 == arg1) {
             byte[] var5 = new byte[var4];
             var2.method307(false, var4, var5, 0);
@@ -98,7 +99,8 @@ public abstract class class23 extends class67 {
         } else {
             int var6 = var2.g4();
             if (var6 < 0 || class159.maxsize != 0 && class159.maxsize < var6) {
-                throw new RuntimeException();
+                //throw new RuntimeException();
+                return new byte[] {0};
             }
             byte[] var7 = new byte[var6];
             if (var3 == 1) {
