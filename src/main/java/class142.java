@@ -58,7 +58,7 @@ public class class142 {
         try {
             if (class122.field2232 == 2) {
                 if (class196.field3766 == null) {
-                    class196.field3766 = class91.method663(class158.field3041, class228.field4270, class242.field4482);
+                    class196.field3766 = MidiFile.method663(class158.field3041, class228.field4270, class242.field4482);
                     if (class196.field3766 == null) {
                         return false;
                     }

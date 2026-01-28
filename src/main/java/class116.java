@@ -191,7 +191,7 @@ public class class116 extends class23 {
                                 }
                             }
                         }
-                        Isaac.out.method341(-var4 + Isaac.out.pos, 65);
+                        Isaac.out.psize1(-var4 + Isaac.out.pos);
                         if (var5 < class219.field4145.field718) {
                             class219.field4145.field718 -= var5;
                             for (int var12 = 0; class219.field4145.field718 > var12; ++var12) {
@@ -233,7 +233,7 @@ public class class116 extends class23 {
                     }
                     Isaac.out.method30(63);
                     int var19 = (int) var13;
-                    Isaac.out.method326(-1, (var17 << 19) + ((var19 << 20) - -var18));
+                    Isaac.out.p4_alt2((var17 << 19) + ((var19 << 20) - -var18));
                 }
                 if (class247.field4513[96] || class247.field4513[97] || class247.field4513[98] || class247.field4513[99]) {
                     class176.field3548 = true;
@@ -246,7 +246,7 @@ public class class116 extends class23 {
                     class176.field3548 = false;
                     class88.field1638 = 20;
                     Isaac.out.method30(173);
-                    Isaac.out.method331(class207.field3932, 18975);
+                    Isaac.out.p2_alt2(class207.field3932);
                     Isaac.out.p2(class64.field1173);
                 }
                 if (class175.field3522 && !Js5Local.field355) {
@@ -332,8 +332,8 @@ public class class116 extends class23 {
                                         Isaac.out.method30(207);
                                         Isaac.out.p4_alt1(class135.field2516.field3425);
                                         Isaac.out.method314(class18.field305, (byte) -109);
-                                        Isaac.out.method327(-85, var21);
-                                        Isaac.out.method344(class172.field3335, (byte) -51);
+                                        Isaac.out.p1_alt3(var21);
+                                        Isaac.out.p2_alt3(class172.field3335);
                                     }
                                 } else if ((~class203.field3861 == -2 || class234.method1556(class203.field3864 + -1, -1)) && ~class203.field3864 < -3) {
                                     class136.method906(32768);

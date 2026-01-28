@@ -281,9 +281,9 @@ public class IntHashTable {
                         Isaac.out.method30(135);
                         class42.field709++;
                         Isaac.out.method314(class179.field3570.field3408, (byte) 72);
-                        Isaac.out.method316(class179.field3570.field3425, 15728);
-                        Isaac.out.method316(class122.field2219.field3425, 15728);
-                        Isaac.out.method344(class122.field2219.field3408, (byte) -51);
+                        Isaac.out.p4_alt3(class179.field3570.field3425);
+                        Isaac.out.p4_alt3(class122.field2219.field3425);
+                        Isaac.out.p2_alt3(class122.field2219.field3408);
                     }
                 } else if ((class203.field3861 == 1 || class234.method1556(class203.field3864 - 1, -1)) && class203.field3864 > 2) {
                     class136.method906(arg0 + 32795);

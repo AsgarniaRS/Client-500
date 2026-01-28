@@ -122,10 +122,10 @@ public class class248 {
         class140.field2596 = arg2[0];
         for (int var8 = 1; var8 < var5; var8++) {
             arg3--;
-            Isaac.out.method327(59, arg1[arg3] - var7);
+            Isaac.out.p1_alt3(arg1[arg3] - var7);
             Isaac.out.method297(arg2[arg3] - var6, 0);
         }
-        Isaac.out.method331(var7 + class223.field4214, 18975);
+        Isaac.out.p2_alt2(var7 + class223.field4214);
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(B)Lg;")

@@ -125,7 +125,7 @@ public class class43 extends class23 {
                     System.out.println(class17.mapKeys[var4][var15]);
                 }
             }
-            int var5 = class230.in.g2_alt2(true);
+            int var5 = class230.in.g2_alt2();
             System.out.println("var5 " + var5);
 
             boolean var6 = false;
@@ -171,7 +171,7 @@ public class class43 extends class23 {
             class120.method822(var9, var10, var8, var5, (byte) 120, var7);
         } else {
             int var16 = class230.in.g1();
-            int var17 = class230.in.method343(62);
+            int var17 = class230.in.g2_alt1();
             int var18 = class230.in.g2_alt3(255);
             class230.in.method34(8);
             for (int var19 = 0; var19 < 4; ++var19) {
@@ -194,7 +194,7 @@ public class class43 extends class23 {
                     class17.mapKeys[var21][var35] = class230.in.g4();
                 }
             }
-            int var22 = class230.in.method343(66);
+            int var22 = class230.in.g2_alt1();
             int var23 = class230.in.g2();
             class27.field453 = new int[var20];
             class128.field2404 = new int[var20];

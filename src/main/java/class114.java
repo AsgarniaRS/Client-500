@@ -133,7 +133,7 @@ public class class114 extends class136 {
                         var4.field1261 = var5 & 0x7FFF;
                         var4.field1257 = (var5 & 0x8000) != 0;
                         var4.field1262 = var2.gjstr();
-                        var4.field1255 = var2.method334((byte) -73);
+                        var4.field1255 = var2.g2b();
                         var4.field1258 = var3;
                         var4.field1260 = class79.method528(var2.g2(), arg0 ^ 0x4030);
                     }

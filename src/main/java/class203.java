@@ -205,7 +205,7 @@ public class class203 extends class50 {
         if (arg1) {
             field3872 = null;
         }
-        Isaac.out.method316(arg2, 15728);
+        Isaac.out.p4_alt3(arg2);
         Isaac.out.method314(arg0, (byte) -14);
         ++field3870;
     }
@@ -274,20 +274,20 @@ public class class203 extends class50 {
             arg1.field4115 = class230.in.g1_alt3(24758);
             arg1.field4096 = class230.in.g1_alt2();
             arg1.field4102 = class230.in.g1_alt2();
-            arg1.field4074 = class230.in.method319(4633);
-            arg1.field4135 = class230.in.method343(arg2 ^ 103) - -class117.field2115;
-            arg1.field4132 = class230.in.method343(arg2 ^ 78) + class117.field2115;
-            arg1.field4141 = class230.in.method319(4633);
+            arg1.field4074 = class230.in.g1_alt1();
+            arg1.field4135 = class230.in.g2_alt1() - -class117.field2115;
+            arg1.field4132 = class230.in.g2_alt1() + class117.field2115;
+            arg1.field4141 = class230.in.g1_alt1();
             arg1.field4139 = 0;
             arg1.field4137 = 1;
         }
         if ((arg2 & arg0) != 0) {
-            arg1.field4098 = class230.in.g2_alt2(true);
+            arg1.field4098 = class230.in.g2_alt2();
             arg1.field4101 = class230.in.g2_alt3(255);
         }
         if ((512 & arg0) != 0) {
             arg1.field4082 = class230.in.g2();
-            int var4 = class230.in.method313(121);
+            int var4 = class230.in.g4_alt3();
             if (arg1.field4082 == 65535) {
                 arg1.field4082 = -1;
             }
@@ -328,7 +328,7 @@ public class class203 extends class50 {
             arg1.method1479(class117.field2115, arg2 ^ 31616, var13, var12);
         }
         if (~(1 & arg0) != -1) {
-            int var14 = class230.in.g2_alt2(true);
+            int var14 = class230.in.g2_alt2();
             boolean var15 = ~(32768 & var14) != -1;
             int var16 = class230.in.g1_alt3(24758);
             int var17 = class230.in.g1();

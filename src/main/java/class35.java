@@ -107,11 +107,11 @@ public class class35 extends class23 {
                             this.field601 = this.field596 = arg0.g1();
                         }
                     } else {
-                        this.field607 = arg0.method334((byte) -73);
+                        this.field607 = arg0.g2b();
                         if (~this.field607 > -1) {
                             this.field609 = new short[this.field595];
                             for (int var5 = 0; this.field595 > var5; ++var5) {
-                                this.field609[var5] = (short) arg0.method334((byte) -73);
+                                this.field609[var5] = (short) arg0.g2b();
                             }
                         }
                     }

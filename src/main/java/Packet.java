@@ -78,13 +78,25 @@ public class Packet extends Linkable {
         this.data[this.pos++] = (byte) val;
     }
 
-
-
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI[BI)V")
     public final void pdata(byte[] arg0, int arg2, int arg1) {
         for (int var5 = arg1; var5 < arg1 + arg2; var5++) {
             this.data[this.pos++] = arg0[var5];
         }
+    }
+
+    @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI)V")
+    public final void psize4(int len) {
+        this.data[this.pos - len - 4] = (byte) (len >> 24);
+        this.data[this.pos - len - 3] = (byte) (len >> 16);
+        this.data[this.pos - len - 2] = (byte) (len >> 8);
+        this.data[this.pos - len - 1] = (byte) len;
+    }
+
+    @OriginalMember(owner = "client!ea", name = "g", descriptor = "(I)I")
+    public final int g3() {
+        this.pos += 3;
+        return ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(B)I")
@@ -94,8 +106,8 @@ public class Packet extends Linkable {
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BJ)V")
     public final void method296(byte arg0, long arg1) {
-        this.method316((int) (arg1 >> 32), 15728);
-        this.method316((int) arg1, 15728);
+        this.p4_alt3((int) (arg1 >> 32));
+        this.p4_alt3((int) arg1);
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(II)V")
@@ -149,12 +161,6 @@ public class Packet extends Linkable {
         return (byte) (this.data[this.pos++] - 128);
     }
 
-    @OriginalMember(owner = "client!ea", name = "g", descriptor = "(I)I")
-    public final int method304(int arg0) {
-        this.pos += 3;
-        return ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
-    }
-
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(IIJ)V")
     public final void method306(int arg0, int arg1, long arg2) {
         int var6 = arg0 - 1;
@@ -188,7 +194,6 @@ public class Packet extends Linkable {
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Lnb;ILnb;ZB)Lli;")
     public static final class129 method309(Js5Index arg0, int arg1, Js5Index arg2, boolean arg3, byte arg4) {
-        field832++;
         boolean var5 = true;
         int[] var6 = arg2.method950(41, arg1);
         if (arg4 >= -54) {
@@ -261,7 +266,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "h", descriptor = "(I)I")
-    public final int method313(int arg0) {
+    public final int g4_alt3() {
         this.pos += 4;
         return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] & 0xFF) + ((this.data[this.pos + -3] & 0xFF) << 24) + ((this.data[this.pos + -4] & 0xFF) << 16);
     }
@@ -280,7 +285,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "e", descriptor = "(II)V")
-    public final void method316(int arg0, int arg1) {
+    public final void p4_alt3(int arg0) {
         this.data[this.pos++] = (byte) (arg0 >> 16);
         this.data[this.pos++] = (byte) (arg0 >> 24);
         this.data[this.pos++] = (byte) arg0;
@@ -343,8 +348,8 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "i", descriptor = "(I)I")
-    public final int method319(int arg0) {
-        return arg0 == 4633 ? this.data[this.pos++] - 128 & 0xFF : -52;
+    public final int g1_alt1() {
+        return this.data[this.pos++] - 128 & 0xFF;
     }
 
     @OriginalMember(owner = "client!ea", name = "j", descriptor = "(I)I")
@@ -397,47 +402,44 @@ public class Packet extends Linkable {
         return ((this.data[this.pos - 4] & 0xFF) << 24) + ((this.data[this.pos - 3] & 0xFF) << 16) + ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos + -1] & 0xFF);
     }
 
-
-
-
+    @OriginalMember(owner = "client!ea", name = "s", descriptor = "(I)Li;")
+    public final class88 fastgstr() {
+        if (this.data[this.pos] == 0) {
+            this.pos++;
+            return null;
+        } else {
+            return this.gjstr();
+        }
+    }
 
     @OriginalMember(owner = "client!ea", name = "f", descriptor = "(II)V")
-    public final void method326(int arg0, int arg1) {
+    public final void p4_alt2(int arg1) {
         this.data[this.pos++] = (byte) (arg1 >> 8);
         this.data[this.pos++] = (byte) arg1;
-        if (arg0 == -1) {
-            this.data[this.pos++] = (byte) (arg1 >> 24);
-            field813++;
-            this.data[this.pos++] = (byte) (arg1 >> 16);
-        }
+        this.data[this.pos++] = (byte) (arg1 >> 24);
+        this.data[this.pos++] = (byte) (arg1 >> 16);
     }
 
     @OriginalMember(owner = "client!ea", name = "g", descriptor = "(II)V")
-    public final void method327(int arg0, int arg1) {
-        this.data[this.pos++] = (byte) (128 - arg1);
-        field846++;
-        int var3 = 114 % ((-arg0 - 24) / 58);
+    public final void p1_alt3(int arg0) {
+        this.data[this.pos++] = (byte) (128 - arg0);
     }
 
     @OriginalMember(owner = "client!ea", name = "h", descriptor = "(II)V")
-    public final void method329(int arg0, int arg1) {
-        if (arg0 != 8) {
-            field848 = -55;
-        }
-        if ((arg1 & 0xFFFFFF80) != 0) {
-            if ((arg1 & 0xFFFFC000) != 0) {
-                if ((arg1 & 0xFFE00000) != 0) {
-                    if ((arg1 & 0xF0000000) != 0) {
-                        this.p1(arg1 >>> 28 | 0x80);
+    public final void pMidiVarLen(int n) {
+        if ((n & 0xFFFFFF80) != 0) {
+            if ((n & 0xFFFFC000) != 0) {
+                if ((n & 0xFFE00000) != 0) {
+                    if ((n & 0xF0000000) != 0) {
+                        this.p1(n >>> 28 | 0x80);
                     }
-                    this.p1(arg1 >>> 21 | 0x80);
+                    this.p1(n >>> 21 | 0x80);
                 }
-                this.p1(arg1 >>> 14 | 0x80);
+                this.p1(n >>> 14 | 0x80);
             }
-            this.p1(arg1 >>> 7 | 0x80);
+            this.p1(n >>> 7 | 0x80);
         }
-        this.p1(arg1 & 0x7F);
-        field862++;
+        this.p1(n & 0x7F);
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Lnb;BLnb;)I")
@@ -474,47 +476,23 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "i", descriptor = "(II)V")
-    public final void method331(int arg0, int arg1) {
+    public final void p2_alt2(int arg0) {
         this.data[this.pos++] = (byte) (arg0 >> 8);
         this.data[this.pos++] = (byte) (arg0 + 128);
-        if (arg1 == 18975) {
-            field841++;
-        }
     }
 
     @OriginalMember(owner = "client!ea", name = "f", descriptor = "(B)I")
-    public final int method332(byte arg0) {
-        field830++;
+    public final int method332() {
         int var2 = 0;
         int var3;
         for (var3 = this.gsmart(); var3 == 32767; var3 = this.gsmart()) {
             var2 += 32767;
         }
-        int var4 = var2 + var3;
-        if (arg0 != -112) {
-            this.method316(81, 14);
-        }
-        return var4;
-    }
-
-    @OriginalMember(owner = "client!ea", name = "a", descriptor = "(BI)V")
-    public final void method333(byte arg0, int arg1) {
-        field812++;
-        this.data[this.pos - arg1 - 4] = (byte) (arg1 >> 24);
-        this.data[this.pos - arg1 - 3] = (byte) (arg1 >> 16);
-        if (arg0 != -68) {
-            field848 = -104;
-        }
-        this.data[this.pos - arg1 - 2] = (byte) (arg1 >> 8);
-        this.data[this.pos - arg1 - 1] = (byte) arg1;
+        return var2 + var3;
     }
 
     @OriginalMember(owner = "client!ea", name = "g", descriptor = "(B)I")
-    public final int method334(byte arg0) {
-        if (arg0 != -73) {
-            return -128;
-        }
-        field864++;
+    public final int g2b() {
         this.pos += 2;
         int var2 = ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] & 0xFF);
         if (var2 > 32767) {
@@ -524,11 +502,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "m", descriptor = "(I)B")
-    public final byte method335(int arg0) {
-        if (arg0 != 0) {
-            field817 = null;
-        }
-        field819++;
+    public final byte g1b_alt2() {
         return (byte) -this.data[this.pos++];
     }
 
@@ -540,9 +514,8 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "n", descriptor = "(I)I")
-    public final int method339(int arg0) {
-        this.pos += arg0;
-        field840++;
+    public final int g2b_alt2() {
+        this.pos += 2;
         int var2 = ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
         if (var2 > 32767) {
             var2 -= 65536;
@@ -551,58 +524,40 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "h", descriptor = "(B)I")
-    public final int method340(byte arg0) {
+    public final int method340() {
         this.pos += 3;
         return ((this.data[this.pos - 2] & 0xFF) << 16) + (this.data[this.pos - 1] & 0xFF) + ((this.data[this.pos + -3] & 0xFF) << 8);
     }
 
     @OriginalMember(owner = "client!ea", name = "k", descriptor = "(II)V")
-    public final void method341(int arg0, int arg1) {
-        this.data[this.pos - arg0 - 1] = (byte) arg0;
+    public final void psize1(int len) {
+        this.data[this.pos - len - 1] = (byte) len;
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(Z)I")
-    public final int method342(boolean arg0) {
-        if (arg0) {
-            int var2 = this.data[this.pos] & 0xFF;
-            field809++;
-            return var2 < 128 ? this.g1() - 64 : this.g2() + -49152;
-        } else {
-            return -94;
-        }
+    public final int gsmarts() {
+        int var2 = this.data[this.pos] & 0xFF;
+        return var2 < 128 ? this.g1() - 64 : this.g2() + -49152;
     }
 
     @OriginalMember(owner = "client!ea", name = "o", descriptor = "(I)I")
-    public final int method343(int arg0) {
+    public final int g2_alt1() {
         this.pos += 2;
-        if (arg0 <= 37) {
-            this.method335(93);
-        }
-        field815++;
         return ((this.data[this.pos - 1] & 0xFF) << 8) + (this.data[this.pos - 2] & 0xFF);
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(IB)V")
-    public final void method344(int arg0, byte arg1) {
+    public final void p2_alt3(int arg0) {
         this.data[this.pos++] = (byte) (arg0 + 128);
-        if (arg1 == -51) {
-            this.data[this.pos++] = (byte) (arg0 >> 8);
-            field803++;
-        }
+        this.data[this.pos++] = (byte) (arg0 >> 8);
     }
-
-
 
     @OriginalMember(owner = "client!ea", name = "d", descriptor = "(IB)I")
     public final int method345(int arg0, byte arg1) {
-        field805++;
         int var3 = class231.method1544((byte) 6, arg0, this.data, this.pos);
-        int var4 = -44 / ((18 - arg1) / 34);
         this.p4(var3);
         return var3;
     }
-
-
 
     @OriginalMember(owner = "client!ea", name = "p", descriptor = "(I)I")
     public final int g1() {
@@ -797,7 +752,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "c", descriptor = "(Z)I")
-    public final int g2_alt2(boolean arg0) {
+    public final int g2_alt2() {
         this.pos += 2;
         return ((this.data[this.pos - 2] & 0xFF) << 8) + (this.data[this.pos - 1] - 128 & 0xFF);
     }
@@ -819,16 +774,6 @@ public class Packet extends Linkable {
     @OriginalMember(owner = "client!ea", name = "r", descriptor = "(I)I")
     public final int g1_alt3(int arg0) {
        return 128 - this.data[this.pos++] & 0xFF;
-    }
-
-    @OriginalMember(owner = "client!ea", name = "s", descriptor = "(I)Li;")
-    public final class88 fastgstr(int arg0) {
-        if (this.data[this.pos] == 0) {
-            this.pos++;
-            return null;
-        } else {
-            return this.gjstr();
-        }
     }
 
     @OriginalMember(owner = "client!ea", name = "t", descriptor = "(I)V")

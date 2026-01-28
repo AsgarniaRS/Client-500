@@ -551,7 +551,7 @@ public class class143 extends Linkable {
             field2661 = null;
         }
         field2660++;
-        return new class103(arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method334((byte) -73), arg1.method304(-29629), arg1.g1());
+        return new class103(arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g2b(), arg1.g3(), arg1.g1());
     }
 
     @OriginalMember(owner = "client!na", name = "a", descriptor = "([BB)V")

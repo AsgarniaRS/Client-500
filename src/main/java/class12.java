@@ -207,7 +207,7 @@ public class class12 {
             method58(-51, 31, 123, -22, 116, -47, 31, -64, -53, 52, -116, -75, -64, -5, -109, 94, -11, -123, -36, 116);
         }
         field169++;
-        return new class74(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(-29629), arg0.g1());
+        return new class74(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g3(), arg0.g3(), arg0.g1());
     }
 
     @OriginalMember(owner = "client!b", name = "a", descriptor = "(Lfe;Lnb;I)Z")

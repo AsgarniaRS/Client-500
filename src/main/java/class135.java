@@ -1768,7 +1768,7 @@ public class class135 extends class23 {
                                                                         Isaac.out.p1(var192);
                                                                         Isaac.out.p1(var194);
                                                                         class172.method1222(Isaac.out, var190, (byte) 113);
-                                                                        Isaac.out.method341(-var195 + Isaac.out.pos, -119);
+                                                                        Isaac.out.psize1(-var195 + Isaac.out.pos);
                                                                         continue;
                                                                     }
                                                                     if (~var383 == -5010) {
@@ -1782,7 +1782,7 @@ public class class135 extends class23 {
                                                                             int var198 = Isaac.out.pos;
                                                                             Isaac.out.p8(var196.method630(false));
                                                                             class172.method1222(Isaac.out, var197, (byte) 113);
-                                                                            Isaac.out.method341(-var198 + Isaac.out.pos, 74);
+                                                                            Isaac.out.psize1(-var198 + Isaac.out.pos);
                                                                         }
                                                                         continue;
                                                                     }
@@ -1924,7 +1924,7 @@ public class class135 extends class23 {
                                                                         ++class128.field2399;
                                                                         Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(85, Isaac.out, class15.field226.field4070);
-                                                                        Isaac.out.method341(-var222 + Isaac.out.pos, -124);
+                                                                        Isaac.out.psize1(-var222 + Isaac.out.pos);
                                                                         continue;
                                                                     }
                                                                     if (var383 == 5060) {
@@ -1937,7 +1937,7 @@ public class class135 extends class23 {
                                                                         Isaac.out.p8(var223.method630(false));
                                                                         Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(6, Isaac.out, class15.field226.field4070);
-                                                                        Isaac.out.method341(-var224 + Isaac.out.pos, 107);
+                                                                        Isaac.out.psize1(-var224 + Isaac.out.pos);
                                                                         continue;
                                                                     }
                                                                     if (~var383 == -5062) {
@@ -1948,7 +1948,7 @@ public class class135 extends class23 {
                                                                         Isaac.out.p1(1);
                                                                         Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(-33, Isaac.out, class15.field226.field4070);
-                                                                        Isaac.out.method341(-var225 + Isaac.out.pos, -120);
+                                                                        Isaac.out.psize1(-var225 + Isaac.out.pos);
                                                                         continue;
                                                                     }
                                                                     if (var383 == 5062) {
@@ -3053,7 +3053,7 @@ public class class135 extends class23 {
     @OriginalMember(owner = "client!md", name = "a", descriptor = "(Lea;II)V")
     public final void method11(Packet arg0, int arg1, int arg2) {
         if (~arg2 == -1) {
-            this.method901(arg0.method304(arg1 + -29626), (byte) -88);
+            this.method901(arg0.g3(), (byte) -88);
         }
         if (arg1 != -3) {
             this.field2524 = -112;

@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ic")
-public class class91 extends Linkable {
+public class MidiFile extends Linkable {
 
     @OriginalMember(owner = "client!ic", name = "u", descriptor = "[B")
     public byte[] field1717;
@@ -82,13 +82,13 @@ public class class91 extends Linkable {
     }
 
     @OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lnb;II)Lic;")
-    public static final class91 method663(Js5Index arg0, int arg1, int arg2) {
+    public static final MidiFile method663(Js5Index arg0, int arg1, int arg2) {
         byte[] var3 = arg0.method941((byte) 56, arg2, arg1);
-        return var3 == null ? null : new class91(new Packet(var3));
+        return var3 == null ? null : new MidiFile(new Packet(var3));
     }
 
     @OriginalMember(owner = "client!ic", name = "<init>", descriptor = "(Lea;)V")
-    private class91(Packet arg0) {
+    private MidiFile(Packet arg0) {
         arg0.pos = arg0.data.length - 3;
         int var2 = arg0.g1();
         int var3 = arg0.g2();
@@ -255,7 +255,7 @@ public class class91 extends Linkable {
             while (true) {
                 while (true) {
                     int var71 = arg0.method317((byte) -39);
-                    var58.method329(8, var71);
+                    var58.pMidiVarLen(var71);
                     int var72 = arg0.data[var36++] & 0xFF;
                     boolean var73 = var70 != var72;
                     var70 = var72 & 0xF;
@@ -265,7 +265,7 @@ public class class91 extends Linkable {
                         }
                         var58.p1(47);
                         var58.p1(0);
-                        var58.method333((byte) -68, var58.pos - var69);
+                        var58.psize4(var58.pos - var69);
                         continue label223;
                     }
                     if (var72 == 23) {

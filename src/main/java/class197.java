@@ -80,17 +80,17 @@ public class class197 {
                 if ((var11 & 0x1) == 0) {
                     field3784[var6] = var12;
                 } else {
-                    field3784[var6] = (short) var4.method342(true);
+                    field3784[var6] = (short) var4.gsmarts();
                 }
                 if ((var11 & 0x2) == 0) {
                     field3780[var6] = var12;
                 } else {
-                    field3780[var6] = (short) var4.method342(true);
+                    field3780[var6] = (short) var4.gsmarts();
                 }
                 if ((var11 & 0x4) == 0) {
                     field3778[var6] = var12;
                 } else {
-                    field3778[var6] = (short) var4.method342(true);
+                    field3778[var6] = (short) var4.gsmarts();
                 }
                 if (this.field3788.field1409[var9] == 2) {
                     field3784[var6] = (short) (((field3784[var6] & 0xFF) << 3) + (field3784[var6] >> 8 & 0x7));

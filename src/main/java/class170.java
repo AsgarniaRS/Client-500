@@ -255,7 +255,7 @@ public class class170 extends class51 {
     }
 
     @OriginalMember(owner = "client!pg", name = "a", descriptor = "(ILnj;Lic;ILnb;)Z")
-    public final synchronized boolean method1184(int arg0, class151 arg1, class91 arg2, int arg3, Js5Index arg4) {
+    public final synchronized boolean method1184(int arg0, class151 arg1, MidiFile arg2, int arg3, Js5Index arg4) {
         field3304++;
         arg2.method661();
         int[] var6 = null;
@@ -414,7 +414,7 @@ public class class170 extends class51 {
     }
 
     @OriginalMember(owner = "client!pg", name = "a", descriptor = "(ILic;Z)V")
-    public final synchronized void method1187(int arg0, class91 arg1, boolean arg2) {
+    public final synchronized void method1187(int arg0, MidiFile arg1, boolean arg2) {
         field3294++;
         this.method1210(false);
         this.field3255.method270(arg1.field1717);

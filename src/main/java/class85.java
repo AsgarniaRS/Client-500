@@ -160,7 +160,7 @@ public class class85 extends class23 {
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;I)Llb;")
     public static final class122 method577(Packet arg0, int arg1) {
         ++field1533;
-        return arg1 != 255 ? null : new class122(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.method304(arg1 + -29884), arg0.g1());
+        return arg1 != 255 ? null : new class122(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g3(), arg0.g3(), arg0.g1());
     }
 
     @OriginalMember(owner = "client!hh", name = "a", descriptor = "(Lea;II)V")

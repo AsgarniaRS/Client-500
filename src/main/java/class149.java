@@ -768,7 +768,7 @@ public class class149 extends class136 {
             int var12 = arg2.g1();
             this.field2841[var12] = new int[6];
             for (int var13 = 0; var13 < 6; var13++) {
-                this.field2841[var12][var13] = arg2.method334((byte) -73);
+                this.field2841[var12][var13] = arg2.g2b();
             }
         } else if (arg0 == 249) {
             int var6 = arg2.g1();
@@ -778,7 +778,7 @@ public class class149 extends class136 {
             }
             for (int var8 = 0; var8 < var6; var8++) {
                 boolean var9 = arg2.g1() == 1;
-                int var10 = arg2.method304(-29629);
+                int var10 = arg2.g3();
                 Linkable var11;
                 if (var9) {
                     var11 = new class216(arg2.gjstr());

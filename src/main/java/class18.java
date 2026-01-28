@@ -97,7 +97,7 @@ public class class18 extends class145 {
         Packet var6 = new Packet(arg1);
         int var7 = -1;
         while (true) {
-            int var8 = var6.method332((byte) -112);
+            int var8 = var6.method332();
             if (var8 == 0) {
                 return;
             }

@@ -254,7 +254,7 @@ public class class109 extends class136 {
                 int var13 = arg0.g1();
                 if (var13 > 0) {
                     this.field2003[var12] = new int[var13];
-                    this.field2003[var12][0] = arg0.method304(-29629);
+                    this.field2003[var12][0] = arg0.g3();
                     for (int var14 = 1; var14 < var13; var14++) {
                         this.field2003[var12][var14] = arg0.g2();
                     }

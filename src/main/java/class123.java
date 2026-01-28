@@ -307,7 +307,7 @@ public class class123 {
                 break;
             }
             this.field2248[var5] = var6;
-            this.field2236[var5] = arg0.method342(true);
+            this.field2236[var5] = arg0.gsmarts();
             this.field2247[var5] = arg0.gsmart();
         }
         this.field2240 = arg0.gsmart();

@@ -620,15 +620,15 @@ public class class82 extends class145 {
             int var79 = var2.g1();
             int var80 = 0;
             if ((var79 & 0x1) != 0) {
-                var80 = var3.method342(true);
+                var80 = var3.gsmarts();
             }
             int var81 = 0;
             if ((var79 & 0x2) != 0) {
-                var81 = var4.method342(true);
+                var81 = var4.gsmarts();
             }
             int var82 = 0;
             if ((var79 & 0x4) != 0) {
-                var82 = var5.method342(true);
+                var82 = var5.gsmarts();
             }
             this.field1522[var66] = var63 + var80;
             this.field1476[var66] = var64 + var81;
@@ -681,9 +681,9 @@ public class class82 extends class145 {
         for (int var72 = 0; var72 < var10; var72++) {
             int var75 = var3.g1();
             if (var75 == 1) {
-                var68 = var2.method342(true) + var71;
-                var69 = var2.method342(true) + var68;
-                var70 = var2.method342(true) + var69;
+                var68 = var2.gsmarts() + var71;
+                var69 = var2.gsmarts() + var68;
+                var70 = var2.gsmarts() + var69;
                 var71 = var70;
                 this.field1511[var72] = var68;
                 this.field1518[var72] = var69;
@@ -691,7 +691,7 @@ public class class82 extends class145 {
             }
             if (var75 == 2) {
                 var69 = var70;
-                var70 = var2.method342(true) + var71;
+                var70 = var2.gsmarts() + var71;
                 var71 = var70;
                 this.field1511[var72] = var68;
                 this.field1518[var72] = var69;
@@ -699,7 +699,7 @@ public class class82 extends class145 {
             }
             if (var75 == 3) {
                 var68 = var70;
-                var70 = var2.method342(true) + var71;
+                var70 = var2.gsmarts() + var71;
                 var71 = var70;
                 this.field1511[var72] = var68;
                 this.field1518[var72] = var69;
@@ -709,7 +709,7 @@ public class class82 extends class145 {
                 int var78 = var68;
                 var68 = var69;
                 var69 = var78;
-                var70 = var2.method342(true) + var71;
+                var70 = var2.gsmarts() + var71;
                 var71 = var70;
                 this.field1511[var72] = var68;
                 this.field1518[var72] = var78;
@@ -1240,15 +1240,15 @@ public class class82 extends class145 {
             int var62 = var4.g1();
             int var63 = 0;
             if ((var62 & 0x1) != 0) {
-                var63 = var5.method342(true);
+                var63 = var5.gsmarts();
             }
             int var64 = 0;
             if ((var62 & 0x2) != 0) {
-                var64 = var6.method342(true);
+                var64 = var6.gsmarts();
             }
             int var65 = 0;
             if ((var62 & 0x4) != 0) {
-                var65 = var7.method342(true);
+                var65 = var7.gsmarts();
             }
             this.field1522[var46] = var43 + var63;
             this.field1476[var46] = var44 + var64;
@@ -1306,9 +1306,9 @@ public class class82 extends class145 {
         for (int var52 = 0; var52 < var10; var52++) {
             int var57 = var5.g1();
             if (var57 == 1) {
-                var48 = var4.method342(true) + var51;
-                var49 = var4.method342(true) + var48;
-                var50 = var4.method342(true) + var49;
+                var48 = var4.gsmarts() + var51;
+                var49 = var4.gsmarts() + var48;
+                var50 = var4.gsmarts() + var49;
                 var51 = var50;
                 this.field1511[var52] = var48;
                 this.field1518[var52] = var49;
@@ -1316,7 +1316,7 @@ public class class82 extends class145 {
             }
             if (var57 == 2) {
                 var49 = var50;
-                var50 = var4.method342(true) + var51;
+                var50 = var4.gsmarts() + var51;
                 var51 = var50;
                 this.field1511[var52] = var48;
                 this.field1518[var52] = var49;
@@ -1324,7 +1324,7 @@ public class class82 extends class145 {
             }
             if (var57 == 3) {
                 var48 = var50;
-                var50 = var4.method342(true) + var51;
+                var50 = var4.gsmarts() + var51;
                 var51 = var50;
                 this.field1511[var52] = var48;
                 this.field1518[var52] = var49;
@@ -1334,7 +1334,7 @@ public class class82 extends class145 {
                 int var60 = var48;
                 var48 = var49;
                 var49 = var60;
-                var50 = var4.method342(true) + var51;
+                var50 = var4.gsmarts() + var51;
                 var51 = var50;
                 this.field1511[var52] = var48;
                 this.field1518[var52] = var60;

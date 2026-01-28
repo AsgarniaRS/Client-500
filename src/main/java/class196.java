@@ -71,7 +71,7 @@ public class class196 extends class23 {
     public static class75 field3764;
 
     @OriginalMember(owner = "client!s", name = "eb", descriptor = "Lic;")
-    public static class91 field3766;
+    public static MidiFile field3766;
 
     @OriginalMember(owner = "client!s", name = "jb", descriptor = "[I")
     private int[] field3771;
@@ -166,8 +166,8 @@ public class class196 extends class23 {
                 var3.field4101 = class230.in.g2();
             }
             if (~(128 & var4) != -1) {
-                var3.field4082 = class230.in.method343(104);
-                int var7 = class230.in.method313(126);
+                var3.field4082 = class230.in.g2_alt1();
+                int var7 = class230.in.g4_alt3();
                 if (var3.field4082 == 65535) {
                     var3.field4082 = -1;
                 }
@@ -180,13 +180,13 @@ public class class196 extends class23 {
                 }
             }
             if ((2 & var4) != 0) {
-                var3.field4116 = class230.in.g2_alt2(true);
+                var3.field4116 = class230.in.g2_alt2();
                 if (var3.field4116 == 65535) {
                     var3.field4116 = -1;
                 }
             }
             if ((16 & var4) != 0) {
-                var3.field3684 = class147.method987(class230.in.g2_alt2(true), -123);
+                var3.field3684 = class147.method987(class230.in.g2_alt2(), -123);
                 var3.field4104 = var3.field3684.field2341;
                 var3.field4105 = var3.field3684.field2351;
                 var3.field4093 = var3.field3684.field2319;
@@ -198,8 +198,8 @@ public class class196 extends class23 {
                 var3.field4094 = var3.field3684.field2324;
             }
             if (~(var4 & 64) != -1) {
-                int var8 = class230.in.method319(4633);
-                int var9 = class230.in.method319(4633);
+                int var8 = class230.in.g1_alt1();
+                int var9 = class230.in.g1_alt1();
                 var3.method1479(class117.field2115, 31632, var9, var8);
             }
             if (~(var4 & 4) != -1) {
@@ -207,7 +207,7 @@ public class class196 extends class23 {
                 int var11 = class230.in.g1();
                 var3.method1479(class117.field2115, 31632, var11, var10);
                 var3.field4120 = class117.field2115 - -300;
-                var3.field4111 = class230.in.method319(4633);
+                var3.field4111 = class230.in.g1_alt1();
             }
         }
         if (!arg0) {

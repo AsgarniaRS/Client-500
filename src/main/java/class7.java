@@ -118,7 +118,7 @@ public class class7 extends class136 {
     @OriginalMember(owner = "client!af", name = "a", descriptor = "(IIILea;)V")
     private final void method41(int arg0, int arg1, int arg2, Packet arg3) {
         if (arg0 == arg2) {
-            this.field111 = class131.method885(arg3.method304(arg0 ^ 0xFFFF8C42), (byte) -84);
+            this.field111 = class131.method885(arg3.g3(), (byte) -84);
         } else if (arg2 == 2) {
             this.field98 = arg3.g1();
         } else if (arg2 == 3) {
@@ -129,7 +129,7 @@ public class class7 extends class136 {
         } else if (arg2 == 5) {
             this.field113 = false;
         } else if (arg2 == 7) {
-            this.field104 = class131.method885(arg3.method304(-29629), (byte) -84);
+            this.field104 = class131.method885(arg3.g3(), (byte) -84);
         } else if (arg2 == 8) {
             class133.field2491 = arg1;
         } else if (arg2 == 9) {
@@ -139,7 +139,7 @@ public class class7 extends class136 {
                 arg3.g1();
             } else if (arg2 != 12) {
                 if (arg2 == 13) {
-                    this.field103 = arg3.method304(arg0 ^ 0xFFFF8C42);
+                    this.field103 = arg3.g3();
                 } else if (arg2 == 14) {
                     this.field112 = arg3.g1();
                 }

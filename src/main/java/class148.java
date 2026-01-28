@@ -712,13 +712,13 @@ public class class148 extends class136 {
                     this.field2783 = arg2.g1();
                     return;
                 } else if (arg1 == 70) {
-                    this.field2832 = arg2.method334((byte) -73);
+                    this.field2832 = arg2.g2b();
                     return;
                 } else if (arg1 == 71) {
-                    this.field2790 = arg2.method334((byte) -73);
+                    this.field2790 = arg2.g2b();
                     return;
                 } else if (arg1 == 72) {
-                    this.field2837 = arg2.method334((byte) -73);
+                    this.field2837 = arg2.g2b();
                     return;
                 } else if (arg1 == 73) {
                     this.field2828 = true;
@@ -800,7 +800,7 @@ public class class148 extends class136 {
                             }
                             for (int var12 = 0; var12 < var10; var12++) {
                                 boolean var13 = arg2.g1() == 1;
-                                int var14 = arg2.method304(-29629);
+                                int var14 = arg2.g3();
                                 Linkable var15;
                                 if (var13) {
                                     var15 = new class216(arg2.gjstr());

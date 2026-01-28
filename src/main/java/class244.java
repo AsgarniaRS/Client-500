@@ -55,7 +55,7 @@ public class class244 extends Linkable {
             int var3 = (var1 >> 4 & 0xF) + class121.field2215 * 2;
             int var4 = class230.in.g1b() + var3;
             int var5 = var2 + class230.in.g1b();
-            int var6 = class230.in.method334((byte) -73);
+            int var6 = class230.in.g2b();
             int var7 = class230.in.g2();
             int var8 = class230.in.g1() * 4;
             int var9 = class230.in.g1() * 4;
@@ -73,12 +73,12 @@ public class class244 extends Linkable {
                 class167.field3222.method1624(new class20(var17), 118);
             }
         } else if (class238.packetType == 135) {
-            int var19 = class230.in.method319(4633);
+            int var19 = class230.in.g1_alt1();
             int var20 = (var19 & 0x7) + class150.field2912;
             int var21 = class121.field2215 + (var19 >> 4 & 0x7);
             int var22 = class230.in.g2_alt3(arg0 ^ 0xFFFFDC66);
-            int var23 = class230.in.g2_alt2(true);
-            int var24 = class230.in.g2_alt2(true);
+            int var23 = class230.in.g2_alt2();
+            int var24 = class230.in.g2_alt2();
             if (var21 >= 0 && var20 >= 0 && var21 < 104 && var20 < 104 && class220.localPid != var23) {
                 class111 var25 = new class111();
                 var25.field2031 = var24;
@@ -128,18 +128,18 @@ public class class244 extends Linkable {
             int var46 = var44 & 0x3;
             int var47 = class98.field1794[var45];
             int var48 = class230.in.g2_alt3(255);
-            int var49 = class230.in.method319(4633);
+            int var49 = class230.in.g1_alt1();
             int var50 = (var49 >> 4 & 0x7) + class121.field2215;
             int var51 = class150.field2912 + (var49 & 0x7);
             if (var50 >= 0 && var51 >= 0 && var50 < 104 && var51 < 104) {
                 class220.method1488(0, var51, var47, var46, -1, var45, class149.field2909, var50, arg0 ^ 0xFFFFDC99, var48);
             }
         } else if (class238.packetType == 171) {
-            int var52 = class230.in.method319(4633);
+            int var52 = class230.in.g1_alt1();
             int var53 = var52 & 0x3;
             int var54 = var52 >> 2;
             int var55 = class98.field1794[var54];
-            int var56 = class230.in.method343(42);
+            int var56 = class230.in.g2_alt1();
             if (var56 == 65535) {
                 var56 = -1;
             }
@@ -156,14 +156,14 @@ public class class244 extends Linkable {
                 int var64 = class98.field1794[var62];
                 int var65 = class230.in.g2();
                 byte var66 = class230.in.g1b_alt1();
-                byte var67 = class230.in.method335(0);
+                byte var67 = class230.in.g1b_alt2();
                 byte var68 = class230.in.g1b();
-                byte var69 = class230.in.method335(arg0 ^ 0xFFFFDC99);
+                byte var69 = class230.in.g1b_alt2();
                 int var70 = class230.in.g2();
                 int var71 = class230.in.g1();
                 int var72 = (var71 & 0x7) + class150.field2912;
                 int var73 = (var71 >> 4 & 0x7) + class121.field2215;
-                int var74 = class230.in.g2_alt2(true);
+                int var74 = class230.in.g2_alt2();
                 scene var75;
                 if (class220.localPid == var60) {
                     var75 = class240.field4458;
@@ -223,7 +223,7 @@ public class class244 extends Linkable {
                 int var91 = class230.in.g1();
                 int var92 = (var91 & 0x7) + class150.field2912;
                 int var93 = (var91 >> 4 & 0x7) + class121.field2215;
-                int var94 = class230.in.g2_alt2(true);
+                int var94 = class230.in.g2_alt2();
                 int var95 = class230.in.g2_alt3(255);
                 if (var93 >= 0 && var92 >= 0 && var93 < 104 && var92 < 104) {
                     class111 var96 = new class111();
@@ -241,7 +241,7 @@ public class class244 extends Linkable {
                 int var99 = (var97 & 0x7) + class150.field2912;
                 int var100 = var98 + class230.in.g1b();
                 int var101 = class230.in.g1b() + var99;
-                int var102 = class230.in.method334((byte) -73);
+                int var102 = class230.in.g2b();
                 int var103 = class230.in.g2();
                 int var104 = class230.in.g1() * 4;
                 int var105 = class230.in.g1() * 4;
@@ -259,7 +259,7 @@ public class class244 extends Linkable {
                     class167.field3222.method1624(new class20(var114), 109);
                 }
             } else if (class238.packetType == 198) {
-                int var115 = class230.in.method319(4633);
+                int var115 = class230.in.g1_alt1();
                 int var116 = (var115 >> 4 & 0x7) + class121.field2215;
                 int var117 = (var115 & 0x7) + class150.field2912;
                 int var118 = class230.in.g2_alt3(arg0 + 9318);
@@ -499,7 +499,7 @@ public class class244 extends Linkable {
         var2.pos = arg1.length - class172.field3347 * 8 - (var3 + -1) * 3 - 7;
         class27.field456 = new int[var3];
         for (int var8 = 1; var8 < var3; var8++) {
-            class27.field456[var8] = var2.method304(-29629);
+            class27.field456[var8] = var2.g3();
             if (class27.field456[var8] == 0) {
                 class27.field456[var8] = 1;
             }

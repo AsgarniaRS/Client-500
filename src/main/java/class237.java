@@ -182,7 +182,7 @@ public class class237 extends class136 {
             return;
         }
         if (arg1 == 1) {
-            this.field4424 = arg2.method304(-29629);
+            this.field4424 = arg2.g3();
             this.method1571(false, this.field4424);
         } else if (arg1 == 2) {
             this.field4418 = arg2.g2();

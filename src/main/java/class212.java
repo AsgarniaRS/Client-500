@@ -103,7 +103,7 @@ public class class212 extends class23 {
             int var11 = -1;
             Packet var12 = new Packet(arg6);
             while (true) {
-                int var13 = var12.method332((byte) -112);
+                int var13 = var12.method332();
                 if (var13 == 0) {
                     return;
                 }

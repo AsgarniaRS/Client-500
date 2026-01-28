@@ -149,7 +149,7 @@ public class class128 extends class23 {
                 if (~arg2 != -3) {
                     if (arg2 != 3) {
                         if (arg2 == 4) {
-                            int var5 = arg0.method304(-29629);
+                            int var5 = arg0.g3();
                             this.field2409[0] = class70.method470(var5 << 4, 267386880);
                             this.field2409[1] = class70.method470(var5, 65280) >> 4;
                             this.field2409[2] = class70.method470(255, var5) >> 12;

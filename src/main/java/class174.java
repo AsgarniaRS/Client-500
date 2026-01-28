@@ -690,8 +690,8 @@ public class class174 {
         field3478++;
         this.field3392 = arg1.g1();
         this.field3441 = arg1.g2();
-        this.field3393 = arg1.method334((byte) -73);
-        this.field3516 = arg1.method334((byte) -73);
+        this.field3393 = arg1.g2b();
+        this.field3516 = arg1.g2b();
         this.field3503 = arg1.g2();
         this.field3420 = arg1.g2();
         this.field3465 = arg1.g1b();
@@ -728,8 +728,8 @@ public class class174 {
             if (this.field3411 == 65535) {
                 this.field3411 = -1;
             }
-            this.field3434 = arg1.method334((byte) -73);
-            this.field3407 = arg1.method334((byte) -73);
+            this.field3434 = arg1.g2b();
+            this.field3407 = arg1.g2b();
             this.field3457 = arg1.g2();
             this.field3511 = arg1.g2();
             this.field3519 = arg1.g2();
@@ -769,7 +769,7 @@ public class class174 {
             this.field3416 = arg1.g4();
             this.field3494 = arg1.g1() == 1;
         }
-        this.field3496 = arg1.method304(-29629);
+        this.field3496 = arg1.g3();
         int var4 = arg1.g1();
         if (var4 > 0) {
             this.field3495 = new byte[var4];
@@ -905,8 +905,8 @@ public class class174 {
         this.field3392 = arg1.g1();
         this.field3370 = arg1.g1();
         this.field3441 = arg1.g2();
-        this.field3393 = arg1.method334((byte) -73);
-        this.field3516 = arg1.method334((byte) -73);
+        this.field3393 = arg1.g2b();
+        this.field3516 = arg1.g2b();
         this.field3503 = arg1.g2();
         this.field3420 = arg1.g2();
         this.field3396 = 0;
@@ -984,8 +984,8 @@ public class class174 {
             for (int var13 = 0; var13 < 20; var13++) {
                 int var16 = arg1.g1();
                 if (var16 == 1) {
-                    this.field3474[var13] = arg1.method334((byte) -73);
-                    this.field3399[var13] = arg1.method334((byte) -73);
+                    this.field3474[var13] = arg1.g2b();
+                    this.field3399[var13] = arg1.g2b();
                     this.field3391[var13] = arg1.g4();
                 } else {
                     this.field3391[var13] = -1;
@@ -1067,8 +1067,8 @@ public class class174 {
             }
             this.field3437 = arg1.g1() == 1;
             this.field3416 = arg1.g4();
-            this.field3468 = arg1.method334((byte) -73);
-            this.field3510 = arg1.method334((byte) -73);
+            this.field3468 = arg1.g2b();
+            this.field3510 = arg1.g2b();
             int var17 = arg1.g1();
             this.field3513 = new class88[5];
             if (var17 == 1) {

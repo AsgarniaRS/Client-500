@@ -201,15 +201,15 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
                 } else if (arg2 == 4) {
                     class28.field463++;
                     Isaac.out.method30(214);
-                    Isaac.out.method331(class174.field3430[var5], 18975);
+                    Isaac.out.p2_alt2(class174.field3430[var5]);
                 } else if (arg2 == 6) {
                     Isaac.out.method30(161);
-                    Isaac.out.method331(class174.field3430[var5], 18975);
+                    Isaac.out.p2_alt2(class174.field3430[var5]);
                     class28.field462++;
                 } else if (arg2 == 7) {
                     class209.field3975++;
                     Isaac.out.method30(47);
-                    Isaac.out.method344(class174.field3430[var5], (byte) -51);
+                    Isaac.out.p2_alt3(class174.field3430[var5]);
                 }
                 break;
             }

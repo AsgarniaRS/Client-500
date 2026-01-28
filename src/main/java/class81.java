@@ -174,7 +174,7 @@ public class class81 extends class145 {
             field1455 = null;
         }
         field1461++;
-        return new class203(arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method334((byte) -73), arg0.method304(-29629), arg0.g1());
+        return new class203(arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g2b(), arg0.g3(), arg0.g1());
     }
 
     @OriginalMember(owner = "client!hd", name = "a", descriptor = "(Z)V")

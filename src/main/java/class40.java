@@ -108,7 +108,7 @@ public class class40 {
             this.field701.pos += var4;
             return 1;
         } else if (var3 == 81) {
-            int var5 = this.field701.method304(-29629);
+            int var5 = this.field701.g3();
             var4 -= 3;
             int var6 = this.field704[arg0];
             this.field707 += (long) (this.field705 - var5) * (long) var6;

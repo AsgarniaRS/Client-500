@@ -209,7 +209,7 @@ public abstract class class188 extends class136 {
         boolean var5 = true;
         int var6 = -1;
         label72: while (true) {
-            int var7 = var4.method332((byte) -112);
+            int var7 = var4.method332();
             if (var7 == 0) {
                 return var5;
             }

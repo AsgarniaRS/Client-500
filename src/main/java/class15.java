@@ -168,7 +168,7 @@ public class class15 {
                 }
             }
             arg1.method345(var6, (byte) 121);
-            arg1.method341(arg1.pos - var6, 75);
+            arg1.psize1(arg1.pos - var6);
             var3.unlink();
         }
     }

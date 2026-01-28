@@ -153,7 +153,7 @@ public class GZip {
         int var15 = 0;
 
         buf.pos = 0;
-        script.name = buf.fastgstr(arg1 ^ 0x39);
+        script.name = buf.fastgstr();
 
         script.stringOperands = new class88[var8];
         script.instructions = new int[var8];
