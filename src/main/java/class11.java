@@ -204,7 +204,7 @@ public class class11 extends class23 {
                     class20.field313 = Linkable.field1211;
                     Isaac.out.method30(28);
                     if (arg0 == -8) {
-                        Isaac.out.p8(arg1, (byte) -123);
+                        Isaac.out.p8(arg1);
                     }
                 }
             }

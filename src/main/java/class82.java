@@ -508,7 +508,7 @@ public class class82 extends class145 {
             this.field1521 = new byte[var11];
             var2.pos = 0;
             for (int var26 = 0; var26 < var11; var26++) {
-                byte var27 = this.field1521[var26] = var2.method324(94);
+                byte var27 = this.field1521[var26] = var2.g1b();
                 if (var27 == 0) {
                     var23++;
                 }
@@ -650,13 +650,13 @@ public class class82 extends class145 {
         for (int var67 = 0; var67 < var10; var67++) {
             this.field1482[var67] = (short) var2.g2();
             if (var12 == 1) {
-                this.field1480[var67] = var3.method324(93);
+                this.field1480[var67] = var3.g1b();
             }
             if (var13 == 255) {
-                this.field1493[var67] = var4.method324(15);
+                this.field1493[var67] = var4.g1b();
             }
             if (var14 == 1) {
-                this.field1510[var67] = var5.method324(106);
+                this.field1510[var67] = var5.g1b();
             }
             if (var15 == 1) {
                 this.field1514[var67] = var6.g1();
@@ -736,9 +736,9 @@ public class class82 extends class145 {
                 this.field1484[var73] = (short) var4.g2();
                 this.field1508[var73] = (short) var4.g2();
                 this.field1475[var73] = (short) var4.g2();
-                this.field1478[var73] = var5.method324(65);
-                this.field1517[var73] = var6.method324(71);
-                this.field1516[var73] = var7.method324(78);
+                this.field1478[var73] = var5.g1b();
+                this.field1517[var73] = var6.g1b();
+                this.field1516[var73] = var7.g1b();
             }
             if (var74 == 2) {
                 this.field1501[var73] = (short) var3.g2();
@@ -747,11 +747,11 @@ public class class82 extends class145 {
                 this.field1484[var73] = (short) var4.g2();
                 this.field1508[var73] = (short) var4.g2();
                 this.field1475[var73] = (short) var4.g2();
-                this.field1478[var73] = var5.method324(92);
-                this.field1517[var73] = var6.method324(64);
-                this.field1516[var73] = var7.method324(53);
-                this.field1513[var73] = var7.method324(76);
-                this.field1502[var73] = var7.method324(78);
+                this.field1478[var73] = var5.g1b();
+                this.field1517[var73] = var6.g1b();
+                this.field1516[var73] = var7.g1b();
+                this.field1513[var73] = var7.g1b();
+                this.field1502[var73] = var7.g1b();
             }
             if (var74 == 3) {
                 this.field1501[var73] = (short) var3.g2();
@@ -760,9 +760,9 @@ public class class82 extends class145 {
                 this.field1484[var73] = (short) var4.g2();
                 this.field1508[var73] = (short) var4.g2();
                 this.field1475[var73] = (short) var4.g2();
-                this.field1478[var73] = var5.method324(127);
-                this.field1517[var73] = var6.method324(21);
-                this.field1516[var73] = var7.method324(35);
+                this.field1478[var73] = var5.g1b();
+                this.field1517[var73] = var6.g1b();
+                this.field1516[var73] = var7.g1b();
             }
         }
     }
@@ -1288,10 +1288,10 @@ public class class82 extends class145 {
                 }
             }
             if (var13 == 255) {
-                this.field1493[var47] = var6.method324(100);
+                this.field1493[var47] = var6.g1b();
             }
             if (var14 == 1) {
-                this.field1510[var47] = var7.method324(97);
+                this.field1510[var47] = var7.g1b();
             }
             if (var15 == 1) {
                 this.field1514[var47] = var8.g1();

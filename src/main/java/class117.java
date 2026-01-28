@@ -106,7 +106,7 @@ public class class117 extends class136 {
     @OriginalMember(owner = "client!kh", name = "a", descriptor = "(ILea;B)V")
     private final void method795(int arg0, Packet arg1, byte arg2) {
         if (arg0 == 1) {
-            this.field2130 = arg1.gjstr(-125);
+            this.field2130 = arg1.gjstr();
         } else if (arg0 == 2) {
             int var4 = arg1.g1();
             this.field2121 = new int[var4];

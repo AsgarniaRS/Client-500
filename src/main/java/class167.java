@@ -191,10 +191,10 @@ public class class167 extends class23 {
         if (~arg2 != -1) {
             if (arg2 != 1) {
                 if (~arg2 == -3) {
-                    this.field3208 = (arg0.method324(116) << 12) / 100;
+                    this.field3208 = (arg0.g1b() << 12) / 100;
                 }
             } else {
-                this.field3220 = (arg0.method324(112) << 12) / 100;
+                this.field3220 = (arg0.g1b() << 12) / 100;
             }
         } else {
             this.field3228 = arg0.method334((byte) -73);

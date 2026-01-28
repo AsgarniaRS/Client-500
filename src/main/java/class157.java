@@ -23,7 +23,7 @@ public class class157 {
     public static class92 field3022 = new class92(20);
 
     @OriginalMember(owner = "client!oe", name = "s", descriptor = "I")
-    public static int field3037 = 0;
+    public static int cacheMaxCount = 0;
 
     @OriginalMember(owner = "client!oe", name = "b", descriptor = "I")
     public static int field3020;

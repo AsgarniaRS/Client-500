@@ -188,7 +188,7 @@ public class class147 {
                 method989(25);
             }
             Packet packet = new Packet(4);
-            packet.p1(255, loggedIn ? 2 : 3);
+            packet.p1(loggedIn ? 2 : 3);
             packet.p3(0);
             class214.clientStream.write(packet.data, 0, 4);
         } catch (IOException e) {

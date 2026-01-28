@@ -223,7 +223,7 @@ public class class131 {
 
     @OriginalMember(owner = "client!m", name = "<init>", descriptor = "(Lea;)V")
     public class131(Packet arg0) {
-        this.field2458 = arg0.method324(123);
+        this.field2458 = arg0.g1b();
         this.field2457 = arg0.g2();
         this.field2456 = arg0.g4();
         this.field2452 = arg0.g4();

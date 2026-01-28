@@ -79,7 +79,7 @@ public class class101 extends class136 {
             return;
         }
         Isaac.out.method30(49);
-        Isaac.out.p8(class88.field1647[var2].nodeId, (byte) -123);
+        Isaac.out.p8(class88.field1647[var2].nodeId);
         class226.field4238++;
         if (arg1 > -86) {
             method706(110, false);

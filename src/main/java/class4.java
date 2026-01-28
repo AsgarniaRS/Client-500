@@ -83,17 +83,17 @@ public class class4 extends class136 {
         if (!var15) {
             return;
         }
-        Isaac.out.p1(arg2 ^ 0xFFFFD210, var5);
-        Isaac.out.p1(255, var4);
-        Isaac.out.method305(99, class207.field3932);
-        Isaac.out.p1(255, 57);
-        Isaac.out.p1(255, Ground.field943);
-        Isaac.out.p1(255, class65.field1185);
-        Isaac.out.p1(arg2 + 11792, 89);
-        Isaac.out.method305(101, class240.field4458.field4138);
-        Isaac.out.method305(110, class240.field4458.field4123);
-        Isaac.out.p1(255, class120.tryMoveNearest);
-        Isaac.out.p1(arg2 + 11792, 63);
+        Isaac.out.p1(var5);
+        Isaac.out.p1(var4);
+        Isaac.out.p2(class207.field3932);
+        Isaac.out.p1(57);
+        Isaac.out.p1(Ground.field943);
+        Isaac.out.p1(class65.field1185);
+        Isaac.out.p1(89);
+        Isaac.out.p2(class240.field4458.field4138);
+        Isaac.out.p2(class240.field4458.field4123);
+        Isaac.out.p1(class120.tryMoveNearest);
+        Isaac.out.p1(63);
     }
 
     @OriginalMember(owner = "client!ac", name = "d", descriptor = "(I)Z")
@@ -140,7 +140,7 @@ public class class4 extends class136 {
                 }
             }
         }
-        arg0.method325((byte) 34, 24, var2, 0);
+        arg0.pdata(var2, 24, 0);
     }
 
     @OriginalMember(owner = "client!ac", name = "b", descriptor = "(II)V")
@@ -184,7 +184,7 @@ public class class4 extends class136 {
         } else if (arg0 == 2) {
             this.field53 = arg1.g4();
         } else if (arg0 == 5) {
-            this.field57 = arg1.gjstr(-128);
+            this.field57 = arg1.gjstr();
         }
         if (arg2 > -60) {
             method18((byte) -78);

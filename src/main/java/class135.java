@@ -146,7 +146,7 @@ public class class135 extends class23 {
         if (~arg1 != -1L) {
             ++class210.field3988;
             Isaac.out.method30(58);
-            Isaac.out.p8(arg1, (byte) -121);
+            Isaac.out.p8(arg1);
         }
     }
 
@@ -1566,9 +1566,9 @@ public class class135 extends class23 {
                                                                         class10.field142 = class108.field1946[var6 - -1];
                                                                         class128.field2410 = class108.field1946[var6 + 2];
                                                                         Isaac.out.method30(115);
-                                                                        Isaac.out.p1(255, Linkable.field1206);
-                                                                        Isaac.out.p1(255, class10.field142);
-                                                                        Isaac.out.p1(255, class128.field2410);
+                                                                        Isaac.out.p1(Linkable.field1206);
+                                                                        Isaac.out.p1(class10.field142);
+                                                                        Isaac.out.p1(class128.field2410);
                                                                         continue;
                                                                     }
                                                                     if (~var383 == -5003) {
@@ -1579,9 +1579,9 @@ public class class135 extends class23 {
                                                                         class88 var184 = class171.field3332[var7];
                                                                         int var185 = class108.field1946[var6 + 1];
                                                                         Isaac.out.method30(99);
-                                                                        Isaac.out.p8(var184.method630(false), (byte) -127);
-                                                                        Isaac.out.p1(255, var183 - 1);
-                                                                        Isaac.out.p1(255, var185);
+                                                                        Isaac.out.p8(var184.method630(false));
+                                                                        Isaac.out.p1(var183 - 1);
+                                                                        Isaac.out.p1(var185);
                                                                         continue;
                                                                     }
                                                                     if (var383 == 5003) {
@@ -1763,10 +1763,10 @@ public class class135 extends class23 {
                                                                             var190 = var190.method635(class57.field1083.method604((byte) -53), -383902332);
                                                                         }
                                                                         Isaac.out.method30(189);
-                                                                        Isaac.out.p1(255, 0);
+                                                                        Isaac.out.p1(0);
                                                                         int var195 = Isaac.out.pos;
-                                                                        Isaac.out.p1(255, var192);
-                                                                        Isaac.out.p1(255, var194);
+                                                                        Isaac.out.p1(var192);
+                                                                        Isaac.out.p1(var194);
                                                                         class172.method1222(Isaac.out, var190, (byte) 113);
                                                                         Isaac.out.method341(-var195 + Isaac.out.pos, -119);
                                                                         continue;
@@ -1778,9 +1778,9 @@ public class class135 extends class23 {
                                                                         if (Linkable.field1208 != 0 || ~class238.field4430 != -2 && ~class176.field3537 != -2) {
                                                                             ++class176.field3538;
                                                                             Isaac.out.method30(80);
-                                                                            Isaac.out.p1(255, 0);
+                                                                            Isaac.out.p1(0);
                                                                             int var198 = Isaac.out.pos;
-                                                                            Isaac.out.p8(var196.method630(false), (byte) -122);
+                                                                            Isaac.out.p8(var196.method630(false));
                                                                             class172.method1222(Isaac.out, var197, (byte) 113);
                                                                             Isaac.out.method341(-var198 + Isaac.out.pos, 74);
                                                                         }
@@ -1918,11 +1918,11 @@ public class class135 extends class23 {
                                                                     }
                                                                     if (~var383 == -5060) {
                                                                         Isaac.out.method30(197);
-                                                                        Isaac.out.p1(255, 0);
+                                                                        Isaac.out.p1(0);
                                                                         int var222 = Isaac.out.pos;
-                                                                        Isaac.out.p1(255, 0);
+                                                                        Isaac.out.p1(0);
                                                                         ++class128.field2399;
-                                                                        Isaac.out.method305(108, class15.field226.field4060);
+                                                                        Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(85, Isaac.out, class15.field226.field4070);
                                                                         Isaac.out.method341(-var222 + Isaac.out.pos, -124);
                                                                         continue;
@@ -1932,10 +1932,10 @@ public class class135 extends class23 {
                                                                         --var7;
                                                                         class88 var223 = class171.field3332[var7];
                                                                         Isaac.out.method30(242);
-                                                                        Isaac.out.p1(255, 0);
+                                                                        Isaac.out.p1(0);
                                                                         int var224 = Isaac.out.pos;
-                                                                        Isaac.out.p8(var223.method630(false), (byte) -125);
-                                                                        Isaac.out.method305(92, class15.field226.field4060);
+                                                                        Isaac.out.p8(var223.method630(false));
+                                                                        Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(6, Isaac.out, class15.field226.field4070);
                                                                         Isaac.out.method341(-var224 + Isaac.out.pos, 107);
                                                                         continue;
@@ -1943,10 +1943,10 @@ public class class135 extends class23 {
                                                                     if (~var383 == -5062) {
                                                                         ++class128.field2399;
                                                                         Isaac.out.method30(197);
-                                                                        Isaac.out.p1(255, 0);
+                                                                        Isaac.out.p1(0);
                                                                         int var225 = Isaac.out.pos;
-                                                                        Isaac.out.p1(255, 1);
-                                                                        Isaac.out.method305(123, class15.field226.field4060);
+                                                                        Isaac.out.p1(1);
+                                                                        Isaac.out.p2(class15.field226.field4060);
                                                                         class15.field226.field4067.method1416(-33, Isaac.out, class15.field226.field4070);
                                                                         Isaac.out.method341(-var225 + Isaac.out.pos, -120);
                                                                         continue;
@@ -2039,10 +2039,10 @@ public class class135 extends class23 {
                                                                                     --var6;
                                                                                     int var248 = class108.field1946[var6];
                                                                                     Isaac.out.method30(85);
-                                                                                    Isaac.out.p1(255, class15.method72(var246, 1) - -class15.method72(var247, 1) - -1);
+                                                                                    Isaac.out.p1(class15.method72(var246, 1) - -class15.method72(var247, 1) - -1);
                                                                                     Isaac.out.pjstr(var246, (byte) 0);
                                                                                     Isaac.out.pjstr(var247, (byte) 0);
-                                                                                    Isaac.out.p1(255, var248);
+                                                                                    Isaac.out.p1(var248);
                                                                                     continue;
                                                                                 }
                                                                                 if (var383 == 5401) {
@@ -2579,7 +2579,7 @@ public class class135 extends class23 {
                                                 --var7;
                                                 class88 var340 = class171.field3332[var7];
                                                 Isaac.out.method30(54);
-                                                Isaac.out.p8(var340.method630(false), (byte) -120);
+                                                Isaac.out.p8(var340.method630(false));
                                                 continue;
                                             }
                                             if (~var383 == -3107) {
@@ -2587,7 +2587,7 @@ public class class135 extends class23 {
                                                 --var7;
                                                 class88 var341 = class171.field3332[var7];
                                                 Isaac.out.method30(60);
-                                                Isaac.out.p1(255, 1 + var341.method604((byte) -53));
+                                                Isaac.out.p1(1 + var341.method604((byte) -53));
                                                 Isaac.out.pjstr(var341, (byte) 0);
                                                 continue;
                                             }
@@ -2621,7 +2621,7 @@ public class class135 extends class23 {
                                                 --var6;
                                                 int var351 = class108.field1946[var6];
                                                 Isaac.out.method30(194);
-                                                Isaac.out.method305(82, var351);
+                                                Isaac.out.p2(var351);
                                                 continue;
                                             }
                                         }

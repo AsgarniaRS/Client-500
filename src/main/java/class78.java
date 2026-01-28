@@ -461,7 +461,7 @@ public class class78 extends Linkable {
                 return null;
             }
             class88 var3 = new class88();
-            var3.field1660 = arg1.method350(123);
+            var3.field1660 = arg1.gsmart();
             if (var3.field1660 > arg2) {
                 var3.field1660 = arg2;
             }

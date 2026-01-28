@@ -18,7 +18,7 @@ public class class220 extends class23 {
     public static int pendingPrefetchQueueSize = 0;
 
     @OriginalMember(owner = "client!ub", name = "X", descriptor = "[[B")
-    public static byte[][] field4157 = new byte[1000][];
+    public static byte[][] cacheMin = new byte[1000][];
 
     @OriginalMember(owner = "client!ub", name = "gb", descriptor = "I")
     public static int localPid = -1;
@@ -149,7 +149,7 @@ public class class220 extends class23 {
 
     @OriginalMember(owner = "client!ub", name = "c", descriptor = "(B)V")
     public static void method1486(byte arg0) {
-        field4157 = null;
+        cacheMin = null;
         field4167 = null;
         field4168 = null;
         field4156 = null;

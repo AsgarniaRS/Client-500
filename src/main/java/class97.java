@@ -154,7 +154,7 @@ public class class97 extends class136 {
         }
         class131.field2450++;
         Isaac.out.method30(175);
-        Isaac.out.p1(255, arg0.method604((byte) -53) - 1);
+        Isaac.out.p1(arg0.method604((byte) -53) - 1);
         Isaac.out.pjstr(arg0.method635(2, -383902332), (byte) 0);
     }
 }

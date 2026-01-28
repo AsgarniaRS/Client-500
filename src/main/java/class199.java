@@ -289,8 +289,8 @@ public class class199 extends class136 {
         arg0.g1();
         arg0.g1();
         int var2 = arg0.g1() & 0x3;
-        this.field3792 = arg0.method324(32);
-        this.field3809 = arg0.method324(45);
+        this.field3792 = arg0.g1b();
+        this.field3809 = arg0.g1b();
         arg0.g1();
         arg0.g1();
     }

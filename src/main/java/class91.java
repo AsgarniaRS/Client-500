@@ -234,9 +234,9 @@ public class class91 extends Linkable {
         Packet var58 = new Packet(this.field1717);
         var58.p4(1297377380);
         var58.p4(6);
-        var58.method305(86, var2 > 1 ? 1 : 0);
-        var58.method305(118, var2);
-        var58.method305(84, var3);
+        var58.p2(var2 > 1 ? 1 : 0);
+        var58.p2(var2);
+        var58.p2(var3);
         arg0.pos = var17;
         int var59 = 0;
         int var60 = 0;
@@ -261,46 +261,46 @@ public class class91 extends Linkable {
                     var70 = var72 & 0xF;
                     if (var72 == 7) {
                         if (var73) {
-                            var58.p1(255, 255);
+                            var58.p1(255);
                         }
-                        var58.p1(255, 47);
-                        var58.p1(255, 0);
+                        var58.p1(47);
+                        var58.p1(0);
                         var58.method333((byte) -68, var58.pos - var69);
                         continue label223;
                     }
                     if (var72 == 23) {
                         if (var73) {
-                            var58.p1(255, 255);
+                            var58.p1(255);
                         }
-                        var58.p1(255, 81);
-                        var58.p1(255, 3);
-                        var58.p1(255, arg0.data[var57++]);
-                        var58.p1(255, arg0.data[var57++]);
-                        var58.p1(255, arg0.data[var57++]);
+                        var58.p1(81);
+                        var58.p1(3);
+                        var58.p1(arg0.data[var57++]);
+                        var58.p1(arg0.data[var57++]);
+                        var58.p1(arg0.data[var57++]);
                     } else {
                         var59 ^= var72 >> 4;
                         if (var70 == 0) {
                             if (var73) {
-                                var58.p1(255, var59 + 144);
+                                var58.p1(var59 + 144);
                             }
                             var60 += arg0.data[var44++];
                             var61 += arg0.data[var45++];
-                            var58.p1(255, var60 & 0x7F);
-                            var58.p1(255, var61 & 0x7F);
+                            var58.p1(var60 & 0x7F);
+                            var58.p1(var61 & 0x7F);
                         } else if (var70 == 1) {
                             if (var73) {
-                                var58.p1(255, var59 + 128);
+                                var58.p1(var59 + 128);
                             }
                             var60 += arg0.data[var44++];
                             var62 += arg0.data[var47++];
-                            var58.p1(255, var60 & 0x7F);
-                            var58.p1(255, var62 & 0x7F);
+                            var58.p1(var60 & 0x7F);
+                            var58.p1(var62 & 0x7F);
                         } else if (var70 == 2) {
                             if (var73) {
-                                var58.p1(255, var59 + 176);
+                                var58.p1(var59 + 176);
                             }
                             var67 = var67 + arg0.data[var21++] & 0x7F;
-                            var58.p1(255, var67);
+                            var58.p1(var67);
                             byte var74;
                             if (var67 == 0 || var67 == 32) {
                                 var74 = arg0.data[var51++];
@@ -331,34 +331,34 @@ public class class91 extends Linkable {
                             }
                             int var75 = var66[var67] + var74;
                             var66[var67] = var75;
-                            var58.p1(255, var75 & 0x7F);
+                            var58.p1(var75 & 0x7F);
                         } else if (var70 == 3) {
                             if (var73) {
-                                var58.p1(255, var59 + 224);
+                                var58.p1(var59 + 224);
                             }
                             int var76 = var63 + arg0.data[var52++];
                             var63 = var76 + (arg0.data[var40++] << 7);
-                            var58.p1(255, var63 & 0x7F);
-                            var58.p1(255, var63 >> 7 & 0x7F);
+                            var58.p1(var63 & 0x7F);
+                            var58.p1(var63 >> 7 & 0x7F);
                         } else if (var70 == 4) {
                             if (var73) {
-                                var58.p1(255, var59 + 208);
+                                var58.p1(var59 + 208);
                             }
                             var64 += arg0.data[var39++];
-                            var58.p1(255, var64 & 0x7F);
+                            var58.p1(var64 & 0x7F);
                         } else if (var70 == 5) {
                             if (var73) {
-                                var58.p1(255, var59 + 160);
+                                var58.p1(var59 + 160);
                             }
                             var60 += arg0.data[var44++];
                             var65 += arg0.data[var38++];
-                            var58.p1(255, var60 & 0x7F);
-                            var58.p1(255, var65 & 0x7F);
+                            var58.p1(var60 & 0x7F);
+                            var58.p1(var65 & 0x7F);
                         } else if (var70 == 6) {
                             if (var73) {
-                                var58.p1(255, var59 + 192);
+                                var58.p1(var59 + 192);
                             }
-                            var58.p1(255, arg0.data[var51++]);
+                            var58.p1(arg0.data[var51++]);
                         } else {
                             throw new RuntimeException();
                         }

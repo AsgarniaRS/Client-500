@@ -8,7 +8,7 @@ public abstract class class138 extends class26 {
     public byte[][] field2559 = new byte[256][];
 
     @OriginalMember(owner = "client!mg", name = "zb", descriptor = "[[B")
-    public static byte[][] field2562 = new byte[250][];
+    public static byte[][] cacheMid = new byte[250][];
 
     @OriginalMember(owner = "client!mg", name = "Cb", descriptor = "I")
     public static int field2565 = 50;
@@ -175,7 +175,7 @@ public abstract class class138 extends class26 {
         if (arg0 != -1) {
             field2565 = -99;
         }
-        field2562 = null;
+        cacheMid = null;
     }
 
     @OriginalMember(owner = "client!mg", name = "c", descriptor = "(II)I")

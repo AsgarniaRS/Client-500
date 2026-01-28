@@ -86,7 +86,7 @@ public class class126 extends class136 {
     public static int field2334 = 0;
 
     @OriginalMember(owner = "client!lf", name = "rb", descriptor = "[[B")
-    public static byte[][] field2354 = new byte[50][];
+    public static byte[][] cacheMax = new byte[50][];
 
     @OriginalMember(owner = "client!lf", name = "nb", descriptor = "I")
     public static int field2350 = 0;
@@ -245,7 +245,7 @@ public class class126 extends class136 {
                 this.field2363[var5] = arg2.g2();
             }
         } else if (arg0 == 2) {
-            this.field2343 = arg2.gjstr(-125);
+            this.field2343 = arg2.gjstr();
         } else if (arg0 == 12) {
             this.field2351 = arg2.g1();
         } else if (arg0 == 13) {
@@ -262,7 +262,7 @@ public class class126 extends class136 {
             this.field2353 = arg2.g2();
             this.field2339 = arg2.g2();
         } else if (arg0 >= 30 && arg0 < 35) {
-            this.field2344[arg0 - 30] = arg2.gjstr(-127);
+            this.field2344[arg0 - 30] = arg2.gjstr();
             if (this.field2344[arg0 - 30].method624(class192.field3695, (byte) 71)) {
                 this.field2344[arg0 - 30] = null;
             }
@@ -286,7 +286,7 @@ public class class126 extends class136 {
             int var6 = arg2.g1();
             this.field2337 = new byte[var6];
             for (int var7 = 0; var7 < var6; var7++) {
-                this.field2337[var7] = arg2.method324(26);
+                this.field2337[var7] = arg2.g1b();
             }
         } else if (arg0 == 60) {
             int var17 = arg2.g1();
@@ -305,9 +305,9 @@ public class class126 extends class136 {
         } else if (arg0 == 99) {
             this.field2365 = true;
         } else if (arg0 == 100) {
-            this.field2360 = arg2.method324(27);
+            this.field2360 = arg2.g1b();
         } else if (arg0 == 101) {
-            this.field2321 = arg2.method324(13) * 5;
+            this.field2321 = arg2.g1b() * 5;
         } else if (arg0 == 102) {
             this.field2328 = arg2.g2();
         } else if (arg0 == 103) {
@@ -346,13 +346,13 @@ public class class126 extends class136 {
                 arg2.g2();
                 arg2.g2();
             } else if (arg0 == 114) {
-                arg2.method324(106);
-                arg2.method324(68);
+                arg2.g1b();
+                arg2.g1b();
             } else if (arg0 == 115) {
                 this.field2352 = (short) (arg2.g1() * 4);
                 this.field2331 = (short) (arg2.g1() * 4);
             } else if (arg0 == 119) {
-                arg2.method324(64);
+                arg2.g1b();
             } else if (arg0 == 249) {
                 int var8 = arg2.g1();
                 if (this.field2346 == null) {
@@ -364,7 +364,7 @@ public class class126 extends class136 {
                     int var12 = arg2.method304(-29629);
                     Linkable var13;
                     if (var11) {
-                        var13 = new class216(arg2.gjstr(-126));
+                        var13 = new class216(arg2.gjstr());
                     } else {
                         var13 = new class192(arg2.g4());
                     }
@@ -460,7 +460,7 @@ public class class126 extends class136 {
 
     @OriginalMember(owner = "client!lf", name = "e", descriptor = "(I)V")
     public static void method865(int arg0) {
-        field2354 = null;
+        cacheMax = null;
         field2326 = null;
         field2323 = null;
         if (arg0 != -1) {
@@ -480,7 +480,7 @@ public class class126 extends class136 {
         } else {
             class30 var5 = (class30) class141.field2608.method135(arg1 - 116, (long) this.field2316);
             if (arg1 != 0) {
-                field2354 = null;
+                cacheMax = null;
             }
             if (var5 == null) {
                 boolean var6 = false;

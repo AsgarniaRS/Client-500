@@ -98,7 +98,7 @@ public class class90 extends Linkable {
         }
         while (var3 > var4) {
             class244 var5 = new class244();
-            class88 var6 = var2.gjstr(-125);
+            class88 var6 = var2.gjstr();
             var5.field4485 = var2.g2();
             var5.field4487 = var2.g2();
             var5.field4494 = var2.g1();

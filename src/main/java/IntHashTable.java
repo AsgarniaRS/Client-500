@@ -72,7 +72,7 @@ public class IntHashTable {
                 while (class203.field3878 < 20 && class208.pendingUrgentQueueSize > 0) {
                     class97 var4 = (class97) class241.pendingUrgentQueue.method1049(0);
                     Packet var5 = new Packet(4);
-                    var5.p1(255, 1);
+                    var5.p1(1);
                     var5.p3((int) var4.nodeId);
                     class214.clientStream.write(var5.data, 0, 4);
                     class151.urgentQueue.put(var4.nodeId, var4, -1);
@@ -82,7 +82,7 @@ public class IntHashTable {
                 while (class231.field4335 < 20 && class220.pendingPrefetchQueueSize > 0) {
                     class97 var6 = (class97) class138.field2561.method1383(13753);
                     Packet var7 = new Packet(4);
-                    var7.p1(arg0 ^ 0x7504, 0);
+                    var7.p1(0);
                     var7.p3((int) var6.nodeId);
                     class214.clientStream.write(var7.data, 0, 4);
                     var6.method909(arg0 ^ 0x753B);
@@ -139,7 +139,7 @@ public class IntHashTable {
                             class53.incomingRequest = var19;
                             int var20 = var17 == 0 ? 5 : 9;
                             class149.incomingBuffer = new Packet(var18 + var20 + class53.incomingRequest.padding);
-                            class149.incomingBuffer.p1(255, var17);
+                            class149.incomingBuffer.p1(var17);
                             class149.incomingBuffer.p4(var18);
                             class78.field1408.pos = 0;
                             class28.field473 = 8;

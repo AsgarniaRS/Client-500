@@ -216,7 +216,7 @@ public class class47 extends class136 {
         } else if (arg0 == 2) {
             this.field882 = arg2.g1();
         } else if (arg0 == 3) {
-            this.field876 = arg2.gjstr(-128);
+            this.field876 = arg2.gjstr();
         } else if (arg0 == 4) {
             this.field877 = arg2.g4();
         } else if (arg0 == 5 || arg0 == 6) {
@@ -226,7 +226,7 @@ public class class47 extends class136 {
                 int var6 = arg2.g4();
                 Linkable var7;
                 if (arg0 == 5) {
-                    var7 = new class216(arg2.gjstr(-127));
+                    var7 = new class216(arg2.gjstr());
                 } else {
                     var7 = new class192(arg2.g4());
                 }

@@ -302,16 +302,16 @@ public class class123 {
             this.field2257.method1565(arg0);
         }
         for (int var5 = 0; var5 < 10; var5++) {
-            int var6 = arg0.method350(118);
+            int var6 = arg0.gsmart();
             if (var6 == 0) {
                 break;
             }
             this.field2248[var5] = var6;
             this.field2236[var5] = arg0.method342(true);
-            this.field2247[var5] = arg0.method350(112);
+            this.field2247[var5] = arg0.gsmart();
         }
-        this.field2240 = arg0.method350(123);
-        this.field2241 = arg0.method350(118);
+        this.field2240 = arg0.gsmart();
+        this.field2241 = arg0.gsmart();
         this.field2243 = arg0.g2();
         this.field2238 = arg0.g2();
         this.field2242 = new class185();

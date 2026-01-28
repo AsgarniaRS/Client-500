@@ -100,23 +100,23 @@ public class class248 {
         int var7 = arg1[arg3];
         if (arg0 == 0) {
             Isaac.out.method30(200);
-            Isaac.out.p1(255, var5 + var5 + 3);
+            Isaac.out.p1(var5 + var5 + 3);
             class57.field1087++;
         }
         if (arg0 == 1) {
             Isaac.out.method30(199);
-            Isaac.out.p1(255, var5 + var5 + 17);
+            Isaac.out.p1(var5 + var5 + 17);
             class134.field2496++;
         }
         if (arg0 == 2) {
             Isaac.out.method30(159);
-            Isaac.out.p1(255, var5 + var5 + 3);
+            Isaac.out.p1(var5 + var5 + 3);
             class24.field383++;
         }
         if (arg4 <= 16) {
             field4550 = null;
         }
-        Isaac.out.method305(103, var6 + class190.field3681);
+        Isaac.out.p2(var6 + class190.field3681);
         Isaac.out.method297(class247.field4513[82] ? 1 : 0, 0);
         class116.field2104 = arg1[0];
         class140.field2596 = arg2[0];
@@ -257,7 +257,7 @@ public class class248 {
         Isaac.out.method30(58);
         class210.field3988++;
         field4553++;
-        Isaac.out.p8(0L, (byte) -120);
+        Isaac.out.p8(0L);
         if (arg0 != -113) {
             method1623((byte) -12);
         }

@@ -162,7 +162,7 @@ public class GZip {
         while (var7 > buf.pos) {
             int op = buf.g2();
             if (op == 3) {
-                script.stringOperands[var15] = buf.gjstr(-128);
+                script.stringOperands[var15] = buf.gjstr();
             } else if (op >= 100 || op == 21 || op == 38 || op == 39) {
                 script.intOperands[var15] = buf.g1();
             } else {

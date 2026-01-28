@@ -151,7 +151,7 @@ public class class231 extends class136 {
     public static final int method1544(byte arg0, int arg1, byte[] arg2, int arg3) {
         int var4 = -1;
         for (int var5 = arg1; var5 < arg3; var5++) {
-            var4 = var4 >>> 8 ^ class216.field4047[(var4 ^ arg2[var5]) & 0xFF];
+            var4 = var4 >>> 8 ^ Packet.crctable[(var4 ^ arg2[var5]) & 0xFF];
         }
         return ~var4;
     }

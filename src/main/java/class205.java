@@ -93,7 +93,7 @@ public class class205 extends class136 {
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(BLea;I)V")
     private final void method1410(byte arg0, Packet arg1, int arg2) {
         if (arg2 == 1) {
-            this.field3903 = arg1.gjstr(-128).method600((byte) 52, 60);
+            this.field3903 = arg1.gjstr().method600((byte) 52, 60);
         } else if (arg2 == 2) {
             int var4 = arg1.g1();
             this.field3918 = new int[var4];

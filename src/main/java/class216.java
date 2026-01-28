@@ -7,9 +7,6 @@ public class class216 extends Linkable {
     @OriginalMember(owner = "client!ti", name = "v", descriptor = "Li;")
     public class88 field4048;
 
-    @OriginalMember(owner = "client!ti", name = "u", descriptor = "[I")
-    public static int[] field4047 = new int[256];
-
     @OriginalMember(owner = "client!ti", name = "w", descriptor = "Lid;")
     public static class92 field4049;
 
@@ -64,11 +61,8 @@ public class class216 extends Linkable {
     public static void method1470(int arg0) {
         field4052 = null;
         field4055 = null;
-        if (arg0 != -306674912) {
-            return;
-        }
         field4051 = null;
-        field4047 = null;
+        Packet.crctable = null;
         field4056 = null;
         field4053 = null;
         field4054 = null;
@@ -81,17 +75,7 @@ public class class216 extends Linkable {
     }
 
     static {
-        for (int var0 = 0; var0 < 256; var0++) {
-            int var1 = var0;
-            for (int var2 = 0; var2 < 8; var2++) {
-                if ((var1 & 0x1) == 1) {
-                    var1 = var1 >>> 1 ^ 0xEDB88320;
-                } else {
-                    var1 >>>= 0x1;
-                }
-            }
-            field4047[var0] = var1;
-        }
+
         field4049 = new class92(64);
         field4055 = class208.method1425(105, "slide:");
         field4051 = field4055;

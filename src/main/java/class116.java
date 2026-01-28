@@ -143,7 +143,7 @@ public class class116 extends class23 {
                     } else if (~class36.field625 != -1 || class219.field4145.field718 >= 40) {
                         Isaac.out.method30(111);
                         ++class226.field4242;
-                        Isaac.out.p1(255, 0);
+                        Isaac.out.p1(0);
                         int var4 = Isaac.out.pos;
                         int var5 = 0;
                         for (int var6 = 0; var6 < class219.field4145.field718 && ~(-var4 + Isaac.out.pos) > -241; ++var6) {
@@ -180,7 +180,7 @@ public class class116 extends class23 {
                                 if (~class147.field2767 > -9 && var11 >= -32 && var11 <= 31 && ~var10 <= 31 && var10 <= 31) {
                                     var10 += 32;
                                     var11 += 32;
-                                    Isaac.out.method305(95, (class147.field2767 << 12) - -(var11 << 6) + var10);
+                                    Isaac.out.p2((class147.field2767 << 12) - -(var11 << 6) + var10);
                                     class147.field2767 = 0;
                                 } else if (class147.field2767 < 8) {
                                     Isaac.out.p3((class147.field2767 << 19) + 8388608 + var9);
@@ -247,19 +247,19 @@ public class class116 extends class23 {
                     class88.field1638 = 20;
                     Isaac.out.method30(173);
                     Isaac.out.method331(class207.field3932, 18975);
-                    Isaac.out.method305(125, class64.field1173);
+                    Isaac.out.p2(class64.field1173);
                 }
                 if (class175.field3522 && !Js5Local.field355) {
                     ++class66.field1187;
                     Js5Local.field355 = true;
                     Isaac.out.method30(130);
-                    Isaac.out.p1(255, 1);
+                    Isaac.out.p1(1);
                 }
                 if (!class175.field3522 && Js5Local.field355) {
                     ++class66.field1187;
                     Js5Local.field355 = false;
                     Isaac.out.method30(130);
-                    Isaac.out.p1(255, 0);
+                    Isaac.out.p1(0);
                 }
                 class190.method1330(-25194);
                 if (class229.gameState == 30) {
@@ -330,7 +330,7 @@ public class class116 extends class23 {
                                             }
                                         }
                                         Isaac.out.method30(207);
-                                        Isaac.out.method351(false, class135.field2516.field3425);
+                                        Isaac.out.p4_alt1(class135.field2516.field3425);
                                         Isaac.out.method314(class18.field305, (byte) -109);
                                         Isaac.out.method327(-85, var21);
                                         Isaac.out.method344(class172.field3335, (byte) -51);

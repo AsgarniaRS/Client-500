@@ -264,7 +264,7 @@ public class class12 {
                 class20.field313 = Linkable.field1211;
                 Isaac.field2731++;
                 Isaac.out.method30(82);
-                Isaac.out.p8(arg1, (byte) -127);
+                Isaac.out.p8(arg1);
             }
         }
     }

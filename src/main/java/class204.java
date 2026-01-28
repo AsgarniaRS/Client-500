@@ -398,7 +398,7 @@ public class class204 extends Linkable {
         }
         byte[] var4 = new byte[var3];
         for (int var5 = 0; var5 < var3; var5++) {
-            var4[var5] = var2.method324(87);
+            var4[var5] = var2.g1b();
         }
         var2.pos++;
         var3++;
@@ -409,7 +409,7 @@ public class class204 extends Linkable {
         }
         byte[] var8 = new byte[var7];
         for (int var9 = 0; var9 < var7; var9++) {
-            var8[var9] = var2.method324(52);
+            var8[var9] = var2.g1b();
         }
         var2.pos++;
         var7++;
@@ -420,7 +420,7 @@ public class class204 extends Linkable {
         }
         byte[] var12 = new byte[var11];
         for (int var13 = 0; var13 < var11; var13++) {
-            var12[var13] = var2.method324(27);
+            var12[var13] = var2.g1b();
         }
         var2.pos++;
         var11++;
@@ -467,7 +467,7 @@ public class class204 extends Linkable {
         }
         byte[] var26 = new byte[var25];
         for (int var27 = 0; var27 < var25; var27++) {
-            var26[var27] = var2.method324(120);
+            var26[var27] = var2.g1b();
         }
         var2.pos++;
         var25++;
@@ -570,23 +570,23 @@ public class class204 extends Linkable {
             class121 var100 = var19[var52];
             if (var100.field2218 != null) {
                 for (int var101 = 1; var101 < var100.field2218.length; var101 += 2) {
-                    var100.field2218[var101] = var2.method324(87);
+                    var100.field2218[var101] = var2.g1b();
                 }
             }
             if (var100.field2207 != null) {
                 for (int var102 = 3; var102 < var100.field2207.length - 2; var102 += 2) {
-                    var100.field2207[var102] = var2.method324(71);
+                    var100.field2207[var102] = var2.g1b();
                 }
             }
         }
         if (var22 != null) {
             for (int var53 = 1; var53 < var22.length; var53 += 2) {
-                var22[var53] = var2.method324(105);
+                var22[var53] = var2.g1b();
             }
         }
         if (var24 != null) {
             for (int var54 = 1; var54 < var24.length; var54 += 2) {
-                var24[var54] = var2.method324(57);
+                var24[var54] = var2.g1b();
             }
         }
         for (int var55 = 0; var55 < var15; var55++) {

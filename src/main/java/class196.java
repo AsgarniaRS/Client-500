@@ -158,7 +158,7 @@ public class class196 extends class23 {
                 class141.method927(var5, !arg0, var6, var3);
             }
             if (~(1 & var4) != -1) {
-                var3.field4073 = class230.in.gjstr(-128);
+                var3.field4073 = class230.in.gjstr();
                 var3.field4114 = 100;
             }
             if ((32 & var4) != 0) {
@@ -203,7 +203,7 @@ public class class196 extends class23 {
                 var3.method1479(class117.field2115, 31632, var9, var8);
             }
             if (~(var4 & 4) != -1) {
-                int var10 = class230.in.method295((byte) -115);
+                int var10 = class230.in.g1_alt2();
                 int var11 = class230.in.g1();
                 var3.method1479(class117.field2115, 31632, var11, var10);
                 var3.field4120 = class117.field2115 - -300;

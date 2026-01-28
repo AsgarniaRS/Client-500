@@ -104,7 +104,7 @@ public class class18 extends class145 {
             var7 += var8;
             int var9 = 0;
             while (true) {
-                int var10 = var6.method350(113);
+                int var10 = var6.gsmart();
                 if (var10 == 0) {
                     break;
                 }

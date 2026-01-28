@@ -227,13 +227,13 @@ public abstract class class188 extends class136 {
                             do {
                                 do {
                                     while (var9) {
-                                        int var17 = var4.method350(120);
+                                        int var17 = var4.gsmart();
                                         if (var17 == 0) {
                                             continue label72;
                                         }
                                         var4.g1();
                                     }
-                                    int var10 = var4.method350(112);
+                                    int var10 = var4.gsmart();
                                     if (var10 == 0) {
                                         continue label72;
                                     }

@@ -90,7 +90,7 @@ public class class15 {
                 return;
             }
             arg1.method30(arg2);
-            arg1.p1(255, 0);
+            arg1.p1(0);
             int var6 = arg1.pos;
             arg1.p4(var3.field136);
             for (int var7 = 0; var7 < var3.field124; var7++) {
@@ -100,16 +100,16 @@ public class class15 {
                         if (var8 == 0) {
                             Field var9 = (Field) var3.field139[var7].field3131;
                             int var10 = var9.getInt(null);
-                            arg1.p1(255, 0);
+                            arg1.p1(0);
                             arg1.p4(var10);
                         } else if (var8 == 1) {
                             Field var13 = (Field) var3.field139[var7].field3131;
                             var13.setInt(null, var3.field129[var7]);
-                            arg1.p1(255, 0);
+                            arg1.p1(0);
                         } else if (var8 == 2) {
                             Field var11 = (Field) var3.field139[var7].field3131;
                             int var12 = var11.getModifiers();
-                            arg1.p1(255, 0);
+                            arg1.p1(0);
                             arg1.p4(var12);
                         }
                         if (var8 == 3) {
@@ -122,49 +122,49 @@ public class class15 {
                             }
                             Object var21 = var16.invoke(null, var18);
                             if (var21 == null) {
-                                arg1.p1(255, 0);
+                                arg1.p1(0);
                             } else if (var21 instanceof Number) {
-                                arg1.p1(255, 1);
-                                arg1.p8(((Number) var21).longValue(), (byte) -122);
+                                arg1.p1(1);
+                                arg1.p8(((Number) var21).longValue());
                             } else if (var21 instanceof class88) {
-                                arg1.p1(255, 2);
+                                arg1.p1(2);
                                 arg1.pjstr((class88) var21, (byte) 0);
                             } else {
-                                arg1.p1(255, 4);
+                                arg1.p1(4);
                             }
                         } else if (var8 == 4) {
                             Method var14 = (Method) var3.field138[var7].field3131;
                             int var15 = var14.getModifiers();
-                            arg1.p1(255, 0);
+                            arg1.p1(0);
                             arg1.p4(var15);
                         }
                     } catch (ClassNotFoundException var22) {
-                        arg1.p1(255, -10);
+                        arg1.p1(-10);
                     } catch (InvalidClassException var23) {
-                        arg1.p1(255, -11);
+                        arg1.p1(-11);
                     } catch (StreamCorruptedException var24) {
-                        arg1.p1(255, -12);
+                        arg1.p1(-12);
                     } catch (OptionalDataException var25) {
-                        arg1.p1(255, -13);
+                        arg1.p1(-13);
                     } catch (IllegalAccessException var26) {
-                        arg1.p1(255, -14);
+                        arg1.p1(-14);
                     } catch (IllegalArgumentException var27) {
-                        arg1.p1(255, -15);
+                        arg1.p1(-15);
                     } catch (InvocationTargetException var28) {
-                        arg1.p1(255, -16);
+                        arg1.p1(-16);
                     } catch (SecurityException var29) {
-                        arg1.p1(255, -17);
+                        arg1.p1(-17);
                     } catch (IOException var30) {
-                        arg1.p1(255, -18);
+                        arg1.p1(-18);
                     } catch (NullPointerException var31) {
-                        arg1.p1(255, -19);
+                        arg1.p1(-19);
                     } catch (Exception var32) {
-                        arg1.p1(255, -20);
+                        arg1.p1(-20);
                     } catch (Throwable var33) {
-                        arg1.p1(255, -21);
+                        arg1.p1(-21);
                     }
                 } else {
-                    arg1.p1(255, var3.field132[var7]);
+                    arg1.p1(var3.field132[var7]);
                 }
             }
             arg1.method345(var6, (byte) 121);

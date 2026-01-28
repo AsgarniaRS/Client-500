@@ -263,22 +263,22 @@ public class class68 implements class61 {
         }
         for (int var13 = 0; var13 < var7; var13++) {
             if (this.field1243[var13]) {
-                this.field1222[var13] = var6.method324(11);
+                this.field1222[var13] = var6.g1b();
             }
         }
         for (int var14 = 0; var14 < var7; var14++) {
             if (this.field1243[var14]) {
-                this.field1250[var14] = var6.method324(108);
+                this.field1250[var14] = var6.g1b();
             }
         }
         for (int var15 = 0; var15 < var7; var15++) {
             if (this.field1243[var15]) {
-                this.field1224[var15] = var6.method324(22);
+                this.field1224[var15] = var6.g1b();
             }
         }
         for (int var16 = 0; var16 < var7; var16++) {
             if (this.field1243[var16]) {
-                this.field1233[var16] = var6.method324(75);
+                this.field1233[var16] = var6.g1b();
             }
         }
         for (int var17 = 0; var17 < var7; var17++) {

@@ -598,7 +598,7 @@ public class class148 extends class136 {
                 return;
             }
         } else if (arg1 == 2) {
-            this.field2775 = arg2.gjstr(-127);
+            this.field2775 = arg2.gjstr();
         } else if (arg1 == 5) {
             int var23 = arg2.g1();
             if (var23 > 0) {
@@ -651,14 +651,14 @@ public class class148 extends class136 {
                 this.field2807 = arg2.g1();
                 return;
             } else if (arg1 == 29) {
-                this.field2811 = arg2.method324(30);
+                this.field2811 = arg2.g1b();
                 return;
             } else if (arg1 == 39) {
-                this.field2798 = arg2.method324(arg0 ^ 0xFFFFFFB9) * 5;
+                this.field2798 = arg2.g1b() * 5;
                 return;
             } else {
                 if (arg1 >= 30 && arg1 < 35) {
-                    this.field2818[arg1 - 30] = arg2.gjstr(arg0 - 84);
+                    this.field2818[arg1 - 30] = arg2.gjstr();
                     if (this.field2818[arg1 - 30].method624(class192.field3695, (byte) 105)) {
                         this.field2818[arg1 - 30] = null;
                         return;
@@ -684,7 +684,7 @@ public class class148 extends class136 {
                     int var8 = arg2.g1();
                     this.field2826 = new byte[var8];
                     for (int var9 = 0; var9 < var8; var9++) {
-                        this.field2826[var9] = arg2.method324(34);
+                        this.field2826[var9] = arg2.g1b();
                     }
                     return;
                 } else if (arg1 == 60) {
@@ -803,7 +803,7 @@ public class class148 extends class136 {
                                 int var14 = arg2.method304(-29629);
                                 Linkable var15;
                                 if (var13) {
-                                    var15 = new class216(arg2.gjstr(-128));
+                                    var15 = new class216(arg2.gjstr());
                                 } else {
                                     var15 = new class192(arg2.g4());
                                 }

@@ -654,7 +654,7 @@ public class class149 extends class136 {
         if (arg0 == 1) {
             this.field2864 = arg2.g2();
         } else if (arg0 == 2) {
-            this.field2894 = arg2.gjstr(arg1 - 41);
+            this.field2894 = arg2.gjstr();
         } else if (arg0 == 4) {
             this.field2891 = arg2.g2();
         } else if (arg0 == 5) {
@@ -688,12 +688,12 @@ public class class149 extends class136 {
         } else if (arg0 == 26) {
             this.field2882 = arg2.g2();
         } else if (arg0 >= 30 && arg0 < 35) {
-            this.field2900[arg0 - 30] = arg2.gjstr(-127);
+            this.field2900[arg0 - 30] = arg2.gjstr();
             if (this.field2900[arg0 - 30].method624(class192.field3695, (byte) 103)) {
                 this.field2900[arg0 - 30] = null;
             }
         } else if (arg0 >= 35 && arg0 < 40) {
-            this.field2906[arg0 - 35] = arg2.gjstr(-126);
+            this.field2906[arg0 - 35] = arg2.gjstr();
         } else if (arg0 == 40) {
             int var16 = arg2.g1();
             this.field2857 = new short[var16];
@@ -714,7 +714,7 @@ public class class149 extends class136 {
             int var14 = arg2.g1();
             this.field2889 = new byte[var14];
             for (int var15 = 0; var15 < var14; var15++) {
-                this.field2889[var15] = arg2.method324(101);
+                this.field2889[var15] = arg2.g1b();
             }
         } else if (arg0 == 65) {
             this.field2863 = true;
@@ -752,9 +752,9 @@ public class class149 extends class136 {
         } else if (arg0 == 112) {
             this.field2873 = arg2.g2();
         } else if (arg0 == 113) {
-            this.field2868 = arg2.method324(arg1 + 171);
+            this.field2868 = arg2.g1b();
         } else if (arg0 == 114) {
-            this.field2842 = arg2.method324(13) * 5;
+            this.field2842 = arg2.g1b() * 5;
         } else if (arg0 == 115) {
             this.field2838 = arg2.g1();
         } else if (arg0 == 121) {
@@ -781,7 +781,7 @@ public class class149 extends class136 {
                 int var10 = arg2.method304(-29629);
                 Linkable var11;
                 if (var9) {
-                    var11 = new class216(arg2.gjstr(-127));
+                    var11 = new class216(arg2.gjstr());
                 } else {
                     var11 = new class192(arg2.g4());
                 }

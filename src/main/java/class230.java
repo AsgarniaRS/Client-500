@@ -180,8 +180,8 @@ public class class230 {
             try {
                 int var6 = arg3.g1();
                 if (var6 == 0 || var6 == 1 || var6 == 2) {
-                    String var17 = new String(arg3.gjstr(-125).method613(-67));
-                    String var18 = new String(arg3.gjstr(-126).method613(-87));
+                    String var17 = new String(arg3.gjstr().method613(-67));
+                    String var18 = new String(arg3.gjstr().method613(-87));
                     int var19 = 0;
                     if (var6 == 1) {
                         var19 = arg3.g4();
@@ -190,12 +190,12 @@ public class class230 {
                     var4.field129[var5] = var19;
                     var4.field139[var5] = arg0.method1293(var18, 15, class237.method1576(var17, 10608));
                 } else if (var6 == 3 || var6 == 4) {
-                    String var7 = new String(arg3.gjstr(-127).method613(-81));
-                    String var8 = new String(arg3.gjstr(-126).method613(arg1 - 123));
+                    String var7 = new String(arg3.gjstr().method613(-81));
+                    String var8 = new String(arg3.gjstr().method613(arg1 - 123));
                     int var9 = arg3.g1();
                     String[] var10 = new String[var9];
                     for (int var11 = 0; var11 < var9; var11++) {
-                        var10[var11] = new String(arg3.gjstr(-126).method613(arg1 - 103));
+                        var10[var11] = new String(arg3.gjstr().method613(arg1 - 103));
                     }
                     byte[][] var12 = new byte[var9][];
                     if (var6 == 3) {

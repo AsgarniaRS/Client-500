@@ -106,7 +106,7 @@ public class Client extends GameShell {
             if (class244.field4495 == 2) {
                 class190.field3682 = new ClientStream((Socket) class62.field1151.field3131, class126.field2326);
                 Packet var2 = new Packet(5);
-                var2.p1(255, 15);
+                var2.p1(15);
                 var2.p4(500);
                 class190.field3682.write(var2.data, 0, 5);
                 class244.field4495++;

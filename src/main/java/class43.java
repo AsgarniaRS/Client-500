@@ -121,7 +121,7 @@ public class class43 extends class23 {
             class17.mapKeys = new int[var3][4];
             for (int var4 = 0; ~var3 < ~var4; ++var4) {
                 for (int var15 = 0; var15 < 4; ++var15) {
-                    class17.mapKeys[var4][var15] = class230.in.g4_alt1(48);
+                    class17.mapKeys[var4][var15] = class230.in.g4_alt1();
                     System.out.println(class17.mapKeys[var4][var15]);
                 }
             }

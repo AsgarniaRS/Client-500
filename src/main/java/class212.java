@@ -110,7 +110,7 @@ public class class212 extends class23 {
                 int var14 = 0;
                 var11 += var13;
                 while (true) {
-                    int var15 = var12.method350(106);
+                    int var15 = var12.gsmart();
                     if (var15 == 0) {
                         break;
                     }

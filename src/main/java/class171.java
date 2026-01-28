@@ -209,7 +209,7 @@ public class class171 extends class23 {
             method1218(true);
         }
         Isaac.out.method296((byte) -109, arg0.method630(false));
-        Isaac.out.p1(arg2 ^ 255, arg1);
+        Isaac.out.p1(arg1);
     }
 
     @OriginalMember(owner = "client!ph", name = "e", descriptor = "(I)V")

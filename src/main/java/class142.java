@@ -8,7 +8,7 @@ public class class142 {
     public static class24 field2618 = new class24(5);
 
     @OriginalMember(owner = "client!n", name = "e", descriptor = "I")
-    public static int field2619 = 0;
+    public static int cacheMidCount = 0;
 
     @OriginalMember(owner = "client!n", name = "g", descriptor = "Li;")
     public static class88 field2621 = class208.method1425(105, "Wir vermuten)1 dass jemand Ihr Passwort kennt)3");

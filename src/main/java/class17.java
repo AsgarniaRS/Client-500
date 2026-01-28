@@ -22,7 +22,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static class88 field260 = class208.method1425(105, "mapscene");
 
     @OriginalMember(owner = "client!be", name = "p", descriptor = "I")
-    public static int field265 = 0;
+    public static int cacheMinCount = 0;
 
     @OriginalMember(owner = "client!be", name = "l", descriptor = "I")
     public static int field261 = 0;

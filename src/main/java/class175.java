@@ -121,9 +121,9 @@ public class class175 {
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(192);
                 Isaac.out.method331(class48.field905, 18975);
-                Isaac.out.method351(false, class209.field3967);
-                Isaac.out.method305(arg0 ^ 0x56, class58.field1105);
-                Isaac.out.method305(117, var7);
+                Isaac.out.p4_alt1(class209.field3967);
+                Isaac.out.p2(class58.field1105);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 1006) {
@@ -133,13 +133,13 @@ public class class175 {
             class155.field2999 = class172.field3341;
             class157.field3019 = 2;
             Isaac.out.method30(191);
-            Isaac.out.method305(90, var7);
+            Isaac.out.p2(var7);
         }
         if (var4 == 7) {
             class45.field784++;
             class101.method707(0, var3, var5, var2);
             Isaac.out.method30(53);
-            Isaac.out.method305(arg0 + 95, (int) (var5 >>> 32) & Integer.MAX_VALUE);
+            Isaac.out.p2((int) (var5 >>> 32) & Integer.MAX_VALUE);
             Isaac.out.method344(class190.field3681 + var3, (byte) -51);
             Isaac.out.method344(var2 + class223.field4214, (byte) -51);
         }
@@ -205,7 +205,7 @@ public class class175 {
                 class218.field4117++;
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(151);
-                Isaac.out.method305(80, var7);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 4) {
@@ -218,13 +218,13 @@ public class class175 {
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(71);
-                Isaac.out.method305(115, var7);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 39) {
             Isaac.out.method30(35);
             Isaac.out.method344(var7, (byte) -51);
-            Isaac.out.method305(88, Client.field569);
+            Isaac.out.p2(Client.field569);
             field3532++;
             Isaac.out.method316(class16.field249, arg0 + 15726);
             Isaac.out.method331(var2, 18975);
@@ -248,7 +248,7 @@ public class class175 {
             class174 var16 = class239.method1581(-64, var3);
             if (var16 == null || var16.field3476[var2] < 100000) {
                 Isaac.out.method30(191);
-                Isaac.out.method305(110, var7);
+                Isaac.out.p2(var7);
                 class157.field3032++;
             } else {
                 class223.method1501(class166.method1142(new class88[] { class170.method1214(var16.field3476[var2], 51), class109.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
@@ -274,7 +274,7 @@ public class class175 {
             class207.field3941++;
             Isaac.out.method30(160);
             Isaac.out.method344(var2, (byte) -51);
-            Isaac.out.method351(false, var3);
+            Isaac.out.p4_alt1(var3);
             Isaac.out.method331(var7, arg0 + 18973);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
@@ -306,7 +306,7 @@ public class class175 {
             class101.method707(0, var3, var5, var2);
             Isaac.out.method30(94);
             Isaac.out.method331(var2 + class223.field4214, 18975);
-            Isaac.out.method305(84, class190.field3681 + var3);
+            Isaac.out.p2(class190.field3681 + var3);
             Isaac.out.method344(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -51);
         }
         if (var4 == 29) {
@@ -341,7 +341,7 @@ public class class175 {
         if (var4 == 44) {
             Isaac.out.method30(112);
             class199.field3805++;
-            Isaac.out.method305(117, var2);
+            Isaac.out.p2(var2);
             Isaac.out.method326(arg0 ^ 0xFFFFFFFD, var3);
             Isaac.out.method344(var7, (byte) -51);
             class139.field2575 = 0;
@@ -361,7 +361,7 @@ public class class175 {
                 class147.field2759 = class226.field4241;
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(164);
-                Isaac.out.method305(arg0 ^ 0x62, var7);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 57) {
@@ -413,7 +413,7 @@ public class class175 {
             Isaac.out.method30(150);
             Isaac.out.method316(var3, 15728);
             Isaac.out.method344(var2, (byte) -51);
-            Isaac.out.method305(arg0 + 106, var7);
+            Isaac.out.p2(var7);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
             class93.field1743 = var2;
@@ -444,7 +444,7 @@ public class class175 {
             class45.field796 = 0;
             Isaac.out.method30(138);
             Isaac.out.method331(class190.field3681 + var3, 18975);
-            Isaac.out.method305(118, var7);
+            Isaac.out.p2(var7);
             Isaac.out.method331(class223.field4214 + var2, 18975);
         }
         if (var4 == 8) {
@@ -460,8 +460,8 @@ public class class175 {
         if (var4 == 13) {
             class135.field2509++;
             Isaac.out.method30(26);
-            Isaac.out.method305(107, var2);
-            Isaac.out.method305(94, var7);
+            Isaac.out.p2(var2);
+            Isaac.out.p2(var7);
             Isaac.out.p4(var3);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
@@ -480,7 +480,7 @@ public class class175 {
             Isaac.out.method30(77);
             Isaac.out.method344(var7, (byte) -51);
             Isaac.out.method344(class190.field3681 + var3, (byte) -51);
-            Isaac.out.method305(113, var2 + class223.field4214);
+            Isaac.out.p2(var2 + class223.field4214);
         }
         if (var4 == 1002) {
             class147.field2759 = class226.field4241;
@@ -544,10 +544,10 @@ public class class175 {
             class147.field2759 = class226.field4241;
             class45.field796 = 0;
             Isaac.out.method30(84);
-            Isaac.out.method305(93, var2 + class223.field4214);
-            Isaac.out.method305(arg0 + 104, var7);
+            Isaac.out.p2(var2 + class223.field4214);
+            Isaac.out.p2(var7);
             Isaac.out.method314(var3 + class190.field3681, (byte) -3);
-            Isaac.out.method351(false, class16.field249);
+            Isaac.out.p4_alt1(class16.field249);
             Isaac.out.method314(Client.field569, (byte) -107);
         }
         if (var4 == 22) {
@@ -585,7 +585,7 @@ public class class175 {
             Isaac.out.method314(Client.field569, (byte) 88);
             Isaac.out.method316(class16.field249, 15728);
             Isaac.out.method314(class223.field4214 + var2, (byte) -124);
-            Isaac.out.method305(105, class190.field3681 + var3);
+            Isaac.out.p2(class190.field3681 + var3);
         }
         if (var4 == 28) {
             class39.field687++;
@@ -613,7 +613,7 @@ public class class175 {
         if (var4 == 18) {
             class153.field2954++;
             Isaac.out.method30(251);
-            Isaac.out.method305(104, var2);
+            Isaac.out.p2(var2);
             Isaac.out.method331(var7, 18975);
             Isaac.out.p4(var3);
             class139.field2575 = 0;
@@ -635,14 +635,14 @@ public class class175 {
                 class45.field796 = 0;
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(195);
-                Isaac.out.method305(arg0 ^ 0x5A, var7);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 33) {
             class101.method707(0, var3, var5, var2);
             class28.field469++;
             Isaac.out.method30(169);
-            Isaac.out.method305(arg0 ^ 0x5E, var3 + class190.field3681);
+            Isaac.out.p2(var3 + class190.field3681);
             Isaac.out.method314(Integer.MAX_VALUE & (int) (var5 >>> 32), (byte) -99);
             Isaac.out.method344(class223.field4214 + var2, (byte) -51);
         }
@@ -662,7 +662,7 @@ public class class175 {
             Isaac.out.method30(55);
             Isaac.out.method314(var2, (byte) 91);
             IntHashTable.field1810++;
-            Isaac.out.method351(false, var3);
+            Isaac.out.p4_alt1(var3);
             Isaac.out.method331(var7, 18975);
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
@@ -685,7 +685,7 @@ public class class175 {
         }
         if (var4 == 42) {
             Isaac.out.method30(4);
-            Isaac.out.method305(95, class48.field905);
+            Isaac.out.p2(class48.field905);
             class39.field697++;
             Isaac.out.method331(var7, 18975);
             Isaac.out.method331(class58.field1105, arg0 + 18973);
@@ -706,7 +706,7 @@ public class class175 {
                 class155.field2999 = class172.field3341;
                 class157.field3019 = 2;
                 Isaac.out.method30(114);
-                Isaac.out.method305(116, var7);
+                Isaac.out.p2(var7);
             }
         }
         if (var4 == 16) {
@@ -754,9 +754,9 @@ public class class175 {
                 class157.field3019 = 2;
                 class155.field2999 = class172.field3341;
                 Isaac.out.method30(145);
-                Isaac.out.method351(false, class16.field249);
+                Isaac.out.p4_alt1(class16.field249);
                 Isaac.out.method314(var7, (byte) 55);
-                Isaac.out.method305(123, Client.field569);
+                Isaac.out.p2(Client.field569);
             }
         }
         if (var4 == 46) {

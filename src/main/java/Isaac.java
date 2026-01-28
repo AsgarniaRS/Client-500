@@ -116,7 +116,7 @@ public class Isaac {
                 }
                 class20.field313 = Linkable.field1211;
                 out.method30(126);
-                out.p8(arg1, (byte) -122);
+                out.p8(arg1);
                 return;
             }
         }

@@ -80,7 +80,7 @@ public class class176 extends class136 {
                 int var8 = arg2.method304(-29629);
                 Linkable var9;
                 if (var7) {
-                    var9 = new class216(arg2.gjstr(arg0 ^ 0xFFFFFF79));
+                    var9 = new class216(arg2.gjstr());
                 } else {
                     var9 = new class192(arg2.g4());
                 }
@@ -120,9 +120,9 @@ public class class176 extends class136 {
             if (class117.loginState == 2) {
                 long var1 = class36.field631 = class209.field3969.method630(false);
                 Isaac.out.pos = 0;
-                Isaac.out.p1(255, 14);
+                Isaac.out.p1(14);
                 int var3 = (int) (var1 >> 16 & 0x1FL);
-                Isaac.out.p1(255, var3);
+                Isaac.out.p1(var3);
                 class33.stream.write(Isaac.out.data, 0, 2);
                 class117.loginState = 3;
                 class230.in.pos = 0;
@@ -168,24 +168,24 @@ public class class176 extends class136 {
             if (class117.loginState == 5) {
                 Isaac.out.pos = 0;
                 int[] seed = new int[] { (int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (class33.field528 >> 32), (int) class33.field528 };
-                Isaac.out.p1(255, 10);
+                Isaac.out.p1(10);
                 Isaac.out.p4(seed[0]);
                 Isaac.out.p4(seed[1]);
                 Isaac.out.p4(seed[2]);
                 Isaac.out.p4(seed[3]);
-                Isaac.out.p8(class209.field3969.method630(false), (byte) -123);
+                Isaac.out.p8(class209.field3969.method630(false));
                 Isaac.out.pjstr(class209.field3972, (byte) 0);
-                Isaac.out.rsaenc(0, class32.field515, class58.field1098);
+                Isaac.out.rsaenc(class32.field515, class58.field1098, 0);
 
                 class31.login.pos = 0;
                 if (class229.gameState == 40) {
-                    class31.login.p1(255, 18);
+                    class31.login.p1(18);
                 } else {
-                    class31.login.p1(255, 16);
+                    class31.login.p1(16);
                 }
-                class31.login.p1(255, Isaac.out.pos + class15.method72(class218.field4136, 1) + 141);
+                class31.login.p1(Isaac.out.pos + class15.method72(class218.field4136, 1) + 141);
                 class31.login.p4(500);
-                class31.login.p1(255, class245.lowMemory ? 1 : 0);
+                class31.login.p1(class245.lowMemory ? 1 : 0);
                 class4.pUid(class31.login, (byte) -91);
                 class31.login.pjstr(class218.field4136, (byte) 0);
                 class31.login.p4(class4.field46);
@@ -216,7 +216,7 @@ public class class176 extends class136 {
                 class31.login.p4(class20.field321.crc);
                 class31.login.p4(class203.field3872.crc);
                 class31.login.p4(class155.field2996.crc);
-                class31.login.method325((byte) 34, Isaac.out.pos, Isaac.out.data, 0);
+                class31.login.pdata(Isaac.out.data, Isaac.out.pos, 0);
 
                 class33.stream.write(class31.login.data, 0, class31.login.pos);
                 Isaac.out.method36(seed, (byte) 75);

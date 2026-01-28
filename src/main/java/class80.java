@@ -78,9 +78,9 @@ public class class80 extends class23 {
                         if (class18.field294 != 0) {
                             try {
                                 Packet var5 = new Packet(4);
-                                var5.p1(255, 4);
-                                var5.p1(255, class18.field294);
-                                var5.method305(117, 0);
+                                var5.p1(4);
+                                var5.p1(class18.field294);
+                                var5.p2(0);
                                 class214.clientStream.write(var5.data, 0, 4);
                             } catch (IOException var7) {
                                 try {

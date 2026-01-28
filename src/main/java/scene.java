@@ -328,9 +328,9 @@ public class scene extends class218 {
             int var4 = var3 & 1;
             boolean var5 = (var3 & 4) != 0;
             int var6 = -1;
-            this.field756 = arg0.method324(86);
+            this.field756 = arg0.g1b();
             int[] var7 = new int[12];
-            this.field750 = arg0.method324(63);
+            this.field750 = arg0.g1b();
             this.field752 = 0;
             for (int var8 = 0; ~var8 > -13; ++var8) {
                 int var9 = arg0.g1();

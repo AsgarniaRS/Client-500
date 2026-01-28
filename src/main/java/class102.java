@@ -71,24 +71,21 @@ public class class102 {
     }
 
     @OriginalMember(owner = "client!jd", name = "a", descriptor = "(BI)[B")
-    public static final synchronized byte[] method711(byte arg0, int arg1) {
-        field1855++;
-        if (arg0 > -88) {
-            return null;
-        } else if (arg1 == 100 && class17.field265 > 0) {
-            byte[] var2 = class220.field4157[--class17.field265];
-            class220.field4157[class17.field265] = null;
-            return var2;
-        } else if (arg1 == 5000 && class142.field2619 > 0) {
-            byte[] var3 = class138.field2562[--class142.field2619];
-            class138.field2562[class142.field2619] = null;
-            return var3;
-        } else if (arg1 == 30000 && class157.field3037 > 0) {
-            byte[] var4 = class126.field2354[--class157.field3037];
-            class126.field2354[class157.field3037] = null;
-            return var4;
+    public static synchronized byte[] alloc(int size) {
+         if (size == 100 && class17.cacheMinCount > 0) {
+            byte[] data = class220.cacheMin[--class17.cacheMinCount];
+            class220.cacheMin[class17.cacheMinCount] = null;
+            return data;
+        } else if (size == 5000 && class142.cacheMidCount > 0) {
+            byte[] data = class138.cacheMid[--class142.cacheMidCount];
+            class138.cacheMid[class142.cacheMidCount] = null;
+            return data;
+        } else if (size == 30000 && class157.cacheMaxCount > 0) {
+            byte[] data = class126.cacheMax[--class157.cacheMaxCount];
+            class126.cacheMax[class157.cacheMaxCount] = null;
+            return data;
         } else {
-            return new byte[arg1];
+            return new byte[size];
         }
     }
 }
