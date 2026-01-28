@@ -218,7 +218,7 @@ public abstract class class188 extends class136 {
             boolean var9 = false;
             while (true) {
                 int var13;
-                class148 var16;
+                LocType var16;
                 do {
                     int var14;
                     int var15;
@@ -248,7 +248,7 @@ public abstract class class188 extends class136 {
                         } while (var14 >= 103);
                     } while (var15 >= 103);
                     var16 = class190.method1323(var6, -12450);
-                } while (var13 == 22 && class245.lowMemory && var16.field2835 == 0 && var16.field2821 != 1 && !var16.field2828);
+                } while (var13 == 22 && class245.lowMemory && var16.active == 0 && var16.blockwalk != 1 && !var16.forcedecor);
                 var9 = true;
                 if (!var16.method992(-23555)) {
                     var5 = false;

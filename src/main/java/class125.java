@@ -1413,20 +1413,20 @@ public class class125 extends class30 {
     }
 
     @OriginalMember(owner = "client!le", name = "<init>", descriptor = "(Lhe;IIIII)V")
-    public class125(class82 arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+    public class125(ModelUnlit arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
         arg0.method548();
         arg0.method569();
         this.field2273 = arg0.field1489;
         this.field2266 = arg0.field1522;
         this.field2288 = arg0.field1476;
         this.field2289 = arg0.field1506;
-        this.field2292 = arg0.field1485;
+        this.field2292 = arg0.faceCount;
         this.field2275 = arg0.field1511;
         this.field2284 = arg0.field1518;
         this.field2268 = arg0.field1505;
-        this.field2262 = arg0.field1493;
+        this.field2262 = arg0.facePriority;
         this.field2276 = arg0.field1510;
-        this.field2283 = arg0.field1507;
+        this.field2283 = arg0.priority;
         this.field2290 = arg0.field1487;
         this.field2287 = arg0.field1486;
         int var7 = (int) Math.sqrt((double) (arg5 * arg5 + arg3 * arg3 + arg4 * arg4));
@@ -1434,10 +1434,10 @@ public class class125 extends class30 {
         this.field2291 = new int[this.field2292];
         this.field2285 = new int[this.field2292];
         this.field2261 = new int[this.field2292];
-        if (arg0.field1503 != null) {
+        if (arg0.faceTextureId != null) {
             this.field2274 = new short[this.field2292];
             for (int var9 = 0; var9 < this.field2292; ++var9) {
-                short var10 = arg0.field1503[var9];
+                short var10 = arg0.faceTextureId[var9];
                 if (var10 != -1 && class173.field3358.method436(var10, (byte) -102)) {
                     this.field2274[var9] = var10;
                 } else {
@@ -1447,16 +1447,16 @@ public class class125 extends class30 {
         } else {
             this.field2274 = null;
         }
-        if (arg0.field1499 > 0 && arg0.field1488 != null) {
+        if (arg0.field1499 > 0 && arg0.faceTextureAxis != null) {
             int[] var11 = new int[arg0.field1499];
             for (int var12 = 0; var12 < this.field2292; ++var12) {
-                if (arg0.field1488[var12] != -1) {
-                    ++var11[arg0.field1488[var12] & 255];
+                if (arg0.faceTextureAxis[var12] != -1) {
+                    ++var11[arg0.faceTextureAxis[var12] & 255];
                 }
             }
             this.field2265 = 0;
             for (int var13 = 0; var13 < arg0.field1499; ++var13) {
-                if (var11[var13] > 0 && arg0.field1521[var13] == 0) {
+                if (var11[var13] > 0 && arg0.textureRenderType[var13] == 0) {
                     ++this.field2265;
                 }
             }
@@ -1465,7 +1465,7 @@ public class class125 extends class30 {
             this.field2269 = new int[this.field2265];
             int var14 = 0;
             for (int var15 = 0; var15 < arg0.field1499; ++var15) {
-                if (var11[var15] > 0 && arg0.field1521[var15] == 0) {
+                if (var11[var15] > 0 && arg0.textureRenderType[var15] == 0) {
                     this.field2278[var14] = arg0.field1501[var15] & 65535;
                     this.field2263[var14] = arg0.field1495[var15] & 65535;
                     this.field2269[var14] = arg0.field1477[var15] & 65535;
@@ -1476,8 +1476,8 @@ public class class125 extends class30 {
             }
             this.field2267 = new byte[this.field2292];
             for (int var16 = 0; var16 < this.field2292; ++var16) {
-                if (arg0.field1488[var16] != -1) {
-                    this.field2267[var16] = (byte) var11[arg0.field1488[var16] & 255];
+                if (arg0.faceTextureAxis[var16] != -1) {
+                    this.field2267[var16] = (byte) var11[arg0.faceTextureAxis[var16] & 255];
                     if (this.field2267[var16] == -1 && this.field2274 != null) {
                         this.field2274[var16] = -1;
                     }
@@ -1516,7 +1516,7 @@ public class class125 extends class30 {
                     if (var18 == 1) {
                         class200 var28 = arg0.field1512[var17];
                         int var29 = (var28.field3827 * arg5 + var28.field3832 * arg4 + var28.field3824 * arg3) / (var8 / 2 + var8) + arg1;
-                        this.field2291[var17] = method845(arg0.field1482[var17] & 65535, var29);
+                        this.field2291[var17] = method845(arg0.faceColour[var17] & 65535, var29);
                         this.field2261[var17] = -1;
                     } else if (var18 == 3) {
                         this.field2291[var17] = 128;
@@ -1525,7 +1525,7 @@ public class class125 extends class30 {
                         this.field2261[var17] = -2;
                     }
                 } else {
-                    int var21 = arg0.field1482[var17] & 65535;
+                    int var21 = arg0.faceColour[var17] & 65535;
                     class93 var22;
                     if (arg0.field1490 != null && arg0.field1490[this.field2275[var17]] != null) {
                         var22 = arg0.field1490[this.field2275[var17]];

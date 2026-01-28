@@ -45,7 +45,6 @@ public abstract class class145 {
 
     @OriginalMember(owner = "client!nc", name = "a", descriptor = "(III)Lnc;")
     public class145 method559(int arg0, int arg1, int arg2) {
-        field2716++;
         return this;
     }
 
@@ -59,16 +58,11 @@ public abstract class class145 {
 
     @OriginalMember(owner = "client!nc", name = "a", descriptor = "()Z")
     public boolean method544() {
-        field2724++;
         return false;
     }
 
     @OriginalMember(owner = "client!nc", name = "b", descriptor = "(III)V")
     public void method537(int arg0, int arg1, int arg2) {
-        if (arg0 != 50) {
-            this.method88();
-        }
-        field2726++;
     }
 
     @OriginalMember(owner = "client!nc", name = "b", descriptor = "()I")
@@ -82,8 +76,5 @@ public abstract class class145 {
         field2728 = null;
         field2720 = null;
         field2719 = null;
-        if (arg0 >= -124) {
-            field2727 = 58;
-        }
     }
 }

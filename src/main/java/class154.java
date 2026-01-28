@@ -150,7 +150,6 @@ public class class154 {
         int var13 = arg2 * arg2;
         int var14 = arg6 * arg6;
         int var15 = var12 * var12;
-        int var16 = 92 / ((22 - arg5) / 48);
         int var17 = var14 << 1;
         int var18 = var11 * var11;
         int var19 = var13 << 1;
@@ -284,9 +283,6 @@ public class class154 {
         field2978 = null;
         field2976 = null;
         field2990 = null;
-        if (arg0 != -1) {
-            return;
-        }
         field2970 = null;
         field2977 = null;
         field2972 = null;

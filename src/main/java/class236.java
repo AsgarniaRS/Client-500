@@ -1372,7 +1372,7 @@ public class class236 extends class27 {
             return true;
         } else if (class238.packetType == 241) {
             int var310 = class230.in.g2();
-            class148.method998(var310, (byte) 119);
+            LocType.method998(var310, (byte) 119);
             class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(var310, 32767);
             class238.packetType = -1;
             return true;

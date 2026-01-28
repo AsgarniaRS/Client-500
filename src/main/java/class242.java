@@ -143,8 +143,8 @@ public class class242 extends class136 {
             for (int var11 = 0; var11 < 104; var11++) {
                 long var12 = class74.method501(class149.field2909, var10, var11);
                 if (var12 != 0L) {
-                    class148 var14 = class190.method1323(Integer.MAX_VALUE & (int) (var12 >>> 32), arg0 + 18972);
-                    int var15 = var14.field2819;
+                    LocType var14 = class190.method1323(Integer.MAX_VALUE & (int) (var12 >>> 32), arg0 + 18972);
+                    int var15 = var14.mapfunction;
                     if (var15 >= 0) {
                         int var16 = var10;
                         int var17 = var11;

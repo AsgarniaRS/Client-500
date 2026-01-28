@@ -92,11 +92,11 @@ public class class48 extends class207 {
                 for (int var2 = 0; var2 < 112; var2++) {
                     class247.field4513[var2] = false;
                 }
-                class32.field524 = class148.field2803;
+                class32.field524 = LocType.field2803;
             } else {
-                while (class32.field524 != class148.field2803) {
-                    int var3 = class114.field2061[class148.field2803];
-                    class148.field2803 = class148.field2803 + 1 & 0x7F;
+                while (class32.field524 != LocType.field2803) {
+                    int var3 = class114.field2061[LocType.field2803];
+                    LocType.field2803 = LocType.field2803 + 1 & 0x7F;
                     if (var3 >= 0) {
                         class247.field4513[var3] = true;
                     } else {

@@ -152,7 +152,7 @@ public class class80 extends class23 {
         class179.field3570 = arg3;
         class49.field923 = class225.method1514(124, arg3);
         class227.field4258 = 0;
-        class148.field2793 = arg0;
+        LocType.field2793 = arg0;
         class203.field3869 = false;
         class207.field3943 = arg2;
         if (arg1 != 2) {

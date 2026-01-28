@@ -186,7 +186,7 @@ public class class114 extends class136 {
         if (arg0 < 3 && (class116.field2100[1][arg7][arg2] & 0x2) == 2) {
             var9 = arg0 + 1;
         }
-        class148.method991(class166.field3202[arg0], 0, arg7, var9, arg1, arg0, arg2);
+        LocType.method991(class166.field3202[arg0], 0, arg7, var9, arg1, arg0, arg2);
         if (arg5 >= 0) {
             class223.method1505((byte) 93, false, arg0, false, arg6, arg3, false, arg5, var9, class166.field3202[arg0], arg2, arg7);
             return;

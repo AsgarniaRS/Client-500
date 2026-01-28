@@ -171,15 +171,15 @@ public class class244 extends Linkable {
                     var75 = field4493[var60];
                 }
                 if (var75 != null) {
-                    class148 var76 = class190.method1323(var65, -12450);
+                    LocType var76 = class190.method1323(var65, -12450);
                     int var77;
                     int var78;
                     if (var63 == 1 || var63 == 3) {
-                        var78 = var76.field2776;
-                        var77 = var76.field2796;
+                        var78 = var76.width;
+                        var77 = var76.length;
                     } else {
-                        var77 = var76.field2776;
-                        var78 = var76.field2796;
+                        var77 = var76.width;
+                        var78 = var76.length;
                     }
                     int var79 = (var77 >> 1) + var73;
                     int var80 = (var77 + 1 >> 1) + var73;

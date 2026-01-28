@@ -124,7 +124,7 @@ public class class37 {
         class219.method1481(2);
         class110.method765();
         class53.method391(arg1, arg4, 256, 256, arg2, 125, arg0);
-        class148.method995(arg1, arg4, 256, 256, -96, arg2, arg0);
+        LocType.method995(arg1, arg4, 256, 256, -96, arg2, arg0);
         ((class68) class173.field3358).method466(class17.field261, 28948);
         class11.method53(arg1, arg2, arg4, arg0, (byte) -83);
         class170.field3259 = var12;

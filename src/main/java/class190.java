@@ -47,28 +47,28 @@ public class class190 {
     public static int[] field3669;
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(II)Lnf;")
-    public static final class148 method1323(int arg0, int arg1) {
+    public static final LocType method1323(int arg0, int arg1) {
         field3679++;
-        class148 var2 = (class148) class179.field3560.method666((long) arg0, 0);
+        LocType var2 = (LocType) class179.field3560.method666((long) arg0, 0);
         if (var2 != null) {
             return var2;
         }
         byte[] var3 = class200.field3829.method941((byte) 56, class194.method1346(arg0, -124), class160.method1079(false, arg0));
-        class148 var4 = new class148();
+        LocType var4 = new LocType();
         var4.field2833 = arg0;
         if (arg1 != -12450) {
             field3674 = null;
         }
         if (var3 != null) {
-            var4.method1004(new Packet(var3), arg1 + 12451);
+            var4.decode(new Packet(var3));
         }
-        var4.method1005(1);
+        var4.postDecode();
         if (!class20.field317 && var4.field2836) {
-            var4.field2818 = null;
+            var4.op = null;
         }
-        if (var4.field2805) {
-            var4.field2821 = 0;
-            var4.field2791 = false;
+        if (var4.breakroutefinding) {
+            var4.blockwalk = 0;
+            var4.blockrange = false;
         }
         class179.field3560.put((long) arg0, var4, false);
         return var4;

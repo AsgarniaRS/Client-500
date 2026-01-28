@@ -92,7 +92,7 @@ public class class143 extends Linkable {
     public static int field2660;
 
     @OriginalMember(owner = "client!na", name = "B", descriptor = "Lnf;")
-    public class148 field2636;
+    public LocType field2636;
 
     @OriginalMember(owner = "client!na", name = "t", descriptor = "Loj;")
     public class162 field2628;
@@ -256,7 +256,7 @@ public class class143 extends Linkable {
                                         class29.method174(-88);
                                         continue;
                                     }
-                                    class148.field2793 = class28.field471;
+                                    LocType.field2793 = class28.field471;
                                     class98.field1803 = class157.field3035;
                                     class207.field3943 = class239.field4451;
                                     class175.field3534 = true;
@@ -264,7 +264,7 @@ public class class143 extends Linkable {
                                     continue;
                                 }
                                 if (var21 && class175.field3534) {
-                                    class233.method1553(true, class47.field890 + (int) ((double) (class148.field2793 - class28.field471) * 2.0D / class150.field2917));
+                                    class233.method1553(true, class47.field890 + (int) ((double) (LocType.field2793 - class28.field471) * 2.0D / class150.field2917));
                                     class172.method1223((int) ((double) (class207.field3943 - class239.field4451) * 2.0D / class150.field2917) + class98.field1803, -89);
                                     continue;
                                 }
@@ -593,17 +593,17 @@ public class class143 extends Linkable {
                                         class48.field895[var5][var6] = new int[4096];
                                     }
                                     var12--;
-                                    class148 var13 = class190.method1323(var12, arg1 ^ 0x30FE);
-                                    if (var13.field2772 != null) {
+                                    LocType var13 = class190.method1323(var12, arg1 ^ 0x30FE);
+                                    if (var13.multiloc != null) {
                                         var13 = var13.method1000((byte) -125);
-                                        if (var13 == null || var13.field2819 == -1) {
+                                        if (var13 == null || var13.mapfunction == -1) {
                                             continue;
                                         }
                                     }
                                     class48.field895[var5][var6][(-(var8 + 1) << 6) + var7] = var13.field2833 + 1;
                                     class65 var14 = new class65();
                                     var14.field1175 = scene.field760 - var4;
-                                    var14.field1180 = var13.field2819;
+                                    var14.field1180 = var13.mapfunction;
                                     var14.field1179 = var3;
                                     class232.field4361.method1624(var14, 105);
                                 }
@@ -637,7 +637,7 @@ public class class143 extends Linkable {
     public final void method940(int arg0) {
         int var2 = this.field2631;
         field2658++;
-        class148 var3 = this.field2636.method1000((byte) 127);
+        LocType var3 = this.field2636.method1000((byte) 127);
         if (arg0 != -64) {
             this.method940(-26);
         }
@@ -648,11 +648,11 @@ public class class143 extends Linkable {
             this.field2640 = 0;
             this.field2642 = 0;
         } else {
-            this.field2640 = var3.field2773 * 128;
-            this.field2637 = var3.field2817;
-            this.field2647 = var3.field2809;
-            this.field2631 = var3.field2808;
-            this.field2642 = var3.field2797;
+            this.field2640 = var3.bgsound_range * 128;
+            this.field2637 = var3.bgsound_random;
+            this.field2647 = var3.bgsound_mindelay;
+            this.field2631 = var3.bgsound_sound;
+            this.field2642 = var3.bgsound_maxdelay;
         }
         if (this.field2631 != var2 && this.field2646 != null) {
             class226.field4250.method1511(this.field2646);

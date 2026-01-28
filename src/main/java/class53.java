@@ -127,7 +127,7 @@ public class class53 implements KeyListener, FocusListener {
             if (class32.field524 >= 0 && var3 >= 0) {
                 class114.field2061[class32.field524] = ~var3;
                 class32.field524 = class32.field524 + 1 & 0x7F;
-                if (class32.field524 == class148.field2803) {
+                if (class32.field524 == LocType.field2803) {
                     class32.field524 = -1;
                 }
             }
@@ -156,7 +156,7 @@ public class class53 implements KeyListener, FocusListener {
         if (class32.field524 >= 0 && var3 >= 0) {
             class114.field2061[class32.field524] = var3;
             class32.field524 = class32.field524 + 1 & 0x7F;
-            if (class32.field524 == class148.field2803) {
+            if (class32.field524 == LocType.field2803) {
                 class32.field524 = -1;
             }
         }

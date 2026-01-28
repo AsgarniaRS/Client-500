@@ -191,7 +191,7 @@ public class Client extends GameShell {
         }
         class147.field2754 = class132.field2468;
         if (class115.modewhere != 0) {
-            class148.field2770 = true;
+            LocType.field2770 = true;
         }
     }
 
@@ -1035,11 +1035,11 @@ public class Client extends GameShell {
         class56.method415();
         class158.method1067(arg0 - 28216);
         class115.method786(0);
-        class148.method994(-125);
+        LocType.method994(-125);
         class136.method905((byte) -3);
         Js5Index.method963(true);
         class92.method670((byte) -112);
-        class82.method557();
+        ModelUnlit.method557();
         class210.method1438(108);
         class149.method1014(-96);
         class125.method847();

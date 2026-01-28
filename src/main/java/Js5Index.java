@@ -675,7 +675,7 @@ public abstract class Js5Index {
         }
         field2712++;
         if (var2.method604((byte) -53) > 9) {
-            return class166.method1142(new class88[] { class148.field2830, var2.method623(0, (byte) -127, var2.method604((byte) -53) - 8), class132.field2471, class68.field1238, var2, class209.field3984 }, -3);
+            return class166.method1142(new class88[] { LocType.field2830, var2.method623(0, (byte) -127, var2.method604((byte) -53) - 8), class132.field2471, class68.field1238, var2, class209.field3984 }, -3);
         } else if (var2.method604((byte) -53) > 6) {
             return class166.method1142(new class88[] { class36.field644, var2.method623(0, (byte) -27, var2.method604((byte) -53) - 4), class159.field3073, class68.field1238, var2, class209.field3984 }, -3);
         } else {

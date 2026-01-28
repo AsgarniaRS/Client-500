@@ -508,7 +508,6 @@ public class Packet extends Linkable {
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Li;B)V")
     public final void pjstr(class88 arg0, byte arg1) {
-        field857++;
         this.pos += arg0.method612(0, arg0.method604((byte) -53), arg1 ^ 0xFFFFC7B2, this.pos, this.data);
         this.data[this.pos++] = arg1;
     }

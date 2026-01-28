@@ -263,7 +263,7 @@ public class class170 extends class51 {
         if (arg3 < arg0) {
             var6 = new int[] { arg0 };
         }
-        for (class153 var8 = (class153) arg2.field1716.method1049(0); var8 != null; var8 = (class153) arg2.field1716.method1050((byte) -73)) {
+        for (class153 var8 = (class153) arg2.patches.method1049(0); var8 != null; var8 = (class153) arg2.patches.method1050((byte) -73)) {
             int var9 = (int) var8.nodeId;
             class204 var10 = (class204) this.field3254.get(-1, (long) var9);
             if (var10 == null) {
@@ -417,7 +417,7 @@ public class class170 extends class51 {
     public final synchronized void method1187(int arg0, MidiFile arg1, boolean arg2) {
         field3294++;
         this.method1210(false);
-        this.field3255.method270(arg1.field1717);
+        this.field3255.method270(arg1.midi);
         this.field3317 = arg0;
         this.field3320 = arg2;
         int var4 = this.field3255.method266();

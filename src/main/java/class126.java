@@ -263,7 +263,7 @@ public class class126 extends class136 {
             this.field2339 = arg2.g2();
         } else if (arg0 >= 30 && arg0 < 35) {
             this.field2344[arg0 - 30] = arg2.gjstr();
-            if (this.field2344[arg0 - 30].method624(class192.field3695, (byte) 71)) {
+            if (this.field2344[arg0 - 30].method624(class192.HIDDEN, (byte) 71)) {
                 this.field2344[arg0 - 30] = null;
             }
         } else if (arg0 == 40) {
@@ -492,28 +492,28 @@ public class class126 extends class136 {
                 if (var6) {
                     return null;
                 }
-                class82[] var8 = new class82[this.field2364.length];
+                ModelUnlit[] var8 = new ModelUnlit[this.field2364.length];
                 for (int var9 = 0; var9 < this.field2364.length; var9++) {
-                    var8[var9] = class82.method568(class170.field3264, this.field2364[var9], 0);
+                    var8[var9] = ModelUnlit.method568(class170.field3264, this.field2364[var9], 0);
                 }
-                class82 var10;
+                ModelUnlit var10;
                 if (var8.length == 1) {
                     var10 = var8[0];
                 } else {
-                    var10 = new class82(var8, var8.length);
+                    var10 = new ModelUnlit(var8, var8.length);
                 }
                 if (this.field2335 != null) {
                     for (int var11 = 0; var11 < this.field2335.length; var11++) {
                         if (this.field2337 == null || this.field2337.length <= var11) {
-                            var10.method564(this.field2335[var11], this.field2318[var11]);
+                            var10.recolour(this.field2335[var11], this.field2318[var11]);
                         } else {
-                            var10.method564(this.field2335[var11], class7.field108[this.field2337[var11] & 0xFF]);
+                            var10.recolour(this.field2335[var11], class7.field108[this.field2337[var11] & 0xFF]);
                         }
                     }
                 }
                 if (this.field2357 != null) {
                     for (int var12 = 0; var12 < this.field2357.length; var12++) {
-                        var10.method553(this.field2357[var12], this.field2347[var12]);
+                        var10.retexture(this.field2357[var12], this.field2347[var12]);
                     }
                 }
                 var5 = var10.method546(64, 768, -50, -10, -50);
@@ -544,28 +544,28 @@ public class class126 extends class136 {
             if (var8) {
                 return null;
             }
-            class82[] var10 = new class82[this.field2363.length];
+            ModelUnlit[] var10 = new ModelUnlit[this.field2363.length];
             for (int var11 = 0; var11 < this.field2363.length; var11++) {
-                var10[var11] = class82.method568(class170.field3264, this.field2363[var11], 0);
+                var10[var11] = ModelUnlit.method568(class170.field3264, this.field2363[var11], 0);
             }
-            class82 var12;
+            ModelUnlit var12;
             if (var10.length == 1) {
                 var12 = var10[0];
             } else {
-                var12 = new class82(var10, var10.length);
+                var12 = new ModelUnlit(var10, var10.length);
             }
             if (this.field2335 != null) {
                 for (int var13 = 0; var13 < this.field2335.length; var13++) {
                     if (this.field2337 == null || var13 >= this.field2337.length) {
-                        var12.method564(this.field2335[var13], this.field2318[var13]);
+                        var12.recolour(this.field2335[var13], this.field2318[var13]);
                     } else {
-                        var12.method564(this.field2335[var13], class7.field108[this.field2337[var13] & 0xFF]);
+                        var12.recolour(this.field2335[var13], class7.field108[this.field2337[var13] & 0xFF]);
                     }
                 }
             }
             if (this.field2357 != null) {
                 for (int var14 = 0; var14 < this.field2357.length; var14++) {
-                    var12.method553(this.field2357[var14], this.field2347[var14]);
+                    var12.retexture(this.field2357[var14], this.field2347[var14]);
                 }
             }
             var7 = var12.method546(this.field2360 + 64, 850 - -this.field2321, -30, -50, -30);

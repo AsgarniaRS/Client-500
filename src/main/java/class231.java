@@ -77,32 +77,32 @@ public class class231 extends class136 {
     private short[] field4338;
 
     @OriginalMember(owner = "client!vb", name = "d", descriptor = "(I)Lhe;")
-    public final class82 method1542(int arg0) {
+    public final ModelUnlit method1542(int arg0) {
         field4328++;
         if (this.field4326 == null) {
             return null;
         }
-        class82[] var2 = new class82[this.field4326.length];
+        ModelUnlit[] var2 = new ModelUnlit[this.field4326.length];
         if (arg0 != 255) {
             field4340 = null;
         }
         for (int var3 = 0; var3 < this.field4326.length; var3++) {
-            var2[var3] = class82.method568(class43.field733, this.field4326[var3], 0);
+            var2[var3] = ModelUnlit.method568(class43.field733, this.field4326[var3], 0);
         }
-        class82 var4;
+        ModelUnlit var4;
         if (var2.length == 1) {
             var4 = var2[0];
         } else {
-            var4 = new class82(var2, var2.length);
+            var4 = new ModelUnlit(var2, var2.length);
         }
         if (this.field4338 != null) {
             for (int var5 = 0; var5 < this.field4338.length; var5++) {
-                var4.method564(this.field4338[var5], this.field4329[var5]);
+                var4.recolour(this.field4338[var5], this.field4329[var5]);
             }
         }
         if (this.field4332 != null) {
             for (int var6 = 0; var6 < this.field4332.length; var6++) {
-                var4.method553(this.field4332[var6], this.field4323[var6]);
+                var4.retexture(this.field4332[var6], this.field4323[var6]);
             }
         }
         return var4;
@@ -157,27 +157,27 @@ public class class231 extends class136 {
     }
 
     @OriginalMember(owner = "client!vb", name = "b", descriptor = "(Z)Lhe;")
-    public final class82 method1545(boolean arg0) {
+    public final ModelUnlit method1545(boolean arg0) {
         field4325++;
         if (!arg0) {
             return null;
         }
         int var2 = 0;
-        class82[] var3 = new class82[5];
+        ModelUnlit[] var3 = new ModelUnlit[5];
         for (int var4 = 0; var4 < 5; var4++) {
             if (this.field4341[var4] != -1) {
-                var3[var2++] = class82.method568(class43.field733, this.field4341[var4], 0);
+                var3[var2++] = ModelUnlit.method568(class43.field733, this.field4341[var4], 0);
             }
         }
-        class82 var5 = new class82(var3, var2);
+        ModelUnlit var5 = new ModelUnlit(var3, var2);
         if (this.field4338 != null) {
             for (int var6 = 0; var6 < this.field4338.length; var6++) {
-                var5.method564(this.field4338[var6], this.field4329[var6]);
+                var5.recolour(this.field4338[var6], this.field4329[var6]);
             }
         }
         if (this.field4332 != null) {
             for (int var7 = 0; var7 < this.field4332.length; var7++) {
-                var5.method553(this.field4332[var7], this.field4323[var7]);
+                var5.retexture(this.field4332[var7], this.field4323[var7]);
             }
         }
         return var5;

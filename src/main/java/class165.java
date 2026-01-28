@@ -176,7 +176,7 @@ public class class165 {
                         }
                         if (class203.field3869 && class29.field487) {
                             int var16 = class28.field471;
-                            int var17 = var16 - class148.field2793;
+                            int var17 = var16 - LocType.field2793;
                             if (class127.field2373 > var17) {
                                 var17 = class127.field2373;
                             }

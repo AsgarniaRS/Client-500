@@ -83,7 +83,7 @@ public class class11 extends class23 {
         }
         ++field165;
         class202.method1387(0);
-        if (class148.field2770) {
+        if (LocType.field2770) {
             int var5 = arg0 - 5 + 512;
             int var6 = arg2 - -20;
             class3.field30.method150(class166.method1142(new class88[] { class180.field3571, class170.method1214(class13.field192, -93) }, -3), var5, var6, 16776960, -1);

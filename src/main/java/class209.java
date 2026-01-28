@@ -123,28 +123,28 @@ public class class209 {
                 return null;
             }
             int var7 = 0;
-            class82[] var8 = new class82[12];
+            ModelUnlit[] var8 = new ModelUnlit[12];
             for (int var9 = 0; var9 < 12; var9++) {
                 int var12 = this.field3968[var9];
                 if ((var12 & 0x40000000) != 0) {
-                    class82 var14 = class71.method472(var12 & 0x3FFFFFFF, (byte) -96).method1018((byte) 82, this.field3959);
+                    ModelUnlit var14 = class71.method472(var12 & 0x3FFFFFFF, (byte) -96).method1018((byte) 82, this.field3959);
                     if (var14 != null) {
                         var8[var7++] = var14;
                     }
                 } else if ((var12 & Integer.MIN_VALUE) != 0) {
-                    class82 var13 = class103.method712(var12 & 0x3FFFFFFF, 3).method1545(true);
+                    ModelUnlit var13 = class103.method712(var12 & 0x3FFFFFFF, 3).method1545(true);
                     if (var13 != null) {
                         var8[var7++] = var13;
                     }
                 }
             }
-            class82 var10 = new class82(var8, var7);
+            ModelUnlit var10 = new ModelUnlit(var8, var7);
             for (int var11 = 0; var11 < 5; var11++) {
                 if (this.field3964[var11] < class7.field96[var11].length) {
-                    var10.method564(class14.field219[var11], class7.field96[var11][this.field3964[var11]]);
+                    var10.recolour(class14.field219[var11], class7.field96[var11][this.field3964[var11]]);
                 }
                 if (this.field3964[var11] < GameShell.field1596[var11].length) {
-                    var10.method564(Isaac.field2752[var11], GameShell.field1596[var11][this.field3964[var11]]);
+                    var10.recolour(Isaac.field2752[var11], GameShell.field1596[var11][this.field3964[var11]]);
                 }
             }
             var4 = var10.method546(64, 768, -50, -10, -50);
@@ -231,17 +231,17 @@ public class class209 {
                 }
             }
             if (var10 == null) {
-                class82[] var13 = new class82[12];
+                ModelUnlit[] var13 = new ModelUnlit[12];
                 int var14 = 0;
                 for (int var15 = 0; var15 < 12; var15++) {
                     int var27 = var8[var15];
                     if ((var27 & 0x40000000) != 0) {
-                        class82 var28 = class71.method472(var27 & 0x3FFFFFFF, (byte) -118).method1013(this.field3959, 71);
+                        ModelUnlit var28 = class71.method472(var27 & 0x3FFFFFFF, (byte) -118).method1013(this.field3959, 71);
                         if (var28 != null) {
                             var13[var14++] = var28;
                         }
                     } else if ((Integer.MIN_VALUE & var27) != 0) {
-                        class82 var29 = class103.method712(var27 & 0x3FFFFFFF, 3).method1542(255);
+                        ModelUnlit var29 = class103.method712(var27 & 0x3FFFFFFF, 3).method1542(255);
                         if (var29 != null) {
                             var13[var14++] = var29;
                         }
@@ -258,18 +258,18 @@ public class class209 {
                             int var22 = var17.field2841[var18][2];
                             int var23 = var17.field2841[var18][4];
                             int var24 = var17.field2841[var18][5];
-                            var13[var18 + 1].method549(var21, var19, var22);
+                            var13[var18 + 1].translate(var21, var19, var22);
                             var13[var18 + 1].method565(var20, var23, var24);
                         }
                     }
                 }
-                class82 var25 = new class82(var13, var14);
+                ModelUnlit var25 = new ModelUnlit(var13, var14);
                 for (int var26 = 0; var26 < 5; var26++) {
                     if (this.field3964[var26] < class7.field96[var26].length) {
-                        var25.method564(class14.field219[var26], class7.field96[var26][this.field3964[var26]]);
+                        var25.recolour(class14.field219[var26], class7.field96[var26][this.field3964[var26]]);
                     }
                     if (GameShell.field1596[var26].length > this.field3964[var26]) {
-                        var25.method564(Isaac.field2752[var26], GameShell.field1596[var26][this.field3964[var26]]);
+                        var25.recolour(Isaac.field2752[var26], GameShell.field1596[var26][this.field3964[var26]]);
                     }
                 }
                 var10 = var25.method546(64, 850, -30, -50, -30);

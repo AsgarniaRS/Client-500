@@ -156,18 +156,18 @@ public class class33 extends class136 {
         int var3 = -98 % ((arg1 - 72) / 41);
         class30 var4 = (class30) class230.field4304.method135(-98, (long) this.field539);
         if (var4 == null) {
-            class82 var5 = class82.method568(class141.field2609, this.field547, 0);
+            ModelUnlit var5 = ModelUnlit.method568(class141.field2609, this.field547, 0);
             if (var5 == null) {
                 return null;
             }
             if (this.field537 != null) {
                 for (int var6 = 0; var6 < this.field537.length; var6++) {
-                    var5.method564(this.field537[var6], this.field549[var6]);
+                    var5.recolour(this.field537[var6], this.field549[var6]);
                 }
             }
             if (this.field529 != null) {
                 for (int var7 = 0; var7 < this.field529.length; var7++) {
-                    var5.method553(this.field529[var7], this.field548[var7]);
+                    var5.retexture(this.field529[var7], this.field548[var7]);
                 }
             }
             var4 = var5.method546(this.field550 + 64, this.field531 + 850, -30, -50, -30);

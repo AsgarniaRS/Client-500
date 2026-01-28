@@ -122,10 +122,10 @@ public class class97 extends class136 {
                 class201.method1382(84);
             }
             if (arg0.method624(class248.field4549, (byte) -41)) {
-                class148.field2770 = true;
+                LocType.field2770 = true;
             }
             if (arg0.method624(class34.field583, (byte) 123)) {
-                class148.field2770 = false;
+                LocType.field2770 = false;
             }
             arg0.method624(scene.field751, (byte) 68);
             arg0.method624(class1.field6, (byte) -65);

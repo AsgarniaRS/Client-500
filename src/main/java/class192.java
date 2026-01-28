@@ -35,7 +35,7 @@ public class class192 extends Linkable {
     private static class88 field3698 = class208.method1425(105, "Hidden");
 
     @OriginalMember(owner = "client!rg", name = "y", descriptor = "Li;")
-    public static class88 field3695 = field3698;
+    public static class88 HIDDEN = field3698;
 
     @OriginalMember(owner = "client!rg", name = "I", descriptor = "Li;")
     public static class88 field3705 = field3691;
@@ -242,7 +242,7 @@ public class class192 extends Linkable {
         field3698 = null;
         field3705 = null;
         if (!arg0) {
-            field3695 = null;
+            HIDDEN = null;
         }
     }
 

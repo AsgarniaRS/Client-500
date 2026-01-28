@@ -40,7 +40,7 @@ public class class27 {
     @OriginalMember(owner = "client!cd", name = "a", descriptor = "(Lnb;ILnb;ZZ)V")
     public static final void method166(Js5Index arg0, int arg1, Js5Index arg2, boolean arg3, boolean arg4) {
         field459++;
-        class132.field2467 = arg4;
+        class132.lowMem = arg4;
         class20.field317 = arg3;
         class200.field3829 = arg0;
         if (arg1 >= -63) {

@@ -325,26 +325,26 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     }
 
     @OriginalMember(owner = "client!be", name = "a", descriptor = "(IIIZILnf;)V")
-    public static final void method84(int arg0, int arg1, int arg2, boolean arg3, int arg4, class148 arg5) {
+    public static final void method84(int arg0, int arg1, int arg2, boolean arg3, int arg4, LocType arg5) {
         class143 var6 = new class143();
-        var6.field2640 = arg5.field2773 * 128;
-        var6.field2637 = arg5.field2817;
+        var6.field2640 = arg5.bgsound_range * 128;
+        var6.field2637 = arg5.bgsound_random;
         var6.field2649 = arg1;
-        var6.field2631 = arg5.field2808;
-        int var7 = arg5.field2776;
+        var6.field2631 = arg5.bgsound_sound;
+        int var7 = arg5.width;
         var6.field2634 = arg4 * 128;
         var6.field2657 = arg0 * 128;
         field262++;
-        var6.field2642 = arg5.field2797;
-        var6.field2647 = arg5.field2809;
-        int var8 = arg5.field2796;
+        var6.field2642 = arg5.bgsound_maxdelay;
+        var6.field2647 = arg5.bgsound_mindelay;
+        int var8 = arg5.length;
         if (arg2 == 1 || arg2 == 3) {
-            var8 = arg5.field2776;
-            var7 = arg5.field2796;
+            var8 = arg5.width;
+            var7 = arg5.length;
         }
         var6.field2641 = (arg0 + var7) * 128;
         var6.field2632 = (arg4 + var8) * 128;
-        if (arg5.field2772 != null) {
+        if (arg5.multiloc != null) {
             var6.field2636 = arg5;
             var6.method940(-64);
         }

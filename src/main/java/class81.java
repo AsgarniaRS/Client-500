@@ -77,8 +77,8 @@ public class class81 extends class145 {
     private final class145 method536(int arg0) {
         boolean var2 = class62.field1137 != class145.field2723;
         field1470++;
-        class148 var3 = class190.method1323(this.field1472, -12450);
-        if (var3.field2772 != null) {
+        LocType var3 = class190.method1323(this.field1472, -12450);
+        if (var3.multiloc != null) {
             var3 = var3.method1000((byte) -59);
         }
         if (var3 == null) {
@@ -87,11 +87,11 @@ public class class81 extends class145 {
         int var4;
         int var5;
         if (this.field1458 == 1 || this.field1458 == 3) {
-            var5 = var3.field2776;
-            var4 = var3.field2796;
+            var5 = var3.width;
+            var4 = var3.length;
         } else {
-            var4 = var3.field2776;
-            var5 = var3.field2796;
+            var4 = var3.width;
+            var5 = var3.length;
         }
         int var6 = (var4 + 1 >> 1) + this.field1457;
         int var7 = (var4 >> 1) + this.field1457;
@@ -113,7 +113,7 @@ public class class81 extends class145 {
         if (this.field1459 == null) {
             var16 = var3.method999(this.field1469, var14, var10, var12, false, var15, this.field1458, var11, -21737);
         } else {
-            var16 = var3.method1006((byte) 127, var11, var12, this.field1469, var15, this.field1474, this.field1459, var10, var14, this.field1458);
+            var16 = var3.getTempModel((byte) 127, var11, var12, this.field1469, var15, this.field1474, this.field1459, var10, var14, this.field1458);
         }
         return var16 == null ? null : var16.field3986;
     }

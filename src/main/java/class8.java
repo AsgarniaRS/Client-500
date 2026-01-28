@@ -33,7 +33,7 @@ public class class8 {
 
     @OriginalMember(owner = "client!ag", name = "a", descriptor = "(III)Z")
     public static final boolean method43(int arg0, int arg1, int arg2) {
-        class148 var3 = class190.method1323(arg2, arg1 ^ 0xFFFFCF56);
+        LocType var3 = class190.method1323(arg2, arg1 ^ 0xFFFFCF56);
         if (arg1 != 8) {
             method45(-34);
         }

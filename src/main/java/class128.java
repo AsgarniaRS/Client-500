@@ -189,8 +189,8 @@ public class class128 extends class23 {
             if (~var6 < -1L) {
                 var10 = arg1;
             }
-            class148 var14 = class190.method1323(var13, -12450);
-            if (~var14.field2834 == 0) {
+            LocType var14 = class190.method1323(var13, -12450);
+            if (~var14.mapscene == 0) {
                 if (var9 == 0 || var9 == 2) {
                     if (~var8 != -1) {
                         if (var8 != 1) {
@@ -259,11 +259,11 @@ public class class128 extends class23 {
                     }
                 }
             } else {
-                class193 var15 = class240.field4462[var14.field2834];
+                class193 var15 = class240.field4462[var14.mapscene];
                 if (var15 != null) {
-                    int var16 = (var14.field2776 * 4 + -var15.field2436) / 2;
-                    int var17 = (var14.field2796 * 4 + -var15.field2439) / 2;
-                    var15.method878(48 - -(arg5 * 4) + var16, 48 - -((104 - (arg0 - -var14.field2796)) * 4) + var17);
+                    int var16 = (var14.width * 4 + -var15.field2436) / 2;
+                    int var17 = (var14.length * 4 + -var15.field2439) / 2;
+                    var15.method878(48 - -(arg5 * 4) + var16, 48 - -((104 - (arg0 - -var14.length)) * 4) + var17);
                 }
             }
         }
@@ -272,13 +272,13 @@ public class class128 extends class23 {
             int var20 = ((int) var18 & 3211596) >> 20;
             int var21 = ((int) var18 & 517438) >> 14;
             int var22 = Integer.MAX_VALUE & (int) (var18 >>> 32);
-            class148 var23 = class190.method1323(var22, -12450);
-            if (~var23.field2834 != 0) {
-                class193 var24 = class240.field4462[var23.field2834];
+            LocType var23 = class190.method1323(var22, -12450);
+            if (~var23.mapscene != 0) {
+                class193 var24 = class240.field4462[var23.mapscene];
                 if (var24 != null) {
-                    int var25 = (var23.field2776 * 4 - var24.field2436) / 2;
-                    int var26 = (var23.field2796 * 4 - var24.field2439) / 2;
-                    var24.method878(arg5 * 4 + 48 - -var25, (-var23.field2796 + -arg0 + 104) * 4 + var26 + 48);
+                    int var25 = (var23.width * 4 - var24.field2436) / 2;
+                    int var26 = (var23.length * 4 - var24.field2439) / 2;
+                    var24.method878(arg5 * 4 + 48 - -var25, (-var23.length + -arg0 + 104) * 4 + var26 + 48);
                 }
             } else if (var21 == 9) {
                 int var27 = 15658734;
@@ -303,13 +303,13 @@ public class class128 extends class23 {
         long var30 = class74.method501(arg3, arg5, arg0);
         if (~var30 != -1L) {
             int var32 = Integer.MAX_VALUE & (int) (var30 >>> 32);
-            class148 var33 = class190.method1323(var32, -12450);
-            if (~var33.field2834 != 0) {
-                class193 var34 = class240.field4462[var33.field2834];
+            LocType var33 = class190.method1323(var32, -12450);
+            if (~var33.mapscene != 0) {
+                class193 var34 = class240.field4462[var33.mapscene];
                 if (var34 != null) {
-                    int var35 = (var33.field2776 * 4 - var34.field2436) / 2;
-                    int var36 = (var33.field2796 * 4 - var34.field2439) / 2;
-                    var34.method878(arg5 * 4 + 48 + var35, (-var33.field2796 + 104 + -arg0) * 4 + 48 - -var36);
+                    int var35 = (var33.width * 4 - var34.field2436) / 2;
+                    int var36 = (var33.length * 4 - var34.field2439) / 2;
+                    var34.method878(arg5 * 4 + 48 + var35, (-var33.length + 104 + -arg0) * 4 + 48 - -var36);
                     return;
                 }
             }

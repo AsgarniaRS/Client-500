@@ -139,17 +139,17 @@ public class class101 extends class136 {
         int var6 = (int) arg2 >> 14 & 0x1F;
         int var7 = (int) arg2 >> 20 & 0x3;
         if (var6 == 10 || var6 == 11 || var6 == 22) {
-            class148 var8 = class190.method1323(var5, -12450);
+            LocType var8 = class190.method1323(var5, -12450);
             int var9;
             int var10;
             if (var7 == 0 || var7 == 2) {
-                var10 = var8.field2796;
-                var9 = var8.field2776;
+                var10 = var8.length;
+                var9 = var8.width;
             } else {
-                var9 = var8.field2796;
-                var10 = var8.field2776;
+                var9 = var8.length;
+                var10 = var8.width;
             }
-            int var11 = var8.field2783;
+            int var11 = var8.forceapproach;
             if (var7 != 0) {
                 var11 = (var11 >> 4 - var7) + (var11 << var7 & 0xF);
             }

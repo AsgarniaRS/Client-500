@@ -58,14 +58,14 @@ public class class121 {
             for (int var8 = 0; var8 < class50.field930; var8++) {
                 int var41 = class139.field2579[var8] * 4 + 2 - class240.field4458.field4138 / 32;
                 int var42 = class134.field2503[var8] * 4 + 2 - class240.field4458.field4123 / 32;
-                class148 var43 = class190.method1323(Isaac.field2747[var8], -12450);
-                if (var43.field2772 != null) {
+                LocType var43 = class190.method1323(Isaac.field2747[var8], -12450);
+                if (var43.multiloc != null) {
                     var43 = var43.method1000((byte) 126);
-                    if (var43 == null || var43.field2819 == -1) {
+                    if (var43 == null || var43.mapfunction == -1) {
                         continue;
                     }
                 }
-                class57.method418(arg4, arg2, arg3 + 13423, var42, arg0, class247.field4527[var43.field2819], var41);
+                class57.method418(arg4, arg2, arg3 + 13423, var42, arg0, class247.field4527[var43.mapfunction], var41);
             }
             for (int var9 = 0; var9 < 104; var9++) {
                 for (int var37 = 0; var37 < 104; var37++) {

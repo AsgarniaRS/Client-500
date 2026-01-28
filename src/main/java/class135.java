@@ -91,7 +91,7 @@ public class class135 extends class23 {
         long var7 = (long) arg4;
         class30 var9 = (class30) class108.field1958.method135(-108, var7);
         if (var9 == null) {
-            class82 var10 = class82.method568(class233.field4367, arg4, 0);
+            ModelUnlit var10 = ModelUnlit.method568(class233.field4367, arg4, 0);
             if (var10 == null) {
                 return null;
             }

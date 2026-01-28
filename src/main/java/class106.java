@@ -292,7 +292,7 @@ public class class106 {
         class192.field3690 = 0;
         Js5Local.field339 = 0;
         class176.field3549 = 0;
-        class148.field2825 = 0;
+        LocType.field2825 = 0;
         class108.field1955 = 0;
         class29.field492 = 0;
         class60.field1122 = 0;
@@ -432,7 +432,7 @@ public class class106 {
         class199.field3798 = 0;
         class155.field3005 = 0;
         class149.field2901 = 0;
-        class148.field2771 = 0;
+        LocType.field2771 = 0;
         class190.field3673 = 0;
         class119.field2181 = 0;
         class164.field3142 = 0;
@@ -440,7 +440,7 @@ public class class106 {
         GameShell.field1564 = 0;
         Packet.field868 = 0;
         class170.field3280 = 0;
-        class148.field2829 = 0;
+        LocType.field2829 = 0;
         Js5Local.field358 = 0;
         class218.field4092 = 0;
         class222.field4193 = 0;
@@ -475,10 +475,10 @@ public class class106 {
         IntHashTable.field1808 = 0;
         class136.field2534 = 0;
         class167.field3229 = 0;
-        class148.field2786 = 0;
+        LocType.field2786 = 0;
         class120.field2195 = 0;
         class113.field2039 = 0;
-        class148.field2795 = 0;
+        LocType.field2795 = 0;
         Packet.field846 = 0;
         class159.field3069 = 0;
         Packet.field809 = 0;
@@ -592,7 +592,7 @@ public class class106 {
         class12.field178 = 0;
         class50.field928 = 0;
         class208.field3947 = 0;
-        class148.field2799 = 0;
+        LocType.field2799 = 0;
         class65.field1184 = 0;
         class247.field4525 = 0;
         field1927 = 0;
@@ -679,7 +679,7 @@ public class class106 {
         class116.field2102 = 0;
         class16.field245 = 0;
         class236.field4408 = 0;
-        class148.field2800 = 0;
+        LocType.field2800 = 0;
         GZip.field1116 = 0;
         class221.field4178 = 0;
         class207.field3926 = 0;
@@ -832,7 +832,7 @@ public class class106 {
         class234.field4386 = 0;
         class43.field737 = 0;
         class147.field2761 = 0;
-        class148.field2802 = 0;
+        LocType.field2802 = 0;
         class9.field134 = 0;
         class149.field2896 = 0;
         class143.field2653 = 0;
@@ -962,7 +962,7 @@ public class class106 {
         class114.field2060 = 0;
         class71.field1327 = 0;
         class203.field3866 = 0;
-        class148.field2824 = 0;
+        LocType.field2824 = 0;
         class57.field1082 = 0;
         class80.field1450 = 0;
         class143.field2660 = 0;
@@ -1028,7 +1028,7 @@ public class class106 {
         Packet.field864 = 0;
         GameShell.field1567 = 0;
         class201.field3835 = 0;
-        class148.field2827 = 0;
+        LocType.field2827 = 0;
         IntHashTable.field1810 = 0;
         class248.field4533 = 0;
         class208.field3955 = 0;
@@ -1048,7 +1048,7 @@ public class class106 {
         class218.field4097 = 0;
         Packet.field801 = 0;
         class55.field1026 = 0;
-        class148.field2822 = 0;
+        LocType.field2822 = 0;
         class202.field3844 = 0;
         class205.field3915 = 0;
         class119.field2184 = 0;
@@ -1209,7 +1209,7 @@ public class class106 {
         class174.field3421 = 0;
         class97.field1790 = 0;
         class244.field4491 = 0;
-        class148.field2814 = 0;
+        LocType.field2814 = 0;
         Client.field557 = 0;
         class36.field627 = 0;
         class36.field634 = 0;
@@ -1226,7 +1226,7 @@ public class class106 {
         class53.field968 = 0;
         class88.field1654 = 0;
         Packet.field835 = 0;
-        class148.field2787 = 0;
+        LocType.field2787 = 0;
         class11.field165 = 0;
         class172.field3334 = 0;
         class186.field3630 = 0;
@@ -1249,7 +1249,7 @@ public class class106 {
         class133.field2482 = 0;
         Js5Index.field2689 = 0;
         class35.field598 = 0;
-        class148.field2810 = 0;
+        LocType.field2810 = 0;
         GZip.field1115 = 0;
         class6.field92 = 0;
         class245.field4505 = 0;
@@ -1303,7 +1303,7 @@ public class class106 {
         class171.field3324 = 0;
         class109.field1998 = 0;
         class153.field2964 = 0;
-        class148.field2777 = 0;
+        LocType.field2777 = 0;
         class55.field1019 = 0;
         class88.field1642 = 0;
         class196.field3763 = 0;

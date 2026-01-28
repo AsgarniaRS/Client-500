@@ -134,19 +134,19 @@ public class class204 extends Linkable {
             if (var13 != var16) {
                 var13 = var16;
                 if (var20 == 2 && class202.method1388(class149.field2909, var18, var19, var16)) {
-                    class148 var22 = class190.method1323(var21, -12450);
-                    if (var22.field2772 != null) {
+                    LocType var22 = class190.method1323(var21, -12450);
+                    if (var22.multiloc != null) {
                         var22 = var22.method1000((byte) 118);
                     }
                     if (var22 == null) {
                         continue;
                     }
                     if (class28.field475 == 1) {
-                        class98.method687(9746, var18, class35.field608, (short) 26, var16, class166.method1142(new class88[] { class78.field1414, class175.field3528, var22.field2775 }, arg6 + 1450689184), var19);
+                        class98.method687(9746, var18, class35.field608, (short) 26, var16, class166.method1142(new class88[] { class78.field1414, class175.field3528, var22.name}, arg6 + 1450689184), var19);
                         Ground.field942++;
                     } else if (!class10.field145) {
                         class43.field724++;
-                        class88[] var23 = var22.field2818;
+                        class88[] var23 = var22.op;
                         if (IntHashTable.field1809) {
                             var23 = class138.method923(var23, (byte) 72);
                         }
@@ -170,14 +170,14 @@ public class class204 extends Linkable {
                                     if (var24 == 4) {
                                         var25 = 1004;
                                     }
-                                    class98.method687(9746, var18, var23[var24], var25, var16, class166.method1142(new class88[] { class17.field259, var22.field2775 }, -3), var19);
+                                    class98.method687(9746, var18, var23[var24], var25, var16, class166.method1142(new class88[] { class17.field259, var22.name}, -3), var19);
                                 }
                             }
                         }
-                        class98.method687(9746, var18, class65.field1174, (short) 1005, (long) var22.field2833, class166.method1142(new class88[] { class17.field259, var22.field2775 }, -3), var19);
+                        class98.method687(9746, var18, class65.field1174, (short) 1005, (long) var22.field2833, class166.method1142(new class88[] { class17.field259, var22.name}, -3), var19);
                     } else if ((class115.field2086 & 0x4) == 4) {
                         class15.field231++;
-                        class98.method687(9746, var18, class201.field3837, (short) 24, var16, class166.method1142(new class88[] { class28.field464, class175.field3528, var22.field2775 }, -3), var19);
+                        class98.method687(9746, var18, class201.field3837, (short) 24, var16, class166.method1142(new class88[] { class28.field464, class175.field3528, var22.name}, -3), var19);
                     }
                 }
                 if (var20 == 1) {

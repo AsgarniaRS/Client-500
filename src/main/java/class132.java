@@ -38,7 +38,7 @@ public class class132 extends class23 {
     private static class88 field2476 = class208.method1425(105, "RuneScape is loading )2 please wait)3)3)3");
 
     @OriginalMember(owner = "client!ma", name = "U", descriptor = "Z")
-    public static boolean field2467 = false;
+    public static boolean lowMem = false;
 
     @OriginalMember(owner = "client!ma", name = "V", descriptor = "Li;")
     public static class88 field2468 = field2476;

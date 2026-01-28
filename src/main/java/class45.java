@@ -228,7 +228,7 @@ public class class45 extends class23 {
         class37.field672 = arg0;
         int var4 = 41 % ((arg1 - 8) / 50);
         ++field785;
-        class148.field2780 = arg3;
+        LocType.field2780 = arg3;
     }
 
     @OriginalMember(owner = "client!e", name = "b", descriptor = "(B)V")

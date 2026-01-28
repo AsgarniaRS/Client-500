@@ -106,7 +106,7 @@ public class class112 {
         class217.field4058 = class55.field1015;
         class88.field1655 = class230.field4313;
         class216.field4053 = class147.field2756;
-        class192.field3695 = class103.field1872;
+        class192.HIDDEN = class103.field1872;
         class70.field1283 = class1.field5;
         class20.field312 = class28.field474;
         class70.field1301 = class191.field3686;

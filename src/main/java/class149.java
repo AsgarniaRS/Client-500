@@ -274,22 +274,22 @@ public class class149 extends class136 {
     @OriginalMember(owner = "client!ng", name = "b", descriptor = "(Z)Lle;")
     public final class125 method1010(boolean arg0) {
         field2880++;
-        class82 var2 = class82.method568(class156.field3010, this.field2864, 0);
+        ModelUnlit var2 = ModelUnlit.method568(class156.field3010, this.field2864, 0);
         if (var2 == null) {
             return null;
         }
         if (this.field2857 != null) {
             for (int var3 = 0; var3 < this.field2857.length; var3++) {
                 if (this.field2889 == null || var3 >= this.field2889.length) {
-                    var2.method564(this.field2857[var3], this.field2851[var3]);
+                    var2.recolour(this.field2857[var3], this.field2851[var3]);
                 } else {
-                    var2.method564(this.field2857[var3], class109.field1970[this.field2889[var3] & 0xFF]);
+                    var2.recolour(this.field2857[var3], class109.field1970[this.field2889[var3] & 0xFF]);
                 }
             }
         }
         if (this.field2865 != null) {
             for (int var4 = 0; var4 < this.field2865.length; var4++) {
-                var2.method553(this.field2865[var4], this.field2839[var4]);
+                var2.retexture(this.field2865[var4], this.field2839[var4]);
             }
         }
         class125 var5 = var2.method547(this.field2868 + 64, this.field2842 + 768, -50, -10, -50);
@@ -329,7 +329,7 @@ public class class149 extends class136 {
     }
 
     @OriginalMember(owner = "client!ng", name = "a", descriptor = "(ZI)Lhe;")
-    public final class82 method1013(boolean arg0, int arg1) {
+    public final ModelUnlit method1013(boolean arg0, int arg1) {
         field2884++;
         int var3 = this.field2890;
         int var4 = this.field2844;
@@ -343,32 +343,32 @@ public class class149 extends class136 {
         if (var3 == -1) {
             return null;
         }
-        class82 var7 = class82.method568(class156.field3010, var3, 0);
+        ModelUnlit var7 = ModelUnlit.method568(class156.field3010, var3, 0);
         if (var6 != -1) {
-            class82 var8 = class82.method568(class156.field3010, var6, 0);
+            ModelUnlit var8 = ModelUnlit.method568(class156.field3010, var6, 0);
             if (var4 == -1) {
-                class82[] var9 = new class82[] { var7, var8 };
-                var7 = new class82(var9, 2);
+                ModelUnlit[] var9 = new ModelUnlit[] { var7, var8 };
+                var7 = new ModelUnlit(var9, 2);
             } else {
-                class82 var10 = class82.method568(class156.field3010, var4, 0);
-                class82[] var11 = new class82[] { var7, var8, var10 };
-                var7 = new class82(var11, 3);
+                ModelUnlit var10 = ModelUnlit.method568(class156.field3010, var4, 0);
+                ModelUnlit[] var11 = new ModelUnlit[] { var7, var8, var10 };
+                var7 = new ModelUnlit(var11, 3);
             }
         }
         if (!arg0 && this.field2859 != 0) {
-            var7.method549(0, this.field2859, 0);
+            var7.translate(0, this.field2859, 0);
         }
         if (arg0 && this.field2881 != 0) {
-            var7.method549(0, this.field2881, 0);
+            var7.translate(0, this.field2881, 0);
         }
         if (this.field2857 != null) {
             for (int var12 = 0; var12 < this.field2857.length; var12++) {
-                var7.method564(this.field2857[var12], this.field2851[var12]);
+                var7.recolour(this.field2857[var12], this.field2851[var12]);
             }
         }
         if (this.field2865 != null) {
             for (int var13 = 0; var13 < this.field2865.length; var13++) {
-                var7.method553(this.field2865[var13], this.field2839[var13]);
+                var7.retexture(this.field2865[var13], this.field2839[var13]);
             }
         }
         return var7;
@@ -432,7 +432,7 @@ public class class149 extends class136 {
     }
 
     @OriginalMember(owner = "client!ng", name = "a", descriptor = "(BZ)Lhe;")
-    public final class82 method1018(byte arg0, boolean arg1) {
+    public final ModelUnlit method1018(byte arg0, boolean arg1) {
         int var3 = this.field2850;
         int var4 = this.field2840;
         field2887++;
@@ -446,20 +446,20 @@ public class class149 extends class136 {
         if (var3 == -1) {
             return null;
         }
-        class82 var5 = class82.method568(class156.field3010, var3, 0);
+        ModelUnlit var5 = ModelUnlit.method568(class156.field3010, var3, 0);
         if (var4 != -1) {
-            class82 var6 = class82.method568(class156.field3010, var4, 0);
-            class82[] var7 = new class82[] { var5, var6 };
-            var5 = new class82(var7, 2);
+            ModelUnlit var6 = ModelUnlit.method568(class156.field3010, var4, 0);
+            ModelUnlit[] var7 = new ModelUnlit[] { var5, var6 };
+            var5 = new ModelUnlit(var7, 2);
         }
         if (this.field2857 != null) {
             for (int var8 = 0; var8 < this.field2857.length; var8++) {
-                var5.method564(this.field2857[var8], this.field2851[var8]);
+                var5.recolour(this.field2857[var8], this.field2851[var8]);
             }
         }
         if (this.field2865 != null) {
             for (int var9 = 0; var9 < this.field2865.length; var9++) {
-                var5.method553(this.field2865[var9], this.field2839[var9]);
+                var5.retexture(this.field2865[var9], this.field2839[var9]);
             }
         }
         return var5;
@@ -689,7 +689,7 @@ public class class149 extends class136 {
             this.field2882 = arg2.g2();
         } else if (arg0 >= 30 && arg0 < 35) {
             this.field2900[arg0 - 30] = arg2.gjstr();
-            if (this.field2900[arg0 - 30].method624(class192.field3695, (byte) 103)) {
+            if (this.field2900[arg0 - 30].method624(class192.HIDDEN, (byte) 103)) {
                 this.field2900[arg0 - 30] = null;
             }
         } else if (arg0 >= 35 && arg0 < 40) {
@@ -812,22 +812,22 @@ public class class149 extends class136 {
         }
         class30 var7 = (class30) class241.field4472.method135(-117, (long) this.field2846);
         if (var7 == null) {
-            class82 var8 = class82.method568(class156.field3010, this.field2864, 0);
+            ModelUnlit var8 = ModelUnlit.method568(class156.field3010, this.field2864, 0);
             if (var8 == null) {
                 return null;
             }
             if (this.field2857 != null) {
                 for (int var9 = 0; var9 < this.field2857.length; var9++) {
                     if (this.field2889 == null || this.field2889.length <= var9) {
-                        var8.method564(this.field2857[var9], this.field2851[var9]);
+                        var8.recolour(this.field2857[var9], this.field2851[var9]);
                     } else {
-                        var8.method564(this.field2857[var9], class109.field1970[this.field2889[var9] & 0xFF]);
+                        var8.recolour(this.field2857[var9], class109.field1970[this.field2889[var9] & 0xFF]);
                     }
                 }
             }
             if (this.field2865 != null) {
                 for (int var10 = 0; var10 < this.field2865.length; var10++) {
-                    var8.method553(this.field2865[var10], this.field2839[var10]);
+                    var8.retexture(this.field2865[var10], this.field2839[var10]);
                 }
             }
             var7 = var8.method546(this.field2868 + 64, this.field2842 + 768, -50, -10, -50);

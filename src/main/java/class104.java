@@ -273,7 +273,7 @@ public class class104 extends class23 {
                 if (class54.field1012 > 0) {
                     --class54.field1012;
                 }
-                if (class148.field2770) {
+                if (LocType.field2770) {
                     int var12 = arg1 + -5 + arg3;
                     int var13 = arg2 + arg4 + -8;
                     class3.field30.method150(class166.method1142(new class88[] { class53.field993, class170.method1214(class13.field192, -107) }, -3), var12, var13, 16776960, -1);

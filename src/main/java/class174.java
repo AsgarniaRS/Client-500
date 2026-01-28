@@ -511,7 +511,7 @@ public class class174 {
         } else if (var6 == 1) {
             class30 var8 = (class30) class168.field3238.method135(-115, (long) ((var6 << 16) + var7));
             if (var8 == null) {
-                class82 var9 = class82.method568(class90.field1705, var7, 0);
+                ModelUnlit var9 = ModelUnlit.method568(class90.field1705, var7, 0);
                 if (var9 == null) {
                     class248.field4551 = true;
                     return null;

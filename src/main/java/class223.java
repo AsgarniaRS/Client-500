@@ -109,15 +109,15 @@ public class class223 {
                             int var45 = ((var38 + arg5 & 0x3F) << 6) + (arg7 + var15 & 0x3F);
                             int var46 = var35[var44][var45];
                             if (var46 != 0) {
-                                class148 var47 = class190.method1323(var46 - 1, -12450);
-                                if (var14 && scene.field772 == var47.field2819) {
+                                LocType var47 = class190.method1323(var46 - 1, -12450);
+                                if (var14 && scene.field772 == var47.mapfunction) {
                                     class65 var48 = new class65();
                                     var48.field1179 = var37;
-                                    var48.field1180 = var47.field2819;
+                                    var48.field1180 = var47.mapfunction;
                                     var48.field1175 = var43;
                                     class45.field783.method1624(var48, 49);
                                 }
-                                class31.field505[var47.field2819].method1157(var37 - 7, var43 + -7);
+                                class31.field505[var47.mapfunction].method1157(var37 - 7, var43 + -7);
                             }
                         }
                     }
@@ -243,15 +243,15 @@ public class class223 {
             class28.field468 = arg2;
         }
         int var12 = -121 / ((arg0 + 12) / 50);
-        class148 var13 = class190.method1323(arg7, -12450);
+        LocType var13 = class190.method1323(arg7, -12450);
         int var14;
         int var15;
         if (arg4 == 1 || arg4 == 3) {
-            var15 = var13.field2796;
-            var14 = var13.field2776;
+            var15 = var13.length;
+            var14 = var13.width;
         } else {
-            var14 = var13.field2796;
-            var15 = var13.field2776;
+            var14 = var13.length;
+            var15 = var13.width;
         }
         int var16;
         int var17;
@@ -277,7 +277,7 @@ public class class223 {
         int var23 = (arg10 << 7) + (var14 << 6);
         int[][] var24 = null;
         long var25 = (long) ((arg4 | 0x400) << 20 | arg5 << 14 | arg10 << 7 | arg11);
-        if (var13.field2835 == 0 || arg3) {
+        if (var13.active == 0 || arg3) {
             var25 |= Long.MIN_VALUE;
         }
         if (arg3) {
@@ -285,7 +285,7 @@ public class class223 {
         } else if (arg8 < 3) {
             var24 = class62.field1137[arg8 + 1];
         }
-        if (var13.field2782 == 1) {
+        if (var13.raiseobject == 1) {
             var25 |= 0x400000L;
         }
         long var27 = var25 | (long) arg7 << 32;
@@ -293,22 +293,22 @@ public class class223 {
             class17.method84(arg11, arg2, arg4, false, arg10, var13);
         }
         if (arg5 == 22) {
-            if (!arg6 || var13.field2835 != 0 || var13.field2821 == 1 || var13.field2828) {
+            if (!arg6 || var13.active != 0 || var13.blockwalk == 1 || var13.forcedecor) {
                 class145 var30;
-                if (var13.field2812 == -1 && var13.field2772 == null) {
+                if (var13.field2812 == -1 && var13.multiloc == null) {
                     class210 var29 = var13.method999(22, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                     var30 = var29.field3986;
                 } else {
                     var30 = new class81(arg7, 22, arg4, arg8, arg11, arg10, var13.field2812, var13.field2831, null);
                 }
                 class35.method232(arg2, arg11, arg10, var22, var30, var27, var13.field2801);
-                if (var13.field2821 == 1 && arg9 != null) {
+                if (var13.blockwalk == 1 && arg9 != null) {
                     arg9.method647(262144, arg10, arg11);
                 }
             }
         } else if (arg5 == 10 || arg5 == 11) {
             class145 var70;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var69 = var13.method999(10, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var70 = var69.field3986;
             } else {
@@ -316,7 +316,7 @@ public class class223 {
             }
             if (var70 != null) {
                 boolean var71 = class53.method390(arg2, arg11, arg10, var22, var15, var14, var70, arg5 == 11 ? 256 : 0, var27);
-                if (var13.field2784 && var71 && arg1) {
+                if (var13.shadow && var71 && arg1) {
                     int var72 = 15;
                     if (var70 instanceof class30) {
                         var72 = ((class30) var70).method192() / 4;
@@ -333,12 +333,12 @@ public class class223 {
                     }
                 }
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method645(64, var15, var14, var13.field2791, arg11, arg10);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method645(64, var15, var14, var13.blockrange, arg11, arg10);
             }
         } else if (arg5 >= 12) {
             class145 var32;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var31 = var13.method999(arg5, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var32 = var31.field3986;
             } else {
@@ -348,12 +348,12 @@ public class class223 {
             if (arg1 && arg5 >= 12 && arg5 <= 17 && arg5 != 13 && arg2 > 0) {
                 class135.field2513[arg2][arg11][arg10] = class204.method1405(class135.field2513[arg2][arg11][arg10], 2340);
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method645(64, var15, var14, var13.field2791, arg11, arg10);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method645(64, var15, var14, var13.blockrange, arg11, arg10);
             }
         } else if (arg5 == 0) {
             class145 var34;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var33 = var13.method999(0, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var34 = var33.field3986;
             } else {
@@ -362,7 +362,7 @@ public class class223 {
             class110.method764(arg2, arg11, arg10, var22, var34, null, class208.field3951[arg4], 0, var27);
             if (arg1) {
                 if (arg4 == 0) {
-                    if (var13.field2784) {
+                    if (var13.shadow) {
                         class111.field2022[arg2][arg11][arg10] = 50;
                         class111.field2022[arg2][arg11][arg10 + 1] = 50;
                     }
@@ -370,7 +370,7 @@ public class class223 {
                         class135.field2513[arg2][arg11][arg10] = class204.method1405(class135.field2513[arg2][arg11][arg10], 585);
                     }
                 } else if (arg4 == 1) {
-                    if (var13.field2784) {
+                    if (var13.shadow) {
                         class111.field2022[arg2][arg11][arg10 + 1] = 50;
                         class111.field2022[arg2][arg11 + 1][arg10 + 1] = 50;
                     }
@@ -378,7 +378,7 @@ public class class223 {
                         class135.field2513[arg2][arg11][arg10 + 1] = class204.method1405(class135.field2513[arg2][arg11][arg10 + 1], 1170);
                     }
                 } else if (arg4 == 2) {
-                    if (var13.field2784) {
+                    if (var13.shadow) {
                         class111.field2022[arg2][arg11 + 1][arg10] = 50;
                         class111.field2022[arg2][arg11 + 1][arg10 + 1] = 50;
                     }
@@ -386,7 +386,7 @@ public class class223 {
                         class135.field2513[arg2][arg11 + 1][arg10] = class204.method1405(class135.field2513[arg2][arg11 + 1][arg10], 585);
                     }
                 } else if (arg4 == 3) {
-                    if (var13.field2784) {
+                    if (var13.shadow) {
                         class111.field2022[arg2][arg11][arg10] = 50;
                         class111.field2022[arg2][arg11 + 1][arg10] = 50;
                     }
@@ -395,22 +395,22 @@ public class class223 {
                     }
                 }
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method646(arg5, arg10, var13.field2791, false, arg4, arg11);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method646(arg5, arg10, var13.blockrange, false, arg4, arg11);
             }
-            if (var13.field2807 != 16) {
-                class245.method1604(arg2, arg11, arg10, var13.field2807);
+            if (var13.wallwidth != 16) {
+                class245.method1604(arg2, arg11, arg10, var13.wallwidth);
             }
         } else if (arg5 == 1) {
             class145 var36;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var35 = var13.method999(1, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var36 = var35.field3986;
             } else {
                 var36 = new class81(arg7, 1, arg4, arg8, arg11, arg10, var13.field2812, var13.field2831, null);
             }
             class110.method764(arg2, arg11, arg10, var22, var36, null, class238.field4429[arg4], 0, var27);
-            if (var13.field2784 && arg1) {
+            if (var13.shadow && arg1) {
                 if (arg4 == 0) {
                     class111.field2022[arg2][arg11][arg10 + 1] = 50;
                 } else if (arg4 == 1) {
@@ -421,14 +421,14 @@ public class class223 {
                     class111.field2022[arg2][arg11][arg10] = 50;
                 }
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method646(arg5, arg10, var13.field2791, false, arg4, arg11);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method646(arg5, arg10, var13.blockrange, false, arg4, arg11);
             }
         } else if (arg5 == 2) {
             int var37 = arg4 + 1 & 0x3;
             class145 var39;
             class145 var41;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var38 = var13.method999(2, var24, var20, var21, arg1, var23, arg4 + 4, var22, -21737);
                 var39 = var38.field3986;
                 class210 var40 = var13.method999(2, var24, var20, var21, arg1, var23, var37, var22, -21737);
@@ -453,22 +453,22 @@ public class class223 {
                     class135.field2513[arg2][arg11][arg10] = class204.method1405(class135.field2513[arg2][arg11][arg10], 585);
                 }
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method646(arg5, arg10, var13.field2791, false, arg4, arg11);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method646(arg5, arg10, var13.blockrange, false, arg4, arg11);
             }
-            if (var13.field2807 != 16) {
-                class245.method1604(arg2, arg11, arg10, var13.field2807);
+            if (var13.wallwidth != 16) {
+                class245.method1604(arg2, arg11, arg10, var13.wallwidth);
             }
         } else if (arg5 == 3) {
             class145 var43;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var42 = var13.method999(3, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var43 = var42.field3986;
             } else {
                 var43 = new class81(arg7, 3, arg4, arg8, arg11, arg10, var13.field2812, var13.field2831, null);
             }
             class110.method764(arg2, arg11, arg10, var22, var43, null, class238.field4429[arg4], 0, var27);
-            if (var13.field2784 && arg1) {
+            if (var13.shadow && arg1) {
                 if (arg4 == 0) {
                     class111.field2022[arg2][arg11][arg10 + 1] = 50;
                 } else if (arg4 == 1) {
@@ -479,27 +479,27 @@ public class class223 {
                     class111.field2022[arg2][arg11][arg10] = 50;
                 }
             }
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method646(arg5, arg10, var13.field2791, false, arg4, arg11);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method646(arg5, arg10, var13.blockrange, false, arg4, arg11);
             }
         } else if (arg5 == 9) {
             class145 var45;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var44 = var13.method999(arg5, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var45 = var44.field3986;
             } else {
                 var45 = new class81(arg7, arg5, arg4, arg8, arg11, arg10, var13.field2812, var13.field2831, null);
             }
             class53.method390(arg2, arg11, arg10, var22, 1, 1, var45, 0, var27);
-            if (var13.field2821 != 0 && arg9 != null) {
-                arg9.method645(64, var15, var14, var13.field2791, arg11, arg10);
+            if (var13.blockwalk != 0 && arg9 != null) {
+                arg9.method645(64, var15, var14, var13.blockrange, arg11, arg10);
             }
-            if (var13.field2807 != 16) {
-                class245.method1604(arg2, arg11, arg10, var13.field2807);
+            if (var13.wallwidth != 16) {
+                class245.method1604(arg2, arg11, arg10, var13.wallwidth);
             }
         } else if (arg5 == 4) {
             class145 var47;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var46 = var13.method999(4, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var47 = var46.field3986;
             } else {
@@ -510,10 +510,10 @@ public class class223 {
             int var48 = 16;
             long var49 = class157.method1064(arg2, arg11, arg10);
             if (var49 != 0L) {
-                var48 = class190.method1323((int) (var49 >>> 32) & Integer.MAX_VALUE, -12450).field2807;
+                var48 = class190.method1323((int) (var49 >>> 32) & Integer.MAX_VALUE, -12450).wallwidth;
             }
             class145 var52;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var51 = var13.method999(4, var24, var20, var21, arg1, var23, arg4, var22, -21737);
                 var52 = var51.field3986;
             } else {
@@ -524,10 +524,10 @@ public class class223 {
             int var53 = 8;
             long var54 = class157.method1064(arg2, arg11, arg10);
             if (var54 != 0L) {
-                var53 = class190.method1323(Integer.MAX_VALUE & (int) (var54 >>> 32), -12450).field2807 / 2;
+                var53 = class190.method1323(Integer.MAX_VALUE & (int) (var54 >>> 32), -12450).wallwidth / 2;
             }
             class145 var57;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var56 = var13.method999(4, var24, var20, var21, arg1, var23, arg4 + 4, var22, -21737);
                 var57 = var56.field3986;
             } else {
@@ -537,7 +537,7 @@ public class class223 {
         } else if (arg5 == 7) {
             int var58 = arg4 + 2 & 0x3;
             class145 var60;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var59 = var13.method999(4, var24, var20, var21, arg1, var23, var58 + 4, var22, -21737);
                 var60 = var59.field3986;
             } else {
@@ -548,12 +548,12 @@ public class class223 {
             int var61 = 8;
             long var62 = class157.method1064(arg2, arg11, arg10);
             if (var62 != 0L) {
-                var61 = class190.method1323((int) (var62 >>> 32) & Integer.MAX_VALUE, -12450).field2807 / 2;
+                var61 = class190.method1323((int) (var62 >>> 32) & Integer.MAX_VALUE, -12450).wallwidth / 2;
             }
             int var64 = arg4 + 2 & 0x3;
             class145 var66;
             class145 var68;
-            if (var13.field2812 == -1 && var13.field2772 == null) {
+            if (var13.field2812 == -1 && var13.multiloc == null) {
                 class210 var65 = var13.method999(4, var24, var20, var21, arg1, var23, arg4 + 4, var22, -21737);
                 var66 = var65.field3986;
                 class210 var67 = var13.method999(4, var24, var20, var21, arg1, var23, var64 + 4, var22, -21737);

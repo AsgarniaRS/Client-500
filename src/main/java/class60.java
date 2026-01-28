@@ -11,7 +11,7 @@ public class class60 extends class23 {
     public static class88 field1124 = class208.method1425(105, " loggt sich ein)3");
 
     @OriginalMember(owner = "client!fd", name = "W", descriptor = "[Lhe;")
-    public static class82[] field1127 = new class82[4];
+    public static ModelUnlit[] field1127 = new ModelUnlit[4];
 
     @OriginalMember(owner = "client!fd", name = "cb", descriptor = "Li;")
     public static class88 field1133 = class208.method1425(105, "Suche nach Updates )2 ");

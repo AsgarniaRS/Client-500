@@ -5,21 +5,21 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class MidiFile extends Linkable {
 
     @OriginalMember(owner = "client!ic", name = "u", descriptor = "[B")
-    public byte[] field1717;
+    public byte[] midi;
 
     @OriginalMember(owner = "client!ic", name = "t", descriptor = "Lob;")
-    public class154 field1716;
+    public class154 patches;
 
     @OriginalMember(owner = "client!ic", name = "a", descriptor = "()V")
     public final void method661() {
-        if (this.field1716 != null) {
+        if (this.patches != null) {
             return;
         }
-        this.field1716 = new class154(16);
+        this.patches = new class154(16);
         int[] var1 = new int[16];
         int[] var2 = new int[16];
         var1[9] = var2[9] = 128;
-        class40 var3 = new class40(this.field1717);
+        class40 var3 = new class40(this.midi);
         int var4 = var3.method266();
         for (int var5 = 0; var5 < var4; var5++) {
             var3.method261(var5);
@@ -61,10 +61,10 @@ public class MidiFile extends Linkable {
                         int var17 = var8 >> 16 & 0x7F;
                         if (var17 > 0) {
                             int var18 = var2[var15];
-                            class153 var19 = (class153) this.field1716.get(-1, (long) var18);
+                            class153 var19 = (class153) this.patches.get(-1, (long) var18);
                             if (var19 == null) {
                                 var19 = new class153(new byte[128]);
-                                this.field1716.put((long) var18, var19, -1);
+                                this.patches.put((long) var18, var19, -1);
                             }
                             var19.field2958[var16] = 1;
                         }
@@ -78,7 +78,7 @@ public class MidiFile extends Linkable {
 
     @OriginalMember(owner = "client!ic", name = "b", descriptor = "()V")
     public final void method662() {
-        this.field1716 = null;
+        this.patches = null;
     }
 
     @OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lnb;II)Lic;")
@@ -230,8 +230,8 @@ public class MidiFile extends Linkable {
         arg0.pos += var31;
         int var57 = arg0.pos;
         arg0.pos += var5 * 3;
-        this.field1717 = new byte[var20];
-        Packet var58 = new Packet(this.field1717);
+        this.midi = new byte[var20];
+        Packet var58 = new Packet(this.midi);
         var58.p4(1297377380);
         var58.p4(6);
         var58.p2(var2 > 1 ? 1 : 0);
