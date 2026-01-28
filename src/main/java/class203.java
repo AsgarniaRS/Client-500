@@ -233,12 +233,12 @@ public class class203 extends class50 {
     public static final class188 method1395(byte arg0) {
         ++field3867;
         byte[] var1 = class116.field2106[0];
-        int var2 = class67.field1218[0] * class102.field1853[0];
+        int var2 = Linkable.field1218[0] * class102.field1853[0];
         int[] var3 = new int[var2];
         for (int var4 = 0; ~var4 > ~var2; ++var4) {
             var3[var4] = class27.field456[class70.method470(var1[var4], 255)];
         }
-        class169 var5 = new class169(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], class67.field1218[0], var3);
+        class169 var5 = new class169(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], Linkable.field1218[0], var3);
         if (arg0 != 77) {
             field3869 = false;
         }
@@ -338,7 +338,7 @@ public class class203 extends class50 {
                 boolean var21 = false;
                 if (~var16 >= -2) {
                     if (var15 || ~class238.field4430 != -2 && class176.field3537 != 1) {
-                        for (int var22 = 0; class67.field1221 > var22; ++var22) {
+                        for (int var22 = 0; Linkable.field1221 > var22; ++var22) {
                             if (~class95.field1765[var22] == ~var19) {
                                 var21 = true;
                                 break;

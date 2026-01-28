@@ -48,7 +48,7 @@ public class class49 {
 
     @OriginalMember(owner = "client!ed", name = "a", descriptor = "(IIIIIIII)V")
     public static final void method368(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) {
-        if (class67.field1207 <= arg6 && class12.field183 >= arg0 && arg3 >= field919 && arg7 <= class18.field279) {
+        if (Linkable.field1207 <= arg6 && class12.field183 >= arg0 && arg3 >= field919 && arg7 <= class18.field279) {
             class192.method1335(arg5, arg3, true, arg7, arg4, arg6, arg0, arg1);
         } else {
             class147.method988(arg5, arg0, arg3, arg6, arg7, arg4, 86, arg1);

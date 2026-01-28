@@ -168,13 +168,13 @@ public class class34 extends class23 {
         }
         class169[] var1 = new class169[class172.field3347];
         for (int var2 = 0; class172.field3347 > var2; ++var2) {
-            int var3 = class67.field1218[var2] * class102.field1853[var2];
+            int var3 = Linkable.field1218[var2] * class102.field1853[var2];
             byte[] var4 = class116.field2106[var2];
             int[] var5 = new int[var3];
             for (int var6 = 0; ~var6 > ~var3; ++var6) {
                 var5[var6] = class27.field456[class70.method470(var4[var6], 255)];
             }
-            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], class67.field1218[var2], var5);
+            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var5);
         }
         class239.method1580(104);
         return var1;

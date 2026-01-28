@@ -173,7 +173,7 @@ public class class225 {
         field4223++;
         if (arg1 == arg2) {
             Client.method216(arg2, arg6, arg4, arg7, -14871, arg0, arg3);
-        } else if (arg3 - arg2 >= class67.field1207 && arg2 + arg3 <= class12.field183 && class49.field919 <= arg7 - arg1 && class18.field279 >= arg1 + arg7) {
+        } else if (arg3 - arg2 >= Linkable.field1207 && arg2 + arg3 <= class12.field183 && class49.field919 <= arg7 - arg1 && class18.field279 >= arg1 + arg7) {
             class23.method126(arg3, arg0, arg1, arg6, arg4, -81, arg7, arg2);
         } else {
             class154.method1053(arg7, arg4, arg2, arg6, arg0, (byte) 78, arg1, arg3);

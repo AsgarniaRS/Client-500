@@ -295,7 +295,7 @@ public class class108 {
         if (arg6 != 2) {
             method741(-83, -43, 20, 50, 102, 105, 10, -98, -19, 85);
         }
-        if (arg2 >= class67.field1207 && class12.field183 >= arg2 && class67.field1207 <= arg3 && class12.field183 >= arg3 && arg9 >= class67.field1207 && class12.field183 >= arg9 && arg5 >= class67.field1207 && arg5 <= class12.field183 && arg1 >= class49.field919 && arg1 <= class18.field279 && arg0 >= class49.field919 && class18.field279 >= arg0 && class49.field919 <= arg4 && arg4 <= class18.field279 && class49.field919 <= arg7 && arg7 <= class18.field279) {
+        if (arg2 >= Linkable.field1207 && class12.field183 >= arg2 && Linkable.field1207 <= arg3 && class12.field183 >= arg3 && arg9 >= Linkable.field1207 && class12.field183 >= arg9 && arg5 >= Linkable.field1207 && arg5 <= class12.field183 && arg1 >= class49.field919 && arg1 <= class18.field279 && arg0 >= class49.field919 && class18.field279 >= arg0 && class49.field919 <= arg4 && arg4 <= class18.field279 && class49.field919 <= arg7 && arg7 <= class18.field279) {
             class153.method1044(arg3, arg8, (byte) -118, arg5, arg0, arg1, arg7, arg4, arg2, arg9);
         } else {
             class147.method984(arg2, arg3, arg5, arg8, true, arg7, arg0, arg1, arg4, arg9);

@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!fi")
-public class class65 extends class67 {
+public class class65 extends Linkable {
 
     @OriginalMember(owner = "client!fi", name = "x", descriptor = "Li;")
     private static class88 field1178 = class208.method1425(105, "Please reload this page)3");
@@ -90,7 +90,7 @@ public class class65 extends class67 {
             }
             if (GameShell.field1581 != -1) {
                 class70 var6 = class202.field3847[GameShell.field1581];
-                if (class67.field1215 == var6.field1257) {
+                if (Linkable.field1215 == var6.field1257) {
                     byte[] var7 = class166.method1142(new class88[] { var6.field1262, class206.field3924 }, -3).method613(-114);
                     class95.field1761 = new String(var7, 0, var7.length);
                     class28.field470 = var6.field1261;

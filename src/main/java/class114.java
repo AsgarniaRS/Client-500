@@ -97,7 +97,7 @@ public class class114 extends class136 {
                     Packet.field845[var5] = Packet.field845[var5 + 1];
                     GZip.field1120[var5] = GZip.field1120[var5 + 1];
                 }
-                class20.field313 = class67.field1211;
+                class20.field313 = Linkable.field1211;
                 Isaac.out.method30(121);
                 Isaac.out.p8(arg1, (byte) -126);
                 return;

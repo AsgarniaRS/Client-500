@@ -106,7 +106,7 @@ public class class118 {
         class133.field2485[0] = arg2;
         class228.field4282[0] = arg5;
         field2151++;
-        class7.field100 = class67.field1211;
+        class7.field100 = Linkable.field1211;
     }
 
     @OriginalMember(owner = "client!ki", name = "a", descriptor = "(III)V")

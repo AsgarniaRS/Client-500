@@ -67,7 +67,7 @@ public class class27 {
         class147.method985(true);
         ((class68) class173.field3358).method464(78);
         class33.cache.method671(arg0 - 48);
-        class67.field1204.method943(0);
+        Linkable.field1204.method943(0);
         class223.field4203.method943(0);
         CollisionMap.field1671.method943(0);
         class12.field172.method943(0);
@@ -108,7 +108,7 @@ public class class27 {
     @OriginalMember(owner = "client!cd", name = "b", descriptor = "(B)Llj;")
     public static final class130 method170(byte arg0) {
         field452++;
-        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], class67.field1218[0], class116.field2106[0], field456);
+        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], Linkable.field1218[0], class116.field2106[0], field456);
         class239.method1580(125);
         if (arg0 <= 121) {
             field454 = -120;

@@ -362,7 +362,7 @@ public class class126 extends class136 {
                 for (int var10 = 0; var10 < var8; var10++) {
                     boolean var11 = arg2.g1() == 1;
                     int var12 = arg2.method304(-29629);
-                    class67 var13;
+                    Linkable var13;
                     if (var11) {
                         var13 = new class216(arg2.gjstr(-126));
                     } else {

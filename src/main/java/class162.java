@@ -53,12 +53,12 @@ public class class162 extends class51 {
     public final synchronized void method1088(int arg0) {
         if (arg0 == 0) {
             this.method1093(0);
-            this.method460(true);
+            this.unlink();
         } else if (this.field3130 == 0 && this.field3116 == 0) {
             this.field3128 = 0;
             this.field3126 = 0;
             this.field3123 = 0;
-            this.method460(true);
+            this.unlink();
         } else {
             int var2 = -this.field3123;
             if (this.field3123 > var2) {
@@ -145,7 +145,7 @@ public class class162 extends class51 {
             if (this.field3126 == Integer.MIN_VALUE) {
                 this.field3126 = 0;
                 this.field3123 = this.field3130 = this.field3116 = 0;
-                this.method460(true);
+                this.unlink();
                 return true;
             } else {
                 this.method1116();
@@ -916,7 +916,7 @@ public class class162 extends class51 {
             if (this.field3119 < 0) {
                 if (this.field3117 <= 0) {
                     this.method1115();
-                    this.method460(true);
+                    this.unlink();
                     return;
                 }
                 this.field3119 = 0;
@@ -924,7 +924,7 @@ public class class162 extends class51 {
             if (this.field3119 >= var7) {
                 if (this.field3117 >= 0) {
                     this.method1115();
-                    this.method460(true);
+                    this.unlink();
                     return;
                 }
                 this.field3119 = var7 - 1;
@@ -1040,7 +1040,7 @@ public class class162 extends class51 {
                     if (this.field3119 < 0) {
                         this.field3119 = -1;
                         this.method1115();
-                        this.method460(true);
+                        this.unlink();
                         return;
                     }
                 } else {
@@ -1048,7 +1048,7 @@ public class class162 extends class51 {
                     if (this.field3119 >= var7) {
                         this.field3119 = var7;
                         this.method1115();
-                        this.method460(true);
+                        this.unlink();
                     }
                 }
             }
@@ -1116,7 +1116,7 @@ public class class162 extends class51 {
                 if (this.field3126 == Integer.MIN_VALUE) {
                     this.field3126 = 0;
                     this.field3123 = this.field3130 = this.field3116 = 0;
-                    this.method460(true);
+                    this.unlink();
                     arg0 = this.field3128;
                 }
                 this.field3128 = 0;
@@ -1139,7 +1139,7 @@ public class class162 extends class51 {
         if (this.field3119 < 0) {
             if (this.field3117 <= 0) {
                 this.method1115();
-                this.method460(true);
+                this.unlink();
                 return;
             }
             this.field3119 = 0;
@@ -1147,7 +1147,7 @@ public class class162 extends class51 {
         if (this.field3119 >= var5) {
             if (this.field3117 >= 0) {
                 this.method1115();
-                this.method460(true);
+                this.unlink();
                 return;
             }
             this.field3119 = var5 - 1;
@@ -1240,13 +1240,13 @@ public class class162 extends class51 {
                 if (this.field3119 < 0) {
                     this.field3119 = -1;
                     this.method1115();
-                    this.method460(true);
+                    this.unlink();
                     return;
                 }
             } else if (this.field3119 >= var5) {
                 this.field3119 = var5;
                 this.method1115();
-                this.method460(true);
+                this.unlink();
             }
         }
     }

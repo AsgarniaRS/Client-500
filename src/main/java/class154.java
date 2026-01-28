@@ -12,7 +12,7 @@ public class class154 {
     private int field2974;
 
     @OriginalMember(owner = "client!ob", name = "h", descriptor = "[Lg;")
-    private class67[] field2973;
+    private Linkable[] field2973;
 
     @OriginalMember(owner = "client!ob", name = "k", descriptor = "Li;")
     private static class88 field2976 = class208.method1425(105, "Loaded fonts");
@@ -72,10 +72,10 @@ public class class154 {
     public static class41 field2968;
 
     @OriginalMember(owner = "client!ob", name = "r", descriptor = "Lg;")
-    private class67 field2983;
+    private Linkable field2983;
 
     @OriginalMember(owner = "client!ob", name = "A", descriptor = "Lg;")
-    private class67 field2992;
+    private Linkable field2992;
 
     @OriginalMember(owner = "client!ob", name = "l", descriptor = "Ljava/awt/Canvas;")
     public static Canvas field2977;
@@ -87,27 +87,27 @@ public class class154 {
     public static int[][][] field2981;
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)Lg;")
-    public final class67 method1049(int arg0) {
+    public final Linkable method1049(int arg0) {
         this.field2991 = arg0;
         field2967++;
         return this.method1050((byte) -73);
     }
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(B)Lg;")
-    public final class67 method1050(byte arg0) {
+    public final Linkable method1050(byte arg0) {
         field2989++;
         if (arg0 != -73) {
             method1055(70);
         }
         if (this.field2991 > 0 && this.field2973[this.field2991 - 1] != this.field2992) {
-            class67 var2 = this.field2992;
-            this.field2992 = var2.field1220;
+            Linkable var2 = this.field2992;
+            this.field2992 = var2.next;
             return var2;
         }
         while (this.field2974 > this.field2991) {
-            class67 var3 = this.field2973[this.field2991++].field1220;
+            Linkable var3 = this.field2973[this.field2991++].next;
             if (this.field2973[this.field2991 - 1] != var3) {
-                this.field2992 = var3.field1220;
+                this.field2992 = var3.next;
                 return var3;
             }
         }
@@ -115,14 +115,14 @@ public class class154 {
     }
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(IJ)Lg;")
-    public final class67 get(int arg0, long arg1) {
+    public final Linkable get(int arg0, long arg1) {
         this.field2987 = arg1;
         field2985++;
-        class67 var4 = this.field2973[(int) (arg1 & (long) (this.field2974 + arg0))];
-        for (this.field2983 = var4.field1220; this.field2983 != var4; this.field2983 = this.field2983.field1220) {
+        Linkable var4 = this.field2973[(int) (arg1 & (long) (this.field2974 + arg0))];
+        for (this.field2983 = var4.next; this.field2983 != var4; this.field2983 = this.field2983.next) {
             if (this.field2983.nodeId == arg1) {
-                class67 var5 = this.field2983;
-                this.field2983 = this.field2983.field1220;
+                Linkable var5 = this.field2983;
+                this.field2983 = this.field2983.next;
                 return var5;
             }
         }
@@ -174,10 +174,10 @@ public class class154 {
         int var37 = var31;
         if (class49.field919 <= arg0 && class18.field279 >= arg0) {
             int[] var38 = class3.field42[arg0];
-            int var39 = class156.method1060(class67.field1207, class12.field183, -113, arg7 - arg2);
-            int var40 = class156.method1060(class67.field1207, class12.field183, -119, arg7 + arg2);
-            int var41 = class156.method1060(class67.field1207, class12.field183, -112, arg7 - var11);
-            int var42 = class156.method1060(class67.field1207, class12.field183, -114, arg7 + var11);
+            int var39 = class156.method1060(Linkable.field1207, class12.field183, -113, arg7 - arg2);
+            int var40 = class156.method1060(Linkable.field1207, class12.field183, -119, arg7 + arg2);
+            int var41 = class156.method1060(Linkable.field1207, class12.field183, -112, arg7 - var11);
+            int var42 = class156.method1060(Linkable.field1207, class12.field183, -114, arg7 + var11);
             class230.method1536(var39, arg1, -7, var41, var38);
             class230.method1536(var41, arg3, -7, var42, var38);
             class230.method1536(var42, arg1, -7, var40, var38);
@@ -232,11 +232,11 @@ public class class154 {
             var44 -= var29;
             var36 -= var29;
             if (var46 >= class49.field919 && class18.field279 >= var47) {
-                int var48 = class156.method1060(class67.field1207, class12.field183, -114, arg7 + var8);
-                int var49 = class156.method1060(class67.field1207, class12.field183, -105, arg7 - var8);
+                int var48 = class156.method1060(Linkable.field1207, class12.field183, -114, arg7 + var8);
+                int var49 = class156.method1060(Linkable.field1207, class12.field183, -105, arg7 - var8);
                 if (var45) {
-                    int var50 = class156.method1060(class67.field1207, class12.field183, -115, arg7 + var10);
-                    int var51 = class156.method1060(class67.field1207, class12.field183, -109, arg7 - var10);
+                    int var50 = class156.method1060(Linkable.field1207, class12.field183, -115, arg7 + var10);
+                    int var51 = class156.method1060(Linkable.field1207, class12.field183, -109, arg7 - var10);
                     if (var47 >= class49.field919) {
                         int[] var52 = class3.field42[var47];
                         class230.method1536(var49, arg1, -7, var51, var52);
@@ -262,17 +262,17 @@ public class class154 {
     }
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "(JLg;I)V")
-    public final void put(long arg0, class67 arg1, int arg2) {
-        if (arg1.field1212 != null) {
-            arg1.method460(true);
+    public final void put(long arg0, Linkable arg1, int arg2) {
+        if (arg1.prev != null) {
+            arg1.unlink();
         }
         field2986++;
-        class67 var5 = this.field2973[(int) (arg0 & (long) (this.field2974 + arg2))];
+        Linkable var5 = this.field2973[(int) (arg0 & (long) (this.field2974 + arg2))];
         arg1.nodeId = arg0;
-        arg1.field1212 = var5.field1212;
-        arg1.field1220 = var5;
-        arg1.field1212.field1220 = arg1;
-        arg1.field1220.field1212 = arg1;
+        arg1.prev = var5.prev;
+        arg1.next = var5;
+        arg1.prev.next = arg1;
+        arg1.next.prev = arg1;
     }
 
     @OriginalMember(owner = "client!ob", name = "b", descriptor = "(I)V")
@@ -295,22 +295,22 @@ public class class154 {
     }
 
     @OriginalMember(owner = "client!ob", name = "c", descriptor = "(I)Lg;")
-    public final class67 method1056(int arg0) {
+    public final Linkable method1056(int arg0) {
         field2980++;
         if (this.field2983 == null) {
             return null;
         }
-        class67 var2 = this.field2973[(int) (this.field2987 & (long) (this.field2974 - 1))];
+        Linkable var2 = this.field2973[(int) (this.field2987 & (long) (this.field2974 - 1))];
         if (arg0 != 3) {
             this.method1050((byte) 76);
         }
         while (this.field2983 != var2) {
             if (this.field2983.nodeId == this.field2987) {
-                class67 var3 = this.field2983;
-                this.field2983 = this.field2983.field1220;
+                Linkable var3 = this.field2983;
+                this.field2983 = this.field2983.next;
                 return var3;
             }
-            this.field2983 = this.field2983.field1220;
+            this.field2983 = this.field2983.next;
         }
         this.field2983 = null;
         return null;
@@ -319,11 +319,11 @@ public class class154 {
     @OriginalMember(owner = "client!ob", name = "<init>", descriptor = "(I)V")
     public class154(int arg0) {
         this.field2974 = arg0;
-        this.field2973 = new class67[arg0];
+        this.field2973 = new Linkable[arg0];
         for (int var2 = 0; var2 < arg0; var2++) {
-            class67 var3 = this.field2973[var2] = new class67();
-            var3.field1212 = var3;
-            var3.field1220 = var3;
+            Linkable var3 = this.field2973[var2] = new Linkable();
+            var3.prev = var3;
+            var3.next = var3;
         }
     }
 }

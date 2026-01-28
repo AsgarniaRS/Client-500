@@ -317,7 +317,7 @@ public class class53 implements KeyListener, FocusListener {
                         }
                     }
                 }
-                if (var24.field4073 != null && (class55.field1027 <= var8 || class67.field1206 == 0 || class67.field1206 == 3 || class67.field1206 == 1 && class135.method903((byte) -103, ((scene) var24).name))) {
+                if (var24.field4073 != null && (class55.field1027 <= var8 || Linkable.field1206 == 0 || Linkable.field1206 == 3 || Linkable.field1206 == 1 && class135.method903((byte) -103, ((scene) var24).name))) {
                     class150.method1029(arg6 >> 1, arg4 >> 1, arg3, -4013, var24.method1477(64), var24, arg2);
                     if (class25.field401 > -1 && class207.field3927 > class105.field1920) {
                         class207.field3933[class105.field1920] = class54.field1011.method158(var24.field4073) / 2;

@@ -207,7 +207,7 @@ public class Client extends GameShell {
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(IIIIIII)V")
     public static final void method216(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
-        if (class67.field1207 <= arg6 - arg0 && class12.field183 >= arg6 + arg0 && class49.field919 <= arg3 - arg0 && class18.field279 >= arg0 + arg3) {
+        if (Linkable.field1207 <= arg6 - arg0 && class12.field183 >= arg6 + arg0 && class49.field919 <= arg3 - arg0 && class18.field279 >= arg0 + arg3) {
             class9.method46(arg1, arg6, arg2, arg0, arg4 + 14870, arg3, arg5);
         } else {
             class122.method829(arg1, arg3, arg2, arg0, arg6, arg5, (byte) 108);
@@ -235,9 +235,9 @@ public class Client extends GameShell {
         }
         String var2 = this.getParameter("members");
         if (var2 != null && var2.equals("1")) {
-            class67.field1215 = true;
+            Linkable.field1215 = true;
         } else {
-            class67.field1215 = false;
+            Linkable.field1215 = false;
         }
         String var3 = this.getParameter("lang");
         if (var3 != null && var3.equals("1")) {
@@ -298,9 +298,9 @@ public class Client extends GameShell {
                 class114.method778(false);
             }
             if (arg0[4].equals("free")) {
-                class67.field1215 = false;
+                Linkable.field1215 = false;
             } else if (arg0[4].equals("members")) {
-                class67.field1215 = true;
+                Linkable.field1215 = true;
             } else {
                 class114.method778(false);
             }
@@ -447,7 +447,7 @@ public class Client extends GameShell {
             class209.field3965 = class10.field144;
             class32.field519 = 30;
         } else if (class32.field519 == 30) {
-            class67.field1204 = class98.method686((byte) 38, 0, true, true, false);
+            Linkable.field1204 = class98.method686((byte) 38, 0, true, true, false);
             class223.field4203 = class98.method686((byte) -83, 1, true, true, false);
             class85.field1546 = class98.method686((byte) -100, 2, true, false, true);
             CollisionMap.field1671 = class98.method686((byte) 26, 3, true, true, false);
@@ -479,7 +479,7 @@ public class Client extends GameShell {
             class209.field3965 = class68.field1251;
         } else if (class32.field519 == 40) {
             byte var7 = 0;
-            int var8 = var7 + class67.field1204.method115(true) * 4 / 100;
+            int var8 = var7 + Linkable.field1204.method115(true) * 4 / 100;
             int var9 = var8 + class223.field4203.method115(true) * 4 / 100;
             int var10 = var9 + class85.field1546.method115(true) / 100;
             int var11 = var10 + CollisionMap.field1671.method115(true) * 2 / 100;
@@ -610,11 +610,11 @@ public class Client extends GameShell {
                 ClientStream.method912((byte) 64, class85.field1546);
                 class135.method900(class85.field1546, 28809);
                 class199.method1366((byte) 113, class233.field4367, class85.field1546);
-                class27.method166(class109.field2006, -70, class233.field4367, class67.field1215, class245.lowMemory);
+                class27.method166(class109.field2006, -70, class233.field4367, Linkable.field1215, class245.lowMemory);
                 class47.method357(-96, class161.field3115, class233.field4367);
-                class189.method1320(class67.field1215, class248.field4552, class154.field2968, class233.field4367, (byte) 17);
+                class189.method1320(Linkable.field1215, class248.field4552, class154.field2968, class233.field4367, (byte) 17);
                 class18.method91(class85.field1546, false);
-                class45.method291(class196.field3773, (byte) -124, class67.field1204, class223.field4203);
+                class45.method291(class196.field3773, (byte) -124, Linkable.field1204, class223.field4203);
                 class211.method1445(94, class233.field4367, class17.field274);
                 class180.method1284(class238.field4433, (byte) -32);
                 class149.method1009(class85.field1546, 21644);
@@ -1013,7 +1013,7 @@ public class Client extends GameShell {
         class159.method1073(false);
         class126.method865(arg0 ^ 0xFFFFFF9B);
         class168.method1151((byte) 113);
-        class67.method461((byte) 109);
+        Linkable.method461();
         Isaac.method978(false);
         class21.method104(-22);
         class24.method132((byte) -64);
@@ -1210,8 +1210,8 @@ public class Client extends GameShell {
         int var6 = class156.method1060(class49.field919, class18.field279, -103, arg1);
         field557++;
         int var7 = class156.method1060(class49.field919, class18.field279, -126, arg2);
-        int var8 = class156.method1060(class67.field1207, class12.field183, -106, arg4);
-        int var9 = class156.method1060(class67.field1207, class12.field183, -113, arg5);
+        int var8 = class156.method1060(Linkable.field1207, class12.field183, -106, arg4);
+        int var9 = class156.method1060(Linkable.field1207, class12.field183, -113, arg5);
         for (int var10 = var6; var10 <= var7; var10++) {
             class230.method1536(var8, arg0, -7, var9, class3.field42[var10]);
         }

@@ -234,7 +234,7 @@ public class class170 extends class51 {
             this.method1188((byte) 30, -39);
         }
         while (var2 != null) {
-            var2.method460(true);
+            var2.unlink();
             var2 = (class204) this.field3254.method1050((byte) -73);
         }
     }
@@ -290,7 +290,7 @@ public class class170 extends class51 {
         field3251++;
         if (arg4.field2388 >= 0 && (arg4.field2393 == null || arg4.field2393.method1122())) {
             arg4.method868(-11515);
-            arg4.method460(true);
+            arg4.unlink();
             if (arg4.field2386 > 0 && this.field3301[arg4.field2387][arg4.field2386] == arg4) {
                 this.field3301[arg4.field2387][arg4.field2386] = null;
             }
@@ -364,7 +364,7 @@ public class class170 extends class51 {
         }
         arg4.method868(-11515);
         if (arg4.field2388 >= 0) {
-            arg4.method460(true);
+            arg4.unlink();
             if (arg4.field2386 > 0 && this.field3301[arg4.field2387][arg4.field2386] == arg4) {
                 this.field3301[arg4.field2387][arg4.field2386] = null;
             }
@@ -793,7 +793,7 @@ public class class170 extends class51 {
             return true;
         } else if (arg1.field2393 == null) {
             if (arg1.field2388 >= 0) {
-                arg1.method460(true);
+                arg1.unlink();
                 if (arg1.field2386 > 0 && this.field3301[arg1.field2387][arg1.field2386] == arg1) {
                     this.field3301[arg1.field2387][arg1.field2386] = null;
                 }
@@ -869,7 +869,7 @@ public class class170 extends class51 {
                 if (var3.field2388 < 0) {
                     this.field3297[var3.field2387][var3.field2383] = null;
                 }
-                var3.method460(true);
+                var3.unlink();
             }
         }
         if (!arg0) {

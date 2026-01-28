@@ -79,9 +79,9 @@ public class class229 extends class136 {
             int var9 = arg4 - (arg0 * var8 >> 12);
             int var10;
             int var11;
-            if (class67.field1207 > arg3) {
-                var10 = class67.field1207;
-                var11 = (class67.field1207 * var8 >> 12) + var9;
+            if (Linkable.field1207 > arg3) {
+                var10 = Linkable.field1207;
+                var11 = (Linkable.field1207 * var8 >> 12) + var9;
             } else if (arg3 > class12.field183) {
                 var10 = class12.field183;
                 var11 = var9 + (class12.field183 * var8 >> 12);
@@ -98,9 +98,9 @@ public class class229 extends class136 {
             }
             int var12;
             int var13;
-            if (class67.field1207 > arg0) {
-                var12 = class67.field1207;
-                var13 = (class67.field1207 * var8 >> 12) + var9;
+            if (Linkable.field1207 > arg0) {
+                var12 = Linkable.field1207;
+                var13 = (Linkable.field1207 * var8 >> 12) + var9;
             } else if (class12.field183 < arg0) {
                 var12 = class12.field183;
                 var13 = (class12.field183 * var8 >> 12) + var9;

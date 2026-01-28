@@ -64,11 +64,11 @@ public class class92 {
         field1719++;
         if (this.field1731 == 0) {
             class136 var5 = this.field1728.method1384(0);
-            var5.method460(true);
+            var5.unlink();
             var5.method909(192);
             if (this.field1723 == var5) {
                 class136 var6 = this.field1728.method1384(0);
-                var6.method460(true);
+                var6.unlink();
                 var6.method909(192);
             }
         } else {
@@ -82,7 +82,7 @@ public class class92 {
     }
 
     @OriginalMember(owner = "client!id", name = "a", descriptor = "(I)Lg;")
-    public final class67 method665(int arg0) {
+    public final Linkable method665(int arg0) {
         if (arg0 == 0) {
             field1718++;
             return this.field1729.method1050((byte) -73);
@@ -112,7 +112,7 @@ public class class92 {
         }
         class136 var4 = (class136) this.field1729.get(-1, arg1);
         if (var4 != null) {
-            var4.method460(true);
+            var4.unlink();
             var4.method909(192);
             this.field1731++;
         }
@@ -168,13 +168,13 @@ public class class92 {
                 field1725++;
                 return;
             }
-            var2.method460(true);
+            var2.unlink();
             var2.method909(192);
         }
     }
 
     @OriginalMember(owner = "client!id", name = "a", descriptor = "(Z)Lg;")
-    public final class67 method672(boolean arg0) {
+    public final Linkable method672(boolean arg0) {
         if (!arg0) {
             field1735 = null;
         }

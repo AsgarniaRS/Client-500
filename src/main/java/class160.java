@@ -143,7 +143,7 @@ public class class160 {
                     class155 var4 = (class155) this.field3080.method1614((byte) -25);
                     var3 = new class155(arg1, var4.field3003);
                     this.field3097[var4.field2994] = null;
-                    var4.method460(!arg0);
+                    var4.unlink();
                 }
                 this.field3097[arg1] = var3;
             } else {

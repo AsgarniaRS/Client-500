@@ -245,7 +245,7 @@ public class class12 {
                     return;
                 }
             }
-            for (int var5 = 0; var5 < class67.field1221; var5++) {
+            for (int var5 = 0; var5 < Linkable.field1221; var5++) {
                 if (class95.field1765[var5] == arg1) {
                     class223.method1501(class166.method1142(new class88[] { class109.field1980, var3, class226.field4247 }, -3), 12, 0, class174.field3455);
                     return;
@@ -261,7 +261,7 @@ public class class12 {
                 class168.field3240[Isaac.field2731] = class174.field3455;
                 Packet.field845[Isaac.field2731] = 0;
                 GZip.field1120[Isaac.field2731] = false;
-                class20.field313 = class67.field1211;
+                class20.field313 = Linkable.field1211;
                 Isaac.field2731++;
                 Isaac.out.method30(82);
                 Isaac.out.p8(arg1, (byte) -127);

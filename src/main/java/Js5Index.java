@@ -388,7 +388,7 @@ public abstract class Js5Index {
                 }
             }
         }
-        byte[] var6 = class67.method457(false, this.unpacked[arg2][arg0], 0);
+        byte[] var6 = Linkable.method457(false, this.unpacked[arg2][arg0], 0);
         if (arg1 != -6) {
             this.groupNameHashTable = null;
         }
@@ -430,7 +430,7 @@ public abstract class Js5Index {
                 }
             }
         }
-        byte[] var7 = class67.method457(false, this.unpacked[arg2][arg3], 0);
+        byte[] var7 = Linkable.method457(false, this.unpacked[arg2][arg3], 0);
         if (this.discardUnpacked) {
             this.unpacked[arg2][arg3] = null;
             if (this.field2676[arg2] == 1) {
@@ -499,9 +499,9 @@ public abstract class Js5Index {
             }
             byte[] var10;
             if (arg1 == null || arg1[0] == 0 && arg1[1] == 0 && arg1[2] == 0 && arg1[3] == 0) {
-                var10 = class67.method457(false, this.packed[arg0], 0);
+                var10 = Linkable.method457(false, this.packed[arg0], 0);
             } else {
-                var10 = class67.method457(true, this.packed[arg0], 0);
+                var10 = Linkable.method457(true, this.packed[arg0], 0);
                 Packet var11 = new Packet(var10);
                 var11.tinydec(5, var11.data.length, arg1, 4);
             }

@@ -78,7 +78,7 @@ public class class176 extends class136 {
             for (int var6 = 0; var6 < var4; var6++) {
                 boolean var7 = arg2.g1() == 1;
                 int var8 = arg2.method304(-29629);
-                class67 var9;
+                Linkable var9;
                 if (var7) {
                     var9 = new class216(arg2.gjstr(arg0 ^ 0xFFFFFF79));
                 } else {
@@ -189,7 +189,7 @@ public class class176 extends class136 {
                 class4.pUid(class31.login, (byte) -91);
                 class31.login.pjstr(class218.field4136, (byte) 0);
                 class31.login.p4(class4.field46);
-                class31.login.p4(class67.field1204.crc);
+                class31.login.p4(Linkable.field1204.crc);
                 class31.login.p4(class223.field4203.crc);
                 class31.login.p4(class85.field1546.crc);
                 class31.login.p4(CollisionMap.field1671.crc);
@@ -262,8 +262,8 @@ public class class176 extends class136 {
                 }
             } else {
                 if (class117.loginState == 9 && class33.stream.available(1) >= 9) {
-                    class67.field1208 = class33.stream.read(0);
-                    System.out.println("field1208" + class67.field1208);
+                    Linkable.field1208 = class33.stream.read(0);
+                    System.out.println("field1208" + Linkable.field1208);
                     class29.field479 = class33.stream.read(0);
                     System.out.println("field479" + class29.field479);
                     class238.field4430 = class33.stream.read(0);

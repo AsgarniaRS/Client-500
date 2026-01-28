@@ -169,7 +169,7 @@ public class class15 {
             }
             arg1.method345(var6, (byte) 121);
             arg1.method341(arg1.pos - var6, 75);
-            var3.method460(true);
+            var3.unlink();
         }
     }
 
@@ -227,7 +227,7 @@ public class class15 {
                     }
                     if (var5.field2628 != null) {
                         var5.field2628.method1119(var7);
-                        if (!var5.field2628.method459(arg4 - 5)) {
+                        if (!var5.field2628.isLinked()) {
                             var5.field2628 = null;
                         }
                     } else if (var5.field2637 != null && (var5.field2630 -= arg1) <= 0) {

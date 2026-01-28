@@ -373,7 +373,7 @@ public class class148 extends class136 {
         class177 var2 = (class177) class64.field1163.get(-1, (long) arg0);
         field2786++;
         if (var2 != null) {
-            var2.method460(true);
+            var2.unlink();
         }
     }
 
@@ -801,7 +801,7 @@ public class class148 extends class136 {
                             for (int var12 = 0; var12 < var10; var12++) {
                                 boolean var13 = arg2.g1() == 1;
                                 int var14 = arg2.method304(-29629);
-                                class67 var15;
+                                Linkable var15;
                                 if (var13) {
                                     var15 = new class216(arg2.gjstr(-128));
                                 } else {

@@ -57,7 +57,7 @@ public class class210 extends class136 {
                 var1.field3056 = 0;
                 class172.method1221(-2, var1);
             } else {
-                var1.method460(true);
+                var1.unlink();
             }
             var1 = (class159) class62.field1140.method1621(82);
         }
@@ -82,8 +82,8 @@ public class class210 extends class136 {
         int var19 = (var6 + 1) * var16;
         int var20 = (arg2 - 1) * var15;
         if (class49.field919 <= arg3 && arg3 <= class18.field279) {
-            int var21 = class156.method1060(class67.field1207, class12.field183, -113, arg0 + arg5);
-            int var22 = class156.method1060(class67.field1207, class12.field183, -124, arg0 - arg5);
+            int var21 = class156.method1060(Linkable.field1207, class12.field183, -113, arg0 + arg5);
+            int var22 = class156.method1060(Linkable.field1207, class12.field183, -124, arg0 - arg5);
             class230.method1536(var22, arg4, -7, var21, class3.field42[arg3]);
         }
         while (var7 > 0) {
@@ -108,8 +108,8 @@ public class class210 extends class136 {
             }
             var14 += -var18;
             if (var24 >= class49.field919 && class18.field279 >= var23) {
-                int var25 = class156.method1060(class67.field1207, class12.field183, -113, arg0 + var6);
-                int var26 = class156.method1060(class67.field1207, class12.field183, -109, arg0 - var6);
+                int var25 = class156.method1060(Linkable.field1207, class12.field183, -113, arg0 + var6);
+                int var26 = class156.method1060(Linkable.field1207, class12.field183, -109, arg0 - var6);
                 if (var23 >= class49.field919) {
                     class230.method1536(var26, arg4, -7, var25, class3.field42[var23]);
                 }

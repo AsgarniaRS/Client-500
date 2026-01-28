@@ -127,7 +127,7 @@ public class class31 implements Runnable {
                         var2.field1714.method1500(var2.field1706, 4, (int) var2.nodeId, var2.field1706.length);
                         class248 var3 = class227.field4254;
                         synchronized (class227.field4254) {
-                            var2.method460(true);
+                            var2.unlink();
                         }
                     } else if (var2.field1702 == 1) {
                         var2.field1706 = var2.field1714.method1499((int) var2.nodeId, (byte) -116);

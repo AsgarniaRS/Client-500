@@ -265,11 +265,11 @@ public class class199 extends class136 {
         for (class242 var1 = (class242) class42.field714.method1612(false); var1 != null; var1 = (class242) class42.field714.method1621(arg0 + 83)) {
             class18 var2 = var1.field4476;
             if (class149.field2909 != var2.field292 || var2.field302) {
-                var1.method460(true);
+                var1.unlink();
             } else if (var2.field287 <= class117.field2115) {
                 var2.method90(class17.field261, false);
                 if (var2.field302) {
-                    var1.method460(true);
+                    var1.unlink();
                 } else {
                     class126.method861(var2.field292, var2.field296, var2.field290, var2.field295, 60, var2, 0, -1L, false);
                 }

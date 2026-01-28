@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!me")
-public class class136 extends class67 {
+public class class136 extends Linkable {
 
     @OriginalMember(owner = "client!me", name = "w", descriptor = "Li;")
     public static class88 field2528 = class208.method1425(105, "<col=c0ff00>");

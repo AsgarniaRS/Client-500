@@ -126,7 +126,7 @@ public class class151 {
             if (var11 == null) {
                 return null;
             } else {
-                var10.method460(true);
+                var10.unlink();
                 this.field2939.put(var7, var11, -1);
                 return var11;
             }

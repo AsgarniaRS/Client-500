@@ -95,7 +95,7 @@ public class class190 {
         }
         class130[] var1 = new class130[class172.field3347];
         for (int var2 = 0; var2 < class172.field3347; var2++) {
-            var1[var2] = new class193(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], class67.field1218[var2], class116.field2106[var2], class27.field456);
+            var1[var2] = new class193(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], class116.field2106[var2], class27.field456);
         }
         class239.method1580(107);
         return var1;

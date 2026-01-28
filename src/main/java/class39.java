@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!de")
-public class class39 extends class67 {
+public class class39 extends Linkable {
 
     @OriginalMember(owner = "client!de", name = "F", descriptor = "Li;")
     private static class88 field688 = class208.method1425(105, "flash3:");
@@ -101,7 +101,7 @@ public class class39 extends class67 {
         for (class20 var1 = (class20) class167.field3222.method1612(false); var1 != null; var1 = (class20) class167.field3222.method1621(82)) {
             class77 var2 = var1.field315;
             if (class149.field2909 != var2.field1390 || class117.field2115 > var2.field1407) {
-                var1.method460(true);
+                var1.unlink();
             } else if (var2.field1371 <= class117.field2115) {
                 if (var2.field1387 > 0) {
                     class191 var3 = class225.field4225[var2.field1387 - 1];

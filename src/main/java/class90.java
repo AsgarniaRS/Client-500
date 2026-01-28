@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ib")
-public class class90 extends class67 {
+public class class90 extends Linkable {
 
     @OriginalMember(owner = "client!ib", name = "D", descriptor = "Li;")
     public static class88 field1710 = class208.method1425(105, "Standort");
@@ -116,8 +116,8 @@ public class class90 extends class67 {
             field1711 = null;
         }
         if (class49.field919 <= arg1 && arg1 <= class18.field279) {
-            int var5 = class156.method1060(class67.field1207, class12.field183, -102, arg3);
-            int var6 = class156.method1060(class67.field1207, class12.field183, -105, arg0);
+            int var5 = class156.method1060(Linkable.field1207, class12.field183, -102, arg3);
+            int var6 = class156.method1060(Linkable.field1207, class12.field183, -105, arg0);
             Packet.method310(arg1, var6, var5, (byte) 84, arg2);
         }
         field1704++;

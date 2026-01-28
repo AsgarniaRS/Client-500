@@ -106,15 +106,15 @@ public class Isaac {
         if ((long) arg0 == arg1) {
             return;
         }
-        for (int var3 = 0; var3 < class67.field1221; var3++) {
+        for (int var3 = 0; var3 < Linkable.field1221; var3++) {
             if (class95.field1765[var3] == arg1) {
                 GZip.field1111++;
-                class67.field1221--;
-                for (int var4 = var3; var4 < class67.field1221; var4++) {
+                Linkable.field1221--;
+                for (int var4 = var3; var4 < Linkable.field1221; var4++) {
                     class95.field1765[var4] = class95.field1765[var4 + 1];
                     field2743[var4] = field2743[var4 + 1];
                 }
-                class20.field313 = class67.field1211;
+                class20.field313 = Linkable.field1211;
                 out.method30(126);
                 out.p8(arg1, (byte) -122);
                 return;

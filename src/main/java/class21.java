@@ -62,13 +62,13 @@ public class class21 {
         field329++;
         class188[] var1 = new class188[class172.field3347];
         for (int var2 = 0; var2 < class172.field3347; var2++) {
-            int var3 = class67.field1218[var2] * class102.field1853[var2];
+            int var3 = Linkable.field1218[var2] * class102.field1853[var2];
             int[] var4 = new int[var3];
             byte[] var5 = class116.field2106[var2];
             for (int var6 = 0; var6 < var3; var6++) {
                 var4[var6] = class27.field456[class70.method470(255, var5[var6])];
             }
-            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], class67.field1218[var2], var4);
+            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var4);
         }
         if (arg0 > -13) {
             method98(25L, (byte) -48);
@@ -85,8 +85,8 @@ public class class21 {
             field325 = null;
         }
         int var8 = class156.method1060(class49.field919, class18.field279, -103, arg0);
-        int var9 = class156.method1060(class67.field1207, class12.field183, -107, arg2);
-        int var10 = class156.method1060(class67.field1207, class12.field183, -122, arg4);
+        int var9 = class156.method1060(Linkable.field1207, class12.field183, -107, arg2);
+        int var10 = class156.method1060(Linkable.field1207, class12.field183, -122, arg4);
         int var11 = class156.method1060(class49.field919, class18.field279, -106, arg1 + arg3);
         int var12 = class156.method1060(class49.field919, class18.field279, -118, arg0 - arg1);
         for (int var13 = var7; var13 < var11; var13++) {
@@ -95,8 +95,8 @@ public class class21 {
         for (int var14 = var8; var14 > var12; var14--) {
             class230.method1536(var9, arg5, -7, var10, class3.field42[var14]);
         }
-        int var15 = class156.method1060(class67.field1207, class12.field183, -103, arg1 + arg2);
-        int var16 = class156.method1060(class67.field1207, class12.field183, -124, arg4 - arg1);
+        int var15 = class156.method1060(Linkable.field1207, class12.field183, -103, arg1 + arg2);
+        int var16 = class156.method1060(Linkable.field1207, class12.field183, -124, arg4 - arg1);
         for (int var17 = var11; var17 <= var12; var17++) {
             int[] var18 = class3.field42[var17];
             class230.method1536(var9, arg5, -7, var15, var18);

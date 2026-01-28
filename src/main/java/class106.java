@@ -219,7 +219,7 @@ public class class106 {
         class60.field1131 = 0;
         Client.field573 = 0;
         class88.field1630 = 0;
-        class67.field1205 = 0;
+        Linkable.field1205 = 0;
         class104.field1878 = 0;
         class57.field1087 = 0;
         class160.field3081 = 0;
@@ -365,7 +365,7 @@ public class class106 {
         Client.field562 = 0;
         class174.field3517 = 0;
         Packet.field837 = 0;
-        class67.field1213 = 0;
+        Linkable.field1213 = 0;
         class153.field2963 = 0;
         class240.field4459 = 0;
         class237.field4410 = 0;
@@ -444,7 +444,7 @@ public class class106 {
         Js5Local.field358 = 0;
         class218.field4092 = 0;
         class222.field4193 = 0;
-        class67.field1217 = 0;
+        Linkable.field1217 = 0;
         class190.field3677 = 0;
         class116.field2101 = 0;
         Packet.field867 = 0;
@@ -515,7 +515,7 @@ public class class106 {
         class170.field3286 = 0;
         class55.field1029 = 0;
         class101.field1832 = 0;
-        class67.field1203 = 0;
+        Linkable.field1203 = 0;
         class170.field3271 = 0;
         class88.field1627 = 0;
         class165.field3165 = 0;
@@ -560,7 +560,7 @@ public class class106 {
         GameShell.field1584 = 0;
         Packet.field857 = 0;
         ClientStream.field2551 = 0;
-        class67.field1209 = 0;
+        Linkable.field1209 = 0;
         GameShell.field1586 = 0;
         class62.field1141 = 0;
         class165.field3150 = 0;

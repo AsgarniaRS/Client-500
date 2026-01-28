@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!g")
-public class class67 {
+public class Linkable {
 
     @OriginalMember(owner = "client!g", name = "e", descriptor = "I")
     public static int field1207 = 0;
@@ -50,10 +50,10 @@ public class class67 {
     public static Js5Local field1204;
 
     @OriginalMember(owner = "client!g", name = "j", descriptor = "Lg;")
-    public class67 field1212;
+    public Linkable prev;
 
     @OriginalMember(owner = "client!g", name = "r", descriptor = "Lg;")
-    public class67 field1220;
+    public Linkable next;
 
     @OriginalMember(owner = "client!g", name = "p", descriptor = "[I")
     public static int[] field1218;
@@ -98,41 +98,26 @@ public class class67 {
     }
 
     @OriginalMember(owner = "client!g", name = "a", descriptor = "(I)Z")
-    public final boolean method459(int arg0) {
-        field1209++;
-        if (this.field1212 == null) {
-            return false;
-        } else {
-            if (arg0 != 1) {
-                this.method459(6);
-            }
-            return true;
-        }
+    public final boolean isLinked() {
+        return this.prev != null;
     }
 
     @OriginalMember(owner = "client!g", name = "a", descriptor = "(Z)V")
-    public final void method460(boolean arg0) {
-        field1205++;
-        if (this.field1212 == null) {
+    public final void unlink() {
+        if (this.prev == null) {
             return;
         }
-        this.field1212.field1220 = this.field1220;
-        this.field1220.field1212 = this.field1212;
-        if (!arg0) {
-            this.method460(false);
-        }
-        this.field1220 = null;
-        this.field1212 = null;
+        this.prev.next = this.next;
+        this.next.prev = this.prev;
+        this.next = null;
+        this.prev = null;
     }
 
     @OriginalMember(owner = "client!g", name = "a", descriptor = "(B)V")
-    public static void method461(byte arg0) {
+    public static void method461() {
         field1210 = null;
         field1218 = null;
         field1216 = null;
-        if (arg0 < 101) {
-            field1218 = null;
-        }
         field1214 = null;
         field1204 = null;
     }

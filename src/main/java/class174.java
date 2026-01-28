@@ -472,7 +472,7 @@ public class class174 {
         class193[] var2 = new class193[class172.field3347];
         field3418++;
         for (int var3 = 0; var3 < class172.field3347; var3++) {
-            var2[var3] = new class193(class15.field229, class129.field2426, class247.field4530[var3], class135.field2512[var3], class102.field1853[var3], class67.field1218[var3], class116.field2106[var3], class27.field456);
+            var2[var3] = new class193(class15.field229, class129.field2426, class247.field4530[var3], class135.field2512[var3], class102.field1853[var3], Linkable.field1218[var3], class116.field2106[var3], class27.field456);
         }
         class239.method1580(-118);
         return var2;

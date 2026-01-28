@@ -121,7 +121,7 @@ public class class116 extends class23 {
     public static final void method791(int arg0) {
         if (~class114.field2063 < -2) {
             --class114.field2063;
-            class208.field3954 = class67.field1211;
+            class208.field3954 = Linkable.field1211;
         }
         int var1 = 79 % ((arg0 - 33) / 50);
         if (~class105.field1912 < -1) {
@@ -242,7 +242,7 @@ public class class116 extends class23 {
                     --class88.field1638;
                 }
                 if (class176.field3548 && ~class88.field1638 >= -1) {
-                    ++class67.field1203;
+                    ++Linkable.field1203;
                     class176.field3548 = false;
                     class88.field1638 = 20;
                     Isaac.out.method30(173);
@@ -362,7 +362,7 @@ public class class116 extends class23 {
                         if (class43.field723 != -1) {
                             class230.method1535(0, class145.field2727, 0, 0, class222.field4194, 94, class43.field723, 0);
                         }
-                        ++class67.field1211;
+                        ++Linkable.field1211;
                         while (true) {
                             class39 var28;
                             class174 var29;

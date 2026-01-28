@@ -191,14 +191,14 @@ public class class113 extends class23 {
                         class114.method783(var1.field3057, var1.field3065, var1.field3054, var1.field3064, false, var1.field3053, var1.field3070, var1.field3061);
                         var1.field3056 = -1;
                         if (var1.field3055 == var1.field3053 && ~var1.field3055 == 0) {
-                            var1.method460(true);
+                            var1.unlink();
                         } else if (var1.field3055 == var1.field3053 && ~var1.field3070 == ~var1.field3066 && var1.field3064 == var1.field3062) {
-                            var1.method460(true);
+                            var1.unlink();
                         }
                     }
                 } else if (var1.field3055 < 0 || class8.method43(var1.field3062, 8, var1.field3055)) {
                     class114.method783(var1.field3057, var1.field3065, var1.field3054, var1.field3062, false, var1.field3055, var1.field3066, var1.field3061);
-                    var1.method460(true);
+                    var1.unlink();
                 }
                 var1 = (class159) class62.field1140.method1621(82);
             }

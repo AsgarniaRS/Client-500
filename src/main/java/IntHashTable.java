@@ -198,7 +198,7 @@ public class IntHashTable {
                                 class77.ioErrorCount = 0;
                                 class53.incomingRequest.provider.method105((int) (class53.incomingRequest.nodeId & 0xFFFFL), class149.incomingBuffer.data, class138.field2569, 104, (class53.incomingRequest.nodeId & 0xFF0000L) == 16711680L);
                             }
-                            class53.incomingRequest.method460(true);
+                            class53.incomingRequest.unlink();
                             class28.field473 = 0;
                             if (class138.field2569) {
                                 class203.field3878--;

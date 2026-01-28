@@ -145,8 +145,8 @@ public class class147 {
         field2758++;
         int var8 = class156.method1060(class49.field919, class18.field279, -122, arg2);
         int var9 = class156.method1060(class49.field919, class18.field279, -122, arg4);
-        int var10 = class156.method1060(class67.field1207, class12.field183, -121, arg3);
-        int var11 = class156.method1060(class67.field1207, class12.field183, -106, arg1);
+        int var10 = class156.method1060(Linkable.field1207, class12.field183, -121, arg3);
+        int var11 = class156.method1060(Linkable.field1207, class12.field183, -106, arg1);
         int var12 = class156.method1060(class49.field919, class18.field279, -113, arg2 + arg5);
         int var13 = class156.method1060(class49.field919, class18.field279, -125, arg4 - arg5);
         for (int var14 = var8; var14 < var12; var14++) {
@@ -158,8 +158,8 @@ public class class147 {
         if (arg6 < 66) {
             return;
         }
-        int var16 = class156.method1060(class67.field1207, class12.field183, -121, arg3 + arg5);
-        int var17 = class156.method1060(class67.field1207, class12.field183, -126, arg1 - arg5);
+        int var16 = class156.method1060(Linkable.field1207, class12.field183, -121, arg3 + arg5);
+        int var17 = class156.method1060(Linkable.field1207, class12.field183, -126, arg1 - arg5);
         for (int var18 = var12; var18 <= var13; var18++) {
             int[] var19 = class3.field42[var18];
             class230.method1536(var10, arg7, -7, var16, var19);

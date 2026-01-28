@@ -85,7 +85,7 @@ public class class6 extends Packet {
         if (!arg0) {
             field82 = null;
         }
-        if (class67.field1207 <= arg4 && class12.field183 >= arg5 && ~arg2 <= ~class49.field919 && ~class18.field279 <= ~arg1) {
+        if (Linkable.field1207 <= arg4 && class12.field183 >= arg5 && ~arg2 <= ~class49.field919 && ~class18.field279 <= ~arg1) {
             class223.method1504(arg4, arg3, arg5, arg2, !arg0, arg1);
         } else {
             Client.method226(arg3, arg2, arg1, 63, arg4, arg5);

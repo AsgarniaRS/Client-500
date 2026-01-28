@@ -88,7 +88,7 @@ public class class132 extends class23 {
             field2466 = null;
         }
         ++field2481;
-        if (~class67.field1207 >= ~arg6 && arg3 <= class12.field183 && arg2 >= class49.field919 && ~class18.field279 <= ~arg4) {
+        if (~Linkable.field1207 >= ~arg6 && arg3 <= class12.field183 && arg2 >= class49.field919 && ~class18.field279 <= ~arg4) {
             if (arg0 != 1) {
                 class115.method788(arg3, arg5, arg0, arg4, arg2, false, arg6);
             } else {

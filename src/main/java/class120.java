@@ -299,7 +299,7 @@ public class class120 extends class23 {
                 var21.field3061 -= var9;
                 var21.field3054 -= var8;
                 if (var21.field3061 < 0 || ~var21.field3054 > -1 || var21.field3061 >= 104 || var21.field3054 >= 104) {
-                    var21.method460(true);
+                    var21.unlink();
                 }
             }
             if (~class116.field2104 != -1) {

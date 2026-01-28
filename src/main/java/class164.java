@@ -118,7 +118,7 @@ public class class164 implements class198 {
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "(I)Lrh;")
     public static final class193 method1131(int arg0) {
         field3146++;
-        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[arg0], class67.field1218[0], class116.field2106[0], class27.field456);
+        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[arg0], Linkable.field1218[0], class116.field2106[0], class27.field456);
         class239.method1580(108);
         return var1;
     }
@@ -133,7 +133,7 @@ public class class164 implements class198 {
         if (arg0 < 59) {
             method1131(-1);
         }
-        while (var2 < class67.field1221) {
+        while (var2 < Linkable.field1221) {
             if (arg1.method624(Isaac.field2743[var2], (byte) 83)) {
                 return true;
             }

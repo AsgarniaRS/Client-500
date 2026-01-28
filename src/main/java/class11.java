@@ -179,11 +179,11 @@ public class class11 extends class23 {
     public static final void method55(int arg0, long arg1) {
         ++field158;
         if (arg1 != 0L) {
-            if (class67.field1221 >= 100) {
+            if (Linkable.field1221 >= 100) {
                 class223.method1501(class118.field2144, 12, 0, class174.field3455);
             } else {
                 class88 var3 = class200.method1377(arg1, (byte) 123).method614((byte) 83);
-                for (int var4 = 0; ~class67.field1221 < ~var4; ++var4) {
+                for (int var4 = 0; ~Linkable.field1221 < ~var4; ++var4) {
                     if (~class95.field1765[var4] == ~arg1) {
                         class223.method1501(class166.method1142(new class88[] { var3, class155.field3001 }, -3), arg0 ^ -12, 0, class174.field3455);
                         return;
@@ -199,9 +199,9 @@ public class class11 extends class23 {
                     class223.method1501(field151, 12, 0, class174.field3455);
                 } else {
                     ++class159.field3060;
-                    class95.field1765[class67.field1221] = arg1;
-                    Isaac.field2743[class67.field1221++] = class200.method1377(arg1, (byte) 104);
-                    class20.field313 = class67.field1211;
+                    class95.field1765[Linkable.field1221] = arg1;
+                    Isaac.field2743[Linkable.field1221++] = class200.method1377(arg1, (byte) 104);
+                    class20.field313 = Linkable.field1211;
                     Isaac.out.method30(28);
                     if (arg0 == -8) {
                         Isaac.out.p8(arg1, (byte) -123);

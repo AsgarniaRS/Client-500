@@ -109,7 +109,7 @@ public class class97 extends class136 {
     @OriginalMember(owner = "client!ij", name = "a", descriptor = "(Li;I)V")
     public static final void method684(class88 arg0, int arg1) {
         field1790++;
-        if (arg1 <= class67.field1208) {
+        if (arg1 <= Linkable.field1208) {
             if (arg0.method624(class78.field1421, (byte) -63)) {
                 for (int var2 = 0; var2 < 10; var2++) {
                     System.gc();

@@ -88,9 +88,9 @@ public class class133 extends class23 {
     public static final class88 method891(int arg0, int arg1) {
         ++field2484;
         if (arg1 > arg0) {
-            return class166.method1142(new class88[] { class25.field399, class170.method1214(arg0, 25), class67.field1214 }, -3);
+            return class166.method1142(new class88[] { class25.field399, class170.method1214(arg0, 25), Linkable.field1214 }, -3);
         } else {
-            return arg0 < 10000000 ? class166.method1142(new class88[] { class16.field241, class170.method1214(arg0 / 1000, arg1 ^ 100023), class159.field3071, class67.field1214 }, -3) : class166.method1142(new class88[] { class132.field2464, class170.method1214(arg0 / 1000000, 103), class132.field2466, class67.field1214 }, arg1 + -100003);
+            return arg0 < 10000000 ? class166.method1142(new class88[] { class16.field241, class170.method1214(arg0 / 1000, arg1 ^ 100023), class159.field3071, Linkable.field1214 }, -3) : class166.method1142(new class88[] { class132.field2464, class170.method1214(arg0 / 1000000, 103), class132.field2466, Linkable.field1214 }, arg1 + -100003);
         }
     }
 

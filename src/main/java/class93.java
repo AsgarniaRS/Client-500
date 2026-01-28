@@ -60,7 +60,7 @@ public class class93 {
         field1736++;
         int var3 = arg1.field3231;
         int var4 = (int) arg1.nodeId;
-        arg1.method460(true);
+        arg1.unlink();
         if (arg2) {
             class35.method233(var3, (byte) 96);
         }

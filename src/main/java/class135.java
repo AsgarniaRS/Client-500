@@ -1151,14 +1151,14 @@ public class class135 extends class23 {
                                                             if (~class115.field2080 == -1) {
                                                                 class108.field1946[var6++] = -1;
                                                             } else {
-                                                                class108.field1946[var6++] = class67.field1221;
+                                                                class108.field1946[var6++] = Linkable.field1221;
                                                             }
                                                             continue;
                                                         }
                                                         if (var383 == 3622) {
                                                             --var6;
                                                             int var96 = class108.field1946[var6];
-                                                            if (class115.field2080 != 0 && var96 < class67.field1221) {
+                                                            if (class115.field2080 != 0 && var96 < Linkable.field1221) {
                                                                 class171.field3332[var7++] = class200.method1377(class95.field1765[var96], (byte) 73).method614((byte) 83);
                                                                 continue;
                                                             }
@@ -1528,8 +1528,8 @@ public class class135 extends class23 {
                                                                 continue;
                                                             }
                                                             if (var383 == 4211) {
-                                                                if (class67.field1210 != null && class204.field3895 > class116.field2109) {
-                                                                    class108.field1946[var6++] = class70.method470(class67.field1210[class116.field2109++], 65535);
+                                                                if (Linkable.field1210 != null && class204.field3895 > class116.field2109) {
+                                                                    class108.field1946[var6++] = class70.method470(Linkable.field1210[class116.field2109++], 65535);
                                                                     continue;
                                                                 }
                                                                 class108.field1946[var6++] = -1;
@@ -1556,17 +1556,17 @@ public class class135 extends class23 {
                                                             if (var383 >= 4600) {
                                                                 if (var383 < 5100) {
                                                                     if (~var383 == -5001) {
-                                                                        class108.field1946[var6++] = class67.field1206;
+                                                                        class108.field1946[var6++] = Linkable.field1206;
                                                                         continue;
                                                                     }
                                                                     if (var383 == 5001) {
                                                                         var6 -= 3;
                                                                         ++class2.field15;
-                                                                        class67.field1206 = class108.field1946[var6];
+                                                                        Linkable.field1206 = class108.field1946[var6];
                                                                         class10.field142 = class108.field1946[var6 - -1];
                                                                         class128.field2410 = class108.field1946[var6 + 2];
                                                                         Isaac.out.method30(115);
-                                                                        Isaac.out.p1(255, class67.field1206);
+                                                                        Isaac.out.p1(255, Linkable.field1206);
                                                                         Isaac.out.p1(255, class10.field142);
                                                                         Isaac.out.p1(255, class128.field2410);
                                                                         continue;
@@ -1618,7 +1618,7 @@ public class class135 extends class23 {
                                                                             class97.method684(var190, 2);
                                                                             continue;
                                                                         }
-                                                                        if (class67.field1208 == 0 && (class238.field4430 == 1 || ~class176.field3537 == -2)) {
+                                                                        if (Linkable.field1208 == 0 && (class238.field4430 == 1 || ~class176.field3537 == -2)) {
                                                                             continue;
                                                                         }
                                                                         ++class95.field1769;
@@ -1775,7 +1775,7 @@ public class class135 extends class23 {
                                                                         var7 -= 2;
                                                                         class88 var196 = class171.field3332[var7];
                                                                         class88 var197 = class171.field3332[var7 + 1];
-                                                                        if (class67.field1208 != 0 || ~class238.field4430 != -2 && ~class176.field3537 != -2) {
+                                                                        if (Linkable.field1208 != 0 || ~class238.field4430 != -2 && ~class176.field3537 != -2) {
                                                                             ++class176.field3538;
                                                                             Isaac.out.method30(80);
                                                                             Isaac.out.p1(255, 0);
@@ -2410,7 +2410,7 @@ public class class135 extends class23 {
                                                 if (~var383 == -3305) {
                                                     --var6;
                                                     int var321 = class108.field1946[var6];
-                                                    class108.field1946[var6++] = class67.method458(var321, -84).field2069;
+                                                    class108.field1946[var6++] = Linkable.method458(var321, -84).field2069;
                                                     continue;
                                                 }
                                                 if (var383 == 3305) {
@@ -2457,7 +2457,7 @@ public class class135 extends class23 {
                                                     continue;
                                                 }
                                                 if (~var383 == -3313) {
-                                                    class108.field1946[var6++] = !class67.field1215 ? 0 : 1;
+                                                    class108.field1946[var6++] = !Linkable.field1215 ? 0 : 1;
                                                     continue;
                                                 }
                                                 if (var383 == 3313) {
@@ -2482,10 +2482,10 @@ public class class135 extends class23 {
                                                     continue;
                                                 }
                                                 if (var383 == 3316) {
-                                                    if (~class67.field1208 > -3) {
+                                                    if (~Linkable.field1208 > -3) {
                                                         class108.field1946[var6++] = 0;
                                                     } else {
-                                                        class108.field1946[var6++] = class67.field1208;
+                                                        class108.field1946[var6++] = Linkable.field1208;
                                                     }
                                                     continue;
                                                 }

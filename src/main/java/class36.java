@@ -223,7 +223,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
         if (arg1 == null) {
             return null;
         } else {
-            class41 var2 = new class41(arg1, class247.field4530, class135.field2512, class102.field1853, class67.field1218, class116.field2106);
+            class41 var2 = new class41(arg1, class247.field4530, class135.field2512, class102.field1853, Linkable.field1218, class116.field2106);
             if (arg0 >= -86) {
                 field652 = null;
             }

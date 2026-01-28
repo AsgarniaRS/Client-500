@@ -74,9 +74,9 @@ public class class150 {
             return;
         }
         boolean var6;
-        if (class67.field1207 > arg2) {
+        if (Linkable.field1207 > arg2) {
             var6 = false;
-            arg2 = class67.field1207;
+            arg2 = Linkable.field1207;
         } else if (class12.field183 >= arg2) {
             var6 = true;
         } else {
@@ -84,8 +84,8 @@ public class class150 {
             var6 = false;
         }
         boolean var7;
-        if (arg5 < class67.field1207) {
-            arg5 = class67.field1207;
+        if (arg5 < Linkable.field1207) {
+            arg5 = Linkable.field1207;
             var7 = false;
         } else if (class12.field183 >= arg5) {
             var7 = true;

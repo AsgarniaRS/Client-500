@@ -63,7 +63,7 @@ public class class112 {
         class159.field3073 = class115.field2083;
         class210.field3993 = class204.field3886;
         class128.field2406 = class172.field3342;
-        class29.field478 = class67.field1216;
+        class29.field478 = Linkable.field1216;
         class211.field4009 = class25.field400;
         class70.field1266 = class1.field5;
         class138.field2563 = class218.field4081;

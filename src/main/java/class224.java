@@ -61,7 +61,7 @@ public class class224 extends class51 {
                     this.method1510(var5);
                 } else {
                     var5.field1338 = var7;
-                    this.method1512(var5.field1220, var5);
+                    this.method1512(var5.next, var5);
                 }
             }
         } while (arg2 != 0);
@@ -97,7 +97,7 @@ public class class224 extends class51 {
                     this.method1510(var3);
                 } else {
                     var3.field1338 = var5;
-                    this.method1512(var3.field1220, var3);
+                    this.method1512(var3.next, var3);
                 }
             }
         } while (arg0 != 0);
@@ -122,9 +122,9 @@ public class class224 extends class51 {
 
     @OriginalMember(owner = "client!uf", name = "a", descriptor = "(Lgg;)V")
     private final void method1510(class73 arg0) {
-        arg0.method460(true);
+        arg0.unlink();
         arg0.method499();
-        class67 var2 = this.field4217.field4536.field1220;
+        Linkable var2 = this.field4217.field4536.next;
         if (this.field4217.field4536 == var2) {
             this.field4218 = -1;
         } else {
@@ -134,7 +134,7 @@ public class class224 extends class51 {
 
     @OriginalMember(owner = "client!uf", name = "b", descriptor = "(Lef;)V")
     public final synchronized void method1511(class51 arg0) {
-        arg0.method460(true);
+        arg0.unlink();
     }
 
     @OriginalMember(owner = "client!uf", name = "d", descriptor = "()Lef;")
@@ -143,11 +143,11 @@ public class class224 extends class51 {
     }
 
     @OriginalMember(owner = "client!uf", name = "a", descriptor = "(Lg;Lgg;)V")
-    private final void method1512(class67 arg0, class73 arg1) {
+    private final void method1512(Linkable arg0, class73 arg1) {
         while (this.field4217.field4536 != arg0 && ((class73) arg0).field1338 <= arg1.field1338) {
-            arg0 = arg0.field1220;
+            arg0 = arg0.next;
         }
         this.field4217.method1622(arg1, (byte) -97, arg0);
-        this.field4218 = ((class73) this.field4217.field4536.field1220).field1338;
+        this.field4218 = ((class73) this.field4217.field4536.next).field1338;
     }
 }

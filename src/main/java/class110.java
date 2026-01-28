@@ -113,7 +113,7 @@ public class class110 {
                     int var11 = var10 + var3[var5++];
                     class174 var12 = class239.method1581(-64, var11);
                     int var13 = var3[var5++];
-                    if (var13 != -1 && (!class71.method472(var13, (byte) -122).field2879 || class67.field1215)) {
+                    if (var13 != -1 && (!class71.method472(var13, (byte) -122).field2879 || Linkable.field1215)) {
                         for (int var14 = 0; var14 < var12.field3390.length; var14++) {
                             if (var13 + 1 == var12.field3390[var14]) {
                                 var9 += var12.field3476[var14];
@@ -145,7 +145,7 @@ public class class110 {
                     int var17 = var16 + var3[var5++];
                     class174 var18 = class239.method1581(-64, var17);
                     int var19 = var3[var5++];
-                    if (var19 != -1 && (!class71.method472(var19, (byte) -127).field2879 || class67.field1215)) {
+                    if (var19 != -1 && (!class71.method472(var19, (byte) -127).field2879 || Linkable.field1215)) {
                         for (int var20 = 0; var20 < var18.field3390.length; var20++) {
                             if (var19 + 1 == var18.field3390[var20]) {
                                 var9 = 999999999;

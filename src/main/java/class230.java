@@ -112,7 +112,7 @@ public class class230 {
     @OriginalMember(owner = "client!va", name = "a", descriptor = "(IIIIB)V")
     public static final void method1534(int arg0, int arg1, int arg2, int arg3, byte arg4) {
         field4300++;
-        if (class67.field1207 <= arg0 - arg1 && class12.field183 >= arg0 + arg1 && arg2 - arg1 >= class49.field919 && class18.field279 >= arg1 + arg2) {
+        if (Linkable.field1207 <= arg0 - arg1 && class12.field183 >= arg0 + arg1 && arg2 - arg1 >= class49.field919 && class18.field279 >= arg1 + arg2) {
             class109.method747(116, arg2, arg3, arg1, arg0);
         } else {
             Packet.method318(-61, arg3, arg0, arg1, arg2);
@@ -325,7 +325,7 @@ public class class230 {
                     class156 var4 = (class156) this.field4302.method1614((byte) -25);
                     var3 = new class156(arg1, var4.field3008);
                     this.field4293[var4.field3017] = null;
-                    var4.method460(true);
+                    var4.unlink();
                 }
                 this.field4293[arg1] = var3;
             } else {

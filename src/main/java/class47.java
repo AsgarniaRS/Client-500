@@ -224,7 +224,7 @@ public class class47 extends class136 {
             this.field871 = new class154(class184.method1298(true, var4));
             for (int var5 = 0; var5 < var4; var5++) {
                 int var6 = arg2.g4();
-                class67 var7;
+                Linkable var7;
                 if (arg0 == 5) {
                     var7 = new class216(arg2.gjstr(-127));
                 } else {

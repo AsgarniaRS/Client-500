@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!we")
-public class class244 extends class67 {
+public class class244 extends Linkable {
 
     @OriginalMember(owner = "client!we", name = "B", descriptor = "[Ldj;")
     public static scene[] field4493 = new scene[2048];
@@ -268,7 +268,7 @@ public class class244 extends class67 {
                     if (var119 != null) {
                         for (class227 var120 = (class227) var119.method1612(false); var120 != null; var120 = (class227) var119.method1621(arg0 ^ 0xFFFFDCCB)) {
                             if ((var118 & 0x7FFF) == var120.field4260.field2032) {
-                                var120.method460(true);
+                                var120.unlink();
                                 break;
                             }
                         }
@@ -470,7 +470,7 @@ public class class244 extends class67 {
         Packet var2 = new Packet(arg1);
         var2.pos = arg1.length - 2;
         class172.field3347 = var2.g2();
-        class67.field1218 = new int[class172.field3347];
+        Linkable.field1218 = new int[class172.field3347];
         class116.field2106 = new byte[class172.field3347][];
         class135.field2512 = new int[class172.field3347];
         class247.field4530 = new int[class172.field3347];
@@ -494,7 +494,7 @@ public class class244 extends class67 {
             class102.field1853[var6] = var2.g2();
         }
         for (int var7 = 0; var7 < class172.field3347; var7++) {
-            class67.field1218[var7] = var2.g2();
+            Linkable.field1218[var7] = var2.g2();
         }
         var2.pos = arg1.length - class172.field3347 * 8 - (var3 + -1) * 3 - 7;
         class27.field456 = new int[var3];
@@ -506,7 +506,7 @@ public class class244 extends class67 {
         }
         var2.pos = 0;
         for (int var9 = 0; var9 < class172.field3347; var9++) {
-            int var10 = class67.field1218[var9];
+            int var10 = Linkable.field1218[var9];
             int var11 = class102.field1853[var9];
             int var12 = var10 * var11;
             byte[] var13 = new byte[var12];

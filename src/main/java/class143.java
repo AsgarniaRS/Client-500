@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!na")
-public class class143 extends class67 {
+public class class143 extends Linkable {
 
     @OriginalMember(owner = "client!na", name = "I", descriptor = "Li;")
     private static class88 field2643 = class208.method1425(105, "skill)2");
@@ -169,12 +169,12 @@ public class class143 extends class67 {
                         if (var10.field3472 && var16 <= class28.field471 && class239.field4451 >= var13 && var18 > class28.field471 && class239.field4451 < var17) {
                             for (class39 var19 = (class39) class74.field1349.method1612(false); var19 != null; var19 = (class39) class74.field1349.method1621(82)) {
                                 if (var19.field686) {
-                                    var19.method460(true);
+                                    var19.unlink();
                                 }
                             }
                             for (class39 var20 = (class39) class199.field3812.method1612(false); var20 != null; var20 = (class39) class199.field3812.method1621(arg2 + 51)) {
                                 if (var20.field686) {
-                                    var20.method460(true);
+                                    var20.unlink();
                                 }
                             }
                             if (class227.field4258 == 0) {
@@ -247,7 +247,7 @@ public class class143 extends class67 {
                             if (var10.field3441 == 1400) {
                                 class90.field1707 = var10;
                                 if (var22) {
-                                    if (class247.field4513[82] && class67.field1208 > 0) {
+                                    if (class247.field4513[82] && Linkable.field1208 > 0) {
                                         int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / GZip.field1110) - class157.field3035;
                                         int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / GZip.field1110) + class126.field2332 + class16.field239;
                                         class88 var30 = class166.method1142(new class88[] { class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79) }, -3);
@@ -454,7 +454,7 @@ public class class143 extends class67 {
                                 var58.field681 = var10.field3446;
                                 class74.field1349.method1624(var58, 59);
                             }
-                            var10.field3464 = class67.field1211;
+                            var10.field3464 = Linkable.field1211;
                             if (var10.field3379 != null) {
                                 for (int var59 = 0; var59 < class81.field1467; var59++) {
                                     class39 var60 = new class39();

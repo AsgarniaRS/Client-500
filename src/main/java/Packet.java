@@ -3,7 +3,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!ea")
-public class Packet extends class67 {
+public class Packet extends Linkable {
 
     @OriginalMember(owner = "client!ea", name = "ib", descriptor = "[B")
     public byte[] data;
@@ -479,9 +479,9 @@ public class Packet extends class67 {
         int var5 = 0;
         int var6 = arg3;
         int var7 = -arg3;
-        int var8 = class156.method1060(class67.field1207, class12.field183, -107, arg2 + arg3);
+        int var8 = class156.method1060(Linkable.field1207, class12.field183, -107, arg2 + arg3);
         int var9 = -1;
-        int var10 = class156.method1060(class67.field1207, class12.field183, -125, arg2 - arg3);
+        int var10 = class156.method1060(Linkable.field1207, class12.field183, -125, arg2 - arg3);
         class230.method1536(var10, arg1, -7, var8, class3.field42[arg4]);
         while (var6 > var5) {
             var9 += 2;
@@ -492,8 +492,8 @@ public class Packet extends class67 {
                 int var11 = arg4 - var6;
                 int var12 = arg4 + var6;
                 if (class49.field919 <= var12 && var11 <= class18.field279) {
-                    int var13 = class156.method1060(class67.field1207, class12.field183, -103, arg2 + var5);
-                    int var14 = class156.method1060(class67.field1207, class12.field183, -111, arg2 - var5);
+                    int var13 = class156.method1060(Linkable.field1207, class12.field183, -103, arg2 + var5);
+                    int var14 = class156.method1060(Linkable.field1207, class12.field183, -111, arg2 - var5);
                     if (var12 <= class18.field279) {
                         class230.method1536(var14, arg1, -7, var13, class3.field42[var12]);
                     }
@@ -506,8 +506,8 @@ public class Packet extends class67 {
             int var15 = arg4 + var5;
             int var16 = arg4 - var5;
             if (class49.field919 <= var15 && class18.field279 >= var16) {
-                int var17 = class156.method1060(class67.field1207, class12.field183, -122, arg2 + var6);
-                int var18 = class156.method1060(class67.field1207, class12.field183, -102, arg2 - var6);
+                int var17 = class156.method1060(Linkable.field1207, class12.field183, -122, arg2 + var6);
+                int var18 = class156.method1060(Linkable.field1207, class12.field183, -102, arg2 - var6);
                 if (var15 <= class18.field279) {
                     class230.method1536(var18, arg1, -7, var17, class3.field42[var15]);
                 }

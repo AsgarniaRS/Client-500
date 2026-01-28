@@ -779,7 +779,7 @@ public class class149 extends class136 {
             for (int var8 = 0; var8 < var6; var8++) {
                 boolean var9 = arg2.g1() == 1;
                 int var10 = arg2.method304(-29629);
-                class67 var11;
+                Linkable var11;
                 if (var9) {
                     var11 = new class216(arg2.gjstr(-127));
                 } else {

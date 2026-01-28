@@ -163,7 +163,7 @@ public class class239 {
     @OriginalMember(owner = "client!w", name = "a", descriptor = "(I)V")
     public static final void method1580(int arg0) {
         class247.field4530 = null;
-        class67.field1218 = null;
+        Linkable.field1218 = null;
         class135.field2512 = null;
         class116.field2106 = null;
         field4440++;

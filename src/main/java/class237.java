@@ -147,7 +147,7 @@ public class class237 extends class136 {
     public static final class169 method1573(int arg0) {
         field4421++;
         byte[] var1 = class116.field2106[0];
-        int var2 = class67.field1218[0] * class102.field1853[0];
+        int var2 = Linkable.field1218[0] * class102.field1853[0];
         if (arg0 != -1) {
             method1573(-89);
         }
@@ -155,7 +155,7 @@ public class class237 extends class136 {
         for (int var4 = 0; var4 < var2; var4++) {
             var3[var4] = class27.field456[class70.method470(255, var1[var4])];
         }
-        class169 var5 = new class169(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], class67.field1218[0], var3);
+        class169 var5 = new class169(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], Linkable.field1218[0], var3);
         class239.method1580(92);
         return var5;
     }

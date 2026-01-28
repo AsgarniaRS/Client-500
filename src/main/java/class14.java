@@ -83,7 +83,7 @@ public class class14 extends RuntimeException {
         field218++;
         for (class192 var2 = (class192) class31.field495.method1049(arg0 ^ arg0); var2 != null; var2 = (class192) class31.field495.method1050((byte) -73)) {
             if ((long) arg1 == (var2.nodeId >> 48 & 0xFFFFL)) {
-                var2.method460(true);
+                var2.unlink();
             }
         }
     }

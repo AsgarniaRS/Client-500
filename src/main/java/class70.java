@@ -172,7 +172,7 @@ public class class70 {
             if ((!arg1 || var9.field2863) && var9.field2869 == -1 && var9.field2886 == -1 && var9.field2852 == 0 && var9.field2894.method639(arg0 + 122).method617(-113, var3) != -1) {
                 if (var4 >= 250) {
                     class204.field3895 = -1;
-                    class67.field1210 = null;
+                    Linkable.field1210 = null;
                     return;
                 }
                 if (var4 >= var5.length) {
@@ -187,12 +187,12 @@ public class class70 {
         }
         class116.field2109 = 0;
         class204.field3895 = var4;
-        class67.field1210 = var5;
+        Linkable.field1210 = var5;
         class88[] var7 = new class88[class204.field3895];
         for (int var8 = arg0; var8 < class204.field3895; var8++) {
             var7[var8] = class71.method472(var5[var8], (byte) -98).field2894;
         }
-        class200.method1378(class67.field1210, 112, var7);
+        class200.method1378(Linkable.field1210, 112, var7);
     }
 
     @OriginalMember(owner = "client!gd", name = "a", descriptor = "(I)V")

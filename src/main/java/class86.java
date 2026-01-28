@@ -34,7 +34,7 @@ public abstract class class86 {
     @OriginalMember(owner = "client!hi", name = "a", descriptor = "(IBIII)V")
     public static final void method580(int arg0, byte arg1, int arg2, int arg3, int arg4) {
         field1555++;
-        if (class67.field1207 <= arg4 && arg4 <= class12.field183) {
+        if (Linkable.field1207 <= arg4 && arg4 <= class12.field183) {
             int var5 = class156.method1060(class49.field919, class18.field279, -119, arg3);
             int var6 = class156.method1060(class49.field919, class18.field279, -102, arg2);
             class109.method755(arg0, var5, 89, arg4, var6);

@@ -34,7 +34,7 @@ public class class238 {
     @OriginalMember(owner = "client!vi", name = "a", descriptor = "(IBIII)V")
     public static final void method1577(int arg0, byte arg1, int arg2, int arg3, int arg4) {
         class12.field183 = arg3;
-        class67.field1207 = arg0;
+        Linkable.field1207 = arg0;
         class49.field919 = arg4;
         field4428++;
         class18.field279 = arg2;

@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class248 {
 
     @OriginalMember(owner = "client!wi", name = "d", descriptor = "Lg;")
-    public class67 field4536 = new class67();
+    public Linkable field4536 = new Linkable();
 
     @OriginalMember(owner = "client!wi", name = "e", descriptor = "I")
     public static int field4537 = 0;
@@ -70,20 +70,20 @@ public class class248 {
     public static Js5Local field4552;
 
     @OriginalMember(owner = "client!wi", name = "h", descriptor = "Lg;")
-    private class67 field4540;
+    private Linkable field4540;
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(Z)Lg;")
-    public final class67 method1612(boolean arg0) {
+    public final Linkable method1612(boolean arg0) {
         if (arg0) {
             return null;
         }
         field4541++;
-        class67 var2 = this.field4536.field1220;
+        Linkable var2 = this.field4536.next;
         if (this.field4536 == var2) {
             this.field4540 = null;
             return null;
         } else {
-            this.field4540 = var2.field1220;
+            this.field4540 = var2.next;
             return var2;
         }
     }
@@ -129,8 +129,8 @@ public class class248 {
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(B)Lg;")
-    public final class67 method1614(byte arg0) {
-        class67 var2 = this.field4536.field1212;
+    public final Linkable method1614(byte arg0) {
+        Linkable var2 = this.field4536.prev;
         if (arg0 != -25) {
             this.method1621(91);
         }
@@ -139,20 +139,20 @@ public class class248 {
             this.field4540 = null;
             return null;
         } else {
-            this.field4540 = var2.field1212;
+            this.field4540 = var2.prev;
             return var2;
         }
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(I)Lg;")
-    public final class67 method1615(int arg0) {
+    public final Linkable method1615(int arg0) {
         int var2 = 92 % ((62 - arg0) / 62);
         field4542++;
-        class67 var3 = this.field4536.field1220;
+        Linkable var3 = this.field4536.next;
         if (this.field4536 == var3) {
             return null;
         } else {
-            var3.method460(true);
+            var3.unlink();
             return var3;
         }
     }
@@ -169,18 +169,18 @@ public class class248 {
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(ILg;)V")
-    public final void method1617(int arg0, class67 arg1) {
+    public final void method1617(int arg0, Linkable arg1) {
         if (arg0 != 24290) {
             field4550 = null;
         }
-        if (arg1.field1212 != null) {
-            arg1.method460(true);
+        if (arg1.prev != null) {
+            arg1.unlink();
         }
-        arg1.field1220 = this.field4536.field1220;
+        arg1.next = this.field4536.next;
         field4533++;
-        arg1.field1212 = this.field4536;
-        arg1.field1212.field1220 = arg1;
-        arg1.field1220.field1212 = arg1;
+        arg1.prev = this.field4536;
+        arg1.prev.next = arg1;
+        arg1.next.prev = arg1;
     }
 
     @OriginalMember(owner = "client!wi", name = "b", descriptor = "(I)V")
@@ -190,26 +190,26 @@ public class class248 {
         }
         field4539++;
         while (true) {
-            class67 var2 = this.field4536.field1220;
+            Linkable var2 = this.field4536.next;
             if (this.field4536 == var2) {
                 return;
             }
-            var2.method460(true);
+            var2.unlink();
         }
     }
 
     @OriginalMember(owner = "client!wi", name = "c", descriptor = "(B)Lg;")
-    public final class67 method1619(byte arg0) {
+    public final Linkable method1619(byte arg0) {
         if (arg0 > -4) {
             return null;
         }
-        class67 var2 = this.field4540;
+        Linkable var2 = this.field4540;
         field4544++;
         if (this.field4536 == var2) {
             this.field4540 = null;
             return null;
         } else {
-            this.field4540 = var2.field1212;
+            this.field4540 = var2.prev;
             return var2;
         }
     }
@@ -224,31 +224,31 @@ public class class248 {
     }
 
     @OriginalMember(owner = "client!wi", name = "c", descriptor = "(I)Lg;")
-    public final class67 method1621(int arg0) {
+    public final Linkable method1621(int arg0) {
         if (arg0 != 82) {
             this.method1618(89);
         }
         field4546++;
-        class67 var2 = this.field4540;
+        Linkable var2 = this.field4540;
         if (this.field4536 == var2) {
             this.field4540 = null;
             return null;
         } else {
-            this.field4540 = var2.field1220;
+            this.field4540 = var2.next;
             return var2;
         }
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(Lg;BLg;)V")
-    public final void method1622(class67 arg0, byte arg1, class67 arg2) {
+    public final void method1622(Linkable arg0, byte arg1, Linkable arg2) {
         field4535++;
-        if (arg0.field1212 != null) {
-            arg0.method460(true);
+        if (arg0.prev != null) {
+            arg0.unlink();
         }
-        arg0.field1212 = arg2.field1212;
-        arg0.field1220 = arg2;
-        arg0.field1212.field1220 = arg0;
-        arg0.field1220.field1212 = arg0;
+        arg0.prev = arg2.prev;
+        arg0.next = arg2;
+        arg0.prev.next = arg0;
+        arg0.next.prev = arg0;
         int var4 = -124 % ((-arg1 - 48) / 42);
     }
 
@@ -265,22 +265,22 @@ public class class248 {
 
     @OriginalMember(owner = "client!wi", name = "<init>", descriptor = "()V")
     public class248() {
-        this.field4536.field1220 = this.field4536;
-        this.field4536.field1212 = this.field4536;
+        this.field4536.next = this.field4536;
+        this.field4536.prev = this.field4536;
     }
 
     @OriginalMember(owner = "client!wi", name = "a", descriptor = "(Lg;I)V")
-    public final void method1624(class67 arg0, int arg1) {
+    public final void method1624(Linkable arg0, int arg1) {
         field4543++;
-        if (arg0.field1212 != null) {
-            arg0.method460(true);
+        if (arg0.prev != null) {
+            arg0.unlink();
         }
-        arg0.field1212 = this.field4536.field1212;
-        arg0.field1220 = this.field4536;
+        arg0.prev = this.field4536.prev;
+        arg0.next = this.field4536;
         if (arg1 <= 35) {
             field4552 = null;
         }
-        arg0.field1212.field1220 = arg0;
-        arg0.field1220.field1212 = arg0;
+        arg0.prev.next = arg0;
+        arg0.next.prev = arg0;
     }
 }
