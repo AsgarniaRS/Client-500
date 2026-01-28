@@ -193,15 +193,15 @@ public class class103 extends class50 {
                                 var7 = var4.field3406;
                             }
                             if (~var7 != 0) {
-                                class109 var8 = class15.method75(var7, (byte) -42);
+                                SeqType var8 = class15.method75(var7, (byte) -42);
                                 if (var8 != null) {
                                     var4.field3489 += class17.field261;
-                                    while (var4.field3489 > var8.field1992[var4.field3381]) {
-                                        var4.field3489 -= var8.field1992[var4.field3381];
+                                    while (var4.field3489 > var8.delay[var4.field3381]) {
+                                        var4.field3489 -= var8.delay[var4.field3381];
                                         ++var4.field3381;
-                                        if (var4.field3381 >= var8.field1967.length) {
-                                            var4.field3381 -= var8.field1974;
-                                            if (~var4.field3381 > -1 || var4.field3381 >= var8.field1967.length) {
+                                        if (var4.field3381 >= var8.frames.length) {
+                                            var4.field3381 -= var8.loops;
+                                            if (~var4.field3381 > -1 || var4.field3381 >= var8.frames.length) {
                                                 var4.field3381 = 0;
                                             }
                                         }

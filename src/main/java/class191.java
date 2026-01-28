@@ -53,8 +53,8 @@ public class class191 extends class218 {
     public final void method87(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, long arg8) {
         ++field3685;
         if (this.field3684 != null) {
-            class109 var11 = ~super.field4079 != 0 && super.field4142 == 0 ? class15.method75(super.field4079, (byte) -128) : null;
-            class109 var12 = ~super.field4108 == 0 || ~super.field4108 == ~super.field4107 && var11 != null ? null : class15.method75(super.field4108, (byte) -75);
+            SeqType var11 = ~super.field4079 != 0 && super.field4142 == 0 ? class15.method75(super.field4079, (byte) -128) : null;
+            SeqType var12 = ~super.field4108 == 0 || ~super.field4108 == ~super.field4107 && var11 != null ? null : class15.method75(super.field4108, (byte) -75);
             class30 var13 = this.field3684.method867(0, var12, super.field4129, super.field4103, var11);
             if (var13 != null) {
                 super.field4109 = var13.method88();

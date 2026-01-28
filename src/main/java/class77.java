@@ -50,7 +50,7 @@ public class class77 extends class145 {
     public int field1387;
 
     @OriginalMember(owner = "client!h", name = "o", descriptor = "Lk;")
-    private class109 field1367;
+    private SeqType field1367;
 
     @OriginalMember(owner = "client!h", name = "r", descriptor = "Li;")
     public static class88 field1370 = class208.method1425(105, " <col=ffff00>");
@@ -134,7 +134,7 @@ public class class77 extends class145 {
     public static final void method514(int arg0, class218 arg1, int arg2) {
         field1404++;
         if (arg1.field4135 > class117.field2115) {
-            class109.method758(arg1, (byte) 12);
+            SeqType.method758(arg1, (byte) 12);
         } else if (arg1.field4132 < class117.field2115) {
             class244.method1602(arg1, 33);
         } else {
@@ -270,14 +270,14 @@ public class class77 extends class145 {
         while (true) {
             do {
                 do {
-                    if (this.field1380 <= this.field1367.field1992[this.field1383]) {
+                    if (this.field1380 <= this.field1367.delay[this.field1383]) {
                         return;
                     }
-                    this.field1380 -= this.field1367.field1992[this.field1383];
+                    this.field1380 -= this.field1367.delay[this.field1383];
                     this.field1383++;
-                } while (this.field1383 < this.field1367.field1967.length);
-                this.field1383 -= this.field1367.field1974;
-            } while (this.field1383 >= 0 && this.field1367.field1967.length > this.field1383);
+                } while (this.field1383 < this.field1367.frames.length);
+                this.field1383 -= this.field1367.loops;
+            } while (this.field1383 >= 0 && this.field1367.frames.length > this.field1383);
             this.field1383 = 0;
         }
     }

@@ -26,7 +26,7 @@ public class class81 extends class145 {
     private int field1457;
 
     @OriginalMember(owner = "client!hd", name = "s", descriptor = "Lk;")
-    private class109 field1459;
+    private SeqType field1459;
 
     @OriginalMember(owner = "client!hd", name = "H", descriptor = "I")
     private int field1474;
@@ -133,16 +133,16 @@ public class class81 extends class145 {
         field1462++;
         if (this.field1459 != null) {
             int var4 = class117.field2115 - this.field1463;
-            if (var4 > 100 && this.field1459.field1974 > 0) {
-                int var5 = this.field1459.field1967.length - this.field1459.field1974;
-                while (this.field1474 < var5 && var4 > this.field1459.field1992[this.field1474]) {
-                    var4 -= this.field1459.field1992[this.field1474];
+            if (var4 > 100 && this.field1459.loops > 0) {
+                int var5 = this.field1459.frames.length - this.field1459.loops;
+                while (this.field1474 < var5 && var4 > this.field1459.delay[this.field1474]) {
+                    var4 -= this.field1459.delay[this.field1474];
                     this.field1474++;
                 }
                 if (var5 <= this.field1474) {
                     int var6 = 0;
-                    for (int var7 = var5; var7 < this.field1459.field1967.length; var7++) {
-                        var6 += this.field1459.field1992[var7];
+                    for (int var7 = var5; var7 < this.field1459.frames.length; var7++) {
+                        var6 += this.field1459.delay[var7];
                     }
                     var4 %= var6;
                 }
@@ -150,15 +150,15 @@ public class class81 extends class145 {
             label62: {
                 do {
                     do {
-                        if (var4 <= this.field1459.field1992[this.field1474]) {
+                        if (var4 <= this.field1459.delay[this.field1474]) {
                             break label62;
                         }
                         class60.method433(-118, false, arg2, this.field1474, arg1, this.field1459);
-                        var4 -= this.field1459.field1992[this.field1474];
+                        var4 -= this.field1459.delay[this.field1474];
                         this.field1474++;
-                    } while (this.field1459.field1967.length > this.field1474);
-                    this.field1474 -= this.field1459.field1974;
-                } while (this.field1474 >= 0 && this.field1459.field1967.length > this.field1474);
+                    } while (this.field1459.frames.length > this.field1474);
+                    this.field1474 -= this.field1459.loops;
+                } while (this.field1474 >= 0 && this.field1459.frames.length > this.field1474);
                 this.field1459 = null;
             }
             this.field1463 = class117.field2115 - var4;
@@ -224,7 +224,7 @@ public class class81 extends class145 {
             this.field1459 = class15.method75(arg6, (byte) 49);
             this.field1474 = 0;
             this.field1463 = class117.field2115 - 1;
-            if (this.field1459.field1968 == 0 && arg8 != null && arg8 instanceof class81) {
+            if (this.field1459.duplicatebehavior == 0 && arg8 != null && arg8 instanceof class81) {
                 class81 var10 = (class81) arg8;
                 if (this.field1459 == var10.field1459) {
                     this.field1474 = var10.field1474;
@@ -232,9 +232,9 @@ public class class81 extends class145 {
                     return;
                 }
             }
-            if (arg7 && this.field1459.field1974 != -1) {
-                this.field1474 = (int) ((double) this.field1459.field1967.length * Math.random());
-                this.field1463 -= (int) (Math.random() * (double) this.field1459.field1992[this.field1474]);
+            if (arg7 && this.field1459.loops != -1) {
+                this.field1474 = (int) ((double) this.field1459.frames.length * Math.random());
+                this.field1463 -= (int) (Math.random() * (double) this.field1459.delay[this.field1474]);
                 return;
             }
         }

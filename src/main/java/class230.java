@@ -113,7 +113,7 @@ public class class230 {
     public static final void method1534(int arg0, int arg1, int arg2, int arg3, byte arg4) {
         field4300++;
         if (Linkable.field1207 <= arg0 - arg1 && class12.field183 >= arg0 + arg1 && arg2 - arg1 >= class49.field919 && class18.field279 >= arg1 + arg2) {
-            class109.method747(116, arg2, arg3, arg1, arg0);
+            SeqType.method747(116, arg2, arg3, arg1, arg0);
         } else {
             Packet.method318(-61, arg3, arg0, arg1, arg2);
         }
@@ -188,7 +188,7 @@ public class class230 {
                     }
                     var4.field128[var5] = var6;
                     var4.field129[var5] = var19;
-                    var4.field139[var5] = arg0.method1293(var18, 15, class237.method1576(var17, 10608));
+                    var4.field139[var5] = arg0.method1293(var18, 15, class237.findClass(var17));
                 } else if (var6 == 3 || var6 == 4) {
                     String var7 = new String(arg3.gjstr().method613(-81));
                     String var8 = new String(arg3.gjstr().method613(arg1 - 123));
@@ -208,9 +208,9 @@ public class class230 {
                     var4.field128[var5] = var6;
                     Class[] var15 = new Class[var9];
                     for (int var16 = 0; var16 < var9; var16++) {
-                        var15[var16] = class237.method1576(var10[var16], 10608);
+                        var15[var16] = class237.findClass(var10[var16]);
                     }
-                    var4.field138[var5] = arg0.method1296(var8, class237.method1576(var7, 10608), var15, (byte) 7);
+                    var4.field138[var5] = arg0.method1296(var8, class237.findClass(var7), var15, (byte) 7);
                     var4.field131[var5] = var12;
                 }
             } catch (ClassNotFoundException var20) {

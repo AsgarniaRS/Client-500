@@ -470,7 +470,7 @@ public class class126 extends class136 {
     }
 
     @OriginalMember(owner = "client!lf", name = "a", descriptor = "(IILk;)Lcg;")
-    public final class30 method866(int arg0, int arg1, class109 arg2) {
+    public final class30 method866(int arg0, int arg1, SeqType arg2) {
         field2315++;
         if (this.field2329 != null) {
             class126 var4 = this.method864((byte) 100);
@@ -527,7 +527,7 @@ public class class126 extends class136 {
     }
 
     @OriginalMember(owner = "client!lf", name = "a", descriptor = "(ILk;IILk;)Lcg;")
-    public final class30 method867(int arg0, class109 arg1, int arg2, int arg3, class109 arg4) {
+    public final class30 method867(int arg0, SeqType arg1, int arg2, int arg3, SeqType arg4) {
         field2338++;
         if (this.field2329 != null) {
             class126 var6 = this.method864((byte) 28);

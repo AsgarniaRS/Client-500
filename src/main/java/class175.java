@@ -251,7 +251,7 @@ public class class175 {
                 Isaac.out.p2(var7);
                 class157.field3032++;
             } else {
-                class223.method1501(class166.method1142(new class88[] { class170.method1214(var16.field3476[var2], 51), class109.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
+                class223.method1501(class166.method1142(new class88[] { class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
             }
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);

@@ -283,7 +283,7 @@ public class ClientStream implements Runnable {
                 return;
             }
             if (var9 <= 49) {
-                class109.field1964[arg8][arg0][arg6] = arg1.g1b();
+                SeqType.field1964[arg8][arg0][arg6] = arg1.g1b();
                 class8.field115[arg8][arg0][arg6] = (byte) ((var9 - 2) / 4);
                 class234.field4379[arg8][arg0][arg6] = (byte) class70.method470(arg7 + var9 - 2, 3);
             } else if (var9 > 81) {

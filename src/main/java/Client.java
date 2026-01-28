@@ -145,7 +145,7 @@ public class Client extends GameShell {
         if (arg0 != 100) {
             this.init();
         }
-        class117.field2110 = class120.field2194 = class7.field108 = class109.field1970 = new short[256];
+        class117.field2110 = class120.field2194 = class7.field108 = SeqType.field1970 = new short[256];
         field574++;
         if (EnumType.field884 == 1) {
             class7.field96 = IntHashTable.field1812;
@@ -163,7 +163,7 @@ public class Client extends GameShell {
         class168.field3248 = class220.field4158;
         class204.method1403(-126);
         class143.method937((byte) 48, class154.field2977);
-        class109.method750(class154.field2977, arg0 ^ 0x66);
+        SeqType.method750(class154.field2977, arg0 ^ 0x66);
         class167.field3224 = class35.method235((byte) 117);
         if (class167.field3224 != null) {
             class167.field3224.method173(64, class154.field2977);
@@ -256,7 +256,7 @@ public class Client extends GameShell {
             class4.field46 = Integer.parseInt(this.getParameter("affid"));
         } catch (Exception var5) {
         }
-        class218.field4136 = class109.field1996.method608(this, 94);
+        class218.field4136 = SeqType.field1996.method608(this, 94);
         if (class218.field4136 == null) {
             class218.field4136 = class174.field3455;
         }
@@ -463,7 +463,7 @@ public class Client extends GameShell {
             class98.field1795 = class98.method686((byte) 70, 13, true, true, false);
             class18.field280 = class98.method686((byte) -82, 14, false, true, false);
             class147.field2762 = class98.method686((byte) 77, 15, true, true, false);
-            class109.field2006 = class98.method686((byte) 108, 16, true, true, false);
+            SeqType.field2006 = class98.method686((byte) 108, 16, true, true, false);
             class190.field3674 = class98.method686((byte) -123, 17, true, true, false);
             class161.field3115 = class98.method686((byte) 15, 18, true, true, false);
             class248.field4552 = class98.method686((byte) 47, 19, true, true, false);
@@ -495,7 +495,7 @@ public class Client extends GameShell {
             int var21 = var20 + class98.field1795.method115(true) * 2 / 100;
             int var22 = var21 + class18.field280.method115(true) * 2 / 100;
             int var23 = var22 + class147.field2762.method115(true) * 2 / 100;
-            int var24 = var23 + class109.field2006.method115(true) / 100;
+            int var24 = var23 + SeqType.field2006.method115(true) / 100;
             int var25 = var24 + class190.field3674.method115(true) / 100;
             int var26 = var25 + class161.field3115.method115(true) / 100;
             int var27 = var26 + class248.field4552.method115(true) / 100;
@@ -584,8 +584,8 @@ public class Client extends GameShell {
             class85.field1546.fetchAll();
             byte var39 = 0;
             int var40 = var39 + class85.field1546.method952(false);
-            class109.field2006.fetchAll();
-            int var41 = var40 + class109.field2006.method952(false);
+            SeqType.field2006.fetchAll();
+            int var41 = var40 + SeqType.field2006.method952(false);
             class190.field3674.fetchAll();
             int var42 = var41 + class190.field3674.method952(false);
             class161.field3115.fetchAll();
@@ -610,7 +610,7 @@ public class Client extends GameShell {
                 ClientStream.method912((byte) 64, class85.field1546);
                 class135.method900(class85.field1546, 28809);
                 class199.method1366((byte) 113, class233.field4367, class85.field1546);
-                class27.method166(class109.field2006, -70, class233.field4367, Linkable.field1215, class245.lowMemory);
+                class27.method166(SeqType.field2006, -70, class233.field4367, Linkable.field1215, class245.lowMemory);
                 EnumType.method357(-96, class161.field3115, class233.field4367);
                 class189.method1320(Linkable.field1215, class248.field4552, class154.field2968, class233.field4367, (byte) 17);
                 class18.method91(class85.field1546, false);
@@ -1008,7 +1008,7 @@ public class Client extends GameShell {
         class55.method414(false);
         class179.method1277(82);
         class209.method1435((byte) 61);
-        class109.method754(arg0 - 99);
+        SeqType.method754(arg0 - 99);
         class218.method1474(false);
         class159.method1073(false);
         class126.method865(arg0 ^ 0xFFFFFF9B);

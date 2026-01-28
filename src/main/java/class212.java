@@ -124,7 +124,7 @@ public class class212 extends class23 {
                     if (~arg8 == ~var18 && ~arg1 >= ~var16 && ~var16 > ~(arg1 + 8) && arg4 <= var17 && var17 < arg4 + 8) {
                         LocType var22 = class190.method1323(var11, -12450);
                         int var23 = class70.method469(var22.width, arg0, var17 & 7, 7 & var16, (byte) 126, var22.length, var21) + arg10;
-                        int var24 = class109.method744(7 & var17, var16 & 7, var21, var22.length, false, var22.width, arg0) + arg9;
+                        int var24 = SeqType.method744(7 & var17, var16 & 7, var21, var22.length, false, var22.width, arg0) + arg9;
                         if (var23 > 0 && var24 > 0 && ~var23 > -104 && var24 < 103) {
                             CollisionMap var25 = null;
                             if (!arg7) {

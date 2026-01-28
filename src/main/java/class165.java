@@ -234,7 +234,7 @@ public class class165 {
                             }
                             if (var11.field3441 == 1339) {
                                 if (var11.method1248(-15543)) {
-                                    class109.method745(var12, var13, var14, var11, (byte) -91);
+                                    SeqType.method745(var12, var13, var14, var11, (byte) -91);
                                     class72.method480(arg1, arg2, arg9, arg5);
                                 }
                                 continue;
@@ -529,7 +529,7 @@ public class class165 {
                                                 var65 = 2047;
                                             }
                                             scene var66 = class244.field4493[var65];
-                                            class109 var67 = var63 == -1 ? null : class15.method75(var63, (byte) -38);
+                                            SeqType var67 = var63 == -1 ? null : class15.method75(var63, (byte) -38);
                                             if (var66 != null && (int) var66.name.method630(false) << 11 == (var11.field3411 & 0xFFFFF800)) {
                                                 var62 = var66.field768.method1432(null, 1549114312, var11.field3381, 0, var67);
                                             }
@@ -540,7 +540,7 @@ public class class165 {
                                             class200.method1373(65280, var11);
                                         }
                                     } else {
-                                        class109 var64 = class15.method75(var63, (byte) 98);
+                                        SeqType var64 = class15.method75(var63, (byte) 98);
                                         var62 = var11.method1247(var64, class240.field4458.field768, var11.field3381, var60, -3);
                                         if (var62 == null && class248.field4551) {
                                             class200.method1373(65280, var11);
@@ -706,7 +706,7 @@ public class class165 {
             if (arg0 == arg1.method604((byte) -53)) {
                 var5 = class166.method1142(new class88[] { var4, class49.field920 }, arg0 - 3);
             } else {
-                var5 = class166.method1142(new class88[] { var4, class109.field1984, method1141(class206.method1420(false) + 94608000000L, 7085), class95.field1768, class234.method1558(arg0 + 75, 94608000L) }, -3);
+                var5 = class166.method1142(new class88[] { var4, SeqType.field1984, method1141(class206.method1420(false) + 94608000000L, 7085), class95.field1768, class234.method1558(arg0 + 75, 94608000L) }, -3);
             }
             class166.method1142(new class88[] { class168.field3239, var5, class34.field591 }, -3).method636(0, class126.field2326.field3599);
         } catch (Throwable var6) {
@@ -770,7 +770,7 @@ public class class165 {
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(IIIII)V")
     public static final void method1139(int arg0, int arg1, int arg2, int arg3, int arg4) {
-        class126.field2332 = class109.field1990 * arg3 / arg1;
+        class126.field2332 = SeqType.field1990 * arg3 / arg1;
         field3161++;
         class157.field3035 = scene.field760 * arg2 / arg4;
         class34.field594 = -1;
@@ -807,6 +807,6 @@ public class class165 {
         int var7 = class248.field4547.get(11);
         int var8 = class248.field4547.get(12);
         int var9 = class248.field4547.get(13);
-        return class166.method1142(new class88[] { CollisionMap.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), class109.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), class109.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
+        return class166.method1142(new class88[] { CollisionMap.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), SeqType.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), SeqType.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
     }
 }

@@ -178,7 +178,7 @@ public class class211 extends class23 {
 
     @OriginalMember(owner = "client!td", name = "a", descriptor = "(Lu;I)V")
     public static final void method1446(class218 arg0, int arg1) {
-        if (~class117.field2115 == ~arg0.field4132 || ~arg0.field4079 == 0 || ~arg0.field4142 != -1 || ~(arg0.field4100 + 1) < ~class15.method75(arg0.field4079, (byte) -123).field1992[arg0.field4103]) {
+        if (~class117.field2115 == ~arg0.field4132 || ~arg0.field4079 == 0 || ~arg0.field4142 != -1 || ~(arg0.field4100 + 1) < ~class15.method75(arg0.field4079, (byte) -123).delay[arg0.field4103]) {
             int var2 = -arg0.field4135 + class117.field2115;
             int var3 = arg0.field4115 * 128 + arg0.field4105 * 64;
             int var4 = arg0.field4132 - arg0.field4135;

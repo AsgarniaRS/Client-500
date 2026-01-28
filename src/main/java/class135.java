@@ -310,7 +310,7 @@ public class class135 extends class23 {
                         if (var383 == 27) {
                             int var22 = var9[var8];
                             --var6;
-                            class109.method757(var22, class108.field1946[var6], 68);
+                            SeqType.method757(var22, class108.field1946[var6], 68);
                             continue;
                         }
                         if (var383 == 31) {
@@ -2271,7 +2271,7 @@ public class class135 extends class23 {
                                                         if (~var383 == -4116) {
                                                             --var6;
                                                             int var288 = class108.field1946[var6];
-                                                            class108.field1946[var6++] = class109.method748(1, var288) ? 1 : 0;
+                                                            class108.field1946[var6++] = SeqType.method748(1, var288) ? 1 : 0;
                                                             continue;
                                                         }
                                                         if (~var383 == -4117) {
@@ -2397,7 +2397,7 @@ public class class135 extends class23 {
                                                     var6 -= 2;
                                                     int var317 = class108.field1946[var6];
                                                     int var318 = class108.field1946[var6 + 1];
-                                                    class108.field1946[var6++] = class109.method749((byte) -37, var317, var318);
+                                                    class108.field1946[var6++] = SeqType.method749((byte) -37, var317, var318);
                                                     continue;
                                                 }
                                                 if (var383 == 3303) {
@@ -2471,7 +2471,7 @@ public class class135 extends class23 {
                                                     var6 -= 2;
                                                     int var333 = class108.field1946[var6] + 32768;
                                                     int var334 = class108.field1946[var6 + 1];
-                                                    class108.field1946[var6++] = class109.method749((byte) -37, var333, var334);
+                                                    class108.field1946[var6++] = SeqType.method749((byte) -37, var333, var334);
                                                     continue;
                                                 }
                                                 if (~var383 == -3316) {

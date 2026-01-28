@@ -49,8 +49,8 @@ public class class141 {
     @OriginalMember(owner = "client!mj", name = "a", descriptor = "(IZILrf;)V")
     public static final void method927(int arg0, boolean arg1, int arg2, class191 arg3) {
         if (arg3.field4079 == arg0 && arg0 != -1) {
-            class109 var4 = class15.method75(arg0, (byte) -35);
-            int var5 = var4.field1968;
+            SeqType var4 = class15.method75(arg0, (byte) -35);
+            int var5 = var4.duplicatebehavior;
             if (var5 == 1) {
                 arg3.field4134 = 0;
                 arg3.field4100 = 0;
@@ -61,7 +61,7 @@ public class class141 {
             if (var5 == 2) {
                 arg3.field4134 = 0;
             }
-        } else if (arg0 == -1 || arg3.field4079 == -1 || class15.method75(arg0, (byte) -126).field2001 >= class15.method75(arg3.field4079, (byte) -75).field2001) {
+        } else if (arg0 == -1 || arg3.field4079 == -1 || class15.method75(arg0, (byte) -126).priority >= class15.method75(arg3.field4079, (byte) -75).priority) {
             arg3.field4100 = 0;
             arg3.field4142 = arg2;
             arg3.field4139 = arg3.field4137;

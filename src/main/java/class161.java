@@ -152,14 +152,14 @@ public class class161 implements Runnable {
     public static final void method1087(int arg0, byte[] arg1) {
         field3106++;
         int var2 = class218.field4088 >> 2 << 10;
-        byte[][] var3 = new byte[class109.field1990][scene.field760];
+        byte[][] var3 = new byte[SeqType.field1990][scene.field760];
         int var4 = class70.field1270 >> 1;
         int var5 = 0;
         while (true) {
             while (arg1.length > var5) {
                 int var34 = (arg1[var5++] & 0xFF) * 64 - class16.field239;
                 int var35 = (arg1[var5++] & 0xFF) * 64 - class119.field2183;
-                if (var34 > 0 && var35 > 0 && var34 + 64 < class109.field1990 && var35 + 64 < scene.field760) {
+                if (var34 > 0 && var35 > 0 && var34 + 64 < SeqType.field1990 && var35 + 64 < scene.field760) {
                     for (int var36 = 0; var36 < 64; var36++) {
                         byte[] var37 = var3[var34 + var36];
                         int var38 = scene.field760 - var35 - 1;
@@ -172,7 +172,7 @@ public class class161 implements Runnable {
                 }
             }
             int var6 = scene.field760;
-            int var7 = class109.field1990;
+            int var7 = SeqType.field1990;
             int[] var8 = new int[var6];
             if (arg0 != -3131) {
                 method1084(-75, 34, -96);

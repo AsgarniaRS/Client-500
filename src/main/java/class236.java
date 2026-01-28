@@ -260,7 +260,7 @@ public class class236 extends class27 {
             class88 var36 = class230.in.gjstr();
             if (var36.method631(0, class156.field3011)) {
                 boolean var37 = false;
-                class88 var38 = var36.method623(0, (byte) -118, var36.method617(-76, class109.field1961));
+                class88 var38 = var36.method623(0, (byte) -118, var36.method617(-76, SeqType.field1961));
                 long var39 = var38.method630(false);
                 for (int var41 = 0; var41 < Linkable.field1221; var41++) {
                     if (class95.field1765[var41] == var39) {
@@ -272,7 +272,7 @@ public class class236 extends class27 {
                     class223.method1501(class54.field1007, 12, 4, var38);
                 }
             } else if (var36.method631(0, class207.field3929)) {
-                class88 var65 = var36.method623(0, (byte) -53, var36.method617(110, class109.field1961));
+                class88 var65 = var36.method623(0, (byte) -53, var36.method617(110, SeqType.field1961));
                 boolean var66 = false;
                 long var67 = var65.method630(!arg0);
                 for (int var69 = 0; var69 < Linkable.field1221; var69++) {
@@ -282,12 +282,12 @@ public class class236 extends class27 {
                     }
                 }
                 if (!var66 && Client.field563 == 0) {
-                    class88 var70 = var36.method623(var36.method617(-106, class109.field1961) + 1, (byte) -89, var36.method604((byte) -53) - 9);
+                    class88 var70 = var36.method623(var36.method617(-106, SeqType.field1961) + 1, (byte) -89, var36.method604((byte) -53) - 9);
                     class223.method1501(var70, 12, 8, var65);
                 }
             } else if (var36.method631(0, class86.field1556)) {
                 boolean var42 = false;
-                class88 var43 = var36.method623(0, (byte) -7, var36.method617(-60, class109.field1961));
+                class88 var43 = var36.method623(0, (byte) -7, var36.method617(-60, SeqType.field1961));
                 long var44 = var43.method630(false);
                 for (int var46 = 0; var46 < Linkable.field1221; var46++) {
                     if (class95.field1765[var46] == var44) {
@@ -312,7 +312,7 @@ public class class236 extends class27 {
                     class223.method1501(var47, 12, 13, class174.field3455);
                 }
             } else if (var36.method631(0, class157.field3027)) {
-                class88 var48 = var36.method623(0, (byte) -51, var36.method617(102, class109.field1961));
+                class88 var48 = var36.method623(0, (byte) -51, var36.method617(102, SeqType.field1961));
                 long var49 = var48.method630(false);
                 boolean var51 = false;
                 for (int var52 = 0; var52 < Linkable.field1221; var52++) {
@@ -325,7 +325,7 @@ public class class236 extends class27 {
                     class223.method1501(class174.field3455, 12, 14, var48);
                 }
             } else if (var36.method631(0, class228.field4277)) {
-                class88 var53 = var36.method623(0, (byte) -118, var36.method617(-84, class109.field1961));
+                class88 var53 = var36.method623(0, (byte) -118, var36.method617(-84, SeqType.field1961));
                 long var54 = var53.method630(false);
                 boolean var56 = false;
                 for (int var57 = 0; var57 < Linkable.field1221; var57++) {
@@ -338,7 +338,7 @@ public class class236 extends class27 {
                     class223.method1501(class174.field3455, 12, 15, var53);
                 }
             } else if (var36.method631(0, class37.field665)) {
-                class88 var58 = var36.method623(0, (byte) -25, var36.method617(97, class109.field1961));
+                class88 var58 = var36.method623(0, (byte) -25, var36.method617(97, SeqType.field1961));
                 long var59 = var58.method630(!arg0);
                 boolean var61 = false;
                 for (int var62 = 0; var62 < Linkable.field1221; var62++) {

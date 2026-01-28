@@ -3,34 +3,34 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!k")
-public class class109 extends class136 {
+public class SeqType extends class136 {
 
     @OriginalMember(owner = "client!k", name = "E", descriptor = "Z")
-    public boolean field1962 = false;
+    public boolean stretches = false;
 
     @OriginalMember(owner = "client!k", name = "R", descriptor = "I")
-    public int field1974 = -1;
+    public int loops = -1;
 
     @OriginalMember(owner = "client!k", name = "U", descriptor = "I")
-    public int field1977 = -1;
+    public int replaceheldright = -1;
 
     @OriginalMember(owner = "client!k", name = "Z", descriptor = "I")
-    public int field1982 = -1;
+    public int postanim_move = -1;
 
     @OriginalMember(owner = "client!k", name = "K", descriptor = "I")
-    public int field1968 = 2;
+    public int duplicatebehavior = 2;
 
     @OriginalMember(owner = "client!k", name = "P", descriptor = "I")
-    public int field1972 = 99;
+    public int maxloops = 99;
 
     @OriginalMember(owner = "client!k", name = "cb", descriptor = "I")
-    public int field1985 = -1;
+    public int prenaim_move = -1;
 
     @OriginalMember(owner = "client!k", name = "tb", descriptor = "I")
-    public int field2002 = -1;
+    public int replaceheldleft = -1;
 
     @OriginalMember(owner = "client!k", name = "sb", descriptor = "I")
-    public int field2001 = 5;
+    public int priority = 5;
 
     @OriginalMember(owner = "client!k", name = "mb", descriptor = "Z")
     private boolean field1995 = false;
@@ -126,27 +126,26 @@ public class class109 extends class136 {
     public static Js5Local field2006;
 
     @OriginalMember(owner = "client!k", name = "J", descriptor = "[I")
-    public int[] field1967;
+    public int[] frames;
 
     @OriginalMember(owner = "client!k", name = "eb", descriptor = "[I")
-    private int[] field1987;
+    private int[] walkmerge;
 
     @OriginalMember(owner = "client!k", name = "jb", descriptor = "[I")
-    public int[] field1992;
+    public int[] delay;
 
     @OriginalMember(owner = "client!k", name = "wb", descriptor = "[I")
-    private int[] field2005;
+    private int[] iframes;
 
     @OriginalMember(owner = "client!k", name = "ub", descriptor = "[[I")
-    public int[][] field2003;
+    public int[][] sound;
 
     @OriginalMember(owner = "client!k", name = "G", descriptor = "[[[B")
     public static byte[][][] field1964;
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(ILcg;I)Lcg;")
     public final class30 method743(int arg0, class30 arg1, int arg2) {
-        field1988++;
-        int var4 = this.field1967[arg2];
+        int var4 = this.frames[arg2];
         class129 var5 = class130.method880(var4 >> 16, -15667);
         int var6 = var4 & 0xFFFF;
         if (var5 == null) {
@@ -197,81 +196,75 @@ public class class109 extends class136 {
     }
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(Lea;II)V")
-    private final void method746(Packet arg0, int arg1, int arg2) {
-        field1986++;
-        int var4 = -42 / ((-arg2 - 57) / 59);
-        if (arg1 == 1) {
-            int var5 = arg0.g2();
-            this.field1992 = new int[var5];
-            for (int var6 = 0; var6 < var5; var6++) {
-                this.field1992[var6] = arg0.g2();
+    private void decode(Packet buf, int code) {
+        if (code == 1) {
+            int var5 = buf.g2();
+            this.delay = new int[var5];
+            for (int i = 0; i < var5; i++) {
+                this.delay[i] = buf.g2();
             }
-            this.field1967 = new int[var5];
-            for (int var7 = 0; var7 < var5; var7++) {
-                this.field1967[var7] = arg0.g2();
+            this.frames = new int[var5];
+            for (int i = 0; i < var5; i++) {
+                this.frames[i] = buf.g2();
             }
-            for (int var8 = 0; var8 < var5; var8++) {
-                this.field1967[var8] = (arg0.g2() << 16) + this.field1967[var8];
+            for (int i = 0; i < var5; i++) {
+                this.frames[i] = (buf.g2() << 16) + this.frames[i];
             }
-        } else if (arg1 == 2) {
-            this.field1974 = arg0.g2();
-        } else if (arg1 == 3) {
-            int var9 = arg0.g1();
-            this.field1987 = new int[var9 + 1];
-            for (int var10 = 0; var10 < var9; var10++) {
-                this.field1987[var10] = arg0.g1();
+        } else if (code == 2) {
+            this.loops = buf.g2();
+        } else if (code == 3) {
+            int var9 = buf.g1();
+            this.walkmerge = new int[var9 + 1];
+            for (int i = 0; i < var9; i++) {
+                this.walkmerge[i] = buf.g1();
             }
-            this.field1987[var9] = 9999999;
-        } else if (arg1 == 4) {
-            this.field1962 = true;
-        } else if (arg1 == 5) {
-            this.field2001 = arg0.g1();
-        } else if (arg1 == 6) {
-            this.field2002 = arg0.g2();
-        } else if (arg1 == 7) {
-            this.field1977 = arg0.g2();
-        } else if (arg1 == 8) {
-            this.field1972 = arg0.g1();
-        } else if (arg1 == 9) {
-            this.field1985 = arg0.g1();
-        } else if (arg1 == 10) {
-            this.field1982 = arg0.g1();
-        } else if (arg1 == 11) {
-            this.field1968 = arg0.g1();
-        } else if (arg1 == 12) {
-            int var15 = arg0.g1();
-            this.field2005 = new int[var15];
-            for (int var16 = 0; var16 < var15; var16++) {
-                this.field2005[var16] = arg0.g2();
+            this.walkmerge[var9] = 9999999;
+        } else if (code == 4) {
+            this.stretches = true;
+        } else if (code == 5) {
+            this.priority = buf.g1();
+        } else if (code == 6) {
+            this.replaceheldleft = buf.g2();
+        } else if (code == 7) {
+            this.replaceheldright = buf.g2();
+        } else if (code == 8) {
+            this.maxloops = buf.g1();
+        } else if (code == 9) {
+            this.prenaim_move = buf.g1();
+        } else if (code == 10) {
+            this.postanim_move = buf.g1();
+        } else if (code == 11) {
+            this.duplicatebehavior = buf.g1();
+        } else if (code == 12) {
+            int var15 = buf.g1();
+            this.iframes = new int[var15];
+            for (int i = 0; i < var15; i++) {
+                this.iframes[i] = buf.g2();
             }
-            for (int var17 = 0; var17 < var15; var17++) {
-                this.field2005[var17] = (arg0.g2() << 16) + this.field2005[var17];
+            for (int i = 0; i < var15; i++) {
+                this.iframes[i] = (buf.g2() << 16) + this.iframes[i];
             }
-        } else if (arg1 == 13) {
-            int var11 = arg0.g2();
-            this.field2003 = new int[var11][];
+        } else if (code == 13) {
+            int var11 = buf.g2();
+            this.sound = new int[var11][];
             for (int var12 = 0; var12 < var11; var12++) {
-                int var13 = arg0.g1();
+                int var13 = buf.g1();
                 if (var13 > 0) {
-                    this.field2003[var12] = new int[var13];
-                    this.field2003[var12][0] = arg0.g3();
+                    this.sound[var12] = new int[var13];
+                    this.sound[var12][0] = buf.g3();
                     for (int var14 = 1; var14 < var13; var14++) {
-                        this.field2003[var12][var14] = arg0.g2();
+                        this.sound[var12][var14] = buf.g2();
                     }
                 }
             }
-            return;
-        } else if (arg1 == 14) {
+        } else if (code == 14) {
             this.field1995 = true;
-            return;
         }
     }
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(IIIII)V")
     public static final void method747(int arg0, int arg1, int arg2, int arg3, int arg4) {
-        field1971++;
         class230.method1536(arg4 - arg3, arg2, -7, arg3 + arg4, class3.field42[arg1]);
-        int var5 = 98 % ((-arg0 - 22) / 55);
         int var6 = 0;
         int var7 = arg3;
         int var8 = -1;
@@ -336,8 +329,7 @@ public class class109 extends class136 {
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(IZLcg;I)Lcg;")
     public final class30 method751(int arg0, boolean arg1, class30 arg2, int arg3) {
-        field1983++;
-        int var5 = this.field1967[arg3];
+        int var5 = this.frames[arg3];
         class129 var6 = class130.method880(var5 >> 16, -15667);
         int var7 = var5 & 0xFFFF;
         if (var6 == null) {
@@ -365,10 +357,9 @@ public class class109 extends class136 {
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(IILcg;)Lcg;")
     public final class30 method752(int arg0, int arg1, class30 arg2) {
-        int var4 = this.field1967[arg1];
+        int var4 = this.frames[arg1];
         class129 var5 = class130.method880(var4 >> 16, -15667);
         int var6 = var4 & arg0;
-        field1965++;
         if (var5 == null) {
             return arg2.method184(true, true);
         } else {
@@ -379,17 +370,13 @@ public class class109 extends class136 {
     }
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(Lea;Z)V")
-    public final void method753(Packet arg0, boolean arg1) {
+    public final void decode(Packet buf) {
         while (true) {
-            int var3 = arg0.g1();
-            if (var3 == 0) {
-                if (arg1) {
-                    return;
-                }
-                field1976++;
+            int code = buf.g1();
+            if (code == 0) {
                 return;
             }
-            this.method746(arg0, var3, 60);
+            this.decode(buf, code);
         }
     }
 
@@ -428,15 +415,15 @@ public class class109 extends class136 {
     }
 
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(ILk;IBLcg;)Lcg;")
-    public final class30 method756(int arg0, class109 arg1, int arg2, byte arg3, class30 arg4) {
+    public final class30 method756(int arg0, SeqType arg1, int arg2, byte arg3, class30 arg4) {
         field1966++;
-        int var6 = this.field1967[arg0];
+        int var6 = this.frames[arg0];
         class129 var7 = class130.method880(var6 >> 16, -15667);
         int var8 = var6 & 0xFFFF;
         if (var7 == null) {
             return arg1.method752(65535, arg2, arg4);
         }
-        int var9 = arg1.field1967[arg2];
+        int var9 = arg1.frames[arg2];
         class129 var10 = class130.method880(var9 >> 16, arg3 ^ 0xFFFFC29F);
         int var11 = var9 & 0xFFFF;
         if (arg3 != 82) {
@@ -447,7 +434,7 @@ public class class109 extends class136 {
             return var12;
         } else {
             class30 var13 = arg4.method184(!var7.method877(true, var8) & !var10.method877(true, var11), !arg1.field1995 & !this.field1995);
-            var13.method189(var7, var8, var10, var11, this.field1987, arg1.field1995 | this.field1995);
+            var13.method189(var7, var8, var10, var11, this.walkmerge, arg1.field1995 | this.field1995);
             return var13;
         }
     }
@@ -499,18 +486,18 @@ public class class109 extends class136 {
     @OriginalMember(owner = "client!k", name = "d", descriptor = "(B)V")
     public final void method759(byte arg0) {
         int var2 = -64 % ((-arg0 - 58) / 42);
-        if (this.field1985 == -1) {
-            if (this.field1987 == null) {
-                this.field1985 = 0;
+        if (this.prenaim_move == -1) {
+            if (this.walkmerge == null) {
+                this.prenaim_move = 0;
             } else {
-                this.field1985 = 2;
+                this.prenaim_move = 2;
             }
         }
-        if (this.field1982 == -1) {
-            if (this.field1987 == null) {
-                this.field1982 = 0;
+        if (this.postanim_move == -1) {
+            if (this.walkmerge == null) {
+                this.postanim_move = 0;
             } else {
-                this.field1982 = 2;
+                this.postanim_move = 2;
             }
         }
         field1991++;
@@ -519,7 +506,7 @@ public class class109 extends class136 {
     @OriginalMember(owner = "client!k", name = "a", descriptor = "(ILcg;B)Lcg;")
     public final class30 method760(int arg0, class30 arg1, byte arg2) {
         field1994++;
-        int var4 = this.field1967[arg0];
+        int var4 = this.frames[arg0];
         class129 var5 = class130.method880(var4 >> 16, -15667);
         int var6 = var4 & 0xFFFF;
         if (var5 == null) {
@@ -530,8 +517,8 @@ public class class109 extends class136 {
         }
         class129 var7 = null;
         int var8 = 0;
-        if (this.field2005 != null && this.field2005.length > arg0) {
-            int var9 = this.field2005[arg0];
+        if (this.iframes != null && this.iframes.length > arg0) {
+            int var9 = this.iframes[arg0];
             var7 = class130.method880(var9 >> 16, -15667);
             var8 = var9 & 0xFFFF;
         }

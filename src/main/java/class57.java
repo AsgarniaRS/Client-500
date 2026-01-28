@@ -177,7 +177,7 @@ public class class57 extends class23 {
                                                                 if (arg1 == 25) {
                                                                     class34.method227((byte) 118, class70.field1283, class10.field143, class223.field4208);
                                                                 } else if (arg1 == 26) {
-                                                                    class34.method227((byte) -100, class70.field1301, class53.field983, class109.field2000);
+                                                                    class34.method227((byte) -100, class70.field1301, class53.field983, SeqType.field2000);
                                                                 } else if (~arg1 != -28) {
                                                                     class34.method227((byte) -117, class70.field1304, class247.field4526, class223.field4209);
                                                                 } else {

@@ -247,7 +247,7 @@ public class class12 {
             }
             for (int var5 = 0; var5 < Linkable.field1221; var5++) {
                 if (class95.field1765[var5] == arg1) {
-                    class223.method1501(class166.method1142(new class88[] { class109.field1980, var3, class226.field4247 }, -3), 12, 0, class174.field3455);
+                    class223.method1501(class166.method1142(new class88[] { SeqType.field1980, var3, class226.field4247 }, -3), 12, 0, class174.field3455);
                     return;
                 }
             }

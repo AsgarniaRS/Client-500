@@ -328,15 +328,15 @@ public class class104 extends class23 {
         ++field1885;
         arg0.field4095 = false;
         if (arg0.field4108 != -1) {
-            class109 var2 = class15.method75(arg0.field4108, (byte) 77);
-            if (var2 != null && var2.field1967 != null) {
+            SeqType var2 = class15.method75(arg0.field4108, (byte) 77);
+            if (var2 != null && var2.frames != null) {
                 ++arg0.field4113;
-                if (arg0.field4129 < var2.field1967.length && var2.field1992[arg0.field4129] < arg0.field4113) {
+                if (arg0.field4129 < var2.frames.length && var2.delay[arg0.field4129] < arg0.field4113) {
                     arg0.field4113 = 1;
                     ++arg0.field4129;
                     class60.method433(-122, class240.field4458 == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
                 }
-                if (~arg0.field4129 <= ~var2.field1967.length) {
+                if (~arg0.field4129 <= ~var2.frames.length) {
                     arg0.field4129 = 0;
                     arg0.field4113 = 0;
                     class60.method433(99, class240.field4458 == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
@@ -351,15 +351,15 @@ public class class104 extends class23 {
             }
             int var3 = class62.method441(arg0.field4082, (byte) 20).field542;
             if (var3 != -1) {
-                class109 var4 = class15.method75(var3, (byte) 90);
-                if (var4 != null && var4.field1967 != null) {
+                SeqType var4 = class15.method75(var3, (byte) 90);
+                if (var4 != null && var4.frames != null) {
                     ++arg0.field4122;
-                    if (~var4.field1967.length < ~arg0.field4077 && ~var4.field1992[arg0.field4077] > ~arg0.field4122) {
+                    if (~var4.frames.length < ~arg0.field4077 && ~var4.delay[arg0.field4077] > ~arg0.field4122) {
                         ++arg0.field4077;
                         arg0.field4122 = 1;
                         class60.method433(-114, class240.field4458 == arg0, arg0.field4123, arg0.field4077, arg0.field4138, var4);
                     }
-                    if (~arg0.field4077 <= ~var4.field1967.length) {
+                    if (~arg0.field4077 <= ~var4.frames.length) {
                         arg0.field4082 = -1;
                     }
                 } else {
@@ -370,26 +370,26 @@ public class class104 extends class23 {
             }
         }
         if (~arg0.field4079 != 0 && arg0.field4142 <= 1) {
-            class109 var5 = class15.method75(arg0.field4079, (byte) -55);
-            if (~var5.field1985 == -2 && arg0.field4139 > 0 && ~arg0.field4135 >= ~class117.field2115 && class117.field2115 > arg0.field4132) {
+            SeqType var5 = class15.method75(arg0.field4079, (byte) -55);
+            if (~var5.prenaim_move == -2 && arg0.field4139 > 0 && ~arg0.field4135 >= ~class117.field2115 && class117.field2115 > arg0.field4132) {
                 arg0.field4142 = 1;
                 return;
             }
         }
         if (arg0.field4079 != -1 && arg0.field4142 == 0) {
-            class109 var6 = class15.method75(arg0.field4079, (byte) 118);
-            if (var6 != null && var6.field1967 != null) {
+            SeqType var6 = class15.method75(arg0.field4079, (byte) 118);
+            if (var6 != null && var6.frames != null) {
                 ++arg0.field4100;
-                if (~arg0.field4103 > ~var6.field1967.length && var6.field1992[arg0.field4103] < arg0.field4100) {
+                if (~arg0.field4103 > ~var6.frames.length && var6.delay[arg0.field4103] < arg0.field4100) {
                     arg0.field4100 = 1;
                     ++arg0.field4103;
                     class60.method433(20, class240.field4458 == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
                 }
-                if (arg0.field4103 >= var6.field1967.length) {
+                if (arg0.field4103 >= var6.frames.length) {
                     ++arg0.field4134;
-                    arg0.field4103 -= var6.field1974;
-                    if (~arg0.field4134 > ~var6.field1972) {
-                        if (~arg0.field4103 <= -1 && arg0.field4103 < var6.field1967.length) {
+                    arg0.field4103 -= var6.loops;
+                    if (~arg0.field4134 > ~var6.maxloops) {
+                        if (~arg0.field4103 <= -1 && arg0.field4103 < var6.frames.length) {
                             class60.method433(-120, class240.field4458 == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
                         } else {
                             arg0.field4079 = -1;
@@ -398,7 +398,7 @@ public class class104 extends class23 {
                         arg0.field4079 = -1;
                     }
                 }
-                arg0.field4095 = var6.field1962;
+                arg0.field4095 = var6.stretches;
             } else {
                 arg0.field4079 = -1;
             }

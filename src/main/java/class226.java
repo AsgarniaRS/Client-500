@@ -63,8 +63,8 @@ public class class226 extends class136 {
         }
         field4244++;
         if (arg3.field4079 == arg1 && arg1 != -1) {
-            class109 var4 = class15.method75(arg1, (byte) 101);
-            int var5 = var4.field1968;
+            SeqType var4 = class15.method75(arg1, (byte) 101);
+            int var5 = var4.duplicatebehavior;
             if (var5 == 1) {
                 arg3.field4100 = 0;
                 arg3.field4134 = 0;
@@ -76,7 +76,7 @@ public class class226 extends class136 {
                 arg3.field4134 = 0;
                 return;
             }
-        } else if (arg1 == -1 || arg3.field4079 == -1 || class15.method75(arg1, (byte) 104).field2001 >= class15.method75(arg3.field4079, (byte) -90).field2001) {
+        } else if (arg1 == -1 || arg3.field4079 == -1 || class15.method75(arg1, (byte) 104).priority >= class15.method75(arg3.field4079, (byte) -90).priority) {
             arg3.field4103 = 0;
             arg3.field4142 = arg2;
             arg3.field4139 = arg3.field4137;

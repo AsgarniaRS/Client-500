@@ -283,7 +283,7 @@ public class class149 extends class136 {
                 if (this.field2889 == null || var3 >= this.field2889.length) {
                     var2.recolour(this.field2857[var3], this.field2851[var3]);
                 } else {
-                    var2.recolour(this.field2857[var3], class109.field1970[this.field2889[var3] & 0xFF]);
+                    var2.recolour(this.field2857[var3], SeqType.field1970[this.field2889[var3] & 0xFF]);
                 }
             }
         }
@@ -794,7 +794,7 @@ public class class149 extends class136 {
     }
 
     @OriginalMember(owner = "client!ng", name = "a", descriptor = "(IIILk;)Lcg;")
-    public final class30 method1027(int arg0, int arg1, int arg2, class109 arg3) {
+    public final class30 method1027(int arg0, int arg1, int arg2, SeqType arg3) {
         field2888++;
         if (this.field2905 != null && arg0 > 1) {
             int var5 = -1;
@@ -821,7 +821,7 @@ public class class149 extends class136 {
                     if (this.field2889 == null || this.field2889.length <= var9) {
                         var8.recolour(this.field2857[var9], this.field2851[var9]);
                     } else {
-                        var8.recolour(this.field2857[var9], class109.field1970[this.field2889[var9] & 0xFF]);
+                        var8.recolour(this.field2857[var9], SeqType.field1970[this.field2889[var9] & 0xFF]);
                     }
                 }
             }

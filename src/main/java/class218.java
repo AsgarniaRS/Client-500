@@ -237,7 +237,7 @@ public abstract class class218 extends class145 {
             while (var3 < arg0.length) {
                 int var4 = (arg0[var3++] & 0xFF) * 64 - class16.field239;
                 int var5 = (arg0[var3++] & 0xFF) * 64 - class119.field2183;
-                if (var4 > 0 && var5 > 0 && var4 + 64 < class109.field1990 && scene.field760 > var5 + 64) {
+                if (var4 > 0 && var5 > 0 && var4 + 64 < SeqType.field1990 && scene.field760 > var5 + 64) {
                     int var6 = var4 >> 6;
                     int var7 = scene.field760 - var5 - 1 >> 6;
                     for (int var8 = 0; var8 < 64; var8++) {
@@ -272,7 +272,7 @@ public abstract class class218 extends class145 {
     @OriginalMember(owner = "client!u", name = "a", descriptor = "(ZIII)V")
     public final void method1476(boolean arg0, int arg1, int arg2, int arg3) {
         field4097++;
-        if (this.field4079 != -1 && class15.method75(this.field4079, (byte) -54).field1982 == 1) {
+        if (this.field4079 != -1 && class15.method75(this.field4079, (byte) -54).postanim_move == 1) {
             this.field4079 = -1;
         }
         if (!arg0) {
@@ -319,7 +319,7 @@ public abstract class class218 extends class145 {
         }
         int var4 = this.field4089[0];
         int var5 = this.field4143[0];
-        if (this.field4079 != -1 && class15.method75(this.field4079, (byte) -84).field1982 == 1) {
+        if (this.field4079 != -1 && class15.method75(this.field4079, (byte) -84).postanim_move == 1) {
             this.field4079 = -1;
         }
         if (this.field4137 < 9) {

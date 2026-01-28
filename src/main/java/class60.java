@@ -59,7 +59,7 @@ public class class60 extends class23 {
             this.field1129 = arg0.g2() << 4;
         }
         if (arg1 != -3) {
-            method433(-92, false, 56, -26, 45, (class109) null);
+            method433(-92, false, 56, -26, 45, (SeqType) null);
         }
         ++field1121;
     }
@@ -168,17 +168,17 @@ public class class60 extends class23 {
     }
 
     @OriginalMember(owner = "client!fd", name = "a", descriptor = "(IZIIILk;)V")
-    public static final void method433(int arg0, boolean arg1, int arg2, int arg3, int arg4, class109 arg5) {
+    public static final void method433(int arg0, boolean arg1, int arg2, int arg3, int arg4, SeqType arg5) {
         if (~class174.field3447 > -51) {
-            if (arg5.field2003 != null && arg5.field2003.length >= 1 && ~arg3 > ~arg5.field2003.length && arg5.field2003[arg3] != null) {
-                int var7 = arg5.field2003[arg3][0];
+            if (arg5.sound != null && arg5.sound.length >= 1 && ~arg3 > ~arg5.sound.length && arg5.sound[arg3] != null) {
+                int var7 = arg5.sound[arg3][0];
                 int var8 = var7 >> 8;
                 int var9 = var7 >> 4 & 7;
                 int var10 = var7 & 15;
-                if (arg5.field2003[arg3].length > 1) {
-                    int var11 = (int) (Math.random() * (double) arg5.field2003[arg3].length);
+                if (arg5.sound[arg3].length > 1) {
+                    int var11 = (int) (Math.random() * (double) arg5.sound[arg3].length);
                     if (var11 > 0) {
-                        var8 = arg5.field2003[arg3][var11];
+                        var8 = arg5.sound[arg3][var11];
                     }
                 }
                 if (var10 == 0) {

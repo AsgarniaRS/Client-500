@@ -98,7 +98,7 @@ public class class209 {
     }
 
     @OriginalMember(owner = "client!tb", name = "a", descriptor = "(BLk;I)Lcg;")
-    public final class30 method1430(byte arg0, class109 arg1, int arg2) {
+    public final class30 method1430(byte arg0, SeqType arg1, int arg2) {
         field3966++;
         if (this.field3977 != -1) {
             return class147.method987(this.field3977, -97).method866(arg2, 0, arg1);
@@ -178,33 +178,33 @@ public class class209 {
     }
 
     @OriginalMember(owner = "client!tb", name = "a", descriptor = "(Lk;IIILk;)Lcg;")
-    public final class30 method1432(class109 arg0, int arg1, int arg2, int arg3, class109 arg4) {
+    public final class30 method1432(SeqType arg0, int arg1, int arg2, int arg3, SeqType arg4) {
         field3979++;
         if (this.field3977 != -1) {
             return class147.method987(this.field3977, -113).method867(0, arg0, arg3, arg2, arg4);
         }
         long var6 = this.field3976;
         int[] var8 = this.field3968;
-        if (arg4 != null && (arg4.field2002 >= 0 || arg4.field1977 >= 0)) {
+        if (arg4 != null && (arg4.replaceheldleft >= 0 || arg4.replaceheldright >= 0)) {
             var8 = new int[12];
             for (int var9 = 0; var9 < 12; var9++) {
                 var8[var9] = this.field3968[var9];
             }
-            if (arg4.field2002 >= 0) {
-                if (arg4.field2002 == 65535) {
+            if (arg4.replaceheldleft >= 0) {
+                if (arg4.replaceheldleft == 65535) {
                     var8[5] = 0;
                     var6 ^= 0xFFFFFFFF00000000L;
                 } else {
-                    var8[5] = class204.method1405(1073741824, arg4.field2002);
+                    var8[5] = class204.method1405(1073741824, arg4.replaceheldleft);
                     var6 ^= (long) var8[5] << 32;
                 }
             }
-            if (arg4.field1977 >= 0) {
-                if (arg4.field1977 == 65535) {
+            if (arg4.replaceheldright >= 0) {
+                if (arg4.replaceheldright == 65535) {
                     var8[3] = 0;
                     var6 ^= 0xFFFFFFFFL;
                 } else {
-                    var8[3] = class204.method1405(arg4.field1977, 1073741824);
+                    var8[3] = class204.method1405(arg4.replaceheldright, 1073741824);
                     var6 ^= var8[3];
                 }
             }

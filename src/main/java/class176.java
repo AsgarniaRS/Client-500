@@ -205,7 +205,7 @@ public class class176 extends class136 {
                 class31.login.p4(class98.field1795.crc);
                 class31.login.p4(class18.field280.crc);
                 class31.login.p4(class147.field2762.crc);
-                class31.login.p4(class109.field2006.crc);
+                class31.login.p4(SeqType.field2006.crc);
                 class31.login.p4(class190.field3674.crc);
                 class31.login.p4(class161.field3115.crc);
                 class31.login.p4(class248.field4552.crc);

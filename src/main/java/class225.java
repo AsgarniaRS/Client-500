@@ -104,7 +104,7 @@ public class class225 {
             if (var6 != null) {
                 for (int var7 = 4; var7 >= 0; var7--) {
                     if (var6[var7] != null && (EnumType.field884 != 0 || !var6[var7].method624(class158.field3043, (byte) -69))) {
-                        class109.field1981++;
+                        SeqType.field1981++;
                         byte var8 = 0;
                         if (var7 == 0) {
                             var8 = 17;

@@ -574,7 +574,7 @@ public class Packet extends Linkable {
         int var9 = arg7 - arg6;
         int var10 = arg5 - arg8;
         int var11 = (arg1 - arg2 << 16) / var9;
-        if (class109.field1990 > arg7) {
+        if (SeqType.field1990 > arg7) {
             var9++;
         }
         int var12 = (arg0 - arg4 << 16) / var10;

@@ -97,7 +97,7 @@ public class class7 extends class136 {
         class111.field2022 = null;
         class8.field115 = null;
         class164.field3144 = null;
-        class109.field1964 = null;
+        SeqType.field1964 = null;
         class85.field1541 = null;
         field107++;
     }

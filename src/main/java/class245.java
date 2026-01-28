@@ -61,8 +61,8 @@ public class class245 {
             class189.field3661 = -1;
             class34.field594 = -1;
         }
-        if (class109.field1990 < var3) {
-            class126.field2332 = class109.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
+        if (SeqType.field1990 < var3) {
+            class126.field2332 = SeqType.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
             class34.field594 = -1;
             class189.field3661 = -1;
         }

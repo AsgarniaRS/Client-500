@@ -80,7 +80,7 @@ public class class105 extends class51 {
         field1905++;
         if (var7 == 0) {
             if (var6 != 0) {
-                class109.method755(arg2, arg3, -87, arg0, arg1);
+                SeqType.method755(arg2, arg3, -87, arg0, arg1);
             }
         } else if (var6 == 0) {
             Packet.method310(arg3, arg5, arg0, (byte) 84, arg2);

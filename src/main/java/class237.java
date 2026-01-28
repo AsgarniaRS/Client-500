@@ -72,7 +72,6 @@ public class class237 extends class136 {
 
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(ZI)V")
     private final void method1571(boolean arg0, int arg1) {
-        field4410++;
         double var3 = (double) (arg1 >> 16 & 0xFF) / 256.0D;
         double var5 = (double) (arg1 >> 8 & 0xFF) / 256.0D;
         double var7 = (double) (arg1 & 0xFF) / 256.0D;
@@ -196,29 +195,25 @@ public class class237 extends class136 {
     }
 
     @OriginalMember(owner = "client!vh", name = "a", descriptor = "(Ljava/lang/String;I)Ljava/lang/Class;")
-    public static final Class method1576(String arg0, int arg1) throws ClassNotFoundException {
-        if (arg1 != 10608) {
-            return null;
-        }
-        field4414++;
-        if (arg0.equals("B")) {
+    public static final Class findClass(String desc) throws ClassNotFoundException {
+        if (desc.equals("B")) {
             return Byte.TYPE;
-        } else if (arg0.equals("I")) {
+        } else if (desc.equals("I")) {
             return Integer.TYPE;
-        } else if (arg0.equals("S")) {
+        } else if (desc.equals("S")) {
             return Short.TYPE;
-        } else if (arg0.equals("J")) {
+        } else if (desc.equals("J")) {
             return Long.TYPE;
-        } else if (arg0.equals("Z")) {
+        } else if (desc.equals("Z")) {
             return Boolean.TYPE;
-        } else if (arg0.equals("F")) {
+        } else if (desc.equals("F")) {
             return Float.TYPE;
-        } else if (arg0.equals("D")) {
+        } else if (desc.equals("D")) {
             return Double.TYPE;
-        } else if (arg0.equals("C")) {
+        } else if (desc.equals("C")) {
             return Character.TYPE;
         } else {
-            return Class.forName(arg0);
+            return Class.forName(desc);
         }
     }
 }

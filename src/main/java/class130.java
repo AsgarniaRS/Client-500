@@ -86,8 +86,8 @@ public abstract class class130 {
             class189.field3661 = (int) ((double) class90.field1707.field3382 / GZip.field1110);
         }
         int var7 = (int) ((double) class90.field1707.field3424 / GZip.field1110) + class34.field594;
-        if (var6 > class109.field1990) {
-            class189.field3661 = class109.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
+        if (var6 > SeqType.field1990) {
+            class189.field3661 = SeqType.field1990 - (int) ((double) class90.field1707.field3382 / GZip.field1110);
         }
         if (var4 < 0) {
             class34.field594 = (int) ((double) class90.field1707.field3424 / GZip.field1110);

@@ -261,16 +261,16 @@ public class class15 {
     }
 
     @OriginalMember(owner = "client!bc", name = "a", descriptor = "(IB)Lk;")
-    public static final class109 method75(int arg0, byte arg1) {
+    public static final SeqType method75(int arg0, byte arg1) {
         field230++;
-        class109 var2 = (class109) class241.field4473.method666((long) arg0, 0);
+        SeqType var2 = (SeqType) class241.field4473.method666((long) arg0, 0);
         if (var2 != null) {
             return var2;
         }
         byte[] var3 = class37.field672.method941((byte) 56, class9.method50(arg0, (byte) -72), class211.method1443(arg0, true));
-        class109 var4 = new class109();
+        SeqType var4 = new SeqType();
         if (var3 != null) {
-            var4.method753(new Packet(var3), false);
+            var4.decode(new Packet(var3));
         }
         var4.method759((byte) 62);
         class241.field4473.put((long) arg0, var4, false);

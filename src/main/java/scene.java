@@ -122,8 +122,8 @@ public class scene extends class218 {
     public final void method87(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, long arg8) {
         ++field771;
         if (this.field768 != null) {
-            class109 var11 = super.field4079 != -1 && super.field4142 == 0 ? class15.method75(super.field4079, (byte) -71) : null;
-            class109 var12 = super.field4108 == -1 || this.field743 || super.field4108 == super.field4107 && var11 != null ? null : class15.method75(super.field4108, (byte) -110);
+            SeqType var11 = super.field4079 != -1 && super.field4142 == 0 ? class15.method75(super.field4079, (byte) -71) : null;
+            SeqType var12 = super.field4108 == -1 || this.field743 || super.field4108 == super.field4107 && var11 != null ? null : class15.method75(super.field4108, (byte) -110);
             class30 var13 = this.field768.method1432(var12, 1549114312, super.field4103, super.field4129, var11);
             if (var13 != null) {
                 super.field4109 = var13.method88();

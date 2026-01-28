@@ -49,7 +49,7 @@ public class class112 {
         class37.field663 = class108.field1944;
         class2.field24 = class18.field281;
         class49.field918 = class31.field508;
-        class109.field1980 = class139.field2584;
+        SeqType.field1980 = class139.field2584;
         class205.field3905 = class71.field1330;
         class246.field4510 = class66.field1201;
         class11.field151 = class145.field2725;
@@ -183,7 +183,7 @@ public class class112 {
         class159.field3071 = class115.field2083;
         class223.field4196 = class15.field222;
         class70.field1303 = class1.field5;
-        class109.field1973 = class139.field2584;
+        SeqType.field1973 = class139.field2584;
         class177.field3551 = class168.field3245;
         GameShell.field1591 = class238.field4435;
         class70.field1297 = class1.field5;
@@ -198,7 +198,7 @@ public class class112 {
         Isaac.field2736 = class90.field1710;
         class93.field1752 = class71.field1318;
         class145.field2719 = class104.field1892;
-        class109.field2000 = class97.field1786;
+        SeqType.field2000 = class97.field1786;
         class70.field1304 = class1.field5;
         class230.field4321 = class113.field2048;
         class232.field4364 = class129.field2421;

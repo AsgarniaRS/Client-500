@@ -492,7 +492,7 @@ public class class174 {
     }
 
     @OriginalMember(owner = "client!q", name = "a", descriptor = "(Lk;Ltb;IZI)Lcg;")
-    public final class30 method1247(class109 arg0, class209 arg1, int arg2, boolean arg3, int arg4) {
+    public final class30 method1247(SeqType arg0, class209 arg1, int arg2, boolean arg3, int arg4) {
         class248.field4551 = false;
         field3517++;
         int var6;

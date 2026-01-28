@@ -191,7 +191,7 @@ public class class11 extends class23 {
                 }
                 for (int var5 = 0; Isaac.field2731 > var5; ++var5) {
                     if (class115.field2088[var5] == arg1) {
-                        class223.method1501(class166.method1142(new class88[] { class109.field1973, var3, class115.field2087 }, -3), arg0 + 20, 0, class174.field3455);
+                        class223.method1501(class166.method1142(new class88[] { SeqType.field1973, var3, class115.field2087 }, -3), arg0 + 20, 0, class174.field3455);
                         return;
                     }
                 }

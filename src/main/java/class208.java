@@ -106,7 +106,7 @@ public class class208 extends class23 {
             var2 = 4;
         }
         class111.field2022 = new byte[var2][105][105];
-        class109.field1964 = new byte[var2][104][104];
+        SeqType.field1964 = new byte[var2][104][104];
         class164.field3144 = new byte[var2][104][104];
         class234.field4379 = new byte[var2][104][104];
         class135.field2513 = new int[var2][105][105];

@@ -209,7 +209,7 @@ public class class78 extends Linkable {
                         }
                     }
                     int var67 = class164.field3144[var12][var63][var66] & 0xFF;
-                    int var68 = class109.field1964[var12][var63][var66] & 0xFF;
+                    int var68 = SeqType.field1964[var12][var63][var66] & 0xFF;
                     if (var67 > 0 || var68 > 0) {
                         int var69 = class62.field1137[var12][var63 + 1][var66];
                         int var70 = class62.field1137[var12][var63][var66];
@@ -303,7 +303,7 @@ public class class78 extends Linkable {
                 }
             }
             class164.field3144[var12] = null;
-            class109.field1964[var12] = null;
+            SeqType.field1964[var12] = null;
             class8.field115[var12] = null;
             class234.field4379[var12] = null;
             class111.field2022[var12] = null;

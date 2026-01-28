@@ -35,7 +35,7 @@ public class class18 extends class145 {
     public int field292;
 
     @OriginalMember(owner = "client!bf", name = "r", descriptor = "Lk;")
-    private class109 field282;
+    private SeqType field282;
 
     @OriginalMember(owner = "client!bf", name = "y", descriptor = "Li;")
     public static class88 field289 = class208.method1425(105, "(U3");
@@ -256,10 +256,10 @@ public class class18 extends class145 {
         if (arg1) {
             this.method90(99, true);
         }
-        while (this.field303 > this.field282.field1992[this.field298]) {
-            this.field303 -= this.field282.field1992[this.field298];
+        while (this.field303 > this.field282.delay[this.field298]) {
+            this.field303 -= this.field282.delay[this.field298];
             this.field298++;
-            if (this.field282.field1967.length <= this.field298) {
+            if (this.field282.frames.length <= this.field298) {
                 this.field302 = true;
                 return;
             }

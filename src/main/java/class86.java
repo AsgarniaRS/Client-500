@@ -37,7 +37,7 @@ public abstract class class86 {
         if (Linkable.field1207 <= arg4 && arg4 <= class12.field183) {
             int var5 = class156.method1060(class49.field919, class18.field279, -119, arg3);
             int var6 = class156.method1060(class49.field919, class18.field279, -102, arg2);
-            class109.method755(arg0, var5, 89, arg4, var6);
+            SeqType.method755(arg0, var5, 89, arg4, var6);
         }
         if (arg1 != 48) {
             method582(57);

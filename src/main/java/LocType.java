@@ -812,7 +812,7 @@ public class LocType extends class136 {
     }
 
     @OriginalMember(owner = "client!nf", name = "a", descriptor = "(BIIIIILk;[[I[[II)Ltc;")
-    public final class210 getTempModel(byte arg0, int arg1, int arg2, int arg3, int arg4, int arg5, class109 arg6, int[][] arg7, int[][] arg8, int arg9) {
+    public final class210 getTempModel(byte arg0, int arg1, int arg2, int arg3, int arg4, int arg5, SeqType arg6, int[][] arg7, int[][] arg8, int arg9) {
         long var11;
         if (this.shape == null) {
             var11 = (this.field2833 << 10) + arg9;

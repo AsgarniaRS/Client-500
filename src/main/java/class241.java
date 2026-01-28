@@ -94,13 +94,13 @@ public abstract class class241 {
         if (class245.field4502 == null) {
             class169 var5 = new class169(arg2, arg3);
             class72.bind(var5.field3249, arg2, arg3);
-            Packet.method348(arg3, arg2, 0, (byte) 78, 0, scene.field760, 0, class109.field1990, 0);
+            Packet.method348(arg3, arg2, 0, (byte) 78, 0, scene.field760, 0, SeqType.field1990, 0);
             class245.field4502 = var5;
             class202.field3854.bind();
         }
         class245.field4502.method1163(arg1, arg0);
-        int var6 = class39.field693 * arg2 / class109.field1990 + arg1;
-        int var7 = class71.field1309 * arg2 / class109.field1990;
+        int var6 = class39.field693 * arg2 / SeqType.field1990 + arg1;
+        int var7 = class71.field1309 * arg2 / SeqType.field1990;
         int var8 = class43.field727 * arg3 / scene.field760 + arg0;
         int var9 = class164.field3138 * arg3 / scene.field760;
         class72.method497(var6, var8, var7, var9, 16711680, arg4);
@@ -110,7 +110,7 @@ public abstract class class241 {
         }
         for (class65 var10 = (class65) class232.field4361.method1612(false); var10 != null; var10 = (class65) class232.field4361.method1621(82)) {
             if (scene.field772 == var10.field1180) {
-                int var11 = arg1 + var10.field1179 * arg2 / class109.field1990;
+                int var11 = arg1 + var10.field1179 * arg2 / SeqType.field1990;
                 int var12 = var10.field1175 * arg3 / scene.field760 + arg0;
                 class72.method478(var11 - 2, var12 + -2, 4, 4, 16776960);
             }

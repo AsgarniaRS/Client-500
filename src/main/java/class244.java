@@ -336,12 +336,12 @@ public class class244 extends Linkable {
             return;
         }
         if (arg0.field4079 != -1 && arg0.field4142 == 0) {
-            class109 var2 = class15.method75(arg0.field4079, (byte) -106);
-            if (arg0.field4139 > 0 && var2.field1985 == 0) {
+            SeqType var2 = class15.method75(arg0.field4079, (byte) -106);
+            if (arg0.field4139 > 0 && var2.prenaim_move == 0) {
                 arg0.field4110++;
                 return;
             }
-            if (arg0.field4139 <= 0 && var2.field1982 == 0) {
+            if (arg0.field4139 <= 0 && var2.postanim_move == 0) {
                 arg0.field4110++;
                 return;
             }
