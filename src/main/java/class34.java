@@ -188,7 +188,7 @@ public class class34 extends class23 {
     @OriginalMember(owner = "client!d", name = "a", descriptor = "(ILnb;II)[Lrc;")
     public static final class188[] method230(int arg0, Js5Index arg1, int arg2, int arg3) {
         ++field578;
-        if (!class47.method358(854010832, arg1, arg3, arg0)) {
+        if (!EnumType.method358(854010832, arg1, arg3, arg0)) {
             return null;
         } else {
             if (arg2 != -7722) {

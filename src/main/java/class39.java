@@ -147,7 +147,7 @@ public class class39 extends Linkable {
         int var2 = class86.field1549;
         int var3 = 6116423;
         int var4 = class237.field4423;
-        int var5 = class47.field889;
+        int var5 = EnumType.field889;
         class72.method478(var2, var1, var4, var5, var3);
         class72.method478(var2 + 1, var1 + 1, var4 - 2, 16, 0);
         class72.method476(var2 + 1, var1 + 18, var4 - 2, var5 - 19, 0);
@@ -165,6 +165,6 @@ public class class39 extends Linkable {
             }
             class54.field1011.method154(class78.method525(var8, true), var2 + 3, var9, var10, 0);
         }
-        class129.method876(class86.field1549, class47.field889, 0, class237.field4423, class234.field4385);
+        class129.method876(class86.field1549, EnumType.field889, 0, class237.field4423, class234.field4385);
     }
 }

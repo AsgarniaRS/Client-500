@@ -132,7 +132,7 @@ public class class234 extends class23 {
         if (arg1) {
             method1556(-106, -103);
         }
-        return !class47.method358(854010832, arg0, arg2, arg3) ? null : class203.method1395((byte) 77);
+        return !EnumType.method358(854010832, arg0, arg2, arg3) ? null : class203.method1395((byte) 77);
     }
 
     @OriginalMember(owner = "client!ve", name = "a", descriptor = "(Lea;II)V")

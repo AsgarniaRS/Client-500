@@ -103,7 +103,7 @@ public class class225 {
             }
             if (var6 != null) {
                 for (int var7 = 4; var7 >= 0; var7--) {
-                    if (var6[var7] != null && (class47.field884 != 0 || !var6[var7].method624(class158.field3043, (byte) -69))) {
+                    if (var6[var7] != null && (EnumType.field884 != 0 || !var6[var7].method624(class158.field3043, (byte) -69))) {
                         class109.field1981++;
                         byte var8 = 0;
                         if (var7 == 0) {
@@ -126,7 +126,7 @@ public class class225 {
                 }
             }
             class227.field4266++;
-            if (class47.field884 == 0 && var6 != null) {
+            if (EnumType.field884 == 0 && var6 != null) {
                 for (int var9 = 4; var9 >= 0; var9--) {
                     if (var6[var9] != null && var6[var9].method624(class158.field3043, (byte) 55)) {
                         class110.field2021++;

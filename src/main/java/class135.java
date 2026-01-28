@@ -1087,7 +1087,7 @@ public class class135 extends class23 {
                                                         }
                                                         if (var383 == 3612) {
                                                             if (class222.field4184 != null) {
-                                                                class108.field1946[var6++] = class47.field885;
+                                                                class108.field1946[var6++] = EnumType.field885;
                                                             } else {
                                                                 class108.field1946[var6++] = 0;
                                                             }
@@ -1096,7 +1096,7 @@ public class class135 extends class23 {
                                                         if (~var383 == -3614) {
                                                             --var6;
                                                             int var91 = class108.field1946[var6];
-                                                            if (class222.field4184 != null && class47.field885 > var91) {
+                                                            if (class222.field4184 != null && EnumType.field885 > var91) {
                                                                 class171.field3332[var7++] = class88.field1647[var91].field1323.method614((byte) 83);
                                                                 continue;
                                                             }
@@ -1106,7 +1106,7 @@ public class class135 extends class23 {
                                                         if (var383 == 3614) {
                                                             --var6;
                                                             int var92 = class108.field1946[var6];
-                                                            if (class222.field4184 != null && ~class47.field885 < ~var92) {
+                                                            if (class222.field4184 != null && ~EnumType.field885 < ~var92) {
                                                                 class108.field1946[var6++] = class88.field1647[var92].field1317;
                                                                 continue;
                                                             }
@@ -1116,7 +1116,7 @@ public class class135 extends class23 {
                                                         if (~var383 == -3616) {
                                                             --var6;
                                                             int var93 = class108.field1946[var6];
-                                                            if (class222.field4184 != null && ~class47.field885 < ~var93) {
+                                                            if (class222.field4184 != null && ~EnumType.field885 < ~var93) {
                                                                 class108.field1946[var6++] = class88.field1647[var93].field1315;
                                                                 continue;
                                                             }
@@ -1177,7 +1177,7 @@ public class class135 extends class23 {
                                                         if (var383 == 3624) {
                                                             --var6;
                                                             int var98 = class108.field1946[var6];
-                                                            if (class88.field1647 != null && class47.field885 > var98 && class88.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
+                                                            if (class88.field1647 != null && EnumType.field885 > var98 && class88.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
                                                                 class108.field1946[var6++] = 1;
                                                                 continue;
                                                             }
@@ -1195,7 +1195,7 @@ public class class135 extends class23 {
                                                         if (~var383 == -3627) {
                                                             --var6;
                                                             int var99 = class108.field1946[var6];
-                                                            if (class222.field4184 != null && class47.field885 > var99) {
+                                                            if (class222.field4184 != null && EnumType.field885 > var99) {
                                                                 class171.field3332[var7++] = class88.field1647[var99].field1321;
                                                                 continue;
                                                             }
@@ -2354,7 +2354,7 @@ public class class135 extends class23 {
                                                         var6 -= 2;
                                                         int var307 = class108.field1946[var6];
                                                         int var308 = class108.field1946[var6 + 1];
-                                                        class47 var309 = class167.method1150(var307, -113);
+                                                        EnumType var309 = class167.method1150(var307, -113);
                                                         class171.field3332[var7++] = var309.method360(var308, (byte) -90);
                                                         continue;
                                                     }
@@ -2364,8 +2364,8 @@ public class class135 extends class23 {
                                                         int var311 = class108.field1946[var6 + 2];
                                                         int var312 = class108.field1946[var6 - -3];
                                                         int var313 = class108.field1946[var6];
-                                                        class47 var314 = class167.method1150(var311, -115);
-                                                        if (~var314.field873 == ~var313 && var314.field882 == var310) {
+                                                        EnumType var314 = class167.method1150(var311, -115);
+                                                        if (~var314.inputtype == ~var313 && var314.outputtype == var310) {
                                                             if (var310 != 115) {
                                                                 class108.field1946[var6++] = var314.method356(-1339210640, var312);
                                                             } else {

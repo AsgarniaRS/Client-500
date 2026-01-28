@@ -236,7 +236,7 @@ public class class239 {
         if (arg3 != 1) {
             field4436 = null;
         }
-        return class47.method358(854010832, arg1, arg2, arg0) ? class34.method229((byte) -69) : null;
+        return EnumType.method358(854010832, arg1, arg2, arg0) ? class34.method229((byte) -69) : null;
     }
 
     @OriginalMember(owner = "client!w", name = "a", descriptor = "(IIII)I")

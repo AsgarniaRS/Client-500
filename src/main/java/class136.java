@@ -59,7 +59,7 @@ public class class136 extends Linkable {
         class237.field4423 = var1;
         field2526++;
         class108.field1960 = true;
-        class47.field889 = class203.field3864 * 15 + 22;
+        EnumType.field889 = class203.field3864 * 15 + 22;
         int var3 = class203.field3864 * 15 + 21;
         int var4 = class172.field3341;
         if (var3 + var4 > class145.field2727) {

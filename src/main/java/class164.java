@@ -38,7 +38,7 @@ public class class164 implements class198 {
     public final class88 method1128(int[] arg0, int arg1, long arg2, int arg3) {
         field3141++;
         if (arg1 == 0) {
-            class47 var6 = class167.method1150(arg0[0], arg3 ^ 0xFFFFFF8E);
+            EnumType var6 = class167.method1150(arg0[0], arg3 ^ 0xFFFFFF8E);
             return var6.method360((int) arg2, (byte) -81);
         } else if (arg1 == 1 || arg1 == 10) {
             class149 var7 = class71.method472((int) arg2, (byte) -111);

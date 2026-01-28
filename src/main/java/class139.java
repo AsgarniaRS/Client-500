@@ -122,7 +122,7 @@ public class class139 extends class23 {
                                 if (class130.field2438[var6] != null) {
                                     ++class143.field2650;
                                     short var7 = 0;
-                                    if (~class47.field884 == -1 && class130.field2438[var6].method624(class158.field3043, (byte) 123)) {
+                                    if (~EnumType.field884 == -1 && class130.field2438[var6].method624(class158.field3043, (byte) 123)) {
                                         if (arg4.combatLevel > class240.field4458.combatLevel) {
                                             var7 = 2000;
                                         }

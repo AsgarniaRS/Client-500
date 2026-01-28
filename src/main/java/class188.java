@@ -168,7 +168,7 @@ public abstract class class188 extends class136 {
                 arg2.method141(class6.field76, var12, var14 + 5, 16777215, 0);
             }
         }
-        if (class47.field884 != 1) {
+        if (EnumType.field884 != 1) {
             if (class86.field1550 > 0) {
                 class80.method535((byte) 124, class86.field1550);
                 class86.field1550 = 0;

@@ -146,6 +146,6 @@ public class class233 {
     public static final class193 method1555(int arg0, int arg1, Js5Index arg2, int arg3) {
         int var4 = -50 % ((83 - arg1) / 42);
         field4371++;
-        return class47.method358(854010832, arg2, arg3, arg0) ? class164.method1131(0) : null;
+        return EnumType.method358(854010832, arg2, arg3, arg0) ? class164.method1131(0) : null;
     }
 }

@@ -117,7 +117,7 @@ public class class106 {
         class211.field4005 = 0;
         class68.field1249 = 0;
         class217.field4066 = 0;
-        class47.field878 = 0;
+        EnumType.field878 = 0;
         class227.field4263 = 0;
         class152.field2944 = 0;
         class154.field2985 = 0;
@@ -412,7 +412,7 @@ public class class106 {
         class248.field4545 = 0;
         Js5Local.field336 = 0;
         class71.field1319 = 0;
-        class47.field886 = 0;
+        EnumType.field886 = 0;
         scene.field765 = 0;
         class109.field2004 = 0;
         class154.field2969 = 0;
@@ -536,7 +536,7 @@ public class class106 {
         class132.field2481 = 0;
         class155.field2998 = 0;
         ClientStream.field2538 = 0;
-        class47.field874 = 0;
+        EnumType.field874 = 0;
         ClientStream.field2548 = 0;
         class170.field3300 = 0;
         class92.field1719 = 0;
@@ -858,7 +858,7 @@ public class class106 {
         class88.field1610 = 0;
         class110.field2021 = 0;
         class231.field4342 = 0;
-        class47.field888 = 0;
+        EnumType.field888 = 0;
         class53.field974 = 0;
         class234.field4384 = 0;
         Js5Index.field2683 = 0;
@@ -921,7 +921,7 @@ public class class106 {
         class4.field47 = 0;
         class105.field1917 = 0;
         class223.field4197 = 0;
-        class47.field875 = 0;
+        EnumType.field875 = 0;
         class4.field61 = 0;
         CollisionMap.field1665 = 0;
         class239.field4447 = 0;
@@ -1074,12 +1074,12 @@ public class class106 {
         class158.field3038 = 0;
         class119.field2168 = 0;
         class57.field1085 = 0;
-        class47.field870 = 0;
+        EnumType.field870 = 0;
         class236.field4407 = 0;
         Packet.field838 = 0;
         class33.field535 = 0;
         class81.field1473 = 0;
-        class47.field880 = 0;
+        EnumType.field880 = 0;
         class171.field3330 = 0;
         Packet.field850 = 0;
         class194.field3715 = 0;
@@ -1259,7 +1259,7 @@ public class class106 {
         class36.field629 = 0;
         class202.field3846 = 0;
         class188.field3649 = 0;
-        class47.field883 = 0;
+        EnumType.field883 = 0;
         class114.field2072 = 0;
         class126.field2338 = 0;
         Packet.field853 = 0;
@@ -1405,7 +1405,7 @@ public class class106 {
         class128.field2403 = 0;
         Packet.field824 = 0;
         class176.field3539 = 0;
-        class47.field872 = 0;
+        EnumType.field872 = 0;
         class18.field291 = 0;
         class149.field2870 = 0;
         class234.field4381 = 0;
@@ -1491,7 +1491,7 @@ public class class106 {
         for (int var10 = 0; var10 < 100; var10++) {
             class225.field4230[var10] = true;
         }
-        class47.field885 = 0;
+        EnumType.field885 = 0;
         class222.field4184 = null;
         class88.field1647 = null;
         for (int var11 = 0; var11 < 6; var11++) {
@@ -1550,7 +1550,7 @@ public class class106 {
         field1924++;
         if (arg3 < 53) {
             return null;
-        } else if (class47.method358(854010832, arg4, arg2, arg0)) {
+        } else if (EnumType.method358(854010832, arg4, arg2, arg0)) {
             return class36.method241((byte) -90, arg1.method941((byte) 56, arg0, arg2));
         } else {
             return null;

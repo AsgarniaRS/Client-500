@@ -819,14 +819,14 @@ public class LocType extends class136 {
         } else {
             var11 = (this.field2833 << 10) + (arg3 << 3) + arg9;
         }
-        class125 var13 = (class125) class47.field879.method135(-127, var11);
+        class125 var13 = (class125) EnumType.field879.method135(-127, var11);
         if (var13 == null) {
             ModelUnlit var14 = this.method1002(arg9, arg3, (byte) -33);
             if (var14 == null) {
                 return null;
             }
             var13 = new class125(var14, this.ambient + 64, this.contrast * 5 + 768, -50, -10, -50);
-            class47.field879.method130(37, var11, var13);
+            EnumType.field879.method130(37, var11, var13);
         }
         if (arg0 < 126) {
             this.method1002(69, -64, (byte) -31);

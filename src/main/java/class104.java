@@ -312,7 +312,7 @@ public class class104 extends class23 {
         }
         class108.field1960 = false;
         class203.field3864 = 0;
-        class126.method863(class47.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -126);
+        class126.method863(EnumType.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -126);
         if (var5 != null) {
             class110.method761(false, var5, (byte) -104);
         }

@@ -77,7 +77,7 @@ public class class190 {
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(IILnb;B)[Lrh;")
     public static final class193[] method1324(int arg0, int arg1, Js5Index arg2, byte arg3) {
         field3671++;
-        if (class47.method358(854010832, arg2, arg0, arg1)) {
+        if (EnumType.method358(854010832, arg2, arg0, arg1)) {
             if (arg3 != 24) {
                 method1328(40);
             }
@@ -114,7 +114,7 @@ public class class190 {
             field3675 = null;
         }
         field3678++;
-        return class47.method358(854010832, arg2, arg0, arg3) ? method1325((byte) -54) : null;
+        return EnumType.method358(854010832, arg2, arg0, arg3) ? method1325((byte) -54) : null;
     }
 
     @OriginalMember(owner = "client!re", name = "a", descriptor = "(I)V")

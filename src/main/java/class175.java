@@ -146,7 +146,7 @@ public class class175 {
         if (var4 == 15) {
             class174 var9 = class36.method238(var2, var3, true);
             if (var9 != null) {
-                class47.method363(-86);
+                EnumType.method363(-86);
                 class158.method1066(true, var3, GameShell.method592(1281959627, class80.method530(-881710560, var9)), var2);
                 class28.field475 = 0;
                 class201.field3837 = class194.method1347(var9, arg0 - 4);
@@ -380,7 +380,7 @@ public class class175 {
             Isaac.out.p2_alt3(class223.field4214 + var2);
         }
         if (var4 == 12) {
-            class47.method363(-125);
+            EnumType.method363(-125);
             class174 var23 = class239.method1581(-64, var3);
             class28.field475 = 1;
             class58.field1105 = var2;
@@ -782,7 +782,7 @@ public class class175 {
             class200.method1373(65280, class239.method1581(-64, class209.field3967));
         }
         if (class10.field145) {
-            class47.method363(arg0 ^ 0xFFFFFF9D);
+            EnumType.method363(arg0 ^ 0xFFFFFF9D);
         }
         if (class57.field1091 != null && class139.field2575 == 0) {
             class200.method1373(65280, class57.field1091);

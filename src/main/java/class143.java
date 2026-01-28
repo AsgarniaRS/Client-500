@@ -260,11 +260,11 @@ public class class143 extends Linkable {
                                     class98.field1803 = class157.field3035;
                                     class207.field3943 = class239.field4451;
                                     class175.field3534 = true;
-                                    class47.field890 = class126.field2332;
+                                    EnumType.field890 = class126.field2332;
                                     continue;
                                 }
                                 if (var21 && class175.field3534) {
-                                    class233.method1553(true, class47.field890 + (int) ((double) (LocType.field2793 - class28.field471) * 2.0D / class150.field2917));
+                                    class233.method1553(true, EnumType.field890 + (int) ((double) (LocType.field2793 - class28.field471) * 2.0D / class150.field2917));
                                     class172.method1223((int) ((double) (class207.field3943 - class239.field4451) * 2.0D / class150.field2917) + class98.field1803, -89);
                                     continue;
                                 }

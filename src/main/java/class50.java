@@ -48,9 +48,9 @@ public abstract class class50 {
             if (var1 != 1) {
                 int var6 = class28.field471;
                 int var7 = class239.field4451;
-                if (class86.field1549 - 10 > var6 || class237.field4423 + class86.field1549 + 10 < var6 || var7 < class234.field4385 - 10 || class234.field4385 + class47.field889 + 10 < var7) {
+                if (class86.field1549 - 10 > var6 || class237.field4423 + class86.field1549 + 10 < var6 || var7 < class234.field4385 - 10 || class234.field4385 + EnumType.field889 + 10 < var7) {
                     class108.field1960 = false;
-                    class126.method863(class47.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -122);
+                    class126.method863(EnumType.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -122);
                 }
             }
             if (var1 != 1) {
@@ -72,7 +72,7 @@ public abstract class class50 {
                 class175.method1259(2, var13);
             }
             class108.field1960 = false;
-            class126.method863(class47.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -118);
+            class126.method863(EnumType.field889, class237.field4423, class234.field4385, class86.field1549, (byte) -118);
             return;
         }
         if (var1 == 1 && class203.field3864 > 0) {

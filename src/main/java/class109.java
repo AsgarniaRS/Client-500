@@ -188,7 +188,7 @@ public class class109 extends class136 {
             method747(-47, -61, 125, -122, 38);
         }
         if (class247.field4514 < 3) {
-            ((class169) class47.field887).method1165(arg1, arg2, arg3.field3382, arg3.field3424, class47.field887.field3656 / 2, class47.field887.field3654 / 2, class207.field3932, 256, arg3.field3404, arg3.field3423);
+            ((class169) EnumType.field887).method1165(arg1, arg2, arg3.field3382, arg3.field3424, EnumType.field887.field3656 / 2, EnumType.field887.field3654 / 2, class207.field3932, 256, arg3.field3404, arg3.field3423);
         } else {
             class72.method491(arg1, arg2, 0, arg3.field3404, arg3.field3423);
         }

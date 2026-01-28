@@ -315,7 +315,7 @@ public class class77 extends class145 {
         class60.field1123.method134(50);
         if (arg0 < -54) {
             class80.field1442.method134(50);
-            class47.field879.method134(50);
+            EnumType.field879.method134(50);
         }
     }
 

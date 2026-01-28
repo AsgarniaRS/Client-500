@@ -39,7 +39,7 @@ public class class214 {
         field4036++;
         if (arg0 < 109) {
             return null;
-        } else if (class47.method358(854010832, arg2, arg1, arg3)) {
+        } else if (EnumType.method358(854010832, arg2, arg1, arg3)) {
             return class27.method170((byte) 125);
         } else {
             return null;

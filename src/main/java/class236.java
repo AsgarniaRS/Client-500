@@ -461,22 +461,22 @@ public class class236 extends class27 {
                 var90 = true;
             }
             if (var90) {
-                if (class47.field885 == 0) {
+                if (EnumType.field885 == 0) {
                     class238.packetType = -1;
                     return true;
                 }
                 long var92 = var87 & Long.MAX_VALUE;
                 boolean var94 = false;
                 int var95;
-                for (var95 = 0; class47.field885 > var95 && (class88.field1647[var95].nodeId != var92 || class88.field1647[var95].field1317 != var89); var95++) {
+                for (var95 = 0; EnumType.field885 > var95 && (class88.field1647[var95].nodeId != var92 || class88.field1647[var95].field1317 != var89); var95++) {
                 }
-                if (var95 < class47.field885) {
-                    while (var95 < class47.field885 - 1) {
+                if (var95 < EnumType.field885) {
+                    while (var95 < EnumType.field885 - 1) {
                         class88.field1647[var95] = class88.field1647[var95 + 1];
                         var95++;
                     }
-                    class47.field885--;
-                    class88.field1647[class47.field885] = null;
+                    EnumType.field885--;
+                    class88.field1647[EnumType.field885] = null;
                 }
             } else {
                 class88 var96 = class230.in.gjstr();
@@ -487,7 +487,7 @@ public class class236 extends class27 {
                 var97.field1317 = var89;
                 var97.field1315 = var91;
                 int var98;
-                for (var98 = class47.field885 - 1; var98 >= 0; var98--) {
+                for (var98 = EnumType.field885 - 1; var98 >= 0; var98--) {
                     int var99 = class88.field1647[var98].field1323.method625(true, var97.field1323);
                     if (var99 == 0) {
                         class88.field1647[var98].field1317 = var89;
@@ -504,18 +504,18 @@ public class class236 extends class27 {
                         break;
                     }
                 }
-                if (class88.field1647.length <= class47.field885) {
+                if (class88.field1647.length <= EnumType.field885) {
                     class238.packetType = -1;
                     return true;
                 }
-                for (int var100 = class47.field885 - 1; var100 > var98; var100--) {
+                for (int var100 = EnumType.field885 - 1; var100 > var98; var100--) {
                     class88.field1647[var100 + 1] = class88.field1647[var100];
                 }
-                if (class47.field885 == 0) {
+                if (EnumType.field885 == 0) {
                     class88.field1647 = new class71[100];
                 }
                 class88.field1647[var98 + 1] = var97;
-                class47.field885++;
+                EnumType.field885++;
                 if (class36.field631 == var87) {
                     class143.field2633 = var91;
                 }
@@ -1164,7 +1164,7 @@ public class class236 extends class27 {
             class77.field1394 = Linkable.field1211;
             long var259 = class230.in.method321(1054632416);
             if (var259 == 0L) {
-                class47.field885 = 0;
+                EnumType.field885 = 0;
                 class222.field4184 = null;
                 class225.field4221 = null;
                 class238.packetType = -1;
@@ -1180,9 +1180,9 @@ public class class236 extends class27 {
                 class238.packetType = -1;
                 return true;
             }
-            class47.field885 = var263;
+            EnumType.field885 = var263;
             class71[] var264 = new class71[100];
-            for (int var265 = 0; var265 < class47.field885; var265++) {
+            for (int var265 = 0; var265 < EnumType.field885; var265++) {
                 var264[var265] = new class71();
                 var264[var265].nodeId = class230.in.method321(1054632416);
                 var264[var265].field1323 = class200.method1377(var264[var265].nodeId, (byte) 82);
@@ -1194,7 +1194,7 @@ public class class236 extends class27 {
                 }
             }
             boolean var266 = false;
-            int var267 = class47.field885;
+            int var267 = EnumType.field885;
             while (var267 > 0) {
                 var267--;
                 boolean var268 = true;

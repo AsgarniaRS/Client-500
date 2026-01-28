@@ -58,7 +58,7 @@ public class class97 extends class136 {
             method684(null, 103);
         }
         if (class203.field3864 > 2) {
-            var3 = class166.method1142(new class88[] { var3, class47.field891, class170.method1214(class203.field3864 - 2, 24), class103.field1864 }, arg0 ^ 0xFFFFC328);
+            var3 = class166.method1142(new class88[] { var3, EnumType.field891, class170.method1214(class203.field3864 - 2, 24), class103.field1864 }, arg0 ^ 0xFFFFC328);
         }
         int var4 = class54.field1011.method165(var3, arg2 + 4, arg1 + 15, 16777215, 0, class70.field1259, class27.field454);
         class126.method863(15, var4 + class54.field1011.method158(var3), arg1, arg2 + 4, (byte) -119);

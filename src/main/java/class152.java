@@ -76,7 +76,7 @@ public class class152 extends class23 {
         class150.field2914 = arg3.method966(class92.field1734, (byte) -3);
         class14.field209 = arg3.method966(class228.field4280, (byte) -3);
         class8.field119 = arg3.method966(class212.field4013, (byte) -3);
-        class97.field1785 = arg3.method966(class47.field881, (byte) -3);
+        class97.field1785 = arg3.method966(EnumType.field881, (byte) -3);
         if (arg2 != 0) {
             field2947 = null;
         }

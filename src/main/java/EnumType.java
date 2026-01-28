@@ -2,10 +2,10 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!eb")
-public class class47 extends class136 {
+public class EnumType extends class136 {
 
     @OriginalMember(owner = "client!eb", name = "J", descriptor = "Li;")
-    private class88 field876 = class93.field1750;
+    private class88 defaultString = class93.field1750;
 
     @OriginalMember(owner = "client!eb", name = "M", descriptor = "Lca;")
     public static class24 field879 = new class24(30);
@@ -26,7 +26,7 @@ public class class47 extends class136 {
     public static int field872;
 
     @OriginalMember(owner = "client!eb", name = "G", descriptor = "I")
-    public int field873;
+    public int inputtype;
 
     @OriginalMember(owner = "client!eb", name = "H", descriptor = "I")
     public static int field874;
@@ -35,7 +35,7 @@ public class class47 extends class136 {
     public static int field875;
 
     @OriginalMember(owner = "client!eb", name = "K", descriptor = "I")
-    private int field877;
+    private int defaultInt;
 
     @OriginalMember(owner = "client!eb", name = "L", descriptor = "I")
     public static int field878;
@@ -44,7 +44,7 @@ public class class47 extends class136 {
     public static int field880;
 
     @OriginalMember(owner = "client!eb", name = "P", descriptor = "I")
-    public int field882;
+    public int outputtype;
 
     @OriginalMember(owner = "client!eb", name = "Q", descriptor = "I")
     public static int field883;
@@ -71,40 +71,55 @@ public class class47 extends class136 {
     public static class188 field887;
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(BLea;)V")
-    public final void method355(byte arg0, Packet arg1) {
-        field874++;
-        if (arg0 != 33) {
-            return;
-        }
+    public final void decode(Packet buf) {
         while (true) {
-            int var3 = arg1.g1();
-            if (var3 == 0) {
+            int code = buf.g1();
+            if (code == 0) {
                 return;
             }
-            this.method364(var3, (byte) -14, arg1);
+
+            this.decode(buf, code);
+        }
+    }
+
+    @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IBLea;)V")
+    private void decode(Packet buf, int code) {
+        if (code == 1) {
+            this.inputtype = buf.g1();
+        } else if (code == 2) {
+            this.outputtype = buf.g1();
+        } else if (code == 3) {
+            this.defaultString = buf.gjstr();
+        } else if (code == 4) {
+            this.defaultInt = buf.g4();
+        } else if (code == 5 || code == 6) {
+            int var4 = buf.g2();
+            this.field871 = new class154(class184.method1298(true, var4));
+            for (int i = 0; i < var4; i++) {
+                int var6 = buf.g4();
+                Linkable var7;
+                if (code == 5) {
+                    var7 = new class216(buf.gjstr());
+                } else {
+                    var7 = new class192(buf.g4());
+                }
+                this.field871.put((long) var6, var7, -1);
+            }
         }
     }
 
     @OriginalMember(owner = "client!eb", name = "b", descriptor = "(II)I")
     public final int method356(int arg0, int arg1) {
-        field888++;
-        if (arg0 != -1339210640) {
-            method362(-31);
-        }
         if (this.field871 == null) {
-            return this.field877;
+            return this.defaultInt;
         } else {
             class192 var3 = (class192) this.field871.get(-1, (long) arg1);
-            return var3 == null ? this.field877 : var3.field3700;
+            return var3 == null ? this.defaultInt : var3.field3700;
         }
     }
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(ILnb;Lnb;)V")
     public static final void method357(int arg0, Js5Index arg1, Js5Index arg2) {
-        field883++;
-        if (arg0 > -69) {
-            field879 = null;
-        }
         class209.field3970 = arg1;
         class170.field3264 = arg2;
     }
@@ -156,15 +171,12 @@ public class class47 extends class136 {
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IB)Li;")
     public final class88 method360(int arg0, byte arg1) {
-        field878++;
         if (this.field871 == null) {
-            return this.field876;
+            return this.defaultString;
         }
-        if (arg1 > -58) {
-            method363(-52);
-        }
+
         class216 var3 = (class216) this.field871.get(-1, (long) arg0);
-        return var3 == null ? this.field876 : var3.field4048;
+        return var3 == null ? this.defaultString : var3.field4048;
     }
 
     @OriginalMember(owner = "client!eb", name = "d", descriptor = "(B)V")
@@ -172,9 +184,6 @@ public class class47 extends class136 {
         field891 = null;
         field887 = null;
         field879 = null;
-        if (arg0 != 24) {
-            method363(-70);
-        }
         field881 = null;
     }
 
@@ -186,10 +195,6 @@ public class class47 extends class136 {
                 class43.field732 = null;
             }
         }
-        if (arg0 != 3) {
-            method358(59, null, 13, 17);
-        }
-        field886++;
     }
 
     @OriginalMember(owner = "client!eb", name = "e", descriptor = "(I)V")
@@ -207,35 +212,5 @@ public class class47 extends class136 {
         }
         class10.field145 = false;
         class200.method1373(65280, var1);
-    }
-
-    @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IBLea;)V")
-    private final void method364(int arg0, byte arg1, Packet arg2) {
-        if (arg0 == 1) {
-            this.field873 = arg2.g1();
-        } else if (arg0 == 2) {
-            this.field882 = arg2.g1();
-        } else if (arg0 == 3) {
-            this.field876 = arg2.gjstr();
-        } else if (arg0 == 4) {
-            this.field877 = arg2.g4();
-        } else if (arg0 == 5 || arg0 == 6) {
-            int var4 = arg2.g2();
-            this.field871 = new class154(class184.method1298(true, var4));
-            for (int var5 = 0; var5 < var4; var5++) {
-                int var6 = arg2.g4();
-                Linkable var7;
-                if (arg0 == 5) {
-                    var7 = new class216(arg2.gjstr());
-                } else {
-                    var7 = new class192(arg2.g4());
-                }
-                this.field871.put((long) var6, var7, -1);
-            }
-        }
-        if (arg1 != -14) {
-            field885 = -73;
-        }
-        field875++;
     }
 }

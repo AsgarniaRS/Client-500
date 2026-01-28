@@ -147,7 +147,7 @@ public class Client extends GameShell {
         }
         class117.field2110 = class120.field2194 = class7.field108 = class109.field1970 = new short[256];
         field574++;
-        if (class47.field884 == 1) {
+        if (EnumType.field884 == 1) {
             class7.field96 = IntHashTable.field1812;
             GameShell.field1596 = class202.field3852;
             Isaac.field2752 = class70.field1265;
@@ -246,9 +246,9 @@ public class Client extends GameShell {
         }
         String var4 = this.getParameter("game");
         if (var4 != null && var4.equals("1")) {
-            class47.field884 = 1;
+            EnumType.field884 = 1;
         } else {
-            class47.field884 = 0;
+            EnumType.field884 = 0;
         }
         try {
             class70.field1281 = Integer.parseInt(this.getParameter("js"));
@@ -313,9 +313,9 @@ public class Client extends GameShell {
                 class114.method778(false);
             }
             if (arg0[6].equals("game0")) {
-                class47.field884 = 0;
+                EnumType.field884 = 0;
             } else if (arg0[6].equals("game1")) {
-                class47.field884 = 1;
+                EnumType.field884 = 1;
             } else {
                 class114.method778(false);
             }
@@ -385,7 +385,7 @@ public class Client extends GameShell {
             class167.field3224.method177(-99999999, class154.field2977);
         }
         Isaac.method977(52776016);
-        class47.method362(3);
+        EnumType.method362(3);
         class167.field3224 = null;
         if (class27.field458 != null) {
             class27.field458.method402(0);
@@ -611,7 +611,7 @@ public class Client extends GameShell {
                 class135.method900(class85.field1546, 28809);
                 class199.method1366((byte) 113, class233.field4367, class85.field1546);
                 class27.method166(class109.field2006, -70, class233.field4367, Linkable.field1215, class245.lowMemory);
-                class47.method357(-96, class161.field3115, class233.field4367);
+                EnumType.method357(-96, class161.field3115, class233.field4367);
                 class189.method1320(Linkable.field1215, class248.field4552, class154.field2968, class233.field4367, (byte) 17);
                 class18.method91(class85.field1546, false);
                 class45.method291(class196.field3773, (byte) -124, Linkable.field1204, class223.field4203);
@@ -630,11 +630,11 @@ public class Client extends GameShell {
             }
         } else if (class32.field519 == 80) {
             int var50 = 0;
-            if (class47.field887 == null) {
+            if (EnumType.field887 == null) {
                 class169 var51 = class9.method49(GZip.field1106, (byte) -123, class226.field4245, class174.field3455);
                 if (var51 != null) {
                     var51.method1180();
-                    class47.field887 = var51;
+                    EnumType.field887 = var51;
                 }
             } else {
                 var50++;
@@ -1079,7 +1079,7 @@ public class Client extends GameShell {
         class226.method1519(-32535);
         class229.method1532(-85);
         class114.method782((byte) 110);
-        class47.method361((byte) 24);
+        EnumType.method361((byte) 24);
         class205.method1408(-119);
         class164.method1129((byte) -105);
         class117.method800(true);

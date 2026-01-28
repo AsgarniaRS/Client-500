@@ -372,8 +372,8 @@ public class class167 extends class23 {
     }
 
     @OriginalMember(owner = "client!pd", name = "b", descriptor = "(II)Leb;")
-    public static final class47 method1150(int arg0, int arg1) {
-        class47 var2 = (class47) class1.field2.method666((long) arg0, 0);
+    public static final EnumType method1150(int arg0, int arg1) {
+        EnumType var2 = (EnumType) class1.field2.method666((long) arg0, 0);
         if (arg1 > -107) {
             field3218 = null;
         }
@@ -382,9 +382,9 @@ public class class167 extends class23 {
             return var2;
         } else {
             byte[] var3 = class202.field3851.method941((byte) 56, class201.method1381(arg0, 255), class188.method1316((byte) 52, arg0));
-            class47 var4 = new class47();
+            EnumType var4 = new EnumType();
             if (var3 != null) {
-                var4.method355((byte) 33, new Packet(var3));
+                var4.decode(new Packet(var3));
             }
             class1.field2.put((long) arg0, var4, false);
             return var4;

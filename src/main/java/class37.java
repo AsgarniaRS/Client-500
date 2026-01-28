@@ -56,7 +56,7 @@ public class class37 {
             if (class233.field4370[4] && class66.field1194[4] + 128 > var5) {
                 var5 = class66.field1194[4] + 128;
             }
-            class47.method359(-114, field666, class239.method1586(class240.field4458.field4138, class240.field4458.field4123, 2, class149.field2909) - 50, var6, var5, var5 * 3 + 600, arg2, class233.field4368);
+            EnumType.method359(-114, field666, class239.method1586(class240.field4458.field4138, class240.field4458.field4123, 2, class149.field2909) - 50, var6, var5, var5 * 3 + 600, arg2, class233.field4368);
         }
         int var7;
         if (class179.field3569) {
