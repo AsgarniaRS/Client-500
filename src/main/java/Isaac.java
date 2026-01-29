@@ -14,16 +14,16 @@ public class Isaac {
     public static int field2731 = 0;
 
     @OriginalMember(owner = "client!nd", name = "o", descriptor = "[Li;")
-    public static class88[] field2743 = new class88[100];
+    public static JString[] field2743 = new JString[100];
 
     @OriginalMember(owner = "client!nd", name = "i", descriptor = "Li;")
-    private static class88 field2737 = class208.method1425(105, "Location");
+    private static JString field2737 = class208.method1425(105, "Location");
 
     @OriginalMember(owner = "client!nd", name = "s", descriptor = "[I")
     public static int[] field2747 = new int[1000];
 
     @OriginalMember(owner = "client!nd", name = "h", descriptor = "Li;")
-    public static class88 field2736 = field2737;
+    public static JString field2736 = field2737;
 
     @OriginalMember(owner = "client!nd", name = "y", descriptor = "I")
     public static int field2753 = 1;

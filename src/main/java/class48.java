@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class48 extends class207 {
 
     @OriginalMember(owner = "client!ec", name = "D", descriptor = "Li;")
-    private static class88 field892 = class208.method1425(105, "We suspect someone knows your password)3");
+    private static JString field892 = class208.method1425(105, "We suspect someone knows your password)3");
 
     @OriginalMember(owner = "client!ec", name = "O", descriptor = "[J")
     public static long[] field903 = new long[32];
 
     @OriginalMember(owner = "client!ec", name = "I", descriptor = "Li;")
-    private static class88 field897 = class208.method1425(105, "No reply from loginserver)3");
+    private static JString field897 = class208.method1425(105, "No reply from loginserver)3");
 
     @OriginalMember(owner = "client!ec", name = "J", descriptor = "I")
     public static int field898 = 0;
 
     @OriginalMember(owner = "client!ec", name = "L", descriptor = "Li;")
-    private static class88 field900 = class208.method1425(105, "OFF");
+    private static JString field900 = class208.method1425(105, "OFF");
 
     @OriginalMember(owner = "client!ec", name = "R", descriptor = "Li;")
-    public static class88 field906 = field897;
+    public static JString field906 = field897;
 
     @OriginalMember(owner = "client!ec", name = "F", descriptor = "I")
     public static int field894 = 0;
@@ -29,19 +29,19 @@ public class class48 extends class207 {
     public static int[] field904 = new int[] { 1, 1, 0, 0, 0, 8, 0, 0, 8 };
 
     @OriginalMember(owner = "client!ec", name = "N", descriptor = "Li;")
-    public static class88 field902 = field892;
+    public static JString field902 = field892;
 
     @OriginalMember(owner = "client!ec", name = "M", descriptor = "Li;")
-    public static class88 field901 = field900;
+    public static JString field901 = field900;
 
     @OriginalMember(owner = "client!ec", name = "V", descriptor = "Li;")
-    private static class88 field910 = class208.method1425(105, "Malformed login packet)3");
+    private static JString field910 = class208.method1425(105, "Malformed login packet)3");
 
     @OriginalMember(owner = "client!ec", name = "U", descriptor = "Z")
     public static boolean field909 = false;
 
     @OriginalMember(owner = "client!ec", name = "H", descriptor = "Li;")
-    public static class88 field896 = field910;
+    public static JString field896 = field910;
 
     @OriginalMember(owner = "client!ec", name = "K", descriptor = "I")
     public static int field899;

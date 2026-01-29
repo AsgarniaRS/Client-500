@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class110 {
 
     @OriginalMember(owner = "client!ka", name = "b", descriptor = "Li;")
-    private static class88 field2008 = class208.method1425(105, "You have only just left another world)3");
+    private static JString field2008 = class208.method1425(105, "You have only just left another world)3");
 
     @OriginalMember(owner = "client!ka", name = "e", descriptor = "I")
     public static int field2011 = -1;
 
     @OriginalMember(owner = "client!ka", name = "c", descriptor = "Li;")
-    public static class88 field2009 = class208.method1425(105, "k");
+    public static JString field2009 = class208.method1425(105, "k");
 
     @OriginalMember(owner = "client!ka", name = "a", descriptor = "[I")
     public static int[] field2007 = new int[] { 19, 55, 38, 155, 255, 110, 137, 205, 76 };
 
     @OriginalMember(owner = "client!ka", name = "k", descriptor = "Li;")
-    public static class88 field2017 = field2008;
+    public static JString field2017 = field2008;
 
     @OriginalMember(owner = "client!ka", name = "h", descriptor = "Z")
     public static boolean field2014 = false;
@@ -29,7 +29,7 @@ public class class110 {
     public static int field2020 = -2;
 
     @OriginalMember(owner = "client!ka", name = "m", descriptor = "Li;")
-    public static class88 field2019 = class208.method1425(105, "Verbinde mit Server)3)3)3");
+    public static JString field2019 = class208.method1425(105, "Verbinde mit Server)3)3)3");
 
     @OriginalMember(owner = "client!ka", name = "d", descriptor = "I")
     public static int field2010;

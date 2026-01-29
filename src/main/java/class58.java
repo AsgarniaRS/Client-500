@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class58 extends class140 {
 
     @OriginalMember(owner = "client!fb", name = "db", descriptor = "Li;")
-    private static class88 field1094 = class208.method1425(105, "Allocating memory");
+    private static JString field1094 = class208.method1425(105, "Allocating memory");
 
     @OriginalMember(owner = "client!fb", name = "cb", descriptor = "Li;")
-    public static class88 field1093 = field1094;
+    public static JString field1093 = field1094;
 
     @OriginalMember(owner = "client!fb", name = "fb", descriptor = "Li;")
-    public static class88 field1096 = class208.method1425(105, "m-Ochte mit Ihnen handeln)3");
+    public static JString field1096 = class208.method1425(105, "m-Ochte mit Ihnen handeln)3");
 
     @OriginalMember(owner = "client!fb", name = "gb", descriptor = "Z")
     public static boolean field1097 = false;
@@ -21,16 +21,16 @@ public class class58 extends class140 {
     public static BigInteger field1098 = new BigInteger("7162900525229798032761816791230527296329313291232324290237849263501208207972894053929065636522363163621000728841182238772712427862772219676577293600221789");
 
     @OriginalMember(owner = "client!fb", name = "jb", descriptor = "Li;")
-    public static class88 field1100 = class208.method1425(105, "Sie k-Onnen sich selbst nicht auf Ihre Freunde)2Liste setzen(Q");
+    public static JString field1100 = class208.method1425(105, "Sie k-Onnen sich selbst nicht auf Ihre Freunde)2Liste setzen(Q");
 
     @OriginalMember(owner = "client!fb", name = "mb", descriptor = "Li;")
-    public static class88 field1103 = class208.method1425(105, "::rect_debug");
+    public static JString field1103 = class208.method1425(105, "::rect_debug");
 
     @OriginalMember(owner = "client!fb", name = "kb", descriptor = "I")
     public static int field1101 = -1;
 
     @OriginalMember(owner = "client!fb", name = "nb", descriptor = "Li;")
-    public static class88 field1104 = class208.method1425(105, "Bitte versuchen Sie es in ");
+    public static JString field1104 = class208.method1425(105, "Bitte versuchen Sie es in ");
 
     @OriginalMember(owner = "client!fb", name = "bb", descriptor = "I")
     public static int field1092;

@@ -11,25 +11,25 @@ public class class101 extends class136 {
     public static int[] field1834 = new int[32];
 
     @OriginalMember(owner = "client!jc", name = "J", descriptor = "Li;")
-    public static class88 field1836 = class208.method1425(105, "auf der Hautpseite)3");
+    public static JString field1836 = class208.method1425(105, "auf der Hautpseite)3");
 
     @OriginalMember(owner = "client!jc", name = "O", descriptor = "Li;")
-    private static class88 field1841;
+    private static JString CHATCOL_RED;
 
     @OriginalMember(owner = "client!jc", name = "Q", descriptor = "I")
     public static int field1843;
 
     @OriginalMember(owner = "client!jc", name = "M", descriptor = "Li;")
-    public static class88 field1839;
+    public static JString field1839;
 
     @OriginalMember(owner = "client!jc", name = "S", descriptor = "Li;")
-    private static class88 field1845;
+    private static JString field1845;
 
     @OriginalMember(owner = "client!jc", name = "N", descriptor = "Li;")
-    public static class88 field1840;
+    public static JString field1840;
 
     @OriginalMember(owner = "client!jc", name = "R", descriptor = "Li;")
-    public static class88 field1844;
+    public static JString field1844;
 
     @OriginalMember(owner = "client!jc", name = "D", descriptor = "I")
     public static int field1830;
@@ -62,9 +62,9 @@ public class class101 extends class136 {
     }
 
     @OriginalMember(owner = "client!jc", name = "a", descriptor = "(Li;B)V")
-    public static final void method703(class88 arg0, byte arg1) {
+    public static final void method703(JString arg0, byte arg1) {
         field1835++;
-        if (class88.field1647 == null) {
+        if (JString.field1647 == null) {
             return;
         }
         int var2 = 0;
@@ -72,14 +72,14 @@ public class class101 extends class136 {
         if (var3 == 0L) {
             return;
         }
-        while (var2 < class88.field1647.length && class88.field1647[var2].nodeId != var3) {
+        while (var2 < JString.field1647.length && JString.field1647[var2].nodeId != var3) {
             var2++;
         }
-        if (class88.field1647.length <= var2 || class88.field1647[var2] == null) {
+        if (JString.field1647.length <= var2 || JString.field1647[var2] == null) {
             return;
         }
         Isaac.out.method30(49);
-        Isaac.out.p8(class88.field1647[var2].nodeId);
+        Isaac.out.p8(JString.field1647[var2].nodeId);
         class226.field4238++;
         if (arg1 > -86) {
             method706(110, false);
@@ -98,7 +98,7 @@ public class class101 extends class136 {
     @OriginalMember(owner = "client!jc", name = "d", descriptor = "(I)V")
     public static void method705(int arg0) {
         field1833 = null;
-        field1841 = null;
+        CHATCOL_RED = null;
         field1834 = null;
         field1839 = null;
         field1845 = null;
@@ -170,11 +170,11 @@ public class class101 extends class136 {
             field1834[var1] = var0 - 1;
             var0 += var0;
         }
-        field1841 = class208.method1425(105, "red:");
+        CHATCOL_RED = class208.method1425(105, "red:");
         field1843 = 0;
-        field1839 = field1841;
+        field1839 = CHATCOL_RED;
         field1845 = class208.method1425(105, "Please wait )2 attempting to reestablish)3");
         field1840 = field1845;
-        field1844 = field1841;
+        field1844 = CHATCOL_RED;
     }
 }

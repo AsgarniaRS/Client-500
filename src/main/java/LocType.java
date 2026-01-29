@@ -68,7 +68,7 @@ public class LocType extends class136 {
     public int bgsound_sound = -1;
 
     @OriginalMember(owner = "client!nf", name = "Ab", descriptor = "[Li;")
-    public class88[] op = new class88[5];
+    public JString[] op = new JString[5];
 
     @OriginalMember(owner = "client!nf", name = "S", descriptor = "Z")
     public boolean shadow = true;
@@ -80,7 +80,7 @@ public class LocType extends class136 {
     public int mapfunction = -1;
 
     @OriginalMember(owner = "client!nf", name = "J", descriptor = "Li;")
-    public class88 name = class79.field1426;
+    public JString name = class79.field1426;
 
     @OriginalMember(owner = "client!nf", name = "Cb", descriptor = "I")
     private int multivarp = -1;
@@ -128,7 +128,7 @@ public class LocType extends class136 {
     public static boolean field2770 = false;
 
     @OriginalMember(owner = "client!nf", name = "Mb", descriptor = "Li;")
-    public static class88 field2830 = class208.method1425(105, " <col=00ff80>");
+    public static JString field2830 = class208.method1425(105, " <col=00ff80>");
 
     @OriginalMember(owner = "client!nf", name = "F", descriptor = "I")
     public static int field2771;
@@ -447,7 +447,7 @@ public class LocType extends class136 {
     }
 
     @OriginalMember(owner = "client!nf", name = "a", descriptor = "(ILi;I)Li;")
-    public final class88 method1001(int arg0, class88 arg1, int arg2) {
+    public final JString method1001(int arg0, JString arg1, int arg2) {
         field2829++;
         if (this.field2779 == null) {
             return arg1;

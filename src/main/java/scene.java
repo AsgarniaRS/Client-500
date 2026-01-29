@@ -35,10 +35,10 @@ public class scene extends class218 {
     private short field769 = 0;
 
     @OriginalMember(owner = "client!dj", name = "Rb", descriptor = "Li;")
-    public static class88 field751 = class208.method1425(105, "::autoshadow on");
+    public static JString field751 = class208.method1425(105, "::autoshadow on");
 
     @OriginalMember(owner = "client!dj", name = "hc", descriptor = "Li;")
-    public static class88 field767 = class208.method1425(105, "Texturen geladen)3");
+    public static JString field767 = class208.method1425(105, "Texturen geladen)3");
 
     @OriginalMember(owner = "client!dj", name = "Hb", descriptor = "I")
     public int field741;
@@ -101,7 +101,7 @@ public class scene extends class218 {
     public class30 field758;
 
     @OriginalMember(owner = "client!dj", name = "gc", descriptor = "Li;")
-    public class88 name;
+    public JString name;
 
     @OriginalMember(owner = "client!dj", name = "Gb", descriptor = "[I")
     public static int[] field740;

@@ -29,16 +29,16 @@ public class class103 extends class50 {
     private final int field1869;
 
     @OriginalMember(owner = "client!je", name = "v", descriptor = "Li;")
-    private static class88 field1868 = class208.method1425(105, " more options");
+    private static JString MOREOPTIONS = class208.method1425(105, " more options");
 
     @OriginalMember(owner = "client!je", name = "r", descriptor = "Li;")
-    public static class88 field1864 = field1868;
+    public static JString field1864 = MOREOPTIONS;
 
     @OriginalMember(owner = "client!je", name = "y", descriptor = "[I")
     public static int[] field1871 = new int[] { 0, 4, 4, 8, 0, 0, 8, 0, 0 };
 
     @OriginalMember(owner = "client!je", name = "z", descriptor = "Li;")
-    public static class88 field1872 = class208.method1425(105, "Versteckt");
+    public static JString field1872 = class208.method1425(105, "Versteckt");
 
     @OriginalMember(owner = "client!je", name = "m", descriptor = "I")
     public static int field1859;
@@ -144,7 +144,7 @@ public class class103 extends class50 {
     @OriginalMember(owner = "client!je", name = "c", descriptor = "(I)V")
     public static void method715(int arg0) {
         field1872 = null;
-        field1868 = null;
+        MOREOPTIONS = null;
         field1871 = null;
         if (arg0 == 492525772) {
             field1864 = null;

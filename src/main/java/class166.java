@@ -9,22 +9,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class166 {
 
     @OriginalMember(owner = "client!pc", name = "c", descriptor = "Li;")
-    public static class88 field3191 = class208.method1425(105, "(U2");
+    public static JString field3191 = class208.method1425(105, "(U2");
 
     @OriginalMember(owner = "client!pc", name = "n", descriptor = "[Lia;")
     public static CollisionMap[] field3202 = new CollisionMap[4];
 
     @OriginalMember(owner = "client!pc", name = "l", descriptor = "Li;")
-    private static class88 field3200 = class208.method1425(105, "The server is being updated)3");
+    private static JString field3200 = class208.method1425(105, "The server is being updated)3");
 
     @OriginalMember(owner = "client!pc", name = "e", descriptor = "Li;")
-    public static class88 field3193 = field3200;
+    public static JString field3193 = field3200;
 
     @OriginalMember(owner = "client!pc", name = "f", descriptor = "I")
     public static int field3194 = -1;
 
     @OriginalMember(owner = "client!pc", name = "o", descriptor = "Li;")
-    public static class88 field3203 = class208.method1425(105, "<img=0>");
+    public static JString field3203 = class208.method1425(105, "<img=0>");
 
     @OriginalMember(owner = "client!pc", name = "b", descriptor = "Leh;")
     public static class53 field3190 = new class53();
@@ -57,7 +57,7 @@ public class class166 {
     public static class75 field3201;
 
     @OriginalMember(owner = "client!pc", name = "a", descriptor = "([Li;I)Li;")
-    public static final class88 method1142(class88[] arg0, int arg1) {
+    public static final JString method1142(JString[] arg0, int arg1) {
         field3198++;
         if (arg1 < ~arg0.length) {
             throw new IllegalArgumentException();
@@ -80,7 +80,7 @@ public class class166 {
     }
 
     @OriginalMember(owner = "client!pc", name = "a", descriptor = "(ILjava/awt/Color;Li;ZI)V")
-    public static final void method1144(int arg0, Color arg1, class88 arg2, boolean arg3, int arg4) {
+    public static final void method1144(int arg0, Color arg1, JString arg2, boolean arg3, int arg4) {
         try {
             Graphics var5 = class154.field2977.getGraphics();
             if (class15.field228 == null) {

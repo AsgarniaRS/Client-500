@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class121 {
 
     @OriginalMember(owner = "client!la", name = "b", descriptor = "[Li;")
-    public static class88[] field2208 = new class88[100];
+    public static JString[] field2208 = new JString[100];
 
     @OriginalMember(owner = "client!la", name = "c", descriptor = "I")
     public int field2209;

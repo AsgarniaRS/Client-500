@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class208 extends class23 {
 
     @OriginalMember(owner = "client!ta", name = "Q", descriptor = "Li;")
-    private static class88 field3944 = method1425(105, "Type");
+    private static JString field3944 = method1425(105, "Type");
 
     @OriginalMember(owner = "client!ta", name = "V", descriptor = "Li;")
-    public static class88 field3949 = method1425(105, "oder benutzen Sie eine andere Welt)3");
+    public static JString field3949 = method1425(105, "oder benutzen Sie eine andere Welt)3");
 
     @OriginalMember(owner = "client!ta", name = "X", descriptor = "[I")
     public static int[] field3951 = new int[] { 1, 2, 4, 8 };
@@ -23,7 +23,7 @@ public class class208 extends class23 {
     public static int field3954 = 0;
 
     @OriginalMember(owner = "client!ta", name = "Y", descriptor = "Li;")
-    public static class88 field3952 = field3944;
+    public static JString field3952 = field3944;
 
     @OriginalMember(owner = "client!ta", name = "S", descriptor = "I")
     public static int field3946;
@@ -52,12 +52,12 @@ public class class208 extends class23 {
     }
 
     @OriginalMember(owner = "client!ta", name = "a", descriptor = "(ILjava/lang/String;)Li;")
-    public static final class88 method1425(int arg0, String arg1) {
+    public static final JString method1425(int arg0, String arg1) {
         ++field3947;
         byte[] var2 = arg1.getBytes();
         int var3 = 0;
         int var4 = var2.length;
-        class88 var5 = new class88();
+        JString var5 = new JString();
         var5.field1643 = new byte[var4];
         if (arg0 != 105) {
             field3948 = null;

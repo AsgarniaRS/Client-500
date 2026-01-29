@@ -23,16 +23,16 @@ public class class78 extends Linkable {
     public static Packet field1408 = new Packet(8);
 
     @OriginalMember(owner = "client!ha", name = "w", descriptor = "Li;")
-    public static class88 field1411 = class208.method1425(105, "");
+    public static JString field1411 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!ha", name = "z", descriptor = "Li;")
-    public static class88 field1414 = null;
+    public static JString field1414 = null;
 
     @OriginalMember(owner = "client!ha", name = "F", descriptor = "[I")
     public static int[] field1420 = new int[] { 2, 2, 4, 2, 1, 8, 4, 1, 4, 4, 2 };
 
     @OriginalMember(owner = "client!ha", name = "G", descriptor = "Li;")
-    public static class88 field1421 = class208.method1425(105, "::gc");
+    public static JString field1421 = class208.method1425(105, "::gc");
 
     @OriginalMember(owner = "client!ha", name = "y", descriptor = "I")
     public static int field1413;
@@ -454,13 +454,13 @@ public class class78 extends Linkable {
     }
 
     @OriginalMember(owner = "client!ha", name = "a", descriptor = "(ZLea;I)Li;")
-    public static final class88 method524(boolean arg0, Packet arg1, int arg2) {
+    public static final JString method524(boolean arg0, Packet arg1, int arg2) {
         field1413++;
         try {
             if (!arg0) {
                 return null;
             }
-            class88 var3 = new class88();
+            JString var3 = new JString();
             var3.field1660 = arg1.gsmart();
             if (var3.field1660 > arg2) {
                 var3.field1660 = arg2;
@@ -474,10 +474,10 @@ public class class78 extends Linkable {
     }
 
     @OriginalMember(owner = "client!ha", name = "a", descriptor = "(IZ)Li;")
-    public static final class88 method525(int arg0, boolean arg1) {
+    public static final JString method525(int arg0, boolean arg1) {
         field1415++;
         if (arg1) {
-            return class201.field3838[arg0].method604((byte) -53) <= 0 ? class66.field1191[arg0] : class166.method1142(new class88[] { class66.field1191[arg0], class236.field4400, class201.field3838[arg0] }, -3);
+            return class201.field3838[arg0].length() <= 0 ? class66.field1191[arg0] : class166.method1142(new JString[] { class66.field1191[arg0], class236.field4400, class201.field3838[arg0] }, -3);
         } else {
             return null;
         }

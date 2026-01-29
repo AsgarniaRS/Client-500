@@ -11,25 +11,25 @@ public class class2 extends class23 {
     private int field17 = 4096;
 
     @OriginalMember(owner = "client!aa", name = "W", descriptor = "Li;")
-    public static class88 field18 = class208.method1425(105, "<col=ff7000>");
+    public static JString field18 = class208.method1425(105, "<col=ff7000>");
 
     @OriginalMember(owner = "client!aa", name = "Q", descriptor = "Li;")
-    public static class88 field12 = class208.method1425(105, "null");
+    public static JString field12 = class208.method1425(105, "null");
 
     @OriginalMember(owner = "client!aa", name = "Y", descriptor = "Li;")
-    private static class88 field20 = class208.method1425(105, "Started 3d library");
+    private static JString field20 = class208.method1425(105, "Started 3d library");
 
     @OriginalMember(owner = "client!aa", name = "bb", descriptor = "Li;")
-    public static class88 field23 = class208.method1425(105, "Ung-Ultiges Anmelde)2Paket)3");
+    public static JString field23 = class208.method1425(105, "Ung-Ultiges Anmelde)2Paket)3");
 
     @OriginalMember(owner = "client!aa", name = "db", descriptor = "I")
     public static int field25 = -1;
 
     @OriginalMember(owner = "client!aa", name = "Z", descriptor = "Li;")
-    public static class88 field21 = class208.method1425(105, ")1p");
+    public static JString field21 = class208.method1425(105, ")1p");
 
     @OriginalMember(owner = "client!aa", name = "cb", descriptor = "Li;")
-    public static class88 field24 = field20;
+    public static JString field24 = field20;
 
     @OriginalMember(owner = "client!aa", name = "R", descriptor = "I")
     public static int field13;

@@ -26,16 +26,16 @@ public class class128 extends class23 {
     public static int field2410 = 0;
 
     @OriginalMember(owner = "client!lh", name = "V", descriptor = "Li;")
-    public static class88 field2402 = class208.method1425(105, ":assist:");
+    public static JString field2402 = class208.method1425(105, ":assist:");
 
     @OriginalMember(owner = "client!lh", name = "gb", descriptor = "Li;")
-    private static class88 field2413 = class208.method1425(105, "Members only world");
+    private static JString field2413 = class208.method1425(105, "Members only world");
 
     @OriginalMember(owner = "client!lh", name = "Z", descriptor = "Li;")
-    public static class88 field2406 = field2413;
+    public static JString field2406 = field2413;
 
     @OriginalMember(owner = "client!lh", name = "hb", descriptor = "Li;")
-    public static class88 field2414 = class208.method1425(105, "oberen Rand der Webseite ausw-=hlen)3");
+    public static JString field2414 = class208.method1425(105, "oberen Rand der Webseite ausw-=hlen)3");
 
     @OriginalMember(owner = "client!lh", name = "S", descriptor = "I")
     public static int field2399;

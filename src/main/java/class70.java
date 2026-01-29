@@ -15,121 +15,121 @@ public class class70 {
     public static short[] field1265 = new short[] { -4160, -4163, -8256, -8259, 22461 };
 
     @OriginalMember(owner = "client!gd", name = "L", descriptor = "Li;")
-    private static class88 field1292 = class208.method1425(105, "");
+    private static JString field1292 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!gd", name = "N", descriptor = "Li;")
-    public static class88 field1294 = field1292;
+    public static JString field1294 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "x", descriptor = "Li;")
-    public static class88 field1278 = field1292;
+    public static JString field1278 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "B", descriptor = "Li;")
-    public static class88 field1282 = field1292;
+    public static JString field1282 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "z", descriptor = "Li;")
-    public static class88 field1280 = field1292;
+    public static JString field1280 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "Q", descriptor = "Li;")
-    public static class88 field1297 = field1292;
+    public static JString field1297 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "r", descriptor = "Li;")
-    public static class88 field1272 = field1292;
+    public static JString field1272 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "E", descriptor = "Li;")
-    public static class88 field1285 = field1292;
+    public static JString field1285 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "S", descriptor = "Li;")
-    public static class88 field1299 = field1292;
+    public static JString field1299 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "J", descriptor = "Li;")
-    public static class88 field1290 = field1292;
+    public static JString field1290 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "l", descriptor = "Li;")
-    public static class88 field1266 = field1292;
+    public static JString field1266 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "u", descriptor = "Li;")
-    public static class88 field1275 = field1292;
+    public static JString field1275 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "V", descriptor = "Li;")
-    public static class88 field1302 = field1292;
+    public static JString field1302 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "C", descriptor = "Li;")
-    public static class88 field1283 = field1292;
+    public static JString field1283 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "o", descriptor = "Li;")
-    public static class88 field1269 = field1292;
+    public static JString field1269 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "M", descriptor = "Li;")
-    public static class88 field1293 = field1292;
+    public static JString field1293 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "I", descriptor = "Li;")
-    public static class88 field1289 = field1292;
+    public static JString field1289 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "F", descriptor = "Li;")
-    public static class88 field1286 = field1292;
+    public static JString field1286 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "q", descriptor = "Li;")
-    public static class88 field1271 = field1292;
+    public static JString field1271 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "W", descriptor = "Li;")
-    public static class88 field1303 = field1292;
+    public static JString field1303 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "O", descriptor = "Li;")
-    public static class88 field1295 = field1292;
+    public static JString field1295 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "y", descriptor = "Li;")
-    public static class88 field1279 = field1292;
+    public static JString field1279 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "D", descriptor = "Li;")
-    public static class88 field1284 = field1292;
+    public static JString field1284 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "p", descriptor = "I")
     public static int field1270 = (int) (Math.random() * 33.0D) - 16;
 
     @OriginalMember(owner = "client!gd", name = "X", descriptor = "Li;")
-    public static class88 field1304 = field1292;
+    public static JString field1304 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "m", descriptor = "Li;")
-    public static class88 field1267 = field1292;
+    public static JString field1267 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "n", descriptor = "Li;")
-    public static class88 field1268 = field1292;
+    public static JString field1268 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "K", descriptor = "Li;")
-    public static class88 field1291 = field1292;
+    public static JString field1291 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "P", descriptor = "Li;")
-    public static class88 field1296 = field1292;
+    public static JString field1296 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "R", descriptor = "Li;")
-    public static class88 field1298 = field1292;
+    public static JString field1298 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "Y", descriptor = "Li;")
-    public static class88 field1305 = field1292;
+    public static JString field1305 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "s", descriptor = "Li;")
-    public static class88 field1273 = field1292;
+    public static JString field1273 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "U", descriptor = "Li;")
-    public static class88 field1301 = field1292;
+    public static JString field1301 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "T", descriptor = "Li;")
-    public static class88 field1300 = field1292;
+    public static JString field1300 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "H", descriptor = "Li;")
-    public static class88 field1288 = field1292;
+    public static JString field1288 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "G", descriptor = "Li;")
-    public static class88 field1287 = field1292;
+    public static JString field1287 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "w", descriptor = "Li;")
-    public static class88 field1277 = field1292;
+    public static JString field1277 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "Z", descriptor = "Li;")
-    public static class88 field1306 = field1292;
+    public static JString field1306 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "t", descriptor = "Li;")
-    public static class88 field1274 = field1292;
+    public static JString field1274 = field1292;
 
     @OriginalMember(owner = "client!gd", name = "a", descriptor = "I")
     public int field1255;
@@ -156,20 +156,20 @@ public class class70 {
     public static int field1276;
 
     @OriginalMember(owner = "client!gd", name = "h", descriptor = "Li;")
-    public class88 field1262;
+    public JString field1262;
 
     @OriginalMember(owner = "client!gd", name = "c", descriptor = "Z")
     public boolean field1257;
 
     @OriginalMember(owner = "client!gd", name = "a", descriptor = "(IZLi;)V")
-    public static final void method467(int arg0, boolean arg1, class88 arg2) {
-        class88 var3 = arg2.method639(arg0 + 121);
+    public static final void method467(int arg0, boolean arg1, JString arg2) {
+        JString var3 = arg2.toLowerCase();
         field1256++;
         int var4 = 0;
         short[] var5 = new short[16];
         for (int var6 = 0; var6 < class202.field3857; var6++) {
             class149 var9 = class71.method472(var6, (byte) -101);
-            if ((!arg1 || var9.field2863) && var9.field2869 == -1 && var9.field2886 == -1 && var9.field2852 == 0 && var9.field2894.method639(arg0 + 122).method617(-113, var3) != -1) {
+            if ((!arg1 || var9.field2863) && var9.field2869 == -1 && var9.field2886 == -1 && var9.field2852 == 0 && var9.field2894.toLowerCase().method617(-113, var3) != -1) {
                 if (var4 >= 250) {
                     class204.field3895 = -1;
                     Linkable.field1210 = null;
@@ -188,7 +188,7 @@ public class class70 {
         class116.field2109 = 0;
         class204.field3895 = var4;
         Linkable.field1210 = var5;
-        class88[] var7 = new class88[class204.field3895];
+        JString[] var7 = new JString[class204.field3895];
         for (int var8 = arg0; var8 < class204.field3895; var8++) {
             var7[var8] = class71.method472(var5[var8], (byte) -98).field2894;
         }

@@ -14,19 +14,19 @@ public class class57 extends class23 {
     public static boolean field1077 = false;
 
     @OriginalMember(owner = "client!fa", name = "V", descriptor = "Li;")
-    public static class88 field1080 = class208.method1425(105, "AUS");
+    public static JString field1080 = class208.method1425(105, "AUS");
 
     @OriginalMember(owner = "client!fa", name = "T", descriptor = "Li;")
-    private static class88 field1078 = class208.method1425(105, "wave:");
+    private static JString field1078 = class208.method1425(105, "wave:");
 
     @OriginalMember(owner = "client!fa", name = "Z", descriptor = "Li;")
-    public static class88 field1084 = class208.method1425(105, "Ein kostenloses Spielkonto erstellen)3");
+    public static JString field1084 = class208.method1425(105, "Ein kostenloses Spielkonto erstellen)3");
 
     @OriginalMember(owner = "client!fa", name = "Y", descriptor = "Li;")
-    public static class88 field1083 = field1078;
+    public static JString field1083 = field1078;
 
     @OriginalMember(owner = "client!fa", name = "bb", descriptor = "Li;")
-    public static class88 field1086 = field1078;
+    public static JString field1086 = field1078;
 
     @OriginalMember(owner = "client!fa", name = "Q", descriptor = "I")
     public static int field1075;
@@ -211,7 +211,7 @@ public class class57 extends class23 {
                                 class34.method227((byte) -49, class70.field1293, class220.field4167, class16.field243);
                             }
                         } else {
-                            class34.method227((byte) 120, class70.field1302, class88.field1655, class230.field4321);
+                            class34.method227((byte) 120, class70.field1302, JString.field1655, class230.field4321);
                         }
                     } else {
                         class34.method227((byte) -16, class70.field1305, class223.field4207, class175.field3527);

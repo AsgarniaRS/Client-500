@@ -8,40 +8,40 @@ public class class71 extends Linkable {
     public static int field1316 = 0;
 
     @OriginalMember(owner = "client!ge", name = "G", descriptor = "Li;")
-    private static class88 field1320 = class208.method1425(105, "shake:");
+    private static JString field1320 = class208.method1425(105, "shake:");
 
     @OriginalMember(owner = "client!ge", name = "A", descriptor = "Li;")
-    private static class88 field1314 = class208.method1425(105, "World");
+    private static JString field1314 = class208.method1425(105, "World");
 
     @OriginalMember(owner = "client!ge", name = "E", descriptor = "Li;")
-    public static class88 field1318 = class208.method1425(105, "Hier wechseln");
+    public static JString field1318 = class208.method1425(105, "Hier wechseln");
 
     @OriginalMember(owner = "client!ge", name = "y", descriptor = "Li;")
-    public static class88 field1312 = field1314;
+    public static JString field1312 = field1314;
 
     @OriginalMember(owner = "client!ge", name = "z", descriptor = "Li;")
-    public static class88 field1313 = field1320;
+    public static JString field1313 = field1320;
 
     @OriginalMember(owner = "client!ge", name = "L", descriptor = "Li;")
-    public static class88 field1325 = class208.method1425(105, "Mem:");
+    public static JString field1325 = class208.method1425(105, "Mem:");
 
     @OriginalMember(owner = "client!ge", name = "u", descriptor = "Li;")
-    public static class88 field1308 = field1320;
+    public static JString field1308 = field1320;
 
     @OriginalMember(owner = "client!ge", name = "M", descriptor = "Li;")
-    public static class88 field1326 = field1314;
+    public static JString field1326 = field1314;
 
     @OriginalMember(owner = "client!ge", name = "x", descriptor = "Li;")
-    private static class88 field1311 = class208.method1425(105, "Loading interfaces )2 ");
+    private static JString field1311 = class208.method1425(105, "Loading interfaces )2 ");
 
     @OriginalMember(owner = "client!ge", name = "O", descriptor = "I")
     public static int field1328 = 0;
 
     @OriginalMember(owner = "client!ge", name = "Q", descriptor = "Li;")
-    public static class88 field1330 = class208.method1425(105, "Registrierter Benutzer");
+    public static JString field1330 = class208.method1425(105, "Registrierter Benutzer");
 
     @OriginalMember(owner = "client!ge", name = "I", descriptor = "Li;")
-    public static class88 field1322 = field1311;
+    public static JString field1322 = field1311;
 
     @OriginalMember(owner = "client!ge", name = "B", descriptor = "B")
     public byte field1315;
@@ -71,10 +71,10 @@ public class class71 extends Linkable {
     public static int field1329;
 
     @OriginalMember(owner = "client!ge", name = "H", descriptor = "Li;")
-    public class88 field1321;
+    public JString field1321;
 
     @OriginalMember(owner = "client!ge", name = "J", descriptor = "Li;")
-    public class88 field1323;
+    public JString field1323;
 
     @OriginalMember(owner = "client!ge", name = "b", descriptor = "(I)V")
     public static void method471(int arg0) {

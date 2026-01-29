@@ -8,22 +8,22 @@ public class class192 extends Linkable {
     public int field3700;
 
     @OriginalMember(owner = "client!rg", name = "u", descriptor = "Li;")
-    private static class88 field3691 = class208.method1425(105, "glow3:");
+    private static JString field3691 = class208.method1425(105, "glow3:");
 
     @OriginalMember(owner = "client!rg", name = "x", descriptor = "Li;")
-    public static class88 field3694 = class208.method1425(105, "Verbindung abgebrochen)3");
+    public static JString field3694 = class208.method1425(105, "Verbindung abgebrochen)3");
 
     @OriginalMember(owner = "client!rg", name = "A", descriptor = "Li;")
-    public static class88 field3697 = field3691;
+    public static JString field3697 = field3691;
 
     @OriginalMember(owner = "client!rg", name = "E", descriptor = "Li;")
-    private static class88 field3701 = class208.method1425(105, "flash2:");
+    private static JString field3701 = class208.method1425(105, "flash2:");
 
     @OriginalMember(owner = "client!rg", name = "v", descriptor = "Li;")
-    public static class88 field3692 = field3701;
+    public static JString field3692 = field3701;
 
     @OriginalMember(owner = "client!rg", name = "w", descriptor = "Li;")
-    public static class88 field3693 = field3701;
+    public static JString field3693 = field3701;
 
     @OriginalMember(owner = "client!rg", name = "F", descriptor = "I")
     public static int field3702 = 0;
@@ -32,13 +32,13 @@ public class class192 extends Linkable {
     public static int field3704 = 0;
 
     @OriginalMember(owner = "client!rg", name = "B", descriptor = "Li;")
-    private static class88 field3698 = class208.method1425(105, "Hidden");
+    private static JString field3698 = class208.method1425(105, "Hidden");
 
     @OriginalMember(owner = "client!rg", name = "y", descriptor = "Li;")
-    public static class88 HIDDEN = field3698;
+    public static JString HIDDEN = field3698;
 
     @OriginalMember(owner = "client!rg", name = "I", descriptor = "Li;")
-    public static class88 field3705 = field3691;
+    public static JString field3705 = field3691;
 
     @OriginalMember(owner = "client!rg", name = "t", descriptor = "I")
     public static int field3690;
@@ -81,11 +81,11 @@ public class class192 extends Linkable {
             if (var3.field190 == 1) {
                 int var5 = var3.field204 + class150.field2913 - class79.field1435;
                 if (var5 >= 0 && var5 <= class150.field2913 + class150.field2913) {
-                    int var6 = var3.field187 + class150.field2913 - class88.field1636;
+                    int var6 = var3.field187 + class150.field2913 - JString.field1636;
                     if (var6 < 0) {
                         var6 = 0;
                     }
-                    int var7 = var3.field200 + class150.field2913 - class88.field1636;
+                    int var7 = var3.field200 + class150.field2913 - JString.field1636;
                     if (var7 > class150.field2913 + class150.field2913) {
                         var7 = class150.field2913 + class150.field2913;
                     }
@@ -115,7 +115,7 @@ public class class192 extends Linkable {
                     }
                 }
             } else if (var3.field190 == 2) {
-                int var10 = var3.field187 + class150.field2913 - class88.field1636;
+                int var10 = var3.field187 + class150.field2913 - JString.field1636;
                 if (var10 >= 0 && var10 <= class150.field2913 + class150.field2913) {
                     int var11 = var3.field204 + class150.field2913 - class79.field1435;
                     if (var11 < 0) {
@@ -153,11 +153,11 @@ public class class192 extends Linkable {
             } else if (var3.field190 == 4) {
                 int var15 = var3.field189 - class241.field4463;
                 if (var15 > 128) {
-                    int var16 = var3.field187 + class150.field2913 - class88.field1636;
+                    int var16 = var3.field187 + class150.field2913 - JString.field1636;
                     if (var16 < 0) {
                         var16 = 0;
                     }
-                    int var17 = var3.field200 + class150.field2913 - class88.field1636;
+                    int var17 = var3.field200 + class150.field2913 - JString.field1636;
                     if (var17 > class150.field2913 + class150.field2913) {
                         var17 = class150.field2913 + class150.field2913;
                     }

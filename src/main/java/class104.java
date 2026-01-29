@@ -26,10 +26,10 @@ public class class104 extends class23 {
     private int field1883 = 0;
 
     @OriginalMember(owner = "client!jf", name = "U", descriptor = "Li;")
-    public static class88 field1881 = class208.method1425(105, "(Y");
+    public static JString field1881 = class208.method1425(105, "(Y");
 
     @OriginalMember(owner = "client!jf", name = "fb", descriptor = "Li;")
-    public static class88 field1892 = class208.method1425(105, "Stufe)2");
+    public static JString field1892 = class208.method1425(105, "Stufe)2");
 
     @OriginalMember(owner = "client!jf", name = "lb", descriptor = "I")
     public static int field1898 = -1;
@@ -41,7 +41,7 @@ public class class104 extends class23 {
     public static boolean field1884 = true;
 
     @OriginalMember(owner = "client!jf", name = "ib", descriptor = "Li;")
-    public static class88 field1895 = class208.method1425(105, "Lade Sprites )2 ");
+    public static JString field1895 = class208.method1425(105, "Lade Sprites )2 ");
 
     @OriginalMember(owner = "client!jf", name = "R", descriptor = "I")
     public static int field1878;
@@ -276,7 +276,7 @@ public class class104 extends class23 {
                 if (LocType.field2770) {
                     int var12 = arg1 + -5 + arg3;
                     int var13 = arg2 + arg4 + -8;
-                    class3.field30.method150(class166.method1142(new class88[] { class53.field993, class170.method1214(class13.field192, -107) }, -3), var12, var13, 16776960, -1);
+                    class3.field30.method150(class166.method1142(new JString[] { class53.field993, class170.method1214(class13.field192, -107) }, -3), var12, var13, 16776960, -1);
                     int var17 = var13 - 15;
                     Runtime var14 = Runtime.getRuntime();
                     int var15 = (int) ((var14.totalMemory() - var14.freeMemory()) / 1024L);
@@ -284,7 +284,7 @@ public class class104 extends class23 {
                     if (~var15 < -65537) {
                         var16 = 16711680;
                     }
-                    class3.field30.method150(class166.method1142(new class88[] { class71.field1325, class170.method1214(var15, 67), class77.field1385 }, -3), var12, var17, var16, -1);
+                    class3.field30.method150(class166.method1142(new JString[] { class71.field1325, class170.method1214(var15, 67), class77.field1385 }, -3), var12, var17, var16, -1);
                     var13 = var17 - 15;
                 }
             }

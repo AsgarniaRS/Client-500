@@ -5,25 +5,25 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class216 extends Linkable {
 
     @OriginalMember(owner = "client!ti", name = "v", descriptor = "Li;")
-    public class88 field4048;
+    public JString field4048;
 
     @OriginalMember(owner = "client!ti", name = "w", descriptor = "Lid;")
     public static class92 field4049;
 
     @OriginalMember(owner = "client!ti", name = "C", descriptor = "Li;")
-    private static class88 field4055;
+    private static JString field4055;
 
     @OriginalMember(owner = "client!ti", name = "y", descriptor = "Li;")
-    public static class88 field4051;
+    public static JString field4051;
 
     @OriginalMember(owner = "client!ti", name = "z", descriptor = "Li;")
-    public static class88 field4052;
+    public static JString field4052;
 
     @OriginalMember(owner = "client!ti", name = "D", descriptor = "Li;")
-    private static class88 field4056;
+    private static JString field4056;
 
     @OriginalMember(owner = "client!ti", name = "A", descriptor = "Li;")
-    public static class88 field4053;
+    public static JString field4053;
 
     @OriginalMember(owner = "client!ti", name = "t", descriptor = "I")
     public static int field4046;
@@ -70,7 +70,7 @@ public class class216 extends Linkable {
     }
 
     @OriginalMember(owner = "client!ti", name = "<init>", descriptor = "(Li;)V")
-    public class216(class88 arg0) {
+    public class216(JString arg0) {
         this.field4048 = arg0;
     }
 

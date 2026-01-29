@@ -11,31 +11,31 @@ public class class200 {
     };
 
     @OriginalMember(owner = "client!sd", name = "c", descriptor = "Li;")
-    public static class88 field3816 = class208.method1425(105, "0(U");
+    public static JString field3816 = class208.method1425(105, "0(U");
 
     @OriginalMember(owner = "client!sd", name = "i", descriptor = "Li;")
-    private static class88 field3822 = class208.method1425(105, "Press (Wchange your password(W on front page)3");
+    private static JString field3822 = class208.method1425(105, "Press (Wchange your password(W on front page)3");
 
     @OriginalMember(owner = "client!sd", name = "e", descriptor = "Li;")
-    private static class88 field3818 = class208.method1425(105, "Loaded input handler");
+    private static JString field3818 = class208.method1425(105, "Loaded input handler");
 
     @OriginalMember(owner = "client!sd", name = "q", descriptor = "Li;")
-    private static class88 field3830 = class208.method1425(105, "glow1:");
+    private static JString field3830 = class208.method1425(105, "glow1:");
 
     @OriginalMember(owner = "client!sd", name = "l", descriptor = "Li;")
-    public static class88 field3825 = field3822;
+    public static JString field3825 = field3822;
 
     @OriginalMember(owner = "client!sd", name = "b", descriptor = "Li;")
-    public static class88 field3815 = field3830;
+    public static JString field3815 = field3830;
 
     @OriginalMember(owner = "client!sd", name = "r", descriptor = "Li;")
-    public static class88 field3831 = field3818;
+    public static JString field3831 = field3818;
 
     @OriginalMember(owner = "client!sd", name = "f", descriptor = "Li;")
-    public static class88 field3819 = field3830;
+    public static JString field3819 = field3830;
 
     @OriginalMember(owner = "client!sd", name = "t", descriptor = "Li;")
-    public static class88 field3833 = class208.method1425(105, "Okay");
+    public static JString field3833 = class208.method1425(105, "Okay");
 
     @OriginalMember(owner = "client!sd", name = "d", descriptor = "I")
     public static int field3817;
@@ -159,7 +159,7 @@ public class class200 {
     }
 
     @OriginalMember(owner = "client!sd", name = "a", descriptor = "(JB)Li;")
-    public static final class88 method1377(long arg0, byte arg1) {
+    public static final JString method1377(long arg0, byte arg1) {
         field3817++;
         if (arg0 <= 0L || arg0 >= 6582952005840035281L) {
             return null;
@@ -182,7 +182,7 @@ public class class200 {
                 var3--;
                 var6[var3] = class54.field1008[(int) (var8 - arg0 * 37L)];
             }
-            class88 var7 = new class88();
+            JString var7 = new JString();
             var7.field1643 = var6;
             var7.field1660 = var6.length;
             return var7;
@@ -190,7 +190,7 @@ public class class200 {
     }
 
     @OriginalMember(owner = "client!sd", name = "a", descriptor = "([SI[Li;)V")
-    public static final void method1378(short[] arg0, int arg1, class88[] arg2) {
+    public static final void method1378(short[] arg0, int arg1, JString[] arg2) {
         if (arg1 <= 8) {
             field3825 = null;
         }

@@ -8,28 +8,28 @@ public class class225 {
     public static class191[] field4225 = new class191[32768];
 
     @OriginalMember(owner = "client!ug", name = "c", descriptor = "Li;")
-    private static class88 field4222 = class208.method1425(105, "Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3");
+    private static JString FRIENDLISTFULL = class208.method1425(105, "Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3");
 
     @OriginalMember(owner = "client!ug", name = "k", descriptor = "[Z")
     public static boolean[] field4230 = new boolean[100];
 
     @OriginalMember(owner = "client!ug", name = "b", descriptor = "Li;")
-    public static class88 field4221 = null;
+    public static JString field4221 = null;
 
     @OriginalMember(owner = "client!ug", name = "h", descriptor = "Li;")
-    public static class88 field4227 = class208.method1425(105, "leuchten2:");
+    public static JString field4227 = class208.method1425(105, "leuchten2:");
 
     @OriginalMember(owner = "client!ug", name = "n", descriptor = "I")
     public static int field4233 = 0;
 
     @OriginalMember(owner = "client!ug", name = "m", descriptor = "Li;")
-    public static class88 field4232 = field4222;
+    public static JString field4232 = FRIENDLISTFULL;
 
     @OriginalMember(owner = "client!ug", name = "o", descriptor = "[[I")
     public static int[][] field4234 = new int[][] { new int[16], { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, { 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 }, { 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1 }, { 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1 }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1 } };
 
     @OriginalMember(owner = "client!ug", name = "e", descriptor = "Li;")
-    public static class88 field4224 = class208.method1425(105, "blinken2:");
+    public static JString field4224 = class208.method1425(105, "blinken2:");
 
     @OriginalMember(owner = "client!ug", name = "d", descriptor = "I")
     public static int field4223;
@@ -56,7 +56,7 @@ public class class225 {
         field4231 = null;
         field4225 = null;
         field4224 = null;
-        field4222 = null;
+        FRIENDLISTFULL = null;
         field4227 = null;
         field4230 = null;
         field4220 = null;
@@ -79,7 +79,6 @@ public class class225 {
 
     @OriginalMember(owner = "client!ug", name = "a", descriptor = "(Llf;IIII)V")
     public static final void method1515(class126 arg0, int arg1, int arg2, int arg3, int arg4) {
-        field4229++;
         if (class203.field3864 >= 400) {
             return;
         }
@@ -89,15 +88,15 @@ public class class225 {
         if (arg0 == null || !arg0.field2361) {
             return;
         }
-        class88 var5 = arg0.field2343;
+        JString var5 = arg0.field2343;
         if (arg0.field2333 != 0) {
-            var5 = class166.method1142(new class88[] { var5, class168.method1154(arg0.field2333, class240.field4458.combatLevel, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.field2333, arg2 ^ 0x394D), class104.field1881 }, arg2 ^ 0xFFFFC6B4);
+            var5 = class166.method1142(new JString[] { var5, class168.method1154(arg0.field2333, class240.field4458.combatLevel, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.field2333, arg2 ^ 0x394D), class104.field1881 }, arg2 ^ 0xFFFFC6B4);
         }
         if (class28.field475 == 1) {
             class24.field384++;
-            class98.method687(arg2 ^ 0x1F5B, arg4, class35.field608, (short) 48, (long) arg1, class166.method1142(new class88[] { class78.field1414, class134.field2495, var5 }, -3), arg3);
+            class98.method687(arg2 ^ 0x1F5B, arg4, class35.field608, (short) 48, (long) arg1, class166.method1142(new JString[] { class78.field1414, class134.field2495, var5 }, -3), arg3);
         } else if (!class10.field145) {
-            class88[] var6 = arg0.field2344;
+            JString[] var6 = arg0.field2344;
             if (IntHashTable.field1809) {
                 var6 = class138.method923(var6, (byte) 41);
             }
@@ -121,7 +120,7 @@ public class class225 {
                         if (var7 == 4) {
                             var8 = 4;
                         }
-                        class98.method687(9746, arg4, var6[var7], var8, (long) arg1, class166.method1142(new class88[] { class8.field120, var5 }, arg2 ^ 0xFFFFC6B4), arg3);
+                        class98.method687(9746, arg4, var6[var7], var8, (long) arg1, class166.method1142(new JString[] { class8.field120, var5 }, arg2 ^ 0xFFFFC6B4), arg3);
                     }
                 }
             }
@@ -153,14 +152,14 @@ public class class225 {
                         if (var11 != 0) {
                             var11 += var10;
                         }
-                        class98.method687(arg2 ^ 0x1F5B, arg4, var6[var9], var11, (long) arg1, class166.method1142(new class88[] { class8.field120, var5 }, -3), arg3);
+                        class98.method687(arg2 ^ 0x1F5B, arg4, var6[var9], var11, (long) arg1, class166.method1142(new JString[] { class8.field120, var5 }, -3), arg3);
                     }
                 }
             }
-            class98.method687(9746, arg4, class65.field1174, (short) 1002, (long) arg1, class166.method1142(new class88[] { class8.field120, var5 }, -3), arg3);
+            class98.method687(9746, arg4, class65.field1174, (short) 1002, (long) arg1, class166.method1142(new JString[] { class8.field120, var5 }, -3), arg3);
         } else if ((class115.field2086 & 0x2) == 2) {
             class129.field2417++;
-            class98.method687(9746, arg4, class201.field3837, (short) 19, (long) arg1, class166.method1142(new class88[] { class28.field464, class134.field2495, var5 }, -3), arg3);
+            class98.method687(9746, arg4, class201.field3837, (short) 19, (long) arg1, class166.method1142(new JString[] { class28.field464, class134.field2495, var5 }, -3), arg3);
         }
         if (arg2 != 14665) {
             method1515(null, 37, -24, 1, 17);

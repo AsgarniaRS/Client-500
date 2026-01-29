@@ -8,25 +8,25 @@ public class class20 extends class136 {
     public class77 field315;
 
     @OriginalMember(owner = "client!bh", name = "J", descriptor = "Li;")
-    public static class88 field316 = class208.method1425(105, "runes");
+    public static JString field316 = class208.method1425(105, "runes");
 
     @OriginalMember(owner = "client!bh", name = "G", descriptor = "Li;")
-    private static class88 field314 = class208.method1425(105, "You are standing in a members)2only area)3");
+    private static JString field314 = class208.method1425(105, "You are standing in a members)2only area)3");
 
     @OriginalMember(owner = "client!bh", name = "F", descriptor = "I")
     public static int field313 = 0;
 
     @OriginalMember(owner = "client!bh", name = "E", descriptor = "Li;")
-    public static class88 field312 = field314;
+    public static JString field312 = field314;
 
     @OriginalMember(owner = "client!bh", name = "L", descriptor = "Li;")
-    public static class88 field318 = class208.method1425(105, "Musik)2Engine vorbereitet)3");
+    public static JString field318 = class208.method1425(105, "Musik)2Engine vorbereitet)3");
 
     @OriginalMember(owner = "client!bh", name = "N", descriptor = "Li;")
-    public static class88 field320 = class208.method1425(105, "Welt");
+    public static JString field320 = class208.method1425(105, "Welt");
 
     @OriginalMember(owner = "client!bh", name = "M", descriptor = "Li;")
-    public static class88 field319 = null;
+    public static JString field319 = null;
 
     @OriginalMember(owner = "client!bh", name = "O", descriptor = "Lbj;")
     public static Js5Local field321;

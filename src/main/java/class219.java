@@ -49,7 +49,7 @@ public class class219 extends class27 {
     }
 
     @OriginalMember(owner = "client!ua", name = "a", descriptor = "(ZIII)Li;")
-    public static final class88 method1483(boolean arg0, int arg1, int arg2, int arg3) {
+    public static final JString method1483(boolean arg0, int arg1, int arg2, int arg3) {
         field4147++;
         if (arg2 < 2 || arg2 > 36) {
             throw new IllegalArgumentException("Invalid radix:" + arg2);
@@ -81,7 +81,7 @@ public class class219 extends class27 {
             }
             var7[var6 - var8 - 1] = (byte) (var10 + 48);
         }
-        class88 var9 = new class88();
+        JString var9 = new JString();
         var9.field1660 = var6;
         var9.field1643 = var7;
         return var9;

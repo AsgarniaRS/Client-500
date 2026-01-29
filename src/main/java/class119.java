@@ -36,19 +36,19 @@ public class class119 {
     private byte[] field2172;
 
     @OriginalMember(owner = "client!kj", name = "e", descriptor = "Li;")
-    public static class88 field2158 = class208.method1425(105, "scape main");
+    public static JString field2158 = class208.method1425(105, "scape main");
 
     @OriginalMember(owner = "client!kj", name = "h", descriptor = "I")
     public static int field2161 = 0;
 
     @OriginalMember(owner = "client!kj", name = "c", descriptor = "Li;")
-    public static class88 field2156 = class208.method1425(105, "und haben es deaktiviert)3 Klicken Sie auf der");
+    public static JString field2156 = class208.method1425(105, "und haben es deaktiviert)3 Klicken Sie auf der");
 
     @OriginalMember(owner = "client!kj", name = "n", descriptor = "Li;")
-    public static class88 field2167 = class208.method1425(105, "Starte 3D)2Softwarebibliothek)3");
+    public static JString field2167 = class208.method1425(105, "Starte 3D)2Softwarebibliothek)3");
 
     @OriginalMember(owner = "client!kj", name = "t", descriptor = "Li;")
-    public static class88 field2173 = class208.method1425(105, ")2");
+    public static JString field2173 = class208.method1425(105, ")2");
 
     @OriginalMember(owner = "client!kj", name = "u", descriptor = "I")
     public static int field2174 = 127;

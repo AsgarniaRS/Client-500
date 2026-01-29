@@ -11,13 +11,13 @@ public class class237 extends class136 {
     private int field4418 = -1;
 
     @OriginalMember(owner = "client!vh", name = "H", descriptor = "Li;")
-    public static class88 field4413 = class208.method1425(105, "mapflag");
+    public static JString field4413 = class208.method1425(105, "mapflag");
 
     @OriginalMember(owner = "client!vh", name = "F", descriptor = "Li;")
-    public static class88 field4411 = class208.method1425(105, "Die Verbindung konnte");
+    public static JString field4411 = class208.method1425(105, "Die Verbindung konnte");
 
     @OriginalMember(owner = "client!vh", name = "K", descriptor = "Li;")
-    public static class88 field4416 = class208.method1425(105, ": ");
+    public static JString field4416 = class208.method1425(105, ": ");
 
     @OriginalMember(owner = "client!vh", name = "N", descriptor = "[Ldd;")
     public static class38[] field4419 = new class38[50];

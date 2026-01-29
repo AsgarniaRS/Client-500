@@ -38,7 +38,7 @@ public class class126 extends class136 {
     public int field2351 = 1;
 
     @OriginalMember(owner = "client!lf", name = "gb", descriptor = "Li;")
-    public class88 field2343 = class3.field34;
+    public JString field2343 = class3.field34;
 
     @OriginalMember(owner = "client!lf", name = "M", descriptor = "I")
     public int field2324 = -1;
@@ -50,7 +50,7 @@ public class class126 extends class136 {
     public boolean field2359 = true;
 
     @OriginalMember(owner = "client!lf", name = "hb", descriptor = "[Li;")
-    public class88[] field2344 = new class88[5];
+    public JString[] field2344 = new JString[5];
 
     @OriginalMember(owner = "client!lf", name = "xb", descriptor = "I")
     private int field2360 = 0;
@@ -80,7 +80,7 @@ public class class126 extends class136 {
     public int field2353 = -1;
 
     @OriginalMember(owner = "client!lf", name = "L", descriptor = "Li;")
-    public static class88 field2323 = class208.method1425(105, "Hidden)2use");
+    public static JString field2323 = class208.method1425(105, "Hidden)2use");
 
     @OriginalMember(owner = "client!lf", name = "X", descriptor = "I")
     public static int field2334 = 0;
@@ -92,7 +92,7 @@ public class class126 extends class136 {
     public static int field2350 = 0;
 
     @OriginalMember(owner = "client!lf", name = "db", descriptor = "Li;")
-    public static class88 field2340 = class208.method1425(105, "Ablegen");
+    public static JString field2340 = class208.method1425(105, "Ablegen");
 
     @OriginalMember(owner = "client!lf", name = "D", descriptor = "I")
     public static int field2315;
@@ -414,7 +414,7 @@ public class class126 extends class136 {
     }
 
     @OriginalMember(owner = "client!lf", name = "a", descriptor = "(IILi;)Li;")
-    public final class88 method862(int arg0, int arg1, class88 arg2) {
+    public final JString method862(int arg0, int arg1, JString arg2) {
         int var4 = 13 / ((41 - arg1) / 50);
         field2325++;
         if (this.field2346 == null) {

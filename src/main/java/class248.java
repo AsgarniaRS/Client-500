@@ -16,13 +16,13 @@ public class class248 {
     public static Calendar field4547 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
     @OriginalMember(owner = "client!wi", name = "q", descriptor = "Li;")
-    public static class88 field4549 = class208.method1425(105, "::fpson");
+    public static JString field4549 = class208.method1425(105, "::fpson");
 
     @OriginalMember(owner = "client!wi", name = "p", descriptor = "Li;")
-    public static class88 field4548 = class208.method1425(105, "leuchten1:");
+    public static JString field4548 = class208.method1425(105, "leuchten1:");
 
     @OriginalMember(owner = "client!wi", name = "r", descriptor = "Li;")
-    public static class88 field4550 = class208.method1425(105, " )2> ");
+    public static JString field4550 = class208.method1425(105, " )2> ");
 
     @OriginalMember(owner = "client!wi", name = "s", descriptor = "Z")
     public static boolean field4551 = false;

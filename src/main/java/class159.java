@@ -15,28 +15,28 @@ public class class159 extends Linkable {
     public static class248 field3051 = new class248();
 
     @OriginalMember(owner = "client!og", name = "Q", descriptor = "Li;")
-    private static class88 field3074 = class208.method1425(105, "K");
+    private static JString field3074 = class208.method1425(105, "K");
 
     @OriginalMember(owner = "client!og", name = "N", descriptor = "Li;")
-    public static class88 field3071 = field3074;
+    public static JString field3071 = field3074;
 
     @OriginalMember(owner = "client!og", name = "P", descriptor = "Li;")
-    public static class88 field3073 = field3074;
+    public static JString field3073 = field3074;
 
     @OriginalMember(owner = "client!og", name = "O", descriptor = "Li;")
-    private static class88 field3072 = class208.method1425(105, "Login server offline)3");
+    private static JString field3072 = class208.method1425(105, "Login server offline)3");
 
     @OriginalMember(owner = "client!og", name = "R", descriptor = "I")
     public static int maxsize = 0;
 
     @OriginalMember(owner = "client!og", name = "S", descriptor = "Li;")
-    public static class88 field3076 = field3072;
+    public static JString field3076 = field3072;
 
     @OriginalMember(owner = "client!og", name = "T", descriptor = "[Lba;")
     public static class13[] field3077 = new class13[500];
 
     @OriginalMember(owner = "client!og", name = "U", descriptor = "Li;")
-    public static class88 field3078 = class208.method1425(105, ")3runescape)3com)4l=");
+    public static JString field3078 = class208.method1425(105, ")3runescape)3com)4l=");
 
     @OriginalMember(owner = "client!og", name = "u", descriptor = "I")
     public static int field3052;

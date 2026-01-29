@@ -18,10 +18,10 @@ public class class184 extends class23 {
     private int field3615 = 20;
 
     @OriginalMember(owner = "client!qj", name = "S", descriptor = "Li;")
-    private static class88 field3604 = class208.method1425(105, "New User");
+    private static JString field3604 = class208.method1425(105, "New User");
 
     @OriginalMember(owner = "client!qj", name = "R", descriptor = "Li;")
-    public static class88 field3603 = field3604;
+    public static JString field3603 = field3604;
 
     @OriginalMember(owner = "client!qj", name = "U", descriptor = "I")
     public static int field3606 = 0;
@@ -102,7 +102,7 @@ public class class184 extends class23 {
                 class203.field3863 = 2;
             } else {
                 if (~class203.field3863 != -1) {
-                    Client.method221(class166.method1142(new class88[] { class242.field4480, class222.field4192 }, -3), true, -22717);
+                    Client.method221(class166.method1142(new JString[] { class242.field4480, class222.field4192 }, -3), true, -22717);
                 }
                 class219.method1481(2);
                 class27.method167((byte) 61);
@@ -173,8 +173,8 @@ public class class184 extends class23 {
                     for (int var14 = var10 + -1; var12 + 1 >= var14; ++var14) {
                         for (int var15 = var11 + -1; var15 <= var13 + 1; ++var15) {
                             if (var10 > var14 || ~var12 > ~var14 || ~var15 > ~var11 || var15 > var13) {
-                                class27.field451.method971(class166.method1142(new class88[] { class212.field4020, class170.method1214(var14, 24), class50.field933, class170.method1214(var15, 114) }, -3), -1);
-                                class27.field451.method971(class166.method1142(new class88[] { class106.field1930, class170.method1214(var14, -100), class50.field933, class170.method1214(var15, 70) }, -3), -1);
+                                class27.field451.method971(class166.method1142(new JString[] { class212.field4020, class170.method1214(var14, 24), class50.field933, class170.method1214(var15, 114) }, -3), -1);
+                                class27.field451.method971(class166.method1142(new JString[] { class106.field1930, class170.method1214(var14, -100), class50.field933, class170.method1214(var15, 70) }, -3), -1);
                             }
                         }
                     }
@@ -247,8 +247,8 @@ public class class184 extends class23 {
         if (!class90.field1708) {
             class72.method481();
             byte[] var4 = arg0.method941((byte) 56, 0, class110.field2011);
-            class88.field1640 = new class169(var4, arg1);
-            class105.field1903 = class88.field1640.method1158();
+            JString.field1640 = new class169(var4, arg1);
+            class105.field1903 = JString.field1640.method1158();
             class208.field3948 = class122.method828((byte) -70, class151.field2934, arg3);
             class242.field4475 = class122.method828((byte) -70, class104.field1898, arg3);
             class129.field2418 = class122.method828((byte) -70, class157.field3021, arg3);

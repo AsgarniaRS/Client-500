@@ -39,7 +39,7 @@ public class class55 {
     private class51[] field1051 = new class51[8];
 
     @OriginalMember(owner = "client!ej", name = "b", descriptor = "Li;")
-    public static class88 field1015 = class208.method1425(105, "Verbindung konnte nicht hergestellt werden)3");
+    public static JString field1015 = class208.method1425(105, "Verbindung konnte nicht hergestellt werden)3");
 
     @OriginalMember(owner = "client!ej", name = "j", descriptor = "[I")
     public static int[] field1023 = new int[] { 8, 11, 4, 6, 9, 7, 10 };
@@ -48,13 +48,13 @@ public class class55 {
     public static GameShell field1032 = null;
 
     @OriginalMember(owner = "client!ej", name = "u", descriptor = "Li;")
-    private static class88 field1034 = class208.method1425(105, "Please check your message)2centre for details)3");
+    private static JString field1034 = class208.method1425(105, "Please check your message)2centre for details)3");
 
     @OriginalMember(owner = "client!ej", name = "t", descriptor = "I")
     public static int field1033 = -1;
 
     @OriginalMember(owner = "client!ej", name = "c", descriptor = "Li;")
-    public static class88 field1016 = field1034;
+    public static JString field1016 = field1034;
 
     @OriginalMember(owner = "client!ej", name = "i", descriptor = "I")
     public static int field1022 = 0;

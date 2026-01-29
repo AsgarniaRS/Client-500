@@ -8,10 +8,10 @@ public class class194 extends class23 {
     public static int[] field3710 = new int[100];
 
     @OriginalMember(owner = "client!ri", name = "R", descriptor = "Li;")
-    public static class88 field3709 = class208.method1425(105, "event_opbase");
+    public static JString field3709 = class208.method1425(105, "event_opbase");
 
     @OriginalMember(owner = "client!ri", name = "Z", descriptor = "Li;")
-    public static class88 field3717 = class208.method1425(105, " loggt sich aus)3");
+    public static JString field3717 = class208.method1425(105, " loggt sich aus)3");
 
     @OriginalMember(owner = "client!ri", name = "Y", descriptor = "[I")
     public static int[] field3716 = new int[5];
@@ -146,14 +146,14 @@ public class class194 extends class23 {
     }
 
     @OriginalMember(owner = "client!ri", name = "a", descriptor = "(Lq;I)Li;")
-    public static final class88 method1347(class174 arg0, int arg1) {
+    public static final JString method1347(class174 arg0, int arg1) {
         ++field3715;
         if (arg1 != -2) {
             method1347((class174) null, -107);
         }
         if (~GameShell.method592(1281959627, class80.method530(arg1 + -881710558, arg0)) == -1) {
             return null;
-        } else if (arg0.field3514 != null && ~arg0.field3514.method602(-125).method604((byte) -53) != -1) {
+        } else if (arg0.field3514 != null && ~arg0.field3514.method602(-125).length() != -1) {
             return arg0.field3514;
         } else {
             return class116.field2105 ? class126.field2323 : null;

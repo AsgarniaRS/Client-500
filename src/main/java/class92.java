@@ -30,7 +30,7 @@ public class class92 {
     public static CRC32 field1733;
 
     @OriginalMember(owner = "client!id", name = "q", descriptor = "Li;")
-    public static class88 field1734;
+    public static JString field1734;
 
     @OriginalMember(owner = "client!id", name = "a", descriptor = "I")
     public static int field1718;

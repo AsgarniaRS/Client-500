@@ -8,7 +8,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!i")
-public class class88 implements class187 {
+public class JString implements class187 {
 
     @OriginalMember(owner = "client!i", name = "h", descriptor = "Z")
     private boolean field1606 = true;
@@ -17,10 +17,10 @@ public class class88 implements class187 {
     public static short[] field1601 = new short[] { -10304, 9104, -1, -1, -1 };
 
     @OriginalMember(owner = "client!i", name = "D", descriptor = "Li;")
-    private static class88 field1628 = class208.method1425(105, "This world is full)3");
+    private static JString field1628 = class208.method1425(105, "This world is full)3");
 
     @OriginalMember(owner = "client!i", name = "M", descriptor = "Li;")
-    public static class88 field1637 = class208.method1425(105, "<col=ffffff>");
+    public static JString field1637 = class208.method1425(105, "<col=ffffff>");
 
     @OriginalMember(owner = "client!i", name = "N", descriptor = "I")
     public static int field1638 = 0;
@@ -32,7 +32,7 @@ public class class88 implements class187 {
     public static int field1634 = 0;
 
     @OriginalMember(owner = "client!i", name = "fb", descriptor = "Li;")
-    public static class88 field1655 = field1628;
+    public static JString field1655 = field1628;
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "I")
     public static int field1599;
@@ -214,7 +214,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(ILi;)Z")
-    public final boolean method595(int arg0, class88 arg1) {
+    public final boolean method595(int arg0, JString arg1) {
         field1603++;
         if (arg0 != 16567) {
             return true;
@@ -239,9 +239,9 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(Z)Li;")
-    public final class88 method596(boolean arg0) {
+    public final JString method596(boolean arg0) {
         field1609++;
-        class88 var2 = new class88();
+        JString var2 = new JString();
         var2.field1660 = this.field1660;
         var2.field1643 = new byte[this.field1660];
         if (!arg0) {
@@ -254,7 +254,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "b", descriptor = "(ILi;)Z")
-    public final boolean method597(int arg0, class88 arg1) {
+    public final boolean method597(int arg0, JString arg1) {
         if (arg0 > -103) {
             field1637 = null;
         }
@@ -312,7 +312,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(BI)[Li;")
-    public final class88[] method600(byte arg0, int arg1) {
+    public final JString[] method600(byte arg0, int arg1) {
         int var3 = 0;
         for (int var4 = 0; var4 < this.field1660; var4++) {
             if (this.field1643[var4] == arg1) {
@@ -320,7 +320,7 @@ public class class88 implements class187 {
             }
         }
         field1653++;
-        class88[] var5 = new class88[var3 + 1];
+        JString[] var5 = new JString[var3 + 1];
         if (var3 == 0) {
             var5[0] = this;
             return var5;
@@ -342,7 +342,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "b", descriptor = "(I)Li;")
-    public final class88 method601(int arg0) {
+    public final JString method601(int arg0) {
         field1642++;
         long var2 = this.method637((byte) 84);
         synchronized (field1661 == null ? (field1661 = method640("Client")) : field1661) {
@@ -367,7 +367,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "c", descriptor = "(I)Li;")
-    public final class88 method602(int arg0) {
+    public final JString method602(int arg0) {
         field1656++;
         int var2;
         for (var2 = 0; var2 < this.field1660 && (this.field1643[var2] >= 0 && this.field1643[var2] <= 32 || (this.field1643[var2] & 0xFF) == 160); var2++) {
@@ -379,7 +379,7 @@ public class class88 implements class187 {
         if (var2 == 0 && this.field1660 == var4) {
             return this;
         }
-        class88 var5 = new class88();
+        JString var5 = new JString();
         var5.field1660 = var4 - var2;
         var5.field1643 = new byte[var5.field1660];
         for (int var6 = 0; var6 < var5.field1660; var6++) {
@@ -405,7 +405,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(B)I")
-    public final int method604(byte arg0) {
+    public final int length() {
         return this.field1660;
     }
 
@@ -483,7 +483,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(Ljava/applet/Applet;I)Li;")
-    public final class88 method608(Applet arg0, int arg1) {
+    public final JString method608(Applet arg0, int arg1) {
         field1659++;
         int var3 = -22 / ((arg1 - 46) / 39);
         String var4 = new String(this.field1643, 0, this.field1660);
@@ -522,9 +522,9 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "d", descriptor = "(Z)Li;")
-    public final class88 method611(boolean arg0) {
+    public final JString method611(boolean arg0) {
         field1612++;
-        class88 var2 = class200.method1377(this.method630(arg0), (byte) 62);
+        JString var2 = class200.method1377(this.method630(arg0), (byte) 62);
         return var2 == null ? class78.field1411 : var2;
     }
 
@@ -551,13 +551,13 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "c", descriptor = "(B)Li;")
-    public final class88 method614(byte arg0) {
+    public final JString method614(byte arg0) {
         if (arg0 != 83) {
             return null;
         }
         field1619++;
         boolean var2 = true;
-        class88 var3 = new class88();
+        JString var3 = new JString();
         var3.field1660 = this.field1660;
         var3.field1643 = new byte[this.field1660];
         for (int var4 = 0; var4 < this.field1660; var4++) {
@@ -625,7 +625,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(Li;B)Li;")
-    public final class88 method616(class88 arg0, byte arg1) {
+    public final JString method616(JString arg0, byte arg1) {
         field1645++;
         int var3 = 108 % ((-arg1 - 4) / 52);
         if (!this.field1606) {
@@ -646,14 +646,14 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "c", descriptor = "(ILi;)I")
-    public final int method617(int arg0, class88 arg1) {
+    public final int method617(int arg0, JString arg1) {
         field1617++;
         int var3 = 60 % ((arg0 - 37) / 58);
         return this.method634(0, (byte) -94, arg1);
     }
 
     @OriginalMember(owner = "client!i", name = "d", descriptor = "(II)Li;")
-    public final class88 method618(int arg0, int arg1) {
+    public final JString method618(int arg0, int arg1) {
         field1641++;
         if (arg0 >= -94) {
             this.method637((byte) -86);
@@ -661,7 +661,7 @@ public class class88 implements class187 {
         if (arg1 <= 0 || arg1 > 255) {
             throw new IllegalArgumentException("invalid char");
         }
-        class88 var3 = new class88();
+        JString var3 = new JString();
         var3.field1643 = new byte[this.field1660 + 1];
         var3.field1660 = this.field1660 + 1;
         class124.method838(this.field1643, 0, var3.field1643, 0, this.field1660);
@@ -670,29 +670,27 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "d", descriptor = "(ILi;)Z")
-    public final boolean method619(int arg0, class88 arg1) {
-        field1650++;
-        if (this.field1660 < arg1.field1660) {
-            return false;
-        } else if (arg0 == -4205) {
-            for (int var3 = 0; var3 < arg1.field1660; var3++) {
-                if (this.field1643[var3] != arg1.field1643[var3]) {
-                    return false;
-                }
-            }
-            return true;
-        } else {
+    public final boolean startsWith(JString string) {
+        if (this.field1660 < string.field1660) {
             return false;
         }
+
+        for (int ch = 0; ch < string.field1660; ch++) {
+            if (this.field1643[ch] != string.field1643[ch]) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     @OriginalMember(owner = "client!i", name = "equals", descriptor = "(Ljava/lang/Object;)Z")
     public final boolean equals(Object arg0) {
         field1632++;
-        if (!(arg0 instanceof class88)) {
+        if (!(arg0 instanceof JString)) {
             throw new IllegalArgumentException();
         }
-        return this.method597(-111, (class88) arg0);
+        return this.method597(-111, (JString) arg0);
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(IILjava/awt/Graphics;I)V")
@@ -720,9 +718,9 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "g", descriptor = "(I)Li;")
-    public final class88 method622(int arg0) {
+    public final JString method622(int arg0) {
         byte var2 = 2;
-        class88 var3 = new class88();
+        JString var3 = new JString();
         field1652++;
         var3.field1660 = this.field1660;
         var3.field1643 = new byte[this.field1660];
@@ -760,12 +758,11 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(IBI)Li;")
-    public final class88 method623(int arg0, byte arg1, int arg2) {
-        field1627++;
+    public final JString method623(int arg0, byte arg1, int arg2) {
         if (arg1 >= -3) {
             this.method605((byte) 81);
         }
-        class88 var4 = new class88();
+        JString var4 = new JString();
         var4.field1643 = new byte[arg2 - arg0];
         var4.field1660 = arg2 - arg0;
         class124.method838(this.field1643, arg0, var4.field1643, 0, var4.field1660);
@@ -773,7 +770,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "b", descriptor = "(Li;B)Z")
-    public final boolean method624(class88 arg0, byte arg1) {
+    public final boolean method624(JString arg0, byte arg1) {
         field1605++;
         if (arg0 == null) {
             return false;
@@ -799,7 +796,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(ZLi;)I")
-    public final int method625(boolean arg0, class88 arg1) {
+    public final int method625(boolean arg0, JString arg1) {
         field1635++;
         int var3;
         if (this.field1660 <= arg1.field1660) {
@@ -828,11 +825,11 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(IZI)Li;")
-    public final class88 method626(int arg0, boolean arg1, int arg2) {
+    public final JString method626(int arg0, boolean arg1, int arg2) {
         field1630++;
         byte var4 = (byte) arg0;
         byte var5 = (byte) arg2;
-        class88 var6 = new class88();
+        JString var6 = new JString();
         if (!arg1) {
             this.field1643 = null;
         }
@@ -850,7 +847,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(BLi;)I")
-    public final int method627(byte arg0, class88 arg1) {
+    public final int method627(byte arg0, JString arg1) {
         field1626++;
         int var3 = 2 % ((arg0 - 76) / 49);
         int var4;
@@ -892,7 +889,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "d", descriptor = "(B)Li;")
-    public final class88 method629(byte arg0) {
+    public final JString method629(byte arg0) {
         field1651++;
         if (arg0 != -36) {
             return null;
@@ -934,7 +931,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "e", descriptor = "(ILi;)Z")
-    public final boolean method631(int arg0, class88 arg1) {
+    public final boolean method631(int arg0, JString arg1) {
         field1620++;
         if (arg1.field1660 > this.field1660) {
             return false;
@@ -1012,7 +1009,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(IBLi;)I")
-    public final int method634(int arg0, byte arg1, class88 arg2) {
+    public final int method634(int arg0, byte arg1, JString arg2) {
         int var4 = -21 % ((-arg1 - 37) / 52);
         field1639++;
         int[] var5 = new int[arg2.field1660];
@@ -1074,9 +1071,8 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "e", descriptor = "(II)Li;")
-    public final class88 method635(int arg0, int arg1) {
-        field1654++;
-        return arg1 == -383902332 ? this.method623(arg0, (byte) -82, this.field1660) : null;
+    public final JString substring(int arg0) {
+        return this.method623(arg0, (byte) -82, this.field1660);
     }
 
     @OriginalMember(owner = "client!i", name = "a", descriptor = "(ILjava/applet/Applet;)V")
@@ -1101,7 +1097,7 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "f", descriptor = "(II)Li;")
-    public final class88 method638(int arg0, int arg1) {
+    public final JString method638(int arg0, int arg1) {
         field1614++;
         if (arg1 <= 0 || arg1 > 255) {
             throw new IllegalArgumentException("invalid char:" + arg1);
@@ -1123,22 +1119,18 @@ public class class88 implements class187 {
     }
 
     @OriginalMember(owner = "client!i", name = "i", descriptor = "(I)Li;")
-    public final class88 method639(int arg0) {
-        if (arg0 < 120) {
-            this.field1606 = true;
-        }
-        class88 var2 = new class88();
-        var2.field1660 = this.field1660;
-        field1622++;
-        var2.field1643 = new byte[this.field1660];
-        for (int var3 = 0; var3 < this.field1660; var3++) {
-            byte var4 = this.field1643[var3];
-            if (var4 >= 65 && var4 <= 90 || var4 >= -64 && var4 <= -34 && var4 != -41) {
-                var4 = (byte) (var4 + 32);
+    public final JString toLowerCase() {
+        JString string = new JString();
+        string.field1660 = this.field1660;
+        string.field1643 = new byte[this.field1660];
+        for (int c = 0; c < this.field1660; c++) {
+            byte currentChar = this.field1643[c];
+            if (currentChar >= 65 && currentChar <= 90 || currentChar >= -64 && currentChar <= -34 && currentChar != -41) {
+                currentChar = (byte) (currentChar + 32);
             }
-            var2.field1643[var3] = var4;
+            string.field1643[c] = currentChar;
         }
-        return var2;
+        return string;
     }
 
     // $FF: synthetic method

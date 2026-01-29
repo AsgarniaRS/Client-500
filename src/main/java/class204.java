@@ -29,10 +29,10 @@ public class class204 extends Linkable {
     public int field3898;
 
     @OriginalMember(owner = "client!sh", name = "y", descriptor = "Li;")
-    public static class88 field3886 = class208.method1425(105, "Bitte starten Sie eine Mitgliedschaft");
+    public static JString field3886 = class208.method1425(105, "Bitte starten Sie eine Mitgliedschaft");
 
     @OriginalMember(owner = "client!sh", name = "M", descriptor = "Li;")
-    public static class88 field3900 = class208.method1425(105, "Diese Betatest)2Welt ist nur f-Ur eingeladene");
+    public static JString field3900 = class208.method1425(105, "Diese Betatest)2Welt ist nur f-Ur eingeladene");
 
     @OriginalMember(owner = "client!sh", name = "t", descriptor = "I")
     public static int field3881;
@@ -142,11 +142,11 @@ public class class204 extends Linkable {
                         continue;
                     }
                     if (class28.field475 == 1) {
-                        class98.method687(9746, var18, class35.field608, (short) 26, var16, class166.method1142(new class88[] { class78.field1414, class175.field3528, var22.name}, arg6 + 1450689184), var19);
+                        class98.method687(9746, var18, class35.field608, (short) 26, var16, class166.method1142(new JString[] { class78.field1414, class175.field3528, var22.name}, arg6 + 1450689184), var19);
                         Ground.field942++;
                     } else if (!class10.field145) {
                         class43.field724++;
-                        class88[] var23 = var22.op;
+                        JString[] var23 = var22.op;
                         if (IntHashTable.field1809) {
                             var23 = class138.method923(var23, (byte) 72);
                         }
@@ -170,14 +170,14 @@ public class class204 extends Linkable {
                                     if (var24 == 4) {
                                         var25 = 1004;
                                     }
-                                    class98.method687(9746, var18, var23[var24], var25, var16, class166.method1142(new class88[] { class17.field259, var22.name}, -3), var19);
+                                    class98.method687(9746, var18, var23[var24], var25, var16, class166.method1142(new JString[] { class17.field259, var22.name}, -3), var19);
                                 }
                             }
                         }
-                        class98.method687(9746, var18, class65.field1174, (short) 1005, (long) var22.field2833, class166.method1142(new class88[] { class17.field259, var22.name}, -3), var19);
+                        class98.method687(9746, var18, class65.field1174, (short) 1005, (long) var22.field2833, class166.method1142(new JString[] { class17.field259, var22.name}, -3), var19);
                     } else if ((class115.field2086 & 0x4) == 4) {
                         class15.field231++;
-                        class98.method687(9746, var18, class201.field3837, (short) 24, var16, class166.method1142(new class88[] { class28.field464, class175.field3528, var22.name}, -3), var19);
+                        class98.method687(9746, var18, class201.field3837, (short) 24, var16, class166.method1142(new JString[] { class28.field464, class175.field3528, var22.name}, -3), var19);
                     }
                 }
                 if (var20 == 1) {
@@ -224,10 +224,10 @@ public class class204 extends Linkable {
                             class149 var39 = class71.method472(var38, (byte) -98);
                             if (class28.field475 == 1) {
                                 class186.field3642++;
-                                class98.method687(9746, var18, class35.field608, (short) 46, (long) var38, class166.method1142(new class88[] { class78.field1414, class34.field581, var39.field2894 }, -3), var19);
+                                class98.method687(9746, var18, class35.field608, (short) 46, (long) var38, class166.method1142(new JString[] { class78.field1414, class34.field581, var39.field2894 }, -3), var19);
                             } else if (!class10.field145) {
                                 class126.field2322++;
-                                class88[] var40 = var39.field2900;
+                                JString[] var40 = var39.field2900;
                                 if (IntHashTable.field1809) {
                                     var40 = class138.method923(var40, (byte) -123);
                                 }
@@ -250,16 +250,16 @@ public class class204 extends Linkable {
                                         if (var41 == 4) {
                                             var42 = 3;
                                         }
-                                        class98.method687(9746, var18, var40[var41], var42, (long) var38, class166.method1142(new class88[] { class136.field2531, var39.field2894 }, -3), var19);
+                                        class98.method687(9746, var18, var40[var41], var42, (long) var38, class166.method1142(new JString[] { class136.field2531, var39.field2894 }, -3), var19);
                                     } else if (var41 == 2) {
-                                        class98.method687(arg6 ^ 0xA9881B4F, var18, class231.field4345, (short) 41, (long) var38, class166.method1142(new class88[] { class136.field2531, var39.field2894 }, -3), var19);
+                                        class98.method687(arg6 ^ 0xA9881B4F, var18, class231.field4345, (short) 41, (long) var38, class166.method1142(new JString[] { class136.field2531, var39.field2894 }, -3), var19);
                                         class43.field722++;
                                     }
                                 }
-                                class98.method687(9746, var18, class65.field1174, (short) 1006, (long) var38, class166.method1142(new class88[] { class136.field2531, var39.field2894 }, -3), var19);
+                                class98.method687(9746, var18, class65.field1174, (short) 1006, (long) var38, class166.method1142(new JString[] { class136.field2531, var39.field2894 }, -3), var19);
                             } else if ((class115.field2086 & 0x1) == 1) {
                                 class117.field2120++;
-                                class98.method687(9746, var18, class201.field3837, (short) 25, (long) var38, class166.method1142(new class88[] { class28.field464, class34.field581, var39.field2894 }, -3), var19);
+                                class98.method687(9746, var18, class201.field3837, (short) 25, (long) var38, class166.method1142(new JString[] { class28.field464, class34.field581, var39.field2894 }, -3), var19);
                             }
                         }
                     }

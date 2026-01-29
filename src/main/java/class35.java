@@ -29,22 +29,22 @@ public class class35 extends class23 {
     public static boolean field615 = false;
 
     @OriginalMember(owner = "client!da", name = "Z", descriptor = "Li;")
-    private static class88 field604 = class208.method1425(105, "Use");
+    private static JString field604 = class208.method1425(105, "Use");
 
     @OriginalMember(owner = "client!da", name = "db", descriptor = "Li;")
-    public static class88 field608 = field604;
+    public static JString field608 = field604;
 
     @OriginalMember(owner = "client!da", name = "X", descriptor = "J")
     public static long field602 = 0L;
 
     @OriginalMember(owner = "client!da", name = "gb", descriptor = "Li;")
-    private static class88 field611 = class208.method1425(105, "wave2:");
+    private static JString field611 = class208.method1425(105, "wave2:");
 
     @OriginalMember(owner = "client!da", name = "nb", descriptor = "Li;")
-    public static class88 field618 = field611;
+    public static JString field618 = field611;
 
     @OriginalMember(owner = "client!da", name = "hb", descriptor = "Li;")
-    public static class88 field612 = field611;
+    public static JString field612 = field611;
 
     @OriginalMember(owner = "client!da", name = "ob", descriptor = "Lwi;")
     public static class248 field619 = new class248();

@@ -11,19 +11,19 @@ public class class212 extends class23 {
     private int field4019 = 0;
 
     @OriginalMember(owner = "client!te", name = "S", descriptor = "Li;")
-    public static class88 field4013 = class208.method1425(105, "sl_flags");
+    public static JString field4013 = class208.method1425(105, "sl_flags");
 
     @OriginalMember(owner = "client!te", name = "Q", descriptor = "Li;")
-    public static class88 field4011 = class208.method1425(105, "::tele 0)1");
+    public static JString field4011 = class208.method1425(105, "::tele 0)1");
 
     @OriginalMember(owner = "client!te", name = "ab", descriptor = "[Li;")
-    public static class88[] field4021 = new class88[100];
+    public static JString[] field4021 = new JString[100];
 
     @OriginalMember(owner = "client!te", name = "Z", descriptor = "Li;")
-    public static class88 field4020 = class208.method1425(105, "m");
+    public static JString field4020 = class208.method1425(105, "m");
 
     @OriginalMember(owner = "client!te", name = "eb", descriptor = "Li;")
-    public static class88 field4025 = class208.method1425(105, "Willkommen auf RuneScape");
+    public static JString field4025 = class208.method1425(105, "Willkommen auf RuneScape");
 
     @OriginalMember(owner = "client!te", name = "R", descriptor = "I")
     public static int field4012;

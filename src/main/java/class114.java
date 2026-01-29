@@ -11,10 +11,10 @@ public class class114 extends class136 {
     public static int field2059 = -1;
 
     @OriginalMember(owner = "client!ke", name = "J", descriptor = "Li;")
-    private static class88 field2062 = class208.method1425(105, "RuneScape has been updated(Q");
+    private static JString field2062 = class208.method1425(105, "RuneScape has been updated(Q");
 
     @OriginalMember(owner = "client!ke", name = "O", descriptor = "Li;")
-    public static class88 field2066 = field2062;
+    public static JString field2066 = field2062;
 
     @OriginalMember(owner = "client!ke", name = "I", descriptor = "[I")
     public static int[] field2061 = new int[128];
@@ -23,13 +23,13 @@ public class class114 extends class136 {
     public static volatile int field2070 = 0;
 
     @OriginalMember(owner = "client!ke", name = "E", descriptor = "Li;")
-    private static class88 field2057 = class208.method1425(105, "Unable to find ");
+    private static JString field2057 = class208.method1425(105, "Unable to find ");
 
     @OriginalMember(owner = "client!ke", name = "K", descriptor = "I")
     public static int field2063 = 0;
 
     @OriginalMember(owner = "client!ke", name = "N", descriptor = "Li;")
-    public static class88 field2065 = field2057;
+    public static JString field2065 = field2057;
 
     @OriginalMember(owner = "client!ke", name = "D", descriptor = "I")
     public static int field2056;
@@ -120,7 +120,7 @@ public class class114 extends class136 {
     public static final void method781(int arg0) {
         try {
             if (class129.field2416 == null) {
-                class129.field2416 = new class3(class126.field2326, class166.method1142(new class88[] { class210.field3985, class170.method1214(class126.field2350, arg0 ^ 0xFFFF805F), class49.field915 }, -3).method606(true));
+                class129.field2416 = new class3(class126.field2326, class166.method1142(new JString[] { class210.field3985, class170.method1214(class126.field2350, arg0 ^ 0xFFFF805F), class49.field915 }, -3).method606(true));
             } else {
                 byte[] var1 = class129.field2416.method12(true);
                 if (var1 != null) {

@@ -6,19 +6,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class4 extends class136 {
 
     @OriginalMember(owner = "client!ac", name = "H", descriptor = "Li;")
-    private static class88 field50 = class208.method1425(105, "Invalid loginserver requested)3");
+    private static JString field50 = class208.method1425(105, "Invalid loginserver requested)3");
 
     @OriginalMember(owner = "client!ac", name = "N", descriptor = "Li;")
-    public static class88 field56 = field50;
+    public static JString field56 = field50;
 
     @OriginalMember(owner = "client!ac", name = "U", descriptor = "Li;")
-    public static class88 field63 = class208.method1425(105, ")4l");
+    public static JString field63 = class208.method1425(105, ")4l");
 
     @OriginalMember(owner = "client!ac", name = "D", descriptor = "I")
     public static int field46 = 0;
 
     @OriginalMember(owner = "client!ac", name = "T", descriptor = "Li;")
-    public static class88 field62 = class208.method1425(105, "Verbindung mit Update)2Server)3)3)3");
+    public static JString field62 = class208.method1425(105, "Verbindung mit Update)2Server)3)3)3");
 
     @OriginalMember(owner = "client!ac", name = "E", descriptor = "I")
     public static int field47;
@@ -54,10 +54,10 @@ public class class4 extends class136 {
     public static int field61;
 
     @OriginalMember(owner = "client!ac", name = "L", descriptor = "Li;")
-    public static class88 field54;
+    public static JString field54;
 
     @OriginalMember(owner = "client!ac", name = "O", descriptor = "Li;")
-    public class88 field57;
+    public JString field57;
 
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(IIILq;)V")
     public static final void method16(int arg0, int arg1, int arg2, class174 arg3) {

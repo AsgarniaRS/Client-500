@@ -5,40 +5,40 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class115 {
 
     @OriginalMember(owner = "client!kf", name = "c", descriptor = "Li;")
-    public static class88 field2075 = class208.method1425(105, "Fehler bei der Verbindung zum Server)3");
+    public static JString field2075 = class208.method1425(105, "Fehler bei der Verbindung zum Server)3");
 
     @OriginalMember(owner = "client!kf", name = "e", descriptor = "Li;")
-    public static class88 field2077 = class208.method1425(105, "mapdots");
+    public static JString field2077 = class208.method1425(105, "mapdots");
 
     @OriginalMember(owner = "client!kf", name = "i", descriptor = "Li;")
-    private static class88 field2081 = class208.method1425(105, " from your friend list first)3");
+    private static JString REMOVEFRIEND2 = class208.method1425(105, " from your friend list first)3");
 
     @OriginalMember(owner = "client!kf", name = "j", descriptor = "Li;")
-    public static class88 field2082 = class208.method1425(105, "(U1");
+    public static JString field2082 = class208.method1425(105, "(U1");
 
     @OriginalMember(owner = "client!kf", name = "g", descriptor = "Li;")
-    private static class88 field2079 = class208.method1425(105, "Free world");
+    private static JString field2079 = class208.method1425(105, "Free world");
 
     @OriginalMember(owner = "client!kf", name = "h", descriptor = "I")
     public static int field2080 = 0;
 
     @OriginalMember(owner = "client!kf", name = "o", descriptor = "Li;")
-    public static class88 field2087 = field2081;
+    public static JString field2087 = REMOVEFRIEND2;
 
     @OriginalMember(owner = "client!kf", name = "d", descriptor = "Li;")
-    public static class88 field2076 = field2079;
+    public static JString field2076 = field2079;
 
     @OriginalMember(owner = "client!kf", name = "k", descriptor = "Li;")
-    public static class88 field2083 = class208.method1425(105, "T");
+    public static JString field2083 = class208.method1425(105, "T");
 
     @OriginalMember(owner = "client!kf", name = "b", descriptor = "Li;")
-    private static class88 field2074 = class208.method1425(105, "Loading fonts )2 ");
+    private static JString field2074 = class208.method1425(105, "Loading fonts )2 ");
 
     @OriginalMember(owner = "client!kf", name = "a", descriptor = "I")
     public static int modewhere = 0;
 
     @OriginalMember(owner = "client!kf", name = "f", descriptor = "Li;")
-    public static class88 field2078 = field2074;
+    public static JString field2078 = field2074;
 
     @OriginalMember(owner = "client!kf", name = "p", descriptor = "[J")
     public static long[] field2088 = new long[200];
@@ -85,7 +85,7 @@ public class class115 {
     @OriginalMember(owner = "client!kf", name = "a", descriptor = "(I)V")
     public static void method786(int arg0) {
         field2083 = null;
-        field2081 = null;
+        REMOVEFRIEND2 = null;
         field2087 = null;
         field2076 = null;
         if (arg0 != 0) {

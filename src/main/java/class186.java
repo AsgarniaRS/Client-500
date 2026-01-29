@@ -33,13 +33,13 @@ public class class186 extends class23 {
     private int field3636 = 409;
 
     @OriginalMember(owner = "client!ra", name = "V", descriptor = "Li;")
-    public static class88 field3629 = class208.method1425(105, "sch-Utteln:");
+    public static JString field3629 = class208.method1425(105, "sch-Utteln:");
 
     @OriginalMember(owner = "client!ra", name = "Z", descriptor = "J")
     public static volatile long field3633 = 0L;
 
     @OriginalMember(owner = "client!ra", name = "eb", descriptor = "Li;")
-    public static class88 field3638 = class208.method1425(105, "<col=ff3000>");
+    public static JString field3638 = class208.method1425(105, "<col=ff3000>");
 
     @OriginalMember(owner = "client!ra", name = "R", descriptor = "Ltc;")
     public static class210 field3625 = new class210();
@@ -272,7 +272,7 @@ public class class186 extends class23 {
                 class157.field3036[var4] = class3.field32[var4];
             }
         }
-        int var5 = class88.field1640.field3656 * 9;
+        int var5 = JString.field1640.field3656 * 9;
         int var6 = 0;
         int var7 = 0;
         for (int var8 = 1; ~(var1 + -1) < ~var8; ++var8) {
@@ -283,7 +283,7 @@ public class class186 extends class23 {
             var6 += var21;
             for (int var22 = var21; var22 < 128; ++var22) {
                 int var24 = class190.field3669[var6++];
-                int var25 = class88.field1640.field3249[var5++];
+                int var25 = JString.field1640.field3249[var5++];
                 if (~var24 == -1) {
                     class34.field589.field3249[var7++] = var25;
                 } else {
@@ -293,14 +293,14 @@ public class class186 extends class23 {
                 }
             }
             for (int var23 = 0; var21 > var23; ++var23) {
-                class34.field589.field3249[var7++] = class88.field1640.field3249[var5++];
+                class34.field589.field3249[var7++] = JString.field1640.field3249[var5++];
             }
-            var5 += class88.field1640.field3656 - 128;
+            var5 += JString.field1640.field3656 - 128;
         }
         int var9 = 0;
         int var10 = 0;
         class34.field589.method1163(0, 9);
-        int var11 = class88.field1640.field3656 * 9 - -128;
+        int var11 = JString.field1640.field3656 * 9 - -128;
         for (int var12 = 1; ~(var1 - 1) < ~var12; ++var12) {
             int var13 = (-var12 + var1) * class240.field4456[var12] / var1 + 22;
             if (var13 < 0) {
@@ -309,12 +309,12 @@ public class class186 extends class23 {
             for (int var14 = 0; ~var13 < ~var14; ++var14) {
                 int var10001 = var9++;
                 --var11;
-                CollisionMap.field1676.field3249[var10001] = class88.field1640.field3249[var11];
+                CollisionMap.field1676.field3249[var10001] = JString.field1640.field3249[var11];
             }
             for (int var15 = var13; ~var15 > -129; ++var15) {
                 int var16 = class190.field3669[var10++];
                 --var11;
-                int var17 = class88.field1640.field3249[var11];
+                int var17 = JString.field1640.field3249[var11];
                 if (var16 != 0) {
                     int var19 = -var16 + 256;
                     int var20 = class157.field3036[var16];
@@ -323,7 +323,7 @@ public class class186 extends class23 {
                     CollisionMap.field1676.field3249[var9++] = var17;
                 }
             }
-            var11 += class88.field1640.field3656 - -128;
+            var11 += JString.field1640.field3656 - -128;
             var10 += var13;
         }
         if (arg0) {

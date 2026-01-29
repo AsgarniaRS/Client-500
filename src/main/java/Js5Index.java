@@ -11,13 +11,13 @@ public abstract class Js5Index {
     private boolean discardUnpacked;
 
     @OriginalMember(owner = "client!nb", name = "e", descriptor = "Li;")
-    public static class88 field2666 = class208.method1425(105, "hitmarks");
+    public static JString field2666 = class208.method1425(105, "hitmarks");
 
     @OriginalMember(owner = "client!nb", name = "g", descriptor = "Li;")
-    public static class88 field2668 = class208.method1425(105, "Speicher wird zugewiesen)3");
+    public static JString field2668 = class208.method1425(105, "Speicher wird zugewiesen)3");
 
     @OriginalMember(owner = "client!nb", name = "L", descriptor = "Li;")
-    public static class88 field2699 = class208.method1425(105, "Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3");
+    public static JString field2699 = class208.method1425(105, "Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3");
 
     @OriginalMember(owner = "client!nb", name = "V", descriptor = "I")
     public static int field2709 = 0;
@@ -222,7 +222,7 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(Li;I)Z")
-    public final boolean method946(class88 arg0, int arg1) {
+    public final boolean method946(JString arg0, int arg1) {
         field2687++;
         int var3 = this.method966(class228.field4283, (byte) -3);
         return arg1 == var3 ? this.method948(120, arg0, class228.field4283) : this.method948(124, class228.field4283, arg0);
@@ -357,9 +357,9 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(ILi;Li;)Z")
-    public final boolean method948(int arg0, class88 arg1, class88 arg2) {
-        class88 var4 = arg1.method639(123);
-        class88 var5 = arg2.method639(126);
+    public final boolean method948(int arg0, JString arg1, JString arg2) {
+        JString var4 = arg1.toLowerCase();
+        JString var5 = arg2.toLowerCase();
         field2673++;
         int var6 = this.groupNameHashTable.get(var4.method605((byte) -62), 3598);
         if (!this.method970(121, var6)) {
@@ -576,10 +576,10 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(JII[I)Li;")
-    public static final class88 method954(long arg0, int arg1, int arg2, int[] arg3) {
+    public static final JString method954(long arg0, int arg1, int arg2, int[] arg3) {
         field2704++;
         if (class247.field4529 != null) {
-            class88 var5 = class247.field4529.method1128(arg3, arg2, arg0, 0);
+            JString var5 = class247.field4529.method1128(arg3, arg2, arg0, 0);
             if (var5 != null) {
                 return var5;
             }
@@ -604,10 +604,10 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(ILi;)Z")
-    public final boolean method956(int arg0, class88 arg1) {
+    public final boolean method956(int arg0, JString arg1) {
         int var3 = -49 % ((-arg0 - 2) / 56);
         field2691++;
-        class88 var4 = arg1.method639(126);
+        JString var4 = arg1.toLowerCase();
         int var5 = this.groupNameHashTable.get(var4.method605((byte) -31), 3598);
         return this.method972(var5, (byte) -68);
     }
@@ -657,29 +657,29 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(Li;B)I")
-    public final int method959(class88 arg0, byte arg1) {
-        class88 var3 = arg0.method639(122);
+    public final int method959(JString arg0, byte arg1) {
+        JString var3 = arg0.toLowerCase();
         field2682++;
         int var4 = this.groupNameHashTable.get(var3.method605((byte) -31), arg1 ^ 0xE7A);
         return arg1 == 116 ? this.method116((byte) 17, var4) : 13;
     }
 
     @OriginalMember(owner = "client!nb", name = "f", descriptor = "(II)Li;")
-    public static final class88 method960(int arg0, int arg1) {
-        class88 var2 = class170.method1214(arg1, -92);
+    public static final JString method960(int arg0, int arg1) {
+        JString var2 = class170.method1214(arg1, -92);
         if (arg0 != 0) {
             field2668 = null;
         }
-        for (int var3 = var2.method604((byte) -53) - 3; var3 > 0; var3 -= 3) {
-            var2 = class166.method1142(new class88[] { var2.method623(0, (byte) -57, var3), class53.field979, var2.method635(var3, -383902332) }, -3);
+        for (int var3 = var2.length() - 3; var3 > 0; var3 -= 3) {
+            var2 = class166.method1142(new JString[] { var2.method623(0, (byte) -57, var3), class53.field979, var2.substring(var3) }, -3);
         }
         field2712++;
-        if (var2.method604((byte) -53) > 9) {
-            return class166.method1142(new class88[] { LocType.field2830, var2.method623(0, (byte) -127, var2.method604((byte) -53) - 8), class132.field2471, class68.field1238, var2, class209.field3984 }, -3);
-        } else if (var2.method604((byte) -53) > 6) {
-            return class166.method1142(new class88[] { class36.field644, var2.method623(0, (byte) -27, var2.method604((byte) -53) - 4), class159.field3073, class68.field1238, var2, class209.field3984 }, -3);
+        if (var2.length() > 9) {
+            return class166.method1142(new JString[] { LocType.field2830, var2.method623(0, (byte) -127, var2.length() - 8), class132.field2471, class68.field1238, var2, class209.field3984 }, -3);
+        } else if (var2.length() > 6) {
+            return class166.method1142(new JString[] { class36.field644, var2.method623(0, (byte) -27, var2.length() - 4), class159.field3073, class68.field1238, var2, class209.field3984 }, -3);
         } else {
-            return class166.method1142(new class88[] { class77.field1370, var2, class120.field2201 }, -3);
+            return class166.method1142(new JString[] { class77.field1370, var2, class120.field2201 }, -3);
         }
     }
 
@@ -699,10 +699,10 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "b", descriptor = "(ILi;Li;)[B")
-    public final byte[] method962(int arg0, class88 arg1, class88 arg2) {
+    public final byte[] method962(int arg0, JString arg1, JString arg2) {
         field2713++;
-        class88 var4 = arg1.method639(arg0 + 121);
-        class88 var5 = arg2.method639(125);
+        JString var4 = arg1.toLowerCase();
+        JString var5 = arg2.toLowerCase();
         int var6 = this.groupNameHashTable.get(var4.method605((byte) -37), 3598);
         if (!this.method970(120, var6)) {
             return null;
@@ -774,12 +774,12 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "b", descriptor = "(Li;B)I")
-    public final int method966(class88 arg0, byte arg1) {
+    public final int method966(JString arg0, byte arg1) {
         field2667++;
         if (arg1 != -3) {
             field2715 = null;
         }
-        class88 var3 = arg0.method639(arg1 ^ 0xFFFFFF81);
+        JString var3 = arg0.toLowerCase();
         int var4 = this.groupNameHashTable.get(var3.method605((byte) -83), arg1 + 3601);
         return this.method970(121, var4) ? var4 : -1;
     }
@@ -797,11 +797,11 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(Li;II)I")
-    public final int method968(class88 arg0, int arg1, int arg2) {
+    public final int method968(JString arg0, int arg1, int arg2) {
         if (!this.method970(126, arg1)) {
             return -1;
         }
-        class88 var4 = arg0.method639(121);
+        JString var4 = arg0.toLowerCase();
         int var5 = this.fileNameHashTables[arg1].get(var4.method605((byte) -35), 3598);
         if (this.method945(var5, -94, arg1)) {
             if (arg2 < 53) {
@@ -940,8 +940,8 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "b", descriptor = "(Li;I)V")
-    public final void method971(class88 arg0, int arg1) {
-        class88 var3 = arg0.method639(arg1 ^ 0xFFFFFF84);
+    public final void method971(JString arg0, int arg1) {
+        JString var3 = arg0.toLowerCase();
         if (arg1 != -1) {
             method965(115, -108, -112, null, 106, (byte) -79, null, true);
         }

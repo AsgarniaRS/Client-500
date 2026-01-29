@@ -53,22 +53,22 @@ public class class77 extends class145 {
     private SeqType field1367;
 
     @OriginalMember(owner = "client!h", name = "r", descriptor = "Li;")
-    public static class88 field1370 = class208.method1425(105, " <col=ffff00>");
+    public static JString field1370 = class208.method1425(105, " <col=ffff00>");
 
     @OriginalMember(owner = "client!h", name = "K", descriptor = "I")
     public static int ioErrorCount = 0;
 
     @OriginalMember(owner = "client!h", name = "G", descriptor = "Li;")
-    public static class88 field1385 = class208.method1425(105, "k");
+    public static JString field1385 = class208.method1425(105, "k");
 
     @OriginalMember(owner = "client!h", name = "y", descriptor = "Li;")
-    public static class88 field1377 = class208.method1425(105, "Ladevorgang )2 bitte warten Sie)3");
+    public static JString field1377 = class208.method1425(105, "Ladevorgang )2 bitte warten Sie)3");
 
     @OriginalMember(owner = "client!h", name = "S", descriptor = "[Lea;")
     public static Packet[] field1397 = new Packet[2048];
 
     @OriginalMember(owner = "client!h", name = "Y", descriptor = "Li;")
-    public static class88 field1403 = class208.method1425(105, "blinken3:");
+    public static JString field1403 = class208.method1425(105, "blinken3:");
 
     @OriginalMember(owner = "client!h", name = "F", descriptor = "I")
     public static int field1384 = 0;

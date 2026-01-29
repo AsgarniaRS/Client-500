@@ -8,19 +8,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class143 extends Linkable {
 
     @OriginalMember(owner = "client!na", name = "I", descriptor = "Li;")
-    private static class88 field2643 = class208.method1425(105, "skill)2");
+    private static JString SKILL = class208.method1425(105, "skill)2");
 
     @OriginalMember(owner = "client!na", name = "O", descriptor = "Li;")
-    private static class88 field2648 = class208.method1425(105, "Please wait)3)3)3");
+    private static JString PLEASEWAIT = class208.method1425(105, "Please wait)3)3)3");
 
     @OriginalMember(owner = "client!na", name = "S", descriptor = "Li;")
-    public static class88 field2652 = field2648;
+    public static JString field2652 = PLEASEWAIT;
 
     @OriginalMember(owner = "client!na", name = "K", descriptor = "[I")
     public static int[] field2644 = new int[32];
 
     @OriginalMember(owner = "client!na", name = "E", descriptor = "Li;")
-    public static class88 field2639 = field2643;
+    public static JString field2639 = SKILL;
 
     @OriginalMember(owner = "client!na", name = "U", descriptor = "I")
     public static int field2654 = 1;
@@ -29,10 +29,10 @@ public class class143 extends Linkable {
     public static int field2659 = 0;
 
     @OriginalMember(owner = "client!na", name = "bb", descriptor = "Li;")
-    private static class88 field2661 = class208.method1425(105, "Loaded sprites");
+    private static JString field2661 = class208.method1425(105, "Loaded sprites");
 
     @OriginalMember(owner = "client!na", name = "A", descriptor = "Li;")
-    public static class88 field2635 = field2661;
+    public static JString field2635 = field2661;
 
     @OriginalMember(owner = "client!na", name = "y", descriptor = "B")
     public static byte field2633;
@@ -112,7 +112,7 @@ public class class143 extends Linkable {
     @OriginalMember(owner = "client!na", name = "b", descriptor = "(Z)V")
     public static void method934(boolean arg0) {
         field2645 = null;
-        field2643 = null;
+        SKILL = null;
         field2644 = null;
         field2656 = null;
         field2635 = null;
@@ -120,7 +120,7 @@ public class class143 extends Linkable {
         if (arg0) {
             field2661 = null;
             field2639 = null;
-            field2648 = null;
+            PLEASEWAIT = null;
         }
     }
 
@@ -250,7 +250,7 @@ public class class143 extends Linkable {
                                     if (class247.field4513[82] && Linkable.field1208 > 0) {
                                         int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / GZip.field1110) - class157.field3035;
                                         int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / GZip.field1110) + class126.field2332 + class16.field239;
-                                        class88 var30 = class166.method1142(new class88[] { class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79) }, -3);
+                                        JString var30 = class166.method1142(new JString[] { class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79) }, -3);
                                         var30.method610(-5446);
                                         class97.method684(var30, arg2 - 29);
                                         class29.method174(-88);

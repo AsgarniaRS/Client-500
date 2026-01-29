@@ -11,13 +11,13 @@ public class class242 extends class136 {
     public static int[] field4481 = new int[128];
 
     @OriginalMember(owner = "client!wc", name = "N", descriptor = "Li;")
-    public static class88 field4483 = class208.method1425(105, "Fehler beim Laden Ihres Spielcharakters)3");
+    public static JString field4483 = class208.method1425(105, "Fehler beim Laden Ihres Spielcharakters)3");
 
     @OriginalMember(owner = "client!wc", name = "O", descriptor = "Li;")
-    private static class88 field4484 = class208.method1425(105, "Loading )2 please wait)3");
+    private static JString field4484 = class208.method1425(105, "Loading )2 please wait)3");
 
     @OriginalMember(owner = "client!wc", name = "K", descriptor = "Li;")
-    public static class88 field4480 = field4484;
+    public static JString field4480 = field4484;
 
     @OriginalMember(owner = "client!wc", name = "G", descriptor = "I")
     public static int field4477;

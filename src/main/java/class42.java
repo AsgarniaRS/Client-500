@@ -20,19 +20,19 @@ public class class42 implements Runnable {
     public int[] field720 = new int[500];
 
     @OriginalMember(owner = "client!dh", name = "d", descriptor = "Li;")
-    private static class88 field712 = class208.method1425(105, "Username: ");
+    private static JString field712 = class208.method1425(105, "Username: ");
 
     @OriginalMember(owner = "client!dh", name = "e", descriptor = "Li;")
-    public static class88 field713 = field712;
+    public static JString field713 = field712;
 
     @OriginalMember(owner = "client!dh", name = "b", descriptor = "Li;")
-    public static class88 field710 = class208.method1425(105, "Null");
+    public static JString field710 = class208.method1425(105, "Null");
 
     @OriginalMember(owner = "client!dh", name = "f", descriptor = "Lwi;")
     public static class248 field714 = new class248();
 
     @OriginalMember(owner = "client!dh", name = "m", descriptor = "Li;")
-    public static class88 field721 = class208.method1425(105, "Wordpack geladen)3");
+    public static JString field721 = class208.method1425(105, "Wordpack geladen)3");
 
     @OriginalMember(owner = "client!dh", name = "a", descriptor = "I")
     public static int field709;

@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class152 extends class23 {
 
     @OriginalMember(owner = "client!o", name = "T", descriptor = "Li;")
-    public static class88 field2947 = class208.method1425(105, "Anmelde)2Limit -Uberschritten)3");
+    public static JString field2947 = class208.method1425(105, "Anmelde)2Limit -Uberschritten)3");
 
     @OriginalMember(owner = "client!o", name = "W", descriptor = "[[I")
     public static int[][] field2950 = new int[104][104];
 
     @OriginalMember(owner = "client!o", name = "S", descriptor = "Li;")
-    private static class88 field2946 = class208.method1425(105, "button near the top of that page)3");
+    private static JString field2946 = class208.method1425(105, "button near the top of that page)3");
 
     @OriginalMember(owner = "client!o", name = "R", descriptor = "Li;")
-    public static class88 field2945 = field2946;
+    public static JString field2945 = field2946;
 
     @OriginalMember(owner = "client!o", name = "Y", descriptor = "Li;")
-    public static class88 field2952 = class208.method1425(105, "mem=");
+    public static JString field2952 = class208.method1425(105, "mem=");
 
     @OriginalMember(owner = "client!o", name = "Q", descriptor = "I")
     public static int field2944;
@@ -32,10 +32,10 @@ public class class152 extends class23 {
     public static int field2951;
 
     @OriginalMember(owner = "client!o", name = "a", descriptor = "(II[Li;I[S)V")
-    public static final void method1039(int arg0, int arg1, class88[] arg2, int arg3, short[] arg4) {
+    public static final void method1039(int arg0, int arg1, JString[] arg2, int arg3, short[] arg4) {
         if (arg1 < arg3) {
             int var5 = (arg1 - -arg3) / 2;
-            class88 var6 = arg2[var5];
+            JString var6 = arg2[var5];
             arg2[var5] = arg2[arg3];
             int var7 = arg1;
             arg2[arg3] = var6;
@@ -44,7 +44,7 @@ public class class152 extends class23 {
             arg4[arg3] = var8;
             for (int var9 = arg1; arg3 > var9; ++var9) {
                 if (var6 == null || arg2[var9] != null && ~arg2[var9].method625(true, var6) > ~(1 & var9)) {
-                    class88 var10 = arg2[var9];
+                    JString var10 = arg2[var9];
                     arg2[var9] = arg2[var7];
                     arg2[var7] = var10;
                     short var11 = arg4[var9];

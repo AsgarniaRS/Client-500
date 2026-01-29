@@ -8,10 +8,10 @@ public class class153 extends Linkable {
     public byte[] field2958;
 
     @OriginalMember(owner = "client!oa", name = "v", descriptor = "Li;")
-    private static class88 field2955 = class208.method1425(105, "To play on this world move to a free area first)3");
+    private static JString field2955 = class208.method1425(105, "To play on this world move to a free area first)3");
 
     @OriginalMember(owner = "client!oa", name = "t", descriptor = "Li;")
-    public static class88 field2953 = field2955;
+    public static JString field2953 = field2955;
 
     @OriginalMember(owner = "client!oa", name = "A", descriptor = "Lfc;")
     public static GZip gzip = new GZip();
@@ -41,7 +41,7 @@ public class class153 extends Linkable {
     public static Js5Index field2957;
 
     @OriginalMember(owner = "client!oa", name = "F", descriptor = "[Li;")
-    public static class88[] field2965;
+    public static JString[] field2965;
 
     @OriginalMember(owner = "client!oa", name = "b", descriptor = "(I)V")
     public static void method1043(int arg0) {

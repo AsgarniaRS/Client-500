@@ -58,7 +58,7 @@ public class class111 extends class145 {
     }
 
     @OriginalMember(owner = "client!kb", name = "a", descriptor = "(Li;Z)V")
-    public static final void method766(class88 arg0, boolean arg1) {
+    public static final void method766(JString arg0, boolean arg1) {
         field2028++;
         class20.field319 = arg0;
         if (!arg1) {
@@ -68,7 +68,7 @@ public class class111 extends class145 {
     }
 
     @OriginalMember(owner = "client!kb", name = "a", descriptor = "(ILjava/lang/String;)Li;")
-    public static final class88 method767(int arg0, String arg1) {
+    public static final JString method767(int arg0, String arg1) {
         field2030++;
         byte[] var2;
         try {
@@ -76,7 +76,7 @@ public class class111 extends class145 {
         } catch (UnsupportedEncodingException var5) {
             var2 = arg1.getBytes();
         }
-        class88 var3 = new class88();
+        JString var3 = new JString();
         var3.field1660 = 0;
         var3.field1643 = var2;
         for (int var4 = 0; var4 < var2.length; var4++) {

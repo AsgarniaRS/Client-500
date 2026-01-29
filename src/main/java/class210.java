@@ -8,16 +8,16 @@ public class class210 extends class136 {
     public static int field3992 = 0;
 
     @OriginalMember(owner = "client!tc", name = "D", descriptor = "Li;")
-    public static class88 field3985 = class208.method1425(105, "http:)4)4www)3runescape)3com)4l=");
+    public static JString field3985 = class208.method1425(105, "http:)4)4www)3runescape)3com)4l=");
 
     @OriginalMember(owner = "client!tc", name = "J", descriptor = "Lid;")
     public static class92 field3991 = new class92(100);
 
     @OriginalMember(owner = "client!tc", name = "M", descriptor = "Li;")
-    private static class88 field3994 = class208.method1425(105, "Please subscribe)1 or use a different world)3");
+    private static JString field3994 = class208.method1425(105, "Please subscribe)1 or use a different world)3");
 
     @OriginalMember(owner = "client!tc", name = "L", descriptor = "Li;")
-    public static class88 field3993 = field3994;
+    public static JString field3993 = field3994;
 
     @OriginalMember(owner = "client!tc", name = "F", descriptor = "I")
     public static int field3987;

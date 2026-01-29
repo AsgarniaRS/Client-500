@@ -39,31 +39,31 @@ public class SeqType extends class136 {
     public static short[] field1970 = new short[256];
 
     @OriginalMember(owner = "client!k", name = "F", descriptor = "Li;")
-    private static class88 field1963 = class208.method1425(105, "as it was used to break our rules)3");
+    private static JString field1963 = class208.method1425(105, "as it was used to break our rules)3");
 
     @OriginalMember(owner = "client!k", name = "S", descriptor = "Li;")
-    public static class88 field1975 = class208.method1425(105, " x ");
+    public static JString field1975 = class208.method1425(105, " x ");
 
     @OriginalMember(owner = "client!k", name = "gb", descriptor = "Li;")
-    private static class88 field1989 = class208.method1425(105, "Please remove ");
+    private static JString field1989 = class208.method1425(105, "Please remove ");
 
     @OriginalMember(owner = "client!k", name = "bb", descriptor = "Li;")
-    public static class88 field1984 = class208.method1425(105, "; Expires=");
+    public static JString field1984 = class208.method1425(105, "; Expires=");
 
     @OriginalMember(owner = "client!k", name = "Q", descriptor = "Li;")
-    public static class88 field1973 = field1989;
+    public static JString field1973 = field1989;
 
     @OriginalMember(owner = "client!k", name = "X", descriptor = "Li;")
-    public static class88 field1980 = field1989;
+    public static JString field1980 = field1989;
 
     @OriginalMember(owner = "client!k", name = "rb", descriptor = "Li;")
-    public static class88 field2000 = field1963;
+    public static JString field2000 = field1963;
 
     @OriginalMember(owner = "client!k", name = "nb", descriptor = "Li;")
-    public static class88 field1996 = class208.method1425(105, "settings");
+    public static JString field1996 = class208.method1425(105, "settings");
 
     @OriginalMember(owner = "client!k", name = "D", descriptor = "Li;")
-    public static class88 field1961 = class208.method1425(105, ":");
+    public static JString field1961 = class208.method1425(105, ":");
 
     @OriginalMember(owner = "client!k", name = "H", descriptor = "I")
     public static int field1965;

@@ -116,7 +116,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "b", descriptor = "(I)Li;")
-    public final class88 gjstr() {
+    public final JString gjstr() {
         int var2 = this.pos;
         while (this.data[this.pos++] != 0) {
         }
@@ -403,7 +403,7 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "s", descriptor = "(I)Li;")
-    public final class88 fastgstr() {
+    public final JString fastgstr() {
         if (this.data[this.pos] == 0) {
             this.pos++;
             return null;
@@ -507,8 +507,8 @@ public class Packet extends Linkable {
     }
 
     @OriginalMember(owner = "client!ea", name = "a", descriptor = "(Li;B)V")
-    public final void pjstr(class88 arg0, byte arg1) {
-        this.pos += arg0.method612(0, arg0.method604((byte) -53), arg1 ^ 0xFFFFC7B2, this.pos, this.data);
+    public final void pjstr(JString arg0, byte arg1) {
+        this.pos += arg0.method612(0, arg0.length(), arg1 ^ 0xFFFFC7B2, this.pos, this.data);
         this.data[this.pos++] = arg1;
     }
 
@@ -786,7 +786,7 @@ public class Packet extends Linkable {
     public static volatile int field807 = 0;
 
     @OriginalMember(owner = "client!ea", name = "C", descriptor = "Li;")
-    private static class88 field810 = class208.method1425(105, "Loading title screen )2 ");
+    private static JString field810 = class208.method1425(105, "Loading title screen )2 ");
 
     @OriginalMember(owner = "client!ea", name = "Z", descriptor = "I")
     public static volatile int field833 = 0;
@@ -795,7 +795,7 @@ public class Packet extends Linkable {
     public static int[] field845 = new int[200];
 
     @OriginalMember(owner = "client!ea", name = "J", descriptor = "Li;")
-    public static class88 field817 = field810;
+    public static JString field817 = field810;
 
     @OriginalMember(owner = "client!ea", name = "N", descriptor = "I")
     public static int field821 = 0;

@@ -11,16 +11,16 @@ public class class62 extends class23 {
     private int field1139 = 0;
 
     @OriginalMember(owner = "client!ff", name = "X", descriptor = "Li;")
-    public static class88 field1143 = class208.method1425(105, "logo");
+    public static JString field1143 = class208.method1425(105, "logo");
 
     @OriginalMember(owner = "client!ff", name = "U", descriptor = "Lwi;")
     public static class248 field1140 = new class248();
 
     @OriginalMember(owner = "client!ff", name = "Z", descriptor = "Li;")
-    public static class88 field1145 = class208.method1425(105, "Geben Sie Ihren Benutzernamen");
+    public static JString field1145 = class208.method1425(105, "Geben Sie Ihren Benutzernamen");
 
     @OriginalMember(owner = "client!ff", name = "Y", descriptor = "Li;")
-    private static class88 field1144 = class208.method1425(105, "and choose the (Wcreate account(W");
+    private static JString field1144 = class208.method1425(105, "and choose the (Wcreate account(W");
 
     @OriginalMember(owner = "client!ff", name = "bb", descriptor = "I")
     public static int field1147 = 4;
@@ -29,7 +29,7 @@ public class class62 extends class23 {
     public static int field1150 = 0;
 
     @OriginalMember(owner = "client!ff", name = "gb", descriptor = "Li;")
-    public static class88 field1152 = field1144;
+    public static JString field1152 = field1144;
 
     @OriginalMember(owner = "client!ff", name = "db", descriptor = "[[Lba;")
     public static class13[][] field1149 = new class13[field1147][500];

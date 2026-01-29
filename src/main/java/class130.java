@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class130 {
 
     @OriginalMember(owner = "client!lj", name = "i", descriptor = "[Li;")
-    public static class88[] field2438 = new class88[8];
+    public static JString[] field2438 = new JString[8];
 
     @OriginalMember(owner = "client!lj", name = "d", descriptor = "[B")
     public static byte[] field2433;
@@ -70,7 +70,7 @@ public abstract class class130 {
     }
 
     @OriginalMember(owner = "client!lj", name = "a", descriptor = "(BLi;)V")
-    public static final void method881(byte arg0, class88 arg1) {
+    public static final void method881(byte arg0, JString arg1) {
         field2432++;
         class244 var2 = class33.method207((byte) 55, arg1);
         if (var2 == null) {

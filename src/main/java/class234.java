@@ -86,7 +86,7 @@ public class class234 extends class23 {
     }
 
     @OriginalMember(owner = "client!ve", name = "a", descriptor = "(IJ)Li;")
-    public static final class88 method1558(int arg0, long arg1) {
+    public static final JString method1558(int arg0, long arg1) {
         ++field4383;
         if (arg0 < 3) {
             method1557(-127, 2, 1, -91);

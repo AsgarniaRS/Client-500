@@ -11,22 +11,22 @@ public class class24 {
     public static short[] field390 = new short[] { 30, 58, 29, 45, 37, 16, 1, 50 };
 
     @OriginalMember(owner = "client!ca", name = "j", descriptor = "Li;")
-    private static class88 field391 = class208.method1425(105, "Loaded interfaces");
+    private static JString field391 = class208.method1425(105, "Loaded interfaces");
 
     @OriginalMember(owner = "client!ca", name = "k", descriptor = "Li;")
-    public static class88 field392 = field391;
+    public static JString field392 = field391;
 
     @OriginalMember(owner = "client!ca", name = "g", descriptor = "Lid;")
     public static class92 field388 = new class92(16);
 
     @OriginalMember(owner = "client!ca", name = "l", descriptor = "Li;")
-    public static class88 field393 = class208.method1425(105, "nicht hergestellt werden)3");
+    public static JString field393 = class208.method1425(105, "nicht hergestellt werden)3");
 
     @OriginalMember(owner = "client!ca", name = "m", descriptor = "Li;")
-    private static class88 field394 = class208.method1425(105, "You can(Wt add yourself to your own friend list)3");
+    private static JString FRIENDCANTADDSELF = class208.method1425(105, "You can(Wt add yourself to your own friend list)3");
 
     @OriginalMember(owner = "client!ca", name = "n", descriptor = "Li;")
-    public static class88 field395 = field394;
+    public static JString field395 = FRIENDCANTADDSELF;
 
     @OriginalMember(owner = "client!ca", name = "a", descriptor = "I")
     public static int field382;
@@ -68,7 +68,7 @@ public class class24 {
 
     @OriginalMember(owner = "client!ca", name = "a", descriptor = "(B)V")
     public static void method132(byte arg0) {
-        field394 = null;
+        FRIENDCANTADDSELF = null;
         field388 = null;
         field395 = null;
         field391 = null;

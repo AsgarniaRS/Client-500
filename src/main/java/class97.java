@@ -14,10 +14,10 @@ public class class97 extends class136 {
     public static int[] field1791 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 
     @OriginalMember(owner = "client!ij", name = "I", descriptor = "Li;")
-    public static class88 field1786 = class208.method1425(105, "da dieser Computer gegen unsere ");
+    public static JString field1786 = class208.method1425(105, "da dieser Computer gegen unsere ");
 
     @OriginalMember(owner = "client!ij", name = "P", descriptor = "Li;")
-    public static class88 field1793 = class208.method1425(105, "60 Sekunden noch einmal)3)3)3");
+    public static JString field1793 = class208.method1425(105, "60 Sekunden noch einmal)3)3)3");
 
     @OriginalMember(owner = "client!ij", name = "G", descriptor = "B")
     public byte padding;
@@ -46,11 +46,11 @@ public class class97 extends class136 {
         if (class203.field3864 < 2 && class28.field475 == 0 && !class10.field145) {
             return;
         }
-        class88 var3;
+        JString var3;
         if (class28.field475 == 1 && class203.field3864 < 2) {
-            var3 = class166.method1142(new class88[] { class35.field608, class236.field4400, class78.field1414, class160.field3091 }, -3);
+            var3 = class166.method1142(new JString[] { class35.field608, class236.field4400, class78.field1414, class160.field3091 }, -3);
         } else if (class10.field145 && class203.field3864 < 2) {
-            var3 = class166.method1142(new class88[] { class201.field3837, class236.field4400, class28.field464, class160.field3091 }, -3);
+            var3 = class166.method1142(new JString[] { class201.field3837, class236.field4400, class28.field464, class160.field3091 }, -3);
         } else {
             var3 = class78.method525(class203.field3864 - 1, true);
         }
@@ -58,7 +58,7 @@ public class class97 extends class136 {
             method684(null, 103);
         }
         if (class203.field3864 > 2) {
-            var3 = class166.method1142(new class88[] { var3, EnumType.field891, class170.method1214(class203.field3864 - 2, 24), class103.field1864 }, arg0 ^ 0xFFFFC328);
+            var3 = class166.method1142(new JString[] { var3, EnumType.field891, class170.method1214(class203.field3864 - 2, 24), class103.field1864 }, arg0 ^ 0xFFFFC328);
         }
         int var4 = class54.field1011.method165(var3, arg2 + 4, arg1 + 15, 16777215, 0, class70.field1259, class27.field454);
         class126.method863(15, var4 + class54.field1011.method158(var3), arg1, arg2 + 4, (byte) -119);
@@ -107,7 +107,7 @@ public class class97 extends class136 {
     }
 
     @OriginalMember(owner = "client!ij", name = "a", descriptor = "(Li;I)V")
-    public static final void method684(class88 arg0, int arg1) {
+    public static final void method684(JString arg0, int arg1) {
         field1790++;
         if (arg1 <= Linkable.field1208) {
             if (arg0.method624(class78.field1421, (byte) -63)) {
@@ -116,7 +116,7 @@ public class class97 extends class136 {
                 }
                 Runtime var3 = Runtime.getRuntime();
                 int var4 = (int) ((var3.totalMemory() - var3.freeMemory()) / 1024L);
-                class223.method1501(class166.method1142(new class88[] { class152.field2952, class170.method1214(var4, -93), class110.field2009 }, -3), 12, 0, null);
+                class223.method1501(class166.method1142(new JString[] { class152.field2952, class170.method1214(var4, -93), class110.field2009 }, -3), 12, 0, null);
             }
             if (arg0.method624(class11.field156, (byte) -86)) {
                 class201.method1382(84);
@@ -138,15 +138,15 @@ public class class97 extends class136 {
                     }
                 }
             }
-            if (arg0.method619(-4205, class226.field4251) && class115.modewhere != 0) {
-                class159.method1075(arg0.method635(6, -383902332).method603(false), 30594);
+            if (arg0.startsWith(class226.field4251) && class115.modewhere != 0) {
+                class159.method1075(arg0.substring(6).method603(false), 30594);
             }
             if (arg0.method624(Js5Local.field344, (byte) 125) && class115.modewhere == 2) {
                 throw new RuntimeException();
             }
-            if (arg0.method619(-4205, class58.field1103)) {
-                class134.field2505 = arg0.method635(12, -383902332).method602(arg1 ^ 0xFFFFFF9B).method603(false);
-                class223.method1501(class166.method1142(new class88[] { class93.field1751, class170.method1214(class134.field2505, arg1 - 120) }, -3), 12, 0, null);
+            if (arg0.startsWith(class58.field1103)) {
+                class134.field2505 = arg0.substring(12).method602(arg1 ^ 0xFFFFFF9B).method603(false);
+                class223.method1501(class166.method1142(new JString[] { class93.field1751, class170.method1214(class134.field2505, arg1 - 120) }, -3), 12, 0, null);
             }
             if (arg0.method624(class106.field1932, (byte) -112)) {
                 class116.field2105 = true;
@@ -154,7 +154,7 @@ public class class97 extends class136 {
         }
         class131.field2450++;
         Isaac.out.method30(175);
-        Isaac.out.p1(arg0.method604((byte) -53) - 1);
-        Isaac.out.pjstr(arg0.method635(2, -383902332), (byte) 0);
+        Isaac.out.p1(arg0.length() - 1);
+        Isaac.out.pjstr(arg0.substring(2), (byte) 0);
     }
 }

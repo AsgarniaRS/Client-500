@@ -11,16 +11,16 @@ public class class150 {
     public static int field2914 = -1;
 
     @OriginalMember(owner = "client!nh", name = "j", descriptor = "Li;")
-    public static class88 field2920 = class208.method1425(105, "Cabbage");
+    public static JString field2920 = class208.method1425(105, "Cabbage");
 
     @OriginalMember(owner = "client!nh", name = "i", descriptor = "Li;")
-    private static class88 field2919 = class208.method1425(105, "Create a free account");
+    private static JString field2919 = class208.method1425(105, "Create a free account");
 
     @OriginalMember(owner = "client!nh", name = "a", descriptor = "Li;")
-    public static class88 field2911 = class208.method1425(105, "Ung-Ultiger Benutzername");
+    public static JString field2911 = class208.method1425(105, "Ung-Ultiger Benutzername");
 
     @OriginalMember(owner = "client!nh", name = "m", descriptor = "Li;")
-    public static class88 field2923 = field2919;
+    public static JString field2923 = field2919;
 
     @OriginalMember(owner = "client!nh", name = "g", descriptor = "D")
     public static double field2917;

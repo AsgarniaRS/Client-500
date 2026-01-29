@@ -14,10 +14,10 @@ public class class176 extends class136 {
     public static int field3537 = 0;
 
     @OriginalMember(owner = "client!qb", name = "J", descriptor = "Li;")
-    private static class88 field3540 = class208.method1425(105, "Members object");
+    private static JString field3540 = class208.method1425(105, "Members object");
 
     @OriginalMember(owner = "client!qb", name = "D", descriptor = "Li;")
-    public static class88 field3535 = field3540;
+    public static JString field3535 = field3540;
 
     @OriginalMember(owner = "client!qb", name = "S", descriptor = "Z")
     public static boolean field3548 = true;
@@ -256,7 +256,7 @@ public class class176 extends class136 {
             }
             if (class117.loginState == 8) {
                 class6.field71 = 0;
-                class34.method227((byte) 126, class166.method1142(new class88[] { class170.method1214(class237.field4426 / 60, 124), class127.field2372 }, -3), class110.field2017, class139.field2589);
+                class34.method227((byte) 126, class166.method1142(new JString[] { class170.method1214(class237.field4426 / 60, 124), class127.field2372 }, -3), class110.field2017, class139.field2589);
                 if (--class237.field4426 <= 0) {
                     class117.loginState = 0;
                 }
@@ -348,7 +348,7 @@ public class class176 extends class136 {
     }
 
     @OriginalMember(owner = "client!qb", name = "a", descriptor = "(Li;II)Li;")
-    public final class88 method1265(class88 arg0, int arg1, int arg2) {
+    public final JString method1265(JString arg0, int arg1, int arg2) {
         field3546++;
         if (arg1 <= 1) {
             field3545 = null;

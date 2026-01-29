@@ -24,13 +24,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
     public static short field1578 = 1;
 
     @OriginalMember(owner = "client!hj", name = "p", descriptor = "Li;")
-    public static class88 field1573 = class208.method1425(105, "W-=hlen Sie eine Welt");
+    public static JString field1573 = class208.method1425(105, "W-=hlen Sie eine Welt");
 
     @OriginalMember(owner = "client!hj", name = "G", descriptor = "Li;")
-    private static class88 field1590 = class208.method1425(105, "go back to the main RuneScape webpage");
+    private static JString field1590 = class208.method1425(105, "go back to the main RuneScape webpage");
 
     @OriginalMember(owner = "client!hj", name = "H", descriptor = "Li;")
-    public static class88 field1591 = field1590;
+    public static JString field1591 = field1590;
 
     @OriginalMember(owner = "client!hj", name = "r", descriptor = "I")
     private static int field1575 = 500;

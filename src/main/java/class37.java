@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class37 {
 
     @OriginalMember(owner = "client!dc", name = "c", descriptor = "Li;")
-    private static class88 field664 = class208.method1425(105, "Please enter your password)3");
+    private static JString field664 = class208.method1425(105, "Please enter your password)3");
 
     @OriginalMember(owner = "client!dc", name = "d", descriptor = "Li;")
-    public static class88 field665 = class208.method1425(105, ":clanreq:");
+    public static JString field665 = class208.method1425(105, ":clanreq:");
 
     @OriginalMember(owner = "client!dc", name = "a", descriptor = "Li;")
-    public static class88 field662 = field664;
+    public static JString field662 = field664;
 
     @OriginalMember(owner = "client!dc", name = "g", descriptor = "Li;")
-    private static class88 field668 = class208.method1425(105, "flash1:");
+    private static JString field668 = class208.method1425(105, "flash1:");
 
     @OriginalMember(owner = "client!dc", name = "h", descriptor = "Li;")
-    public static class88 field669 = field668;
+    public static JString field669 = field668;
 
     @OriginalMember(owner = "client!dc", name = "b", descriptor = "Li;")
-    public static class88 field663 = field668;
+    public static JString field663 = field668;
 
     @OriginalMember(owner = "client!dc", name = "e", descriptor = "I")
     public static int field666;

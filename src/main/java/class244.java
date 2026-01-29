@@ -11,7 +11,7 @@ public class class244 extends Linkable {
     public static int field4495 = 0;
 
     @OriginalMember(owner = "client!we", name = "E", descriptor = "Li;")
-    public static class88 field4496 = class208.method1425(105, "Hierhin gehen");
+    public static JString field4496 = class208.method1425(105, "Hierhin gehen");
 
     @OriginalMember(owner = "client!we", name = "F", descriptor = "[I")
     public static int[] field4497 = new int[32];
@@ -38,10 +38,10 @@ public class class244 extends Linkable {
     public static class61 field4490;
 
     @OriginalMember(owner = "client!we", name = "w", descriptor = "Li;")
-    public class88 field4488;
+    public JString field4488;
 
     @OriginalMember(owner = "client!we", name = "A", descriptor = "[Li;")
-    public class88[] field4492;
+    public JString[] field4492;
 
     @OriginalMember(owner = "client!we", name = "b", descriptor = "(I)V")
     public static final void method1600(int arg0) {

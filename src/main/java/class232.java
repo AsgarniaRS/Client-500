@@ -14,7 +14,7 @@ public class class232 extends class23 {
     private int field4353 = 0;
 
     @OriginalMember(owner = "client!vc", name = "V", descriptor = "Li;")
-    public static class88 field4352 = class208.method1425(105, "Um ein neues Spielkonto zu erstellen)1 m-Ussen Sie");
+    public static JString field4352 = class208.method1425(105, "Um ein neues Spielkonto zu erstellen)1 m-Ussen Sie");
 
     @OriginalMember(owner = "client!vc", name = "Y", descriptor = "I")
     public static volatile int field4355 = -1;
@@ -23,28 +23,28 @@ public class class232 extends class23 {
     public static int field4359 = 2;
 
     @OriginalMember(owner = "client!vc", name = "db", descriptor = "Li;")
-    private static class88 field4360 = class208.method1425(105, "Please contact customer support)3");
+    private static JString field4360 = class208.method1425(105, "Please contact customer support)3");
 
     @OriginalMember(owner = "client!vc", name = "T", descriptor = "Li;")
-    public static class88 field4350 = field4360;
+    public static JString field4350 = field4360;
 
     @OriginalMember(owner = "client!vc", name = "eb", descriptor = "Lwi;")
     public static class248 field4361 = new class248();
 
     @OriginalMember(owner = "client!vc", name = "gb", descriptor = "Li;")
-    private static class88 field4363 = class208.method1425(105, "purple:");
+    private static JString field4363 = class208.method1425(105, "purple:");
 
     @OriginalMember(owner = "client!vc", name = "fb", descriptor = "Li;")
-    private static class88 field4362 = class208.method1425(105, "Players");
+    private static JString field4362 = class208.method1425(105, "Players");
 
     @OriginalMember(owner = "client!vc", name = "ib", descriptor = "Li;")
-    public static class88 field4365 = field4363;
+    public static JString field4365 = field4363;
 
     @OriginalMember(owner = "client!vc", name = "jb", descriptor = "Li;")
-    public static class88 field4366 = field4363;
+    public static JString field4366 = field4363;
 
     @OriginalMember(owner = "client!vc", name = "hb", descriptor = "Li;")
-    public static class88 field4364 = field4362;
+    public static JString field4364 = field4362;
 
     @OriginalMember(owner = "client!vc", name = "R", descriptor = "I")
     public static int field4348;

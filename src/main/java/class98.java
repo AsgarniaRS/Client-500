@@ -11,7 +11,7 @@ public class class98 {
     public static int field1797 = 0;
 
     @OriginalMember(owner = "client!j", name = "e", descriptor = "Li;")
-    public static class88 field1798 = class208.method1425(105, "headicons_pk");
+    public static JString field1798 = class208.method1425(105, "headicons_pk");
 
     @OriginalMember(owner = "client!j", name = "c", descriptor = "I")
     public static int field1796;
@@ -56,7 +56,7 @@ public class class98 {
     }
 
     @OriginalMember(owner = "client!j", name = "a", descriptor = "(IILi;SJLi;I)V")
-    public static final void method687(int arg0, int arg1, class88 arg2, short arg3, long arg4, class88 arg5, int arg6) {
+    public static final void method687(int arg0, int arg1, JString arg2, short arg3, long arg4, JString arg5, int arg6) {
         field1796++;
         if (arg0 != 9746) {
             method686((byte) -103, 49, false, false, true);

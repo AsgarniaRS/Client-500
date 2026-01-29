@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class29 {
 
     @OriginalMember(owner = "client!cf", name = "a", descriptor = "Li;")
-    private static class88 field477 = class208.method1425(105, "Account locked as we suspect it has been stolen)3");
+    private static JString field477 = class208.method1425(105, "Account locked as we suspect it has been stolen)3");
 
     @OriginalMember(owner = "client!cf", name = "e", descriptor = "I")
     public static int field481 = 1;
@@ -15,31 +15,31 @@ public abstract class class29 {
     public static int field479 = 0;
 
     @OriginalMember(owner = "client!cf", name = "d", descriptor = "Li;")
-    public static class88 field480 = field477;
+    public static JString field480 = field477;
 
     @OriginalMember(owner = "client!cf", name = "o", descriptor = "Li;")
-    private static class88 field491 = class208.method1425(105, "yellow:");
+    private static JString CHATCOL_YELLOW = class208.method1425(105, "yellow:");
 
     @OriginalMember(owner = "client!cf", name = "k", descriptor = "Z")
     public static boolean field487 = false;
 
     @OriginalMember(owner = "client!cf", name = "n", descriptor = "Li;")
-    public static class88 field490 = class208.method1425(105, "gleiten:");
+    public static JString field490 = class208.method1425(105, "gleiten:");
 
     @OriginalMember(owner = "client!cf", name = "l", descriptor = "Li;")
-    public static class88 field488 = field491;
+    public static JString field488 = CHATCOL_YELLOW;
 
     @OriginalMember(owner = "client!cf", name = "i", descriptor = "Li;")
-    public static class88 field485 = field491;
+    public static JString field485 = CHATCOL_YELLOW;
 
     @OriginalMember(owner = "client!cf", name = "j", descriptor = "Li;")
-    private static class88 field486 = class208.method1425(105, "No response from server)3");
+    private static JString field486 = class208.method1425(105, "No response from server)3");
 
     @OriginalMember(owner = "client!cf", name = "b", descriptor = "Li;")
-    public static class88 field478 = field486;
+    public static JString field478 = field486;
 
     @OriginalMember(owner = "client!cf", name = "q", descriptor = "Li;")
-    public static class88 field493 = class208.method1425(105, "W-=hlen Sie eine Option");
+    public static JString field493 = class208.method1425(105, "W-=hlen Sie eine Option");
 
     @OriginalMember(owner = "client!cf", name = "g", descriptor = "I")
     public static int field483;
@@ -141,7 +141,7 @@ public abstract class class29 {
         field477 = null;
         field485 = null;
         field493 = null;
-        field491 = null;
+        CHATCOL_YELLOW = null;
         field490 = null;
         field480 = null;
         field486 = null;

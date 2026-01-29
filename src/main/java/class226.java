@@ -18,13 +18,13 @@ public class class226 extends class136 {
     public static int field4246 = 0;
 
     @OriginalMember(owner = "client!uh", name = "R", descriptor = "Li;")
-    private static class88 field4248 = class208.method1425(105, " from your ignore list first)3");
+    private static JString REMOVEIGNORE2 = class208.method1425(105, " from your ignore list first)3");
 
     @OriginalMember(owner = "client!uh", name = "Q", descriptor = "Li;")
-    public static class88 field4247 = field4248;
+    public static JString field4247 = REMOVEIGNORE2;
 
     @OriginalMember(owner = "client!uh", name = "U", descriptor = "Li;")
-    public static class88 field4251 = class208.method1425(105, "::fps ");
+    public static JString field4251 = class208.method1425(105, "::fps ");
 
     @OriginalMember(owner = "client!uh", name = "D", descriptor = "I")
     public int field4235;
@@ -109,14 +109,14 @@ public class class226 extends class136 {
 
     @OriginalMember(owner = "client!uh", name = "d", descriptor = "(I)V")
     public static void method1519(int arg0) {
-        field4248 = null;
+        REMOVEIGNORE2 = null;
         field4243 = null;
         field4251 = null;
         field4247 = null;
         field4250 = null;
         field4245 = null;
         if (arg0 != -32535) {
-            field4248 = null;
+            REMOVEIGNORE2 = null;
         }
     }
 

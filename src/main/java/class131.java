@@ -23,10 +23,10 @@ public class class131 {
     public int field2461;
 
     @OriginalMember(owner = "client!m", name = "d", descriptor = "Li;")
-    public static class88 field2448 = class208.method1425(105, "Lade Schrifts-=tze )2 ");
+    public static JString field2448 = class208.method1425(105, "Lade Schrifts-=tze )2 ");
 
     @OriginalMember(owner = "client!m", name = "j", descriptor = "Li;")
-    public static class88 field2454 = class208.method1425(105, "Update)2Liste geladen)3");
+    public static JString field2454 = class208.method1425(105, "Update)2Liste geladen)3");
 
     @OriginalMember(owner = "client!m", name = "e", descriptor = "Lid;")
     public static class92 field2449 = new class92(64);

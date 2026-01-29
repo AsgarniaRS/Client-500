@@ -8,10 +8,10 @@ public class class206 {
     public static class92 field3922 = new class92(100);
 
     @OriginalMember(owner = "client!sj", name = "d", descriptor = "Li;")
-    public static class88 field3923 = class208.method1425(105, "Mem:");
+    public static JString field3923 = class208.method1425(105, "Mem:");
 
     @OriginalMember(owner = "client!sj", name = "e", descriptor = "Li;")
-    public static class88 field3924 = class208.method1425(105, ")3runescape)3com");
+    public static JString field3924 = class208.method1425(105, ")3runescape)3com");
 
     @OriginalMember(owner = "client!sj", name = "f", descriptor = "I")
     public static int field3925 = 0;

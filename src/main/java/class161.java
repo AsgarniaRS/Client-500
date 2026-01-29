@@ -27,13 +27,13 @@ public class class161 implements Runnable {
     public static int field3113 = 1;
 
     @OriginalMember(owner = "client!oi", name = "j", descriptor = "Li;")
-    public static class88 field3110 = class208.method1425(105, "gelb:");
+    public static JString field3110 = class208.method1425(105, "gelb:");
 
     @OriginalMember(owner = "client!oi", name = "l", descriptor = "Li;")
-    private static class88 field3112 = class208.method1425(105, "Service unavailable)3");
+    private static JString field3112 = class208.method1425(105, "Service unavailable)3");
 
     @OriginalMember(owner = "client!oi", name = "n", descriptor = "Li;")
-    public static class88 field3114 = field3112;
+    public static JString field3114 = field3112;
 
     @OriginalMember(owner = "client!oi", name = "b", descriptor = "I")
     public static int field3102;
@@ -90,7 +90,7 @@ public class class161 implements Runnable {
     }
 
     @OriginalMember(owner = "client!oi", name = "a", descriptor = "(Li;Lq;I)Li;")
-    public static final class88 method1086(class88 arg0, class174 arg1, int arg2) {
+    public static final JString method1086(JString arg0, class174 arg1, int arg2) {
         if (arg2 != 64) {
             field3103 = -72;
         }
@@ -115,7 +115,7 @@ public class class161 implements Runnable {
                                                         if (var8 == -1) {
                                                             break label62;
                                                         }
-                                                        class88 var9 = class174.field3455;
+                                                        JString var9 = class174.field3455;
                                                         if (class49.field912 != null) {
                                                             var9 = class141.method928(-1, class49.field912.field3134);
                                                             try {
@@ -126,22 +126,22 @@ public class class161 implements Runnable {
                                                             } catch (UnsupportedEncodingException var11) {
                                                             }
                                                         }
-                                                        arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -73, var8), var9, arg0.method635(var8 + 4, arg2 + -383902396) }, -3);
+                                                        arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -73, var8), var9, arg0.substring(var8 + 4) }, -3);
                                                     }
                                                 }
-                                                arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -122, var7), class211.method1444(-114, class110.method763((byte) -125, 4, arg1)), arg0.method635(var7 + 2, -383902332) }, -3);
+                                                arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -122, var7), class211.method1444(-114, class110.method763((byte) -125, 4, arg1)), arg0.substring(var7 + 2) }, -3);
                                             }
                                         }
-                                        arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -106, var6), class211.method1444(arg2 ^ 0xFFFFFFEB, class110.method763((byte) -102, 3, arg1)), arg0.method635(var6 + 2, -383902332) }, -3);
+                                        arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -106, var6), class211.method1444(arg2 ^ 0xFFFFFFEB, class110.method763((byte) -102, 3, arg1)), arg0.substring(var6 + 2) }, -3);
                                     }
                                 }
-                                arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -59, var5), class211.method1444(-89, class110.method763((byte) -107, 2, arg1)), arg0.method635(var5 + 2, arg2 + -383902396) }, -3);
+                                arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -59, var5), class211.method1444(-89, class110.method763((byte) -107, 2, arg1)), arg0.substring(var5 + 2) }, -3);
                             }
                         }
-                        arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -7, var4), class211.method1444(arg2 ^ 0xFFFFFFF2, class110.method763((byte) -104, 1, arg1)), arg0.method635(var4 + 2, arg2 ^ 0xE91E1DC4) }, -3);
+                        arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -7, var4), class211.method1444(arg2 ^ 0xFFFFFFF2, class110.method763((byte) -104, 1, arg1)), arg0.substring(var4 + 2) }, -3);
                     }
                 }
-                arg0 = class166.method1142(new class88[] { arg0.method623(0, (byte) -71, var3), class211.method1444(-53, class110.method763((byte) -127, 0, arg1)), arg0.method635(var3 + 2, arg2 + -383902396) }, arg2 ^ 0xFFFFFFBD);
+                arg0 = class166.method1142(new JString[] { arg0.method623(0, (byte) -71, var3), class211.method1444(-53, class110.method763((byte) -127, 0, arg1)), arg0.substring(var3 + 2) }, arg2 ^ 0xFFFFFFBD);
             }
         }
         field3102++;

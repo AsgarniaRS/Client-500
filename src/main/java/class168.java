@@ -14,25 +14,25 @@ public class class168 extends Linkable {
     public static class24 field3238 = new class24(50);
 
     @OriginalMember(owner = "client!pe", name = "C", descriptor = "Li;")
-    public static class88 field3239 = class208.method1425(105, "document)3cookie=(R");
+    public static JString field3239 = class208.method1425(105, "document)3cookie=(R");
 
     @OriginalMember(owner = "client!pe", name = "D", descriptor = "[Li;")
-    public static class88[] field3240 = new class88[200];
+    public static JString[] field3240 = new JString[200];
 
     @OriginalMember(owner = "client!pe", name = "F", descriptor = "[I")
     public static int[] field3242 = new int[] { 1, -1, -1, 1 };
 
     @OriginalMember(owner = "client!pe", name = "E", descriptor = "Li;")
-    public static class88 field3241 = class208.method1425(105, "Startseite auf (WSpielkonto wiederherstellen(W)3");
+    public static JString field3241 = class208.method1425(105, "Startseite auf (WSpielkonto wiederherstellen(W)3");
 
     @OriginalMember(owner = "client!pe", name = "J", descriptor = "Li;")
-    private static class88 field3246 = class208.method1425(105, "<col=ff0000>");
+    private static JString field3246 = class208.method1425(105, "<col=ff0000>");
 
     @OriginalMember(owner = "client!pe", name = "G", descriptor = "Li;")
-    public static class88 field3243 = class208.method1425(105, "Spieler kann nicht gefunden werden: ");
+    public static JString field3243 = class208.method1425(105, "Spieler kann nicht gefunden werden: ");
 
     @OriginalMember(owner = "client!pe", name = "I", descriptor = "Li;")
-    public static class88 field3245 = class208.method1425(105, "Zugewiesener Speicher)3");
+    public static JString field3245 = class208.method1425(105, "Zugewiesener Speicher)3");
 
     @OriginalMember(owner = "client!pe", name = "K", descriptor = "[I")
     public static int[] field3247 = new int[2000];
@@ -148,7 +148,7 @@ public class class168 extends Linkable {
     }
 
     @OriginalMember(owner = "client!pe", name = "a", descriptor = "(III)Li;")
-    public static final class88 method1154(int arg0, int arg1, int arg2) {
+    public static final JString method1154(int arg0, int arg1, int arg2) {
         field3236++;
         if (arg2 != 14058) {
             field3243 = null;

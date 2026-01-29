@@ -8,22 +8,22 @@ public class class34 extends class23 {
     public static short field580 = 256;
 
     @OriginalMember(owner = "client!d", name = "U", descriptor = "Li;")
-    public static class88 field581 = class208.method1425(105, " )2> <col=ff9040>");
+    public static JString field581 = class208.method1425(105, " )2> <col=ff9040>");
 
     @OriginalMember(owner = "client!d", name = "W", descriptor = "Li;")
-    public static class88 field583 = class208.method1425(105, "::fpsoff");
+    public static JString field583 = class208.method1425(105, "::fpsoff");
 
     @OriginalMember(owner = "client!d", name = "V", descriptor = "I")
     public static int field582 = 0;
 
     @OriginalMember(owner = "client!d", name = "eb", descriptor = "Li;")
-    public static class88 field591 = class208.method1425(105, "(R");
+    public static JString field591 = class208.method1425(105, "(R");
 
     @OriginalMember(owner = "client!d", name = "gb", descriptor = "Li;")
-    private static class88 field593 = class208.method1425(105, "Discard");
+    private static JString field593 = class208.method1425(105, "Discard");
 
     @OriginalMember(owner = "client!d", name = "fb", descriptor = "Li;")
-    public static class88 field592 = field593;
+    public static JString field592 = field593;
 
     @OriginalMember(owner = "client!d", name = "hb", descriptor = "I")
     public static int field594 = -1;
@@ -78,7 +78,7 @@ public class class34 extends class23 {
             }
         }
         if (arg1 < 19) {
-            method227((byte) 106, (class88) null, (class88) null, (class88) null);
+            method227((byte) 106, (JString) null, (JString) null, (JString) null);
         }
         return var3;
     }
@@ -139,7 +139,7 @@ public class class34 extends class23 {
     }
 
     @OriginalMember(owner = "client!d", name = "a", descriptor = "(BLi;Li;Li;)V")
-    public static final void method227(byte arg0, class88 arg1, class88 arg2, class88 arg3) {
+    public static final void method227(byte arg0, JString arg1, JString arg2, JString arg3) {
         class209.field3983 = arg2;
         class209.field3982 = arg1;
         class209.field3981 = arg3;

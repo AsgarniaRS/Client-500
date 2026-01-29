@@ -11,10 +11,10 @@ public class class108 {
     public static int[] field1946 = new int[1000];
 
     @OriginalMember(owner = "client!jj", name = "o", descriptor = "Li;")
-    public static class88 field1949 = class208.method1425(105, "Bitte geben Sie Ihr Passwort ein)3");
+    public static JString field1949 = class208.method1425(105, "Bitte geben Sie Ihr Passwort ein)3");
 
     @OriginalMember(owner = "client!jj", name = "j", descriptor = "Li;")
-    public static class88 field1944 = class208.method1425(105, "blinken1:");
+    public static JString field1944 = class208.method1425(105, "blinken1:");
 
     @OriginalMember(owner = "client!jj", name = "s", descriptor = "Lob;")
     public static class154 prefetchQueue = new class154(4096);
@@ -26,7 +26,7 @@ public class class108 {
     public static class24 field1958 = new class24(4);
 
     @OriginalMember(owner = "client!jj", name = "y", descriptor = "Li;")
-    public static class88 field1959 = class208.method1425(105, "b12_full");
+    public static JString field1959 = class208.method1425(105, "b12_full");
 
     @OriginalMember(owner = "client!jj", name = "z", descriptor = "Z")
     public static boolean field1960 = false;

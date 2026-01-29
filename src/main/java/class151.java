@@ -20,19 +20,19 @@ public class class151 {
     public static int field2934 = -1;
 
     @OriginalMember(owner = "client!nj", name = "d", descriptor = "Li;")
-    private static class88 field2927 = class208.method1425(105, "Error connecting to server)3");
+    private static JString field2927 = class208.method1425(105, "Error connecting to server)3");
 
     @OriginalMember(owner = "client!nj", name = "e", descriptor = "Li;")
-    public static class88 field2928 = field2927;
+    public static JString field2928 = field2927;
 
     @OriginalMember(owner = "client!nj", name = "a", descriptor = "Lob;")
     public static class154 urgentQueue = new class154(32);
 
     @OriginalMember(owner = "client!nj", name = "t", descriptor = "Li;")
-    private static class88 field2943 = class208.method1425(105, "Loading sprites )2 ");
+    private static JString field2943 = class208.method1425(105, "Loading sprites )2 ");
 
     @OriginalMember(owner = "client!nj", name = "r", descriptor = "Li;")
-    public static class88 field2941 = field2943;
+    public static JString field2941 = field2943;
 
     @OriginalMember(owner = "client!nj", name = "q", descriptor = "I")
     public static int field2940 = 0;

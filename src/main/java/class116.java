@@ -25,7 +25,7 @@ public class class116 extends class23 {
     public static boolean field2105 = false;
 
     @OriginalMember(owner = "client!kg", name = "R", descriptor = "Li;")
-    public static class88 field2091 = class208.method1425(105, "titlebutton");
+    public static JString field2091 = class208.method1425(105, "titlebutton");
 
     @OriginalMember(owner = "client!kg", name = "S", descriptor = "I")
     public static int field2092;
@@ -238,13 +238,13 @@ public class class116 extends class23 {
                 if (class247.field4513[96] || class247.field4513[97] || class247.field4513[98] || class247.field4513[99]) {
                     class176.field3548 = true;
                 }
-                if (~class88.field1638 < -1) {
-                    --class88.field1638;
+                if (~JString.field1638 < -1) {
+                    --JString.field1638;
                 }
-                if (class176.field3548 && ~class88.field1638 >= -1) {
+                if (class176.field3548 && ~JString.field1638 >= -1) {
                     ++Linkable.field1203;
                     class176.field3548 = false;
-                    class88.field1638 = 20;
+                    JString.field1638 = 20;
                     Isaac.out.method30(173);
                     Isaac.out.p2_alt2(class207.field3932);
                     Isaac.out.p2(class64.field1173);
@@ -467,7 +467,7 @@ public class class116 extends class23 {
                                                                     class65.field1185 += class161.field3113;
                                                                 }
                                                                 if (~(1 & var44) == -2) {
-                                                                    Ground.field943 += class88.field1644;
+                                                                    Ground.field943 += JString.field1644;
                                                                 }
                                                             }
                                                             if (~class65.field1185 > 19) {
@@ -480,7 +480,7 @@ public class class116 extends class23 {
                                                                 class232.field4359 = 2;
                                                             }
                                                             if (Ground.field943 < -60) {
-                                                                class88.field1644 = 2;
+                                                                JString.field1644 = 2;
                                                             }
                                                             if (class98.field1797 < -40) {
                                                                 class29.field481 = 1;
@@ -492,7 +492,7 @@ public class class116 extends class23 {
                                                                 class29.field481 = -1;
                                                             }
                                                             if (~Ground.field943 < -61) {
-                                                                class88.field1644 = -2;
+                                                                JString.field1644 = -2;
                                                             }
                                                             if (class223.field4201 < -50) {
                                                                 class136.field2533 = 2;

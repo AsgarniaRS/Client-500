@@ -21,7 +21,7 @@ public class class79 extends class23 {
     private int field1430 = 0;
 
     @OriginalMember(owner = "client!hb", name = "S", descriptor = "Li;")
-    public static class88 field1426 = class208.method1425(105, "null");
+    public static JString field1426 = class208.method1425(105, "null");
 
     @OriginalMember(owner = "client!hb", name = "Q", descriptor = "I")
     public static int field1424;

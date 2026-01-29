@@ -14,19 +14,19 @@ public abstract class class138 extends class26 {
     public static int field2565 = 50;
 
     @OriginalMember(owner = "client!mg", name = "Bb", descriptor = "Li;")
-    private static class88 field2564 = class208.method1425(105, "green:");
+    private static JString CHATCOL_GREEN = class208.method1425(105, "green:");
 
     @OriginalMember(owner = "client!mg", name = "Jb", descriptor = "Li;")
-    private static class88 field2572 = class208.method1425(105, "Loaded textures");
+    private static JString field2572 = class208.method1425(105, "Loaded textures");
 
     @OriginalMember(owner = "client!mg", name = "Ib", descriptor = "Li;")
-    public static class88 field2571 = field2572;
+    public static JString field2571 = field2572;
 
     @OriginalMember(owner = "client!mg", name = "Ab", descriptor = "Li;")
-    public static class88 field2563 = field2564;
+    public static JString field2563 = CHATCOL_GREEN;
 
     @OriginalMember(owner = "client!mg", name = "Db", descriptor = "Li;")
-    public static class88 field2566 = field2564;
+    public static JString field2566 = CHATCOL_GREEN;
 
     @OriginalMember(owner = "client!mg", name = "yb", descriptor = "Lsf;")
     public static class202 field2561 = new class202();
@@ -130,7 +130,7 @@ public abstract class class138 extends class26 {
 
     @OriginalMember(owner = "client!mg", name = "b", descriptor = "(Z)V")
     public static final void method920(boolean arg0) {
-        class88.field1634 = -1;
+        JString.field1634 = -1;
         class114.field2063 = 0;
         class238.packetType = -1;
         Isaac.out.pos = 0;
@@ -169,7 +169,7 @@ public abstract class class138 extends class26 {
         field2572 = null;
         field2566 = null;
         field2561 = null;
-        field2564 = null;
+        CHATCOL_GREEN = null;
         field2563 = null;
         field2571 = null;
         if (arg0 != -1) {
@@ -195,12 +195,12 @@ public abstract class class138 extends class26 {
     }
 
     @OriginalMember(owner = "client!mg", name = "a", descriptor = "([Li;B)[Li;")
-    public static final class88[] method923(class88[] arg0, byte arg1) {
-        class88[] var2 = new class88[5];
+    public static final JString[] method923(JString[] arg0, byte arg1) {
+        JString[] var2 = new JString[5];
         for (int var3 = 0; var3 < 5; var3++) {
-            var2[var3] = class166.method1142(new class88[] { class170.method1214(var3, 92), class170.field3308 }, -3);
+            var2[var3] = class166.method1142(new JString[] { class170.method1214(var3, 92), class170.field3308 }, -3);
             if (arg0 != null && arg0[var3] != null) {
-                var2[var3] = class166.method1142(new class88[] { var2[var3], arg0[var3] }, -3);
+                var2[var3] = class166.method1142(new JString[] { var2[var3], arg0[var3] }, -3);
             }
         }
         int var4 = 35 % ((arg1 + 49) / 52);

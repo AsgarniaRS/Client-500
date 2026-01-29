@@ -29,19 +29,19 @@ public class class230 {
     private int[][][] field4308;
 
     @OriginalMember(owner = "client!va", name = "c", descriptor = "Li;")
-    private static class88 field4295 = class208.method1425(105, "Loading textures )2 ");
+    private static JString field4295 = class208.method1425(105, "Loading textures )2 ");
 
     @OriginalMember(owner = "client!va", name = "m", descriptor = "[B")
     public static byte[] field4305 = new byte[520];
 
     @OriginalMember(owner = "client!va", name = "e", descriptor = "Li;")
-    public static class88 field4297 = field4295;
+    public static JString field4297 = field4295;
 
     @OriginalMember(owner = "client!va", name = "l", descriptor = "Lca;")
     public static class24 field4304 = new class24(30);
 
     @OriginalMember(owner = "client!va", name = "u", descriptor = "Li;")
-    public static class88 field4313 = class208.method1425(105, "Diese Welt ist voll)3");
+    public static JString field4313 = class208.method1425(105, "Diese Welt ist voll)3");
 
     @OriginalMember(owner = "client!va", name = "v", descriptor = "Lae;")
     public static class6 in = new class6(5000);
@@ -50,16 +50,16 @@ public class class230 {
     public static int field4318 = 7759444;
 
     @OriginalMember(owner = "client!va", name = "y", descriptor = "Li;")
-    private static class88 field4317 = class208.method1425(105, "Please use a different world)3");
+    private static JString field4317 = class208.method1425(105, "Please use a different world)3");
 
     @OriginalMember(owner = "client!va", name = "A", descriptor = "Li;")
-    public static class88 field4319 = field4317;
+    public static JString field4319 = field4317;
 
     @OriginalMember(owner = "client!va", name = "C", descriptor = "I")
     public static int field4320 = 0;
 
     @OriginalMember(owner = "client!va", name = "D", descriptor = "Li;")
-    public static class88 field4321 = field4317;
+    public static JString field4321 = field4317;
 
     @OriginalMember(owner = "client!va", name = "b", descriptor = "I")
     public static int field4294;

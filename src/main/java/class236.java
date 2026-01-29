@@ -6,16 +6,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class236 extends class27 {
 
     @OriginalMember(owner = "client!vg", name = "s", descriptor = "Li;")
-    private static class88 field4405 = class208.method1425(105, "Invalid username or password)3");
+    private static JString field4405 = class208.method1425(105, "Invalid username or password)3");
 
     @OriginalMember(owner = "client!vg", name = "o", descriptor = "Li;")
-    public static class88 field4401 = field4405;
+    public static JString field4401 = field4405;
 
     @OriginalMember(owner = "client!vg", name = "t", descriptor = "Li;")
-    private static class88 field4406 = class208.method1425(105, " ");
+    private static JString field4406 = class208.method1425(105, " ");
 
     @OriginalMember(owner = "client!vg", name = "n", descriptor = "Li;")
-    public static class88 field4400 = field4406;
+    public static JString field4400 = field4406;
 
     @OriginalMember(owner = "client!vg", name = "r", descriptor = "Lid;")
     public static class92 field4404 = new class92(64);
@@ -111,7 +111,7 @@ public class class236 extends class27 {
         class230.in.pos = 0;
         class33.stream.read(0, class230.in.data, (byte) -93, class228.packetSize);
         class192.field3702 = 0;
-        class88.field1634 = Packet.field821;
+        JString.field1634 = Packet.field821;
         Packet.field821 = class101.field1843;
         class101.field1843 = class238.packetType;
         if (class238.packetType == 239) {
@@ -257,10 +257,10 @@ public class class236 extends class27 {
             class238.packetType = -1;
             return true;
         } else if (class238.packetType == 117) {
-            class88 var36 = class230.in.gjstr();
+            JString var36 = class230.in.gjstr();
             if (var36.method631(0, class156.field3011)) {
                 boolean var37 = false;
-                class88 var38 = var36.method623(0, (byte) -118, var36.method617(-76, SeqType.field1961));
+                JString var38 = var36.method623(0, (byte) -118, var36.method617(-76, SeqType.field1961));
                 long var39 = var38.method630(false);
                 for (int var41 = 0; var41 < Linkable.field1221; var41++) {
                     if (class95.field1765[var41] == var39) {
@@ -272,7 +272,7 @@ public class class236 extends class27 {
                     class223.method1501(class54.field1007, 12, 4, var38);
                 }
             } else if (var36.method631(0, class207.field3929)) {
-                class88 var65 = var36.method623(0, (byte) -53, var36.method617(110, SeqType.field1961));
+                JString var65 = var36.method623(0, (byte) -53, var36.method617(110, SeqType.field1961));
                 boolean var66 = false;
                 long var67 = var65.method630(!arg0);
                 for (int var69 = 0; var69 < Linkable.field1221; var69++) {
@@ -282,12 +282,12 @@ public class class236 extends class27 {
                     }
                 }
                 if (!var66 && Client.field563 == 0) {
-                    class88 var70 = var36.method623(var36.method617(-106, SeqType.field1961) + 1, (byte) -89, var36.method604((byte) -53) - 9);
+                    JString var70 = var36.method623(var36.method617(-106, SeqType.field1961) + 1, (byte) -89, var36.length() - 9);
                     class223.method1501(var70, 12, 8, var65);
                 }
             } else if (var36.method631(0, class86.field1556)) {
                 boolean var42 = false;
-                class88 var43 = var36.method623(0, (byte) -7, var36.method617(-60, SeqType.field1961));
+                JString var43 = var36.method623(0, (byte) -7, var36.method617(-60, SeqType.field1961));
                 long var44 = var43.method630(false);
                 for (int var46 = 0; var46 < Linkable.field1221; var46++) {
                     if (class95.field1765[var46] == var44) {
@@ -299,20 +299,20 @@ public class class236 extends class27 {
                     class223.method1501(class174.field3455, 12, 10, var43);
                 }
             } else if (var36.method631(0, class172.field3336)) {
-                class88 var64 = var36.method623(0, (byte) -92, var36.method617(-41, class172.field3336));
+                JString var64 = var36.method623(0, (byte) -92, var36.method617(-41, class172.field3336));
                 class223.method1501(var64, 12, 11, class174.field3455);
             } else if (var36.method631(0, class43.field731)) {
-                class88 var63 = var36.method623(0, (byte) -89, var36.method617(-63, class43.field731));
+                JString var63 = var36.method623(0, (byte) -89, var36.method617(-63, class43.field731));
                 if (Client.field563 == 0) {
                     class223.method1501(var63, 12, 12, class174.field3455);
                 }
             } else if (var36.method631(0, class128.field2402)) {
-                class88 var47 = var36.method623(0, (byte) -34, var36.method617(99, class128.field2402));
+                JString var47 = var36.method623(0, (byte) -34, var36.method617(99, class128.field2402));
                 if (Client.field563 == 0) {
                     class223.method1501(var47, 12, 13, class174.field3455);
                 }
             } else if (var36.method631(0, class157.field3027)) {
-                class88 var48 = var36.method623(0, (byte) -51, var36.method617(102, SeqType.field1961));
+                JString var48 = var36.method623(0, (byte) -51, var36.method617(102, SeqType.field1961));
                 long var49 = var48.method630(false);
                 boolean var51 = false;
                 for (int var52 = 0; var52 < Linkable.field1221; var52++) {
@@ -325,7 +325,7 @@ public class class236 extends class27 {
                     class223.method1501(class174.field3455, 12, 14, var48);
                 }
             } else if (var36.method631(0, class228.field4277)) {
-                class88 var53 = var36.method623(0, (byte) -118, var36.method617(-84, SeqType.field1961));
+                JString var53 = var36.method623(0, (byte) -118, var36.method617(-84, SeqType.field1961));
                 long var54 = var53.method630(false);
                 boolean var56 = false;
                 for (int var57 = 0; var57 < Linkable.field1221; var57++) {
@@ -338,7 +338,7 @@ public class class236 extends class27 {
                     class223.method1501(class174.field3455, 12, 15, var53);
                 }
             } else if (var36.method631(0, class37.field665)) {
-                class88 var58 = var36.method623(0, (byte) -25, var36.method617(97, SeqType.field1961));
+                JString var58 = var36.method623(0, (byte) -25, var36.method617(97, SeqType.field1961));
                 long var59 = var58.method630(!arg0);
                 boolean var61 = false;
                 for (int var62 = 0; var62 < Linkable.field1221; var62++) {
@@ -440,7 +440,7 @@ public class class236 extends class27 {
             return true;
         } else if (class238.packetType == 214) {
             int var84 = class230.in.g4_alt3();
-            class88 var85 = class230.in.gjstr();
+            JString var85 = class230.in.gjstr();
             class174 var86 = class239.method1581(-64, var84);
             if (!var85.method597(-113, var86.field3385)) {
                 var86.field3385 = var85;
@@ -468,18 +468,18 @@ public class class236 extends class27 {
                 long var92 = var87 & Long.MAX_VALUE;
                 boolean var94 = false;
                 int var95;
-                for (var95 = 0; EnumType.field885 > var95 && (class88.field1647[var95].nodeId != var92 || class88.field1647[var95].field1317 != var89); var95++) {
+                for (var95 = 0; EnumType.field885 > var95 && (JString.field1647[var95].nodeId != var92 || JString.field1647[var95].field1317 != var89); var95++) {
                 }
                 if (var95 < EnumType.field885) {
                     while (var95 < EnumType.field885 - 1) {
-                        class88.field1647[var95] = class88.field1647[var95 + 1];
+                        JString.field1647[var95] = JString.field1647[var95 + 1];
                         var95++;
                     }
                     EnumType.field885--;
-                    class88.field1647[EnumType.field885] = null;
+                    JString.field1647[EnumType.field885] = null;
                 }
             } else {
-                class88 var96 = class230.in.gjstr();
+                JString var96 = class230.in.gjstr();
                 class71 var97 = new class71();
                 var97.nodeId = var87;
                 var97.field1323 = class200.method1377(var97.nodeId, (byte) 75);
@@ -488,11 +488,11 @@ public class class236 extends class27 {
                 var97.field1315 = var91;
                 int var98;
                 for (var98 = EnumType.field885 - 1; var98 >= 0; var98--) {
-                    int var99 = class88.field1647[var98].field1323.method625(true, var97.field1323);
+                    int var99 = JString.field1647[var98].field1323.method625(true, var97.field1323);
                     if (var99 == 0) {
-                        class88.field1647[var98].field1317 = var89;
-                        class88.field1647[var98].field1315 = var91;
-                        class88.field1647[var98].field1321 = var96;
+                        JString.field1647[var98].field1317 = var89;
+                        JString.field1647[var98].field1315 = var91;
+                        JString.field1647[var98].field1321 = var96;
                         if (class36.field631 == var87) {
                             class143.field2633 = var91;
                         }
@@ -504,17 +504,17 @@ public class class236 extends class27 {
                         break;
                     }
                 }
-                if (class88.field1647.length <= EnumType.field885) {
+                if (JString.field1647.length <= EnumType.field885) {
                     class238.packetType = -1;
                     return true;
                 }
                 for (int var100 = EnumType.field885 - 1; var100 > var98; var100--) {
-                    class88.field1647[var100 + 1] = class88.field1647[var100];
+                    JString.field1647[var100 + 1] = JString.field1647[var100];
                 }
                 if (EnumType.field885 == 0) {
-                    class88.field1647 = new class71[100];
+                    JString.field1647 = new class71[100];
                 }
-                class88.field1647[var98 + 1] = var97;
+                JString.field1647[var98 + 1] = var97;
                 EnumType.field885++;
                 if (class36.field631 == var87) {
                     class143.field2633 = var91;
@@ -741,20 +741,20 @@ public class class236 extends class27 {
                 var153 = false;
                 var151 &= Long.MAX_VALUE;
             }
-            class88 var156 = class174.field3455;
+            JString var156 = class174.field3455;
             if (var154 > 0) {
                 var156 = class230.in.gjstr();
             }
-            class88 var157 = class200.method1377(var151, (byte) 104).method614((byte) 83);
+            JString var157 = class200.method1377(var151, (byte) 104).method614((byte) 83);
             for (int var158 = 0; var158 < Isaac.field2731; var158++) {
                 if (class115.field2088[var158] == var151) {
                     if (class160.field3094[var158] != var154) {
                         class160.field3094[var158] = var154;
                         if (var154 > 0) {
-                            class223.method1501(class166.method1142(new class88[] { var157, class171.field3323 }, -3), 12, 5, class174.field3455);
+                            class223.method1501(class166.method1142(new JString[] { var157, class171.field3323 }, -3), 12, 5, class174.field3455);
                         }
                         if (var154 == 0) {
-                            class223.method1501(class166.method1142(new class88[] { var157, class117.field2125 }, -3), 12, 5, class174.field3455);
+                            class223.method1501(class166.method1142(new JString[] { var157, class117.field2125 }, -3), 12, 5, class174.field3455);
                         }
                     }
                     var157 = null;
@@ -785,10 +785,10 @@ public class class236 extends class27 {
                         int var163 = class160.field3094[var162];
                         class160.field3094[var162] = class160.field3094[var162 + 1];
                         class160.field3094[var162 + 1] = var163;
-                        class88 var164 = class168.field3240[var162];
+                        JString var164 = class168.field3240[var162];
                         class168.field3240[var162] = class168.field3240[var162 + 1];
                         class168.field3240[var162 + 1] = var164;
-                        class88 var165 = class23.field370[var162];
+                        JString var165 = class23.field370[var162];
                         class23.field370[var162] = class23.field370[var162 + 1];
                         class23.field370[var162 + 1] = var165;
                         long var166 = class115.field2088[var162];
@@ -873,11 +873,11 @@ public class class236 extends class27 {
             if (!var189 && Client.field563 == 0) {
                 class167.field3205[class62.field1150] = var187;
                 class62.field1150 = (class62.field1150 + 1) % 100;
-                class88 var192 = class26.method162(class21.method103(class230.in, 114).method622(-29988));
+                JString var192 = class26.method162(class21.method103(class230.in, 114).method622(-29988));
                 if (var186 == 2 || var186 == 3) {
-                    class60.method428(class166.method1142(new class88[] { class28.field472, class200.method1377(var178, (byte) 96).method614((byte) 83) }, -3), 9, (byte) -78, var192, class200.method1377(var180, (byte) 70).method614((byte) 83));
+                    class60.method428(class166.method1142(new JString[] { class28.field472, class200.method1377(var178, (byte) 96).method614((byte) 83) }, -3), 9, (byte) -78, var192, class200.method1377(var180, (byte) 70).method614((byte) 83));
                 } else if (var186 == 1) {
-                    class60.method428(class166.method1142(new class88[] { class166.field3203, class200.method1377(var178, (byte) 90).method614((byte) 83) }, -3), 9, (byte) -74, var192, class200.method1377(var180, (byte) 62).method614((byte) 83));
+                    class60.method428(class166.method1142(new JString[] { class166.field3203, class200.method1377(var178, (byte) 90).method614((byte) 83) }, -3), 9, (byte) -74, var192, class200.method1377(var180, (byte) 62).method614((byte) 83));
                 } else {
                     class60.method428(class200.method1377(var178, (byte) 99).method614((byte) 83), 9, (byte) -126, var192, class200.method1377(var180, (byte) 79).method614((byte) 83));
                 }
@@ -931,11 +931,11 @@ public class class236 extends class27 {
             if (!var202 && Client.field563 == 0) {
                 class167.field3205[class62.field1150] = var200;
                 class62.field1150 = (class62.field1150 + 1) % 100;
-                class88 var205 = class26.method162(class21.method103(class230.in, 67).method622(-29988));
+                JString var205 = class26.method162(class21.method103(class230.in, 67).method622(-29988));
                 if (var199 == 2 || var199 == 3) {
-                    class223.method1501(var205, 12, 7, class166.method1142(new class88[] { class28.field472, class200.method1377(var193, (byte) 117).method614((byte) 83) }, -3));
+                    class223.method1501(var205, 12, 7, class166.method1142(new JString[] { class28.field472, class200.method1377(var193, (byte) 117).method614((byte) 83) }, -3));
                 } else if (var199 == 1) {
-                    class223.method1501(var205, 12, 7, class166.method1142(new class88[] { class166.field3203, class200.method1377(var193, (byte) 63).method614((byte) 83) }, -3));
+                    class223.method1501(var205, 12, 7, class166.method1142(new JString[] { class166.field3203, class200.method1377(var193, (byte) 63).method614((byte) 83) }, -3));
                 } else {
                     class223.method1501(var205, 12, 3, class200.method1377(var193, (byte) 110).method614((byte) 83));
                 }
@@ -988,7 +988,7 @@ public class class236 extends class27 {
         } else if (class238.packetType == 187) {
             long var215 = class230.in.method321(1054632416);
             int var217 = class230.in.g2();
-            class88 var218 = class168.method1152((byte) 62, var217).method1411(class230.in, 80);
+            JString var218 = class168.method1152((byte) 62, var217).method1411(class230.in, 80);
             class118.method803(var218, (byte) 28, var217, class200.method1377(var215, (byte) 65).method614((byte) 83), 19, null);
             class238.packetType = -1;
             return true;
@@ -1045,11 +1045,11 @@ public class class236 extends class27 {
             if (!var233 && Client.field563 == 0) {
                 class167.field3205[class62.field1150] = var231;
                 class62.field1150 = (class62.field1150 + 1) % 100;
-                class88 var236 = class168.method1152((byte) 62, var230).method1411(class230.in, 80);
+                JString var236 = class168.method1152((byte) 62, var230).method1411(class230.in, 80);
                 if (var229 == 2) {
-                    class118.method803(var236, (byte) 28, var230, class166.method1142(new class88[] { class28.field472, class200.method1377(var223, (byte) 108).method614((byte) 83) }, -3), 18, null);
+                    class118.method803(var236, (byte) 28, var230, class166.method1142(new JString[] { class28.field472, class200.method1377(var223, (byte) 108).method614((byte) 83) }, -3), 18, null);
                 } else if (var229 == 1) {
-                    class118.method803(var236, (byte) 28, var230, class166.method1142(new class88[] { class166.field3203, class200.method1377(var223, (byte) 86).method614((byte) 83) }, -3), 18, null);
+                    class118.method803(var236, (byte) 28, var230, class166.method1142(new JString[] { class166.field3203, class200.method1377(var223, (byte) 86).method614((byte) 83) }, -3), 18, null);
                 } else {
                     class118.method803(var236, (byte) 28, var230, class200.method1377(var223, (byte) 109).method614((byte) 83), 18, null);
                 }
@@ -1145,9 +1145,9 @@ public class class236 extends class27 {
             class238.packetType = -1;
             return true;
         } else if (class238.packetType == 53) {
-            class88 var255 = class230.in.gjstr();
-            Object[] var256 = new Object[var255.method604((byte) -53) + 1];
-            for (int var257 = var255.method604((byte) -53) - 1; var257 >= 0; var257--) {
+            JString var255 = class230.in.gjstr();
+            Object[] var256 = new Object[var255.length() + 1];
+            for (int var257 = var255.length() - 1; var257 >= 0; var257--) {
                 if (var255.method599(255, var257) == 115) {
                     var256[var257 + 1] = class230.in.gjstr();
                 } else {
@@ -1168,7 +1168,7 @@ public class class236 extends class27 {
                 class222.field4184 = null;
                 class225.field4221 = null;
                 class238.packetType = -1;
-                class88.field1647 = null;
+                JString.field1647 = null;
                 return true;
             }
             long var261 = class230.in.method321(1054632416);
@@ -1210,7 +1210,7 @@ public class class236 extends class27 {
                     break;
                 }
             }
-            class88.field1647 = var264;
+            JString.field1647 = var264;
             class238.packetType = -1;
             return true;
         } else if (class238.packetType == 129) {
@@ -1245,11 +1245,11 @@ public class class236 extends class27 {
             if (!var283 && Client.field563 == 0) {
                 class167.field3205[class62.field1150] = var279;
                 class62.field1150 = (class62.field1150 + 1) % 100;
-                class88 var286 = class168.method1152((byte) 62, var282).method1411(class230.in, 80);
+                JString var286 = class168.method1152((byte) 62, var282).method1411(class230.in, 80);
                 if (var281 == 2 || var281 == 3) {
-                    class118.method803(var286, (byte) 28, var282, class166.method1142(new class88[] { class28.field472, class200.method1377(var271, (byte) 114).method614((byte) 83) }, -3), 20, class200.method1377(var273, (byte) 116).method614((byte) 83));
+                    class118.method803(var286, (byte) 28, var282, class166.method1142(new JString[] { class28.field472, class200.method1377(var271, (byte) 114).method614((byte) 83) }, -3), 20, class200.method1377(var273, (byte) 116).method614((byte) 83));
                 } else if (var281 == 1) {
-                    class118.method803(var286, (byte) 28, var282, class166.method1142(new class88[] { class166.field3203, class200.method1377(var271, (byte) 83).method614((byte) 83) }, -3), 20, class200.method1377(var273, (byte) 112).method614((byte) 83));
+                    class118.method803(var286, (byte) 28, var282, class166.method1142(new JString[] { class166.field3203, class200.method1377(var271, (byte) 83).method614((byte) 83) }, -3), 20, class200.method1377(var273, (byte) 112).method614((byte) 83));
                 } else {
                     class118.method803(var286, (byte) 28, var282, class200.method1377(var271, (byte) 71).method614((byte) 83), 20, class200.method1377(var273, (byte) 67).method614((byte) 83));
                 }
@@ -1267,7 +1267,7 @@ public class class236 extends class27 {
             class238.packetType = -1;
             return true;
         } else if (class238.packetType == 233) {
-            class88 var287 = class230.in.gjstr();
+            JString var287 = class230.in.gjstr();
             int var288 = class230.in.g1();
             int var289 = class230.in.g1();
             if (var288 >= 1 && var288 <= 8) {
@@ -1518,7 +1518,7 @@ public class class236 extends class27 {
             return true;
         } else if (class238.packetType == 172) {
             long var331 = class230.in.method321(1054632416);
-            class88 var333 = class26.method162(class21.method103(class230.in, 64).method622(-29988));
+            JString var333 = class26.method162(class21.method103(class230.in, 64).method622(-29988));
             class223.method1501(var333, 12, 6, class200.method1377(var331, (byte) 124).method614((byte) 83));
             class238.packetType = -1;
             return true;
@@ -1532,7 +1532,7 @@ public class class236 extends class27 {
             class208.field3954 = Linkable.field1211;
             return true;
         } else {
-            class221.method1490((byte) 0, "T1 - " + class238.packetType + "," + Packet.field821 + "," + class88.field1634 + " - " + class228.packetSize, null);
+            class221.method1490((byte) 0, "T1 - " + class238.packetType + "," + Packet.field821 + "," + JString.field1634 + " - " + class228.packetSize, null);
             if (!arg0) {
                 method1567(97, -34, -99, -37, 80, (byte) -34);
             }

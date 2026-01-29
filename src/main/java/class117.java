@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class117 extends class136 {
 
     @OriginalMember(owner = "client!kh", name = "H", descriptor = "Li;")
-    private static class88 field2114 = class208.method1425(105, " has logged out)3");
+    private static JString field2114 = class208.method1425(105, " has logged out)3");
 
     @OriginalMember(owner = "client!kh", name = "I", descriptor = "I")
     public static int field2115 = 0;
@@ -14,16 +14,16 @@ public class class117 extends class136 {
     public static int loginState = 0;
 
     @OriginalMember(owner = "client!kh", name = "J", descriptor = "Li;")
-    public static class88 field2116 = class208.method1425(105, "Benutzen Sie die (WPasswort -=ndern(W Option");
+    public static JString field2116 = class208.method1425(105, "Benutzen Sie die (WPasswort -=ndern(W Option");
 
     @OriginalMember(owner = "client!kh", name = "P", descriptor = "Li;")
-    private static class88 field2122 = class208.method1425(105, "Sorry invited players only)3");
+    private static JString field2122 = class208.method1425(105, "Sorry invited players only)3");
 
     @OriginalMember(owner = "client!kh", name = "S", descriptor = "Li;")
-    public static class88 field2125 = field2114;
+    public static JString field2125 = field2114;
 
     @OriginalMember(owner = "client!kh", name = "G", descriptor = "Li;")
-    public static class88 field2113 = field2122;
+    public static JString field2113 = field2122;
 
     @OriginalMember(owner = "client!kh", name = "X", descriptor = "I")
     public static int field2129 = 0;
@@ -53,7 +53,7 @@ public class class117 extends class136 {
     public static class179 field2126;
 
     @OriginalMember(owner = "client!kh", name = "Y", descriptor = "Li;")
-    public class88 field2130;
+    public JString field2130;
 
     @OriginalMember(owner = "client!kh", name = "L", descriptor = "[I")
     public int[] field2118;

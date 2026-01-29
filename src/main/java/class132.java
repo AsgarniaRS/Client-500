@@ -14,34 +14,34 @@ public class class132 extends class23 {
     private int field2480 = 0;
 
     @OriginalMember(owner = "client!ma", name = "R", descriptor = "Li;")
-    public static class88 field2464 = class208.method1425(105, "<col=00ff80>");
+    public static JString field2464 = class208.method1425(105, "<col=00ff80>");
 
     @OriginalMember(owner = "client!ma", name = "W", descriptor = "Li;")
-    private static class88 field2469 = class208.method1425(105, "M");
+    private static JString field2469 = class208.method1425(105, "M");
 
     @OriginalMember(owner = "client!ma", name = "T", descriptor = "Li;")
-    public static class88 field2466 = field2469;
+    public static JString field2466 = field2469;
 
     @OriginalMember(owner = "client!ma", name = "Y", descriptor = "Li;")
-    public static class88 field2471 = field2469;
+    public static JString field2471 = field2469;
 
     @OriginalMember(owner = "client!ma", name = "ab", descriptor = "[I")
     public static int[] field2473 = new int[100];
 
     @OriginalMember(owner = "client!ma", name = "gb", descriptor = "Li;")
-    private static class88 field2479 = class208.method1425(105, "Error loading your profile)3");
+    private static JString field2479 = class208.method1425(105, "Error loading your profile)3");
 
     @OriginalMember(owner = "client!ma", name = "Z", descriptor = "Li;")
-    public static class88 field2472 = field2479;
+    public static JString field2472 = field2479;
 
     @OriginalMember(owner = "client!ma", name = "db", descriptor = "Li;")
-    private static class88 field2476 = class208.method1425(105, "RuneScape is loading )2 please wait)3)3)3");
+    private static JString field2476 = class208.method1425(105, "RuneScape is loading )2 please wait)3)3)3");
 
     @OriginalMember(owner = "client!ma", name = "U", descriptor = "Z")
     public static boolean lowMem = false;
 
     @OriginalMember(owner = "client!ma", name = "V", descriptor = "Li;")
-    public static class88 field2468 = field2476;
+    public static JString field2468 = field2476;
 
     @OriginalMember(owner = "client!ma", name = "S", descriptor = "I")
     public static int field2465;

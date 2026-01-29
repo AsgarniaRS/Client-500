@@ -8,28 +8,28 @@ public class class227 extends class136 {
     public class111 field4260;
 
     @OriginalMember(owner = "client!ui", name = "E", descriptor = "Li;")
-    public static class88 field4253 = class208.method1425(105, "cross");
+    public static JString field4253 = class208.method1425(105, "cross");
 
     @OriginalMember(owner = "client!ui", name = "I", descriptor = "Li;")
-    private static class88 field4257 = class208.method1425(105, "Too many incorrect logins from your address)3");
+    private static JString field4257 = class208.method1425(105, "Too many incorrect logins from your address)3");
 
     @OriginalMember(owner = "client!ui", name = "G", descriptor = "Li;")
-    public static class88 field4255 = class208.method1425(105, "Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100");
+    public static JString field4255 = class208.method1425(105, "Ihre Freunde)2Liste ist voll(Q Maximale Eintr-=ge: Mitglieder 200)4freie Spieler 100");
 
     @OriginalMember(owner = "client!ui", name = "P", descriptor = "Li;")
-    public static class88 field4264 = class208.method1425(105, " ");
+    public static JString field4264 = class208.method1425(105, " ");
 
     @OriginalMember(owner = "client!ui", name = "M", descriptor = "Li;")
-    public static class88 field4261 = field4257;
+    public static JString field4261 = field4257;
 
     @OriginalMember(owner = "client!ui", name = "F", descriptor = "Lwi;")
     public static class248 field4254 = new class248();
 
     @OriginalMember(owner = "client!ui", name = "S", descriptor = "Li;")
-    public static class88 field4267 = class208.method1425(105, "cookieprefix");
+    public static JString field4267 = class208.method1425(105, "cookieprefix");
 
     @OriginalMember(owner = "client!ui", name = "T", descriptor = "Li;")
-    public static class88 field4268 = class208.method1425(105, "Der Server wird gerade aktualisiert)3");
+    public static JString field4268 = class208.method1425(105, "Der Server wird gerade aktualisiert)3");
 
     @OriginalMember(owner = "client!ui", name = "H", descriptor = "I")
     public static int field4256;

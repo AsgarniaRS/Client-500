@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class134 {
 
     @OriginalMember(owner = "client!mc", name = "e", descriptor = "Li;")
-    public static class88 field2498 = class208.method1425(105, "(U0a )2 non)2existant gosub script)2num: ");
+    public static JString field2498 = class208.method1425(105, "(U0a )2 non)2existant gosub script)2num: ");
 
     @OriginalMember(owner = "client!mc", name = "f", descriptor = "[[[Lwi;")
     public static class248[][][] field2499 = new class248[4][104][104];
@@ -15,13 +15,13 @@ public class class134 {
     public static int[] field2503 = new int[1000];
 
     @OriginalMember(owner = "client!mc", name = "b", descriptor = "Li;")
-    public static class88 field2495 = class208.method1425(105, " )2> <col=ffff00>");
+    public static JString field2495 = class208.method1425(105, " )2> <col=ffff00>");
 
     @OriginalMember(owner = "client!mc", name = "h", descriptor = "Li;")
-    public static class88 field2501 = class208.method1425(105, "(U5");
+    public static JString field2501 = class208.method1425(105, "(U5");
 
     @OriginalMember(owner = "client!mc", name = "g", descriptor = "Li;")
-    public static class88 field2500 = class208.method1425(105, "Abbrechen");
+    public static JString field2500 = class208.method1425(105, "Abbrechen");
 
     @OriginalMember(owner = "client!mc", name = "l", descriptor = "I")
     public static int field2505 = 0;

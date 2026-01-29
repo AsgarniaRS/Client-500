@@ -27,28 +27,28 @@ public abstract class class26 extends class136 {
     private int field427;
 
     @OriginalMember(owner = "client!cc", name = "H", descriptor = "Li;")
-    private static class88 field410 = class208.method1425(105, "br");
+    private static JString field410 = class208.method1425(105, "br");
 
     @OriginalMember(owner = "client!cc", name = "M", descriptor = "Li;")
-    private static class88 field415 = class208.method1425(105, "shad=");
+    private static JString field415 = class208.method1425(105, "shad=");
 
     @OriginalMember(owner = "client!cc", name = "I", descriptor = "Li;")
-    private static class88 field411 = class208.method1425(105, "times");
+    private static JString field411 = class208.method1425(105, "times");
 
     @OriginalMember(owner = "client!cc", name = "fb", descriptor = "Li;")
-    private static class88 field434 = class208.method1425(105, "gt");
+    private static JString field434 = class208.method1425(105, "gt");
 
     @OriginalMember(owner = "client!cc", name = "Q", descriptor = "Li;")
-    private static class88 field419 = class208.method1425(105, "nbsp");
+    private static JString field419 = class208.method1425(105, "nbsp");
 
     @OriginalMember(owner = "client!cc", name = "gb", descriptor = "I")
     private static int field435 = 0;
 
     @OriginalMember(owner = "client!cc", name = "J", descriptor = "Li;")
-    private static class88 field412 = class208.method1425(105, "reg");
+    private static JString field412 = class208.method1425(105, "reg");
 
     @OriginalMember(owner = "client!cc", name = "D", descriptor = "Li;")
-    private static class88 field406 = class208.method1425(105, "euro");
+    private static JString field406 = class208.method1425(105, "euro");
 
     @OriginalMember(owner = "client!cc", name = "T", descriptor = "I")
     private static int field422 = 256;
@@ -60,37 +60,37 @@ public abstract class class26 extends class136 {
     private static int field414 = 0;
 
     @OriginalMember(owner = "client!cc", name = "K", descriptor = "Li;")
-    private static class88 field413 = class208.method1425(105, ")4shad");
+    private static JString field413 = class208.method1425(105, ")4shad");
 
     @OriginalMember(owner = "client!cc", name = "hb", descriptor = "Li;")
-    private static class88 field436 = class208.method1425(105, "trans=");
+    private static JString field436 = class208.method1425(105, "trans=");
 
     @OriginalMember(owner = "client!cc", name = "R", descriptor = "Li;")
-    private static class88 field420 = class208.method1425(105, "str=");
+    private static JString field420 = class208.method1425(105, "str=");
 
     @OriginalMember(owner = "client!cc", name = "lb", descriptor = "Li;")
-    private static class88 field440 = class208.method1425(105, ")4str");
+    private static JString field440 = class208.method1425(105, ")4str");
 
     @OriginalMember(owner = "client!cc", name = "cb", descriptor = "Li;")
-    private static class88 field431 = class208.method1425(105, "copy");
+    private static JString field431 = class208.method1425(105, "copy");
 
     @OriginalMember(owner = "client!cc", name = "kb", descriptor = "Li;")
-    private static class88 field439 = class208.method1425(105, "col=");
+    private static JString field439 = class208.method1425(105, "col=");
 
     @OriginalMember(owner = "client!cc", name = "S", descriptor = "Li;")
-    private static class88 field421 = class208.method1425(105, ")4u");
+    private static JString field421 = class208.method1425(105, ")4u");
 
     @OriginalMember(owner = "client!cc", name = "pb", descriptor = "I")
     private static int field444 = 0;
 
     @OriginalMember(owner = "client!cc", name = "nb", descriptor = "Li;")
-    private static class88 field442 = class208.method1425(105, ")4trans");
+    private static JString field442 = class208.method1425(105, ")4trans");
 
     @OriginalMember(owner = "client!cc", name = "eb", descriptor = "I")
     private static int field433 = -1;
 
     @OriginalMember(owner = "client!cc", name = "rb", descriptor = "Li;")
-    private static class88 field446 = class208.method1425(105, "str");
+    private static JString field446 = class208.method1425(105, "str");
 
     @OriginalMember(owner = "client!cc", name = "P", descriptor = "I")
     private static int field418 = 0;
@@ -99,31 +99,31 @@ public abstract class class26 extends class136 {
     private static int field425 = -1;
 
     @OriginalMember(owner = "client!cc", name = "mb", descriptor = "Li;")
-    private static class88 field441 = class208.method1425(105, "lt");
+    private static JString field441 = class208.method1425(105, "lt");
 
     @OriginalMember(owner = "client!cc", name = "qb", descriptor = "Li;")
-    private static class88 field445 = class208.method1425(105, "u");
+    private static JString field445 = class208.method1425(105, "u");
 
     @OriginalMember(owner = "client!cc", name = "V", descriptor = "Li;")
-    private static class88 field424 = class208.method1425(105, "u=");
+    private static JString field424 = class208.method1425(105, "u=");
 
     @OriginalMember(owner = "client!cc", name = "G", descriptor = "I")
     private static int field409 = -1;
 
     @OriginalMember(owner = "client!cc", name = "ob", descriptor = "Li;")
-    private static class88 field443 = class208.method1425(105, ")4col");
+    private static JString field443 = class208.method1425(105, ")4col");
 
     @OriginalMember(owner = "client!cc", name = "jb", descriptor = "Li;")
-    private static class88 field438 = class208.method1425(105, "shad");
+    private static JString field438 = class208.method1425(105, "shad");
 
     @OriginalMember(owner = "client!cc", name = "ib", descriptor = "Li;")
-    private static class88 field437 = class208.method1425(105, "shy");
+    private static JString field437 = class208.method1425(105, "shy");
 
     @OriginalMember(owner = "client!cc", name = "sb", descriptor = "Li;")
-    private static class88 field447 = class208.method1425(105, "img=");
+    private static JString field447 = class208.method1425(105, "img=");
 
     @OriginalMember(owner = "client!cc", name = "ub", descriptor = "[Li;")
-    private static class88[] field449 = new class88[100];
+    private static JString[] field449 = new JString[100];
 
     @OriginalMember(owner = "client!cc", name = "vb", descriptor = "I")
     private static int field450 = 256;
@@ -141,7 +141,7 @@ public abstract class class26 extends class136 {
     private class130[] field423;
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;II)V")
-    private final void method137(class88 arg0, int arg1, int arg2) {
+    private final void method137(JString arg0, int arg1, int arg2) {
         int var4 = arg2 - this.field416;
         int var5 = -1;
         int var6 = -1;
@@ -151,7 +151,7 @@ public abstract class class26 extends class136 {
                 var5 = var7;
             } else {
                 if (var8 == 62 && var5 != -1) {
-                    class88 var9 = arg0.method623(var5 + 1, (byte) -70, var7);
+                    JString var9 = arg0.method623(var5 + 1, (byte) -70, var7);
                     var5 = -1;
                     if (var9.method597(-119, field441)) {
                         var8 = 60;
@@ -169,9 +169,9 @@ public abstract class class26 extends class136 {
                         var8 = 169;
                     } else {
                         if (!var9.method597(-123, field412)) {
-                            if (var9.method619(-4205, field447)) {
+                            if (var9.startsWith(field447)) {
                                 try {
-                                    int var10 = var9.method635(4, -383902332).method603(false);
+                                    int var10 = var9.substring(4).method603(false);
                                     class130 var11 = this.field423[var10];
                                     int var12 = this.field430 == null ? var11.field2441 : this.field430[var10];
                                     if (field450 == 256) {
@@ -229,10 +229,10 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;I)V")
-    private final void method138(class88 arg0, int arg1) {
+    private final void method138(JString arg0, int arg1) {
         int var3 = 0;
         boolean var4 = false;
-        for (int var5 = 0; var5 < arg0.method604((byte) -53); var5++) {
+        for (int var5 = 0; var5 < arg0.length(); var5++) {
             int var6 = arg0.method599(255, var5);
             if (var6 == 60) {
                 var4 = true;
@@ -253,34 +253,34 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;[I[Li;)I")
-    private final int method140(class88 arg0, int[] arg1, class88[] arg2) {
+    private final int method140(JString arg0, int[] arg1, JString[] arg2) {
         if (arg0 == null) {
             return 0;
         }
         int var4 = 0;
         int var5 = 0;
-        class88 var6 = class165.method1137(100, (byte) 38);
+        JString var6 = class165.method1137(100, (byte) 38);
         int var7 = -1;
         int var8 = 0;
         byte var9 = 0;
         int var10 = -1;
         int var11 = -1;
         int var12 = 0;
-        int var13 = arg0.method604((byte) -53);
+        int var13 = arg0.length();
         for (int var14 = 0; var14 < var13; var14++) {
             int var15 = arg0.method599(255, var14);
             if (var15 == 60) {
                 var10 = var14;
             } else {
                 if (var15 == 62 && var10 != -1) {
-                    class88 var16 = arg0.method623(var10 + 1, (byte) -57, var14);
+                    JString var16 = arg0.method623(var10 + 1, (byte) -57, var14);
                     var10 = -1;
                     var6.method638(-61, 60);
                     var6.method616(var16, (byte) -56);
                     var6.method638(-15, 62);
                     if (var16.method597(-110, field410)) {
-                        arg2[var12++] = var6.method623(var5, (byte) -33, var6.method604((byte) -53));
-                        var5 = var6.method604((byte) -53);
+                        arg2[var12++] = var6.method623(var5, (byte) -33, var6.length());
+                        var5 = var6.length();
                         var4 = 0;
                         var7 = -1;
                         var11 = -1;
@@ -332,9 +332,9 @@ public abstract class class26 extends class136 {
                             var4 += this.field407[(var11 << 8) + 174];
                         }
                         var11 = 174;
-                    } else if (var16.method619(-4205, field447)) {
+                    } else if (var16.startsWith(field447)) {
                         try {
-                            int var17 = var16.method635(4, -383902332).method603(false);
+                            int var17 = var16.substring(4).method603(false);
                             var4 += this.field423[var17].field2435;
                             var11 = -1;
                         } catch (Exception var18) {
@@ -352,7 +352,7 @@ public abstract class class26 extends class136 {
                         var11 = var15;
                     }
                     if (var15 == 32) {
-                        var7 = var6.method604((byte) -53);
+                        var7 = var6.length();
                         var8 = var4;
                         var9 = 1;
                     }
@@ -364,21 +364,21 @@ public abstract class class26 extends class136 {
                         var11 = -1;
                     }
                     if (var15 == 45) {
-                        var7 = var6.method604((byte) -53);
+                        var7 = var6.length();
                         var8 = var4;
                         var9 = 0;
                     }
                 }
             }
         }
-        if (var6.method604((byte) -53) > var5) {
-            arg2[var12++] = var6.method623(var5, (byte) -17, var6.method604((byte) -53));
+        if (var6.length() > var5) {
+            arg2[var12++] = var6.method623(var5, (byte) -17, var6.length());
         }
         return var12;
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIII)V")
-    public final void method141(class88 arg0, int arg1, int arg2, int arg3, int arg4) {
+    public final void method141(JString arg0, int arg1, int arg2, int arg3, int arg4) {
         if (arg0 != null) {
             this.method161(arg3, arg4);
             this.method137(arg0, arg1 - this.method158(arg0) / 2, arg2);
@@ -392,7 +392,7 @@ public abstract class class26 extends class136 {
     public abstract void method143(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5);
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIIII)V")
-    public final void method144(class88 arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+    public final void method144(JString arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
         if (arg0 == null) {
             return;
         }
@@ -405,7 +405,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "b", descriptor = "(Li;IIIII)V")
-    public final void method145(class88 arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
+    public final void method145(JString arg0, int arg1, int arg2, int arg3, int arg4, int arg5) {
         if (arg0 == null) {
             return;
         }
@@ -499,7 +499,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "b", descriptor = "(Li;IIII)V")
-    public final void method150(class88 arg0, int arg1, int arg2, int arg3, int arg4) {
+    public final void method150(JString arg0, int arg1, int arg2, int arg3, int arg4) {
         if (arg0 != null) {
             this.method161(arg3, arg4);
             this.method137(arg0, arg1 - this.method158(arg0), arg2);
@@ -507,7 +507,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;II[I[I)V")
-    private final void method151(class88 arg0, int arg1, int arg2, int[] arg3, int[] arg4) {
+    private final void method151(JString arg0, int arg1, int arg2, int[] arg3, int[] arg4) {
         int var6 = arg2 - this.field416;
         int var7 = -1;
         int var8 = -1;
@@ -518,7 +518,7 @@ public abstract class class26 extends class136 {
                 var7 = var10;
             } else {
                 if (var11 == 62 && var7 != -1) {
-                    class88 var12 = arg0.method623(var7 + 1, (byte) -100, var10);
+                    JString var12 = arg0.method623(var7 + 1, (byte) -100, var10);
                     var7 = -1;
                     if (var12.method597(-112, field441)) {
                         var11 = 60;
@@ -536,7 +536,7 @@ public abstract class class26 extends class136 {
                         var11 = 169;
                     } else {
                         if (!var12.method597(-128, field412)) {
-                            if (var12.method619(-4205, field447)) {
+                            if (var12.startsWith(field447)) {
                                 try {
                                     int var13;
                                     if (arg3 == null) {
@@ -551,7 +551,7 @@ public abstract class class26 extends class136 {
                                         var14 = arg4[var9];
                                     }
                                     var9++;
-                                    int var15 = var12.method635(4, -383902332).method603(false);
+                                    int var15 = var12.substring(4).method603(false);
                                     class130 var16 = this.field423[var15];
                                     int var17 = this.field430 == null ? var16.field2441 : this.field430[var15];
                                     if (field450 == 256) {
@@ -622,7 +622,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIIIIIIIII)I")
-    private final int method152(class88 arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10) {
+    private final int method152(JString arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9, int arg10) {
         if (arg0 == null) {
             return 0;
         }
@@ -673,12 +673,12 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIIIIIIII)I")
-    public final int method153(class88 arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
+    public final int method153(JString arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
         return this.method152(arg0, arg1, arg2, arg3, arg4, arg5, arg6, 256, arg7, arg8, arg9);
     }
 
     @OriginalMember(owner = "client!cc", name = "c", descriptor = "(Li;IIII)V")
-    public final void method154(class88 arg0, int arg1, int arg2, int arg3, int arg4) {
+    public final void method154(JString arg0, int arg1, int arg2, int arg3, int arg4) {
         if (arg0 != null) {
             this.method161(arg3, arg4);
             this.method137(arg0, arg1, arg2);
@@ -686,26 +686,26 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;)V")
-    private final void method155(class88 arg0) {
+    private final void method155(JString arg0) {
         try {
-            if (arg0.method619(-4205, field439)) {
-                field444 = arg0.method635(4, -383902332).method607(16, 87);
+            if (arg0.startsWith(field439)) {
+                field444 = arg0.substring(4).method607(16, 87);
                 return;
             }
             if (arg0.method597(-117, field443)) {
                 field444 = field418;
                 return;
             }
-            if (arg0.method619(-4205, field436)) {
-                field450 = arg0.method635(6, -383902332).method603(false);
+            if (arg0.startsWith(field436)) {
+                field450 = arg0.substring(6).method603(false);
                 return;
             }
             if (arg0.method597(-112, field442)) {
                 field450 = field422;
                 return;
             }
-            if (arg0.method619(-4205, field420)) {
-                field433 = arg0.method635(4, -383902332).method607(16, 87);
+            if (arg0.startsWith(field420)) {
+                field433 = arg0.substring(4).method607(16, 87);
                 return;
             }
             if (arg0.method597(-116, field446)) {
@@ -716,8 +716,8 @@ public abstract class class26 extends class136 {
                 field433 = -1;
                 return;
             }
-            if (arg0.method619(-4205, field424)) {
-                field409 = arg0.method635(2, -383902332).method607(16, 87);
+            if (arg0.startsWith(field424)) {
+                field409 = arg0.substring(2).method607(16, 87);
                 return;
             }
             if (arg0.method597(-113, field445)) {
@@ -728,8 +728,8 @@ public abstract class class26 extends class136 {
                 field409 = -1;
                 return;
             }
-            if (arg0.method619(-4205, field415)) {
-                field428 = arg0.method635(5, -383902332).method607(16, 87);
+            if (arg0.startsWith(field415)) {
+                field428 = arg0.substring(5).method607(16, 87);
                 return;
             }
             if (arg0.method597(-125, field438)) {
@@ -749,7 +749,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "b", descriptor = "(Li;I)I")
-    public final int method156(class88 arg0, int arg1) {
+    public final int method156(JString arg0, int arg1) {
         int var3 = this.method140(arg0, new int[] { arg1 }, field449);
         int var4 = 0;
         for (int var5 = 0; var5 < var3; var5++) {
@@ -793,7 +793,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "b", descriptor = "(Li;)I")
-    public final int method158(class88 arg0) {
+    public final int method158(JString arg0) {
         if (arg0 == null) {
             return 0;
         }
@@ -806,7 +806,7 @@ public abstract class class26 extends class136 {
                 var2 = var5;
             } else {
                 if (var6 == 62 && var2 != -1) {
-                    class88 var7 = arg0.method623(var2 + 1, (byte) -86, var5);
+                    JString var7 = arg0.method623(var2 + 1, (byte) -86, var5);
                     var2 = -1;
                     if (var7.method597(-122, field441)) {
                         var6 = 60;
@@ -824,9 +824,9 @@ public abstract class class26 extends class136 {
                         var6 = 169;
                     } else {
                         if (!var7.method597(-128, field412)) {
-                            if (var7.method619(-4205, field447)) {
+                            if (var7.startsWith(field447)) {
                                 try {
-                                    int var8 = var7.method635(4, -383902332).method603(false);
+                                    int var8 = var7.substring(4).method603(false);
                                     var4 += this.field423[var8].field2435;
                                     var3 = -1;
                                 } catch (Exception var9) {
@@ -895,8 +895,8 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "c", descriptor = "(Li;)Li;")
-    public static final class88 method162(class88 arg0) {
-        int var1 = arg0.method604((byte) -53);
+    public static final JString method162(JString arg0) {
+        int var1 = arg0.length();
         int var2 = 0;
         for (int var3 = 0; var3 < var1; var3++) {
             byte var8 = arg0.field1643[var3];
@@ -904,7 +904,7 @@ public abstract class class26 extends class136 {
                 var2 += 3;
             }
         }
-        class88 var4 = new class88();
+        JString var4 = new JString();
         var4.field1660 = var1 + var2;
         var4.field1643 = new byte[var4.field1660];
         int var5 = 0;
@@ -928,12 +928,12 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "c", descriptor = "(Li;I)I")
-    public final int method163(class88 arg0, int arg1) {
+    public final int method163(JString arg0, int arg1) {
         return this.method140(arg0, new int[] { arg1 }, field449);
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIIIII)V")
-    public final void method164(class88 arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
+    public final void method164(JString arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6) {
         if (arg0 == null) {
             return;
         }
@@ -950,7 +950,7 @@ public abstract class class26 extends class136 {
     }
 
     @OriginalMember(owner = "client!cc", name = "a", descriptor = "(Li;IIIILjava/util/Random;I)I")
-    public final int method165(class88 arg0, int arg1, int arg2, int arg3, int arg4, Random arg5, int arg6) {
+    public final int method165(JString arg0, int arg1, int arg2, int arg3, int arg4, Random arg5, int arg6) {
         if (arg0 == null) {
             return 0;
         }

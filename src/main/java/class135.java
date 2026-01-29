@@ -12,7 +12,7 @@ public class class135 extends class23 {
     public static int[] field2510 = new int[] { 2, 2, 4, 0, 1, 8, 0, 0, 0, 0, 2 };
 
     @OriginalMember(owner = "client!md", name = "eb", descriptor = "Li;")
-    public static class88 field2520 = class208.method1425(105, "Ihr Spielkonto wird bereits benutzt)3");
+    public static JString field2520 = class208.method1425(105, "Ihr Spielkonto wird bereits benutzt)3");
 
     @OriginalMember(owner = "client!md", name = "Q", descriptor = "I")
     public static int field2506;
@@ -151,7 +151,7 @@ public class class135 extends class23 {
     }
 
     @OriginalMember(owner = "client!md", name = "a", descriptor = "(BLi;)Z")
-    public static final boolean method903(byte arg0, class88 arg1) {
+    public static final boolean method903(byte arg0, JString arg1) {
         ++field2518;
         if (arg1 == null) {
             return false;
@@ -187,7 +187,7 @@ public class class135 extends class23 {
             int[] var11 = var5.instructions;
             try {
                 class242.field4479 = new int[var5.field4528];
-                class153.field2965 = new class88[var5.field4519];
+                class153.field2965 = new JString[var5.field4519];
                 int var12 = 0;
                 int var13 = 0;
                 for (int var14 = 1; ~var14 > ~var3.length; ++var14) {
@@ -221,8 +221,8 @@ public class class135 extends class23 {
                             var15 = arg1.field692;
                         }
                         class242.field4479[var13++] = var15;
-                    } else if (var3[var14] instanceof class88) {
-                        class88 var16 = (class88) var3[var14];
+                    } else if (var3[var14] instanceof JString) {
+                        JString var16 = (JString) var3[var14];
                         if (var16.method597(-112, class194.field3709)) {
                             var16 = arg1.field677;
                         }
@@ -236,60 +236,60 @@ public class class135 extends class23 {
                         throw new RuntimeException("slow");
                     }
                     ++var8;
-                    int var383 = var11[var8];
-                    if (var383 < 100) {
-                        if (var383 == 0) {
+                    int opcode = var11[var8];
+                    if (opcode < 100) {
+                        if (opcode == 0) {
                             class108.field1946[var6++] = var9[var8];
                             continue;
                         }
-                        if (var383 == 1) {
+                        if (opcode == 1) {
                             int var18 = var9[var8];
                             class108.field1946[var6++] = class113.field2052[var18];
                             continue;
                         }
-                        if (var383 == 2) {
+                        if (opcode == 2) {
                             int var19 = var9[var8];
                             --var6;
                             class113.field2052[var19] = class108.field1946[var6];
                             continue;
                         }
-                        if (~var383 == -4) {
+                        if (~opcode == -4) {
                             class171.field3332[var7++] = var5.stringOperands[var8];
                             continue;
                         }
-                        if (~var383 == -7) {
+                        if (~opcode == -7) {
                             var8 += var9[var8];
                             continue;
                         }
-                        if (~var383 == -8) {
+                        if (~opcode == -8) {
                             var6 -= 2;
                             if (class108.field1946[var6 - -1] != class108.field1946[var6]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -9) {
+                        if (~opcode == -9) {
                             var6 -= 2;
                             if (class108.field1946[var6 + 1] == class108.field1946[var6]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -10) {
+                        if (~opcode == -10) {
                             var6 -= 2;
                             if (class108.field1946[var6 + 1] > class108.field1946[var6]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -11) {
+                        if (~opcode == -11) {
                             var6 -= 2;
                             if (~class108.field1946[var6] < ~class108.field1946[var6 + 1]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -22) {
+                        if (~opcode == -22) {
                             if (~class230.field4320 == -1) {
                                 return;
                             }
@@ -302,71 +302,71 @@ public class class135 extends class23 {
                             var11 = var5.instructions;
                             continue;
                         }
-                        if (~var383 == -26) {
+                        if (~opcode == -26) {
                             int var21 = var9[var8];
                             class108.field1946[var6++] = class142.method932(-17611, var21);
                             continue;
                         }
-                        if (var383 == 27) {
+                        if (opcode == 27) {
                             int var22 = var9[var8];
                             --var6;
                             SeqType.method757(var22, class108.field1946[var6], 68);
                             continue;
                         }
-                        if (var383 == 31) {
+                        if (opcode == 31) {
                             var6 -= 2;
                             if (class108.field1946[var6 + 1] >= class108.field1946[var6]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -33) {
+                        if (~opcode == -33) {
                             var6 -= 2;
                             if (class108.field1946[var6] >= class108.field1946[var6 + 1]) {
                                 var8 += var9[var8];
                             }
                             continue;
                         }
-                        if (~var383 == -34) {
+                        if (~opcode == -34) {
                             class108.field1946[var6++] = class242.field4479[var9[var8]];
                             continue;
                         }
                         int var10001;
-                        if (var383 == 34) {
+                        if (opcode == 34) {
                             var10001 = var9[var8];
                             --var6;
                             class242.field4479[var10001] = class108.field1946[var6];
                             continue;
                         }
-                        if (~var383 == -36) {
+                        if (~opcode == -36) {
                             class171.field3332[var7++] = class153.field2965[var9[var8]];
                             continue;
                         }
-                        if (~var383 == -37) {
+                        if (~opcode == -37) {
                             var10001 = var9[var8];
                             --var7;
                             class153.field2965[var10001] = class171.field3332[var7];
                             continue;
                         }
-                        if (~var383 == -38) {
+                        if (~opcode == -38) {
                             int var23 = var9[var8];
                             var7 -= var23;
-                            class88 var24 = class165.method1135(var23, class171.field3332, -49, var7);
+                            JString var24 = class165.method1135(var23, class171.field3332, -49, var7);
                             class171.field3332[var7++] = var24;
                             continue;
                         }
-                        if (var383 == 38) {
+                        if (opcode == 38) {
                             --var6;
                             continue;
                         }
-                        if (var383 == 39) {
+                        if (opcode == 39) {
                             --var7;
                             continue;
                         }
-                        if (var383 == 40) {
+                        if (opcode == 40) {
                             int var25 = var9[var8];
                             class247 var26 = GZip.method427(var25, 0);
-                            class88[] var27 = new class88[var26.field4519];
+                            JString[] var27 = new JString[var26.field4519];
                             int[] var28 = new int[var26.field4528];
                             for (int var29 = 0; ~var29 > ~var26.field4522; ++var29) {
                                 var28[var29] = class108.field1946[-var26.field4522 + var29 + var6];
@@ -393,17 +393,17 @@ public class class135 extends class23 {
                             class153.field2965 = var27;
                             continue;
                         }
-                        if (var383 == 42) {
+                        if (opcode == 42) {
                             class108.field1946[var6++] = class119.field2169[var9[var8]];
                             continue;
                         }
-                        if (var383 == 43) {
+                        if (opcode == 43) {
                             var10001 = var9[var8];
                             --var6;
                             class119.field2169[var10001] = class108.field1946[var6];
                             continue;
                         }
-                        if (~var383 == -45) {
+                        if (~opcode == -45) {
                             int var32 = var9[var8] >> 16;
                             --var6;
                             int var33 = class108.field1946[var6];
@@ -425,7 +425,7 @@ public class class135 extends class23 {
                             }
                             throw new RuntimeException();
                         }
-                        if (var383 == 45) {
+                        if (opcode == 45) {
                             int var37 = var9[var8];
                             --var6;
                             int var38 = class108.field1946[var6];
@@ -435,7 +435,7 @@ public class class135 extends class23 {
                             }
                             throw new RuntimeException();
                         }
-                        if (var383 == 46) {
+                        if (opcode == 46) {
                             var6 -= 2;
                             int var39 = class108.field1946[var6];
                             int var40 = var9[var8];
@@ -445,21 +445,21 @@ public class class135 extends class23 {
                             }
                             throw new RuntimeException();
                         }
-                        if (~var383 == -48) {
-                            class88 var41 = class7.field114[var9[var8]];
+                        if (~opcode == -48) {
+                            JString var41 = class7.field114[var9[var8]];
                             if (var41 == null) {
                                 var41 = class14.field207;
                             }
                             class171.field3332[var7++] = var41;
                             continue;
                         }
-                        if (~var383 == -49) {
+                        if (~opcode == -49) {
                             var10001 = var9[var8];
                             --var7;
                             class7.field114[var10001] = class171.field3332[var7];
                             continue;
                         }
-                        if (~var383 == -52) {
+                        if (~opcode == -52) {
                             class154 var42 = var5.field4516[var9[var8]];
                             --var6;
                             class192 var43 = (class192) var42.get(-1, (long) class108.field1946[var6]);
@@ -475,8 +475,8 @@ public class class135 extends class23 {
                     } else {
                         var44 = true;
                     }
-                    if (~var383 > -301) {
-                        if (var383 == 100) {
+                    if (~opcode > -301) {
+                        if (opcode == 100) {
                             var6 -= 3;
                             int var45 = class108.field1946[var6];
                             int var46 = class108.field1946[var6 + 1];
@@ -512,7 +512,7 @@ public class class135 extends class23 {
                             class200.method1373(65280, var48);
                             continue;
                         }
-                        if (~var383 == -102) {
+                        if (~opcode == -102) {
                             class174 var52 = !var44 ? class129.field2428 : class203.field3873;
                             if (var52.field3408 == -1) {
                                 if (var44) {
@@ -525,14 +525,14 @@ public class class135 extends class23 {
                             class200.method1373(65280, var53);
                             continue;
                         }
-                        if (var383 == 102) {
+                        if (opcode == 102) {
                             --var6;
                             class174 var54 = class239.method1581(-64, class108.field1946[var6]);
                             var54.field3467 = null;
                             class200.method1373(65280, var54);
                             continue;
                         }
-                        if (var383 == 200) {
+                        if (opcode == 200) {
                             var6 -= 2;
                             int var55 = class108.field1946[var6 + 1];
                             int var56 = class108.field1946[var6];
@@ -549,7 +549,7 @@ public class class135 extends class23 {
                             class108.field1946[var6++] = 0;
                             continue;
                         }
-                        if (var383 == 201) {
+                        if (opcode == 201) {
                             --var6;
                             int var58 = class108.field1946[var6];
                             class174 var59 = class239.method1581(-64, var58);
@@ -565,20 +565,20 @@ public class class135 extends class23 {
                             }
                             continue;
                         }
-                    } else if (~var383 <= -501) {
-                        if ((var383 < 1000 || ~var383 <= -1101) && (var383 < 2000 || ~var383 <= -2101)) {
-                            if ((~var383 > -1101 || ~var383 <= -1201) && (~var383 > -2101 || ~var383 <= -2201)) {
-                                if (var383 >= 1200 && var383 < 1300 || ~var383 <= -2201 && ~var383 > -2301) {
+                    } else if (~opcode <= -501) {
+                        if ((opcode < 1000 || ~opcode <= -1101) && (opcode < 2000 || ~opcode <= -2101)) {
+                            if ((~opcode > -1101 || ~opcode <= -1201) && (~opcode > -2101 || ~opcode <= -2201)) {
+                                if (opcode >= 1200 && opcode < 1300 || ~opcode <= -2201 && ~opcode > -2301) {
                                     class174 var60;
-                                    if (var383 >= 2000) {
-                                        var383 -= 1000;
+                                    if (opcode >= 2000) {
+                                        opcode -= 1000;
                                         --var6;
                                         var60 = class239.method1581(-64, class108.field1946[var6]);
                                     } else {
                                         var60 = var44 ? class203.field3873 : class129.field2428;
                                     }
                                     class200.method1373(65280, var60);
-                                    if (var383 == 1200 || ~var383 == -1206) {
+                                    if (opcode == 1200 || ~opcode == -1206) {
                                         var6 -= 2;
                                         int var61 = class108.field1946[var6 + 1];
                                         int var62 = class108.field1946[var6];
@@ -593,7 +593,7 @@ public class class135 extends class23 {
                                             var60.field3367 = var63.field2878;
                                             var60.field3511 = var63.field2874;
                                             var60.field3500 = var63.field2872;
-                                            if (~var383 == -1206) {
+                                            if (~opcode == -1206) {
                                                 var60.field3466 = false;
                                             } else {
                                                 var60.field3466 = true;
@@ -609,43 +609,43 @@ public class class135 extends class23 {
                                         }
                                         continue;
                                     }
-                                    if (~var383 == -1202) {
+                                    if (~opcode == -1202) {
                                         var60.field3432 = 2;
                                         --var6;
                                         var60.field3411 = class108.field1946[var6];
                                         continue;
                                     }
-                                    if (var383 == 1202) {
+                                    if (opcode == 1202) {
                                         var60.field3432 = 3;
                                         var60.field3411 = class240.field4458.field768.method1429(108);
                                         continue;
                                     }
-                                    if (var383 == 1203) {
+                                    if (opcode == 1203) {
                                         var60.field3432 = 6;
                                         --var6;
                                         var60.field3411 = class108.field1946[var6];
                                         continue;
                                     }
-                                    if (var383 == 1204) {
+                                    if (opcode == 1204) {
                                         var60.field3432 = 5;
                                         --var6;
                                         var60.field3411 = class108.field1946[var6];
                                         continue;
                                     }
-                                } else if ((~var383 > -1301 || var383 >= 1400) && (~var383 > -2301 || var383 >= 2400)) {
-                                    if (var383 >= 1400 && var383 < 1500 || ~var383 <= -2401 && ~var383 > -2501) {
+                                } else if ((~opcode > -1301 || opcode >= 1400) && (~opcode > -2301 || opcode >= 2400)) {
+                                    if (opcode >= 1400 && opcode < 1500 || ~opcode <= -2401 && ~opcode > -2501) {
                                         int[] var64 = null;
                                         class174 var65;
-                                        if (~var383 > -2001) {
+                                        if (~opcode > -2001) {
                                             var65 = !var44 ? class129.field2428 : class203.field3873;
                                         } else {
                                             --var6;
                                             var65 = class239.method1581(-64, class108.field1946[var6]);
-                                            var383 -= 1000;
+                                            opcode -= 1000;
                                         }
                                         --var7;
-                                        class88 var66 = class171.field3332[var7];
-                                        if (var66.method604((byte) -53) > 0 && ~var66.method599(255, -1 + var66.method604((byte) -53)) == -90) {
+                                        JString var66 = class171.field3332[var7];
+                                        if (var66.length() > 0 && ~var66.method599(255, -1 + var66.length()) == -90) {
                                             --var6;
                                             int var67 = class108.field1946[var6];
                                             if (~var67 < -1) {
@@ -655,9 +655,9 @@ public class class135 extends class23 {
                                                     var64[var67] = class108.field1946[var6];
                                                 }
                                             }
-                                            var66 = var66.method623(0, (byte) -107, -1 + var66.method604((byte) -53));
+                                            var66 = var66.method623(0, (byte) -107, -1 + var66.length());
                                         }
-                                        Object[] var68 = new Object[var66.method604((byte) -53) - -1];
+                                        Object[] var68 = new Object[var66.length() - -1];
                                         for (int var69 = var68.length - 1; var69 >= 1; --var69) {
                                             if (var66.method599(255, var69 + -1) == 115) {
                                                 --var7;
@@ -674,165 +674,165 @@ public class class135 extends class23 {
                                         } else {
                                             var68 = null;
                                         }
-                                        if (~var383 == -1418) {
+                                        if (~opcode == -1418) {
                                             var65.field3473 = var68;
                                         }
-                                        if (var383 == 1403) {
+                                        if (opcode == 1403) {
                                             var65.field3372 = var68;
                                         }
-                                        if (var383 == 1421) {
+                                        if (opcode == 1421) {
                                             var65.field3383 = var68;
                                         }
-                                        if (var383 == 1407) {
+                                        if (opcode == 1407) {
                                             var65.field3483 = var68;
                                             var65.field3452 = var64;
                                         }
-                                        if (var383 == 1408) {
+                                        if (opcode == 1408) {
                                             var65.field3460 = var68;
                                         }
-                                        if (~var383 == -1413) {
+                                        if (~opcode == -1413) {
                                             var65.field3512 = var68;
                                         }
-                                        if (~var383 == -1419) {
+                                        if (~opcode == -1419) {
                                             var65.field3520 = var68;
                                         }
-                                        if (var383 == 1405) {
+                                        if (opcode == 1405) {
                                             var65.field3458 = var68;
                                         }
-                                        if (var383 == 1402) {
+                                        if (opcode == 1402) {
                                             var65.field3410 = var68;
                                         }
-                                        if (~var383 == -1421) {
+                                        if (~opcode == -1421) {
                                             var65.field3486 = var68;
                                         }
-                                        if (~var383 == -1401) {
+                                        if (~opcode == -1401) {
                                             var65.field3492 = var68;
                                         }
-                                        if (~var383 == -1426) {
+                                        if (~opcode == -1426) {
                                             var65.field3507 = var68;
                                         }
-                                        if (~var383 == -1405) {
+                                        if (~opcode == -1405) {
                                             var65.field3450 = var68;
                                         }
-                                        if (var383 == 1427) {
+                                        if (opcode == 1427) {
                                             var65.field3428 = var68;
                                         }
-                                        if (~var383 == -1424) {
+                                        if (~opcode == -1424) {
                                             var65.field3436 = var68;
                                         }
-                                        if (var383 == 1401) {
+                                        if (opcode == 1401) {
                                             var65.field3505 = var68;
                                         }
-                                        if (~var383 == -1423) {
+                                        if (~opcode == -1423) {
                                             var65.field3446 = var68;
                                         }
-                                        if (~var383 == -1410) {
+                                        if (~opcode == -1410) {
                                             var65.field3403 = var68;
                                         }
-                                        if (~var383 == -1420) {
+                                        if (~opcode == -1420) {
                                             var65.field3379 = var68;
                                         }
-                                        if (var383 == 1414) {
+                                        if (opcode == 1414) {
                                             var65.field3445 = var68;
                                             var65.field3371 = var64;
                                         }
-                                        if (~var383 == -1407) {
+                                        if (~opcode == -1407) {
                                             var65.field3442 = var68;
                                         }
                                         var65.field3451 = true;
-                                        if (var383 == 1411) {
+                                        if (opcode == 1411) {
                                             var65.field3454 = var68;
                                         }
-                                        if (~var383 == -1416) {
+                                        if (~opcode == -1416) {
                                             var65.field3400 = var64;
                                             var65.field3456 = var68;
                                         }
-                                        if (var383 == 1416) {
+                                        if (opcode == 1416) {
                                             var65.field3449 = var68;
                                         }
-                                        if (var383 == 1424) {
+                                        if (opcode == 1424) {
                                             var65.field3497 = var68;
                                         }
-                                        if (~var383 == -1411) {
+                                        if (~opcode == -1411) {
                                             var65.field3414 = var68;
                                         }
                                         continue;
                                     }
-                                    if (var383 < 1600) {
+                                    if (opcode < 1600) {
                                         class174 var71 = !var44 ? class129.field2428 : class203.field3873;
-                                        if (~var383 == -1501) {
+                                        if (~opcode == -1501) {
                                             class108.field1946[var6++] = var71.field3368;
                                             continue;
                                         }
-                                        if (~var383 == -1502) {
+                                        if (~opcode == -1502) {
                                             class108.field1946[var6++] = var71.field3443;
                                             continue;
                                         }
-                                        if (var383 == 1502) {
+                                        if (opcode == 1502) {
                                             class108.field1946[var6++] = var71.field3382;
                                             continue;
                                         }
-                                        if (var383 == 1503) {
+                                        if (opcode == 1503) {
                                             class108.field1946[var6++] = var71.field3424;
                                             continue;
                                         }
-                                        if (var383 == 1504) {
+                                        if (opcode == 1504) {
                                             class108.field1946[var6++] = var71.field3380 ? 1 : 0;
                                             continue;
                                         }
-                                        if (var383 == 1505) {
+                                        if (opcode == 1505) {
                                             class108.field1946[var6++] = var71.field3506;
                                             continue;
                                         }
-                                    } else if (var383 < 1700) {
+                                    } else if (opcode < 1700) {
                                         class174 var72 = var44 ? class203.field3873 : class129.field2428;
-                                        if (~var383 == -1601) {
+                                        if (~opcode == -1601) {
                                             class108.field1946[var6++] = var72.field3395;
                                             continue;
                                         }
-                                        if (var383 == 1601) {
+                                        if (opcode == 1601) {
                                             class108.field1946[var6++] = var72.field3417;
                                             continue;
                                         }
-                                        if (~var383 == -1603) {
+                                        if (~opcode == -1603) {
                                             class171.field3332[var7++] = var72.field3385;
                                             continue;
                                         }
-                                        if (var383 == 1603) {
+                                        if (opcode == 1603) {
                                             class108.field1946[var6++] = var72.field3386;
                                             continue;
                                         }
-                                        if (var383 == 1604) {
+                                        if (opcode == 1604) {
                                             class108.field1946[var6++] = var72.field3377;
                                             continue;
                                         }
-                                        if (~var383 == -1606) {
+                                        if (~opcode == -1606) {
                                             class108.field1946[var6++] = var72.field3487;
                                             continue;
                                         }
-                                        if (~var383 == -1607) {
+                                        if (~opcode == -1607) {
                                             class108.field1946[var6++] = var72.field3457;
                                             continue;
                                         }
-                                        if (~var383 == -1608) {
+                                        if (~opcode == -1608) {
                                             class108.field1946[var6++] = var72.field3519;
                                             continue;
                                         }
-                                        if (~var383 == -1609) {
+                                        if (~opcode == -1609) {
                                             class108.field1946[var6++] = var72.field3511;
                                             continue;
                                         }
-                                        if (~var383 == -1610) {
+                                        if (~opcode == -1610) {
                                             class108.field1946[var6++] = var72.field3482;
                                             continue;
                                         }
-                                    } else if (var383 < 1800) {
+                                    } else if (opcode < 1800) {
                                         class174 var73 = var44 ? class203.field3873 : class129.field2428;
-                                        if (var383 == 1700) {
+                                        if (opcode == 1700) {
                                             class108.field1946[var6++] = var73.field3401;
                                             continue;
                                         }
-                                        if (var383 == 1701) {
+                                        if (opcode == 1701) {
                                             if (var73.field3401 == -1) {
                                                 class108.field1946[var6++] = 0;
                                             } else {
@@ -840,17 +840,17 @@ public class class135 extends class23 {
                                             }
                                             continue;
                                         }
-                                        if (var383 == 1702) {
+                                        if (opcode == 1702) {
                                             class108.field1946[var6++] = var73.field3408;
                                             continue;
                                         }
-                                    } else if (var383 < 1900) {
+                                    } else if (opcode < 1900) {
                                         class174 var74 = var44 ? class203.field3873 : class129.field2428;
-                                        if (var383 == 1800) {
+                                        if (opcode == 1800) {
                                             class108.field1946[var6++] = GameShell.method592(1281959627, class80.method530(-881710560, var74));
                                             continue;
                                         }
-                                        if (var383 == 1801) {
+                                        if (opcode == 1801) {
                                             --var6;
                                             int var75 = class108.field1946[var6];
                                             int var384 = var75 - 1;
@@ -861,7 +861,7 @@ public class class135 extends class23 {
                                             class171.field3332[var7++] = class81.field1468;
                                             continue;
                                         }
-                                        if (~var383 == -1803) {
+                                        if (~opcode == -1803) {
                                             if (var74.field3459 != null) {
                                                 class171.field3332[var7++] = var74.field3459;
                                             } else {
@@ -869,85 +869,85 @@ public class class135 extends class23 {
                                             }
                                             continue;
                                         }
-                                    } else if (var383 < 2600) {
+                                    } else if (opcode < 2600) {
                                         --var6;
                                         class174 var76 = class239.method1581(-64, class108.field1946[var6]);
-                                        if (var383 == 2500) {
+                                        if (opcode == 2500) {
                                             class108.field1946[var6++] = var76.field3368;
                                             continue;
                                         }
-                                        if (~var383 == -2502) {
+                                        if (~opcode == -2502) {
                                             class108.field1946[var6++] = var76.field3443;
                                             continue;
                                         }
-                                        if (~var383 == -2503) {
+                                        if (~opcode == -2503) {
                                             class108.field1946[var6++] = var76.field3382;
                                             continue;
                                         }
-                                        if (~var383 == -2504) {
+                                        if (~opcode == -2504) {
                                             class108.field1946[var6++] = var76.field3424;
                                             continue;
                                         }
-                                        if (var383 == 2504) {
+                                        if (opcode == 2504) {
                                             class108.field1946[var6++] = var76.field3380 ? 1 : 0;
                                             continue;
                                         }
-                                        if (var383 == 2505) {
+                                        if (opcode == 2505) {
                                             class108.field1946[var6++] = var76.field3506;
                                             continue;
                                         }
-                                    } else if (var383 < 2700) {
+                                    } else if (opcode < 2700) {
                                         --var6;
                                         class174 var77 = class239.method1581(-64, class108.field1946[var6]);
-                                        if (var383 == 2600) {
+                                        if (opcode == 2600) {
                                             class108.field1946[var6++] = var77.field3395;
                                             continue;
                                         }
-                                        if (~var383 == -2602) {
+                                        if (~opcode == -2602) {
                                             class108.field1946[var6++] = var77.field3417;
                                             continue;
                                         }
-                                        if (~var383 == -2603) {
+                                        if (~opcode == -2603) {
                                             class171.field3332[var7++] = var77.field3385;
                                             continue;
                                         }
-                                        if (~var383 == -2604) {
+                                        if (~opcode == -2604) {
                                             class108.field1946[var6++] = var77.field3386;
                                             continue;
                                         }
-                                        if (var383 == 2604) {
+                                        if (opcode == 2604) {
                                             class108.field1946[var6++] = var77.field3377;
                                             continue;
                                         }
-                                        if (~var383 == -2606) {
+                                        if (~opcode == -2606) {
                                             class108.field1946[var6++] = var77.field3487;
                                             continue;
                                         }
-                                        if (~var383 == -2607) {
+                                        if (~opcode == -2607) {
                                             class108.field1946[var6++] = var77.field3457;
                                             continue;
                                         }
-                                        if (~var383 == -2608) {
+                                        if (~opcode == -2608) {
                                             class108.field1946[var6++] = var77.field3519;
                                             continue;
                                         }
-                                        if (~var383 == -2609) {
+                                        if (~opcode == -2609) {
                                             class108.field1946[var6++] = var77.field3511;
                                             continue;
                                         }
-                                        if (var383 == 2609) {
+                                        if (opcode == 2609) {
                                             class108.field1946[var6++] = var77.field3482;
                                             continue;
                                         }
-                                    } else if (var383 >= 2800) {
-                                        if (~var383 > -2901) {
+                                    } else if (opcode >= 2800) {
+                                        if (~opcode > -2901) {
                                             --var6;
                                             class174 var78 = class239.method1581(-64, class108.field1946[var6]);
-                                            if (var383 == 2800) {
+                                            if (opcode == 2800) {
                                                 class108.field1946[var6++] = GameShell.method592(1281959627, class80.method530(-881710560, var78));
                                                 continue;
                                             }
-                                            if (~var383 == -2802) {
+                                            if (~opcode == -2802) {
                                                 --var6;
                                                 int var79 = class108.field1946[var6];
                                                 int var385 = var79 - 1;
@@ -958,7 +958,7 @@ public class class135 extends class23 {
                                                 class171.field3332[var7++] = class81.field1468;
                                                 continue;
                                             }
-                                            if (~var383 == -2803) {
+                                            if (~opcode == -2803) {
                                                 if (var78.field3459 != null) {
                                                     class171.field3332[var7++] = var78.field3459;
                                                 } else {
@@ -966,27 +966,27 @@ public class class135 extends class23 {
                                                 }
                                                 continue;
                                             }
-                                        } else if (~var383 <= -3201) {
-                                            if (~var383 > -3301) {
-                                                if (~var383 == -3201) {
+                                        } else if (~opcode <= -3201) {
+                                            if (~opcode > -3301) {
+                                                if (~opcode == -3201) {
                                                     var6 -= 3;
                                                     class92.method669(class108.field1946[var6 + 1], class108.field1946[var6 + 2], class108.field1946[var6], 0);
                                                     continue;
                                                 }
-                                                if (var383 == 3201) {
+                                                if (opcode == 3201) {
                                                     --var6;
                                                     class116.method790((byte) -73, class108.field1946[var6]);
                                                     continue;
                                                 }
-                                                if (var383 == 3202) {
+                                                if (opcode == 3202) {
                                                     var6 -= 2;
                                                     class4.method23(true, class108.field1946[var6], class108.field1946[var6 + 1]);
                                                     continue;
                                                 }
-                                            } else if (var383 >= 3400) {
-                                                if (~var383 <= -3501) {
-                                                    if (var383 < 3700) {
-                                                        if (var383 == 3600) {
+                                            } else if (opcode >= 3400) {
+                                                if (~opcode <= -3501) {
+                                                    if (opcode < 3700) {
+                                                        if (opcode == 3600) {
                                                             if (~class115.field2080 == -1) {
                                                                 class108.field1946[var6++] = -2;
                                                             } else if (class115.field2080 != 1) {
@@ -996,7 +996,7 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (var383 == 3601) {
+                                                        if (opcode == 3601) {
                                                             --var6;
                                                             int var80 = class108.field1946[var6];
                                                             if (~class115.field2080 == -3 && ~var80 > ~Isaac.field2731) {
@@ -1006,7 +1006,7 @@ public class class135 extends class23 {
                                                             class171.field3332[var7++] = class81.field1468;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3603) {
+                                                        if (~opcode == -3603) {
                                                             --var6;
                                                             int var81 = class108.field1946[var6];
                                                             if (class115.field2080 == 2 && var81 < Isaac.field2731) {
@@ -1016,7 +1016,7 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (var383 == 3603) {
+                                                        if (opcode == 3603) {
                                                             --var6;
                                                             int var82 = class108.field1946[var6];
                                                             if (~class115.field2080 == -3 && var82 < Isaac.field2731) {
@@ -1026,48 +1026,48 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (var383 == 3604) {
+                                                        if (opcode == 3604) {
                                                             --var7;
-                                                            class88 var83 = class171.field3332[var7];
+                                                            JString var83 = class171.field3332[var7];
                                                             --var6;
                                                             int var84 = class108.field1946[var6];
                                                             class171.method1215(var83, var84, 0);
                                                             continue;
                                                         }
-                                                        if (~var383 == -3606) {
+                                                        if (~opcode == -3606) {
                                                             --var7;
-                                                            class88 var85 = class171.field3332[var7];
+                                                            JString var85 = class171.field3332[var7];
                                                             class12.method64(-42, var85.method630(false));
                                                             continue;
                                                         }
-                                                        if (var383 == 3606) {
+                                                        if (opcode == 3606) {
                                                             --var7;
-                                                            class88 var86 = class171.field3332[var7];
+                                                            JString var86 = class171.field3332[var7];
                                                             class114.method779(-16, var86.method630(false));
                                                             continue;
                                                         }
-                                                        if (~var383 == -3608) {
+                                                        if (~opcode == -3608) {
                                                             --var7;
-                                                            class88 var87 = class171.field3332[var7];
+                                                            JString var87 = class171.field3332[var7];
                                                             class11.method55(-8, var87.method630(false));
                                                             continue;
                                                         }
-                                                        if (~var383 == -3609) {
+                                                        if (~opcode == -3609) {
                                                             --var7;
-                                                            class88 var88 = class171.field3332[var7];
+                                                            JString var88 = class171.field3332[var7];
                                                             Isaac.method975(0, var88.method630(false));
                                                             continue;
                                                         }
-                                                        if (~var383 == -3610) {
+                                                        if (~opcode == -3610) {
                                                             --var7;
-                                                            class88 var89 = class171.field3332[var7];
-                                                            if (var89.method619(-4205, class177.field3556) || var89.method619(-4205, class164.field3143)) {
-                                                                var89 = var89.method635(7, -383902332);
+                                                            JString var89 = class171.field3332[var7];
+                                                            if (var89.startsWith(class177.field3556) || var89.startsWith(class164.field3143)) {
+                                                                var89 = var89.substring(7);
                                                             }
                                                             class108.field1946[var6++] = !method903((byte) -71, var89) ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3611) {
+                                                        if (~opcode == -3611) {
                                                             --var6;
                                                             int var90 = class108.field1946[var6];
                                                             if (~class115.field2080 == -3 && Isaac.field2731 > var90) {
@@ -1077,7 +1077,7 @@ public class class135 extends class23 {
                                                             class171.field3332[var7++] = class81.field1468;
                                                             continue;
                                                         }
-                                                        if (var383 == 3611) {
+                                                        if (opcode == 3611) {
                                                             if (class222.field4184 != null) {
                                                                 class171.field3332[var7++] = class222.field4184.method614((byte) 83);
                                                             } else {
@@ -1085,7 +1085,7 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (var383 == 3612) {
+                                                        if (opcode == 3612) {
                                                             if (class222.field4184 != null) {
                                                                 class108.field1946[var6++] = EnumType.field885;
                                                             } else {
@@ -1093,61 +1093,61 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (~var383 == -3614) {
+                                                        if (~opcode == -3614) {
                                                             --var6;
                                                             int var91 = class108.field1946[var6];
                                                             if (class222.field4184 != null && EnumType.field885 > var91) {
-                                                                class171.field3332[var7++] = class88.field1647[var91].field1323.method614((byte) 83);
+                                                                class171.field3332[var7++] = JString.field1647[var91].field1323.method614((byte) 83);
                                                                 continue;
                                                             }
                                                             class171.field3332[var7++] = class81.field1468;
                                                             continue;
                                                         }
-                                                        if (var383 == 3614) {
+                                                        if (opcode == 3614) {
                                                             --var6;
                                                             int var92 = class108.field1946[var6];
                                                             if (class222.field4184 != null && ~EnumType.field885 < ~var92) {
-                                                                class108.field1946[var6++] = class88.field1647[var92].field1317;
+                                                                class108.field1946[var6++] = JString.field1647[var92].field1317;
                                                                 continue;
                                                             }
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3616) {
+                                                        if (~opcode == -3616) {
                                                             --var6;
                                                             int var93 = class108.field1946[var6];
                                                             if (class222.field4184 != null && ~EnumType.field885 < ~var93) {
-                                                                class108.field1946[var6++] = class88.field1647[var93].field1315;
+                                                                class108.field1946[var6++] = JString.field1647[var93].field1315;
                                                                 continue;
                                                             }
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3617) {
+                                                        if (~opcode == -3617) {
                                                             class108.field1946[var6++] = class170.field3303;
                                                             continue;
                                                         }
-                                                        if (var383 == 3617) {
+                                                        if (opcode == 3617) {
                                                             --var7;
-                                                            class88 var94 = class171.field3332[var7];
+                                                            JString var94 = class171.field3332[var7];
                                                             class101.method703(var94, (byte) -121);
                                                             continue;
                                                         }
-                                                        if (~var383 == -3619) {
+                                                        if (~opcode == -3619) {
                                                             class108.field1946[var6++] = class143.field2633;
                                                             continue;
                                                         }
-                                                        if (var383 == 3619) {
+                                                        if (opcode == 3619) {
                                                             --var7;
-                                                            class88 var95 = class171.field3332[var7];
+                                                            JString var95 = class171.field3332[var7];
                                                             method902(111, var95.method630(false));
                                                             continue;
                                                         }
-                                                        if (~var383 == -3621) {
+                                                        if (~opcode == -3621) {
                                                             class248.method1623((byte) -113);
                                                             continue;
                                                         }
-                                                        if (var383 == 3621) {
+                                                        if (opcode == 3621) {
                                                             if (~class115.field2080 == -1) {
                                                                 class108.field1946[var6++] = -1;
                                                             } else {
@@ -1155,7 +1155,7 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (var383 == 3622) {
+                                                        if (opcode == 3622) {
                                                             --var6;
                                                             int var96 = class108.field1946[var6];
                                                             if (class115.field2080 != 0 && var96 < Linkable.field1221) {
@@ -1165,26 +1165,26 @@ public class class135 extends class23 {
                                                             class171.field3332[var7++] = class81.field1468;
                                                             continue;
                                                         }
-                                                        if (var383 == 3623) {
+                                                        if (opcode == 3623) {
                                                             --var7;
-                                                            class88 var97 = class171.field3332[var7];
-                                                            if (var97.method619(-4205, class177.field3556) || var97.method619(-4205, class164.field3143)) {
-                                                                var97 = var97.method635(7, -383902332);
+                                                            JString var97 = class171.field3332[var7];
+                                                            if (var97.startsWith(class177.field3556) || var97.startsWith(class164.field3143)) {
+                                                                var97 = var97.substring(7);
                                                             }
                                                             class108.field1946[var6++] = !class164.method1132((byte) 66, var97) ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (var383 == 3624) {
+                                                        if (opcode == 3624) {
                                                             --var6;
                                                             int var98 = class108.field1946[var6];
-                                                            if (class88.field1647 != null && EnumType.field885 > var98 && class88.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
+                                                            if (JString.field1647 != null && EnumType.field885 > var98 && JString.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
                                                                 class108.field1946[var6++] = 1;
                                                                 continue;
                                                             }
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (var383 == 3625) {
+                                                        if (opcode == 3625) {
                                                             if (class225.field4221 == null) {
                                                                 class171.field3332[var7++] = class81.field1468;
                                                             } else {
@@ -1192,17 +1192,17 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (~var383 == -3627) {
+                                                        if (~opcode == -3627) {
                                                             --var6;
                                                             int var99 = class108.field1946[var6];
                                                             if (class222.field4184 != null && EnumType.field885 > var99) {
-                                                                class171.field3332[var7++] = class88.field1647[var99].field1321;
+                                                                class171.field3332[var7++] = JString.field1647[var99].field1321;
                                                                 continue;
                                                             }
                                                             class171.field3332[var7++] = class81.field1468;
                                                             continue;
                                                         }
-                                                        if (var383 == 3627) {
+                                                        if (opcode == 3627) {
                                                             --var6;
                                                             int var100 = class108.field1946[var6];
                                                             if (class115.field2080 == 2 && ~var100 <= -1 && var100 < Isaac.field2731) {
@@ -1212,122 +1212,122 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3629) {
+                                                        if (~opcode == -3629) {
                                                             --var7;
-                                                            class88 var101 = class171.field3332[var7];
-                                                            if (var101.method619(-4205, class177.field3556) || var101.method619(-4205, class164.field3143)) {
-                                                                var101 = var101.method635(7, -383902332);
+                                                            JString var101 = class171.field3332[var7];
+                                                            if (var101.startsWith(class177.field3556) || var101.startsWith(class164.field3143)) {
+                                                                var101 = var101.substring(7);
                                                             }
                                                             class108.field1946[var6++] = class120.method825(var101, 60);
                                                             continue;
                                                         }
-                                                    } else if (var383 < 4000) {
-                                                        if (~var383 == -3904) {
+                                                    } else if (opcode < 4000) {
+                                                        if (~opcode == -3904) {
                                                             --var6;
                                                             int var102 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var102].method884(-126);
                                                             continue;
                                                         }
-                                                        if (~var383 == -3905) {
+                                                        if (~opcode == -3905) {
                                                             --var6;
                                                             int var103 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var103].field2457;
                                                             continue;
                                                         }
-                                                        if (var383 == 3905) {
+                                                        if (opcode == 3905) {
                                                             --var6;
                                                             int var104 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var104].field2456;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3907) {
+                                                        if (~opcode == -3907) {
                                                             --var6;
                                                             int var105 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var105].field2452;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3908) {
+                                                        if (~opcode == -3908) {
                                                             --var6;
                                                             int var106 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var106].field2459;
                                                             continue;
                                                         }
-                                                        if (var383 == 3908) {
+                                                        if (opcode == 3908) {
                                                             --var6;
                                                             int var107 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.field140[var107].field2461;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3911) {
+                                                        if (~opcode == -3911) {
                                                             --var6;
                                                             int var108 = class108.field1946[var6];
                                                             int var109 = class9.field140[var108].method888((byte) -93);
                                                             class108.field1946[var6++] = var109 != 0 ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (~var383 == -3912) {
+                                                        if (~opcode == -3912) {
                                                             --var6;
                                                             int var110 = class108.field1946[var6];
                                                             int var111 = class9.field140[var110].method888((byte) -93);
                                                             class108.field1946[var6++] = ~var111 != -3 ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (var383 == 3912) {
+                                                        if (opcode == 3912) {
                                                             --var6;
                                                             int var112 = class108.field1946[var6];
                                                             int var113 = class9.field140[var112].method888((byte) -93);
                                                             class108.field1946[var6++] = var113 != 5 ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (var383 == 3913) {
+                                                        if (opcode == 3913) {
                                                             --var6;
                                                             int var114 = class108.field1946[var6];
                                                             int var115 = class9.field140[var114].method888((byte) -93);
                                                             class108.field1946[var6++] = ~var115 != -2 ? 0 : 1;
                                                             continue;
                                                         }
-                                                    } else if (~var383 > -4101) {
-                                                        if (var383 == 4000) {
+                                                    } else if (~opcode > -4101) {
+                                                        if (opcode == 4000) {
                                                             var6 -= 2;
                                                             int var116 = class108.field1946[var6];
                                                             int var117 = class108.field1946[var6 - -1];
                                                             class108.field1946[var6++] = var116 - -var117;
                                                             continue;
                                                         }
-                                                        if (var383 == 4001) {
+                                                        if (opcode == 4001) {
                                                             var6 -= 2;
                                                             int var118 = class108.field1946[var6];
                                                             int var119 = class108.field1946[var6 + 1];
                                                             class108.field1946[var6++] = -var119 + var118;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4003) {
+                                                        if (~opcode == -4003) {
                                                             var6 -= 2;
                                                             int var120 = class108.field1946[var6 - -1];
                                                             int var121 = class108.field1946[var6];
                                                             class108.field1946[var6++] = var120 * var121;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4004) {
+                                                        if (~opcode == -4004) {
                                                             var6 -= 2;
                                                             int var122 = class108.field1946[var6];
                                                             int var123 = class108.field1946[var6 + 1];
                                                             class108.field1946[var6++] = var122 / var123;
                                                             continue;
                                                         }
-                                                        if (var383 == 4004) {
+                                                        if (opcode == 4004) {
                                                             --var6;
                                                             int var124 = class108.field1946[var6];
                                                             class108.field1946[var6++] = (int) (Math.random() * (double) var124);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4006) {
+                                                        if (~opcode == -4006) {
                                                             --var6;
                                                             int var125 = class108.field1946[var6];
                                                             class108.field1946[var6++] = (int) ((double) (var125 + 1) * Math.random());
                                                             continue;
                                                         }
-                                                        if (var383 == 4006) {
+                                                        if (opcode == 4006) {
                                                             var6 -= 5;
                                                             int var126 = class108.field1946[var6];
                                                             int var127 = class108.field1946[var6 + 1];
@@ -1337,42 +1337,42 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = (-var126 + var127) * (-var128 + var130) / (-var128 + var129) + var126;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4008) {
+                                                        if (~opcode == -4008) {
                                                             var6 -= 2;
                                                             long var131 = (long) class108.field1946[var6 + 1];
                                                             long var133 = (long) class108.field1946[var6];
                                                             class108.field1946[var6++] = (int) (var131 * var133 / 100L + var133);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4009) {
+                                                        if (~opcode == -4009) {
                                                             var6 -= 2;
                                                             int var135 = class108.field1946[var6];
                                                             int var136 = class108.field1946[var6 + 1];
                                                             class108.field1946[var6++] = class204.method1405(1 << var136, var135);
                                                             continue;
                                                         }
-                                                        if (var383 == 4009) {
+                                                        if (opcode == 4009) {
                                                             var6 -= 2;
                                                             int var137 = class108.field1946[var6 - -1];
                                                             int var138 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class70.method470(var138, -1 - (1 << var137));
                                                             continue;
                                                         }
-                                                        if (var383 == 4010) {
+                                                        if (opcode == 4010) {
                                                             var6 -= 2;
                                                             int var139 = class108.field1946[var6 + 1];
                                                             int var140 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class70.method470(var140, 1 << var139) != 0 ? 1 : 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4012) {
+                                                        if (~opcode == -4012) {
                                                             var6 -= 2;
                                                             int var141 = class108.field1946[var6 + 1];
                                                             int var142 = class108.field1946[var6];
                                                             class108.field1946[var6++] = var142 % var141;
                                                             continue;
                                                         }
-                                                        if (var383 == 4012) {
+                                                        if (opcode == 4012) {
                                                             var6 -= 2;
                                                             int var143 = class108.field1946[var6];
                                                             int var144 = class108.field1946[var6 - -1];
@@ -1383,7 +1383,7 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (var383 == 4013) {
+                                                        if (opcode == 4013) {
                                                             var6 -= 2;
                                                             int var145 = class108.field1946[var6];
                                                             int var146 = class108.field1946[var6 - -1];
@@ -1398,35 +1398,35 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (~var383 == -4015) {
+                                                        if (~opcode == -4015) {
                                                             var6 -= 2;
                                                             int var147 = class108.field1946[var6 + 1];
                                                             int var148 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class70.method470(var147, var148);
                                                             continue;
                                                         }
-                                                        if (var383 == 4015) {
+                                                        if (opcode == 4015) {
                                                             var6 -= 2;
                                                             int var149 = class108.field1946[var6 - -1];
                                                             int var150 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class204.method1405(var150, var149);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4017) {
+                                                        if (~opcode == -4017) {
                                                             var6 -= 2;
                                                             int var151 = class108.field1946[var6];
                                                             int var152 = class108.field1946[var6 - -1];
                                                             class108.field1946[var6++] = var151 < var152 ? var151 : var152;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4018) {
+                                                        if (~opcode == -4018) {
                                                             var6 -= 2;
                                                             int var153 = class108.field1946[var6];
                                                             int var154 = class108.field1946[var6 - -1];
                                                             class108.field1946[var6++] = ~var153 >= ~var154 ? var154 : var153;
                                                             continue;
                                                         }
-                                                        if (var383 == 4018) {
+                                                        if (opcode == 4018) {
                                                             var6 -= 3;
                                                             long var155 = (long) class108.field1946[var6];
                                                             long var157 = (long) class108.field1946[var6 + 1];
@@ -1434,15 +1434,15 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = (int) (var155 * var159 / var157);
                                                             continue;
                                                         }
-                                                    } else if (var383 >= 4200) {
-                                                        if (var383 < 4300) {
-                                                            if (var383 == 4200) {
+                                                    } else if (opcode >= 4200) {
+                                                        if (opcode < 4300) {
+                                                            if (opcode == 4200) {
                                                                 --var6;
                                                                 int var161 = class108.field1946[var6];
                                                                 class171.field3332[var7++] = class71.method472(var161, (byte) -120).field2894;
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4202) {
+                                                            if (~opcode == -4202) {
                                                                 var6 -= 2;
                                                                 int var162 = class108.field1946[var6];
                                                                 int var163 = class108.field1946[var6 - -1];
@@ -1454,7 +1454,7 @@ public class class135 extends class23 {
                                                                 class171.field3332[var7++] = class81.field1468;
                                                                 continue;
                                                             }
-                                                            if (var383 == 4202) {
+                                                            if (opcode == 4202) {
                                                                 var6 -= 2;
                                                                 int var165 = class108.field1946[var6 + 1];
                                                                 int var166 = class108.field1946[var6];
@@ -1466,19 +1466,19 @@ public class class135 extends class23 {
                                                                 class171.field3332[var7++] = class81.field1468;
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4204) {
+                                                            if (~opcode == -4204) {
                                                                 --var6;
                                                                 int var168 = class108.field1946[var6];
                                                                 class108.field1946[var6++] = class71.method472(var168, (byte) -114).field2856;
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4205) {
+                                                            if (~opcode == -4205) {
                                                                 --var6;
                                                                 int var169 = class108.field1946[var6];
                                                                 class108.field1946[var6++] = class71.method472(var169, (byte) -105).field2854 == 1 ? 1 : 0;
                                                                 continue;
                                                             }
-                                                            if (var383 == 4205) {
+                                                            if (opcode == 4205) {
                                                                 --var6;
                                                                 int var170 = class108.field1946[var6];
                                                                 class149 var171 = class71.method472(var170, (byte) -89);
@@ -1489,7 +1489,7 @@ public class class135 extends class23 {
                                                                 class108.field1946[var6++] = var170;
                                                                 continue;
                                                             }
-                                                            if (var383 == 4206) {
+                                                            if (opcode == 4206) {
                                                                 --var6;
                                                                 int var172 = class108.field1946[var6];
                                                                 class149 var173 = class71.method472(var172, (byte) -100);
@@ -1500,13 +1500,13 @@ public class class135 extends class23 {
                                                                 class108.field1946[var6++] = var172;
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4208) {
+                                                            if (~opcode == -4208) {
                                                                 --var6;
                                                                 int var174 = class108.field1946[var6];
                                                                 class108.field1946[var6++] = !class71.method472(var174, (byte) -128).field2879 ? 0 : 1;
                                                                 continue;
                                                             }
-                                                            if (var383 == 4208) {
+                                                            if (opcode == 4208) {
                                                                 var6 -= 2;
                                                                 int var175 = class108.field1946[var6 - -1];
                                                                 int var176 = class108.field1946[var6];
@@ -1518,16 +1518,16 @@ public class class135 extends class23 {
                                                                 }
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4211) {
+                                                            if (~opcode == -4211) {
                                                                 --var6;
                                                                 int var178 = class108.field1946[var6];
                                                                 --var7;
-                                                                class88 var179 = class171.field3332[var7];
+                                                                JString var179 = class171.field3332[var7];
                                                                 class70.method467(0, var178 == 1, var179);
                                                                 class108.field1946[var6++] = class204.field3895;
                                                                 continue;
                                                             }
-                                                            if (var383 == 4211) {
+                                                            if (opcode == 4211) {
                                                                 if (Linkable.field1210 != null && class204.field3895 > class116.field2109) {
                                                                     class108.field1946[var6++] = class70.method470(Linkable.field1210[class116.field2109++], 65535);
                                                                     continue;
@@ -1535,12 +1535,12 @@ public class class135 extends class23 {
                                                                 class108.field1946[var6++] = -1;
                                                                 continue;
                                                             }
-                                                            if (~var383 == -4213) {
+                                                            if (~opcode == -4213) {
                                                                 class116.field2109 = 0;
                                                                 continue;
                                                             }
-                                                        } else if (var383 < 4400) {
-                                                            if (~var383 == -4301) {
+                                                        } else if (opcode < 4400) {
+                                                            if (~opcode == -4301) {
                                                                 var6 -= 2;
                                                                 int var180 = class108.field1946[var6];
                                                                 int var181 = class108.field1946[var6 + 1];
@@ -1552,14 +1552,14 @@ public class class135 extends class23 {
                                                                 }
                                                                 continue;
                                                             }
-                                                        } else if (var383 >= 4500) {
-                                                            if (var383 >= 4600) {
-                                                                if (var383 < 5100) {
-                                                                    if (~var383 == -5001) {
+                                                        } else if (opcode >= 4500) {
+                                                            if (opcode >= 4600) {
+                                                                if (opcode < 5100) {
+                                                                    if (~opcode == -5001) {
                                                                         class108.field1946[var6++] = Linkable.field1206;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5001) {
+                                                                    if (opcode == 5001) {
                                                                         var6 -= 3;
                                                                         ++class2.field15;
                                                                         Linkable.field1206 = class108.field1946[var6];
@@ -1571,12 +1571,12 @@ public class class135 extends class23 {
                                                                         Isaac.out.p1(class128.field2410);
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5003) {
+                                                                    if (~opcode == -5003) {
                                                                         var6 -= 2;
                                                                         ++class68.field1240;
                                                                         int var183 = class108.field1946[var6];
                                                                         --var7;
-                                                                        class88 var184 = class171.field3332[var7];
+                                                                        JString var184 = class171.field3332[var7];
                                                                         int var185 = class108.field1946[var6 + 1];
                                                                         Isaac.out.method30(99);
                                                                         Isaac.out.p8(var184.method630(false));
@@ -1584,10 +1584,10 @@ public class class135 extends class23 {
                                                                         Isaac.out.p1(var185);
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5003) {
+                                                                    if (opcode == 5003) {
                                                                         --var6;
                                                                         int var186 = class108.field1946[var6];
-                                                                        class88 var187 = null;
+                                                                        JString var187 = null;
                                                                         if (~var186 > -101) {
                                                                             var187 = class212.field4021[var186];
                                                                         }
@@ -1597,7 +1597,7 @@ public class class135 extends class23 {
                                                                         class171.field3332[var7++] = var187;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5005) {
+                                                                    if (~opcode == -5005) {
                                                                         int var188 = -1;
                                                                         --var6;
                                                                         int var189 = class108.field1946[var6];
@@ -1607,174 +1607,174 @@ public class class135 extends class23 {
                                                                         class108.field1946[var6++] = var188;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5006) {
+                                                                    if (~opcode == -5006) {
                                                                         class108.field1946[var6++] = class10.field142;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5008) {
+                                                                    if (opcode == 5008) {
                                                                         --var7;
-                                                                        class88 var190 = class171.field3332[var7];
-                                                                        if (var190.method619(-4205, class120.field2196)) {
-                                                                            class97.method684(var190, 2);
+                                                                        JString message = class171.field3332[var7];
+                                                                        if (message.startsWith(class120.field2196)) {
+                                                                            class97.method684(message, 2);
                                                                             continue;
                                                                         }
                                                                         if (Linkable.field1208 == 0 && (class238.field4430 == 1 || ~class176.field3537 == -2)) {
                                                                             continue;
                                                                         }
                                                                         ++class95.field1769;
-                                                                        class88 var191 = var190.method639(123);
-                                                                        byte var192 = 0;
-                                                                        if (!var191.method619(-4205, class29.field488)) {
-                                                                            if (var191.method619(-4205, class101.field1839)) {
-                                                                                var192 = 1;
-                                                                                var190 = var190.method635(class101.field1839.method604((byte) -53), -383902332);
-                                                                            } else if (var191.method619(-4205, class138.field2566)) {
-                                                                                var190 = var190.method635(class138.field2566.method604((byte) -53), -383902332);
-                                                                                var192 = 2;
-                                                                            } else if (var191.method619(-4205, class241.field4469)) {
-                                                                                var192 = 3;
-                                                                                var190 = var190.method635(class241.field4469.method604((byte) -53), -383902332);
-                                                                            } else if (var191.method619(-4205, class232.field4365)) {
-                                                                                var190 = var190.method635(class232.field4365.method604((byte) -53), -383902332);
-                                                                                var192 = 4;
-                                                                            } else if (!var191.method619(-4205, class74.field1355)) {
-                                                                                if (!var191.method619(-4205, class37.field669)) {
-                                                                                    if (var191.method619(-4205, class192.field3692)) {
-                                                                                        var192 = 7;
-                                                                                        var190 = var190.method635(class192.field3692.method604((byte) -53), -383902332);
-                                                                                    } else if (!var191.method619(-4205, class39.field696)) {
-                                                                                        if (var191.method619(-4205, class200.field3819)) {
-                                                                                            var190 = var190.method635(class200.field3819.method604((byte) -53), -383902332);
-                                                                                            var192 = 9;
-                                                                                        } else if (!var191.method619(-4205, class160.field3086)) {
-                                                                                            if (var191.method619(-4205, class192.field3705)) {
-                                                                                                var190 = var190.method635(class192.field3705.method604((byte) -53), -383902332);
-                                                                                                var192 = 11;
+                                                                        JString colorLower = message.toLowerCase();
+                                                                        byte color = 0;
+                                                                        if (!colorLower.startsWith(class29.field488)) {
+                                                                            if (colorLower.startsWith(class101.field1839)) {
+                                                                                color = 1;
+                                                                                message = message.substring(class101.field1839.length());
+                                                                            } else if (colorLower.startsWith(class138.field2566)) {
+                                                                                message = message.substring(class138.field2566.length());
+                                                                                color = 2;
+                                                                            } else if (colorLower.startsWith(class241.field4469)) {
+                                                                                color = 3;
+                                                                                message = message.substring(class241.field4469.length());
+                                                                            } else if (colorLower.startsWith(class232.field4365)) {
+                                                                                message = message.substring(class232.field4365.length());
+                                                                                color = 4;
+                                                                            } else if (!colorLower.startsWith(class74.field1355)) {
+                                                                                if (!colorLower.startsWith(class37.field669)) {
+                                                                                    if (colorLower.startsWith(class192.field3692)) {
+                                                                                        color = 7;
+                                                                                        message = message.substring(class192.field3692.length());
+                                                                                    } else if (!colorLower.startsWith(class39.field696)) {
+                                                                                        if (colorLower.startsWith(class200.field3819)) {
+                                                                                            message = message.substring(class200.field3819.length());
+                                                                                            color = 9;
+                                                                                        } else if (!colorLower.startsWith(class160.field3086)) {
+                                                                                            if (colorLower.startsWith(class192.field3705)) {
+                                                                                                message = message.substring(class192.field3705.length());
+                                                                                                color = 11;
                                                                                             } else if (class126.field2350 != 0) {
-                                                                                                if (!var191.method619(-4205, class29.field485)) {
-                                                                                                    if (var191.method619(-4205, class101.field1844)) {
-                                                                                                        var190 = var190.method635(class101.field1844.method604((byte) -53), -383902332);
-                                                                                                        var192 = 1;
-                                                                                                    } else if (var191.method619(-4205, class138.field2563)) {
-                                                                                                        var192 = 2;
-                                                                                                        var190 = var190.method635(class138.field2563.method604((byte) -53), -383902332);
-                                                                                                    } else if (var191.method619(-4205, class241.field4465)) {
-                                                                                                        var192 = 3;
-                                                                                                        var190 = var190.method635(class241.field4465.method604((byte) -53), -383902332);
-                                                                                                    } else if (var191.method619(-4205, class232.field4366)) {
-                                                                                                        var190 = var190.method635(class232.field4366.method604((byte) -53), -383902332);
-                                                                                                        var192 = 4;
-                                                                                                    } else if (var191.method619(-4205, class74.field1354)) {
-                                                                                                        var190 = var190.method635(class74.field1354.method604((byte) -53), -383902332);
-                                                                                                        var192 = 5;
-                                                                                                    } else if (!var191.method619(-4205, class37.field663)) {
-                                                                                                        if (var191.method619(-4205, class192.field3693)) {
-                                                                                                            var192 = 7;
-                                                                                                            var190 = var190.method635(class192.field3693.method604((byte) -53), -383902332);
-                                                                                                        } else if (!var191.method619(-4205, class39.field683)) {
-                                                                                                            if (var191.method619(-4205, class200.field3815)) {
-                                                                                                                var190 = var190.method635(class200.field3815.method604((byte) -53), -383902332);
-                                                                                                                var192 = 9;
-                                                                                                            } else if (!var191.method619(-4205, class160.field3083)) {
-                                                                                                                if (var191.method619(-4205, class192.field3697)) {
-                                                                                                                    var190 = var190.method635(class192.field3697.method604((byte) -53), -383902332);
-                                                                                                                    var192 = 11;
+                                                                                                if (!colorLower.startsWith(class29.field485)) {
+                                                                                                    if (colorLower.startsWith(class101.field1844)) {
+                                                                                                        message = message.substring(class101.field1844.length());
+                                                                                                        color = 1;
+                                                                                                    } else if (colorLower.startsWith(class138.field2563)) {
+                                                                                                        color = 2;
+                                                                                                        message = message.substring(class138.field2563.length());
+                                                                                                    } else if (colorLower.startsWith(class241.field4465)) {
+                                                                                                        color = 3;
+                                                                                                        message = message.substring(class241.field4465.length());
+                                                                                                    } else if (colorLower.startsWith(class232.field4366)) {
+                                                                                                        message = message.substring(class232.field4366.length());
+                                                                                                        color = 4;
+                                                                                                    } else if (colorLower.startsWith(class74.field1354)) {
+                                                                                                        message = message.substring(class74.field1354.length());
+                                                                                                        color = 5;
+                                                                                                    } else if (!colorLower.startsWith(class37.field663)) {
+                                                                                                        if (colorLower.startsWith(class192.field3693)) {
+                                                                                                            color = 7;
+                                                                                                            message = message.substring(class192.field3693.length());
+                                                                                                        } else if (!colorLower.startsWith(class39.field683)) {
+                                                                                                            if (colorLower.startsWith(class200.field3815)) {
+                                                                                                                message = message.substring(class200.field3815.length());
+                                                                                                                color = 9;
+                                                                                                            } else if (!colorLower.startsWith(class160.field3083)) {
+                                                                                                                if (colorLower.startsWith(class192.field3697)) {
+                                                                                                                    message = message.substring(class192.field3697.length());
+                                                                                                                    color = 11;
                                                                                                                 }
                                                                                                             } else {
-                                                                                                                var192 = 10;
-                                                                                                                var190 = var190.method635(class160.field3083.method604((byte) -53), -383902332);
+                                                                                                                color = 10;
+                                                                                                                message = message.substring(class160.field3083.length());
                                                                                                             }
                                                                                                         } else {
-                                                                                                            var190 = var190.method635(class39.field683.method604((byte) -53), -383902332);
-                                                                                                            var192 = 8;
+                                                                                                            message = message.substring(class39.field683.length());
+                                                                                                            color = 8;
                                                                                                         }
                                                                                                     } else {
-                                                                                                        var190 = var190.method635(class37.field663.method604((byte) -53), -383902332);
-                                                                                                        var192 = 6;
+                                                                                                        message = message.substring(class37.field663.length());
+                                                                                                        color = 6;
                                                                                                     }
                                                                                                 } else {
-                                                                                                    var192 = 0;
-                                                                                                    var190 = var190.method635(class29.field485.method604((byte) -53), -383902332);
+                                                                                                    color = 0;
+                                                                                                    message = message.substring(class29.field485.length());
                                                                                                 }
                                                                                             }
                                                                                         } else {
-                                                                                            var192 = 10;
-                                                                                            var190 = var190.method635(class160.field3086.method604((byte) -53), -383902332);
+                                                                                            color = 10;
+                                                                                            message = message.substring(class160.field3086.length());
                                                                                         }
                                                                                     } else {
-                                                                                        var190 = var190.method635(class39.field696.method604((byte) -53), -383902332);
-                                                                                        var192 = 8;
+                                                                                        message = message.substring(class39.field696.length());
+                                                                                        color = 8;
                                                                                     }
                                                                                 } else {
-                                                                                    var190 = var190.method635(class37.field669.method604((byte) -53), -383902332);
-                                                                                    var192 = 6;
+                                                                                    message = message.substring(class37.field669.length());
+                                                                                    color = 6;
                                                                                 }
                                                                             } else {
-                                                                                var190 = var190.method635(class74.field1355.method604((byte) -53), -383902332);
-                                                                                var192 = 5;
+                                                                                message = message.substring(class74.field1355.length());
+                                                                                color = 5;
                                                                             }
                                                                         } else {
-                                                                            var190 = var190.method635(class29.field488.method604((byte) -53), -383902332);
-                                                                            var192 = 0;
+                                                                            message = message.substring(class29.field488.length());
+                                                                            color = 0;
                                                                         }
-                                                                        class88 var193 = var190.method639(121);
+                                                                        JString var193 = message.toLowerCase();
                                                                         byte var194 = 0;
-                                                                        if (!var193.method619(-4205, class57.field1083)) {
-                                                                            if (var193.method619(-4205, class35.field612)) {
-                                                                                var190 = var190.method635(class35.field612.method604((byte) -53), -383902332);
+                                                                        if (!var193.startsWith(class57.field1083)) {
+                                                                            if (var193.startsWith(class35.field612)) {
+                                                                                message = message.substring(class35.field612.length());
                                                                                 var194 = 2;
-                                                                            } else if (!var193.method619(-4205, class71.field1308)) {
-                                                                                if (!var193.method619(-4205, class17.field263)) {
-                                                                                    if (var193.method619(-4205, class216.field4052)) {
-                                                                                        var190 = var190.method635(class216.field4052.method604((byte) -53), -383902332);
+                                                                            } else if (!var193.startsWith(class71.field1308)) {
+                                                                                if (!var193.startsWith(class17.field263)) {
+                                                                                    if (var193.startsWith(class216.field4052)) {
+                                                                                        message = message.substring(class216.field4052.length());
                                                                                         var194 = 5;
                                                                                     } else if (class126.field2350 != 0) {
-                                                                                        if (!var193.method619(-4205, class57.field1086)) {
-                                                                                            if (!var193.method619(-4205, class35.field618)) {
-                                                                                                if (var193.method619(-4205, class71.field1313)) {
-                                                                                                    var190 = var190.method635(class71.field1313.method604((byte) -53), -383902332);
+                                                                                        if (!var193.startsWith(class57.field1086)) {
+                                                                                            if (!var193.startsWith(class35.field618)) {
+                                                                                                if (var193.startsWith(class71.field1313)) {
+                                                                                                    message = message.substring(class71.field1313.length());
                                                                                                     var194 = 3;
-                                                                                                } else if (var193.method619(-4205, class17.field267)) {
+                                                                                                } else if (var193.startsWith(class17.field267)) {
                                                                                                     var194 = 4;
-                                                                                                    var190 = var190.method635(class17.field267.method604((byte) -53), -383902332);
-                                                                                                } else if (var193.method619(-4205, class216.field4051)) {
+                                                                                                    message = message.substring(class17.field267.length());
+                                                                                                } else if (var193.startsWith(class216.field4051)) {
                                                                                                     var194 = 5;
-                                                                                                    var190 = var190.method635(class216.field4051.method604((byte) -53), -383902332);
+                                                                                                    message = message.substring(class216.field4051.length());
                                                                                                 }
                                                                                             } else {
-                                                                                                var190 = var190.method635(class35.field618.method604((byte) -53), -383902332);
+                                                                                                message = message.substring(class35.field618.length());
                                                                                                 var194 = 2;
                                                                                             }
                                                                                         } else {
                                                                                             var194 = 1;
-                                                                                            var190 = var190.method635(class57.field1086.method604((byte) -53), -383902332);
+                                                                                            message = message.substring(class57.field1086.length());
                                                                                         }
                                                                                     }
                                                                                 } else {
                                                                                     var194 = 4;
-                                                                                    var190 = var190.method635(class17.field263.method604((byte) -53), -383902332);
+                                                                                    message = message.substring(class17.field263.length());
                                                                                 }
                                                                             } else {
                                                                                 var194 = 3;
-                                                                                var190 = var190.method635(class71.field1308.method604((byte) -53), -383902332);
+                                                                                message = message.substring(class71.field1308.length());
                                                                             }
                                                                         } else {
                                                                             var194 = 1;
-                                                                            var190 = var190.method635(class57.field1083.method604((byte) -53), -383902332);
+                                                                            message = message.substring(class57.field1083.length());
                                                                         }
                                                                         Isaac.out.method30(189);
                                                                         Isaac.out.p1(0);
                                                                         int var195 = Isaac.out.pos;
-                                                                        Isaac.out.p1(var192);
+                                                                        Isaac.out.p1(color);
                                                                         Isaac.out.p1(var194);
-                                                                        class172.method1222(Isaac.out, var190, (byte) 113);
+                                                                        class172.method1222(Isaac.out, message, (byte) 113);
                                                                         Isaac.out.psize1(-var195 + Isaac.out.pos);
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5010) {
+                                                                    if (~opcode == -5010) {
                                                                         var7 -= 2;
-                                                                        class88 var196 = class171.field3332[var7];
-                                                                        class88 var197 = class171.field3332[var7 + 1];
+                                                                        JString var196 = class171.field3332[var7];
+                                                                        JString var197 = class171.field3332[var7 + 1];
                                                                         if (Linkable.field1208 != 0 || ~class238.field4430 != -2 && ~class176.field3537 != -2) {
                                                                             ++class176.field3538;
                                                                             Isaac.out.method30(80);
@@ -1786,10 +1786,10 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5011) {
+                                                                    if (~opcode == -5011) {
                                                                         --var6;
                                                                         int var199 = class108.field1946[var6];
-                                                                        class88 var200 = null;
+                                                                        JString var200 = null;
                                                                         if (var199 < 100) {
                                                                             var200 = class121.field2208[var199];
                                                                         }
@@ -1799,8 +1799,8 @@ public class class135 extends class23 {
                                                                         class171.field3332[var7++] = var200;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5011) {
-                                                                        class88 var201 = null;
+                                                                    if (opcode == 5011) {
+                                                                        JString var201 = null;
                                                                         --var6;
                                                                         int var202 = class108.field1946[var6];
                                                                         if (~var202 > -101) {
@@ -1812,7 +1812,7 @@ public class class135 extends class23 {
                                                                         class171.field3332[var7++] = var201;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5012) {
+                                                                    if (opcode == 5012) {
                                                                         int var203 = -1;
                                                                         --var6;
                                                                         int var204 = class108.field1946[var6];
@@ -1822,8 +1822,8 @@ public class class135 extends class23 {
                                                                         class108.field1946[var6++] = var203;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5016) {
-                                                                        class88 var205;
+                                                                    if (~opcode == -5016) {
+                                                                        JString var205;
                                                                         if (class240.field4458 != null && class240.field4458.name != null) {
                                                                             var205 = class240.field4458.name;
                                                                         } else {
@@ -1832,21 +1832,21 @@ public class class135 extends class23 {
                                                                         class171.field3332[var7++] = var205;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5016) {
+                                                                    if (opcode == 5016) {
                                                                         class108.field1946[var6++] = class128.field2410;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5018) {
+                                                                    if (~opcode == -5018) {
                                                                         class108.field1946[var6++] = class34.field582;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5050) {
+                                                                    if (opcode == 5050) {
                                                                         --var6;
                                                                         int var206 = class108.field1946[var6];
                                                                         class171.field3332[var7++] = class115.method785(var206, 4).field2130;
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5051) {
+                                                                    if (opcode == 5051) {
                                                                         --var6;
                                                                         int var207 = class108.field1946[var6];
                                                                         class117 var208 = class115.method785(var207, 4);
@@ -1857,7 +1857,7 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5052) {
+                                                                    if (opcode == 5052) {
                                                                         var6 -= 2;
                                                                         int var209 = class108.field1946[var6];
                                                                         int var210 = class108.field1946[var6 + 1];
@@ -1866,7 +1866,7 @@ public class class135 extends class23 {
                                                                         class108.field1946[var6++] = var212;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5054) {
+                                                                    if (~opcode == -5054) {
                                                                         --var6;
                                                                         int var213 = class108.field1946[var6];
                                                                         class117 var214 = class115.method785(var213, 4);
@@ -1877,20 +1877,20 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5054) {
+                                                                    if (opcode == 5054) {
                                                                         var6 -= 2;
                                                                         int var215 = class108.field1946[var6];
                                                                         int var216 = class108.field1946[var6 + 1];
                                                                         class108.field1946[var6++] = class115.method785(var215, 4).field2123[var216];
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5056) {
+                                                                    if (~opcode == -5056) {
                                                                         --var6;
                                                                         int var217 = class108.field1946[var6];
                                                                         class171.field3332[var7++] = class168.method1152((byte) 62, var217).method1412(116);
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5056) {
+                                                                    if (opcode == 5056) {
                                                                         --var6;
                                                                         int var218 = class108.field1946[var6];
                                                                         class205 var219 = class168.method1152((byte) 62, var218);
@@ -1901,14 +1901,14 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5057) {
+                                                                    if (opcode == 5057) {
                                                                         var6 -= 2;
                                                                         int var220 = class108.field1946[var6 + 1];
                                                                         int var221 = class108.field1946[var6];
                                                                         class108.field1946[var6++] = class168.method1152((byte) 62, var221).field3918[var220];
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5058) {
+                                                                    if (opcode == 5058) {
                                                                         class15.field226 = new class217();
                                                                         --var6;
                                                                         class15.field226.field4060 = class108.field1946[var6];
@@ -1916,7 +1916,7 @@ public class class135 extends class23 {
                                                                         class15.field226.field4070 = new int[class15.field226.field4067.method1409((byte) 19)];
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5060) {
+                                                                    if (~opcode == -5060) {
                                                                         Isaac.out.method30(197);
                                                                         Isaac.out.p1(0);
                                                                         int var222 = Isaac.out.pos;
@@ -1927,10 +1927,10 @@ public class class135 extends class23 {
                                                                         Isaac.out.psize1(-var222 + Isaac.out.pos);
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5060) {
+                                                                    if (opcode == 5060) {
                                                                         ++class60.field1135;
                                                                         --var7;
-                                                                        class88 var223 = class171.field3332[var7];
+                                                                        JString var223 = class171.field3332[var7];
                                                                         Isaac.out.method30(242);
                                                                         Isaac.out.p1(0);
                                                                         int var224 = Isaac.out.pos;
@@ -1940,7 +1940,7 @@ public class class135 extends class23 {
                                                                         Isaac.out.psize1(-var224 + Isaac.out.pos);
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5062) {
+                                                                    if (~opcode == -5062) {
                                                                         ++class128.field2399;
                                                                         Isaac.out.method30(197);
                                                                         Isaac.out.p1(0);
@@ -1951,21 +1951,21 @@ public class class135 extends class23 {
                                                                         Isaac.out.psize1(-var225 + Isaac.out.pos);
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5062) {
+                                                                    if (opcode == 5062) {
                                                                         var6 -= 2;
                                                                         int var226 = class108.field1946[var6 - -1];
                                                                         int var227 = class108.field1946[var6];
                                                                         class108.field1946[var6++] = class115.method785(var227, 4).field2121[var226];
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5063) {
+                                                                    if (opcode == 5063) {
                                                                         var6 -= 2;
                                                                         int var228 = class108.field1946[var6 + 1];
                                                                         int var229 = class108.field1946[var6];
                                                                         class108.field1946[var6++] = class115.method785(var229, 4).field2132[var228];
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5064) {
+                                                                    if (opcode == 5064) {
                                                                         var6 -= 2;
                                                                         int var230 = class108.field1946[var6];
                                                                         int var231 = class108.field1946[var6 + 1];
@@ -1976,7 +1976,7 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5065) {
+                                                                    if (opcode == 5065) {
                                                                         var6 -= 2;
                                                                         int var232 = class108.field1946[var6];
                                                                         int var233 = class108.field1946[var6 - -1];
@@ -1987,13 +1987,13 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5067) {
+                                                                    if (~opcode == -5067) {
                                                                         --var6;
                                                                         int var234 = class108.field1946[var6];
                                                                         class108.field1946[var6++] = class168.method1152((byte) 62, var234).method1409((byte) 67);
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5067) {
+                                                                    if (opcode == 5067) {
                                                                         var6 -= 2;
                                                                         int var235 = class108.field1946[var6];
                                                                         int var236 = class108.field1946[var6 + 1];
@@ -2001,21 +2001,21 @@ public class class135 extends class23 {
                                                                         class108.field1946[var6++] = var237;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5069) {
+                                                                    if (~opcode == -5069) {
                                                                         var6 -= 2;
                                                                         int var238 = class108.field1946[var6 + 1];
                                                                         int var239 = class108.field1946[var6];
                                                                         class15.field226.field4070[var239] = var238;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5070) {
+                                                                    if (~opcode == -5070) {
                                                                         var6 -= 2;
                                                                         int var240 = class108.field1946[var6];
                                                                         int var241 = class108.field1946[var6 + 1];
                                                                         class15.field226.field4070[var240] = var241;
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5071) {
+                                                                    if (~opcode == -5071) {
                                                                         var6 -= 3;
                                                                         int var242 = class108.field1946[var6];
                                                                         int var243 = class108.field1946[var6 + 1];
@@ -2027,15 +2027,15 @@ public class class135 extends class23 {
                                                                         class108.field1946[var6++] = var245.method1414(var244, 24, var243);
                                                                         continue;
                                                                     }
-                                                                } else if (var383 >= 5200) {
-                                                                    if (var383 >= 5300) {
-                                                                        if (~var383 <= -5401) {
-                                                                            if (var383 < 5500) {
-                                                                                if (var383 == 5400) {
+                                                                } else if (opcode >= 5200) {
+                                                                    if (opcode >= 5300) {
+                                                                        if (~opcode <= -5401) {
+                                                                            if (opcode < 5500) {
+                                                                                if (opcode == 5400) {
                                                                                     ++class10.field146;
                                                                                     var7 -= 2;
-                                                                                    class88 var246 = class171.field3332[var7];
-                                                                                    class88 var247 = class171.field3332[var7 - -1];
+                                                                                    JString var246 = class171.field3332[var7];
+                                                                                    JString var247 = class171.field3332[var7 - -1];
                                                                                     --var6;
                                                                                     int var248 = class108.field1946[var6];
                                                                                     Isaac.out.method30(85);
@@ -2045,7 +2045,7 @@ public class class135 extends class23 {
                                                                                     Isaac.out.p1(var248);
                                                                                     continue;
                                                                                 }
-                                                                                if (var383 == 5401) {
+                                                                                if (opcode == 5401) {
                                                                                     var6 -= 2;
                                                                                     class117.field2110[class108.field1946[var6]] = (short) class234.method1561(class108.field1946[var6 - -1], true);
                                                                                     class7.method37((byte) 99);
@@ -2056,42 +2056,42 @@ public class class135 extends class23 {
                                                                                     continue;
                                                                                 }
                                                                             }
-                                                                        } else if (var383 == 5304) {
+                                                                        } else if (opcode == 5304) {
                                                                             class108.field1946[var6++] = 0;
                                                                             continue;
                                                                         }
                                                                     } else {
-                                                                        if (var383 == 5200) {
+                                                                        if (opcode == 5200) {
                                                                             --var6;
                                                                             class43.method277((byte) 53, class108.field1946[var6]);
                                                                             continue;
                                                                         }
-                                                                        if (~var383 == -5202) {
+                                                                        if (~opcode == -5202) {
                                                                             class108.field1946[var6++] = class102.method710(0);
                                                                             continue;
                                                                         }
-                                                                        if (var383 == 5202) {
+                                                                        if (opcode == 5202) {
                                                                             --var6;
                                                                             class86.method581(class108.field1946[var6], true);
                                                                             continue;
                                                                         }
-                                                                        if (~var383 == -5204) {
+                                                                        if (~opcode == -5204) {
                                                                             --var7;
                                                                             class130.method881((byte) 119, class171.field3332[var7]);
                                                                             continue;
                                                                         }
-                                                                        if (var383 == 5204) {
+                                                                        if (opcode == 5204) {
                                                                             class171.field3332[var7 + -1] = class221.method1494(class171.field3332[var7 + -1], false);
                                                                             continue;
                                                                         }
-                                                                        if (var383 == 5205) {
+                                                                        if (opcode == 5205) {
                                                                             --var7;
                                                                             class111.method766(class171.field3332[var7], true);
                                                                             continue;
                                                                         }
                                                                     }
                                                                 } else {
-                                                                    if (var383 == 5100) {
+                                                                    if (opcode == 5100) {
                                                                         if (class247.field4513[86]) {
                                                                             class108.field1946[var6++] = 1;
                                                                         } else {
@@ -2099,7 +2099,7 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (~var383 == -5102) {
+                                                                    if (~opcode == -5102) {
                                                                         if (!class247.field4513[82]) {
                                                                             class108.field1946[var6++] = 0;
                                                                         } else {
@@ -2107,7 +2107,7 @@ public class class135 extends class23 {
                                                                         }
                                                                         continue;
                                                                     }
-                                                                    if (var383 == 5102) {
+                                                                    if (opcode == 5102) {
                                                                         if (class247.field4513[81]) {
                                                                             class108.field1946[var6++] = 1;
                                                                         } else {
@@ -2116,7 +2116,7 @@ public class class135 extends class23 {
                                                                         continue;
                                                                     }
                                                                 }
-                                                            } else if (~var383 == -4501) {
+                                                            } else if (~opcode == -4501) {
                                                                 var6 -= 2;
                                                                 int var249 = class108.field1946[var6 + 1];
                                                                 int var250 = class108.field1946[var6];
@@ -2128,7 +2128,7 @@ public class class135 extends class23 {
                                                                 }
                                                                 continue;
                                                             }
-                                                        } else if (~var383 == -4401) {
+                                                        } else if (~opcode == -4401) {
                                                             var6 -= 2;
                                                             int var252 = class108.field1946[var6];
                                                             int var253 = class108.field1946[var6 + 1];
@@ -2141,36 +2141,36 @@ public class class135 extends class23 {
                                                             continue;
                                                         }
                                                     } else {
-                                                        if (~var383 == -4101) {
+                                                        if (~opcode == -4101) {
                                                             --var7;
-                                                            class88 var255 = class171.field3332[var7];
+                                                            JString var255 = class171.field3332[var7];
                                                             --var6;
                                                             int var256 = class108.field1946[var6];
-                                                            class171.field3332[var7++] = class166.method1142(new class88[] { var255, class170.method1214(var256, 114) }, -3);
+                                                            class171.field3332[var7++] = class166.method1142(new JString[] { var255, class170.method1214(var256, 114) }, -3);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4102) {
+                                                        if (~opcode == -4102) {
                                                             var7 -= 2;
-                                                            class88 var257 = class171.field3332[var7 + 1];
-                                                            class88 var258 = class171.field3332[var7];
-                                                            class171.field3332[var7++] = class166.method1142(new class88[] { var258, var257 }, -3);
+                                                            JString var257 = class171.field3332[var7 + 1];
+                                                            JString var258 = class171.field3332[var7];
+                                                            class171.field3332[var7++] = class166.method1142(new JString[] { var258, var257 }, -3);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4103) {
+                                                        if (~opcode == -4103) {
                                                             --var7;
-                                                            class88 var259 = class171.field3332[var7];
+                                                            JString var259 = class171.field3332[var7];
                                                             --var6;
                                                             int var260 = class108.field1946[var6];
-                                                            class171.field3332[var7++] = class166.method1142(new class88[] { var259, class50.method375((byte) 120, true, var260) }, -3);
+                                                            class171.field3332[var7++] = class166.method1142(new JString[] { var259, class50.method375((byte) 120, true, var260) }, -3);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4104) {
+                                                        if (~opcode == -4104) {
                                                             --var7;
-                                                            class88 var261 = class171.field3332[var7];
-                                                            class171.field3332[var7++] = var261.method639(127);
+                                                            JString var261 = class171.field3332[var7];
+                                                            class171.field3332[var7++] = var261.toLowerCase();
                                                             continue;
                                                         }
-                                                        if (~var383 == -4105) {
+                                                        if (~opcode == -4105) {
                                                             --var6;
                                                             int var262 = class108.field1946[var6];
                                                             long var263 = ((long) var262 + 11745L) * 86400000L;
@@ -2178,13 +2178,13 @@ public class class135 extends class23 {
                                                             int var265 = Js5Local.field353.get(5);
                                                             int var266 = Js5Local.field353.get(2);
                                                             int var267 = Js5Local.field353.get(1);
-                                                            class171.field3332[var7++] = class166.method1142(new class88[] { class170.method1214(var265, 97), class119.field2173, class53.field992[var266], class119.field2173, class170.method1214(var267, 112) }, -3);
+                                                            class171.field3332[var7++] = class166.method1142(new JString[] { class170.method1214(var265, 97), class119.field2173, class53.field992[var266], class119.field2173, class170.method1214(var267, 112) }, -3);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4106) {
+                                                        if (~opcode == -4106) {
                                                             var7 -= 2;
-                                                            class88 var268 = class171.field3332[var7];
-                                                            class88 var269 = class171.field3332[var7 + 1];
+                                                            JString var268 = class171.field3332[var7];
+                                                            JString var269 = class171.field3332[var7 + 1];
                                                             if (class240.field4458.field768 != null && class240.field4458.field768.field3959) {
                                                                 class171.field3332[var7++] = var269;
                                                                 continue;
@@ -2192,22 +2192,22 @@ public class class135 extends class23 {
                                                             class171.field3332[var7++] = var268;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4107) {
+                                                        if (~opcode == -4107) {
                                                             --var6;
                                                             int var270 = class108.field1946[var6];
                                                             class171.field3332[var7++] = class170.method1214(var270, 34);
                                                             continue;
                                                         }
-                                                        if (var383 == 4107) {
+                                                        if (opcode == 4107) {
                                                             var7 -= 2;
                                                             class108.field1946[var6++] = class171.field3332[var7].method627((byte) 126, class171.field3332[var7 + 1]);
                                                             continue;
                                                         }
-                                                        if (var383 == 4108) {
+                                                        if (opcode == 4108) {
                                                             var6 -= 2;
                                                             int var271 = class108.field1946[var6];
                                                             --var7;
-                                                            class88 var272 = class171.field3332[var7];
+                                                            JString var272 = class171.field3332[var7];
                                                             int var273 = class108.field1946[var6 + 1];
                                                             byte[] var274 = class98.field1795.method941((byte) 56, 0, var273);
                                                             class41 var275 = new class41(var274);
@@ -2215,10 +2215,10 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = var275.method163(var272, var271);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4110) {
+                                                        if (~opcode == -4110) {
                                                             var6 -= 2;
                                                             --var7;
-                                                            class88 var276 = class171.field3332[var7];
+                                                            JString var276 = class171.field3332[var7];
                                                             int var277 = class108.field1946[var6 + 1];
                                                             int var278 = class108.field1946[var6];
                                                             byte[] var279 = class98.field1795.method941((byte) 56, 0, var277);
@@ -2227,10 +2227,10 @@ public class class135 extends class23 {
                                                             class108.field1946[var6++] = var280.method156(var276, var278);
                                                             continue;
                                                         }
-                                                        if (var383 == 4110) {
+                                                        if (opcode == 4110) {
                                                             var7 -= 2;
-                                                            class88 var281 = class171.field3332[var7 - -1];
-                                                            class88 var282 = class171.field3332[var7];
+                                                            JString var281 = class171.field3332[var7 - -1];
+                                                            JString var282 = class171.field3332[var7];
                                                             --var6;
                                                             if (~class108.field1946[var6] == -2) {
                                                                 class171.field3332[var7++] = var282;
@@ -2239,72 +2239,72 @@ public class class135 extends class23 {
                                                             }
                                                             continue;
                                                         }
-                                                        if (var383 == 4111) {
+                                                        if (opcode == 4111) {
                                                             --var7;
-                                                            class88 var283 = class171.field3332[var7];
+                                                            JString var283 = class171.field3332[var7];
                                                             class171.field3332[var7++] = class26.method162(var283);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4113) {
+                                                        if (~opcode == -4113) {
                                                             --var6;
                                                             int var284 = class108.field1946[var6];
                                                             --var7;
-                                                            class88 var285 = class171.field3332[var7];
+                                                            JString var285 = class171.field3332[var7];
                                                             if (var284 == -1) {
                                                                 throw new RuntimeException("null char");
                                                             }
                                                             class171.field3332[var7++] = var285.method618(-120, var284);
                                                             continue;
                                                         }
-                                                        if (~var383 == -4114) {
+                                                        if (~opcode == -4114) {
                                                             --var6;
                                                             int var286 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class221.method1491(7123, var286) ? 1 : 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4115) {
+                                                        if (~opcode == -4115) {
                                                             --var6;
                                                             int var287 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class114.method784(false, var287) ? 1 : 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4116) {
+                                                        if (~opcode == -4116) {
                                                             --var6;
                                                             int var288 = class108.field1946[var6];
                                                             class108.field1946[var6++] = SeqType.method748(1, var288) ? 1 : 0;
                                                             continue;
                                                         }
-                                                        if (~var383 == -4117) {
+                                                        if (~opcode == -4117) {
                                                             --var6;
                                                             int var289 = class108.field1946[var6];
                                                             class108.field1946[var6++] = !class4.method24(var289, 0) ? 0 : 1;
                                                             continue;
                                                         }
-                                                        if (var383 == 4117) {
+                                                        if (opcode == 4117) {
                                                             --var7;
-                                                            class88 var290 = class171.field3332[var7];
+                                                            JString var290 = class171.field3332[var7];
                                                             if (var290 == null) {
                                                                 class108.field1946[var6++] = 0;
                                                             } else {
-                                                                class108.field1946[var6++] = var290.method604((byte) -53);
+                                                                class108.field1946[var6++] = var290.length();
                                                             }
                                                             continue;
                                                         }
-                                                        if (~var383 == -4119) {
+                                                        if (~opcode == -4119) {
                                                             var6 -= 2;
                                                             --var7;
-                                                            class88 var291 = class171.field3332[var7];
+                                                            JString var291 = class171.field3332[var7];
                                                             int var292 = class108.field1946[var6 + 1];
                                                             int var293 = class108.field1946[var6];
                                                             class171.field3332[var7++] = var291.method623(var293, (byte) -12, var292);
                                                             continue;
                                                         }
-                                                        if (var383 == 4119) {
+                                                        if (opcode == 4119) {
                                                             --var7;
-                                                            class88 var294 = class171.field3332[var7];
-                                                            class88 var295 = class165.method1137(var294.method604((byte) -53), (byte) 119);
+                                                            JString var294 = class171.field3332[var7];
+                                                            JString var295 = class165.method1137(var294.length(), (byte) 119);
                                                             boolean var296 = false;
-                                                            for (int var297 = 0; var294.method604((byte) -53) > var297; ++var297) {
+                                                            for (int var297 = 0; var294.length() > var297; ++var297) {
                                                                 int var298 = var294.method599(255, var297);
                                                                 if (~var298 == -61) {
                                                                     var296 = true;
@@ -2318,31 +2318,31 @@ public class class135 extends class23 {
                                                             class171.field3332[var7++] = var295;
                                                             continue;
                                                         }
-                                                        if (var383 == 4120) {
+                                                        if (opcode == 4120) {
                                                             var6 -= 2;
                                                             --var7;
-                                                            class88 var299 = class171.field3332[var7];
+                                                            JString var299 = class171.field3332[var7];
                                                             int var300 = class108.field1946[var6];
                                                             int var301 = class108.field1946[var6 + 1];
                                                             class108.field1946[var6++] = var299.method594((byte) 68, var300, var301);
                                                             continue;
                                                         }
-                                                        if (var383 == 4121) {
+                                                        if (opcode == 4121) {
                                                             var7 -= 2;
-                                                            class88 var302 = class171.field3332[var7 + 1];
+                                                            JString var302 = class171.field3332[var7 + 1];
                                                             --var6;
                                                             int var303 = class108.field1946[var6];
-                                                            class88 var304 = class171.field3332[var7];
+                                                            JString var304 = class171.field3332[var7];
                                                             class108.field1946[var6++] = var304.method634(var303, (byte) 41, var302);
                                                             continue;
                                                         }
-                                                        if (var383 == 4122) {
+                                                        if (opcode == 4122) {
                                                             --var6;
                                                             int var305 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class21.method102(-54, var305);
                                                             continue;
                                                         }
-                                                        if (var383 == 4123) {
+                                                        if (opcode == 4123) {
                                                             --var6;
                                                             int var306 = class108.field1946[var6];
                                                             class108.field1946[var6++] = class9.method51(var306, -45);
@@ -2350,7 +2350,7 @@ public class class135 extends class23 {
                                                         }
                                                     }
                                                 } else {
-                                                    if (~var383 == -3401) {
+                                                    if (~opcode == -3401) {
                                                         var6 -= 2;
                                                         int var307 = class108.field1946[var6];
                                                         int var308 = class108.field1946[var6 + 1];
@@ -2358,7 +2358,7 @@ public class class135 extends class23 {
                                                         class171.field3332[var7++] = var309.method360(var308, (byte) -90);
                                                         continue;
                                                     }
-                                                    if (var383 == 3408) {
+                                                    if (opcode == 3408) {
                                                         var6 -= 4;
                                                         int var310 = class108.field1946[var6 - -1];
                                                         int var311 = class108.field1946[var6 + 2];
@@ -2382,106 +2382,106 @@ public class class135 extends class23 {
                                                     }
                                                 }
                                             } else {
-                                                if (var383 == 3300) {
+                                                if (opcode == 3300) {
                                                     class108.field1946[var6++] = class117.field2115;
                                                     continue;
                                                 }
-                                                if (var383 == 3301) {
+                                                if (opcode == 3301) {
                                                     var6 -= 2;
                                                     int var315 = class108.field1946[var6 + 1];
                                                     int var316 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class39.method255(var315, false, var316);
                                                     continue;
                                                 }
-                                                if (~var383 == -3303) {
+                                                if (~opcode == -3303) {
                                                     var6 -= 2;
                                                     int var317 = class108.field1946[var6];
                                                     int var318 = class108.field1946[var6 + 1];
                                                     class108.field1946[var6++] = SeqType.method749((byte) -37, var317, var318);
                                                     continue;
                                                 }
-                                                if (var383 == 3303) {
+                                                if (opcode == 3303) {
                                                     var6 -= 2;
                                                     int var319 = class108.field1946[var6 - -1];
                                                     int var320 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class246.method1610(var320, 38, var319);
                                                     continue;
                                                 }
-                                                if (~var383 == -3305) {
+                                                if (~opcode == -3305) {
                                                     --var6;
                                                     int var321 = class108.field1946[var6];
                                                     class108.field1946[var6++] = Linkable.method458(var321, -84).field2069;
                                                     continue;
                                                 }
-                                                if (var383 == 3305) {
+                                                if (opcode == 3305) {
                                                     --var6;
                                                     int var322 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class105.field1909[var322];
                                                     continue;
                                                 }
-                                                if (var383 == 3306) {
+                                                if (opcode == 3306) {
                                                     --var6;
                                                     int var323 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class217.field4068[var323];
                                                     continue;
                                                 }
-                                                if (~var383 == -3308) {
+                                                if (~opcode == -3308) {
                                                     --var6;
                                                     int var324 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class179.field3564[var324];
                                                     continue;
                                                 }
-                                                if (~var383 == -3309) {
+                                                if (~opcode == -3309) {
                                                     int var325 = class149.field2909;
                                                     int var326 = (class240.field4458.field4123 >> 7) + class190.field3681;
                                                     int var327 = (class240.field4458.field4138 >> 7) + class223.field4214;
                                                     class108.field1946[var6++] = (var325 << 28) + (var327 << 14) + var326;
                                                     continue;
                                                 }
-                                                if (var383 == 3309) {
+                                                if (opcode == 3309) {
                                                     --var6;
                                                     int var328 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class70.method470(268433753, var328) >> 14;
                                                     continue;
                                                 }
-                                                if (~var383 == -3311) {
+                                                if (~opcode == -3311) {
                                                     --var6;
                                                     int var329 = class108.field1946[var6];
                                                     class108.field1946[var6++] = var329 >> 28;
                                                     continue;
                                                 }
-                                                if (var383 == 3311) {
+                                                if (opcode == 3311) {
                                                     --var6;
                                                     int var330 = class108.field1946[var6];
                                                     class108.field1946[var6++] = class70.method470(var330, 16383);
                                                     continue;
                                                 }
-                                                if (~var383 == -3313) {
+                                                if (~opcode == -3313) {
                                                     class108.field1946[var6++] = !Linkable.field1215 ? 0 : 1;
                                                     continue;
                                                 }
-                                                if (var383 == 3313) {
+                                                if (opcode == 3313) {
                                                     var6 -= 2;
                                                     int var331 = class108.field1946[var6 + 1];
                                                     int var332 = class108.field1946[var6] + 32768;
                                                     class108.field1946[var6++] = class39.method255(var331, false, var332);
                                                     continue;
                                                 }
-                                                if (var383 == 3314) {
+                                                if (opcode == 3314) {
                                                     var6 -= 2;
                                                     int var333 = class108.field1946[var6] + 32768;
                                                     int var334 = class108.field1946[var6 + 1];
                                                     class108.field1946[var6++] = SeqType.method749((byte) -37, var333, var334);
                                                     continue;
                                                 }
-                                                if (~var383 == -3316) {
+                                                if (~opcode == -3316) {
                                                     var6 -= 2;
                                                     int var335 = class108.field1946[var6] + 32768;
                                                     int var336 = class108.field1946[var6 + 1];
                                                     class108.field1946[var6++] = class246.method1610(var335, 33, var336);
                                                     continue;
                                                 }
-                                                if (var383 == 3316) {
+                                                if (opcode == 3316) {
                                                     if (~Linkable.field1208 > -3) {
                                                         class108.field1946[var6++] = 0;
                                                     } else {
@@ -2489,23 +2489,23 @@ public class class135 extends class23 {
                                                     }
                                                     continue;
                                                 }
-                                                if (~var383 == -3318) {
+                                                if (~opcode == -3318) {
                                                     class108.field1946[var6++] = class114.field2063;
                                                     continue;
                                                 }
-                                                if (var383 == 3318) {
+                                                if (opcode == 3318) {
                                                     class108.field1946[var6++] = class28.field470;
                                                     continue;
                                                 }
-                                                if (var383 == 3321) {
+                                                if (opcode == 3321) {
                                                     class108.field1946[var6++] = class240.field4460;
                                                     continue;
                                                 }
-                                                if (var383 == 3322) {
+                                                if (opcode == 3322) {
                                                     class108.field1946[var6++] = class199.field3790;
                                                     continue;
                                                 }
-                                                if (~var383 == -3324) {
+                                                if (~opcode == -3324) {
                                                     if (class29.field479 >= 5 && class29.field479 <= 9) {
                                                         class108.field1946[var6++] = 1;
                                                         continue;
@@ -2513,7 +2513,7 @@ public class class135 extends class23 {
                                                     class108.field1946[var6++] = 0;
                                                     continue;
                                                 }
-                                                if (var383 == 3324) {
+                                                if (opcode == 3324) {
                                                     if (~class29.field479 <= -6 && ~class29.field479 >= -10) {
                                                         class108.field1946[var6++] = class29.field479;
                                                         continue;
@@ -2521,7 +2521,7 @@ public class class135 extends class23 {
                                                     class108.field1946[var6++] = 0;
                                                     continue;
                                                 }
-                                                if (~var383 == -3326) {
+                                                if (~opcode == -3326) {
                                                     if (class6.field72 > 0) {
                                                         class108.field1946[var6++] = 1;
                                                     } else {
@@ -2529,43 +2529,43 @@ public class class135 extends class23 {
                                                     }
                                                     continue;
                                                 }
-                                                if (var383 == 3326) {
+                                                if (opcode == 3326) {
                                                     class108.field1946[var6++] = class240.field4458.combatLevel;
                                                     continue;
                                                 }
-                                                if (~var383 == -3328) {
+                                                if (~opcode == -3328) {
                                                     class108.field1946[var6++] = class240.field4458.field768.field3959 ? 1 : 0;
                                                     continue;
                                                 }
-                                                if (~var383 == -3329) {
+                                                if (~opcode == -3329) {
                                                     class108.field1946[var6++] = class238.field4430;
                                                     continue;
                                                 }
-                                                if (var383 == 3329) {
+                                                if (opcode == 3329) {
                                                     class108.field1946[var6++] = class176.field3537;
                                                     continue;
                                                 }
                                             }
                                         } else {
-                                            if (~var383 == -3101) {
+                                            if (~opcode == -3101) {
                                                 --var7;
-                                                class88 var337 = class171.field3332[var7];
+                                                JString var337 = class171.field3332[var7];
                                                 class223.method1501(var337, 12, 0, class81.field1468);
                                                 continue;
                                             }
-                                            if (~var383 == -3102) {
+                                            if (~opcode == -3102) {
                                                 var6 -= 2;
                                                 class226.method1517((byte) -31, class108.field1946[var6], class108.field1946[var6 + 1], class240.field4458);
                                                 continue;
                                             }
-                                            if (var383 == 3103) {
+                                            if (opcode == 3103) {
                                                 class29.method174(-4);
                                                 continue;
                                             }
-                                            if (~var383 == -3105) {
+                                            if (~opcode == -3105) {
                                                 ++class10.field149;
                                                 --var7;
-                                                class88 var338 = class171.field3332[var7];
+                                                JString var338 = class171.field3332[var7];
                                                 int var339 = 0;
                                                 if (var338.method621(10)) {
                                                     var339 = var338.method603(false);
@@ -2574,32 +2574,32 @@ public class class135 extends class23 {
                                                 Isaac.out.p4(var339);
                                                 continue;
                                             }
-                                            if (var383 == 3105) {
+                                            if (opcode == 3105) {
                                                 ++class129.field2420;
                                                 --var7;
-                                                class88 var340 = class171.field3332[var7];
+                                                JString var340 = class171.field3332[var7];
                                                 Isaac.out.method30(54);
                                                 Isaac.out.p8(var340.method630(false));
                                                 continue;
                                             }
-                                            if (~var383 == -3107) {
+                                            if (~opcode == -3107) {
                                                 ++class31.field500;
                                                 --var7;
-                                                class88 var341 = class171.field3332[var7];
+                                                JString var341 = class171.field3332[var7];
                                                 Isaac.out.method30(60);
-                                                Isaac.out.p1(1 + var341.method604((byte) -53));
+                                                Isaac.out.p1(1 + var341.length());
                                                 Isaac.out.pjstr(var341, (byte) 0);
                                                 continue;
                                             }
-                                            if (~var383 == -3108) {
+                                            if (~opcode == -3108) {
                                                 --var6;
                                                 int var342 = class108.field1946[var6];
                                                 --var7;
-                                                class88 var343 = class171.field3332[var7];
+                                                JString var343 = class171.field3332[var7];
                                                 class17.method82(1, var343, var342);
                                                 continue;
                                             }
-                                            if (~var383 == -3109) {
+                                            if (~opcode == -3109) {
                                                 var6 -= 3;
                                                 int var344 = class108.field1946[var6];
                                                 int var345 = class108.field1946[var6 - -1];
@@ -2608,7 +2608,7 @@ public class class135 extends class23 {
                                                 class80.method532(var344, 2, var345, var347);
                                                 continue;
                                             }
-                                            if (var383 == 3109) {
+                                            if (opcode == 3109) {
                                                 var6 -= 2;
                                                 int var348 = class108.field1946[var6];
                                                 int var349 = class108.field1946[var6 + 1];
@@ -2616,7 +2616,7 @@ public class class135 extends class23 {
                                                 class80.method532(var348, 2, var349, var350);
                                                 continue;
                                             }
-                                            if (~var383 == -3111) {
+                                            if (~opcode == -3111) {
                                                 ++class217.field4066;
                                                 --var6;
                                                 int var351 = class108.field1946[var6];
@@ -2626,13 +2626,13 @@ public class class135 extends class23 {
                                             }
                                         }
                                     } else {
-                                        if (~var383 == -2701) {
+                                        if (~opcode == -2701) {
                                             --var6;
                                             class174 var352 = class239.method1581(-64, class108.field1946[var6]);
                                             class108.field1946[var6++] = var352.field3401;
                                             continue;
                                         }
-                                        if (~var383 == -2702) {
+                                        if (~opcode == -2702) {
                                             --var6;
                                             class174 var353 = class239.method1581(-64, class108.field1946[var6]);
                                             if (var353.field3401 == -1) {
@@ -2642,7 +2642,7 @@ public class class135 extends class23 {
                                             }
                                             continue;
                                         }
-                                        if (~var383 == -2703) {
+                                        if (~opcode == -2703) {
                                             --var6;
                                             int var354 = class108.field1946[var6];
                                             class168 var355 = (class168) class128.field2397.get(-1, (long) var354);
@@ -2653,7 +2653,7 @@ public class class135 extends class23 {
                                             }
                                             continue;
                                         }
-                                        if (~var383 == -2704) {
+                                        if (~opcode == -2704) {
                                             --var6;
                                             class174 var356 = class239.method1581(-64, class108.field1946[var6]);
                                             if (var356.field3467 == null) {
@@ -2670,7 +2670,7 @@ public class class135 extends class23 {
                                             class108.field1946[var6++] = var357;
                                             continue;
                                         }
-                                        if (var383 == 2704 || var383 == 2705) {
+                                        if (opcode == 2704 || opcode == 2705) {
                                             var6 -= 2;
                                             int var359 = class108.field1946[var6];
                                             int var360 = class108.field1946[var6 - -1];
@@ -2685,14 +2685,14 @@ public class class135 extends class23 {
                                     }
                                 } else {
                                     class174 var362;
-                                    if (~var383 > -2001) {
+                                    if (~opcode > -2001) {
                                         var362 = var44 ? class203.field3873 : class129.field2428;
                                     } else {
                                         --var6;
                                         var362 = class239.method1581(-64, class108.field1946[var6]);
-                                        var383 -= 1000;
+                                        opcode -= 1000;
                                     }
-                                    if (var383 == 1300) {
+                                    if (opcode == 1300) {
                                         --var6;
                                         int var363 = -1 + class108.field1946[var6];
                                         if (var363 >= 0 && var363 <= 9) {
@@ -2703,53 +2703,53 @@ public class class135 extends class23 {
                                         --var7;
                                         continue;
                                     }
-                                    if (~var383 == -1302) {
+                                    if (~opcode == -1302) {
                                         var6 -= 2;
                                         int var364 = class108.field1946[var6];
                                         int var365 = class108.field1946[var6 + 1];
                                         var362.field3504 = class36.method238(var365, var364, true);
                                         continue;
                                     }
-                                    if (~var383 == -1303) {
+                                    if (~opcode == -1303) {
                                         --var6;
                                         var362.field3429 = class108.field1946[var6] == 1;
                                         continue;
                                     }
-                                    if (~var383 == -1304) {
+                                    if (~opcode == -1304) {
                                         --var6;
                                         var362.field3415 = class108.field1946[var6];
                                         continue;
                                     }
-                                    if (var383 == 1304) {
+                                    if (opcode == 1304) {
                                         --var6;
                                         var362.field3477 = class108.field1946[var6];
                                         continue;
                                     }
-                                    if (var383 == 1305) {
+                                    if (opcode == 1305) {
                                         --var7;
                                         var362.field3459 = class171.field3332[var7];
                                         continue;
                                     }
-                                    if (var383 == 1306) {
+                                    if (opcode == 1306) {
                                         --var7;
                                         var362.field3514 = class171.field3332[var7];
                                         continue;
                                     }
-                                    if (var383 == 1307) {
+                                    if (opcode == 1307) {
                                         var362.field3375 = null;
                                         continue;
                                     }
                                 }
                             } else {
                                 class174 var366;
-                                if (~var383 <= -2001) {
+                                if (~opcode <= -2001) {
                                     --var6;
                                     var366 = class239.method1581(-64, class108.field1946[var6]);
-                                    var383 -= 1000;
+                                    opcode -= 1000;
                                 } else {
                                     var366 = !var44 ? class129.field2428 : class203.field3873;
                                 }
-                                if (~var383 == -1101) {
+                                if (~opcode == -1101) {
                                     var6 -= 2;
                                     var366.field3395 = class108.field1946[var6];
                                     if (-var366.field3382 + var366.field3386 < var366.field3395) {
@@ -2768,56 +2768,56 @@ public class class135 extends class23 {
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1102) {
+                                if (~opcode == -1102) {
                                     --var6;
                                     var366.field3416 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1103) {
+                                if (~opcode == -1103) {
                                     --var6;
                                     var366.field3498 = class108.field1946[var6] == 1;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1103) {
+                                if (opcode == 1103) {
                                     --var6;
                                     var366.field3482 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1104) {
+                                if (opcode == 1104) {
                                     --var6;
                                     var366.field3499 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1106) {
+                                if (~opcode == -1106) {
                                     --var6;
                                     var366.field3475 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1107) {
+                                if (~opcode == -1107) {
                                     --var6;
                                     var366.field3439 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1107) {
+                                if (opcode == 1107) {
                                     --var6;
                                     var366.field3422 = class108.field1946[var6] == 1;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1108) {
+                                if (opcode == 1108) {
                                     var366.field3432 = 1;
                                     --var6;
                                     var366.field3411 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1110) {
+                                if (~opcode == -1110) {
                                     var6 -= 6;
                                     var366.field3367 = class108.field1946[var6];
                                     var366.field3500 = class108.field1946[var6 + 1];
@@ -2828,7 +2828,7 @@ public class class135 extends class23 {
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1110) {
+                                if (opcode == 1110) {
                                     --var6;
                                     int var367 = class108.field1946[var6];
                                     if (var366.field3406 != var367) {
@@ -2839,28 +2839,28 @@ public class class135 extends class23 {
                                     }
                                     continue;
                                 }
-                                if (~var383 == -1112) {
+                                if (~opcode == -1112) {
                                     --var6;
                                     var366.field3405 = class108.field1946[var6] == 1;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1113) {
+                                if (~opcode == -1113) {
                                     --var7;
-                                    class88 var368 = class171.field3332[var7];
+                                    JString var368 = class171.field3332[var7];
                                     if (!var368.method597(-110, var366.field3385)) {
                                         var366.field3385 = var368;
                                         class200.method1373(65280, var366);
                                     }
                                     continue;
                                 }
-                                if (var383 == 1113) {
+                                if (opcode == 1113) {
                                     --var6;
                                     var366.field3463 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1114) {
+                                if (opcode == 1114) {
                                     var6 -= 3;
                                     var366.field3481 = class108.field1946[var6];
                                     var366.field3471 = class108.field1946[var6 + 1];
@@ -2868,37 +2868,37 @@ public class class135 extends class23 {
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1116) {
+                                if (~opcode == -1116) {
                                     --var6;
                                     var366.field3437 = class108.field1946[var6] == 1;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1116) {
+                                if (opcode == 1116) {
                                     --var6;
                                     var366.field3431 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (~var383 == -1118) {
+                                if (~opcode == -1118) {
                                     --var6;
                                     var366.field3427 = class108.field1946[var6];
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1118) {
+                                if (opcode == 1118) {
                                     --var6;
                                     var366.field3389 = ~class108.field1946[var6] == -2;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1119) {
+                                if (opcode == 1119) {
                                     --var6;
                                     var366.field3485 = class108.field1946[var6] == 1;
                                     class200.method1373(65280, var366);
                                     continue;
                                 }
-                                if (var383 == 1120) {
+                                if (opcode == 1120) {
                                     var6 -= 2;
                                     var366.field3386 = class108.field1946[var6];
                                     var366.field3377 = class108.field1946[var6 - -1];
@@ -2908,12 +2908,12 @@ public class class135 extends class23 {
                                     }
                                     continue;
                                 }
-                                if (var383 == 1121) {
+                                if (opcode == 1121) {
                                     class200.method1373(65280, var366);
                                     --var6;
                                     continue;
                                 }
-                                if (~var383 == -1123) {
+                                if (~opcode == -1123) {
                                     --var6;
                                     var366.field3479 = ~class108.field1946[var6] == -2;
                                     class200.method1373(65280, var366);
@@ -2922,14 +2922,14 @@ public class class135 extends class23 {
                             }
                         } else {
                             class174 var369;
-                            if (~var383 > -2001) {
+                            if (~opcode > -2001) {
                                 var369 = !var44 ? class129.field2428 : class203.field3873;
                             } else {
-                                var383 -= 1000;
+                                opcode -= 1000;
                                 --var6;
                                 var369 = class239.method1581(-64, class108.field1946[var6]);
                             }
-                            if (var383 == 1000) {
+                            if (opcode == 1000) {
                                 var369.field3369 = 0;
                                 var6 -= 2;
                                 var369.field3368 = var369.field3393 = class108.field1946[var6];
@@ -2938,7 +2938,7 @@ public class class135 extends class23 {
                                 class200.method1373(65280, var369);
                                 continue;
                             }
-                            if (var383 == 1001) {
+                            if (opcode == 1001) {
                                 var369.field3465 = 0;
                                 var6 -= 2;
                                 var369.field3382 = var369.field3503 = class108.field1946[var6];
@@ -2953,7 +2953,7 @@ public class class135 extends class23 {
                                 class2.method10(var369, (byte) 126);
                                 continue;
                             }
-                            if (var383 == 1003) {
+                            if (opcode == 1003) {
                                 --var6;
                                 boolean var370 = ~class108.field1946[var6] == -2;
                                 if (!var369.field3380 != !var370) {
@@ -2962,7 +2962,7 @@ public class class135 extends class23 {
                                 }
                                 continue;
                             }
-                            if (~var383 == -1005) {
+                            if (~opcode == -1005) {
                                 var6 -= 4;
                                 var369.field3393 = class108.field1946[var6];
                                 var369.field3516 = class108.field1946[var6 + 1];
@@ -2984,7 +2984,7 @@ public class class135 extends class23 {
                                 class2.method10(var369, (byte) 102);
                                 continue;
                             }
-                            if (var383 == 1005) {
+                            if (opcode == 1005) {
                                 var369.field3369 = 2;
                                 var6 -= 2;
                                 var369.field3393 = class108.field1946[var6];
@@ -2999,7 +2999,7 @@ public class class135 extends class23 {
                             }
                         }
                     } else {
-                        if (~var383 == -404) {
+                        if (~opcode == -404) {
                             var6 -= 2;
                             int var373 = class108.field1946[var6];
                             if (var373 >= 7) {
@@ -3009,14 +3009,14 @@ public class class135 extends class23 {
                             class240.field4458.field768.method1437(var373, (byte) -47, var374);
                             continue;
                         }
-                        if (~var383 == -405) {
+                        if (~opcode == -405) {
                             var6 -= 2;
                             int var375 = class108.field1946[var6 + 1];
                             int var376 = class108.field1946[var6];
                             class240.field4458.field768.method1434((byte) -95, var375, var376);
                             continue;
                         }
-                        if (~var383 == -411) {
+                        if (~opcode == -411) {
                             --var6;
                             boolean var377 = ~class108.field1946[var6] != -1;
                             class240.field4458.field768.method1436(11, var377);
@@ -3027,7 +3027,7 @@ public class class135 extends class23 {
                 }
             } catch (Exception var382) {
                 if (var5.name != null) {
-                    class88 var379 = class165.method1137(30, (byte) 121);
+                    JString var379 = class165.method1137(30, (byte) 121);
                     var379.method616(class156.field3012, (byte) -62).method616(var5.name, (byte) 114);
                     for (int var380 = class230.field4320 + -1; ~var380 <= -1; --var380) {
                         var379.method616(Js5Local.field356, (byte) 102).method616(class80.field1446[var380].field2607.name, (byte) -73);
@@ -3037,7 +3037,7 @@ public class class135 extends class23 {
                         var379.method616(class134.field2498, (byte) 60).method616(class170.method1214(var381, 62), (byte) 109);
                     }
                     if (~class115.modewhere != -1) {
-                        class223.method1501(class166.method1142(new class88[] { class18.field288, var5.name}, -3), 12, 0, class81.field1468);
+                        class223.method1501(class166.method1142(new JString[] { class18.field288, var5.name}, -3), 12, 0, class81.field1468);
                     }
                     class221.method1490((byte) 0, "CS2 - scr:" + var5.nodeId + " op:" + var10 + new String(var379.method613(-113)), var382);
                 } else {

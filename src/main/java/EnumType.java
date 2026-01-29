@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class EnumType extends class136 {
 
     @OriginalMember(owner = "client!eb", name = "J", descriptor = "Li;")
-    private class88 defaultString = class93.field1750;
+    private JString defaultString = class93.field1750;
 
     @OriginalMember(owner = "client!eb", name = "M", descriptor = "Lca;")
     public static class24 field879 = new class24(30);
@@ -14,10 +14,10 @@ public class EnumType extends class136 {
     public static int field884 = 0;
 
     @OriginalMember(owner = "client!eb", name = "O", descriptor = "Li;")
-    public static class88 field881 = class208.method1425(105, "sl_arrows");
+    public static JString field881 = class208.method1425(105, "sl_arrows");
 
     @OriginalMember(owner = "client!eb", name = "Y", descriptor = "Li;")
-    public static class88 field891 = class208.method1425(105, "<col=ffffff> )4 ");
+    public static JString field891 = class208.method1425(105, "<col=ffffff> )4 ");
 
     @OriginalMember(owner = "client!eb", name = "D", descriptor = "I")
     public static int field870;
@@ -170,7 +170,7 @@ public class EnumType extends class136 {
     }
 
     @OriginalMember(owner = "client!eb", name = "a", descriptor = "(IB)Li;")
-    public final class88 method360(int arg0, byte arg1) {
+    public final JString method360(int arg0, byte arg1) {
         if (this.field871 == null) {
             return this.defaultString;
         }

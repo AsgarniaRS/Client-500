@@ -8,10 +8,10 @@ public class class207 extends class27 {
     public static int field3932 = 0;
 
     @OriginalMember(owner = "client!t", name = "x", descriptor = "Li;")
-    public static class88 field3938 = class208.method1425(105, "Bitte laden Sie die Seite neu)3");
+    public static JString field3938 = class208.method1425(105, "Bitte laden Sie die Seite neu)3");
 
     @OriginalMember(owner = "client!t", name = "o", descriptor = "Li;")
-    public static class88 field3929 = class208.method1425(105, ":chalreq:");
+    public static JString field3929 = class208.method1425(105, ":chalreq:");
 
     @OriginalMember(owner = "client!t", name = "m", descriptor = "I")
     public static int field3927 = 50;
@@ -38,7 +38,7 @@ public class class207 extends class27 {
     public static int[] field3931 = new int[field3927];
 
     @OriginalMember(owner = "client!t", name = "u", descriptor = "[Li;")
-    public static class88[] field3935 = new class88[field3927];
+    public static JString[] field3935 = new JString[field3927];
 
     @OriginalMember(owner = "client!t", name = "y", descriptor = "[I")
     public static int[] field3939 = new int[field3927];

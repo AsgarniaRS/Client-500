@@ -17,10 +17,10 @@ public class class214 {
     public static double field4043 = -1.0D;
 
     @OriginalMember(owner = "client!tg", name = "j", descriptor = "Li;")
-    private static class88 field4044 = class208.method1425(105, "Loaded config");
+    private static JString field4044 = class208.method1425(105, "Loaded config");
 
     @OriginalMember(owner = "client!tg", name = "h", descriptor = "Li;")
-    public static class88 field4042 = field4044;
+    public static JString field4042 = field4044;
 
     @OriginalMember(owner = "client!tg", name = "b", descriptor = "I")
     public static int field4036;

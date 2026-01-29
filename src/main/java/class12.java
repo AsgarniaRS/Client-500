@@ -24,7 +24,7 @@ public class class12 {
     public static class92 field174 = new class92(64);
 
     @OriginalMember(owner = "client!b", name = "o", descriptor = "Li;")
-    public static class88 field182 = class208.method1425(105, "<col=00ff00>");
+    public static JString field182 = class208.method1425(105, "<col=00ff00>");
 
     @OriginalMember(owner = "client!b", name = "p", descriptor = "I")
     public static int field183 = 100;
@@ -191,7 +191,7 @@ public class class12 {
             class201.method1382(80);
             return true;
         } catch (Exception var5) {
-            String var2 = "T2 - " + class238.packetType + "," + Packet.field821 + "," + class88.field1634 + " - " + class228.packetSize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
+            String var2 = "T2 - " + class238.packetType + "," + Packet.field821 + "," + JString.field1634 + " - " + class228.packetSize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
             for (int var3 = 0; class228.packetSize > var3 && var3 < 50; var3++) {
                 var2 = var2 + class230.in.data[var3] + ",";
             }
@@ -238,16 +238,16 @@ public class class12 {
         if (Isaac.field2731 >= 100 && class6.field72 != 1 || Isaac.field2731 >= 200) {
             class223.method1501(class225.field4232, 12, 0, class174.field3455);
         } else if (arg0 <= -14) {
-            class88 var3 = class200.method1377(arg1, (byte) 99).method614((byte) 83);
+            JString var3 = class200.method1377(arg1, (byte) 99).method614((byte) 83);
             for (int var4 = 0; var4 < Isaac.field2731; var4++) {
                 if (class115.field2088[var4] == arg1) {
-                    class223.method1501(class166.method1142(new class88[] { var3, class1.field8 }, -3), 12, 0, class174.field3455);
+                    class223.method1501(class166.method1142(new JString[] { var3, class1.field8 }, -3), 12, 0, class174.field3455);
                     return;
                 }
             }
             for (int var5 = 0; var5 < Linkable.field1221; var5++) {
                 if (class95.field1765[var5] == arg1) {
-                    class223.method1501(class166.method1142(new class88[] { SeqType.field1980, var3, class226.field4247 }, -3), 12, 0, class174.field3455);
+                    class223.method1501(class166.method1142(new JString[] { SeqType.field1980, var3, class226.field4247 }, -3), 12, 0, class174.field3455);
                     return;
                 }
             }
@@ -280,9 +280,9 @@ public class class12 {
             method65(27, 118, null, (byte) -116);
         }
         if (arg2.field3370 == 2 && !class10.field145) {
-            class88 var4 = class194.method1347(arg2, -2);
+            JString var4 = class194.method1347(arg2, -2);
             if (var4 != null) {
-                class98.method687(9746, -1, var4, (short) 15, 0L, class166.method1142(new class88[] { field182, arg2.field3461 }, -3), arg2.field3425);
+                class98.method687(9746, -1, var4, (short) 15, 0L, class166.method1142(new JString[] { field182, arg2.field3461 }, -3), arg2.field3425);
                 class111.field2025++;
             }
         }
@@ -320,11 +320,11 @@ public class class12 {
                             if (class28.field475 == 1 && class60.method431((byte) -25, class80.method530(-881710560, arg2))) {
                                 if (class209.field3967 != arg2.field3425 || class58.field1105 != var5) {
                                     class98.field1799++;
-                                    class98.method687(9746, var5, class35.field608, (short) 42, (long) var10.field2846, class166.method1142(new class88[] { class78.field1414, class34.field581, var10.field2894 }, -3), arg2.field3425);
+                                    class98.method687(9746, var5, class35.field608, (short) 42, (long) var10.field2846, class166.method1142(new JString[] { class78.field1414, class34.field581, var10.field2894 }, -3), arg2.field3425);
                                 }
                             } else if (!class10.field145 || !class60.method431((byte) -87, class80.method530(-881710560, arg2))) {
                                 class141.field2603++;
-                                class88[] var11 = var10.field2906;
+                                JString[] var11 = var10.field2906;
                                 if (IntHashTable.field1809) {
                                     var11 = class138.method923(var11, (byte) 62);
                                 }
@@ -337,16 +337,16 @@ public class class12 {
                                             } else {
                                                 var13 = 18;
                                             }
-                                            class98.method687(9746, var5, var11[var12], var13, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                            class98.method687(9746, var5, var11[var12], var13, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                                             class147.field2764++;
                                         } else if (var12 == 4) {
                                             class116.field2108++;
-                                            class98.method687(9746, var5, class221.field4173, (short) 18, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                            class98.method687(9746, var5, class221.field4173, (short) 18, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                                         }
                                     }
                                 }
                                 if (class6.method27(class80.method530(-881710560, arg2), (byte) -76)) {
-                                    class98.method687(9746, var5, class35.field608, (short) 12, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                    class98.method687(9746, var5, class35.field608, (short) 12, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                                     class71.field1310++;
                                 }
                                 if (class60.method431((byte) 127, class80.method530(-881710560, arg2)) && var11 != null) {
@@ -363,11 +363,11 @@ public class class12 {
                                             if (var14 == 2) {
                                                 var15 = 2;
                                             }
-                                            class98.method687(9746, var5, var11[var14], var15, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                            class98.method687(9746, var5, var11[var14], var15, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                                         }
                                     }
                                 }
-                                class88[] var16 = arg2.field3513;
+                                JString[] var16 = arg2.field3513;
                                 if (IntHashTable.field1809) {
                                     var16 = class138.method923(var16, (byte) -114);
                                 }
@@ -391,14 +391,14 @@ public class class12 {
                                             if (var17 == 4) {
                                                 var18 = 13;
                                             }
-                                            class98.method687(9746, var5, var16[var17], var18, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                            class98.method687(9746, var5, var16[var17], var18, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                                         }
                                     }
                                 }
-                                class98.method687(9746, var5, class65.field1174, (short) 1001, (long) var10.field2846, class166.method1142(new class88[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
+                                class98.method687(9746, var5, class65.field1174, (short) 1001, (long) var10.field2846, class166.method1142(new JString[] { class136.field2531, var10.field2894 }, -3), arg2.field3425);
                             } else if ((class115.field2086 & 0x10) == 16) {
                                 class166.field3189++;
-                                class98.method687(9746, var5, class201.field3837, (short) 39, (long) var10.field2846, class166.method1142(new class88[] { class28.field464, class34.field581, var10.field2894 }, -3), arg2.field3425);
+                                class98.method687(9746, var5, class201.field3837, (short) 39, (long) var10.field2846, class166.method1142(new JString[] { class28.field464, class34.field581, var10.field2894 }, -3), arg2.field3425);
                             }
                         }
                     }
@@ -411,19 +411,19 @@ public class class12 {
         }
         if (!class10.field145) {
             for (int var19 = 9; var19 >= 5; var19--) {
-                class88 var23 = class222.method1496(arg2, (byte) 103, var19);
+                JString var23 = class222.method1496(arg2, (byte) 103, var19);
                 if (var23 != null) {
                     class188.field3658++;
                     class98.method687(9746, arg2.field3408, var23, (short) 1003, (long) (var19 + 1), arg2.field3459, arg2.field3425);
                 }
             }
-            class88 var20 = class194.method1347(arg2, -2);
+            JString var20 = class194.method1347(arg2, -2);
             if (var20 != null) {
                 class98.method687(9746, arg2.field3408, var20, (short) 15, 0L, arg2.field3459, arg2.field3425);
                 class111.field2025++;
             }
             for (int var21 = 4; var21 >= 0; var21--) {
-                class88 var22 = class222.method1496(arg2, (byte) 108, var21);
+                JString var22 = class222.method1496(arg2, (byte) 108, var21);
                 if (var22 != null) {
                     class188.field3658++;
                     class98.method687(9746, arg2.field3408, var22, (short) 43, (long) (var21 + 1), arg2.field3459, arg2.field3425);
@@ -438,7 +438,7 @@ public class class12 {
         }
         if (class31.method201(class80.method530(-881710560, arg2), 29186) && (class115.field2086 & 0x20) == 32) {
             class227.field4256++;
-            class98.method687(9746, arg2.field3408, class201.field3837, (short) 40, 0L, class166.method1142(new class88[] { class28.field464, class248.field4550, arg2.field3459 }, -3), arg2.field3425);
+            class98.method687(9746, arg2.field3408, class201.field3837, (short) 40, 0L, class166.method1142(new JString[] { class28.field464, class248.field4550, arg2.field3459 }, -3), arg2.field3425);
             return;
         }
     }

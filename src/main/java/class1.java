@@ -8,13 +8,13 @@ public abstract class class1 {
     public static class92 field2 = new class92(128);
 
     @OriginalMember(owner = "client!a", name = "e", descriptor = "Li;")
-    public static class88 field5 = class208.method1425(105, "");
+    public static JString field5 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!a", name = "f", descriptor = "Li;")
-    public static class88 field6 = class208.method1425(105, "::autoshadow off");
+    public static JString field6 = class208.method1425(105, "::autoshadow off");
 
     @OriginalMember(owner = "client!a", name = "g", descriptor = "Li;")
-    public static class88 field7 = class208.method1425(105, "mapfunction");
+    public static JString field7 = class208.method1425(105, "mapfunction");
 
     @OriginalMember(owner = "client!a", name = "i", descriptor = "Z")
     public static boolean field9 = false;
@@ -23,10 +23,10 @@ public abstract class class1 {
     public static long field10 = 0L;
 
     @OriginalMember(owner = "client!a", name = "k", descriptor = "Li;")
-    private static class88 field11 = class208.method1425(105, " is already on your friend list)3");
+    private static JString FRIENDLISTDUPE = class208.method1425(105, " is already on your friend list)3");
 
     @OriginalMember(owner = "client!a", name = "h", descriptor = "Li;")
-    public static class88 field8 = field11;
+    public static JString field8 = FRIENDLISTDUPE;
 
     @OriginalMember(owner = "client!a", name = "a", descriptor = "I")
     public static int field1;
@@ -41,7 +41,7 @@ public abstract class class1 {
     public abstract byte[] method1(byte arg0);
 
     @OriginalMember(owner = "client!a", name = "a", descriptor = "(Li;BLnb;Li;)[Llj;")
-    public static final class130[] method2(class88 arg0, byte arg1, Js5Index arg2, class88 arg3) {
+    public static final class130[] method2(JString arg0, byte arg1, Js5Index arg2, JString arg3) {
         field1++;
         if (arg1 <= 123) {
             field10 = -98L;
@@ -56,7 +56,7 @@ public abstract class class1 {
         field5 = null;
         field7 = null;
         field6 = null;
-        field11 = null;
+        FRIENDLISTDUPE = null;
         field2 = null;
         if (arg0 < -43) {
             field8 = null;

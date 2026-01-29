@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class39 extends Linkable {
 
     @OriginalMember(owner = "client!de", name = "F", descriptor = "Li;")
-    private static class88 field688 = class208.method1425(105, "flash3:");
+    private static JString field688 = class208.method1425(105, "flash3:");
 
     @OriginalMember(owner = "client!de", name = "H", descriptor = "Li;")
-    public static class88 field690 = class208.method1425(105, "hint_mapedge");
+    public static JString field690 = class208.method1425(105, "hint_mapedge");
 
     @OriginalMember(owner = "client!de", name = "G", descriptor = "Li;")
-    public static class88 field689 = class208.method1425(105, "title)3jpg");
+    public static JString field689 = class208.method1425(105, "title)3jpg");
 
     @OriginalMember(owner = "client!de", name = "N", descriptor = "Li;")
-    public static class88 field696 = field688;
+    public static JString field696 = field688;
 
     @OriginalMember(owner = "client!de", name = "A", descriptor = "Li;")
-    public static class88 field683 = field688;
+    public static JString field683 = field688;
 
     @OriginalMember(owner = "client!de", name = "P", descriptor = "I")
     public static int field698 = 0;
@@ -68,7 +68,7 @@ public class class39 extends Linkable {
     public class174 field678;
 
     @OriginalMember(owner = "client!de", name = "u", descriptor = "Li;")
-    public class88 field677;
+    public JString field677;
 
     @OriginalMember(owner = "client!de", name = "D", descriptor = "Z")
     public boolean field686;

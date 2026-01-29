@@ -13,13 +13,13 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static boolean[] field255 = new boolean[] { true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false };
 
     @OriginalMember(owner = "client!be", name = "j", descriptor = "Li;")
-    public static class88 field259 = class208.method1425(105, "<col=00ffff>");
+    public static JString field259 = class208.method1425(105, "<col=00ffff>");
 
     @OriginalMember(owner = "client!be", name = "a", descriptor = "Li;")
-    public static class88 field250 = class208.method1425(105, "Neuer Benutzer");
+    public static JString field250 = class208.method1425(105, "Neuer Benutzer");
 
     @OriginalMember(owner = "client!be", name = "k", descriptor = "Li;")
-    public static class88 field260 = class208.method1425(105, "mapscene");
+    public static JString field260 = class208.method1425(105, "mapscene");
 
     @OriginalMember(owner = "client!be", name = "p", descriptor = "I")
     public static int cacheMinCount = 0;
@@ -28,16 +28,16 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static int field261 = 0;
 
     @OriginalMember(owner = "client!be", name = "w", descriptor = "Li;")
-    private static class88 field272 = class208.method1425(105, "scroll:");
+    private static JString field272 = class208.method1425(105, "scroll:");
 
     @OriginalMember(owner = "client!be", name = "r", descriptor = "Li;")
-    public static class88 field267 = field272;
+    public static JString field267 = field272;
 
     @OriginalMember(owner = "client!be", name = "v", descriptor = "Li;")
-    public static class88 field271 = class208.method1425(105, "Sie haben gerade eine andere Welt verlassen)3");
+    public static JString field271 = class208.method1425(105, "Sie haben gerade eine andere Welt verlassen)3");
 
     @OriginalMember(owner = "client!be", name = "n", descriptor = "Li;")
-    public static class88 field263 = field272;
+    public static JString field263 = field272;
 
     @OriginalMember(owner = "client!be", name = "b", descriptor = "Lid;")
     public static class92 field251 = new class92(64);
@@ -181,9 +181,9 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     }
 
     @OriginalMember(owner = "client!be", name = "a", descriptor = "(ILi;I)V")
-    public static final void method82(int arg0, class88 arg1, int arg2) {
+    public static final void method82(int arg0, JString arg1, int arg2) {
         field256++;
-        class88 var3 = arg1.method611(false).method614((byte) 83);
+        JString var3 = arg1.method611(false).method614((byte) 83);
         boolean var4 = false;
         int var5 = 0;
         if (arg0 != 1) {
@@ -216,7 +216,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
             var5++;
         }
         if (!var4) {
-            class223.method1501(class166.method1142(new class88[] { class114.field2065, var3 }, arg0 ^ 0xFFFFFFFC), arg0 + 11, 0, class174.field3455);
+            class223.method1501(class166.method1142(new JString[] { class114.field2065, var3 }, arg0 ^ 0xFFFFFFFC), arg0 + 11, 0, class174.field3455);
         }
     }
 

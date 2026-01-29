@@ -14,13 +14,13 @@ public class class118 {
     public static boolean field2147 = false;
 
     @OriginalMember(owner = "client!ki", name = "j", descriptor = "Li;")
-    private static class88 field2142 = class208.method1425(105, "Your ignore list is full)3 Max of 100 users)3");
+    private static JString IGNORELISTFULL = class208.method1425(105, "Your ignore list is full)3 Max of 100 users)3");
 
     @OriginalMember(owner = "client!ki", name = "m", descriptor = "Z")
     public static volatile boolean field2145 = true;
 
     @OriginalMember(owner = "client!ki", name = "l", descriptor = "Li;")
-    public static class88 field2144 = field2142;
+    public static JString field2144 = IGNORELISTFULL;
 
     @OriginalMember(owner = "client!ki", name = "c", descriptor = "Lid;")
     public static class92 field2135 = new class92(64);
@@ -78,7 +78,7 @@ public class class118 {
 
     @OriginalMember(owner = "client!ki", name = "a", descriptor = "(I)V")
     public static void method802(int arg0) {
-        field2142 = null;
+        IGNORELISTFULL = null;
         field2135 = null;
         if (arg0 != -1) {
             field2147 = true;
@@ -88,7 +88,7 @@ public class class118 {
     }
 
     @OriginalMember(owner = "client!ki", name = "a", descriptor = "(Li;BILi;ILi;)V")
-    public static final void method803(class88 arg0, byte arg1, int arg2, class88 arg3, int arg4, class88 arg5) {
+    public static final void method803(JString arg0, byte arg1, int arg2, JString arg3, int arg4, JString arg5) {
         for (int var6 = 99; var6 > 0; var6--) {
             class194.field3710[var6] = class194.field3710[var6 - 1];
             class121.field2208[var6] = class121.field2208[var6 - 1];
@@ -150,7 +150,7 @@ public class class118 {
                 for (int var40 = class102.field1851; var40 < class230.field4316; var40++) {
                     Ground var41 = var38[var39][var40];
                     if (var41 != null) {
-                        if (var41.field950 <= class155.field2995 && class18.field304[var39 + class150.field2913 - class79.field1435][var40 + class150.field2913 - class88.field1636] && (arg3 == null || var12 < arg4 || arg3[var12][var39][var40] != arg5)) {
+                        if (var41.field950 <= class155.field2995 && class18.field304[var39 + class150.field2913 - class79.field1435][var40 + class150.field2913 - JString.field1636] && (arg3 == null || var12 < arg4 || arg3[var12][var39][var40] != arg5)) {
                             var41.field944 = true;
                             var41.field965 = true;
                             if (var41.field962 > 0) {
@@ -182,8 +182,8 @@ public class class118 {
                 int var30 = class79.field1435 - var28;
                 if (var29 >= class156.field3009 || var30 < class6.field84) {
                     for (int var31 = -class150.field2913; var31 <= 0; var31++) {
-                        int var32 = class88.field1636 + var31;
-                        int var33 = class88.field1636 - var31;
+                        int var32 = JString.field1636 + var31;
+                        int var33 = JString.field1636 - var31;
                         if (var29 >= class156.field3009) {
                             if (var32 >= class102.field1851) {
                                 Ground var34 = var27[var29][var32];
@@ -229,8 +229,8 @@ public class class118 {
                 int var19 = class79.field1435 - var17;
                 if (var18 >= class156.field3009 || var19 < class6.field84) {
                     for (int var20 = -class150.field2913; var20 <= 0; var20++) {
-                        int var21 = class88.field1636 + var20;
-                        int var22 = class88.field1636 - var20;
+                        int var21 = JString.field1636 + var20;
+                        int var22 = JString.field1636 - var20;
                         if (var18 >= class156.field3009) {
                             if (var21 >= class102.field1851) {
                                 Ground var23 = var16[var18][var21];
@@ -391,7 +391,7 @@ public class class118 {
         for (int var20 = 0; var20 < class104.field1897; var20++) {
             class70 var21 = class202.field3847[var20];
             boolean var22 = true;
-            class88 var23 = class170.method1214(var21.field1255, 77);
+            JString var23 = class170.method1214(var21.field1255, 77);
             if (var21.field1255 == -1) {
                 var23 = class48.field901;
                 var22 = false;

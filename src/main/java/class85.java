@@ -20,19 +20,19 @@ public class class85 extends class23 {
     public static int field1531 = 0;
 
     @OriginalMember(owner = "client!hh", name = "U", descriptor = "Li;")
-    public static class88 field1534 = class208.method1425(105, "Bitte warten Sie eine Minute");
+    public static JString field1534 = class208.method1425(105, "Bitte warten Sie eine Minute");
 
     @OriginalMember(owner = "client!hh", name = "W", descriptor = "Li;")
-    public static class88 field1536 = class208.method1425(105, "Spieler)3 Bitte w-=hlen Sie eine andere Welt)3");
+    public static JString field1536 = class208.method1425(105, "Spieler)3 Bitte w-=hlen Sie eine andere Welt)3");
 
     @OriginalMember(owner = "client!hh", name = "X", descriptor = "Li;")
-    public static class88 field1537 = class208.method1425(105, "Spielwelt erstellt)3");
+    public static JString field1537 = class208.method1425(105, "Spielwelt erstellt)3");
 
     @OriginalMember(owner = "client!hh", name = "ab", descriptor = "Li;")
-    private static class88 field1540 = class208.method1425(105, "Loaded wordpack");
+    private static JString field1540 = class208.method1425(105, "Loaded wordpack");
 
     @OriginalMember(owner = "client!hh", name = "hb", descriptor = "Li;")
-    public static class88 field1547 = field1540;
+    public static JString field1547 = field1540;
 
     @OriginalMember(owner = "client!hh", name = "S", descriptor = "I")
     public static int field1532;

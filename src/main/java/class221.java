@@ -7,10 +7,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class221 {
 
     @OriginalMember(owner = "client!uc", name = "b", descriptor = "Li;")
-    private static class88 field4170 = class208.method1425(105, "Drop");
+    private static JString field4170 = class208.method1425(105, "Drop");
 
     @OriginalMember(owner = "client!uc", name = "e", descriptor = "Li;")
-    public static class88 field4173 = field4170;
+    public static JString field4173 = field4170;
 
     @OriginalMember(owner = "client!uc", name = "i", descriptor = "S")
     public static short field4177 = 256;
@@ -94,7 +94,7 @@ public class class221 {
     }
 
     @OriginalMember(owner = "client!uc", name = "a", descriptor = "(Li;Li;BLnb;)Lrc;")
-    public static final class188 method1492(class88 arg0, class88 arg1, byte arg2, Js5Index arg3) {
+    public static final class188 method1492(JString arg0, JString arg1, byte arg2, Js5Index arg3) {
         int var4 = arg3.method966(arg0, (byte) -3);
         field4179++;
         int var5 = arg3.method968(arg1, var4, 105);
@@ -113,7 +113,7 @@ public class class221 {
     }
 
     @OriginalMember(owner = "client!uc", name = "a", descriptor = "(Li;Z)Li;")
-    public static final class88 method1494(class88 arg0, boolean arg1) {
+    public static final JString method1494(JString arg0, boolean arg1) {
         field4180++;
         class244 var2 = class33.method207((byte) 127, arg0);
         if (arg1) {
@@ -128,7 +128,7 @@ public class class221 {
     @OriginalMember(owner = "client!uc", name = "b", descriptor = "(I)V")
     public static final void method1495(int arg0) {
         field4172++;
-        class88.field1640.method1163(0, 0);
+        JString.field1640.method1163(0, 0);
         class105.field1903.method1163(382, 0);
         if (arg0 == 35) {
             class208.field3948.method878(382 - class208.field3948.field2436 / 2, 18);

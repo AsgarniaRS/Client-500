@@ -20,22 +20,22 @@ public class class3 {
     private long field37;
 
     @OriginalMember(owner = "client!ab", name = "b", descriptor = "Li;")
-    public static class88 field27 = class208.method1425(105, "Die Adresse dieses Computers wurde gesperrt)1");
+    public static JString field27 = class208.method1425(105, "Die Adresse dieses Computers wurde gesperrt)1");
 
     @OriginalMember(owner = "client!ab", name = "i", descriptor = "Li;")
-    public static class88 field34 = class208.method1425(105, "null");
+    public static JString field34 = class208.method1425(105, "null");
 
     @OriginalMember(owner = "client!ab", name = "a", descriptor = "I")
     public static int field26 = 5063219;
 
     @OriginalMember(owner = "client!ab", name = "o", descriptor = "Li;")
-    public static class88 field40 = class208.method1425(105, "(Z");
+    public static JString field40 = class208.method1425(105, "(Z");
 
     @OriginalMember(owner = "client!ab", name = "t", descriptor = "Li;")
-    private static class88 field45 = class208.method1425(105, "Please enter your username)3");
+    private static JString field45 = class208.method1425(105, "Please enter your username)3");
 
     @OriginalMember(owner = "client!ab", name = "m", descriptor = "Li;")
-    public static class88 field38 = field45;
+    public static JString field38 = field45;
 
     @OriginalMember(owner = "client!ab", name = "c", descriptor = "I")
     public static int field28;
@@ -140,7 +140,7 @@ public class class3 {
     }
 
     @OriginalMember(owner = "client!ab", name = "a", descriptor = "(Li;ZLi;Lnb;)[Lpf;")
-    public static final class169[] method15(class88 arg0, boolean arg1, class88 arg2, Js5Index arg3) {
+    public static final class169[] method15(JString arg0, boolean arg1, JString arg2, Js5Index arg3) {
         field28++;
         if (arg1) {
             field27 = null;

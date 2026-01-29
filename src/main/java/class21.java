@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class21 {
 
     @OriginalMember(owner = "client!bi", name = "d", descriptor = "Li;")
-    public static class88 field325 = class208.method1425(105, "overlay)3dat");
+    public static JString field325 = class208.method1425(105, "overlay)3dat");
 
     @OriginalMember(owner = "client!bi", name = "a", descriptor = "I")
     public static int field322;
@@ -120,7 +120,7 @@ public class class21 {
     }
 
     @OriginalMember(owner = "client!bi", name = "a", descriptor = "(Lea;I)Li;")
-    public static final class88 method103(Packet arg0, int arg1) {
+    public static final JString method103(Packet arg0, int arg1) {
         field327++;
         return arg1 <= 40 ? null : class78.method524(true, arg0, 32767);
     }

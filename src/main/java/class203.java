@@ -29,7 +29,7 @@ public class class203 extends class50 {
     public static int field3861 = 0;
 
     @OriginalMember(owner = "client!sg", name = "m", descriptor = "Li;")
-    public static class88 field3862 = class208.method1425(105, "Benutzeroberfl-=che geladen)3");
+    public static JString field3862 = class208.method1425(105, "Benutzeroberfl-=che geladen)3");
 
     @OriginalMember(owner = "client!sg", name = "t", descriptor = "Z")
     public static boolean field3869 = false;
@@ -112,7 +112,7 @@ public class class203 extends class50 {
     }
 
     @OriginalMember(owner = "client!sg", name = "a", descriptor = "(ILi;III)V")
-    public static final void method1392(int arg0, class88 arg1, int arg2, int arg3, int arg4) {
+    public static final void method1392(int arg0, JString arg1, int arg2, int arg3, int arg4) {
         ++field3874;
         class174 var5 = class36.method238(arg2, arg4, true);
         if (var5 != null) {
@@ -261,7 +261,7 @@ public class class203 extends class50 {
         if ((arg0 & 4) != 0) {
             arg1.field4073 = class230.in.gjstr();
             if (~arg1.field4073.method599(255, 0) == -127) {
-                arg1.field4073 = arg1.field4073.method635(1, -383902332);
+                arg1.field4073 = arg1.field4073.substring(1);
                 class223.method1501(arg1.field4073, 12, 2, arg1.name);
             } else if (class240.field4458 == arg1) {
                 class223.method1501(arg1.field4073, 12, 2, arg1.name);
@@ -353,7 +353,7 @@ public class class203 extends class50 {
                     int var23 = -1;
                     class230.in.method315(class54.field1006.data, 0, var17, 109);
                     class54.field1006.pos = 0;
-                    class88 var24;
+                    JString var24;
                     if (!var15) {
                         var24 = class26.method162(class21.method103(class54.field1006, 106).method622(-29988));
                     } else {
@@ -367,11 +367,11 @@ public class class203 extends class50 {
                     arg1.field4085 = var14 >> 8;
                     arg1.field4140 = var14 & 255;
                     if (~var16 == -3) {
-                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class28.field472, arg1.name}, -3), !var15 ? 1 : 17, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, class166.method1142(new JString[] { class28.field472, arg1.name}, -3), !var15 ? 1 : 17, (JString) null);
                     } else if (var16 != 1) {
-                        class118.method803(var24, (byte) 28, var23, arg1.name, var15 ? 17 : 2, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, arg1.name, var15 ? 17 : 2, (JString) null);
                     } else {
-                        class118.method803(var24, (byte) 28, var23, class166.method1142(new class88[] { class166.field3203, arg1.name}, -3), var15 ? 17 : 1, (class88) null);
+                        class118.method803(var24, (byte) 28, var23, class166.method1142(new JString[] { class166.field3203, arg1.name}, -3), var15 ? 17 : 1, (JString) null);
                     }
                 }
             }

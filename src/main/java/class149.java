@@ -96,13 +96,13 @@ public class class149 extends class136 {
     public int field2843 = -1;
 
     @OriginalMember(owner = "client!ng", name = "Jb", descriptor = "Li;")
-    public class88 field2894 = class2.field12;
+    public JString field2894 = class2.field12;
 
     @OriginalMember(owner = "client!ng", name = "qb", descriptor = "I")
     public int field2875 = 0;
 
     @OriginalMember(owner = "client!ng", name = "Pb", descriptor = "[Li;")
-    public class88[] field2900 = new class88[] { null, null, class231.field4345, null, null };
+    public JString[] field2900 = new JString[] { null, null, class231.field4345, null, null };
 
     @OriginalMember(owner = "client!ng", name = "Fb", descriptor = "I")
     public int field2890 = -1;
@@ -111,10 +111,10 @@ public class class149 extends class136 {
     private int field2842 = 0;
 
     @OriginalMember(owner = "client!ng", name = "Vb", descriptor = "[Li;")
-    public class88[] field2906 = new class88[] { null, null, null, null, class221.field4173 };
+    public JString[] field2906 = new JString[] { null, null, null, null, class221.field4173 };
 
     @OriginalMember(owner = "client!ng", name = "Mb", descriptor = "Li;")
-    public static class88 field2897 = class208.method1425(105, "(U");
+    public static JString field2897 = class208.method1425(105, "(U");
 
     @OriginalMember(owner = "client!ng", name = "Z", descriptor = "Lid;")
     public static class92 field2858 = new class92(64);
@@ -303,7 +303,7 @@ public class class149 extends class136 {
     }
 
     @OriginalMember(owner = "client!ng", name = "a", descriptor = "(Li;BI)Li;")
-    public final class88 method1011(class88 arg0, byte arg1, int arg2) {
+    public final JString method1011(JString arg0, byte arg1, int arg2) {
         field2898++;
         if (this.field2871 == null) {
             return arg0;
@@ -549,7 +549,7 @@ public class class149 extends class136 {
             this.method1016(34, null);
         }
         this.field2849 = arg2.field2849;
-        this.field2906 = new class88[5];
+        this.field2906 = new JString[5];
         this.field2844 = arg0.field2844;
         field2902++;
         this.field2860 = arg0.field2860;

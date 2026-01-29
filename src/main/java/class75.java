@@ -86,11 +86,11 @@ public class class75 {
     }
 
     @OriginalMember(owner = "client!gi", name = "a", descriptor = "(Li;IIIZ)V")
-    private final void method507(class88 arg0, int arg1, int arg2, int arg3, boolean arg4) {
+    private final void method507(JString arg0, int arg1, int arg2, int arg3, boolean arg4) {
         if (this.field1360 || arg3 == 0) {
             arg4 = false;
         }
-        for (int var6 = 0; var6 < arg0.method604((byte) -53); var6++) {
+        for (int var6 = 0; var6 < arg0.length(); var6++) {
             int var7 = field1364[arg0.method599(255, var6)];
             if (arg4) {
                 this.method506(var7, arg1 + 1, arg2, 1, this.field1359);
@@ -203,12 +203,12 @@ public class class75 {
     }
 
     @OriginalMember(owner = "client!gi", name = "a", descriptor = "(Li;)I")
-    private final int method510(class88 arg0) {
+    private final int method510(JString arg0) {
         int var2 = 0;
-        for (int var3 = 0; var3 < arg0.method604((byte) -53); var3++) {
-            if (arg0.method599(255, var3) == 64 && var3 + 4 < arg0.method604((byte) -53) && arg0.method599(255, var3 + 4) == 64) {
+        for (int var3 = 0; var3 < arg0.length(); var3++) {
+            if (arg0.method599(255, var3) == 64 && var3 + 4 < arg0.length() && arg0.method599(255, var3 + 4) == 64) {
                 var3 += 4;
-            } else if (arg0.method599(255, var3) == 126 && var3 + 4 < arg0.method604((byte) -53) && arg0.method599(255, var3 + 4) == 126) {
+            } else if (arg0.method599(255, var3) == 126 && var3 + 4 < arg0.length() && arg0.method599(255, var3 + 4) == 126) {
                 var3 += 4;
             } else {
                 var2 += this.field1359[field1364[arg0.method599(255, var3)] + 7];
@@ -250,7 +250,7 @@ public class class75 {
     }
 
     @OriginalMember(owner = "client!gi", name = "b", descriptor = "(Li;IIIZ)V")
-    public final void method511(class88 arg0, int arg1, int arg2, int arg3, boolean arg4) {
+    public final void method511(JString arg0, int arg1, int arg2, int arg3, boolean arg4) {
         int var6 = this.method510(arg0) / 2;
         int var7 = this.method505();
         if (arg1 - var6 <= class72.field1336 && (arg1 + var6 >= class72.field1332 && (arg2 - var7 <= class72.field1335 && arg2 >= 0))) {

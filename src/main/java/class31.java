@@ -8,22 +8,22 @@ public class class31 implements Runnable {
     public static class154 field495 = new class154(512);
 
     @OriginalMember(owner = "client!ch", name = "h", descriptor = "Li;")
-    public static class88 field502 = class208.method1425(105, "<col=ffb000>");
+    public static JString field502 = class208.method1425(105, "<col=ffb000>");
 
     @OriginalMember(owner = "client!ch", name = "j", descriptor = "Li;")
-    private static class88 field504 = class208.method1425(105, "Prepared sound engine");
+    private static JString field504 = class208.method1425(105, "Prepared sound engine");
 
     @OriginalMember(owner = "client!ch", name = "m", descriptor = "Li;")
-    public static class88 field507 = field504;
+    public static JString field507 = field504;
 
     @OriginalMember(owner = "client!ch", name = "g", descriptor = "Lae;")
     public static class6 login = new class6(5000);
 
     @OriginalMember(owner = "client!ch", name = "n", descriptor = "Li;")
-    public static class88 field508 = class208.method1425(105, "Lade Konfiguration )2 ");
+    public static JString field508 = class208.method1425(105, "Lade Konfiguration )2 ");
 
     @OriginalMember(owner = "client!ch", name = "o", descriptor = "Li;")
-    public static class88 field509 = class208.method1425(105, "<br>(X");
+    public static JString field509 = class208.method1425(105, "<br>(X");
 
     @OriginalMember(owner = "client!ch", name = "b", descriptor = "I")
     public static int field496;

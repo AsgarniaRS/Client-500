@@ -23,7 +23,7 @@ public class class7 extends class136 {
     public int field111 = 0;
 
     @OriginalMember(owner = "client!af", name = "K", descriptor = "Li;")
-    public static class88 field102 = class208.method1425(105, "sl_stars");
+    public static JString field102 = class208.method1425(105, "sl_stars");
 
     @OriginalMember(owner = "client!af", name = "S", descriptor = "[S")
     public static short[] field108 = new short[256];
@@ -35,7 +35,7 @@ public class class7 extends class136 {
     public static int field100 = 0;
 
     @OriginalMember(owner = "client!af", name = "Y", descriptor = "[Li;")
-    public static class88[] field114 = new class88[1000];
+    public static JString[] field114 = new JString[1000];
 
     @OriginalMember(owner = "client!af", name = "J", descriptor = "I")
     public static int field101;

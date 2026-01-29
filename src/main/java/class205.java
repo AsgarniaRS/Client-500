@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class205 extends class136 {
 
     @OriginalMember(owner = "client!si", name = "S", descriptor = "Li;")
-    public static class88 field3917 = class208.method1425(105, "Untersuchen");
+    public static JString field3917 = class208.method1425(105, "Untersuchen");
 
     @OriginalMember(owner = "client!si", name = "R", descriptor = "Li;")
-    private static class88 field3916 = class208.method1425(105, "Existing User");
+    private static JString field3916 = class208.method1425(105, "Existing User");
 
     @OriginalMember(owner = "client!si", name = "G", descriptor = "Li;")
-    public static class88 field3905 = field3916;
+    public static JString field3905 = field3916;
 
     @OriginalMember(owner = "client!si", name = "K", descriptor = "Lob;")
     public static class154 pendingPrefetchQueue = new class154(4096);
@@ -53,7 +53,7 @@ public class class205 extends class136 {
     public int[] field3918;
 
     @OriginalMember(owner = "client!si", name = "E", descriptor = "[Li;")
-    private class88[] field3903;
+    private JString[] field3903;
 
     @OriginalMember(owner = "client!si", name = "M", descriptor = "[[I")
     private int[][] field3911;
@@ -120,12 +120,12 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "a", descriptor = "(Lea;I)Li;")
-    public final class88 method1411(Packet arg0, int arg1) {
+    public final JString method1411(Packet arg0, int arg1) {
         if (arg1 != 80) {
             return null;
         }
         field3919++;
-        class88 var3 = class165.method1137(80, (byte) 57);
+        JString var3 = class165.method1137(80, (byte) 57);
         if (this.field3907 != null) {
             for (int var4 = 0; var4 < this.field3907.length; var4++) {
                 var3.method616(this.field3903[var4], (byte) 57);
@@ -137,9 +137,9 @@ public class class205 extends class136 {
     }
 
     @OriginalMember(owner = "client!si", name = "e", descriptor = "(I)Li;")
-    public final class88 method1412(int arg0) {
+    public final JString method1412(int arg0) {
         field3910++;
-        class88 var2 = class165.method1137(80, (byte) 118);
+        JString var2 = class165.method1137(80, (byte) 118);
         if (this.field3903 == null) {
             return class102.field1846;
         }

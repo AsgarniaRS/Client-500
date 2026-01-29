@@ -8,19 +8,19 @@ public class class171 extends class23 {
     private int field3328 = 6;
 
     @OriginalMember(owner = "client!ph", name = "U", descriptor = "Li;")
-    private static class88 field3326 = class208.method1425(105, "Bad session id)3");
+    private static JString field3326 = class208.method1425(105, "Bad session id)3");
 
     @OriginalMember(owner = "client!ph", name = "V", descriptor = "Li;")
-    private static class88 field3327 = class208.method1425(105, " has logged in)3");
+    private static JString field3327 = class208.method1425(105, " has logged in)3");
 
     @OriginalMember(owner = "client!ph", name = "Z", descriptor = "Li;")
-    public static class88 field3331 = field3326;
+    public static JString field3331 = field3326;
 
     @OriginalMember(owner = "client!ph", name = "R", descriptor = "Li;")
-    public static class88 field3323 = field3327;
+    public static JString field3323 = field3327;
 
     @OriginalMember(owner = "client!ph", name = "ab", descriptor = "[Li;")
-    public static class88[] field3332 = new class88[1000];
+    public static JString[] field3332 = new JString[1000];
 
     @OriginalMember(owner = "client!ph", name = "Q", descriptor = "I")
     public static int field3322;
@@ -201,7 +201,7 @@ public class class171 extends class23 {
     }
 
     @OriginalMember(owner = "client!ph", name = "a", descriptor = "(Li;II)V")
-    public static final void method1215(class88 arg0, int arg1, int arg2) {
+    public static final void method1215(JString arg0, int arg1, int arg2) {
         Isaac.out.method30(40);
         ++class145.field2721;
         ++field3325;

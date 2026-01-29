@@ -11,22 +11,22 @@ public class class142 {
     public static int cacheMidCount = 0;
 
     @OriginalMember(owner = "client!n", name = "g", descriptor = "Li;")
-    public static class88 field2621 = class208.method1425(105, "Wir vermuten)1 dass jemand Ihr Passwort kennt)3");
+    public static JString field2621 = class208.method1425(105, "Wir vermuten)1 dass jemand Ihr Passwort kennt)3");
 
     @OriginalMember(owner = "client!n", name = "f", descriptor = "Li;")
-    public static class88 field2620 = class208.method1425(105, "<br>");
+    public static JString field2620 = class208.method1425(105, "<br>");
 
     @OriginalMember(owner = "client!n", name = "h", descriptor = "I")
     public static int field2622 = 0;
 
     @OriginalMember(owner = "client!n", name = "j", descriptor = "Li;")
-    public static class88 field2624 = class208.method1425(105, "hint_mapmarkers");
+    public static JString field2624 = class208.method1425(105, "hint_mapmarkers");
 
     @OriginalMember(owner = "client!n", name = "m", descriptor = "Li;")
-    public static class88 field2627 = class208.method1425(105, "VOLL");
+    public static JString field2627 = class208.method1425(105, "VOLL");
 
     @OriginalMember(owner = "client!n", name = "i", descriptor = "Li;")
-    public static class88 field2623 = class208.method1425(105, "scrollbar");
+    public static JString field2623 = class208.method1425(105, "scrollbar");
 
     @OriginalMember(owner = "client!n", name = "a", descriptor = "I")
     public static int field2615;

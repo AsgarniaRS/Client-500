@@ -11,16 +11,16 @@ public class class156 extends Linkable {
     public int field3017;
 
     @OriginalMember(owner = "client!od", name = "z", descriptor = "Li;")
-    public static class88 field3012 = class208.method1425(105, "(U0a )2 in: ");
+    public static JString field3012 = class208.method1425(105, "(U0a )2 in: ");
 
     @OriginalMember(owner = "client!od", name = "D", descriptor = "Li;")
-    public static class88 field3015 = class208.method1425(105, " weitere Optionen");
+    public static JString field3015 = class208.method1425(105, " weitere Optionen");
 
     @OriginalMember(owner = "client!od", name = "y", descriptor = "Li;")
-    public static class88 field3011 = class208.method1425(105, ":tradereq:");
+    public static JString field3011 = class208.method1425(105, ":tradereq:");
 
     @OriginalMember(owner = "client!od", name = "u", descriptor = "Li;")
-    public static class88 field3007 = class208.method1425(105, "Das ist eine Mitglieder)2Welt(Q");
+    public static JString field3007 = class208.method1425(105, "Das ist eine Mitglieder)2Welt(Q");
 
     @OriginalMember(owner = "client!od", name = "G", descriptor = "I")
     public static int field3018 = 0;

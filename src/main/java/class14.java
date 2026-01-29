@@ -11,13 +11,13 @@ public class class14 extends RuntimeException {
     public String field210;
 
     @OriginalMember(owner = "client!bb", name = "a", descriptor = "Li;")
-    public static class88 field207 = class208.method1425(105, "null");
+    public static JString field207 = class208.method1425(105, "null");
 
     @OriginalMember(owner = "client!bb", name = "j", descriptor = "Li;")
-    public static class88 field216 = class208.method1425(105, "(U(Y");
+    public static JString field216 = class208.method1425(105, "(U(Y");
 
     @OriginalMember(owner = "client!bb", name = "g", descriptor = "Li;")
-    public static class88 field213 = class208.method1425(105, "RuneScape wurde aktualisiert(Q");
+    public static JString field213 = class208.method1425(105, "RuneScape wurde aktualisiert(Q");
 
     @OriginalMember(owner = "client!bb", name = "c", descriptor = "I")
     public static int field209 = -1;
@@ -26,13 +26,13 @@ public class class14 extends RuntimeException {
     public static int field208 = -1;
 
     @OriginalMember(owner = "client!bb", name = "k", descriptor = "Li;")
-    private static class88 field217 = class208.method1425(105, "Checking for updates )2 ");
+    private static JString field217 = class208.method1425(105, "Checking for updates )2 ");
 
     @OriginalMember(owner = "client!bb", name = "n", descriptor = "Li;")
-    public static class88 field220 = class208.method1425(105, "Ihr Charakter)2Profil wird in:");
+    public static JString field220 = class208.method1425(105, "Ihr Charakter)2Profil wird in:");
 
     @OriginalMember(owner = "client!bb", name = "f", descriptor = "Li;")
-    public static class88 field212 = field217;
+    public static JString field212 = field217;
 
     @OriginalMember(owner = "client!bb", name = "h", descriptor = "I")
     public static int field214;

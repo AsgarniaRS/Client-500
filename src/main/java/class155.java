@@ -14,22 +14,22 @@ public class class155 extends Linkable {
     public static int field2995 = 0;
 
     @OriginalMember(owner = "client!oc", name = "x", descriptor = "Li;")
-    public static class88 field2997 = class208.method1425(105, "Ung-Ultige Verbindung mit einem Anmelde)2Server)3");
+    public static JString field2997 = class208.method1425(105, "Ung-Ultige Verbindung mit einem Anmelde)2Server)3");
 
     @OriginalMember(owner = "client!oc", name = "C", descriptor = "Li;")
-    private static class88 field3002 = class208.method1425(105, "This world is running a closed Beta)3");
+    private static JString field3002 = class208.method1425(105, "This world is running a closed Beta)3");
 
     @OriginalMember(owner = "client!oc", name = "A", descriptor = "Li;")
-    private static class88 field3000 = class208.method1425(105, " is already on your ignore list)3");
+    private static JString IGNORELISTDUPE = class208.method1425(105, " is already on your ignore list)3");
 
     @OriginalMember(owner = "client!oc", name = "E", descriptor = "Li;")
-    public static class88 field3004 = field3002;
+    public static JString field3004 = field3002;
 
     @OriginalMember(owner = "client!oc", name = "t", descriptor = "I")
     public static int field2993 = 0;
 
     @OriginalMember(owner = "client!oc", name = "B", descriptor = "Li;")
-    public static class88 field3001 = field3000;
+    public static JString field3001 = IGNORELISTDUPE;
 
     @OriginalMember(owner = "client!oc", name = "z", descriptor = "I")
     public static int field2999 = 0;
@@ -76,7 +76,7 @@ public class class155 extends Linkable {
     @OriginalMember(owner = "client!oc", name = "b", descriptor = "(B)V")
     public static void method1058(byte arg0) {
         field2996 = null;
-        field3000 = null;
+        IGNORELISTDUPE = null;
         field2997 = null;
         if (arg0 != -80) {
             method1057(-59, (byte) -103, true, 121, -101, null);

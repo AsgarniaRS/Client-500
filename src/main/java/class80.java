@@ -6,10 +6,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class80 extends class23 {
 
     @OriginalMember(owner = "client!hc", name = "W", descriptor = "Li;")
-    public static class88 field1444 = class208.method1425(105, "details)3dat");
+    public static JString field1444 = class208.method1425(105, "details)3dat");
 
     @OriginalMember(owner = "client!hc", name = "R", descriptor = "Li;")
-    public static class88 field1439 = class208.method1425(105, "Ung-Ultige Session)2ID)3");
+    public static JString field1439 = class208.method1425(105, "Ung-Ultige Session)2ID)3");
 
     @OriginalMember(owner = "client!hc", name = "Z", descriptor = "[I")
     public static int[] field1447 = new int[100];
@@ -18,10 +18,10 @@ public class class80 extends class23 {
     public static class141[] field1446 = new class141[50];
 
     @OriginalMember(owner = "client!hc", name = "db", descriptor = "Li;")
-    private static class88 field1451 = class208.method1425(105, "Could not complete login)3");
+    private static JString field1451 = class208.method1425(105, "Could not complete login)3");
 
     @OriginalMember(owner = "client!hc", name = "X", descriptor = "Li;")
-    public static class88 field1445 = field1451;
+    public static JString field1445 = field1451;
 
     @OriginalMember(owner = "client!hc", name = "Q", descriptor = "I")
     public static int field1438;

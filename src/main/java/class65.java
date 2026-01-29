@@ -5,22 +5,22 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class65 extends Linkable {
 
     @OriginalMember(owner = "client!fi", name = "x", descriptor = "Li;")
-    private static class88 field1178 = class208.method1425(105, "Please reload this page)3");
+    private static JString field1178 = class208.method1425(105, "Please reload this page)3");
 
     @OriginalMember(owner = "client!fi", name = "B", descriptor = "I")
     public static int field1182 = 0;
 
     @OriginalMember(owner = "client!fi", name = "A", descriptor = "Li;")
-    private static class88 field1181 = class208.method1425(105, "Examine");
+    private static JString field1181 = class208.method1425(105, "Examine");
 
     @OriginalMember(owner = "client!fi", name = "D", descriptor = "I")
     public static int field1183 = 255;
 
     @OriginalMember(owner = "client!fi", name = "t", descriptor = "Li;")
-    public static class88 field1174 = field1181;
+    public static JString field1174 = field1181;
 
     @OriginalMember(owner = "client!fi", name = "G", descriptor = "Li;")
-    public static class88 field1186 = field1178;
+    public static JString field1186 = field1178;
 
     @OriginalMember(owner = "client!fi", name = "F", descriptor = "I")
     public static int field1185 = 0;
@@ -91,7 +91,7 @@ public class class65 extends Linkable {
             if (GameShell.field1581 != -1) {
                 class70 var6 = class202.field3847[GameShell.field1581];
                 if (Linkable.field1215 == var6.field1257) {
-                    byte[] var7 = class166.method1142(new class88[] { var6.field1262, class206.field3924 }, -3).method613(-114);
+                    byte[] var7 = class166.method1142(new JString[] { var6.field1262, class206.field3924 }, -3).method613(-114);
                     class95.field1761 = new String(var7, 0, var7.length);
                     class28.field470 = var6.field1261;
                     if (class115.modewhere != 0) {
@@ -104,7 +104,7 @@ public class class65 extends Linkable {
                     class221.method1495(35);
                     return;
                 }
-                class88 var8 = class166.method1142(new class88[] { class95.field1772, var6.field1262, class159.field3078, class170.method1214(class126.field2350, -80), class4.field63, class170.method1214(class245.lowMemory ? 1 : 0, -116), class2.field21, class170.method1214(class143.field2659, -102), class74.field1351, class170.method1214(class70.field1281, -89) }, -3);
+                JString var8 = class166.method1142(new JString[] { class95.field1772, var6.field1262, class159.field3078, class170.method1214(class126.field2350, -80), class4.field63, class170.method1214(class245.lowMemory ? 1 : 0, -116), class2.field21, class170.method1214(class143.field2659, -102), class74.field1351, class170.method1214(class70.field1281, -89) }, -3);
                 try {
                     arg0.getAppletContext().showDocument(var8.method606(true), "_self");
                 } catch (Exception var10) {

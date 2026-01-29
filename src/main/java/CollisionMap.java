@@ -20,34 +20,34 @@ public class CollisionMap {
     private int field1694;
 
     @OriginalMember(owner = "client!ia", name = "s", descriptor = "Li;")
-    private static class88 field1680 = class208.method1425(105, "Fri");
+    private static JString field1680 = class208.method1425(105, "Fri");
 
     @OriginalMember(owner = "client!ia", name = "v", descriptor = "Li;")
-    public static class88 field1683 = class208.method1425(105, "sl_button");
+    public static JString field1683 = class208.method1425(105, "sl_button");
 
     @OriginalMember(owner = "client!ia", name = "l", descriptor = "Li;")
-    private static class88 field1673 = class208.method1425(105, "Thu");
+    private static JString field1673 = class208.method1425(105, "Thu");
 
     @OriginalMember(owner = "client!ia", name = "D", descriptor = "Li;")
-    private static class88 field1691 = class208.method1425(105, "Tue");
+    private static JString field1691 = class208.method1425(105, "Tue");
 
     @OriginalMember(owner = "client!ia", name = "F", descriptor = "Li;")
-    private static class88 field1693 = class208.method1425(105, "Sun");
+    private static JString field1693 = class208.method1425(105, "Sun");
 
     @OriginalMember(owner = "client!ia", name = "u", descriptor = "Li;")
-    private static class88 field1682 = class208.method1425(105, "Wed");
+    private static JString field1682 = class208.method1425(105, "Wed");
 
     @OriginalMember(owner = "client!ia", name = "y", descriptor = "Li;")
-    private static class88 field1686 = class208.method1425(105, "Sat");
+    private static JString field1686 = class208.method1425(105, "Sat");
 
     @OriginalMember(owner = "client!ia", name = "E", descriptor = "Li;")
-    private static class88 field1692 = class208.method1425(105, "Mon");
+    private static JString field1692 = class208.method1425(105, "Mon");
 
     @OriginalMember(owner = "client!ia", name = "z", descriptor = "[I")
     public static int[] field1687 = new int[] { 1, 1, 1, 1 };
 
     @OriginalMember(owner = "client!ia", name = "m", descriptor = "[Li;")
-    public static class88[] field1674 = new class88[] { field1693, field1692, field1691, field1682, field1673, field1680, field1686 };
+    public static JString[] field1674 = new JString[] { field1693, field1692, field1691, field1682, field1673, field1680, field1686 };
 
     @OriginalMember(owner = "client!ia", name = "H", descriptor = "Lwi;")
     public static class248 field1695 = new class248();
@@ -56,10 +56,10 @@ public class CollisionMap {
     public static long[] field1697 = new long[32];
 
     @OriginalMember(owner = "client!ia", name = "I", descriptor = "Li;")
-    private static class88 field1696 = class208.method1425(105, "Password: ");
+    private static JString field1696 = class208.method1425(105, "Password: ");
 
     @OriginalMember(owner = "client!ia", name = "K", descriptor = "Li;")
-    public static class88 field1698 = field1696;
+    public static JString field1698 = field1696;
 
     @OriginalMember(owner = "client!ia", name = "a", descriptor = "I")
     public static int field1662;

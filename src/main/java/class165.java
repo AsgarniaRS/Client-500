@@ -412,14 +412,14 @@ public class class165 {
                                 } else if (var11.field3392 == 4) {
                                     class26 var47 = var11.method1254(-2, class34.field587);
                                     if (var47 != null) {
-                                        class88 var48 = var11.field3385;
+                                        JString var48 = var11.field3385;
                                         int var49;
                                         if (class80.method533(-31987, var11)) {
                                             var49 = var11.field3515;
                                             if (class65.field1177 == var11 && var11.field3376 != 0) {
                                                 var49 = var11.field3376;
                                             }
-                                            if (var11.field3448.method604((byte) -53) > 0) {
+                                            if (var11.field3448.length() > 0) {
                                                 var48 = var11.field3448;
                                             }
                                         } else {
@@ -435,7 +435,7 @@ public class class165 {
                                                 var48 = class180.field3574;
                                             }
                                             if ((var50.field2854 == 1 || var11.field3484 != 1) && var11.field3484 != -1) {
-                                                var48 = class166.method1142(new class88[] { class136.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484) }, -3);
+                                                var48 = class166.method1142(new JString[] { class136.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484) }, -3);
                                             }
                                         }
                                         if (class53.field967 == var11) {
@@ -587,11 +587,11 @@ public class class165 {
                                             for (int var79 = 0; var79 < var11.field3503; var79++) {
                                                 if (var11.field3390[var77] > 0) {
                                                     class149 var80 = class71.method472(var11.field3390[var77] - 1, (byte) -126);
-                                                    class88 var81;
+                                                    JString var81;
                                                     if (var80.field2854 != 1 && var11.field3476[var77] == 1) {
-                                                        var81 = class166.method1142(new class88[] { class136.field2531, var80.field2894, class120.field2201 }, -3);
+                                                        var81 = class166.method1142(new JString[] { class136.field2531, var80.field2894, class120.field2201 }, -3);
                                                     } else {
-                                                        var81 = class166.method1142(new class88[] { class136.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77]) }, -3);
+                                                        var81 = class166.method1142(new JString[] { class136.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77]) }, -3);
                                                     }
                                                     int var82 = (var11.field3468 + 115) * var79 + var13;
                                                     int var83 = (var11.field3510 + 12) * var78 + var14;
@@ -609,19 +609,19 @@ public class class165 {
                                     }
                                     if (var11.field3392 == 8 && class36.field635 == var11 && Packet.field859 == class138.field2565) {
                                         int var84 = 0;
-                                        class88 var85 = var11.field3385;
+                                        JString var85 = var11.field3385;
                                         class26 var86 = class3.field30;
-                                        class88 var87 = class161.method1086(var85, var11, 64);
+                                        JString var87 = class161.method1086(var85, var11, 64);
                                         int var88 = 0;
-                                        while (var87.method604((byte) -53) > 0) {
+                                        while (var87.length() > 0) {
                                             int var96 = var87.method617(-29, class142.field2620);
-                                            class88 var97;
+                                            JString var97;
                                             if (var96 == -1) {
                                                 var97 = var87;
                                                 var87 = class174.field3455;
                                             } else {
                                                 var97 = var87.method623(0, (byte) -23, var96);
-                                                var87 = var87.method635(var96 + 4, -383902332);
+                                                var87 = var87.substring(var96 + 4);
                                             }
                                             int var98 = var86.method158(var97);
                                             if (var98 > var84) {
@@ -645,17 +645,17 @@ public class class165 {
                                         class72.method478(var89, var90, var84, var88, 16777120);
                                         class72.method476(var89, var90, var84, var88, 0);
                                         int var91 = var90 + var86.field416 + 2;
-                                        class88 var92 = var11.field3385;
-                                        class88 var93 = class161.method1086(var92, var11, 64);
-                                        while (var93.method604((byte) -53) > 0) {
+                                        JString var92 = var11.field3385;
+                                        JString var93 = class161.method1086(var92, var11, 64);
+                                        while (var93.length() > 0) {
                                             int var94 = var93.method617(121, class142.field2620);
-                                            class88 var95;
+                                            JString var95;
                                             if (var94 == -1) {
                                                 var95 = var93;
                                                 var93 = class174.field3455;
                                             } else {
                                                 var95 = var93.method623(0, (byte) -85, var94);
-                                                var93 = var93.method635(var94 + 4, -383902332);
+                                                var93 = var93.substring(var94 + 4);
                                             }
                                             var86.method154(var95, var89 + 3, var91, 0, -1);
                                             var91 += var86.field416 + 1;
@@ -693,28 +693,28 @@ public class class165 {
     }
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(ILi;)V")
-    public static final void method1134(int arg0, class88 arg1) {
+    public static final void method1134(int arg0, JString arg1) {
         field3188++;
         if (class126.field2326.field3599 == null) {
             return;
         }
         try {
-            class88 var2 = class227.field4267.method608(class126.field2326.field3599, -64);
-            class88 var3 = class247.field4518.method608(class126.field2326.field3599, 116);
-            class88 var4 = class166.method1142(new class88[] { var2, class36.field651, arg1, class54.field1005, var3 }, -3);
-            class88 var5;
-            if (arg0 == arg1.method604((byte) -53)) {
-                var5 = class166.method1142(new class88[] { var4, class49.field920 }, arg0 - 3);
+            JString var2 = class227.field4267.method608(class126.field2326.field3599, -64);
+            JString var3 = class247.field4518.method608(class126.field2326.field3599, 116);
+            JString var4 = class166.method1142(new JString[] { var2, class36.field651, arg1, class54.field1005, var3 }, -3);
+            JString var5;
+            if (arg0 == arg1.length()) {
+                var5 = class166.method1142(new JString[] { var4, class49.field920 }, arg0 - 3);
             } else {
-                var5 = class166.method1142(new class88[] { var4, SeqType.field1984, method1141(class206.method1420(false) + 94608000000L, 7085), class95.field1768, class234.method1558(arg0 + 75, 94608000L) }, -3);
+                var5 = class166.method1142(new JString[] { var4, SeqType.field1984, method1141(class206.method1420(false) + 94608000000L, 7085), class95.field1768, class234.method1558(arg0 + 75, 94608000L) }, -3);
             }
-            class166.method1142(new class88[] { class168.field3239, var5, class34.field591 }, -3).method636(0, class126.field2326.field3599);
+            class166.method1142(new JString[] { class168.field3239, var5, class34.field591 }, -3).method636(0, class126.field2326.field3599);
         } catch (Throwable var6) {
         }
     }
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(I[Li;II)Li;")
-    public static final class88 method1135(int arg0, class88[] arg1, int arg2, int arg3) {
+    public static final JString method1135(int arg0, JString[] arg1, int arg2, int arg3) {
         int var4 = 0;
         field3181++;
         for (int var5 = 0; var5 < arg0; var5++) {
@@ -726,11 +726,11 @@ public class class165 {
         int var6 = 0;
         byte[] var7 = new byte[var4];
         for (int var8 = 0; var8 < arg0; var8++) {
-            class88 var11 = arg1[arg3 + var8];
+            JString var11 = arg1[arg3 + var8];
             class124.method838(var11.field1643, 0, var7, var6, var11.field1660);
             var6 += var11.field1660;
         }
-        class88 var9 = new class88();
+        JString var9 = new JString();
         var9.field1643 = var7;
         int var10 = 17 / ((60 - arg2) / 41);
         var9.field1660 = var4;
@@ -751,9 +751,9 @@ public class class165 {
     }
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(IB)Li;")
-    public static final class88 method1137(int arg0, byte arg1) {
+    public static final JString method1137(int arg0, byte arg1) {
         field3167++;
-        class88 var2 = new class88();
+        JString var2 = new JString();
         var2.field1660 = 0;
         if (arg1 <= 3) {
             field3147 = 74;
@@ -782,7 +782,7 @@ public class class165 {
     }
 
     @OriginalMember(owner = "client!pb", name = "b", descriptor = "(ILi;)V")
-    public static final void method1140(int arg0, class88 arg1) {
+    public static final void method1140(int arg0, JString arg1) {
         field3148++;
         if (arg0 != -4) {
             method1140(124, null);
@@ -794,7 +794,7 @@ public class class165 {
     }
 
     @OriginalMember(owner = "client!pb", name = "a", descriptor = "(JI)Li;")
-    private static final class88 method1141(long arg0, int arg1) {
+    private static final JString method1141(long arg0, int arg1) {
         field3150++;
         class248.field4547.setTime(new Date(arg0));
         int var3 = class248.field4547.get(7);
@@ -807,6 +807,6 @@ public class class165 {
         int var7 = class248.field4547.get(11);
         int var8 = class248.field4547.get(12);
         int var9 = class248.field4547.get(13);
-        return class166.method1142(new class88[] { CollisionMap.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), SeqType.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), SeqType.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
+        return class166.method1142(new JString[] { CollisionMap.field1674[var3 - 1], class196.field3774, class170.method1214(var4 / 10, 106), class170.method1214(var4 % 10, 97), class164.field3137, class36.field658[var5], class164.field3137, class170.method1214(var6, 68), class227.field4264, class170.method1214(var7 / 10, -118), class170.method1214(var7 % 10, -84), SeqType.field1961, class170.method1214(var8 / 10, -111), class170.method1214(var8 % 10, -108), SeqType.field1961, class170.method1214(var9 / 10, arg1 ^ 0x1BA1), class170.method1214(var9 % 10, arg1 ^ 0xFFFFE42E), class6.field82 }, -3);
     }
 }

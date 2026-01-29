@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class239 {
 
     @OriginalMember(owner = "client!w", name = "a", descriptor = "Li;")
-    public static class88 field4436 = class208.method1425(105, "weiss:");
+    public static JString field4436 = class208.method1425(105, "weiss:");
 
     @OriginalMember(owner = "client!w", name = "i", descriptor = "Li;")
-    public static class88 field4444 = class208.method1425(105, "Keine Antwort vom Anmelde)2Server)3");
+    public static JString field4444 = class208.method1425(105, "Keine Antwort vom Anmelde)2Server)3");
 
     @OriginalMember(owner = "client!w", name = "q", descriptor = "Li;")
-    public static class88 field4452 = class208.method1425(105, "RuneScape wird geladen )2 bitte warten)3)3)3");
+    public static JString field4452 = class208.method1425(105, "RuneScape wird geladen )2 bitte warten)3)3)3");
 
     @OriginalMember(owner = "client!w", name = "n", descriptor = "[Ljj;")
     public static class108[] field4449 = new class108[100];
@@ -220,7 +220,7 @@ public class class239 {
     }
 
     @OriginalMember(owner = "client!w", name = "a", descriptor = "(Li;ZLnb;Li;)[Lrc;")
-    public static final class188[] method1584(class88 arg0, boolean arg1, Js5Index arg2, class88 arg3) {
+    public static final class188[] method1584(JString arg0, boolean arg1, Js5Index arg2, JString arg3) {
         int var4 = arg2.method966(arg0, (byte) -3);
         if (!arg1) {
             method1585(-86, null, 15, 1);

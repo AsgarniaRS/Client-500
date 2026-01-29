@@ -8,13 +8,13 @@ public class class164 implements class198 {
     public static int field3140 = 0;
 
     @OriginalMember(owner = "client!pa", name = "g", descriptor = "Li;")
-    public static class88 field3143 = class208.method1425(105, "<img=1>");
+    public static JString field3143 = class208.method1425(105, "<img=1>");
 
     @OriginalMember(owner = "client!pa", name = "i", descriptor = "Li;")
-    public static class88 field3145 = class208.method1425(105, "Lade Benutzeroberfl-=che )2 ");
+    public static JString field3145 = class208.method1425(105, "Lade Benutzeroberfl-=che )2 ");
 
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "Li;")
-    public static class88 field3137 = class208.method1425(105, ")2");
+    public static JString field3137 = class208.method1425(105, ")2");
 
     @OriginalMember(owner = "client!pa", name = "b", descriptor = "I")
     public static int field3138;
@@ -35,7 +35,7 @@ public class class164 implements class198 {
     public static byte[][][] field3144;
 
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "([IIJI)Li;")
-    public final class88 method1128(int[] arg0, int arg1, long arg2, int arg3) {
+    public final JString method1128(int[] arg0, int arg1, long arg2, int arg3) {
         field3141++;
         if (arg1 == 0) {
             EnumType var6 = class167.method1150(arg0[0], arg3 ^ 0xFFFFFF8E);
@@ -124,7 +124,7 @@ public class class164 implements class198 {
     }
 
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "(BLi;)Z")
-    public static final boolean method1132(byte arg0, class88 arg1) {
+    public static final boolean method1132(byte arg0, JString arg1) {
         field3139++;
         if (arg1 == null) {
             return false;

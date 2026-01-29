@@ -21,52 +21,52 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
     public static long field623 = 0L;
 
     @OriginalMember(owner = "client!db", name = "A", descriptor = "Li;")
-    private static class88 field632 = class208.method1425(105, "Aug");
+    private static JString field632 = class208.method1425(105, "Aug");
 
     @OriginalMember(owner = "client!db", name = "M", descriptor = "Li;")
-    public static class88 field644 = class208.method1425(105, " <col=ffffff>");
+    public static JString field644 = class208.method1425(105, " <col=ffffff>");
 
     @OriginalMember(owner = "client!db", name = "w", descriptor = "Li;")
-    private static class88 field628 = class208.method1425(105, "Dec");
+    private static JString field628 = class208.method1425(105, "Dec");
 
     @OriginalMember(owner = "client!db", name = "V", descriptor = "Li;")
-    private static class88 field653 = class208.method1425(105, "Sep");
+    private static JString field653 = class208.method1425(105, "Sep");
 
     @OriginalMember(owner = "client!db", name = "L", descriptor = "Li;")
-    private static class88 field643 = class208.method1425(105, "Mar");
+    private static JString field643 = class208.method1425(105, "Mar");
 
     @OriginalMember(owner = "client!db", name = "N", descriptor = "Li;")
-    private static class88 field645 = class208.method1425(105, "Jan");
+    private static JString field645 = class208.method1425(105, "Jan");
 
     @OriginalMember(owner = "client!db", name = "R", descriptor = "Li;")
-    public static class88 field649 = class208.method1425(105, "Fallen lassen");
+    public static JString field649 = class208.method1425(105, "Fallen lassen");
 
     @OriginalMember(owner = "client!db", name = "s", descriptor = "Li;")
-    private static class88 field624 = class208.method1425(105, "Jul");
+    private static JString field624 = class208.method1425(105, "Jul");
 
     @OriginalMember(owner = "client!db", name = "T", descriptor = "Li;")
-    public static class88 field651 = class208.method1425(105, "settings=");
+    public static JString field651 = class208.method1425(105, "settings=");
 
     @OriginalMember(owner = "client!db", name = "I", descriptor = "Li;")
-    private static class88 field640 = class208.method1425(105, "Oct");
+    private static JString field640 = class208.method1425(105, "Oct");
 
     @OriginalMember(owner = "client!db", name = "K", descriptor = "Li;")
-    private static class88 field642 = class208.method1425(105, "Feb");
+    private static JString field642 = class208.method1425(105, "Feb");
 
     @OriginalMember(owner = "client!db", name = "U", descriptor = "Li;")
-    private static class88 field652 = class208.method1425(105, "Apr");
+    private static JString field652 = class208.method1425(105, "Apr");
 
     @OriginalMember(owner = "client!db", name = "bb", descriptor = "Li;")
-    private static class88 field659 = class208.method1425(105, "Nov");
+    private static JString field659 = class208.method1425(105, "Nov");
 
     @OriginalMember(owner = "client!db", name = "Y", descriptor = "Li;")
-    private static class88 field656 = class208.method1425(105, "May");
+    private static JString field656 = class208.method1425(105, "May");
 
     @OriginalMember(owner = "client!db", name = "db", descriptor = "Li;")
-    private static class88 field661 = class208.method1425(105, "Jun");
+    private static JString field661 = class208.method1425(105, "Jun");
 
     @OriginalMember(owner = "client!db", name = "ab", descriptor = "[Li;")
-    public static class88[] field658 = new class88[] { field645, field642, field643, field652, field656, field661, field624, field632, field653, field640, field659, field628 };
+    public static JString[] field658 = new JString[] { field645, field642, field643, field652, field656, field661, field624, field632, field653, field640, field659, field628 };
 
     @OriginalMember(owner = "client!db", name = "q", descriptor = "I")
     public static int field622;

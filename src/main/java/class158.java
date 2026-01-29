@@ -8,22 +8,22 @@ public class class158 {
     public static class92 field3040 = new class92(64);
 
     @OriginalMember(owner = "client!of", name = "j", descriptor = "Li;")
-    public static class88 field3047 = class208.method1425(105, "p12_full");
+    public static JString field3047 = class208.method1425(105, "p12_full");
 
     @OriginalMember(owner = "client!of", name = "e", descriptor = "Li;")
-    private static class88 field3042 = class208.method1425(105, "Attack");
+    private static JString ATTACK = class208.method1425(105, "Attack");
 
     @OriginalMember(owner = "client!of", name = "f", descriptor = "Li;")
-    public static class88 field3043 = field3042;
+    public static JString field3043 = ATTACK;
 
     @OriginalMember(owner = "client!of", name = "l", descriptor = "Li;")
-    private static class88 field3049 = class208.method1425(105, "Ok");
+    private static JString field3049 = class208.method1425(105, "Ok");
 
     @OriginalMember(owner = "client!of", name = "h", descriptor = "Li;")
-    public static class88 field3045 = field3049;
+    public static JString field3045 = field3049;
 
     @OriginalMember(owner = "client!of", name = "m", descriptor = "Li;")
-    public static class88 field3050 = class208.method1425(105, "Einloggen");
+    public static JString field3050 = class208.method1425(105, "Einloggen");
 
     @OriginalMember(owner = "client!of", name = "i", descriptor = "I")
     public static volatile int field3046 = 0;
@@ -64,7 +64,7 @@ public class class158 {
     public static void method1067(int arg0) {
         field3043 = null;
         field3047 = null;
-        field3042 = null;
+        ATTACK = null;
         field3040 = null;
         field3049 = null;
         field3045 = null;

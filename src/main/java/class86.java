@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class86 {
 
     @OriginalMember(owner = "client!hi", name = "f", descriptor = "Li;")
-    public static class88 field1554 = class208.method1425(105, "Weiter");
+    public static JString field1554 = class208.method1425(105, "Weiter");
 
     @OriginalMember(owner = "client!hi", name = "b", descriptor = "I")
     public static int field1550 = 0;
@@ -14,7 +14,7 @@ public abstract class class86 {
     public static int field1552 = -1;
 
     @OriginalMember(owner = "client!hi", name = "h", descriptor = "Li;")
-    public static class88 field1556 = class208.method1425(105, ":assistreq:");
+    public static JString field1556 = class208.method1425(105, ":assistreq:");
 
     @OriginalMember(owner = "client!hi", name = "i", descriptor = "[I")
     public static int[] field1557 = new int[] { 0, -1, 0, 1 };

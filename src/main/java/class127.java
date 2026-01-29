@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class127 extends Linkable {
 
     @OriginalMember(owner = "client!lg", name = "A", descriptor = "Li;")
-    private static class88 field2376 = class208.method1425(105, " seconds)3");
+    private static JString field2376 = class208.method1425(105, " seconds)3");
 
     @OriginalMember(owner = "client!lg", name = "x", descriptor = "I")
     public static int field2373 = -1;
 
     @OriginalMember(owner = "client!lg", name = "w", descriptor = "Li;")
-    public static class88 field2372 = field2376;
+    public static JString field2372 = field2376;
 
     @OriginalMember(owner = "client!lg", name = "P", descriptor = "Li;")
-    public static class88 field2390 = class208.method1425(105, "Passwort: ");
+    public static JString field2390 = class208.method1425(105, "Passwort: ");
 
     @OriginalMember(owner = "client!lg", name = "t", descriptor = "I")
     public int field2369;

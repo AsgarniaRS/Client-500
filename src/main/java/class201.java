@@ -7,13 +7,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class201 {
 
     @OriginalMember(owner = "client!se", name = "e", descriptor = "[Li;")
-    public static class88[] field3838 = new class88[500];
+    public static JString[] field3838 = new JString[500];
 
     @OriginalMember(owner = "client!se", name = "c", descriptor = "[I")
     public static int[] field3836 = new int[5];
 
     @OriginalMember(owner = "client!se", name = "d", descriptor = "Li;")
-    public static class88 field3837 = null;
+    public static JString field3837 = null;
 
     @OriginalMember(owner = "client!se", name = "b", descriptor = "I")
     public static int field3835;

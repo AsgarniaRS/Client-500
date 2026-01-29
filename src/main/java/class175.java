@@ -13,16 +13,16 @@ public class class175 {
     public static long field3521 = 0L;
 
     @OriginalMember(owner = "client!qa", name = "e", descriptor = "Li;")
-    private static class88 field3525 = class208.method1425(105, "Welcome to RuneScape");
+    private static JString field3525 = class208.method1425(105, "Welcome to RuneScape");
 
     @OriginalMember(owner = "client!qa", name = "i", descriptor = "Li;")
-    private static class88 field3529 = class208.method1425(105, "Try again in 60 secs)3)3)3");
+    private static JString field3529 = class208.method1425(105, "Try again in 60 secs)3)3)3");
 
     @OriginalMember(owner = "client!qa", name = "g", descriptor = "Li;")
-    public static class88 field3527 = field3529;
+    public static JString field3527 = field3529;
 
     @OriginalMember(owner = "client!qa", name = "d", descriptor = "Li;")
-    public static class88 field3524 = field3525;
+    public static JString field3524 = field3525;
 
     @OriginalMember(owner = "client!qa", name = "n", descriptor = "Z")
     public static boolean field3534 = false;
@@ -31,7 +31,7 @@ public class class175 {
     public static int field3530 = 3;
 
     @OriginalMember(owner = "client!qa", name = "h", descriptor = "Li;")
-    public static class88 field3528 = class208.method1425(105, " )2> <col=00ffff>");
+    public static JString field3528 = class208.method1425(105, " )2> <col=00ffff>");
 
     @OriginalMember(owner = "client!qa", name = "c", descriptor = "I")
     public static int field3523;
@@ -154,10 +154,10 @@ public class class175 {
                     class201.field3837 = class42.field710;
                 }
                 if (var9.field3412) {
-                    class28.field464 = class166.method1142(new class88[] { var9.field3459, class88.field1637 }, -3);
+                    class28.field464 = class166.method1142(new JString[] { var9.field3459, JString.field1637 }, -3);
                     return;
                 }
-                class28.field464 = class166.method1142(new class88[] { class12.field182, var9.field3461, class88.field1637 }, arg0 - 5);
+                class28.field464 = class166.method1142(new JString[] { class12.field182, var9.field3461, JString.field1637 }, arg0 - 5);
             }
             return;
         }
@@ -251,7 +251,7 @@ public class class175 {
                 Isaac.out.p2(var7);
                 class157.field3032++;
             } else {
-                class223.method1501(class166.method1142(new class88[] { class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
+                class223.method1501(class166.method1142(new JString[] { class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894 }, -3), 12, 0, class174.field3455);
             }
             class139.field2575 = 0;
             class57.field1091 = class239.method1581(-64, var3);
@@ -387,7 +387,7 @@ public class class175 {
             class209.field3967 = var3;
             class48.field905 = var7;
             class200.method1373(65280, var23);
-            class78.field1414 = class166.method1142(new class88[] { class136.field2531, class71.method472(var7, (byte) -96).field2894, class88.field1637 }, arg0 - 5);
+            class78.field1414 = class166.method1142(new JString[] { class136.field2531, class71.method472(var7, (byte) -96).field2894, JString.field1637 }, arg0 - 5);
             if (class78.field1414 == null) {
                 class78.field1414 = class180.field3574;
             }

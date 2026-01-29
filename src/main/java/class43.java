@@ -11,10 +11,10 @@ public class class43 extends class23 {
     public static int field723 = -1;
 
     @OriginalMember(owner = "client!di", name = "cb", descriptor = "Li;")
-    public static class88 field734 = class208.method1425(105, "oder ung-Ultiges Passwort)3");
+    public static JString field734 = class208.method1425(105, "oder ung-Ultiges Passwort)3");
 
     @OriginalMember(owner = "client!di", name = "Z", descriptor = "Li;")
-    public static class88 field731 = class208.method1425(105, ":trade:");
+    public static JString field731 = class208.method1425(105, ":trade:");
 
     @OriginalMember(owner = "client!di", name = "ab", descriptor = "Lbe;")
     public static class17 field732 = new class17();
@@ -158,8 +158,8 @@ public class class43 extends class23 {
                     int var14 = (var12 << 8) + var13;
                     if (!var6 || ~var13 != -50 && ~var13 != -150 && var13 != 147 && ~var12 != -51 && (~var12 != -50 || var13 != 47)) {
                         Isaac.field2733[var11] = var14;
-                        class27.field453[var11] = class27.field451.method966(class166.method1142(new class88[] { class212.field4020, class170.method1214(var12, -113), class50.field933, class170.method1214(var13, -128) }, -3), (byte) -3);
-                        class128.field2404[var11] = class27.field451.method966(class166.method1142(new class88[] { class106.field1930, class170.method1214(var12, 94), class50.field933, class170.method1214(var13, -125) }, -3), (byte) -3);
+                        class27.field453[var11] = class27.field451.method966(class166.method1142(new JString[] { class212.field4020, class170.method1214(var12, -113), class50.field933, class170.method1214(var13, -128) }, -3), (byte) -3);
+                        class128.field2404[var11] = class27.field451.method966(class166.method1142(new JString[] { class106.field1930, class170.method1214(var12, 94), class50.field933, class170.method1214(var13, -125) }, -3), (byte) -3);
                     } else {
                         Isaac.field2733[var11] = var14;
                         class27.field453[var11] = -1;
@@ -220,8 +220,8 @@ public class class43 extends class23 {
                                 Isaac.field2733[var24] = var31;
                                 int var33 = (var31 & 65478) >> 8;
                                 int var34 = 255 & var31;
-                                class27.field453[var24] = class27.field451.method966(class166.method1142(new class88[] { class212.field4020, class170.method1214(var33, 47), class50.field933, class170.method1214(var34, 34) }, -3), (byte) -3);
-                                class128.field2404[var24] = class27.field451.method966(class166.method1142(new class88[] { class106.field1930, class170.method1214(var33, 47), class50.field933, class170.method1214(var34, -85) }, -3), (byte) -3);
+                                class27.field453[var24] = class27.field451.method966(class166.method1142(new JString[] { class212.field4020, class170.method1214(var33, 47), class50.field933, class170.method1214(var34, 34) }, -3), (byte) -3);
+                                class128.field2404[var24] = class27.field451.method966(class166.method1142(new JString[] { class106.field1930, class170.method1214(var33, 47), class50.field933, class170.method1214(var34, -85) }, -3), (byte) -3);
                                 ++var24;
                             }
                         }

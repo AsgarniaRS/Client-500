@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class188 extends class136 {
 
     @OriginalMember(owner = "client!rc", name = "G", descriptor = "Li;")
-    public static class88 field3648 = class208.method1425(105, "(Udns");
+    public static JString field3648 = class208.method1425(105, "(Udns");
 
     @OriginalMember(owner = "client!rc", name = "E", descriptor = "Li;")
-    public static class88 field3646 = class208.method1425(105, ")3)3)3");
+    public static JString field3646 = class208.method1425(105, ")3)3)3");
 
     @OriginalMember(owner = "client!rc", name = "L", descriptor = "Li;")
-    public static class88 field3653 = class208.method1425(105, "bevor Sie den Vorgang wiederholen)3");
+    public static JString field3653 = class208.method1425(105, "bevor Sie den Vorgang wiederholen)3");
 
     @OriginalMember(owner = "client!rc", name = "D", descriptor = "I")
     public int field3645;
@@ -101,9 +101,9 @@ public abstract class class188 extends class136 {
             arg2.method141(class209.field3982, 382, var24, 16776960, 0);
             int var25 = var24 + 15;
             int var26 = var25 + 10;
-            arg2.method154(class166.method1142(new class88[] { class42.field713, class26.method162(class209.field3969) }, -3), 272, var26, 16777215, 0);
+            arg2.method154(class166.method1142(new JString[] { class42.field713, class26.method162(class209.field3969) }, -3), 272, var26, 16777215, 0);
             int var28 = var26 + 15;
-            arg2.method154(class166.method1142(new class88[] { CollisionMap.field1698, class209.field3972.method596(true) }, -3), 274, var28, 16777215, 0);
+            arg2.method154(class166.method1142(new JString[] { CollisionMap.field1698, class209.field3972.method596(true) }, -3), 274, var28, 16777215, 0);
             int var30 = var28 + 15;
         }
         if (class229.gameState == 10) {
@@ -136,7 +136,7 @@ public abstract class class188 extends class136 {
                 }
                 var27 = var29 + 15;
                 var27 += 10;
-                arg2.method154(class166.method1142(new class88[] { class42.field713, class26.method162(class209.field3969), var9 ? class202.field3845 : class209.field3974 }, -3), 272, var27, 16777215, 0);
+                arg2.method154(class166.method1142(new JString[] { class42.field713, class26.method162(class209.field3969), var9 ? class202.field3845 : class209.field3974 }, -3), 272, var27, 16777215, 0);
                 boolean var10;
                 if (class142.field2622 == 1 && class117.field2115 % 40 < 20 && class175.field3522) {
                     var10 = true;
@@ -144,7 +144,7 @@ public abstract class class188 extends class136 {
                     var10 = false;
                 }
                 var27 += 15;
-                arg2.method154(class166.method1142(new class88[] { CollisionMap.field1698, class209.field3972.method596(true), var10 ? class202.field3845 : class209.field3974 }, -3), 274, var27, 16777215, 0);
+                arg2.method154(class166.method1142(new JString[] { CollisionMap.field1698, class209.field3972.method596(true), var10 ? class202.field3845 : class209.field3974 }, -3), 274, var27, 16777215, 0);
                 class129.field2418.method878(var7 - 73, var8 + -20);
                 var27 += 15;
                 arg2.method141(class218.field4119, var7, var8 + 5, 16777215, 0);
@@ -190,7 +190,7 @@ public abstract class class188 extends class136 {
         class32.field518.method878(var19, var20);
         byte var21 = 100;
         byte var22 = 35;
-        arg2.method141(class166.method1142(new class88[] { class71.field1326, class199.field3789, class170.method1214(class28.field470, -113) }, -3), var21 / 2 + var19, var22 / 2 + var20 + -2, 16777215, 0);
+        arg2.method141(class166.method1142(new JString[] { class71.field1326, class199.field3789, class170.method1214(class28.field470, -113) }, -3), var21 / 2 + var19, var22 / 2 + var20 + -2, 16777215, 0);
         if (class129.field2416 != null) {
             arg0.method141(class196.field3765, var21 / 2 + var19, var20 + 12 - -(var22 / 2), 16777215, 0);
             return;

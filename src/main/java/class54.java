@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class54 {
 
     @OriginalMember(owner = "client!ei", name = "d", descriptor = "Li;")
-    public static class88 field1005 = class208.method1425(105, "; version=1; path=)4; domain=");
+    public static JString field1005 = class208.method1425(105, "; version=1; path=)4; domain=");
 
     @OriginalMember(owner = "client!ei", name = "e", descriptor = "Lea;")
     public static Packet field1006 = new Packet(new byte[5000]);
 
     @OriginalMember(owner = "client!ei", name = "i", descriptor = "Li;")
-    public static class88 field1010 = class208.method1425(105, "Konfig geladen)3");
+    public static JString field1010 = class208.method1425(105, "Konfig geladen)3");
 
     @OriginalMember(owner = "client!ei", name = "g", descriptor = "[B")
     public static byte[] field1008 = new byte[] { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
@@ -20,10 +20,10 @@ public class class54 {
     public static int field1012 = 0;
 
     @OriginalMember(owner = "client!ei", name = "l", descriptor = "Li;")
-    private static class88 field1013 = class208.method1425(105, "wishes to trade with you)3");
+    private static JString field1013 = class208.method1425(105, "wishes to trade with you)3");
 
     @OriginalMember(owner = "client!ei", name = "f", descriptor = "Li;")
-    public static class88 field1007 = field1013;
+    public static JString field1007 = field1013;
 
     @OriginalMember(owner = "client!ei", name = "b", descriptor = "I")
     public static int field1003;
@@ -51,9 +51,9 @@ public class class54 {
     }
 
     @OriginalMember(owner = "client!ei", name = "a", descriptor = "(IB[BI)Li;")
-    public static final class88 method395(int arg0, byte arg1, byte[] arg2, int arg3) {
+    public static final JString method395(int arg0, byte arg1, byte[] arg2, int arg3) {
         field1004++;
-        class88 var4 = new class88();
+        JString var4 = new JString();
         var4.field1660 = 0;
         var4.field1643 = new byte[arg3];
         for (int var5 = arg0; var5 < arg0 + arg3; var5++) {

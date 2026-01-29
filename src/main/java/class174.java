@@ -62,13 +62,13 @@ public class class174 {
     public int field3381 = 0;
 
     @OriginalMember(owner = "client!q", name = "Db", descriptor = "Li;")
-    public class88 field3448 = class66.field1188;
+    public JString field3448 = class66.field1188;
 
     @OriginalMember(owner = "client!q", name = "bb", descriptor = "I")
     public int field3420 = 0;
 
     @OriginalMember(owner = "client!q", name = "s", descriptor = "Li;")
-    public class88 field3385 = class66.field1188;
+    public JString field3385 = class66.field1188;
 
     @OriginalMember(owner = "client!q", name = "gb", descriptor = "I")
     public int field3425 = -1;
@@ -101,7 +101,7 @@ public class class174 {
     public int field3376 = 0;
 
     @OriginalMember(owner = "client!q", name = "Qb", descriptor = "Li;")
-    public class88 field3461 = class66.field1188;
+    public JString field3461 = class66.field1188;
 
     @OriginalMember(owner = "client!q", name = "Gb", descriptor = "Z")
     public boolean field3451 = false;
@@ -140,7 +140,7 @@ public class class174 {
     public int field3434 = 0;
 
     @OriginalMember(owner = "client!q", name = "Rb", descriptor = "Li;")
-    public class88 field3462 = class158.field3045;
+    public JString field3462 = class158.field3045;
 
     @OriginalMember(owner = "client!q", name = "lc", descriptor = "I")
     public int field3482 = 0;
@@ -191,7 +191,7 @@ public class class174 {
     private int field3444 = -1;
 
     @OriginalMember(owner = "client!q", name = "Ob", descriptor = "Li;")
-    public class88 field3459 = class66.field1188;
+    public JString field3459 = class66.field1188;
 
     @OriginalMember(owner = "client!q", name = "Cc", descriptor = "I")
     public int field3499 = 1;
@@ -230,7 +230,7 @@ public class class174 {
     public class174 field3504 = null;
 
     @OriginalMember(owner = "client!q", name = "Rc", descriptor = "Li;")
-    public class88 field3514 = class66.field1188;
+    public JString field3514 = class66.field1188;
 
     @OriginalMember(owner = "client!q", name = "Oc", descriptor = "I")
     public int field3511 = 0;
@@ -278,7 +278,7 @@ public class class174 {
     public static int[] field3430 = new int[2048];
 
     @OriginalMember(owner = "client!q", name = "Kb", descriptor = "Li;")
-    public static class88 field3455 = class208.method1425(105, "");
+    public static JString field3455 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!q", name = "Cb", descriptor = "I")
     public static int field3447 = 0;
@@ -377,10 +377,10 @@ public class class174 {
     public class174[] field3467;
 
     @OriginalMember(owner = "client!q", name = "i", descriptor = "[Li;")
-    public class88[] field3375;
+    public JString[] field3375;
 
     @OriginalMember(owner = "client!q", name = "Qc", descriptor = "[Li;")
-    public class88[] field3513;
+    public JString[] field3513;
 
     @OriginalMember(owner = "client!q", name = "f", descriptor = "[Ljava/lang/Object;")
     public Object[] field3372;
@@ -783,7 +783,7 @@ public class class174 {
         this.field3459 = arg1.gjstr();
         int var6 = arg1.g1();
         if (var6 > 0) {
-            this.field3375 = new class88[var6];
+            this.field3375 = new JString[var6];
             for (int var7 = 0; var7 < var6; var7++) {
                 this.field3375[var7] = arg1.gjstr();
             }
@@ -858,12 +858,12 @@ public class class174 {
     }
 
     @OriginalMember(owner = "client!q", name = "a", descriptor = "(BLi;I)V")
-    public final void method1255(byte arg0, class88 arg1, int arg2) {
+    public final void method1255(byte arg0, JString arg1, int arg2) {
         if (arg0 > -84) {
             this.method1256(null, 18);
         }
         if (this.field3375 == null || arg2 >= this.field3375.length) {
-            class88[] var4 = new class88[arg2 + 1];
+            JString[] var4 = new JString[arg2 + 1];
             if (this.field3375 != null) {
                 for (int var5 = 0; var5 < this.field3375.length; var5++) {
                     var4[var5] = this.field3375[var5];
@@ -991,10 +991,10 @@ public class class174 {
                     this.field3391[var13] = -1;
                 }
             }
-            this.field3513 = new class88[5];
+            this.field3513 = new JString[5];
             for (int var14 = 0; var14 < 5; var14++) {
-                class88 var15 = arg1.gjstr();
-                if (var15.method604((byte) -53) > 0) {
+                JString var15 = arg1.gjstr();
+                if (var15.length() > 0) {
                     this.field3513[var14] = var15;
                     this.field3496 |= 0x1 << var14 + 23;
                 }
@@ -1070,13 +1070,13 @@ public class class174 {
             this.field3468 = arg1.g2b();
             this.field3510 = arg1.g2b();
             int var17 = arg1.g1();
-            this.field3513 = new class88[5];
+            this.field3513 = new JString[5];
             if (var17 == 1) {
                 this.field3496 |= 0x40000000;
             }
             for (int var18 = 0; var18 < 5; var18++) {
-                class88 var19 = arg1.gjstr();
-                if (var19.method604((byte) -53) > 0) {
+                JString var19 = arg1.gjstr();
+                if (var19.length() > 0) {
                     this.field3513[var18] = var19;
                     this.field3496 |= 0x1 << var18 + 23;
                 }
@@ -1093,7 +1093,7 @@ public class class174 {
         }
         if (this.field3370 == 1 || this.field3370 == 4 || this.field3370 == 5 || this.field3370 == 6) {
             this.field3462 = arg1.gjstr();
-            if (this.field3462.method604((byte) -53) == 0) {
+            if (this.field3462.length() == 0) {
                 if (this.field3370 == 1) {
                     this.field3462 = class158.field3045;
                 }

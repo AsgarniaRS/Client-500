@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class233 {
 
     @OriginalMember(owner = "client!vd", name = "c", descriptor = "Li;")
-    public static class88 field4369 = class208.method1425(105, "hint_headicons");
+    public static JString field4369 = class208.method1425(105, "hint_headicons");
 
     @OriginalMember(owner = "client!vd", name = "d", descriptor = "[Z")
     public static boolean[] field4370 = new boolean[5];

@@ -157,7 +157,7 @@ public class class9 extends Linkable {
     }
 
     @OriginalMember(owner = "client!ah", name = "a", descriptor = "(Li;BLnb;Li;)Lpf;")
-    public static final class169 method49(class88 arg0, byte arg1, Js5Index arg2, class88 arg3) {
+    public static final class169 method49(JString arg0, byte arg1, Js5Index arg2, JString arg3) {
         field127++;
         int var4 = -10 / ((arg1 + 77) / 42);
         int var5 = arg2.method966(arg0, (byte) -3);

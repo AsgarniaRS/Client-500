@@ -23,10 +23,10 @@ public class class211 extends class23 {
     public static int field4006 = 0;
 
     @OriginalMember(owner = "client!td", name = "db", descriptor = "Li;")
-    private static class88 field4008 = class208.method1425(105, "Loading wordpack )2 ");
+    private static JString field4008 = class208.method1425(105, "Loading wordpack )2 ");
 
     @OriginalMember(owner = "client!td", name = "eb", descriptor = "Li;")
-    public static class88 field4009 = field4008;
+    public static JString field4009 = field4008;
 
     @OriginalMember(owner = "client!td", name = "Q", descriptor = "I")
     public static int field3995;
@@ -159,7 +159,7 @@ public class class211 extends class23 {
     }
 
     @OriginalMember(owner = "client!td", name = "b", descriptor = "(II)Li;")
-    public static final class88 method1444(int arg0, int arg1) {
+    public static final JString method1444(int arg0, int arg1) {
         ++field3999;
         if (arg0 > -36) {
             return null;

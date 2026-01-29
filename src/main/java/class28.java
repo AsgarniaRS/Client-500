@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class28 extends class23 {
 
     @OriginalMember(owner = "client!ce", name = "S", descriptor = "Li;")
-    public static class88 field464 = null;
+    public static JString field464 = null;
 
     @OriginalMember(owner = "client!ce", name = "U", descriptor = "I")
     public static int field466 = -1;
@@ -20,13 +20,13 @@ public class class28 extends class23 {
     public static int field468 = 99;
 
     @OriginalMember(owner = "client!ce", name = "cb", descriptor = "Li;")
-    public static class88 field474 = class208.method1425(105, "Sie befinden sich in einem Mitglieder)2Gebiet(Q");
+    public static JString field474 = class208.method1425(105, "Sie befinden sich in einem Mitglieder)2Gebiet(Q");
 
     @OriginalMember(owner = "client!ce", name = "db", descriptor = "I")
     public static int field475 = 0;
 
     @OriginalMember(owner = "client!ce", name = "ab", descriptor = "Li;")
-    public static class88 field472 = class208.method1425(105, "<img=1>");
+    public static JString field472 = class208.method1425(105, "<img=1>");
 
     @OriginalMember(owner = "client!ce", name = "Y", descriptor = "I")
     public static int field470 = 1;

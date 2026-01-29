@@ -19,16 +19,16 @@ public class class222 {
     private int field4183;
 
     @OriginalMember(owner = "client!ud", name = "j", descriptor = "Li;")
-    public static class88 field4190 = class208.method1425(105, "Gegenstand f-Ur Mitglieder");
+    public static JString field4190 = class208.method1425(105, "Gegenstand f-Ur Mitglieder");
 
     @OriginalMember(owner = "client!ud", name = "d", descriptor = "Li;")
-    public static class88 field4184 = null;
+    public static JString field4184 = null;
 
     @OriginalMember(owner = "client!ud", name = "a", descriptor = "S")
     public static short field4181 = 32767;
 
     @OriginalMember(owner = "client!ud", name = "l", descriptor = "Li;")
-    public static class88 field4192 = class208.method1425(105, "<br>(X100(U(Y");
+    public static JString field4192 = class208.method1425(105, "<br>(X100(U(Y");
 
     @OriginalMember(owner = "client!ud", name = "f", descriptor = "I")
     public static int field4186;
@@ -49,14 +49,14 @@ public class class222 {
     public static int field4194;
 
     @OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lq;BI)Li;")
-    public static final class88 method1496(class174 arg0, byte arg1, int arg2) {
+    public static final JString method1496(class174 arg0, byte arg1, int arg2) {
         field4191++;
         if (!class105.method728(108, arg2, class80.method530(-881710560, arg0)) && arg0.field3403 == null) {
             return null;
         }
         int var3 = -67 / ((-arg1 - 53) / 53);
-        if (arg0.field3375 == null || arg2 >= arg0.field3375.length || arg0.field3375[arg2] == null || arg0.field3375[arg2].method602(113).method604((byte) -53) == 0) {
-            return class116.field2105 ? class166.method1142(new class88[] { IntHashTable.field1804, class170.method1214(arg2, 115) }, -3) : null;
+        if (arg0.field3375 == null || arg2 >= arg0.field3375.length || arg0.field3375[arg2] == null || arg0.field3375[arg2].method602(113).length() == 0) {
+            return class116.field2105 ? class166.method1142(new JString[] { IntHashTable.field1804, class170.method1214(arg2, 115) }, -3) : null;
         } else {
             return arg0.field3375[arg2];
         }

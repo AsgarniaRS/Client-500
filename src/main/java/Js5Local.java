@@ -24,10 +24,10 @@ public class Js5Local extends Js5Index {
     private class222 field333;
 
     @OriginalMember(owner = "client!bj", name = "qb", descriptor = "Li;")
-    public static class88 field344 = class208.method1425(105, "::errortest");
+    public static JString field344 = class208.method1425(105, "::errortest");
 
     @OriginalMember(owner = "client!bj", name = "eb", descriptor = "Li;")
-    public static class88 field332 = class208.method1425(105, "-5berpr-Ufen Sie Ihr Mitteilungsfach)3");
+    public static JString field332 = class208.method1425(105, "-5berpr-Ufen Sie Ihr Mitteilungsfach)3");
 
     @OriginalMember(owner = "client!bj", name = "zb", descriptor = "Ljava/util/Calendar;")
     public static Calendar field353 = Calendar.getInstance();
@@ -36,10 +36,10 @@ public class Js5Local extends Js5Index {
     public static boolean field355 = true;
 
     @OriginalMember(owner = "client!bj", name = "Cb", descriptor = "Li;")
-    public static class88 field356 = class208.method1425(105, "(U0a )2 via: ");
+    public static JString field356 = class208.method1425(105, "(U0a )2 via: ");
 
     @OriginalMember(owner = "client!bj", name = "Db", descriptor = "Li;")
-    public static class88 field357 = class208.method1425(105, "Bitte geben Sie Ihren Benutzernamen ein)3");
+    public static JString field357 = class208.method1425(105, "Bitte geben Sie Ihren Benutzernamen ein)3");
 
     @OriginalMember(owner = "client!bj", name = "db", descriptor = "I")
     public static int field331;
@@ -414,10 +414,10 @@ public class Js5Local extends Js5Index {
             for (int var2 = 0; var2 < class203.field3864 + -1; ++var2) {
                 if (class53.field994[var2] < 1000 && ~class53.field994[var2 + 1] < -1001) {
                     var1 = false;
-                    class88 var3 = class201.field3838[var2];
+                    JString var3 = class201.field3838[var2];
                     class201.field3838[var2] = class201.field3838[var2 - -1];
                     class201.field3838[var2 + 1] = var3;
-                    class88 var4 = class66.field1191[var2];
+                    JString var4 = class66.field1191[var2];
                     class66.field1191[var2] = class66.field1191[var2 + 1];
                     class66.field1191[var2 - -1] = var4;
                     int var5 = class165.field3178[var2];

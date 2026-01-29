@@ -41,7 +41,7 @@ public class class81 extends class145 {
     public static int field1467 = 0;
 
     @OriginalMember(owner = "client!hd", name = "B", descriptor = "Li;")
-    public static class88 field1468 = class208.method1425(105, "");
+    public static JString field1468 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!hd", name = "u", descriptor = "I")
     public static int field1461;
@@ -295,13 +295,13 @@ public class class81 extends class145 {
                                                         continue;
                                                     }
                                                 }
-                                                if (var4 <= class88.field1636 && var4 > class102.field1851) {
+                                                if (var4 <= JString.field1636 && var4 > class102.field1851) {
                                                     Ground var11 = var7[var3][var4 - 1];
                                                     if (var11 != null && var11.field965 && (var11.field944 || (var2.field954 & 0x8) == 0)) {
                                                         continue;
                                                     }
                                                 }
-                                                if (var4 >= class88.field1636 && var4 < class230.field4316 - 1) {
+                                                if (var4 >= JString.field1636 && var4 < class230.field4316 - 1) {
                                                     Ground var12 = var7[var3][var4 + 1];
                                                     if (var12 != null && var12.field965 && (var12.field944 || (var2.field954 & 0x2) == 0)) {
                                                         continue;
@@ -365,9 +365,9 @@ public class class81 extends class145 {
                                                 } else if (class79.field1435 < var3) {
                                                     var18 += 2;
                                                 }
-                                                if (class88.field1636 == var4) {
+                                                if (JString.field1636 == var4) {
                                                     var18 += 3;
-                                                } else if (class88.field1636 > var4) {
+                                                } else if (JString.field1636 > var4) {
                                                     var18 += 6;
                                                 }
                                                 var19 = class110.field2007[var18];
@@ -453,7 +453,7 @@ public class class81 extends class145 {
                                                         class105.field1902.method1624(var31, 61);
                                                     }
                                                 }
-                                                if (var4 < class88.field1636 && (var30 & 0x2) != 0) {
+                                                if (var4 < JString.field1636 && (var30 & 0x2) != 0) {
                                                     Ground var32 = var7[var3][var4 + 1];
                                                     if (var32 != null && var32.field965) {
                                                         class105.field1902.method1624(var32, 61);
@@ -465,7 +465,7 @@ public class class81 extends class145 {
                                                         class105.field1902.method1624(var33, 40);
                                                     }
                                                 }
-                                                if (var4 > class88.field1636 && (var30 & 0x8) != 0) {
+                                                if (var4 > JString.field1636 && (var30 & 0x8) != 0) {
                                                     Ground var34 = var7[var3][var4 - 1];
                                                     if (var34 != null && var34.field965) {
                                                         class105.field1902.method1624(var34, 72);
@@ -534,8 +534,8 @@ public class class81 extends class145 {
                                                     if (var47 > var46) {
                                                         var46 = var47;
                                                     }
-                                                    int var48 = class88.field1636 - var41.field1938;
-                                                    int var49 = var41.field1937 - class88.field1636;
+                                                    int var48 = JString.field1636 - var41.field1938;
+                                                    int var49 = var41.field1937 - JString.field1636;
                                                     if (var49 > var48) {
                                                         var41.field1952 = var46 + var49;
                                                     } else {
@@ -602,12 +602,12 @@ public class class81 extends class145 {
                         }
                         var63 = var7[var3 + 1][var4];
                     } while (var63 != null && var63.field965);
-                    if (var4 > class88.field1636 || var4 <= class102.field1851) {
+                    if (var4 > JString.field1636 || var4 <= class102.field1851) {
                         break;
                     }
                     var64 = var7[var3][var4 - 1];
                 } while (var64 != null && var64.field965);
-                if (var4 < class88.field1636 || var4 >= class230.field4316 - 1) {
+                if (var4 < JString.field1636 || var4 >= class230.field4316 - 1) {
                     break;
                 }
                 var65 = var7[var3][var4 + 1];
@@ -677,7 +677,7 @@ public class class81 extends class145 {
                     class105.field1902.method1624(var76, 55);
                 }
             }
-            if (var4 < class88.field1636) {
+            if (var4 < JString.field1636) {
                 Ground var77 = var7[var3][var4 + 1];
                 if (var77 != null && var77.field965) {
                     class105.field1902.method1624(var77, 65);
@@ -689,7 +689,7 @@ public class class81 extends class145 {
                     class105.field1902.method1624(var78, 66);
                 }
             }
-            if (var4 > class88.field1636) {
+            if (var4 > JString.field1636) {
                 Ground var79 = var7[var3][var4 - 1];
                 if (var79 != null && var79.field965) {
                     class105.field1902.method1624(var79, 74);

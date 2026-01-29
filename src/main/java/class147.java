@@ -6,13 +6,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class147 {
 
     @OriginalMember(owner = "client!ne", name = "c", descriptor = "Li;")
-    public static class88 field2756 = class208.method1425(105, "Ausw-=hlen");
+    public static JString field2756 = class208.method1425(105, "Ausw-=hlen");
 
     @OriginalMember(owner = "client!ne", name = "f", descriptor = "I")
     public static int field2759 = 0;
 
     @OriginalMember(owner = "client!ne", name = "a", descriptor = "Li;")
-    public static class88 field2754 = null;
+    public static JString field2754 = null;
 
     @OriginalMember(owner = "client!ne", name = "n", descriptor = "I")
     public static int field2767 = 0;
@@ -51,7 +51,7 @@ public class class147 {
     public static Js5Local field2762;
 
     @OriginalMember(owner = "client!ne", name = "a", descriptor = "(ILi;Li;Lnb;)[Lrh;")
-    public static final class193[] method983(int arg0, class88 arg1, class88 arg2, Js5Index arg3) {
+    public static final class193[] method983(int arg0, JString arg1, JString arg2, Js5Index arg3) {
         field2755++;
         int var4 = arg3.method966(arg1, (byte) -3);
         if (arg0 != 2) {

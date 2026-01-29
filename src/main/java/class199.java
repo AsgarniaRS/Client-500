@@ -26,19 +26,19 @@ public class class199 extends class136 {
     public static int field3790 = 0;
 
     @OriginalMember(owner = "client!sc", name = "D", descriptor = "Li;")
-    public static class88 field3789 = class208.method1425(105, " ");
+    public static JString field3789 = class208.method1425(105, " ");
 
     @OriginalMember(owner = "client!sc", name = "M", descriptor = "Li;")
-    public static class88 field3797 = class208.method1425(105, "p11_full");
+    public static JString field3797 = class208.method1425(105, "p11_full");
 
     @OriginalMember(owner = "client!sc", name = "W", descriptor = "Li;")
-    public static class88 field3807 = class208.method1425(105, "Art");
+    public static JString field3807 = class208.method1425(105, "Art");
 
     @OriginalMember(owner = "client!sc", name = "bb", descriptor = "Lwi;")
     public static class248 field3812 = new class248();
 
     @OriginalMember(owner = "client!sc", name = "cb", descriptor = "Li;")
-    public static class88 field3813 = class208.method1425(105, "Der Anmelde)2Server ist offline)3");
+    public static JString field3813 = class208.method1425(105, "Der Anmelde)2Server ist offline)3");
 
     @OriginalMember(owner = "client!sc", name = "P", descriptor = "F")
     private float field3800;

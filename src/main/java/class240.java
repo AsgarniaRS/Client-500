@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class240 {
 
     @OriginalMember(owner = "client!wa", name = "a", descriptor = "Li;")
-    public static class88 field4455 = class208.method1425(105, " steht bereits auf Ihrer Ignorieren)2Liste(Q");
+    public static JString field4455 = class208.method1425(105, " steht bereits auf Ihrer Ignorieren)2Liste(Q");
 
     @OriginalMember(owner = "client!wa", name = "b", descriptor = "[I")
     public static int[] field4456 = new int[256];
 
     @OriginalMember(owner = "client!wa", name = "g", descriptor = "Li;")
-    public static class88 field4461 = class208.method1425(105, "mod_icons");
+    public static JString field4461 = class208.method1425(105, "mod_icons");
 
     @OriginalMember(owner = "client!wa", name = "f", descriptor = "I")
     public static int field4460 = 0;
@@ -36,7 +36,7 @@ public class class240 {
     }
 
     @OriginalMember(owner = "client!wa", name = "a", descriptor = "(ZIJZ)Li;")
-    public static final class88 method1588(boolean arg0, int arg1, long arg2, boolean arg3) {
+    public static final JString method1588(boolean arg0, int arg1, long arg2, boolean arg3) {
         field4459++;
         if (arg1 < 2 || arg1 > 36) {
             throw new IllegalArgumentException("Invalid radix:" + arg1);
@@ -69,7 +69,7 @@ public class class240 {
             }
             var9[var8 - var10 - 1] = (byte) (var12 + 48);
         }
-        class88 var11 = new class88();
+        JString var11 = new JString();
         var11.field1643 = var9;
         var11.field1660 = var8;
         return var11;

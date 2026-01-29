@@ -8,13 +8,13 @@ public class class180 extends class23 {
     private int field3580 = 585;
 
     @OriginalMember(owner = "client!qf", name = "Q", descriptor = "Li;")
-    public static class88 field3571 = class208.method1425(105, "Fps:");
+    public static JString field3571 = class208.method1425(105, "Fps:");
 
     @OriginalMember(owner = "client!qf", name = "T", descriptor = "Li;")
-    public static class88 field3574 = class208.method1425(105, "null");
+    public static JString field3574 = class208.method1425(105, "null");
 
     @OriginalMember(owner = "client!qf", name = "Y", descriptor = "Li;")
-    public static class88 field3579 = class208.method1425(105, "unzap");
+    public static JString field3579 = class208.method1425(105, "unzap");
 
     @OriginalMember(owner = "client!qf", name = "R", descriptor = "I")
     public static int field3572;

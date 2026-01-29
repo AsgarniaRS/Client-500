@@ -35,25 +35,25 @@ public class class33 extends class136 {
     public static int field541 = -1;
 
     @OriginalMember(owner = "client!cj", name = "V", descriptor = "Li;")
-    private static class88 field544 = class208.method1425(105, "Close");
+    private static JString CLOSE = class208.method1425(105, "Close");
 
     @OriginalMember(owner = "client!cj", name = "H", descriptor = "Li;")
-    public static class88 field530 = field544;
+    public static JString field530 = CLOSE;
 
     @OriginalMember(owner = "client!cj", name = "K", descriptor = "Ljava/lang/Object;")
     public static Object field533 = new Object();
 
     @OriginalMember(owner = "client!cj", name = "fb", descriptor = "Li;")
-    public static class88 field554 = class208.method1425(105, "Schrifts-=tze geladen)3");
+    public static JString field554 = class208.method1425(105, "Schrifts-=tze geladen)3");
 
     @OriginalMember(owner = "client!cj", name = "db", descriptor = "Li;")
-    public static class88 field552 = class208.method1425(105, "Schlie-8en");
+    public static JString field552 = class208.method1425(105, "Schlie-8en");
 
     @OriginalMember(owner = "client!cj", name = "cb", descriptor = "[I")
     public static int[] field551 = new int[] { -1, -1, 1, 1 };
 
     @OriginalMember(owner = "client!cj", name = "eb", descriptor = "Li;")
-    public static class88 field553 = class208.method1425(105, "<col=40ff00>");
+    public static JString field553 = class208.method1425(105, "<col=40ff00>");
 
     @OriginalMember(owner = "client!cj", name = "gb", descriptor = "Lid;")
     public static class92 cache = new class92(128);
@@ -95,9 +95,9 @@ public class class33 extends class136 {
     private short[] field549;
 
     @OriginalMember(owner = "client!cj", name = "a", descriptor = "(BLi;)Lwe;")
-    public static final class244 method207(byte arg0, class88 arg1) {
+    public static final class244 method207(byte arg0, JString arg1) {
         field535++;
-        if (arg1.method604((byte) -53) == 0) {
+        if (arg1.length() == 0) {
             return null;
         }
         int var2 = 44 % ((arg0 + 31) / 45);
@@ -246,7 +246,7 @@ public class class33 extends class136 {
         }
         stream = null;
         field554 = null;
-        field544 = null;
+        CLOSE = null;
         field551 = null;
         field553 = null;
         field533 = null;

@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class145 {
 
     @OriginalMember(owner = "client!nc", name = "j", descriptor = "Li;")
-    public static class88 field2725 = class208.method1425(105, "Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
+    public static JString field2725 = class208.method1425(105, "Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
 
     @OriginalMember(owner = "client!nc", name = "c", descriptor = "Li;")
-    private static class88 field2718 = class208.method1425(105, "level)2");
+    private static JString LEVEL = class208.method1425(105, "level)2");
 
     @OriginalMember(owner = "client!nc", name = "m", descriptor = "[I")
     public static int[] field2728 = new int[50];
 
     @OriginalMember(owner = "client!nc", name = "d", descriptor = "Li;")
-    public static class88 field2719 = field2718;
+    public static JString field2719 = LEVEL;
 
     @OriginalMember(owner = "client!nc", name = "a", descriptor = "I")
     public static int field2716;
@@ -71,7 +71,7 @@ public abstract class class145 {
     @OriginalMember(owner = "client!nc", name = "a", descriptor = "(I)V")
     public static void method973(int arg0) {
         field2725 = null;
-        field2718 = null;
+        LEVEL = null;
         field2723 = null;
         field2728 = null;
         field2720 = null;

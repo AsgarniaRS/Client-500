@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class90 extends Linkable {
 
     @OriginalMember(owner = "client!ib", name = "D", descriptor = "Li;")
-    public static class88 field1710 = class208.method1425(105, "Standort");
+    public static JString field1710 = class208.method1425(105, "Standort");
 
     @OriginalMember(owner = "client!ib", name = "E", descriptor = "[I")
     public static int[] field1711 = new int[99];
@@ -98,7 +98,7 @@ public class class90 extends Linkable {
         }
         while (var3 > var4) {
             class244 var5 = new class244();
-            class88 var6 = var2.gjstr();
+            JString var6 = var2.gjstr();
             var5.field4485 = var2.g2();
             var5.field4487 = var2.g2();
             var5.field4494 = var2.g1();

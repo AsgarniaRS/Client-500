@@ -8,7 +8,7 @@ public class class202 {
     private class136 field3850 = new class136();
 
     @OriginalMember(owner = "client!sf", name = "c", descriptor = "Li;")
-    public static class88 field3845 = class208.method1425(105, "<col=ffff00>*V");
+    public static JString field3845 = class208.method1425(105, "<col=ffff00>*V");
 
     @OriginalMember(owner = "client!sf", name = "m", descriptor = "[S")
     public static short[] field3855 = new short[] { 960, 957, -21568, -21571, 22464 };
@@ -111,7 +111,7 @@ public class class202 {
         class80.field1448 = null;
         class113.field2051 = null;
         class157.field3036 = null;
-        class88.field1640 = null;
+        JString.field1640 = null;
         class190.field3669 = null;
         class221.field4171 = null;
         class15.field234 = null;

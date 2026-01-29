@@ -17,16 +17,16 @@ public class class74 extends class50 {
     private final int field1346;
 
     @OriginalMember(owner = "client!gh", name = "o", descriptor = "Li;")
-    private static class88 field1344 = class208.method1425(105, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R+R(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V ");
+    private static JString field1344 = class208.method1425(105, "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789(Q(R+R(T(U^(V(Z(X(Y)2_=)0[*U]*W;:(W@(S*X)1<)3>)4?*6*V ");
 
     @OriginalMember(owner = "client!gh", name = "j", descriptor = "Li;")
-    public static class88 field1339 = field1344;
+    public static JString field1339 = field1344;
 
     @OriginalMember(owner = "client!gh", name = "l", descriptor = "Li;")
-    public static class88 field1341 = class208.method1425(105, "M");
+    public static JString field1341 = class208.method1425(105, "M");
 
     @OriginalMember(owner = "client!gh", name = "v", descriptor = "Li;")
-    public static class88 field1351 = class208.method1425(105, ")1j");
+    public static JString field1351 = class208.method1425(105, ")1j");
 
     @OriginalMember(owner = "client!gh", name = "t", descriptor = "Lwi;")
     public static class248 field1349 = new class248();
@@ -35,19 +35,19 @@ public class class74 extends class50 {
     public static long[] field1352 = new long[500];
 
     @OriginalMember(owner = "client!gh", name = "B", descriptor = "Li;")
-    public static class88 field1357 = class208.method1425(105, "scrollen:");
+    public static JString field1357 = class208.method1425(105, "scrollen:");
 
     @OriginalMember(owner = "client!gh", name = "C", descriptor = "Li;")
-    public static class88 field1358 = class208.method1425(105, "und loggen sich dann erneut ein)3");
+    public static JString field1358 = class208.method1425(105, "und loggen sich dann erneut ein)3");
 
     @OriginalMember(owner = "client!gh", name = "A", descriptor = "Li;")
-    private static class88 field1356 = class208.method1425(105, "white:");
+    private static JString field1356 = class208.method1425(105, "white:");
 
     @OriginalMember(owner = "client!gh", name = "y", descriptor = "Li;")
-    public static class88 field1354 = field1356;
+    public static JString field1354 = field1356;
 
     @OriginalMember(owner = "client!gh", name = "z", descriptor = "Li;")
-    public static class88 field1355 = field1356;
+    public static JString field1355 = field1356;
 
     @OriginalMember(owner = "client!gh", name = "m", descriptor = "I")
     public static int field1342;

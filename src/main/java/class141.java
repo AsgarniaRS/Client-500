@@ -14,7 +14,7 @@ public class class141 {
     public static long[] field2610 = new long[256];
 
     @OriginalMember(owner = "client!mj", name = "n", descriptor = "Li;")
-    private static class88 field2614;
+    private static JString field2614;
 
     @OriginalMember(owner = "client!mj", name = "m", descriptor = "[[S")
     public static short[][] field2613;
@@ -44,7 +44,7 @@ public class class141 {
     public static int[] field2611;
 
     @OriginalMember(owner = "client!mj", name = "f", descriptor = "[Li;")
-    public class88[] field2606;
+    public JString[] field2606;
 
     @OriginalMember(owner = "client!mj", name = "a", descriptor = "(IZILrf;)V")
     public static final void method927(int arg0, boolean arg1, int arg2, class191 arg3) {
@@ -79,12 +79,12 @@ public class class141 {
     }
 
     @OriginalMember(owner = "client!mj", name = "a", descriptor = "(II)Li;")
-    public static final class88 method928(int arg0, int arg1) {
+    public static final JString method928(int arg0, int arg1) {
         if (arg0 != -1) {
             method929(75);
         }
         field2604++;
-        return class166.method1142(new class88[] { class170.method1214(arg1 >> 24 & 0xFF, 50), field2614, class170.method1214(arg1 >> 16 & 0xFF, -104), field2614, class170.method1214(arg1 >> 8 & 0xFF, 90), field2614, class170.method1214(arg1 & 0xFF, arg0 + 94) }, -3);
+        return class166.method1142(new JString[] { class170.method1214(arg1 >> 24 & 0xFF, 50), field2614, class170.method1214(arg1 >> 16 & 0xFF, -104), field2614, class170.method1214(arg1 >> 8 & 0xFF, 90), field2614, class170.method1214(arg1 & 0xFF, arg0 + 94) }, -3);
     }
 
     @OriginalMember(owner = "client!mj", name = "a", descriptor = "(I)V")

@@ -6,25 +6,25 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class GZip {
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "Li;")
-    public static class88 field1106 = class208.method1425(105, "compass");
+    public static JString field1106 = class208.method1425(105, "compass");
 
     @OriginalMember(owner = "client!fc", name = "c", descriptor = "Li;")
-    private static class88 field1108 = class208.method1425(105, "Connecting to server)3)3)3");
+    private static JString field1108 = class208.method1425(105, "Connecting to server)3)3)3");
 
     @OriginalMember(owner = "client!fc", name = "o", descriptor = "[Z")
     public static boolean[] field1120 = new boolean[200];
 
     @OriginalMember(owner = "client!fc", name = "l", descriptor = "Li;")
-    public static class88 field1117 = field1108;
+    public static JString field1117 = field1108;
 
     @OriginalMember(owner = "client!fc", name = "n", descriptor = "Li;")
-    public static class88 field1119 = class208.method1425(105, "Eingabeprozedur geladen)3");
+    public static JString field1119 = class208.method1425(105, "Eingabeprozedur geladen)3");
 
     @OriginalMember(owner = "client!fc", name = "m", descriptor = "Li;")
-    public static class88 field1118 = class208.method1425(105, "zap");
+    public static JString field1118 = class208.method1425(105, "zap");
 
     @OriginalMember(owner = "client!fc", name = "h", descriptor = "Li;")
-    public static class88 field1113 = class208.method1425(105, "");
+    public static JString field1113 = class208.method1425(105, "");
 
     @OriginalMember(owner = "client!fc", name = "e", descriptor = "D")
     public static double field1110;
@@ -155,7 +155,7 @@ public class GZip {
         buf.pos = 0;
         script.name = buf.fastgstr();
 
-        script.stringOperands = new class88[var8];
+        script.stringOperands = new JString[var8];
         script.instructions = new int[var8];
         script.intOperands = new int[var8];
 

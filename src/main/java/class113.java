@@ -17,16 +17,16 @@ public class class113 extends class23 {
     public static boolean[] field2045 = new boolean[100];
 
     @OriginalMember(owner = "client!kd", name = "S", descriptor = "Li;")
-    private static class88 field2040 = class208.method1425(105, "Connection lost)3");
+    private static JString field2040 = class208.method1425(105, "Connection lost)3");
 
     @OriginalMember(owner = "client!kd", name = "ab", descriptor = "Li;")
-    public static class88 field2048 = class208.method1425(105, "Benutzen Sie bitte eine andere Welt)3");
+    public static JString field2048 = class208.method1425(105, "Benutzen Sie bitte eine andere Welt)3");
 
     @OriginalMember(owner = "client!kd", name = "Z", descriptor = "I")
     public static int field2047 = 0;
 
     @OriginalMember(owner = "client!kd", name = "U", descriptor = "Li;")
-    public static class88 field2042 = field2040;
+    public static JString field2042 = field2040;
 
     @OriginalMember(owner = "client!kd", name = "eb", descriptor = "[I")
     public static int[] field2052 = new int[2000];
@@ -121,13 +121,13 @@ public class class113 extends class23 {
         class241.field4463 = arg1;
         class216.field4050 = arg2;
         class79.field1435 = arg0 / 128;
-        class88.field1636 = arg2 / 128;
+        JString.field1636 = arg2 / 128;
         class155.field2995 = arg5;
         class156.field3009 = class79.field1435 - class150.field2913;
         if (class156.field3009 < 0) {
             class156.field3009 = 0;
         }
-        class102.field1851 = class88.field1636 - class150.field2913;
+        class102.field1851 = JString.field1636 - class150.field2913;
         if (class102.field1851 < 0) {
             class102.field1851 = 0;
         }
@@ -135,7 +135,7 @@ public class class113 extends class23 {
         if (class6.field84 > class48.field899) {
             class6.field84 = class48.field899;
         }
-        class230.field4316 = class88.field1636 + class150.field2913;
+        class230.field4316 = JString.field1636 + class150.field2913;
         if (class230.field4316 > class66.field1202) {
             class230.field4316 = class66.field1202;
         }
@@ -145,7 +145,7 @@ public class class113 extends class23 {
                 int var21 = (var17 - class150.field2913 << 7) - (class74.field1353 & 127);
                 int var22 = (var20 - class150.field2913 << 7) - (class216.field4050 & 127);
                 int var23 = class79.field1435 - class150.field2913 + var17;
-                int var24 = class88.field1636 - class150.field2913 + var20;
+                int var24 = JString.field1636 - class150.field2913 + var20;
                 if (var23 >= 0 && var24 >= 0 && var23 < class48.field899 && var24 < class66.field1202) {
                     int var25;
                     if (class154.field2981 != null) {

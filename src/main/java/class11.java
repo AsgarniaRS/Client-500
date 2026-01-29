@@ -11,25 +11,25 @@ public class class11 extends class23 {
     private int field167 = 4;
 
     @OriginalMember(owner = "client!aj", name = "S", descriptor = "Li;")
-    private static class88 field153 = class208.method1425(105, "You can(Wt add yourself to your own ignore list)3");
+    private static JString IGNORECANTADDSELF = class208.method1425(105, "You can(Wt add yourself to your own ignore list)3");
 
     @OriginalMember(owner = "client!aj", name = "U", descriptor = "Li;")
-    public static class88 field155 = class208.method1425(105, "lila:");
+    public static JString field155 = class208.method1425(105, "lila:");
 
     @OriginalMember(owner = "client!aj", name = "Q", descriptor = "Li;")
-    public static class88 field151 = field153;
+    public static JString field151 = IGNORECANTADDSELF;
 
     @OriginalMember(owner = "client!aj", name = "Z", descriptor = "Li;")
-    private static class88 field160 = class208.method1425(105, "Connection timed out)3");
+    private static JString field160 = class208.method1425(105, "Connection timed out)3");
 
     @OriginalMember(owner = "client!aj", name = "V", descriptor = "Li;")
-    public static class88 field156 = class208.method1425(105, "::clientdrop");
+    public static JString field156 = class208.method1425(105, "::clientdrop");
 
     @OriginalMember(owner = "client!aj", name = "fb", descriptor = "Z")
     public static boolean field166 = false;
 
     @OriginalMember(owner = "client!aj", name = "bb", descriptor = "Li;")
-    public static class88 field162 = field160;
+    public static JString field162 = field160;
 
     @OriginalMember(owner = "client!aj", name = "R", descriptor = "I")
     public static int field152;
@@ -86,7 +86,7 @@ public class class11 extends class23 {
         if (LocType.field2770) {
             int var5 = arg0 - 5 + 512;
             int var6 = arg2 - -20;
-            class3.field30.method150(class166.method1142(new class88[] { class180.field3571, class170.method1214(class13.field192, -93) }, -3), var5, var6, 16776960, -1);
+            class3.field30.method150(class166.method1142(new JString[] { class180.field3571, class170.method1214(class13.field192, -93) }, -3), var5, var6, 16776960, -1);
             int var10 = var6 + 15;
             int var7 = 16776960;
             Runtime var8 = Runtime.getRuntime();
@@ -97,7 +97,7 @@ public class class11 extends class23 {
             if (var9 > 65536 && !class245.lowMemory) {
                 var7 = 16711680;
             }
-            class3.field30.method150(class166.method1142(new class88[] { class206.field3923, class170.method1214(var9, -127), class110.field2009 }, -3), var5, var10, var7, -1);
+            class3.field30.method150(class166.method1142(new JString[] { class206.field3923, class170.method1214(var9, -127), class110.field2009 }, -3), var5, var10, var7, -1);
             var6 = var10 + 15;
         }
     }
@@ -182,16 +182,16 @@ public class class11 extends class23 {
             if (Linkable.field1221 >= 100) {
                 class223.method1501(class118.field2144, 12, 0, class174.field3455);
             } else {
-                class88 var3 = class200.method1377(arg1, (byte) 123).method614((byte) 83);
+                JString var3 = class200.method1377(arg1, (byte) 123).method614((byte) 83);
                 for (int var4 = 0; ~Linkable.field1221 < ~var4; ++var4) {
                     if (~class95.field1765[var4] == ~arg1) {
-                        class223.method1501(class166.method1142(new class88[] { var3, class155.field3001 }, -3), arg0 ^ -12, 0, class174.field3455);
+                        class223.method1501(class166.method1142(new JString[] { var3, class155.field3001 }, -3), arg0 ^ -12, 0, class174.field3455);
                         return;
                     }
                 }
                 for (int var5 = 0; Isaac.field2731 > var5; ++var5) {
                     if (class115.field2088[var5] == arg1) {
-                        class223.method1501(class166.method1142(new class88[] { SeqType.field1973, var3, class115.field2087 }, -3), arg0 + 20, 0, class174.field3455);
+                        class223.method1501(class166.method1142(new JString[] { SeqType.field1973, var3, class115.field2087 }, -3), arg0 + 20, 0, class174.field3455);
                         return;
                     }
                 }
@@ -222,13 +222,13 @@ public class class11 extends class23 {
     @OriginalMember(owner = "client!aj", name = "c", descriptor = "(B)V")
     public static void method57(byte arg0) {
         if (arg0 != 81) {
-            field153 = null;
+            IGNORECANTADDSELF = null;
         }
         field156 = null;
         field155 = null;
         field162 = null;
         field160 = null;
-        field153 = null;
+        IGNORECANTADDSELF = null;
         field151 = null;
     }
 }
