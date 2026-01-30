@@ -231,7 +231,7 @@ public class class211 extends class23 {
 							class78.field1418[arg1][var3] = new class174();
 							class78.field1418[arg1][var3].parentId = (arg1 << 16) + var3;
 							if (var4[0] == -1) {
-								class78.field1418[arg1][var3].method1252((byte) 55, new Packet(var4));
+								class78.field1418[arg1][var3].decode3(new Packet(var4));
 							} else {
 								class78.field1418[arg1][var3].decode(new Packet(var4));
 							}

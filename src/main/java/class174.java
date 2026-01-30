@@ -683,10 +683,9 @@ public class class174 {
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(BLea;)V")
-	public final void method1252(byte arg0, Packet buf) {
+	public final void decode3(Packet buf) {
 		buf.pos++;
 		this.v3 = true;
-		field3478++;
 		this.type = buf.g1();
 		this.field3441 = buf.g2();
 		this.field3393 = buf.g2b();
