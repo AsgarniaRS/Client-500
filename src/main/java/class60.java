@@ -8,13 +8,13 @@ public class class60 extends class23 {
     private int field1129 = 32768;
 
     @OriginalMember(owner = "client!fd", name = "T", descriptor = "Li;")
-    public static JString field1124 = class208.method1425(105, " loggt sich ein)3");
+    public static JString field1124 = class208.method1425(" loggt sich ein)3");
 
     @OriginalMember(owner = "client!fd", name = "W", descriptor = "[Lhe;")
     public static ModelUnlit[] field1127 = new ModelUnlit[4];
 
     @OriginalMember(owner = "client!fd", name = "cb", descriptor = "Li;")
-    public static JString field1133 = class208.method1425(105, "Suche nach Updates )2 ");
+    public static JString field1133 = class208.method1425("Suche nach Updates )2 ");
 
     @OriginalMember(owner = "client!fd", name = "S", descriptor = "Lca;")
     public static class24 field1123 = new class24(500);

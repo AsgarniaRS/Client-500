@@ -26,7 +26,7 @@ public class Ground extends Linkable {
     public int x;
 
     @OriginalMember(owner = "client!eg", name = "t", descriptor = "Li;")
-    public static JString field938 = class208.method1425(105, "und Ihr Passwort ein)3");
+    public static JString field938 = class208.method1425("und Ihr Passwort ein)3");
 
     @OriginalMember(owner = "client!eg", name = "u", descriptor = "I")
     public static int field939 = 3353893;

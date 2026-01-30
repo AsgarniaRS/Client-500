@@ -17,10 +17,10 @@ public class class113 extends class23 {
     public static boolean[] field2045 = new boolean[100];
 
     @OriginalMember(owner = "client!kd", name = "S", descriptor = "Li;")
-    private static JString field2040 = class208.method1425(105, "Connection lost)3");
+    private static JString field2040 = class208.method1425("Connection lost)3");
 
     @OriginalMember(owner = "client!kd", name = "ab", descriptor = "Li;")
-    public static JString field2048 = class208.method1425(105, "Benutzen Sie bitte eine andere Welt)3");
+    public static JString field2048 = class208.method1425("Benutzen Sie bitte eine andere Welt)3");
 
     @OriginalMember(owner = "client!kd", name = "Z", descriptor = "I")
     public static int field2047 = 0;

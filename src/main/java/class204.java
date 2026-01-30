@@ -29,10 +29,10 @@ public class class204 extends Linkable {
     public int field3898;
 
     @OriginalMember(owner = "client!sh", name = "y", descriptor = "Li;")
-    public static JString field3886 = class208.method1425(105, "Bitte starten Sie eine Mitgliedschaft");
+    public static JString field3886 = class208.method1425("Bitte starten Sie eine Mitgliedschaft");
 
     @OriginalMember(owner = "client!sh", name = "M", descriptor = "Li;")
-    public static JString field3900 = class208.method1425(105, "Diese Betatest)2Welt ist nur f-Ur eingeladene");
+    public static JString field3900 = class208.method1425("Diese Betatest)2Welt ist nur f-Ur eingeladene");
 
     @OriginalMember(owner = "client!sh", name = "t", descriptor = "I")
     public static int field3881;

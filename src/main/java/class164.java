@@ -8,13 +8,13 @@ public class class164 implements class198 {
     public static int field3140 = 0;
 
     @OriginalMember(owner = "client!pa", name = "g", descriptor = "Li;")
-    public static JString field3143 = class208.method1425(105, "<img=1>");
+    public static JString field3143 = class208.method1425("<img=1>");
 
     @OriginalMember(owner = "client!pa", name = "i", descriptor = "Li;")
-    public static JString field3145 = class208.method1425(105, "Lade Benutzeroberfl-=che )2 ");
+    public static JString field3145 = class208.method1425("Lade Benutzeroberfl-=che )2 ");
 
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "Li;")
-    public static JString field3137 = class208.method1425(105, ")2");
+    public static JString field3137 = class208.method1425(")2");
 
     @OriginalMember(owner = "client!pa", name = "b", descriptor = "I")
     public static int field3138;
@@ -94,7 +94,8 @@ public class class164 implements class198 {
                 int var8 = var4.field4123 >> 7;
                 if (var7 >= 0 && var7 < 104 && var8 >= 0 && var8 < 104) {
                     if (var4.field758 == null || class117.field2115 < var4.field755 || class117.field2115 >= var4.field762) {
-                        label94: {
+                        label94:
+                        {
                             if ((var4.field4138 & 0x7F) == 64 && (var4.field4123 & 0x7F) == 64) {
                                 if (class152.field2950[var7][var8] == class210.field3992) {
                                     break label94;
@@ -118,7 +119,7 @@ public class class164 implements class198 {
     @OriginalMember(owner = "client!pa", name = "a", descriptor = "(I)Lrh;")
     public static final class193 method1131(int arg0) {
         field3146++;
-        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[arg0], Linkable.field1218[0], class116.field2106[0], class27.field456);
+        class193 var1 = new class193(class15.field229, class129.field2426, ClientScript.field4530[0], class135.field2512[0], class102.field1853[arg0], Linkable.field1218[0], class116.field2106[0], class27.field456);
         class239.method1580(108);
         return var1;
     }

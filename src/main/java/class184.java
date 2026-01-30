@@ -1,6 +1,7 @@
-import java.awt.Component;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.awt.*;
 
 @OriginalClass("client!qj")
 public class class184 extends class23 {
@@ -18,7 +19,7 @@ public class class184 extends class23 {
     private int field3615 = 20;
 
     @OriginalMember(owner = "client!qj", name = "S", descriptor = "Li;")
-    private static JString field3604 = class208.method1425(105, "New User");
+    private static JString field3604 = class208.method1425("New User");
 
     @OriginalMember(owner = "client!qj", name = "R", descriptor = "Li;")
     public static JString field3603 = field3604;
@@ -102,7 +103,7 @@ public class class184 extends class23 {
                 class203.field3863 = 2;
             } else {
                 if (~class203.field3863 != -1) {
-                    Client.method221(class166.method1142(new JString[] { class242.field4480, class222.field4192 }, -3), true, -22717);
+                    Client.method221(class166.method1142(new JString[]{class242.field4480, class222.field4192}, -3), true, -22717);
                 }
                 class219.method1481(2);
                 class27.method167((byte) 61);
@@ -163,7 +164,7 @@ public class class184 extends class23 {
                 if (class201.field3834 != null) {
                     Isaac.out.method30(198);
                     Isaac.out.p4(1057001181);
-                    ++class247.field4525;
+                    ++ClientScript.field4525;
                 }
                 if (!ClientStream.field2557) {
                     int var10 = (class140.field2597 + -6) / 8;
@@ -173,8 +174,8 @@ public class class184 extends class23 {
                     for (int var14 = var10 + -1; var12 + 1 >= var14; ++var14) {
                         for (int var15 = var11 + -1; var15 <= var13 + 1; ++var15) {
                             if (var10 > var14 || ~var12 > ~var14 || ~var15 > ~var11 || var15 > var13) {
-                                class27.field451.method971(class166.method1142(new JString[] { class212.field4020, class170.method1214(var14, 24), class50.field933, class170.method1214(var15, 114) }, -3), -1);
-                                class27.field451.method971(class166.method1142(new JString[] { class106.field1930, class170.method1214(var14, -100), class50.field933, class170.method1214(var15, 70) }, -3), -1);
+                                class27.field451.method971(class166.method1142(new JString[]{class212.field4020, class170.method1214(var14, 24), class50.field933, class170.method1214(var15, 114)}, -3), -1);
+                                class27.field451.method971(class166.method1142(new JString[]{class106.field1930, class170.method1214(var14, -100), class50.field933, class170.method1214(var15, 70)}, -3), -1);
                             }
                         }
                     }

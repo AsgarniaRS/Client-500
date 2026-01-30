@@ -11,13 +11,13 @@ public class class172 extends class23 {
     public static int field3338 = -1;
 
     @OriginalMember(owner = "client!pi", name = "V", descriptor = "Li;")
-    public static JString field3339 = class208.method1425(105, "::noclip");
+    public static JString field3339 = class208.method1425("::noclip");
 
     @OriginalMember(owner = "client!pi", name = "Y", descriptor = "Li;")
-    public static JString field3342 = class208.method1425(105, "Mitglieder)2Welt");
+    public static JString field3342 = class208.method1425("Mitglieder)2Welt");
 
     @OriginalMember(owner = "client!pi", name = "S", descriptor = "Li;")
-    public static JString field3336 = class208.method1425(105, ":clan:");
+    public static JString field3336 = class208.method1425(":clan:");
 
     @OriginalMember(owner = "client!pi", name = "X", descriptor = "I")
     public static int field3341 = 0;

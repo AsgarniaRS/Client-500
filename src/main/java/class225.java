@@ -8,7 +8,7 @@ public class class225 {
     public static class191[] field4225 = new class191[32768];
 
     @OriginalMember(owner = "client!ug", name = "c", descriptor = "Li;")
-    private static JString FRIENDLISTFULL = class208.method1425(105, "Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3");
+    private static JString FRIENDLISTFULL = class208.method1425("Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3");
 
     @OriginalMember(owner = "client!ug", name = "k", descriptor = "[Z")
     public static boolean[] field4230 = new boolean[100];
@@ -17,7 +17,7 @@ public class class225 {
     public static JString field4221 = null;
 
     @OriginalMember(owner = "client!ug", name = "h", descriptor = "Li;")
-    public static JString field4227 = class208.method1425(105, "leuchten2:");
+    public static JString field4227 = class208.method1425("leuchten2:");
 
     @OriginalMember(owner = "client!ug", name = "n", descriptor = "I")
     public static int field4233 = 0;
@@ -29,7 +29,7 @@ public class class225 {
     public static int[][] field4234 = new int[][] { new int[16], { 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 0, 0, 0, 1, 1, 0, 0, 1, 1, 1, 0, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 0, 1, 0, 0, 0, 1 }, { 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1, 1, 1 }, { 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0, 1, 1, 0, 0 }, { 0, 0, 0, 0, 0, 0, 0, 0, 1, 0, 0, 0, 1, 1, 0, 0 }, { 1, 1, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 0, 0, 1, 1 }, { 1, 1, 1, 1, 1, 1, 0, 0, 1, 0, 0, 0, 1, 0, 0, 0 }, { 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 0, 1, 1, 1 }, { 0, 0, 0, 0, 0, 0, 0, 0, 0, 1, 1, 0, 1, 1, 1, 1 } };
 
     @OriginalMember(owner = "client!ug", name = "e", descriptor = "Li;")
-    public static JString field4224 = class208.method1425(105, "blinken2:");
+    public static JString field4224 = class208.method1425("blinken2:");
 
     @OriginalMember(owner = "client!ug", name = "d", descriptor = "I")
     public static int field4223;

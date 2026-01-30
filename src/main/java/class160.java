@@ -32,13 +32,13 @@ public class class160 {
     public static short field3085 = 320;
 
     @OriginalMember(owner = "client!oh", name = "m", descriptor = "Li;")
-    public static JString field3091 = class208.method1425(105, " )2>");
+    public static JString field3091 = class208.method1425(" )2>");
 
     @OriginalMember(owner = "client!oh", name = "p", descriptor = "[I")
     public static int[] field3094 = new int[200];
 
     @OriginalMember(owner = "client!oh", name = "r", descriptor = "Li;")
-    private static JString field3096 = class208.method1425(105, "glow2:");
+    private static JString field3096 = class208.method1425("glow2:");
 
     @OriginalMember(owner = "client!oh", name = "h", descriptor = "Li;")
     public static JString field3086 = field3096;

@@ -8,16 +8,16 @@ public class class192 extends Linkable {
     public int field3700;
 
     @OriginalMember(owner = "client!rg", name = "u", descriptor = "Li;")
-    private static JString field3691 = class208.method1425(105, "glow3:");
+    private static JString field3691 = class208.method1425("glow3:");
 
     @OriginalMember(owner = "client!rg", name = "x", descriptor = "Li;")
-    public static JString field3694 = class208.method1425(105, "Verbindung abgebrochen)3");
+    public static JString field3694 = class208.method1425("Verbindung abgebrochen)3");
 
     @OriginalMember(owner = "client!rg", name = "A", descriptor = "Li;")
     public static JString field3697 = field3691;
 
     @OriginalMember(owner = "client!rg", name = "E", descriptor = "Li;")
-    private static JString field3701 = class208.method1425(105, "flash2:");
+    private static JString field3701 = class208.method1425("flash2:");
 
     @OriginalMember(owner = "client!rg", name = "v", descriptor = "Li;")
     public static JString field3692 = field3701;
@@ -32,7 +32,7 @@ public class class192 extends Linkable {
     public static int field3704 = 0;
 
     @OriginalMember(owner = "client!rg", name = "B", descriptor = "Li;")
-    private static JString field3698 = class208.method1425(105, "Hidden");
+    private static JString field3698 = class208.method1425("Hidden");
 
     @OriginalMember(owner = "client!rg", name = "y", descriptor = "Li;")
     public static JString HIDDEN = field3698;

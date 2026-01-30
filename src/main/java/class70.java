@@ -15,7 +15,7 @@ public class class70 {
     public static short[] field1265 = new short[] { -4160, -4163, -8256, -8259, 22461 };
 
     @OriginalMember(owner = "client!gd", name = "L", descriptor = "Li;")
-    private static JString field1292 = class208.method1425(105, "");
+    private static JString field1292 = class208.method1425("");
 
     @OriginalMember(owner = "client!gd", name = "N", descriptor = "Li;")
     public static JString field1294 = field1292;

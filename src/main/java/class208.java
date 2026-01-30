@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class208 extends class23 {
 
     @OriginalMember(owner = "client!ta", name = "Q", descriptor = "Li;")
-    private static JString field3944 = method1425(105, "Type");
+    private static JString field3944 = method1425("Type");
 
     @OriginalMember(owner = "client!ta", name = "V", descriptor = "Li;")
-    public static JString field3949 = method1425(105, "oder benutzen Sie eine andere Welt)3");
+    public static JString field3949 = method1425("oder benutzen Sie eine andere Welt)3");
 
     @OriginalMember(owner = "client!ta", name = "X", descriptor = "[I")
     public static int[] field3951 = new int[] { 1, 2, 4, 8 };
@@ -52,17 +52,13 @@ public class class208 extends class23 {
     }
 
     @OriginalMember(owner = "client!ta", name = "a", descriptor = "(ILjava/lang/String;)Li;")
-    public static final JString method1425(int arg0, String arg1) {
-        ++field3947;
+    public static final JString method1425(String arg1) {
         byte[] var2 = arg1.getBytes();
         int var3 = 0;
         int var4 = var2.length;
         JString var5 = new JString();
         var5.field1643 = new byte[var4];
-        if (arg0 != 105) {
-            field3948 = null;
-        }
-        while (~var4 < ~var3) {
+         while (~var4 < ~var3) {
             int var6 = 255 & var2[var3++];
             if (var6 <= 45 && ~var6 <= -41) {
                 if (var4 <= var3) {

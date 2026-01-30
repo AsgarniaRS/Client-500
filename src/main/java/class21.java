@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class21 {
 
     @OriginalMember(owner = "client!bi", name = "d", descriptor = "Li;")
-    public static JString field325 = class208.method1425(105, "overlay)3dat");
+    public static JString field325 = class208.method1425("overlay)3dat");
 
     @OriginalMember(owner = "client!bi", name = "a", descriptor = "I")
     public static int field322;
@@ -68,7 +68,7 @@ public class class21 {
             for (int var6 = 0; var6 < var3; var6++) {
                 var4[var6] = class27.field456[class70.method470(255, var5[var6])];
             }
-            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var4);
+            var1[var2] = new class169(class15.field229, class129.field2426, ClientScript.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var4);
         }
         if (arg0 > -13) {
             method98(25L, (byte) -48);

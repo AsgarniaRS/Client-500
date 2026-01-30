@@ -23,7 +23,7 @@ public class class78 extends Linkable {
     public static Packet field1408 = new Packet(8);
 
     @OriginalMember(owner = "client!ha", name = "w", descriptor = "Li;")
-    public static JString field1411 = class208.method1425(105, "");
+    public static JString field1411 = class208.method1425("");
 
     @OriginalMember(owner = "client!ha", name = "z", descriptor = "Li;")
     public static JString field1414 = null;
@@ -32,7 +32,7 @@ public class class78 extends Linkable {
     public static int[] field1420 = new int[] { 2, 2, 4, 2, 1, 8, 4, 1, 4, 4, 2 };
 
     @OriginalMember(owner = "client!ha", name = "G", descriptor = "Li;")
-    public static JString field1421 = class208.method1425(105, "::gc");
+    public static JString field1421 = class208.method1425("::gc");
 
     @OriginalMember(owner = "client!ha", name = "y", descriptor = "I")
     public static int field1413;

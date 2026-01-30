@@ -24,19 +24,19 @@ public class class32 extends class86 {
     public static BigInteger field515 = new BigInteger("58778699976184461502525193738213253649000149147835990136706041084440742975821");
 
     @OriginalMember(owner = "client!ci", name = "t", descriptor = "Li;")
-    public static JString field520 = class208.method1425(105, "welle:");
+    public static JString field520 = class208.method1425("welle:");
 
     @OriginalMember(owner = "client!ci", name = "x", descriptor = "I")
     public static int field524 = 0;
 
     @OriginalMember(owner = "client!ci", name = "v", descriptor = "Li;")
-    public static JString field522 = class208.method1425(105, "Angreifen");
+    public static JString field522 = class208.method1425("Angreifen");
 
     @OriginalMember(owner = "client!ci", name = "s", descriptor = "I")
     public static int field519 = 0;
 
     @OriginalMember(owner = "client!ci", name = "w", descriptor = "Li;")
-    public static JString field523 = class208.method1425(105, "<)4col> x");
+    public static JString field523 = class208.method1425("<)4col> x");
 
     @OriginalMember(owner = "client!ci", name = "z", descriptor = "I")
     public static int field526 = 0;

@@ -17,7 +17,7 @@ public class class231 extends class136 {
     public static int[] field4330 = new int[32];
 
     @OriginalMember(owner = "client!vb", name = "U", descriptor = "Li;")
-    public static JString field4340 = class208.method1425(105, "<col=80ff00>");
+    public static JString field4340 = class208.method1425("<col=80ff00>");
 
     @OriginalMember(owner = "client!vb", name = "P", descriptor = "I")
     public static int field4335 = 0;
@@ -26,10 +26,10 @@ public class class231 extends class136 {
     public static class92 field4333 = new class92(64);
 
     @OriginalMember(owner = "client!vb", name = "Y", descriptor = "Li;")
-    public static JString field4344 = class208.method1425(105, " zuerst von Ihrer Ignorieren)2Liste(Q");
+    public static JString field4344 = class208.method1425(" zuerst von Ihrer Ignorieren)2Liste(Q");
 
     @OriginalMember(owner = "client!vb", name = "ab", descriptor = "Li;")
-    private static JString field4346 = class208.method1425(105, "Take");
+    private static JString field4346 = class208.method1425("Take");
 
     @OriginalMember(owner = "client!vb", name = "Z", descriptor = "Li;")
     public static JString field4345 = field4346;

@@ -27,28 +27,28 @@ public abstract class class26 extends class136 {
     private int field427;
 
     @OriginalMember(owner = "client!cc", name = "H", descriptor = "Li;")
-    private static JString field410 = class208.method1425(105, "br");
+    private static JString field410 = class208.method1425("br");
 
     @OriginalMember(owner = "client!cc", name = "M", descriptor = "Li;")
-    private static JString field415 = class208.method1425(105, "shad=");
+    private static JString field415 = class208.method1425("shad=");
 
     @OriginalMember(owner = "client!cc", name = "I", descriptor = "Li;")
-    private static JString field411 = class208.method1425(105, "times");
+    private static JString field411 = class208.method1425("times");
 
     @OriginalMember(owner = "client!cc", name = "fb", descriptor = "Li;")
-    private static JString field434 = class208.method1425(105, "gt");
+    private static JString field434 = class208.method1425("gt");
 
     @OriginalMember(owner = "client!cc", name = "Q", descriptor = "Li;")
-    private static JString field419 = class208.method1425(105, "nbsp");
+    private static JString field419 = class208.method1425("nbsp");
 
     @OriginalMember(owner = "client!cc", name = "gb", descriptor = "I")
     private static int field435 = 0;
 
     @OriginalMember(owner = "client!cc", name = "J", descriptor = "Li;")
-    private static JString field412 = class208.method1425(105, "reg");
+    private static JString field412 = class208.method1425("reg");
 
     @OriginalMember(owner = "client!cc", name = "D", descriptor = "Li;")
-    private static JString field406 = class208.method1425(105, "euro");
+    private static JString field406 = class208.method1425("euro");
 
     @OriginalMember(owner = "client!cc", name = "T", descriptor = "I")
     private static int field422 = 256;
@@ -60,37 +60,37 @@ public abstract class class26 extends class136 {
     private static int field414 = 0;
 
     @OriginalMember(owner = "client!cc", name = "K", descriptor = "Li;")
-    private static JString field413 = class208.method1425(105, ")4shad");
+    private static JString field413 = class208.method1425(")4shad");
 
     @OriginalMember(owner = "client!cc", name = "hb", descriptor = "Li;")
-    private static JString field436 = class208.method1425(105, "trans=");
+    private static JString field436 = class208.method1425("trans=");
 
     @OriginalMember(owner = "client!cc", name = "R", descriptor = "Li;")
-    private static JString field420 = class208.method1425(105, "str=");
+    private static JString field420 = class208.method1425("str=");
 
     @OriginalMember(owner = "client!cc", name = "lb", descriptor = "Li;")
-    private static JString field440 = class208.method1425(105, ")4str");
+    private static JString field440 = class208.method1425(")4str");
 
     @OriginalMember(owner = "client!cc", name = "cb", descriptor = "Li;")
-    private static JString field431 = class208.method1425(105, "copy");
+    private static JString field431 = class208.method1425("copy");
 
     @OriginalMember(owner = "client!cc", name = "kb", descriptor = "Li;")
-    private static JString field439 = class208.method1425(105, "col=");
+    private static JString field439 = class208.method1425("col=");
 
     @OriginalMember(owner = "client!cc", name = "S", descriptor = "Li;")
-    private static JString field421 = class208.method1425(105, ")4u");
+    private static JString field421 = class208.method1425(")4u");
 
     @OriginalMember(owner = "client!cc", name = "pb", descriptor = "I")
     private static int field444 = 0;
 
     @OriginalMember(owner = "client!cc", name = "nb", descriptor = "Li;")
-    private static JString field442 = class208.method1425(105, ")4trans");
+    private static JString field442 = class208.method1425(")4trans");
 
     @OriginalMember(owner = "client!cc", name = "eb", descriptor = "I")
     private static int field433 = -1;
 
     @OriginalMember(owner = "client!cc", name = "rb", descriptor = "Li;")
-    private static JString field446 = class208.method1425(105, "str");
+    private static JString field446 = class208.method1425("str");
 
     @OriginalMember(owner = "client!cc", name = "P", descriptor = "I")
     private static int field418 = 0;
@@ -99,28 +99,28 @@ public abstract class class26 extends class136 {
     private static int field425 = -1;
 
     @OriginalMember(owner = "client!cc", name = "mb", descriptor = "Li;")
-    private static JString field441 = class208.method1425(105, "lt");
+    private static JString field441 = class208.method1425("lt");
 
     @OriginalMember(owner = "client!cc", name = "qb", descriptor = "Li;")
-    private static JString field445 = class208.method1425(105, "u");
+    private static JString field445 = class208.method1425("u");
 
     @OriginalMember(owner = "client!cc", name = "V", descriptor = "Li;")
-    private static JString field424 = class208.method1425(105, "u=");
+    private static JString field424 = class208.method1425("u=");
 
     @OriginalMember(owner = "client!cc", name = "G", descriptor = "I")
     private static int field409 = -1;
 
     @OriginalMember(owner = "client!cc", name = "ob", descriptor = "Li;")
-    private static JString field443 = class208.method1425(105, ")4col");
+    private static JString field443 = class208.method1425(")4col");
 
     @OriginalMember(owner = "client!cc", name = "jb", descriptor = "Li;")
-    private static JString field438 = class208.method1425(105, "shad");
+    private static JString field438 = class208.method1425("shad");
 
     @OriginalMember(owner = "client!cc", name = "ib", descriptor = "Li;")
-    private static JString field437 = class208.method1425(105, "shy");
+    private static JString field437 = class208.method1425("shy");
 
     @OriginalMember(owner = "client!cc", name = "sb", descriptor = "Li;")
-    private static JString field447 = class208.method1425(105, "img=");
+    private static JString field447 = class208.method1425("img=");
 
     @OriginalMember(owner = "client!cc", name = "ub", descriptor = "[Li;")
     private static JString[] field449 = new JString[100];

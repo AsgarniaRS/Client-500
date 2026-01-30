@@ -38,7 +38,7 @@ public class class18 extends class145 {
     private SeqType field282;
 
     @OriginalMember(owner = "client!bf", name = "y", descriptor = "Li;")
-    public static JString field289 = class208.method1425(105, "(U3");
+    public static JString field289 = class208.method1425("(U3");
 
     @OriginalMember(owner = "client!bf", name = "o", descriptor = "I")
     public static int field279 = 100;
@@ -47,10 +47,10 @@ public class class18 extends class145 {
     public static byte field294 = 0;
 
     @OriginalMember(owner = "client!bf", name = "q", descriptor = "Li;")
-    public static JString field281 = class208.method1425(105, "3D)2Softwarebibliothek gestartet)3");
+    public static JString field281 = class208.method1425("3D)2Softwarebibliothek gestartet)3");
 
     @OriginalMember(owner = "client!bf", name = "x", descriptor = "Li;")
-    public static JString field288 = class208.method1425(105, "Clientscript error in: ");
+    public static JString field288 = class208.method1425("Clientscript error in: ");
 
     @OriginalMember(owner = "client!bf", name = "P", descriptor = "I")
     public static int field305 = 0;

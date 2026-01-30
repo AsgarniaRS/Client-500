@@ -14,7 +14,7 @@ public class class168 extends Linkable {
     public static class24 field3238 = new class24(50);
 
     @OriginalMember(owner = "client!pe", name = "C", descriptor = "Li;")
-    public static JString field3239 = class208.method1425(105, "document)3cookie=(R");
+    public static JString field3239 = class208.method1425("document)3cookie=(R");
 
     @OriginalMember(owner = "client!pe", name = "D", descriptor = "[Li;")
     public static JString[] field3240 = new JString[200];
@@ -23,16 +23,16 @@ public class class168 extends Linkable {
     public static int[] field3242 = new int[] { 1, -1, -1, 1 };
 
     @OriginalMember(owner = "client!pe", name = "E", descriptor = "Li;")
-    public static JString field3241 = class208.method1425(105, "Startseite auf (WSpielkonto wiederherstellen(W)3");
+    public static JString field3241 = class208.method1425("Startseite auf (WSpielkonto wiederherstellen(W)3");
 
     @OriginalMember(owner = "client!pe", name = "J", descriptor = "Li;")
-    private static JString field3246 = class208.method1425(105, "<col=ff0000>");
+    private static JString field3246 = class208.method1425("<col=ff0000>");
 
     @OriginalMember(owner = "client!pe", name = "G", descriptor = "Li;")
-    public static JString field3243 = class208.method1425(105, "Spieler kann nicht gefunden werden: ");
+    public static JString field3243 = class208.method1425("Spieler kann nicht gefunden werden: ");
 
     @OriginalMember(owner = "client!pe", name = "I", descriptor = "Li;")
-    public static JString field3245 = class208.method1425(105, "Zugewiesener Speicher)3");
+    public static JString field3245 = class208.method1425("Zugewiesener Speicher)3");
 
     @OriginalMember(owner = "client!pe", name = "K", descriptor = "[I")
     public static int[] field3247 = new int[2000];

@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class145 {
 
     @OriginalMember(owner = "client!nc", name = "j", descriptor = "Li;")
-    public static JString field2725 = class208.method1425(105, "Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
+    public static JString field2725 = class208.method1425("Sie k-Onnen sich selbst nicht selbst auf Ihre Ignorieren)2Liste setzen(Q");
 
     @OriginalMember(owner = "client!nc", name = "c", descriptor = "Li;")
-    private static JString LEVEL = class208.method1425(105, "level)2");
+    private static JString LEVEL = class208.method1425("level)2");
 
     @OriginalMember(owner = "client!nc", name = "m", descriptor = "[I")
     public static int[] field2728 = new int[50];

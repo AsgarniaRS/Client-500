@@ -1,16 +1,16 @@
-import java.awt.Canvas;
-import java.awt.Graphics;
+import org.openrs2.deob.annotation.OriginalClass;
+import org.openrs2.deob.annotation.OriginalMember;
+
+import java.awt.*;
 import java.io.IOException;
 import java.net.Socket;
 import java.util.GregorianCalendar;
-import org.openrs2.deob.annotation.OriginalClass;
-import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!client")
 public class Client extends GameShell {
 
     @OriginalMember(owner = "client!client", name = "T", descriptor = "Li;")
-    public static JString field561 = class208.method1425(105, "titlebox");
+    public static JString field561 = class208.method1425("titlebox");
 
     @OriginalMember(owner = "client!client", name = "V", descriptor = "I")
     public static int field563 = 0;
@@ -19,7 +19,7 @@ public class Client extends GameShell {
     public static int field569 = -1;
 
     @OriginalMember(owner = "client!client", name = "cb", descriptor = "Li;")
-    public static JString field570 = class208.method1425(105, "underlay)3dat");
+    public static JString field570 = class208.method1425("underlay)3dat");
 
     @OriginalMember(owner = "client!client", name = "P", descriptor = "I")
     public static int field557;
@@ -70,7 +70,7 @@ public class Client extends GameShell {
     public static boolean field576;
 
     @OriginalMember(owner = "client!client", name = "h", descriptor = "(I)V")
-    private final void method213(int arg0) {
+    private void method213(int arg0) {
         field573++;
         if (class151.field2940 >= 4) {
             this.error((byte) -49, "js5crc");
@@ -331,7 +331,7 @@ public class Client extends GameShell {
     }
 
     @OriginalMember(owner = "client!client", name = "b", descriptor = "(II)V")
-    private final void method217(int arg0, int arg1) {
+    private void method217(int arg0, int arg1) {
         class62.field1151 = null;
         class244.field4495 = 0;
         class190.field3682 = null;
@@ -417,7 +417,7 @@ public class Client extends GameShell {
     }
 
     @OriginalMember(owner = "client!client", name = "d", descriptor = "(B)V")
-    private final void method219(byte arg0) {
+    private void method219(byte arg0) {
         field560++;
         if (class32.field519 == 0) {
             Runtime var2 = Runtime.getRuntime();
@@ -509,12 +509,12 @@ public class Client extends GameShell {
 
             if (var34 == 100) {
                 class6.field83 = 20;
-                class209.field3965 = class247.field4517;
+                class209.field3965 = ClientScript.field4517;
                 class152.method1040(IntHashTable.field1816, class9.field137, 0, class226.field4245);
                 class32.field519 = 45;
             } else {
                 if (var34 != 0) {
-                    class209.field3965 = class166.method1142(new JString[] { class14.field212, class170.method1214(var34, 54), class149.field2897 }, -3);
+                    class209.field3965 = class166.method1142(new JString[]{class14.field212, class170.method1214(var34, 54), class149.field2897}, -3);
                 }
                 class6.field83 = 20;
             }
@@ -553,7 +553,7 @@ public class Client extends GameShell {
                 var36++;
             }
             if (var36 < 6) {
-                class209.field3965 = class166.method1142(new JString[] { class115.field2078, class170.method1214(var36 * 100 / 6, -115), class149.field2897 }, -3);
+                class209.field3965 = class166.method1142(new JString[]{class115.field2078, class170.method1214(var36 * 100 / 6, -115), class149.field2897}, -3);
                 class6.field83 = 35;
             } else {
                 class6.field83 = 35;
@@ -564,7 +564,7 @@ public class Client extends GameShell {
             int var37 = Packet.method330(class9.field137, (byte) -110, class226.field4245);
             int var38 = class104.method719((byte) 120);
             if (var37 < var38) {
-                class209.field3965 = class166.method1142(new JString[] { Packet.field817, class170.method1214(var37 * 100 / var38, 75), class149.field2897 }, -3);
+                class209.field3965 = class166.method1142(new JString[]{Packet.field817, class170.method1214(var37 * 100 / var38, 75), class149.field2897}, -3);
                 class6.field83 = 40;
             } else {
                 class6.field83 = 40;
@@ -603,7 +603,7 @@ public class Client extends GameShell {
             class203.field3872.fetchAll();
             int var49 = var48 + class203.field3872.method952(false);
             if (var49 < 1000) {
-                class209.field3965 = class166.method1142(new JString[] { class49.field918, class170.method1214(var49 / 10, -96), class149.field2897 }, -3);
+                class209.field3965 = class166.method1142(new JString[]{class49.field918, class170.method1214(var49 / 10, -96), class149.field2897}, -3);
                 class6.field83 = 50;
             } else {
                 class98.method688((byte) 104, class85.field1546);
@@ -712,7 +712,7 @@ public class Client extends GameShell {
             }
             var50++;
             if (var50 < 15) {
-                class209.field3965 = class166.method1142(new JString[] { class151.field2941, class170.method1214(var50 * 100 / 15, 56), class149.field2897 }, -3);
+                class209.field3965 = class166.method1142(new JString[]{class151.field2941, class170.method1214(var50 * 100 / 15, 56), class149.field2897}, -3);
                 class6.field83 = 60;
             } else {
                 int var54 = (int) (Math.random() * 21.0D) - 10;
@@ -728,7 +728,7 @@ public class Client extends GameShell {
                 class240.field4462[0].method1338(var54 + var57, var56 + var57, var55 + var57);
                 class6.field83 = 60;
                 class32.field519 = 90;
-                class247.field4527 = class31.field505;
+                ClientScript.field4527 = class31.field505;
                 class209.field3965 = class143.field2635;
             }
         } else if (class32.field519 != 90) {
@@ -747,22 +747,22 @@ public class Client extends GameShell {
                     class209.field3965 = class85.field1547;
                     class6.field83 = 80;
                 } else {
-                    class209.field3965 = class166.method1142(new JString[] { class211.field4009, class200.field3816 }, -3);
+                    class209.field3965 = class166.method1142(new JString[]{class211.field4009, class200.field3816}, -3);
                     class6.field83 = 80;
                 }
             } else if (class32.field519 == 130) {
                 if (!CollisionMap.field1671.fetchAll()) {
-                    class209.field3965 = class166.method1142(new JString[] { class71.field1322, class170.method1214(CollisionMap.field1671.method952(false) * 4 / 5, -119), class149.field2897 }, -3);
+                    class209.field3965 = class166.method1142(new JString[]{class71.field1322, class170.method1214(CollisionMap.field1671.method952(false) * 4 / 5, -119), class149.field2897}, -3);
                     class6.field83 = 85;
                 } else if (!class18.field300.fetchAll()) {
-                    class209.field3965 = class166.method1142(new JString[] { class71.field1322, class170.method1214(class18.field300.method952(false) / 6 + 80, -80), class149.field2897 }, -3);
+                    class209.field3965 = class166.method1142(new JString[]{class71.field1322, class170.method1214(class18.field300.method952(false) / 6 + 80, -80), class149.field2897}, -3);
                     class6.field83 = 85;
                 } else if (class98.field1795.fetchAll()) {
                     class6.field83 = 100;
                     class32.field519 = 140;
                     class209.field3965 = class24.field392;
                 } else {
-                    class209.field3965 = class166.method1142(new JString[] { class71.field1322, class170.method1214(class98.field1795.method952(false) / 20 + 96, -98), class149.field2897 }, -3);
+                    class209.field3965 = class166.method1142(new JString[]{class71.field1322, class170.method1214(class98.field1795.method952(false) / 20 + 96, -98), class149.field2897}, -3);
                     class6.field83 = 85;
                 }
             } else if (class32.field519 == 140) {
@@ -782,7 +782,7 @@ public class Client extends GameShell {
             class32.field519 = 110;
             class6.field83 = 70;
         } else {
-            class209.field3965 = class166.method1142(new JString[] { class230.field4297, class170.method1214(class155.field2996.method952(false), -78), class149.field2897 }, -3);
+            class209.field3965 = class166.method1142(new JString[]{class230.field4297, class170.method1214(class155.field2996.method952(false), -78), class149.field2897}, -3);
             class6.field83 = 70;
         }
     }
@@ -809,20 +809,20 @@ public class Client extends GameShell {
                     Isaac.field2753 = class196.field3756;
                 }
                 int var5 = (Isaac.field2753 - class196.field3756) * 50 / Isaac.field2753;
-                method221(class166.method1142(new JString[] { class242.field4480, class31.field509, class170.method1214(var5, 49), class14.field216 }, -3), false, -22717);
+                method221(class166.method1142(new JString[]{class242.field4480, class31.field509, class170.method1214(var5, 49), class14.field216}, -3), false, -22717);
             } else if (class203.field3863 == 2) {
                 if (class113.field2047 > class143.field2654) {
                     class143.field2654 = class113.field2047;
                 }
                 int var4 = (class143.field2654 - class113.field2047) * 50 / class143.field2654 + 50;
-                method221(class166.method1142(new JString[] { class242.field4480, class31.field509, class170.method1214(var4, 49), class14.field216 }, -3), false, arg0 - 38446);
+                method221(class166.method1142(new JString[]{class242.field4480, class31.field509, class170.method1214(var4, 49), class14.field216}, -3), false, arg0 - 38446);
             } else {
                 method221(class242.field4480, false, -22717);
             }
         } else if (class229.gameState == 30) {
             class245.method1607(arg0 ^ 0x3D71);
         } else if (class229.gameState == 40) {
-            method221(class166.method1142(new JString[] { class113.field2042, class142.field2620, class101.field1840 }, -3), false, arg0 - 38446);
+            method221(class166.method1142(new JString[]{class113.field2042, class142.field2620, class101.field1840}, -3), false, arg0 - 38446);
         }
         if (arg0 != 15729) {
             field563 = -15;
@@ -927,7 +927,7 @@ public class Client extends GameShell {
     }
 
     @OriginalMember(owner = "client!client", name = "a", descriptor = "(Z)V")
-    private final void method223(boolean arg0) {
+    private void method223(boolean arg0) {
         if (arg0) {
             field567 = null;
         }
@@ -1096,7 +1096,7 @@ public class Client extends GameShell {
         class221.method1493(-124);
         class75.method504();
         class143.method934(true);
-        class247.method1611((byte) -36);
+        ClientScript.method1611((byte) -36);
         class98.method685(101);
         class39.method257(arg0 + 17378);
         class240.method1589((byte) 32);

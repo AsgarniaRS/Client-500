@@ -13,10 +13,10 @@ public class class175 {
     public static long field3521 = 0L;
 
     @OriginalMember(owner = "client!qa", name = "e", descriptor = "Li;")
-    private static JString field3525 = class208.method1425(105, "Welcome to RuneScape");
+    private static JString field3525 = class208.method1425("Welcome to RuneScape");
 
     @OriginalMember(owner = "client!qa", name = "i", descriptor = "Li;")
-    private static JString field3529 = class208.method1425(105, "Try again in 60 secs)3)3)3");
+    private static JString field3529 = class208.method1425("Try again in 60 secs)3)3)3");
 
     @OriginalMember(owner = "client!qa", name = "g", descriptor = "Li;")
     public static JString field3527 = field3529;
@@ -31,7 +31,7 @@ public class class175 {
     public static int field3530 = 3;
 
     @OriginalMember(owner = "client!qa", name = "h", descriptor = "Li;")
-    public static JString field3528 = class208.method1425(105, " )2> <col=00ffff>");
+    public static JString field3528 = class208.method1425(" )2> <col=00ffff>");
 
     @OriginalMember(owner = "client!qa", name = "c", descriptor = "I")
     public static int field3523;

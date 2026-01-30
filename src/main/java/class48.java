@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class48 extends class207 {
 
     @OriginalMember(owner = "client!ec", name = "D", descriptor = "Li;")
-    private static JString field892 = class208.method1425(105, "We suspect someone knows your password)3");
+    private static JString field892 = class208.method1425("We suspect someone knows your password)3");
 
     @OriginalMember(owner = "client!ec", name = "O", descriptor = "[J")
     public static long[] field903 = new long[32];
 
     @OriginalMember(owner = "client!ec", name = "I", descriptor = "Li;")
-    private static JString field897 = class208.method1425(105, "No reply from loginserver)3");
+    private static JString field897 = class208.method1425("No reply from loginserver)3");
 
     @OriginalMember(owner = "client!ec", name = "J", descriptor = "I")
     public static int field898 = 0;
 
     @OriginalMember(owner = "client!ec", name = "L", descriptor = "Li;")
-    private static JString field900 = class208.method1425(105, "OFF");
+    private static JString field900 = class208.method1425("OFF");
 
     @OriginalMember(owner = "client!ec", name = "R", descriptor = "Li;")
     public static JString field906 = field897;
@@ -26,7 +26,7 @@ public class class48 extends class207 {
     public static int field894 = 0;
 
     @OriginalMember(owner = "client!ec", name = "P", descriptor = "[I")
-    public static int[] field904 = new int[] { 1, 1, 0, 0, 0, 8, 0, 0, 8 };
+    public static int[] field904 = new int[]{1, 1, 0, 0, 0, 8, 0, 0, 8};
 
     @OriginalMember(owner = "client!ec", name = "N", descriptor = "Li;")
     public static JString field902 = field892;
@@ -35,7 +35,7 @@ public class class48 extends class207 {
     public static JString field901 = field900;
 
     @OriginalMember(owner = "client!ec", name = "V", descriptor = "Li;")
-    private static JString field910 = class208.method1425(105, "Malformed login packet)3");
+    private static JString field910 = class208.method1425("Malformed login packet)3");
 
     @OriginalMember(owner = "client!ec", name = "U", descriptor = "Z")
     public static boolean field909 = false;
@@ -90,7 +90,7 @@ public class class48 extends class207 {
             class203.field3860 = field898;
             if (class32.field524 < 0) {
                 for (int var2 = 0; var2 < 112; var2++) {
-                    class247.field4513[var2] = false;
+                    ClientScript.field4513[var2] = false;
                 }
                 class32.field524 = LocType.field2803;
             } else {
@@ -98,9 +98,9 @@ public class class48 extends class207 {
                     int var3 = class114.field2061[LocType.field2803];
                     LocType.field2803 = LocType.field2803 + 1 & 0x7F;
                     if (var3 >= 0) {
-                        class247.field4513[var3] = true;
+                        ClientScript.field4513[var3] = true;
                     } else {
-                        class247.field4513[~var3] = false;
+                        ClientScript.field4513[~var3] = false;
                     }
                 }
             }

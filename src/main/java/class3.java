@@ -20,19 +20,19 @@ public class class3 {
     private long field37;
 
     @OriginalMember(owner = "client!ab", name = "b", descriptor = "Li;")
-    public static JString field27 = class208.method1425(105, "Die Adresse dieses Computers wurde gesperrt)1");
+    public static JString field27 = class208.method1425("Die Adresse dieses Computers wurde gesperrt)1");
 
     @OriginalMember(owner = "client!ab", name = "i", descriptor = "Li;")
-    public static JString field34 = class208.method1425(105, "null");
+    public static JString field34 = class208.method1425("null");
 
     @OriginalMember(owner = "client!ab", name = "a", descriptor = "I")
     public static int field26 = 5063219;
 
     @OriginalMember(owner = "client!ab", name = "o", descriptor = "Li;")
-    public static JString field40 = class208.method1425(105, "(Z");
+    public static JString field40 = class208.method1425("(Z");
 
     @OriginalMember(owner = "client!ab", name = "t", descriptor = "Li;")
-    private static JString field45 = class208.method1425(105, "Please enter your username)3");
+    private static JString field45 = class208.method1425("Please enter your username)3");
 
     @OriginalMember(owner = "client!ab", name = "m", descriptor = "Li;")
     public static JString field38 = field45;

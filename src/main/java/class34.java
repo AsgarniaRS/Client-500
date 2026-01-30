@@ -8,19 +8,19 @@ public class class34 extends class23 {
     public static short field580 = 256;
 
     @OriginalMember(owner = "client!d", name = "U", descriptor = "Li;")
-    public static JString field581 = class208.method1425(105, " )2> <col=ff9040>");
+    public static JString field581 = class208.method1425(" )2> <col=ff9040>");
 
     @OriginalMember(owner = "client!d", name = "W", descriptor = "Li;")
-    public static JString field583 = class208.method1425(105, "::fpsoff");
+    public static JString field583 = class208.method1425("::fpsoff");
 
     @OriginalMember(owner = "client!d", name = "V", descriptor = "I")
     public static int field582 = 0;
 
     @OriginalMember(owner = "client!d", name = "eb", descriptor = "Li;")
-    public static JString field591 = class208.method1425(105, "(R");
+    public static JString field591 = class208.method1425("(R");
 
     @OriginalMember(owner = "client!d", name = "gb", descriptor = "Li;")
-    private static JString field593 = class208.method1425(105, "Discard");
+    private static JString field593 = class208.method1425("Discard");
 
     @OriginalMember(owner = "client!d", name = "fb", descriptor = "Li;")
     public static JString field592 = field593;
@@ -174,7 +174,7 @@ public class class34 extends class23 {
             for (int var6 = 0; ~var6 > ~var3; ++var6) {
                 var5[var6] = class27.field456[class70.method470(var4[var6], 255)];
             }
-            var1[var2] = new class169(class15.field229, class129.field2426, class247.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var5);
+            var1[var2] = new class169(class15.field229, class129.field2426, ClientScript.field4530[var2], class135.field2512[var2], class102.field1853[var2], Linkable.field1218[var2], var5);
         }
         class239.method1580(104);
         return var1;

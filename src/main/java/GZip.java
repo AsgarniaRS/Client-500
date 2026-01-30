@@ -1,15 +1,16 @@
-import java.util.zip.Inflater;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.util.zip.Inflater;
 
 @OriginalClass("client!fc")
 public class GZip {
 
     @OriginalMember(owner = "client!fc", name = "a", descriptor = "Li;")
-    public static JString field1106 = class208.method1425(105, "compass");
+    public static JString field1106 = class208.method1425("compass");
 
     @OriginalMember(owner = "client!fc", name = "c", descriptor = "Li;")
-    private static JString field1108 = class208.method1425(105, "Connecting to server)3)3)3");
+    private static JString field1108 = class208.method1425("Connecting to server)3)3)3");
 
     @OriginalMember(owner = "client!fc", name = "o", descriptor = "[Z")
     public static boolean[] field1120 = new boolean[200];
@@ -18,13 +19,13 @@ public class GZip {
     public static JString field1117 = field1108;
 
     @OriginalMember(owner = "client!fc", name = "n", descriptor = "Li;")
-    public static JString field1119 = class208.method1425(105, "Eingabeprozedur geladen)3");
+    public static JString field1119 = class208.method1425("Eingabeprozedur geladen)3");
 
     @OriginalMember(owner = "client!fc", name = "m", descriptor = "Li;")
-    public static JString field1118 = class208.method1425(105, "zap");
+    public static JString field1118 = class208.method1425("zap");
 
     @OriginalMember(owner = "client!fc", name = "h", descriptor = "Li;")
-    public static JString field1113 = class208.method1425(105, "");
+    public static JString field1113 = class208.method1425("");
 
     @OriginalMember(owner = "client!fc", name = "e", descriptor = "D")
     public static double field1110;
@@ -91,7 +92,7 @@ public class GZip {
         field1113 = null;
         field1119 = null;
         if (arg0 > -111) {
-            method427(38, 61);
+            ClientScript.get(38, 61);
         }
         field1108 = null;
         field1114 = null;
@@ -108,70 +109,6 @@ public class GZip {
                 field1113 = null;
             }
         }
-    }
-
-    @OriginalMember(owner = "client!fc", name = "b", descriptor = "(II)Lwh;")
-    public static final class247 method427(int arg0, int arg1) {
-        field1107++;
-        class247 var2 = (class247) class33.cache.method666((long) arg0, arg1);
-        if (var2 != null) {
-            return var2;
-        }
-
-        byte[] var3 = class18.field300.method941((byte) 56, 0, arg0);
-        if (var3 == null) {
-            return null;
-        }
-
-        class247 script = new class247();
-
-        Packet buf = new Packet(var3);
-        buf.pos = buf.data.length - 2;
-
-        int var6 = buf.g2();
-        int var7 = buf.data.length - var6 - 2 - 12;
-        buf.pos = var7;
-        int var8 = buf.g4();
-        script.field4528 = buf.g2();
-        script.field4519 = buf.g2();
-        script.field4522 = buf.g2();
-        script.field4520 = buf.g2();
-        int var9 = buf.g1();
-        if (var9 > 0) {
-            script.field4516 = new class154[var9];
-            for (int var10 = 0; var10 < var9; var10++) {
-                int var11 = buf.g2();
-                class154 var12 = new class154(class184.method1298(true, var11));
-                script.field4516[var10] = var12;
-                while (var11-- > 0) {
-                    int var13 = buf.g4();
-                    int var14 = buf.g4();
-                    var12.put((long) var13, new class192(var14), ~arg1);
-                }
-            }
-        }
-        int var15 = 0;
-
-        buf.pos = 0;
-        script.name = buf.fastgstr();
-
-        script.stringOperands = new JString[var8];
-        script.instructions = new int[var8];
-        script.intOperands = new int[var8];
-
-        while (var7 > buf.pos) {
-            int op = buf.g2();
-            if (op == 3) {
-                script.stringOperands[var15] = buf.gjstr();
-            } else if (op >= 100 || op == 21 || op == 38 || op == 39) {
-                script.intOperands[var15] = buf.g1();
-            } else {
-                script.intOperands[var15] = buf.g4();
-            }
-            script.instructions[var15++] = op;
-        }
-        class33.cache.put((long) arg0, script, false);
-        return script;
     }
 
     @OriginalMember(owner = "client!fc", name = "<init>", descriptor = "(III)V")

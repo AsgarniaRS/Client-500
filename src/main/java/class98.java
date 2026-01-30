@@ -11,7 +11,7 @@ public class class98 {
     public static int field1797 = 0;
 
     @OriginalMember(owner = "client!j", name = "e", descriptor = "Li;")
-    public static JString field1798 = class208.method1425(105, "headicons_pk");
+    public static JString field1798 = class208.method1425("headicons_pk");
 
     @OriginalMember(owner = "client!j", name = "c", descriptor = "I")
     public static int field1796;

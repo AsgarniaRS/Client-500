@@ -134,10 +134,10 @@ public abstract class class218 extends class145 {
     public static int field4088 = (int) (Math.random() * 17.0D) - 8;
 
     @OriginalMember(owner = "client!u", name = "v", descriptor = "Li;")
-    public static JString field4081 = class208.method1425(105, "gr-Un:");
+    public static JString field4081 = class208.method1425("gr-Un:");
 
     @OriginalMember(owner = "client!u", name = "tb", descriptor = "Li;")
-    private static JString field4131 = class208.method1425(105, "Login");
+    private static JString field4131 = class208.method1425("Login");
 
     @OriginalMember(owner = "client!u", name = "yb", descriptor = "Li;")
     public static JString field4136 = null;

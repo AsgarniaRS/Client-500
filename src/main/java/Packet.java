@@ -786,7 +786,7 @@ public class Packet extends Linkable {
     public static volatile int field807 = 0;
 
     @OriginalMember(owner = "client!ea", name = "C", descriptor = "Li;")
-    private static JString field810 = class208.method1425(105, "Loading title screen )2 ");
+    private static JString field810 = class208.method1425("Loading title screen )2 ");
 
     @OriginalMember(owner = "client!ea", name = "Z", descriptor = "I")
     public static volatile int field833 = 0;

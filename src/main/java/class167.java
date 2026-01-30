@@ -17,7 +17,7 @@ public class class167 extends class23 {
     public static long[] field3205 = new long[100];
 
     @OriginalMember(owner = "client!pd", name = "eb", descriptor = "Li;")
-    public static JString field3218 = class208.method1425(105, " steht bereits auf Ihrer Freunde)2Liste(Q");
+    public static JString field3218 = class208.method1425(" steht bereits auf Ihrer Freunde)2Liste(Q");
 
     @OriginalMember(owner = "client!pd", name = "ib", descriptor = "Lwi;")
     public static class248 field3222 = new class248();

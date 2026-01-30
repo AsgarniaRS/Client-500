@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class112 {
 
     @OriginalMember(owner = "client!kc", name = "c", descriptor = "Li;")
-    private static JString field2036 = class208.method1425(105, "Fertigkeit)2");
+    private static JString field2036 = class208.method1425("Fertigkeit)2");
 
     @OriginalMember(owner = "client!kc", name = "a", descriptor = "I")
     public static int field2034;
@@ -28,7 +28,7 @@ public class class112 {
         class70.field1287 = class168.field3241;
         class39.field683 = class77.field1403;
         class70.field1284 = class1.field5;
-        class247.field4517 = class131.field2454;
+        ClientScript.field4517 = class131.field2454;
         class11.field162 = class105.field1918;
         class189.field3667 = class86.field1554;
         class115.field2087 = class95.field1771;
@@ -91,7 +91,7 @@ public class class112 {
         class10.field144 = class85.field1537;
         class65.field1174 = class205.field3917;
         class132.field2472 = class242.field4483;
-        class247.field4526 = class223.field4195;
+        ClientScript.field4526 = class223.field4195;
         class230.field4319 = class1.field5;
         class113.field2042 = class192.field3694;
         class132.field2471 = class74.field1341;

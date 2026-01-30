@@ -48,7 +48,7 @@ public class class121 {
         class219.method1481(2);
         field2216++;
         class72.method480(arg2, arg4, arg2 + arg0.field3382, arg0.field3424 + arg4);
-        if (class247.field4514 == 2 || class247.field4514 == 5) {
+        if (ClientScript.field4514 == 2 || ClientScript.field4514 == 5) {
             class72.method491(arg2, arg4, 0, arg0.field3404, arg0.field3423);
         } else {
             int var5 = Ground.field943 + class207.field3932 & 0x7FF;
@@ -65,7 +65,7 @@ public class class121 {
                         continue;
                     }
                 }
-                class57.method418(arg4, arg2, arg3 + 13423, var42, arg0, class247.field4527[var43.mapfunction], var41);
+                class57.method418(arg4, arg2, arg3 + 13423, var42, arg0, ClientScript.field4527[var43.mapfunction], var41);
             }
             for (int var9 = 0; var9 < 104; var9++) {
                 for (int var37 = 0; var37 < 104; var37++) {

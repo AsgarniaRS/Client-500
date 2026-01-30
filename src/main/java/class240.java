@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class240 {
 
     @OriginalMember(owner = "client!wa", name = "a", descriptor = "Li;")
-    public static JString field4455 = class208.method1425(105, " steht bereits auf Ihrer Ignorieren)2Liste(Q");
+    public static JString field4455 = class208.method1425(" steht bereits auf Ihrer Ignorieren)2Liste(Q");
 
     @OriginalMember(owner = "client!wa", name = "b", descriptor = "[I")
     public static int[] field4456 = new int[256];
 
     @OriginalMember(owner = "client!wa", name = "g", descriptor = "Li;")
-    public static JString field4461 = class208.method1425(105, "mod_icons");
+    public static JString field4461 = class208.method1425("mod_icons");
 
     @OriginalMember(owner = "client!wa", name = "f", descriptor = "I")
     public static int field4460 = 0;

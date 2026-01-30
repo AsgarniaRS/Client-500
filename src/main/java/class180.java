@@ -8,13 +8,13 @@ public class class180 extends class23 {
     private int field3580 = 585;
 
     @OriginalMember(owner = "client!qf", name = "Q", descriptor = "Li;")
-    public static JString field3571 = class208.method1425(105, "Fps:");
+    public static JString field3571 = class208.method1425("Fps:");
 
     @OriginalMember(owner = "client!qf", name = "T", descriptor = "Li;")
-    public static JString field3574 = class208.method1425(105, "null");
+    public static JString field3574 = class208.method1425("null");
 
     @OriginalMember(owner = "client!qf", name = "Y", descriptor = "Li;")
-    public static JString field3579 = class208.method1425(105, "unzap");
+    public static JString field3579 = class208.method1425("unzap");
 
     @OriginalMember(owner = "client!qf", name = "R", descriptor = "I")
     public static int field3572;
@@ -117,8 +117,8 @@ public class class180 extends class23 {
     public static final void method1285(boolean arg0) {
         ++field3577;
         int var1 = class33.field536 + class240.field4458.field4123;
-        if (!class247.field4513[96]) {
-            if (class247.field4513[97]) {
+        if (!ClientScript.field4513[96]) {
+            if (ClientScript.field4513[97]) {
                 class85.field1531 += (-class85.field1531 + 24) / 2;
             } else {
                 class85.field1531 /= 2;
@@ -126,8 +126,8 @@ public class class180 extends class23 {
         } else {
             class85.field1531 += (-class85.field1531 + -24) / 2;
         }
-        if (!class247.field4513[98]) {
-            if (!class247.field4513[99]) {
+        if (!ClientScript.field4513[98]) {
+            if (!ClientScript.field4513[99]) {
                 class55.field1022 /= 2;
             } else {
                 class55.field1022 += (-class55.field1022 + -12) / 2;

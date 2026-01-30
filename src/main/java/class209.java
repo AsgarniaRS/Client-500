@@ -8,7 +8,7 @@ public class class209 {
     public static boolean field3961 = false;
 
     @OriginalMember(owner = "client!tb", name = "q", descriptor = "Li;")
-    public static JString field3974 = class208.method1425(105, "");
+    public static JString field3974 = class208.method1425("");
 
     @OriginalMember(owner = "client!tb", name = "l", descriptor = "Li;")
     public static JString field3969 = field3974;
@@ -20,7 +20,7 @@ public class class209 {
     public static JString field3965 = field3974;
 
     @OriginalMember(owner = "client!tb", name = "u", descriptor = "Li;")
-    public static JString field3978 = class208.method1425(105, "Lade Titelbild )2 ");
+    public static JString field3978 = class208.method1425("Lade Titelbild )2 ");
 
     @OriginalMember(owner = "client!tb", name = "x", descriptor = "Li;")
     public static JString field3981 = field3974;
@@ -29,7 +29,7 @@ public class class209 {
     public static JString field3982 = field3974;
 
     @OriginalMember(owner = "client!tb", name = "A", descriptor = "Li;")
-    public static JString field3984 = class208.method1425(105, "(Y<)4col>");
+    public static JString field3984 = class208.method1425("(Y<)4col>");
 
     @OriginalMember(owner = "client!tb", name = "z", descriptor = "Li;")
     public static JString field3983 = field3974;

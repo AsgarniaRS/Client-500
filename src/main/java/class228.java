@@ -20,13 +20,13 @@ public abstract class class228 {
     public static int[][] field4269 = new int[104][104];
 
     @OriginalMember(owner = "client!uj", name = "o", descriptor = "Li;")
-    public static JString field4283 = class208.method1425(105, "");
+    public static JString field4283 = class208.method1425("");
 
     @OriginalMember(owner = "client!uj", name = "i", descriptor = "Li;")
-    public static JString field4277 = class208.method1425(105, ":duelfriend:");
+    public static JString field4277 = class208.method1425(":duelfriend:");
 
     @OriginalMember(owner = "client!uj", name = "l", descriptor = "Li;")
-    public static JString field4280 = class208.method1425(105, "sl_back");
+    public static JString field4280 = class208.method1425("sl_back");
 
     @OriginalMember(owner = "client!uj", name = "b", descriptor = "I")
     public static int field4270;

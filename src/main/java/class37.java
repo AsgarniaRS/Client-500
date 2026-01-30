@@ -5,16 +5,16 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class37 {
 
     @OriginalMember(owner = "client!dc", name = "c", descriptor = "Li;")
-    private static JString field664 = class208.method1425(105, "Please enter your password)3");
+    private static JString field664 = class208.method1425("Please enter your password)3");
 
     @OriginalMember(owner = "client!dc", name = "d", descriptor = "Li;")
-    public static JString field665 = class208.method1425(105, ":clanreq:");
+    public static JString field665 = class208.method1425(":clanreq:");
 
     @OriginalMember(owner = "client!dc", name = "a", descriptor = "Li;")
     public static JString field662 = field664;
 
     @OriginalMember(owner = "client!dc", name = "g", descriptor = "Li;")
-    private static JString field668 = class208.method1425(105, "flash1:");
+    private static JString field668 = class208.method1425("flash1:");
 
     @OriginalMember(owner = "client!dc", name = "h", descriptor = "Li;")
     public static JString field669 = field668;

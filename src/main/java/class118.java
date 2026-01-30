@@ -14,7 +14,7 @@ public class class118 {
     public static boolean field2147 = false;
 
     @OriginalMember(owner = "client!ki", name = "j", descriptor = "Li;")
-    private static JString IGNORELISTFULL = class208.method1425(105, "Your ignore list is full)3 Max of 100 users)3");
+    private static JString IGNORELISTFULL = class208.method1425("Your ignore list is full)3 Max of 100 users)3");
 
     @OriginalMember(owner = "client!ki", name = "m", descriptor = "Z")
     public static volatile boolean field2145 = true;

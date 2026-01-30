@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class136 extends Linkable {
 
     @OriginalMember(owner = "client!me", name = "w", descriptor = "Li;")
-    public static JString field2528 = class208.method1425(105, "<col=c0ff00>");
+    public static JString field2528 = class208.method1425("<col=c0ff00>");
 
     @OriginalMember(owner = "client!me", name = "z", descriptor = "Li;")
-    public static JString field2531 = class208.method1425(105, "<col=ff9040>");
+    public static JString field2531 = class208.method1425("<col=ff9040>");
 
     @OriginalMember(owner = "client!me", name = "B", descriptor = "I")
     public static int field2533 = 2;

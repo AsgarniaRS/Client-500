@@ -198,6 +198,6 @@ public class class92 {
         }
         field1732 = new int[] { 1, 0, 0, 0, 1, 0, 2, 1, 1, 1, 0 };
         field1733 = new CRC32();
-        field1734 = class208.method1425(105, "title_mute");
+        field1734 = class208.method1425("title_mute");
     }
 }

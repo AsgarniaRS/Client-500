@@ -15,25 +15,25 @@ public class class154 {
     private Linkable[] field2973;
 
     @OriginalMember(owner = "client!ob", name = "k", descriptor = "Li;")
-    private static JString field2976 = class208.method1425(105, "Loaded fonts");
+    private static JString field2976 = class208.method1425("Loaded fonts");
 
     @OriginalMember(owner = "client!ob", name = "j", descriptor = "Li;")
-    public static JString field2975 = class208.method1425(105, "huffman");
+    public static JString field2975 = class208.method1425("huffman");
 
     @OriginalMember(owner = "client!ob", name = "f", descriptor = "I")
     public static int field2971 = 0;
 
     @OriginalMember(owner = "client!ob", name = "m", descriptor = "Li;")
-    private static JString field2978 = class208.method1425(105, "Please wait 1 minute and try again)3");
+    private static JString field2978 = class208.method1425("Please wait 1 minute and try again)3");
 
     @OriginalMember(owner = "client!ob", name = "g", descriptor = "Li;")
-    public static JString field2972 = class208.method1425(105, "Lade)3)3)3");
+    public static JString field2972 = class208.method1425("Lade)3)3)3");
 
     @OriginalMember(owner = "client!ob", name = "y", descriptor = "Li;")
     public static JString field2990 = field2978;
 
     @OriginalMember(owner = "client!ob", name = "a", descriptor = "Li;")
-    public static JString field2966 = class208.method1425(105, "Benutzername: ");
+    public static JString field2966 = class208.method1425("Benutzername: ");
 
     @OriginalMember(owner = "client!ob", name = "w", descriptor = "Li;")
     public static JString field2988 = field2976;

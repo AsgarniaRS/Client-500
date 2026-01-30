@@ -8,13 +8,13 @@ public class class129 extends class136 {
     public class197[] field2423;
 
     @OriginalMember(owner = "client!li", name = "H", descriptor = "Li;")
-    public static JString field2419 = class208.method1425(105, "Sprites geladen)3");
+    public static JString field2419 = class208.method1425("Sprites geladen)3");
 
     @OriginalMember(owner = "client!li", name = "J", descriptor = "Li;")
-    public static JString field2421 = class208.method1425(105, "Spieler");
+    public static JString field2421 = class208.method1425("Spieler");
 
     @OriginalMember(owner = "client!li", name = "S", descriptor = "Li;")
-    private static JString field2429 = class208.method1425(105, "Select a world");
+    private static JString field2429 = class208.method1425("Select a world");
 
     @OriginalMember(owner = "client!li", name = "Q", descriptor = "Li;")
     public static JString field2427 = field2429;

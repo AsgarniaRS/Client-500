@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class102 {
 
     @OriginalMember(owner = "client!jd", name = "a", descriptor = "Li;")
-    public static JString field1846 = class208.method1425(105, "");
+    public static JString field1846 = class208.method1425("");
 
     @OriginalMember(owner = "client!jd", name = "e", descriptor = "Li;")
-    public static JString field1850 = class208.method1425(105, "(U4");
+    public static JString field1850 = class208.method1425("(U4");
 
     @OriginalMember(owner = "client!jd", name = "i", descriptor = "Li;")
-    private static JString field1854 = class208.method1425(105, "Press (Wrecover a locked account(W on front page)3");
+    private static JString field1854 = class208.method1425("Press (Wrecover a locked account(W on front page)3");
 
     @OriginalMember(owner = "client!jd", name = "c", descriptor = "Li;")
     public static JString field1848 = field1854;

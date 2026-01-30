@@ -14,7 +14,7 @@ public class class176 extends class136 {
     public static int field3537 = 0;
 
     @OriginalMember(owner = "client!qb", name = "J", descriptor = "Li;")
-    private static JString field3540 = class208.method1425(105, "Members object");
+    private static JString field3540 = class208.method1425("Members object");
 
     @OriginalMember(owner = "client!qb", name = "D", descriptor = "Li;")
     public static JString field3535 = field3540;

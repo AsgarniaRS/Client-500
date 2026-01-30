@@ -77,10 +77,10 @@ public class class216 extends Linkable {
     static {
 
         field4049 = new class92(64);
-        field4055 = class208.method1425(105, "slide:");
+        field4055 = class208.method1425("slide:");
         field4051 = field4055;
         field4052 = field4055;
-        field4056 = class208.method1425(105, "Select");
+        field4056 = class208.method1425("Select");
         field4053 = field4056;
     }
 }

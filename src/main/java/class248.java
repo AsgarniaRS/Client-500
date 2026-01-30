@@ -1,7 +1,8 @@
-import java.util.Calendar;
-import java.util.TimeZone;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.util.Calendar;
+import java.util.TimeZone;
 
 @OriginalClass("client!wi")
 public class class248 {
@@ -16,13 +17,13 @@ public class class248 {
     public static Calendar field4547 = Calendar.getInstance(TimeZone.getTimeZone("GMT"));
 
     @OriginalMember(owner = "client!wi", name = "q", descriptor = "Li;")
-    public static JString field4549 = class208.method1425(105, "::fpson");
+    public static JString field4549 = class208.method1425("::fpson");
 
     @OriginalMember(owner = "client!wi", name = "p", descriptor = "Li;")
-    public static JString field4548 = class208.method1425(105, "leuchten1:");
+    public static JString field4548 = class208.method1425("leuchten1:");
 
     @OriginalMember(owner = "client!wi", name = "r", descriptor = "Li;")
-    public static JString field4550 = class208.method1425(105, " )2> ");
+    public static JString field4550 = class208.method1425(" )2> ");
 
     @OriginalMember(owner = "client!wi", name = "s", descriptor = "Z")
     public static boolean field4551 = false;
@@ -117,7 +118,7 @@ public class class248 {
             field4550 = null;
         }
         Isaac.out.p2(var6 + class190.field3681);
-        Isaac.out.method297(class247.field4513[82] ? 1 : 0, 0);
+        Isaac.out.method297(ClientScript.field4513[82] ? 1 : 0, 0);
         class116.field2104 = arg1[0];
         class140.field2596 = arg2[0];
         for (int var8 = 1; var8 < var5; var8++) {

@@ -8,13 +8,13 @@ public class class157 {
     public long field3030 = 0L;
 
     @OriginalMember(owner = "client!oe", name = "f", descriptor = "Li;")
-    public static JString field3024 = class208.method1425(105, "Wir vermuten)1 dass Ihr Konto gestohlen wurde");
+    public static JString field3024 = class208.method1425("Wir vermuten)1 dass Ihr Konto gestohlen wurde");
 
     @OriginalMember(owner = "client!oe", name = "a", descriptor = "I")
     public static int field3019 = 0;
 
     @OriginalMember(owner = "client!oe", name = "i", descriptor = "Li;")
-    public static JString field3027 = class208.method1425(105, ":duelstake:");
+    public static JString field3027 = class208.method1425(":duelstake:");
 
     @OriginalMember(owner = "client!oe", name = "j", descriptor = "I")
     public static int field3028 = 0;

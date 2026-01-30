@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class65 extends Linkable {
 
     @OriginalMember(owner = "client!fi", name = "x", descriptor = "Li;")
-    private static JString field1178 = class208.method1425(105, "Please reload this page)3");
+    private static JString field1178 = class208.method1425("Please reload this page)3");
 
     @OriginalMember(owner = "client!fi", name = "B", descriptor = "I")
     public static int field1182 = 0;
 
     @OriginalMember(owner = "client!fi", name = "A", descriptor = "Li;")
-    private static JString field1181 = class208.method1425(105, "Examine");
+    private static JString field1181 = class208.method1425("Examine");
 
     @OriginalMember(owner = "client!fi", name = "D", descriptor = "I")
     public static int field1183 = 255;

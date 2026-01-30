@@ -26,10 +26,10 @@ public class class104 extends class23 {
     private int field1883 = 0;
 
     @OriginalMember(owner = "client!jf", name = "U", descriptor = "Li;")
-    public static JString field1881 = class208.method1425(105, "(Y");
+    public static JString field1881 = class208.method1425("(Y");
 
     @OriginalMember(owner = "client!jf", name = "fb", descriptor = "Li;")
-    public static JString field1892 = class208.method1425(105, "Stufe)2");
+    public static JString field1892 = class208.method1425("Stufe)2");
 
     @OriginalMember(owner = "client!jf", name = "lb", descriptor = "I")
     public static int field1898 = -1;
@@ -41,7 +41,7 @@ public class class104 extends class23 {
     public static boolean field1884 = true;
 
     @OriginalMember(owner = "client!jf", name = "ib", descriptor = "Li;")
-    public static JString field1895 = class208.method1425(105, "Lade Sprites )2 ");
+    public static JString field1895 = class208.method1425("Lade Sprites )2 ");
 
     @OriginalMember(owner = "client!jf", name = "R", descriptor = "I")
     public static int field1878;

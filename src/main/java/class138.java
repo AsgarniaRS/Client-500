@@ -14,10 +14,10 @@ public abstract class class138 extends class26 {
     public static int field2565 = 50;
 
     @OriginalMember(owner = "client!mg", name = "Bb", descriptor = "Li;")
-    private static JString CHATCOL_GREEN = class208.method1425(105, "green:");
+    private static JString CHATCOL_GREEN = class208.method1425("green:");
 
     @OriginalMember(owner = "client!mg", name = "Jb", descriptor = "Li;")
-    private static JString field2572 = class208.method1425(105, "Loaded textures");
+    private static JString field2572 = class208.method1425("Loaded textures");
 
     @OriginalMember(owner = "client!mg", name = "Ib", descriptor = "Li;")
     public static JString field2571 = field2572;
@@ -136,7 +136,7 @@ public abstract class class138 extends class26 {
         Isaac.out.pos = 0;
         class192.field3702 = 0;
         class203.field3864 = 0;
-        class247.field4514 = 0;
+        ClientScript.field4514 = 0;
         class101.field1843 = -1;
         class230.in.pos = 0;
         class228.packetSize = 0;
@@ -198,9 +198,9 @@ public abstract class class138 extends class26 {
     public static final JString[] method923(JString[] arg0, byte arg1) {
         JString[] var2 = new JString[5];
         for (int var3 = 0; var3 < 5; var3++) {
-            var2[var3] = class166.method1142(new JString[] { class170.method1214(var3, 92), class170.field3308 }, -3);
+            var2[var3] = class166.method1142(new JString[]{class170.method1214(var3, 92), class170.field3308}, -3);
             if (arg0 != null && arg0[var3] != null) {
-                var2[var3] = class166.method1142(new JString[] { var2[var3], arg0[var3] }, -3);
+                var2[var3] = class166.method1142(new JString[]{var2[var3], arg0[var3]}, -3);
             }
         }
         int var4 = 35 % ((arg1 + 49) / 52);

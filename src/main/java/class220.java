@@ -12,7 +12,7 @@ public class class220 extends class23 {
     public static int[] field4152 = new int[] { 2, 0, 0, 2, 0, 0, 0, 4, 4 };
 
     @OriginalMember(owner = "client!ub", name = "W", descriptor = "Li;")
-    private static JString field4156 = class208.method1425(105, "Login limit exceeded)3");
+    private static JString field4156 = class208.method1425("Login limit exceeded)3");
 
     @OriginalMember(owner = "client!ub", name = "Z", descriptor = "I")
     public static int pendingPrefetchQueueSize = 0;

@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public abstract class class188 extends class136 {
 
     @OriginalMember(owner = "client!rc", name = "G", descriptor = "Li;")
-    public static JString field3648 = class208.method1425(105, "(Udns");
+    public static JString field3648 = class208.method1425("(Udns");
 
     @OriginalMember(owner = "client!rc", name = "E", descriptor = "Li;")
-    public static JString field3646 = class208.method1425(105, ")3)3)3");
+    public static JString field3646 = class208.method1425(")3)3)3");
 
     @OriginalMember(owner = "client!rc", name = "L", descriptor = "Li;")
-    public static JString field3653 = class208.method1425(105, "bevor Sie den Vorgang wiederholen)3");
+    public static JString field3653 = class208.method1425("bevor Sie den Vorgang wiederholen)3");
 
     @OriginalMember(owner = "client!rc", name = "D", descriptor = "I")
     public int field3645;

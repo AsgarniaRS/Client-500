@@ -34,13 +34,13 @@ public class class120 extends class23 {
     public static int tryMoveNearest = 0;
 
     @OriginalMember(owner = "client!l", name = "bb", descriptor = "Li;")
-    public static JString field2196 = class208.method1425(105, "::");
+    public static JString CHATCOMMAND = class208.method1425("::");
 
     @OriginalMember(owner = "client!l", name = "Z", descriptor = "[S")
     public static short[] field2194 = new short[256];
 
     @OriginalMember(owner = "client!l", name = "gb", descriptor = "Li;")
-    public static JString field2201 = class208.method1425(105, "<)4col>");
+    public static JString field2201 = class208.method1425("<)4col>");
 
     @OriginalMember(owner = "client!l", name = "cb", descriptor = "I")
     public static int field2197 = -1;
@@ -230,7 +230,7 @@ public class class120 extends class23 {
             class110.field2016 = arg3;
             class140.field2597 = arg2;
             if (arg4 < 114) {
-                field2196 = null;
+                CHATCOMMAND = null;
             }
             class131.method883(25, 65536);
             Client.method221(class242.field4480, true, -22717);
@@ -346,7 +346,7 @@ public class class120 extends class23 {
 
     @OriginalMember(owner = "client!l", name = "f", descriptor = "(I)V")
     public static void method824(int arg0) {
-        field2196 = null;
+        CHATCOMMAND = null;
         field2194 = null;
         field2205 = null;
         field2201 = null;

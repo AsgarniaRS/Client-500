@@ -27,10 +27,10 @@ public class class161 implements Runnable {
     public static int field3113 = 1;
 
     @OriginalMember(owner = "client!oi", name = "j", descriptor = "Li;")
-    public static JString field3110 = class208.method1425(105, "gelb:");
+    public static JString field3110 = class208.method1425("gelb:");
 
     @OriginalMember(owner = "client!oi", name = "l", descriptor = "Li;")
-    private static JString field3112 = class208.method1425(105, "Service unavailable)3");
+    private static JString field3112 = class208.method1425("Service unavailable)3");
 
     @OriginalMember(owner = "client!oi", name = "n", descriptor = "Li;")
     public static JString field3114 = field3112;

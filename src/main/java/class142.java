@@ -11,22 +11,22 @@ public class class142 {
     public static int cacheMidCount = 0;
 
     @OriginalMember(owner = "client!n", name = "g", descriptor = "Li;")
-    public static JString field2621 = class208.method1425(105, "Wir vermuten)1 dass jemand Ihr Passwort kennt)3");
+    public static JString field2621 = class208.method1425("Wir vermuten)1 dass jemand Ihr Passwort kennt)3");
 
     @OriginalMember(owner = "client!n", name = "f", descriptor = "Li;")
-    public static JString field2620 = class208.method1425(105, "<br>");
+    public static JString field2620 = class208.method1425("<br>");
 
     @OriginalMember(owner = "client!n", name = "h", descriptor = "I")
     public static int field2622 = 0;
 
     @OriginalMember(owner = "client!n", name = "j", descriptor = "Li;")
-    public static JString field2624 = class208.method1425(105, "hint_mapmarkers");
+    public static JString field2624 = class208.method1425("hint_mapmarkers");
 
     @OriginalMember(owner = "client!n", name = "m", descriptor = "Li;")
-    public static JString field2627 = class208.method1425(105, "VOLL");
+    public static JString field2627 = class208.method1425("VOLL");
 
     @OriginalMember(owner = "client!n", name = "i", descriptor = "Li;")
-    public static JString field2623 = class208.method1425(105, "scrollbar");
+    public static JString field2623 = class208.method1425("scrollbar");
 
     @OriginalMember(owner = "client!n", name = "a", descriptor = "I")
     public static int field2615;
@@ -89,15 +89,11 @@ public class class142 {
     }
 
     @OriginalMember(owner = "client!n", name = "b", descriptor = "(II)I")
-    public static final int method932(int arg0, int arg1) {
-        field2617++;
-        class226 var2 = class153.method1045(15913, arg1);
+    public static final int getVarbit(int id) {
+        class226 var2 = class153.method1045(15913, id);
         int var3 = var2.field4236;
         int var4 = var2.field4239;
         int var5 = var2.field4235;
-        if (arg0 != -17611) {
-            method933((byte) -94);
-        }
         int var6 = class101.field1834[var4 - var3];
         return class113.field2052[var5] >> var3 & var6;
     }

@@ -114,7 +114,7 @@ public class class149 extends class136 {
     public JString[] field2906 = new JString[] { null, null, null, null, class221.field4173 };
 
     @OriginalMember(owner = "client!ng", name = "Mb", descriptor = "Li;")
-    public static JString field2897 = class208.method1425(105, "(U");
+    public static JString field2897 = class208.method1425("(U");
 
     @OriginalMember(owner = "client!ng", name = "Z", descriptor = "Lid;")
     public static class92 field2858 = new class92(64);

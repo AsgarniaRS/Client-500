@@ -8,13 +8,13 @@ public abstract class class1 {
     public static class92 field2 = new class92(128);
 
     @OriginalMember(owner = "client!a", name = "e", descriptor = "Li;")
-    public static JString field5 = class208.method1425(105, "");
+    public static JString field5 = class208.method1425("");
 
     @OriginalMember(owner = "client!a", name = "f", descriptor = "Li;")
-    public static JString field6 = class208.method1425(105, "::autoshadow off");
+    public static JString field6 = class208.method1425("::autoshadow off");
 
     @OriginalMember(owner = "client!a", name = "g", descriptor = "Li;")
-    public static JString field7 = class208.method1425(105, "mapfunction");
+    public static JString field7 = class208.method1425("mapfunction");
 
     @OriginalMember(owner = "client!a", name = "i", descriptor = "Z")
     public static boolean field9 = false;
@@ -23,7 +23,7 @@ public abstract class class1 {
     public static long field10 = 0L;
 
     @OriginalMember(owner = "client!a", name = "k", descriptor = "Li;")
-    private static JString FRIENDLISTDUPE = class208.method1425(105, " is already on your friend list)3");
+    private static JString FRIENDLISTDUPE = class208.method1425(" is already on your friend list)3");
 
     @OriginalMember(owner = "client!a", name = "h", descriptor = "Li;")
     public static JString field8 = FRIENDLISTDUPE;

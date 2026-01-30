@@ -14,7 +14,7 @@ public class Linkable {
     public static int field1208 = 0;
 
     @OriginalMember(owner = "client!g", name = "n", descriptor = "Li;")
-    public static JString field1216 = class208.method1425(105, "Keine Antwort vom Server)3");
+    public static JString field1216 = class208.method1425("Keine Antwort vom Server)3");
 
     @OriginalMember(owner = "client!g", name = "m", descriptor = "Z")
     public static boolean field1215 = false;
@@ -23,7 +23,7 @@ public class Linkable {
     public static int field1206 = 0;
 
     @OriginalMember(owner = "client!g", name = "l", descriptor = "Li;")
-    public static JString field1214 = class208.method1425(105, "<)4col>");
+    public static JString field1214 = class208.method1425("<)4col>");
 
     @OriginalMember(owner = "client!g", name = "s", descriptor = "I")
     public static int field1221 = 0;

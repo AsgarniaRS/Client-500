@@ -14,16 +14,16 @@ public class class6 extends Packet {
     public static int field71 = 0;
 
     @OriginalMember(owner = "client!ae", name = "Vb", descriptor = "Li;")
-    public static JString field82 = class208.method1425(105, " GMT");
+    public static JString field82 = class208.method1425(" GMT");
 
     @OriginalMember(owner = "client!ae", name = "Mb", descriptor = "Li;")
-    public static JString field73 = class208.method1425(105, "Ihr Spielkonto wurde deaktiviert)3");
+    public static JString field73 = class208.method1425("Ihr Spielkonto wurde deaktiviert)3");
 
     @OriginalMember(owner = "client!ae", name = "Zb", descriptor = "Li;")
-    public static JString field86 = class208.method1425(105, "und die Schaltfl-=che (WSpielkonto erstellen(W am");
+    public static JString field86 = class208.method1425("und die Schaltfl-=che (WSpielkonto erstellen(W am");
 
     @OriginalMember(owner = "client!ae", name = "cc", descriptor = "Li;")
-    private static JString field89 = class208.method1425(105, "Cancel");
+    private static JString field89 = class208.method1425("Cancel");
 
     @OriginalMember(owner = "client!ae", name = "Wb", descriptor = "I")
     public static int field83 = 10;
@@ -32,7 +32,7 @@ public class class6 extends Packet {
     public static JString field76 = field89;
 
     @OriginalMember(owner = "client!ae", name = "ac", descriptor = "Li;")
-    public static JString field87 = class208.method1425(105, "Freie Welt");
+    public static JString field87 = class208.method1425("Freie Welt");
 
     @OriginalMember(owner = "client!ae", name = "Nb", descriptor = "I")
     public static int field74;

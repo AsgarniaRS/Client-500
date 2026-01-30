@@ -11,7 +11,7 @@ public class class101 extends class136 {
     public static int[] field1834 = new int[32];
 
     @OriginalMember(owner = "client!jc", name = "J", descriptor = "Li;")
-    public static JString field1836 = class208.method1425(105, "auf der Hautpseite)3");
+    public static JString field1836 = class208.method1425("auf der Hautpseite)3");
 
     @OriginalMember(owner = "client!jc", name = "O", descriptor = "Li;")
     private static JString CHATCOL_RED;
@@ -170,10 +170,10 @@ public class class101 extends class136 {
             field1834[var1] = var0 - 1;
             var0 += var0;
         }
-        CHATCOL_RED = class208.method1425(105, "red:");
+        CHATCOL_RED = class208.method1425("red:");
         field1843 = 0;
         field1839 = CHATCOL_RED;
-        field1845 = class208.method1425(105, "Please wait )2 attempting to reestablish)3");
+        field1845 = class208.method1425("Please wait )2 attempting to reestablish)3");
         field1840 = field1845;
         field1844 = CHATCOL_RED;
     }

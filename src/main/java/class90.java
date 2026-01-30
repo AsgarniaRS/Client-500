@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class90 extends Linkable {
 
     @OriginalMember(owner = "client!ib", name = "D", descriptor = "Li;")
-    public static JString field1710 = class208.method1425(105, "Standort");
+    public static JString field1710 = class208.method1425("Standort");
 
     @OriginalMember(owner = "client!ib", name = "E", descriptor = "[I")
     public static int[] field1711 = new int[99];

@@ -11,10 +11,10 @@ public class class43 extends class23 {
     public static int field723 = -1;
 
     @OriginalMember(owner = "client!di", name = "cb", descriptor = "Li;")
-    public static JString field734 = class208.method1425(105, "oder ung-Ultiges Passwort)3");
+    public static JString field734 = class208.method1425("oder ung-Ultiges Passwort)3");
 
     @OriginalMember(owner = "client!di", name = "Z", descriptor = "Li;")
-    public static JString field731 = class208.method1425(105, ":trade:");
+    public static JString field731 = class208.method1425(":trade:");
 
     @OriginalMember(owner = "client!di", name = "ab", descriptor = "Lbe;")
     public static class17 field732 = new class17();

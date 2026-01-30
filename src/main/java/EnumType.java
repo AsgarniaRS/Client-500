@@ -14,10 +14,10 @@ public class EnumType extends class136 {
     public static int field884 = 0;
 
     @OriginalMember(owner = "client!eb", name = "O", descriptor = "Li;")
-    public static JString field881 = class208.method1425(105, "sl_arrows");
+    public static JString field881 = class208.method1425("sl_arrows");
 
     @OriginalMember(owner = "client!eb", name = "Y", descriptor = "Li;")
-    public static JString field891 = class208.method1425(105, "<col=ffffff> )4 ");
+    public static JString field891 = class208.method1425("<col=ffffff> )4 ");
 
     @OriginalMember(owner = "client!eb", name = "D", descriptor = "I")
     public static int field870;

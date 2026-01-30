@@ -17,7 +17,7 @@ public class class238 {
     public static int field4434 = 2301979;
 
     @OriginalMember(owner = "client!vi", name = "i", descriptor = "Li;")
-    public static JString field4435 = class208.method1425(105, "zur-Uck auf die RuneScape)2Webseite gehen");
+    public static JString field4435 = class208.method1425("zur-Uck auf die RuneScape)2Webseite gehen");
 
     @OriginalMember(owner = "client!vi", name = "b", descriptor = "I")
     public static int field4428;

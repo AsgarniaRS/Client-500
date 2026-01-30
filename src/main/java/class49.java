@@ -5,25 +5,25 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class49 {
 
     @OriginalMember(owner = "client!ed", name = "d", descriptor = "Li;")
-    public static JString field914 = class208.method1425(105, " )2> <col=ffffff>");
+    public static JString field914 = class208.method1425(" )2> <col=ffffff>");
 
     @OriginalMember(owner = "client!ed", name = "k", descriptor = "S")
     public static short field921 = 205;
 
     @OriginalMember(owner = "client!ed", name = "e", descriptor = "Li;")
-    public static JString field915 = class208.method1425(105, ")4slr2)3ws?order=LPWM");
+    public static JString field915 = class208.method1425(")4slr2)3ws?order=LPWM");
 
     @OriginalMember(owner = "client!ed", name = "m", descriptor = "Lq;")
     public static class174 field923 = null;
 
     @OriginalMember(owner = "client!ed", name = "j", descriptor = "Li;")
-    public static JString field920 = class208.method1425(105, "; Expires=Thu)1 01)2Jan)21970 00:00:00 GMT; Max)2Age=0");
+    public static JString field920 = class208.method1425("; Expires=Thu)1 01)2Jan)21970 00:00:00 GMT; Max)2Age=0");
 
     @OriginalMember(owner = "client!ed", name = "i", descriptor = "I")
     public static int field919 = 0;
 
     @OriginalMember(owner = "client!ed", name = "f", descriptor = "Li;")
-    private static JString field916 = class208.method1425(105, "Loading config )2 ");
+    private static JString field916 = class208.method1425("Loading config )2 ");
 
     @OriginalMember(owner = "client!ed", name = "n", descriptor = "I")
     public static int field924 = 0;

@@ -50,13 +50,13 @@ public class class68 implements class61 {
     private short[] field1229;
 
     @OriginalMember(owner = "client!ga", name = "g", descriptor = "Li;")
-    private static JString field1228 = class208.method1425(105, "Connecting to update server");
+    private static JString field1228 = class208.method1425("Connecting to update server");
 
     @OriginalMember(owner = "client!ga", name = "m", descriptor = "Li;")
-    public static JString field1234 = class208.method1425(105, "Unerwartete Antwort vom Anmelde)2Server)3");
+    public static JString field1234 = class208.method1425("Unerwartete Antwort vom Anmelde)2Server)3");
 
     @OriginalMember(owner = "client!ga", name = "q", descriptor = "Li;")
-    public static JString field1238 = class208.method1425(105, " (X");
+    public static JString field1238 = class208.method1425(" (X");
 
     @OriginalMember(owner = "client!ga", name = "D", descriptor = "Li;")
     public static JString field1251 = field1228;

@@ -71,16 +71,16 @@ public class class170 extends class51 {
     private class154 field3254 = new class154(128);
 
     @OriginalMember(owner = "client!pg", name = "db", descriptor = "Li;")
-    public static JString field3282 = class208.method1425(105, "Nehmen");
+    public static JString field3282 = class208.method1425("Nehmen");
 
     @OriginalMember(owner = "client!pg", name = "ub", descriptor = "I")
     public static volatile int field3299 = -1;
 
     @OriginalMember(owner = "client!pg", name = "Db", descriptor = "Li;")
-    public static JString field3308 = class208.method1425(105, ": ");
+    public static JString field3308 = class208.method1425(": ");
 
     @OriginalMember(owner = "client!pg", name = "D", descriptor = "Li;")
-    public static JString field3256 = class208.method1425(105, "loc)3dat");
+    public static JString field3256 = class208.method1425("loc)3dat");
 
     @OriginalMember(owner = "client!pg", name = "yb", descriptor = "B")
     public static byte field3303;

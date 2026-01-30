@@ -8,7 +8,7 @@ public class class202 {
     private class136 field3850 = new class136();
 
     @OriginalMember(owner = "client!sf", name = "c", descriptor = "Li;")
-    public static JString field3845 = class208.method1425(105, "<col=ffff00>*V");
+    public static JString field3845 = class208.method1425("<col=ffff00>*V");
 
     @OriginalMember(owner = "client!sf", name = "m", descriptor = "[S")
     public static short[] field3855 = new short[] { 960, 957, -21568, -21571, 22464 };

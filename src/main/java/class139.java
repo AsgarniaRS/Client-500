@@ -23,13 +23,13 @@ public class class139 extends class23 {
     public static int[] field2579 = new int[1000];
 
     @OriginalMember(owner = "client!mh", name = "ab", descriptor = "Li;")
-    public static JString field2584 = class208.method1425(105, "Bitte entfernen Sie ");
+    public static JString field2584 = class208.method1425("Bitte entfernen Sie ");
 
     @OriginalMember(owner = "client!mh", name = "db", descriptor = "Li;")
-    public static JString field2587 = class208.method1425(105, "Bitte wenden Sie sich an den Kundendienst)3");
+    public static JString field2587 = class208.method1425("Bitte wenden Sie sich an den Kundendienst)3");
 
     @OriginalMember(owner = "client!mh", name = "Y", descriptor = "Li;")
-    private static JString field2582 = class208.method1425(105, "Your profile will be transferred in:");
+    private static JString field2582 = class208.method1425("Your profile will be transferred in:");
 
     @OriginalMember(owner = "client!mh", name = "cb", descriptor = "I")
     public static int field2586 = 0;

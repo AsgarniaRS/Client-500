@@ -11,7 +11,7 @@ public class class114 extends class136 {
     public static int field2059 = -1;
 
     @OriginalMember(owner = "client!ke", name = "J", descriptor = "Li;")
-    private static JString field2062 = class208.method1425(105, "RuneScape has been updated(Q");
+    private static JString field2062 = class208.method1425("RuneScape has been updated(Q");
 
     @OriginalMember(owner = "client!ke", name = "O", descriptor = "Li;")
     public static JString field2066 = field2062;
@@ -23,7 +23,7 @@ public class class114 extends class136 {
     public static volatile int field2070 = 0;
 
     @OriginalMember(owner = "client!ke", name = "E", descriptor = "Li;")
-    private static JString field2057 = class208.method1425(105, "Unable to find ");
+    private static JString field2057 = class208.method1425("Unable to find ");
 
     @OriginalMember(owner = "client!ke", name = "K", descriptor = "I")
     public static int field2063 = 0;

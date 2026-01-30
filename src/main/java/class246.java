@@ -8,7 +8,7 @@ public class class246 extends class219 {
     public static class119[] field4506 = new class119[27];
 
     @OriginalMember(owner = "client!wg", name = "v", descriptor = "Li;")
-    private static JString field4509 = class208.method1425(105, "Please try again)3");
+    private static JString field4509 = class208.method1425("Please try again)3");
 
     @OriginalMember(owner = "client!wg", name = "w", descriptor = "Li;")
     public static JString field4510 = field4509;

@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class223 {
 
     @OriginalMember(owner = "client!ue", name = "a", descriptor = "Li;")
-    public static JString field4195 = class208.method1425(105, "Unerwartete Antwort vom Anmelde)2Server");
+    public static JString field4195 = class208.method1425("Unerwartete Antwort vom Anmelde)2Server");
 
     @OriginalMember(owner = "client!ue", name = "g", descriptor = "I")
     public static int field4201 = 0;
 
     @OriginalMember(owner = "client!ue", name = "j", descriptor = "Li;")
-    private static JString field4204 = class208.method1425(105, "Please try using a different world)3");
+    private static JString field4204 = class208.method1425("Please try using a different world)3");
 
     @OriginalMember(owner = "client!ue", name = "h", descriptor = "Li;")
     public static JString field4202 = field4204;
@@ -32,7 +32,7 @@ public class class223 {
     public static JString field4208 = field4204;
 
     @OriginalMember(owner = "client!ue", name = "p", descriptor = "Li;")
-    public static JString field4210 = class208.method1425(105, "overlay2)3dat");
+    public static JString field4210 = class208.method1425("overlay2)3dat");
 
     @OriginalMember(owner = "client!ue", name = "q", descriptor = "Li;")
     public static JString field4211 = field4204;
@@ -44,7 +44,7 @@ public class class223 {
     public static JString field4209 = field4204;
 
     @OriginalMember(owner = "client!ue", name = "u", descriptor = "Li;")
-    private static JString field4215 = class208.method1425(105, "Your account is already logged in)3");
+    private static JString field4215 = class208.method1425("Your account is already logged in)3");
 
     @OriginalMember(owner = "client!ue", name = "m", descriptor = "Li;")
     public static JString field4207 = field4215;

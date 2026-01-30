@@ -29,16 +29,16 @@ public class class95 {
     public static int[] field1763 = new int[5];
 
     @OriginalMember(owner = "client!ih", name = "i", descriptor = "Li;")
-    public static JString field1768 = class208.method1425(105, "; Max)2Age=");
+    public static JString field1768 = class208.method1425("; Max)2Age=");
 
     @OriginalMember(owner = "client!ih", name = "l", descriptor = "Li;")
-    public static JString field1771 = class208.method1425(105, " zuerst von Ihrer Freunde)2Liste(Q");
+    public static JString field1771 = class208.method1425(" zuerst von Ihrer Freunde)2Liste(Q");
 
     @OriginalMember(owner = "client!ih", name = "f", descriptor = "[J")
     public static long[] field1765 = new long[100];
 
     @OriginalMember(owner = "client!ih", name = "m", descriptor = "Li;")
-    public static JString field1772 = class208.method1425(105, "http:)4)4");
+    public static JString field1772 = class208.method1425("http:)4)4");
 
     @OriginalMember(owner = "client!ih", name = "g", descriptor = "I")
     public static int field1766;

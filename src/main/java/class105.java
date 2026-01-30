@@ -17,7 +17,7 @@ public class class105 extends class51 {
     public static class248 field1902 = new class248();
 
     @OriginalMember(owner = "client!jg", name = "I", descriptor = "Li;")
-    public static JString field1911 = class208.method1425(105, "welle2:");
+    public static JString field1911 = class208.method1425("welle2:");
 
     @OriginalMember(owner = "client!jg", name = "H", descriptor = "[I")
     public static int[] field1910 = new int[128];
@@ -29,7 +29,7 @@ public class class105 extends class51 {
     public static int field1912 = 0;
 
     @OriginalMember(owner = "client!jg", name = "P", descriptor = "Li;")
-    public static JString field1918 = class208.method1425(105, "Anmelde)2Zeitlimit -Uberschritten)3");
+    public static JString field1918 = class208.method1425("Anmelde)2Zeitlimit -Uberschritten)3");
 
     @OriginalMember(owner = "client!jg", name = "G", descriptor = "[I")
     public static int[] field1909 = new int[25];

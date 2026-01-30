@@ -7,7 +7,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class221 {
 
     @OriginalMember(owner = "client!uc", name = "b", descriptor = "Li;")
-    private static JString field4170 = class208.method1425(105, "Drop");
+    private static JString field4170 = class208.method1425("Drop");
 
     @OriginalMember(owner = "client!uc", name = "e", descriptor = "Li;")
     public static JString field4173 = field4170;

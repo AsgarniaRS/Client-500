@@ -17,10 +17,10 @@ public class JString implements class187 {
     public static short[] field1601 = new short[] { -10304, 9104, -1, -1, -1 };
 
     @OriginalMember(owner = "client!i", name = "D", descriptor = "Li;")
-    private static JString field1628 = class208.method1425(105, "This world is full)3");
+    private static JString field1628 = class208.method1425("This world is full)3");
 
     @OriginalMember(owner = "client!i", name = "M", descriptor = "Li;")
-    public static JString field1637 = class208.method1425(105, "<col=ffffff>");
+    public static JString field1637 = class208.method1425("<col=ffffff>");
 
     @OriginalMember(owner = "client!i", name = "N", descriptor = "I")
     public static int field1638 = 0;

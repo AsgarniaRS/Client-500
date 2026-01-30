@@ -11,10 +11,10 @@ public abstract class class23 extends Linkable {
     public class23[] field376;
 
     @OriginalMember(owner = "client!c", name = "u", descriptor = "Li;")
-    public static JString field360 = class208.method1425(105, "Benutzen");
+    public static JString field360 = class208.method1425("Benutzen");
 
     @OriginalMember(owner = "client!c", name = "B", descriptor = "Li;")
-    public static JString field367 = class208.method1425(105, "Zu viele Anmelde)2Versuche von Ihrer Adresse");
+    public static JString field367 = class208.method1425("Zu viele Anmelde)2Versuche von Ihrer Adresse");
 
     @OriginalMember(owner = "client!c", name = "E", descriptor = "[Li;")
     public static JString[] field370 = new JString[200];

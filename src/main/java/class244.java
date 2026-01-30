@@ -11,7 +11,7 @@ public class class244 extends Linkable {
     public static int field4495 = 0;
 
     @OriginalMember(owner = "client!we", name = "E", descriptor = "Li;")
-    public static JString field4496 = class208.method1425(105, "Hierhin gehen");
+    public static JString field4496 = class208.method1425("Hierhin gehen");
 
     @OriginalMember(owner = "client!we", name = "F", descriptor = "[I")
     public static int[] field4497 = new int[32];
@@ -473,7 +473,7 @@ public class class244 extends Linkable {
         Linkable.field1218 = new int[class172.field3347];
         class116.field2106 = new byte[class172.field3347][];
         class135.field2512 = new int[class172.field3347];
-        class247.field4530 = new int[class172.field3347];
+        ClientScript.field4530 = new int[class172.field3347];
         class102.field1853 = new int[class172.field3347];
         var2.pos = arg1.length - class172.field3347 * 8 - 7;
         class15.field229 = var2.g2();
@@ -484,7 +484,7 @@ public class class244 extends Linkable {
             method1602(null, 35);
         }
         while (class172.field3347 > var4) {
-            class247.field4530[var4] = var2.g2();
+            ClientScript.field4530[var4] = var2.g2();
             var4++;
         }
         for (int var5 = 0; var5 < class172.field3347; var5++) {

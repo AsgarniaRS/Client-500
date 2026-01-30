@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class27 {
 
     @OriginalMember(owner = "client!cd", name = "k", descriptor = "[I")
-    public static int[] field461 = new int[] { 0, 1, 2, 3 };
+    public static int[] field461 = new int[]{0, 1, 2, 3};
 
     @OriginalMember(owner = "client!cd", name = "b", descriptor = "I")
     public static int field452;
@@ -108,7 +108,7 @@ public class class27 {
     @OriginalMember(owner = "client!cd", name = "b", descriptor = "(B)Llj;")
     public static final class130 method170(byte arg0) {
         field452++;
-        class193 var1 = new class193(class15.field229, class129.field2426, class247.field4530[0], class135.field2512[0], class102.field1853[0], Linkable.field1218[0], class116.field2106[0], field456);
+        class193 var1 = new class193(class15.field229, class129.field2426, ClientScript.field4530[0], class135.field2512[0], class102.field1853[0], Linkable.field1218[0], class116.field2106[0], field456);
         class239.method1580(125);
         if (arg0 <= 121) {
             field454 = -120;

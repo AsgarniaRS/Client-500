@@ -8,13 +8,13 @@ public class class196 extends class23 {
     private int field3762 = -1;
 
     @OriginalMember(owner = "client!s", name = "X", descriptor = "Li;")
-    public static JString field3759 = class208.method1425(105, "Bitte warten Sie)3)3)3");
+    public static JString field3759 = class208.method1425("Bitte warten Sie)3)3)3");
 
     @OriginalMember(owner = "client!s", name = "V", descriptor = "Li;")
-    public static JString field3757 = class208.method1425(105, "blaugr-Un:");
+    public static JString field3757 = class208.method1425("blaugr-Un:");
 
     @OriginalMember(owner = "client!s", name = "ib", descriptor = "Li;")
-    private static JString field3770 = class208.method1425(105, "Loading)3)3)3");
+    private static JString field3770 = class208.method1425("Loading)3)3)3");
 
     @OriginalMember(owner = "client!s", name = "Y", descriptor = "I")
     public static int field3760 = 0;
@@ -23,13 +23,13 @@ public class class196 extends class23 {
     public static int field3756 = 0;
 
     @OriginalMember(owner = "client!s", name = "hb", descriptor = "Li;")
-    private static JString field3769 = class208.method1425(105, "To create a new account you need to");
+    private static JString field3769 = class208.method1425("To create a new account you need to");
 
     @OriginalMember(owner = "client!s", name = "db", descriptor = "Li;")
     public static JString field3765 = field3770;
 
     @OriginalMember(owner = "client!s", name = "mb", descriptor = "Li;")
-    public static JString field3774 = class208.method1425(105, ")1 ");
+    public static JString field3774 = class208.method1425(")1 ");
 
     @OriginalMember(owner = "client!s", name = "T", descriptor = "Li;")
     public static JString field3755 = field3769;

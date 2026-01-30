@@ -12,7 +12,7 @@ public class class66 extends Canvas {
     private Component field1198;
 
     @OriginalMember(owner = "client!fj", name = "b", descriptor = "Li;")
-    public static JString field1188 = class208.method1425(105, "");
+    public static JString field1188 = class208.method1425("");
 
     @OriginalMember(owner = "client!fj", name = "f", descriptor = "I")
     public static int field1192 = 0;
@@ -24,13 +24,13 @@ public class class66 extends Canvas {
     public static int[] field1194 = new int[5];
 
     @OriginalMember(owner = "client!fj", name = "i", descriptor = "Li;")
-    public static JString field1195 = class208.method1425(105, "Zu viele Verbindungen von Ihrer Adresse)3");
+    public static JString field1195 = class208.method1425("Zu viele Verbindungen von Ihrer Adresse)3");
 
     @OriginalMember(owner = "client!fj", name = "j", descriptor = "Lwi;")
     public static class248 field1196 = new class248();
 
     @OriginalMember(owner = "client!fj", name = "o", descriptor = "Li;")
-    public static JString field1201 = class208.method1425(105, "Bitte versuchen Sie es erneut)3");
+    public static JString field1201 = class208.method1425("Bitte versuchen Sie es erneut)3");
 
     @OriginalMember(owner = "client!fj", name = "a", descriptor = "I")
     public static int field1187;

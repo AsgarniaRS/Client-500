@@ -14,10 +14,10 @@ public class class97 extends class136 {
     public static int[] field1791 = new int[] { 160, 192, 80, 96, 0, 144, 80, 48, 160 };
 
     @OriginalMember(owner = "client!ij", name = "I", descriptor = "Li;")
-    public static JString field1786 = class208.method1425(105, "da dieser Computer gegen unsere ");
+    public static JString field1786 = class208.method1425("da dieser Computer gegen unsere ");
 
     @OriginalMember(owner = "client!ij", name = "P", descriptor = "Li;")
-    public static JString field1793 = class208.method1425(105, "60 Sekunden noch einmal)3)3)3");
+    public static JString field1793 = class208.method1425("60 Sekunden noch einmal)3)3)3");
 
     @OriginalMember(owner = "client!ij", name = "G", descriptor = "B")
     public byte padding;

@@ -9,13 +9,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class166 {
 
     @OriginalMember(owner = "client!pc", name = "c", descriptor = "Li;")
-    public static JString field3191 = class208.method1425(105, "(U2");
+    public static JString field3191 = class208.method1425("(U2");
 
     @OriginalMember(owner = "client!pc", name = "n", descriptor = "[Lia;")
     public static CollisionMap[] field3202 = new CollisionMap[4];
 
     @OriginalMember(owner = "client!pc", name = "l", descriptor = "Li;")
-    private static JString field3200 = class208.method1425(105, "The server is being updated)3");
+    private static JString field3200 = class208.method1425("The server is being updated)3");
 
     @OriginalMember(owner = "client!pc", name = "e", descriptor = "Li;")
     public static JString field3193 = field3200;
@@ -24,7 +24,7 @@ public class class166 {
     public static int field3194 = -1;
 
     @OriginalMember(owner = "client!pc", name = "o", descriptor = "Li;")
-    public static JString field3203 = class208.method1425(105, "<img=0>");
+    public static JString field3203 = class208.method1425("<img=0>");
 
     @OriginalMember(owner = "client!pc", name = "b", descriptor = "Leh;")
     public static class53 field3190 = new class53();

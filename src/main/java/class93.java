@@ -20,31 +20,31 @@ public class class93 {
     public static class24 field1741 = new class24(260);
 
     @OriginalMember(owner = "client!ie", name = "j", descriptor = "Li;")
-    private static JString field1745 = class208.method1425(105, "Click to switch");
+    private static JString field1745 = class208.method1425("Click to switch");
 
     @OriginalMember(owner = "client!ie", name = "i", descriptor = "Li;")
-    public static JString field1744 = class208.method1425(105, "Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3");
+    public static JString field1744 = class208.method1425("Bitte warten Sie )2 es wird versucht)1 die Verbindung wiederherzustellen)3");
 
     @OriginalMember(owner = "client!ie", name = "o", descriptor = "Li;")
-    public static JString field1750 = class208.method1425(105, "null");
+    public static JString field1750 = class208.method1425("null");
 
     @OriginalMember(owner = "client!ie", name = "h", descriptor = "I")
     public static int field1743 = 0;
 
     @OriginalMember(owner = "client!ie", name = "n", descriptor = "Li;")
-    public static JString field1749 = class208.method1425(105, "sich mit einer anderen Welt zu verbinden)3");
+    public static JString field1749 = class208.method1425("sich mit einer anderen Welt zu verbinden)3");
 
     @OriginalMember(owner = "client!ie", name = "p", descriptor = "Li;")
-    public static JString field1751 = class208.method1425(105, "rect_debug=");
+    public static JString field1751 = class208.method1425("rect_debug=");
 
     @OriginalMember(owner = "client!ie", name = "q", descriptor = "Li;")
     public static JString field1752 = field1745;
 
     @OriginalMember(owner = "client!ie", name = "m", descriptor = "Li;")
-    private static JString field1748 = class208.method1425(105, "FULL");
+    private static JString field1748 = class208.method1425("FULL");
 
     @OriginalMember(owner = "client!ie", name = "l", descriptor = "Li;")
-    private static JString WALKHERE = class208.method1425(105, "Walk here");
+    private static JString WALKHERE = class208.method1425("Walk here");
 
     @OriginalMember(owner = "client!ie", name = "g", descriptor = "Li;")
     public static JString field1742 = WALKHERE;

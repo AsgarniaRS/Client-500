@@ -11,7 +11,7 @@ public class class64 {
     public static class154 field1163 = new class154(32);
 
     @OriginalMember(owner = "client!fh", name = "n", descriptor = "Li;")
-    public static JString field1170 = class208.method1425(105, "auf einer freien Welt zu spielen)3");
+    public static JString field1170 = class208.method1425("auf einer freien Welt zu spielen)3");
 
     @OriginalMember(owner = "client!fh", name = "q", descriptor = "I")
     public static int field1173 = 128;

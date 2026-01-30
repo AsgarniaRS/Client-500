@@ -17,7 +17,7 @@ public class class179 {
     public static class92 field3560 = new class92(64);
 
     @OriginalMember(owner = "client!qe", name = "i", descriptor = "Li;")
-    public static JString field3565 = class208.method1425(105, "Clientscript error )2 check log for details");
+    public static JString field3565 = class208.method1425("Clientscript error )2 check log for details");
 
     @OriginalMember(owner = "client!qe", name = "h", descriptor = "[I")
     public static int[] field3564 = new int[25];

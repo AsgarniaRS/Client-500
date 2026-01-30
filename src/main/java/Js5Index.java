@@ -11,13 +11,13 @@ public abstract class Js5Index {
     private boolean discardUnpacked;
 
     @OriginalMember(owner = "client!nb", name = "e", descriptor = "Li;")
-    public static JString field2666 = class208.method1425(105, "hitmarks");
+    public static JString field2666 = class208.method1425("hitmarks");
 
     @OriginalMember(owner = "client!nb", name = "g", descriptor = "Li;")
-    public static JString field2668 = class208.method1425(105, "Speicher wird zugewiesen)3");
+    public static JString field2668 = class208.method1425("Speicher wird zugewiesen)3");
 
     @OriginalMember(owner = "client!nb", name = "L", descriptor = "Li;")
-    public static JString field2699 = class208.method1425(105, "Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3");
+    public static JString field2699 = class208.method1425("Ihre Ignorieren)2Liste ist voll)1 Sie k-Onnen nur 100 Spieler darauf eintragen)3");
 
     @OriginalMember(owner = "client!nb", name = "V", descriptor = "I")
     public static int field2709 = 0;
@@ -210,7 +210,7 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(III)Z")
-    private final boolean method945(int arg0, int arg1, int arg2) {
+    private boolean method945(int arg0, int arg1, int arg2) {
         field2695++;
         if (arg2 >= 0 && arg0 >= 0 && this.field2676.length > arg2 && arg0 < this.field2676[arg2]) {
             return true;
@@ -465,7 +465,7 @@ public abstract class Js5Index {
     }
 
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(I[IB)Z")
-    private final boolean unpackGroup(int arg0, int[] arg1, byte arg2) {
+    private boolean unpackGroup(int arg0, int[] arg1, byte arg2) {
         field2694++;
         if (!this.method970(120, arg0)) {
             return false;
@@ -578,8 +578,8 @@ public abstract class Js5Index {
     @OriginalMember(owner = "client!nb", name = "a", descriptor = "(JII[I)Li;")
     public static final JString method954(long arg0, int arg1, int arg2, int[] arg3) {
         field2704++;
-        if (class247.field4529 != null) {
-            JString var5 = class247.field4529.method1128(arg3, arg2, arg0, 0);
+        if (ClientScript.field4529 != null) {
+            JString var5 = ClientScript.field4529.method1128(arg3, arg2, arg0, 0);
             if (var5 != null) {
                 return var5;
             }
@@ -671,15 +671,15 @@ public abstract class Js5Index {
             field2668 = null;
         }
         for (int var3 = var2.length() - 3; var3 > 0; var3 -= 3) {
-            var2 = class166.method1142(new JString[] { var2.method623(0, (byte) -57, var3), class53.field979, var2.substring(var3) }, -3);
+            var2 = class166.method1142(new JString[]{var2.method623(0, (byte) -57, var3), class53.field979, var2.substring(var3)}, -3);
         }
         field2712++;
         if (var2.length() > 9) {
-            return class166.method1142(new JString[] { LocType.field2830, var2.method623(0, (byte) -127, var2.length() - 8), class132.field2471, class68.field1238, var2, class209.field3984 }, -3);
+            return class166.method1142(new JString[]{LocType.field2830, var2.method623(0, (byte) -127, var2.length() - 8), class132.field2471, class68.field1238, var2, class209.field3984}, -3);
         } else if (var2.length() > 6) {
-            return class166.method1142(new JString[] { class36.field644, var2.method623(0, (byte) -27, var2.length() - 4), class159.field3073, class68.field1238, var2, class209.field3984 }, -3);
+            return class166.method1142(new JString[]{class36.field644, var2.method623(0, (byte) -27, var2.length() - 4), class159.field3073, class68.field1238, var2, class209.field3984}, -3);
         } else {
-            return class166.method1142(new JString[] { class77.field1370, var2, class120.field2201 }, -3);
+            return class166.method1142(new JString[]{class77.field1370, var2, class120.field2201}, -3);
         }
     }
 

@@ -18,13 +18,13 @@ public class class226 extends class136 {
     public static int field4246 = 0;
 
     @OriginalMember(owner = "client!uh", name = "R", descriptor = "Li;")
-    private static JString REMOVEIGNORE2 = class208.method1425(105, " from your ignore list first)3");
+    private static JString REMOVEIGNORE2 = class208.method1425(" from your ignore list first)3");
 
     @OriginalMember(owner = "client!uh", name = "Q", descriptor = "Li;")
     public static JString field4247 = REMOVEIGNORE2;
 
     @OriginalMember(owner = "client!uh", name = "U", descriptor = "Li;")
-    public static JString field4251 = class208.method1425(105, "::fps ");
+    public static JString field4251 = class208.method1425("::fps ");
 
     @OriginalMember(owner = "client!uh", name = "D", descriptor = "I")
     public int field4235;

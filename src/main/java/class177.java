@@ -11,13 +11,13 @@ public class class177 extends Linkable {
     public int[] field3555 = new int[] { -1 };
 
     @OriginalMember(owner = "client!qc", name = "v", descriptor = "Li;")
-    private static JString field3552 = class208.method1425(105, "Allocated memory");
+    private static JString field3552 = class208.method1425("Allocated memory");
 
     @OriginalMember(owner = "client!qc", name = "u", descriptor = "Li;")
     public static JString field3551 = field3552;
 
     @OriginalMember(owner = "client!qc", name = "z", descriptor = "Li;")
-    public static JString field3556 = class208.method1425(105, "<img=0>");
+    public static JString field3556 = class208.method1425("<img=0>");
 
     @OriginalMember(owner = "client!qc", name = "t", descriptor = "I")
     public static int field3550;

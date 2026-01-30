@@ -11,19 +11,19 @@ public class class11 extends class23 {
     private int field167 = 4;
 
     @OriginalMember(owner = "client!aj", name = "S", descriptor = "Li;")
-    private static JString IGNORECANTADDSELF = class208.method1425(105, "You can(Wt add yourself to your own ignore list)3");
+    private static JString IGNORECANTADDSELF = class208.method1425("You can(Wt add yourself to your own ignore list)3");
 
     @OriginalMember(owner = "client!aj", name = "U", descriptor = "Li;")
-    public static JString field155 = class208.method1425(105, "lila:");
+    public static JString field155 = class208.method1425("lila:");
 
     @OriginalMember(owner = "client!aj", name = "Q", descriptor = "Li;")
     public static JString field151 = IGNORECANTADDSELF;
 
     @OriginalMember(owner = "client!aj", name = "Z", descriptor = "Li;")
-    private static JString field160 = class208.method1425(105, "Connection timed out)3");
+    private static JString field160 = class208.method1425("Connection timed out)3");
 
     @OriginalMember(owner = "client!aj", name = "V", descriptor = "Li;")
-    public static JString field156 = class208.method1425(105, "::clientdrop");
+    public static JString field156 = class208.method1425("::clientdrop");
 
     @OriginalMember(owner = "client!aj", name = "fb", descriptor = "Z")
     public static boolean field166 = false;

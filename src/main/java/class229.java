@@ -14,7 +14,7 @@ public class class229 extends class136 {
     public static int[] field4287 = new int[] { 76, 8, 137, 4, 0, 1, 38, 2, 19 };
 
     @OriginalMember(owner = "client!v", name = "G", descriptor = "Li;")
-    public static JString field4288 = class208.method1425(105, "Lade Texturen )2 ");
+    public static JString field4288 = class208.method1425("Lade Texturen )2 ");
 
     @OriginalMember(owner = "client!v", name = "D", descriptor = "I")
     public static int field4285;

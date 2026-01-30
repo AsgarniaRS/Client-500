@@ -20,7 +20,7 @@ public abstract class class50 {
     public static int field930 = 0;
 
     @OriginalMember(owner = "client!ee", name = "i", descriptor = "Li;")
-    public static JString field933 = class208.method1425(105, "_");
+    public static JString field933 = class208.method1425("_");
 
     @OriginalMember(owner = "client!ee", name = "d", descriptor = "I")
     public static int field928;

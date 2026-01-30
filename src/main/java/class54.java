@@ -5,13 +5,13 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class54 {
 
     @OriginalMember(owner = "client!ei", name = "d", descriptor = "Li;")
-    public static JString field1005 = class208.method1425(105, "; version=1; path=)4; domain=");
+    public static JString field1005 = class208.method1425("; version=1; path=)4; domain=");
 
     @OriginalMember(owner = "client!ei", name = "e", descriptor = "Lea;")
     public static Packet field1006 = new Packet(new byte[5000]);
 
     @OriginalMember(owner = "client!ei", name = "i", descriptor = "Li;")
-    public static JString field1010 = class208.method1425(105, "Konfig geladen)3");
+    public static JString field1010 = class208.method1425("Konfig geladen)3");
 
     @OriginalMember(owner = "client!ei", name = "g", descriptor = "[B")
     public static byte[] field1008 = new byte[] { 95, 97, 98, 99, 100, 101, 102, 103, 104, 105, 106, 107, 108, 109, 110, 111, 112, 113, 114, 115, 116, 117, 118, 119, 120, 121, 122, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57 };
@@ -20,7 +20,7 @@ public class class54 {
     public static int field1012 = 0;
 
     @OriginalMember(owner = "client!ei", name = "l", descriptor = "Li;")
-    private static JString field1013 = class208.method1425(105, "wishes to trade with you)3");
+    private static JString field1013 = class208.method1425("wishes to trade with you)3");
 
     @OriginalMember(owner = "client!ei", name = "f", descriptor = "Li;")
     public static JString field1007 = field1013;

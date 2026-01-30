@@ -1,24 +1,25 @@
-import java.io.IOException;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.io.IOException;
 
 @OriginalClass("client!ac")
 public class class4 extends class136 {
 
     @OriginalMember(owner = "client!ac", name = "H", descriptor = "Li;")
-    private static JString field50 = class208.method1425(105, "Invalid loginserver requested)3");
+    private static JString field50 = class208.method1425("Invalid loginserver requested)3");
 
     @OriginalMember(owner = "client!ac", name = "N", descriptor = "Li;")
     public static JString field56 = field50;
 
     @OriginalMember(owner = "client!ac", name = "U", descriptor = "Li;")
-    public static JString field63 = class208.method1425(105, ")4l");
+    public static JString field63 = class208.method1425(")4l");
 
     @OriginalMember(owner = "client!ac", name = "D", descriptor = "I")
     public static int field46 = 0;
 
     @OriginalMember(owner = "client!ac", name = "T", descriptor = "Li;")
-    public static JString field62 = class208.method1425(105, "Verbindung mit Update)2Server)3)3)3");
+    public static JString field62 = class208.method1425("Verbindung mit Update)2Server)3)3)3");
 
     @OriginalMember(owner = "client!ac", name = "E", descriptor = "I")
     public static int field47;
@@ -62,7 +63,7 @@ public class class4 extends class136 {
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(IIILq;)V")
     public static final void method16(int arg0, int arg1, int arg2, class174 arg3) {
         field61++;
-        if (class247.field4514 != 0 && class247.field4514 != 3) {
+        if (ClientScript.field4514 != 0 && ClientScript.field4514 != 3) {
             return;
         }
         int var4 = arg1 - arg3.field3424 / 2;
@@ -177,7 +178,7 @@ public class class4 extends class136 {
     }
 
     @OriginalMember(owner = "client!ac", name = "a", descriptor = "(ILea;I)V")
-    private final void method22(int arg0, Packet arg1, int arg2) {
+    private void method22(int arg0, Packet arg1, int arg2) {
         field52++;
         if (arg0 == 1) {
             this.field51 = arg1.g1();

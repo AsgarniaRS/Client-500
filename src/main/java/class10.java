@@ -8,7 +8,7 @@ public class class10 {
     public static Js5Local[] field141 = new Js5Local[256];
 
     @OriginalMember(owner = "client!ai", name = "h", descriptor = "Li;")
-    private static JString field148 = class208.method1425(105, "Unexpected loginserver response)3");
+    private static JString field148 = class208.method1425("Unexpected loginserver response)3");
 
     @OriginalMember(owner = "client!ai", name = "b", descriptor = "I")
     public static int field142 = 0;
@@ -20,13 +20,13 @@ public class class10 {
     public static boolean field145 = false;
 
     @OriginalMember(owner = "client!ai", name = "g", descriptor = "Li;")
-    private static JString field147 = class208.method1425(105, "Created gameworld");
+    private static JString field147 = class208.method1425("Created gameworld");
 
     @OriginalMember(owner = "client!ai", name = "d", descriptor = "Li;")
     public static JString field144 = field147;
 
     @OriginalMember(owner = "client!ai", name = "j", descriptor = "Li;")
-    public static JString field150 = class208.method1425(105, "sind fehlgeschlagen)3 Bitte warten Sie 5 Minuten)1");
+    public static JString field150 = class208.method1425("sind fehlgeschlagen)3 Bitte warten Sie 5 Minuten)1");
 
     @OriginalMember(owner = "client!ai", name = "f", descriptor = "I")
     public static int field146;

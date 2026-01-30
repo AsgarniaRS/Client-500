@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class191 extends class218 {
 
     @OriginalMember(owner = "client!rf", name = "Jb", descriptor = "Li;")
-    public static JString field3686 = class208.method1425(105, "Regeln versto-8en hat)3");
+    public static JString field3686 = class208.method1425("Regeln versto-8en hat)3");
 
     @OriginalMember(owner = "client!rf", name = "Gb", descriptor = "I")
     public static int field3683 = 0;

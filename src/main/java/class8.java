@@ -11,13 +11,13 @@ public class class8 {
     public static int[] field116 = new int[50];
 
     @OriginalMember(owner = "client!ag", name = "h", descriptor = "Li;")
-    private static JString field122 = class208.method1425(105, "Your account has been disabled)3");
+    private static JString field122 = class208.method1425("Your account has been disabled)3");
 
     @OriginalMember(owner = "client!ag", name = "c", descriptor = "Li;")
     public static JString field117 = field122;
 
     @OriginalMember(owner = "client!ag", name = "f", descriptor = "Li;")
-    public static JString field120 = class208.method1425(105, "<col=ffff00>");
+    public static JString field120 = class208.method1425("<col=ffff00>");
 
     @OriginalMember(owner = "client!ag", name = "g", descriptor = "I")
     public static int field121 = 0;

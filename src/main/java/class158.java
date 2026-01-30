@@ -8,22 +8,22 @@ public class class158 {
     public static class92 field3040 = new class92(64);
 
     @OriginalMember(owner = "client!of", name = "j", descriptor = "Li;")
-    public static JString field3047 = class208.method1425(105, "p12_full");
+    public static JString field3047 = class208.method1425("p12_full");
 
     @OriginalMember(owner = "client!of", name = "e", descriptor = "Li;")
-    private static JString ATTACK = class208.method1425(105, "Attack");
+    private static JString ATTACK = class208.method1425("Attack");
 
     @OriginalMember(owner = "client!of", name = "f", descriptor = "Li;")
     public static JString field3043 = ATTACK;
 
     @OriginalMember(owner = "client!of", name = "l", descriptor = "Li;")
-    private static JString field3049 = class208.method1425(105, "Ok");
+    private static JString field3049 = class208.method1425("Ok");
 
     @OriginalMember(owner = "client!of", name = "h", descriptor = "Li;")
     public static JString field3045 = field3049;
 
     @OriginalMember(owner = "client!of", name = "m", descriptor = "Li;")
-    public static JString field3050 = class208.method1425(105, "Einloggen");
+    public static JString field3050 = class208.method1425("Einloggen");
 
     @OriginalMember(owner = "client!of", name = "i", descriptor = "I")
     public static volatile int field3046 = 0;

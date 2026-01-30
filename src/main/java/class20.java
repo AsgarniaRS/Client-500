@@ -8,10 +8,10 @@ public class class20 extends class136 {
     public class77 field315;
 
     @OriginalMember(owner = "client!bh", name = "J", descriptor = "Li;")
-    public static JString field316 = class208.method1425(105, "runes");
+    public static JString field316 = class208.method1425("runes");
 
     @OriginalMember(owner = "client!bh", name = "G", descriptor = "Li;")
-    private static JString field314 = class208.method1425(105, "You are standing in a members)2only area)3");
+    private static JString field314 = class208.method1425("You are standing in a members)2only area)3");
 
     @OriginalMember(owner = "client!bh", name = "F", descriptor = "I")
     public static int field313 = 0;
@@ -20,10 +20,10 @@ public class class20 extends class136 {
     public static JString field312 = field314;
 
     @OriginalMember(owner = "client!bh", name = "L", descriptor = "Li;")
-    public static JString field318 = class208.method1425(105, "Musik)2Engine vorbereitet)3");
+    public static JString field318 = class208.method1425("Musik)2Engine vorbereitet)3");
 
     @OriginalMember(owner = "client!bh", name = "N", descriptor = "Li;")
-    public static JString field320 = class208.method1425(105, "Welt");
+    public static JString field320 = class208.method1425("Welt");
 
     @OriginalMember(owner = "client!bh", name = "M", descriptor = "Li;")
     public static JString field319 = null;

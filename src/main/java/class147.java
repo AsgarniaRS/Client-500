@@ -6,7 +6,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class147 {
 
     @OriginalMember(owner = "client!ne", name = "c", descriptor = "Li;")
-    public static JString field2756 = class208.method1425(105, "Ausw-=hlen");
+    public static JString field2756 = class208.method1425("Ausw-=hlen");
 
     @OriginalMember(owner = "client!ne", name = "f", descriptor = "I")
     public static int field2759 = 0;

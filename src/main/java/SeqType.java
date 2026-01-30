@@ -1,6 +1,7 @@
-import java.awt.Component;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.awt.*;
 
 @OriginalClass("client!k")
 public class SeqType extends class136 {
@@ -39,16 +40,16 @@ public class SeqType extends class136 {
     public static short[] field1970 = new short[256];
 
     @OriginalMember(owner = "client!k", name = "F", descriptor = "Li;")
-    private static JString field1963 = class208.method1425(105, "as it was used to break our rules)3");
+    private static JString field1963 = class208.method1425("as it was used to break our rules)3");
 
     @OriginalMember(owner = "client!k", name = "S", descriptor = "Li;")
-    public static JString field1975 = class208.method1425(105, " x ");
+    public static JString field1975 = class208.method1425(" x ");
 
     @OriginalMember(owner = "client!k", name = "gb", descriptor = "Li;")
-    private static JString field1989 = class208.method1425(105, "Please remove ");
+    private static JString field1989 = class208.method1425("Please remove ");
 
     @OriginalMember(owner = "client!k", name = "bb", descriptor = "Li;")
-    public static JString field1984 = class208.method1425(105, "; Expires=");
+    public static JString field1984 = class208.method1425("; Expires=");
 
     @OriginalMember(owner = "client!k", name = "Q", descriptor = "Li;")
     public static JString field1973 = field1989;
@@ -60,10 +61,10 @@ public class SeqType extends class136 {
     public static JString field2000 = field1963;
 
     @OriginalMember(owner = "client!k", name = "nb", descriptor = "Li;")
-    public static JString field1996 = class208.method1425(105, "settings");
+    public static JString field1996 = class208.method1425("settings");
 
     @OriginalMember(owner = "client!k", name = "D", descriptor = "Li;")
-    public static JString field1961 = class208.method1425(105, ":");
+    public static JString field1961 = class208.method1425(":");
 
     @OriginalMember(owner = "client!k", name = "H", descriptor = "I")
     public static int field1965;
@@ -186,7 +187,7 @@ public class SeqType extends class136 {
         if (arg4 != -91) {
             method747(-47, -61, 125, -122, 38);
         }
-        if (class247.field4514 < 3) {
+        if (ClientScript.field4514 < 3) {
             ((class169) EnumType.field887).method1165(arg1, arg2, arg3.field3382, arg3.field3424, EnumType.field887.field3656 / 2, EnumType.field887.field3654 / 2, class207.field3932, 256, arg3.field3404, arg3.field3423);
         } else {
             class72.method491(arg1, arg2, 0, arg3.field3404, arg3.field3423);

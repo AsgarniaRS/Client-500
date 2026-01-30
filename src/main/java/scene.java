@@ -35,10 +35,10 @@ public class scene extends class218 {
     private short field769 = 0;
 
     @OriginalMember(owner = "client!dj", name = "Rb", descriptor = "Li;")
-    public static JString field751 = class208.method1425(105, "::autoshadow on");
+    public static JString field751 = class208.method1425("::autoshadow on");
 
     @OriginalMember(owner = "client!dj", name = "hc", descriptor = "Li;")
-    public static JString field767 = class208.method1425(105, "Texturen geladen)3");
+    public static JString field767 = class208.method1425("Texturen geladen)3");
 
     @OriginalMember(owner = "client!dj", name = "Hb", descriptor = "I")
     public int field741;

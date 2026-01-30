@@ -5,19 +5,19 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class152 extends class23 {
 
     @OriginalMember(owner = "client!o", name = "T", descriptor = "Li;")
-    public static JString field2947 = class208.method1425(105, "Anmelde)2Limit -Uberschritten)3");
+    public static JString field2947 = class208.method1425("Anmelde)2Limit -Uberschritten)3");
 
     @OriginalMember(owner = "client!o", name = "W", descriptor = "[[I")
     public static int[][] field2950 = new int[104][104];
 
     @OriginalMember(owner = "client!o", name = "S", descriptor = "Li;")
-    private static JString field2946 = class208.method1425(105, "button near the top of that page)3");
+    private static JString field2946 = class208.method1425("button near the top of that page)3");
 
     @OriginalMember(owner = "client!o", name = "R", descriptor = "Li;")
     public static JString field2945 = field2946;
 
     @OriginalMember(owner = "client!o", name = "Y", descriptor = "Li;")
-    public static JString field2952 = class208.method1425(105, "mem=");
+    public static JString field2952 = class208.method1425("mem=");
 
     @OriginalMember(owner = "client!o", name = "Q", descriptor = "I")
     public static int field2944;

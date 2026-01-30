@@ -20,7 +20,7 @@ public class class122 extends class50 {
     public static class174 field2219 = null;
 
     @OriginalMember(owner = "client!lb", name = "r", descriptor = "Li;")
-    private static JString field2227 = class208.method1425(105, "You need a members account to login to this world)3");
+    private static JString field2227 = class208.method1425("You need a members account to login to this world)3");
 
     @OriginalMember(owner = "client!lb", name = "s", descriptor = "Li;")
     public static JString field2228 = field2227;

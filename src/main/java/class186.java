@@ -33,13 +33,13 @@ public class class186 extends class23 {
     private int field3636 = 409;
 
     @OriginalMember(owner = "client!ra", name = "V", descriptor = "Li;")
-    public static JString field3629 = class208.method1425(105, "sch-Utteln:");
+    public static JString field3629 = class208.method1425("sch-Utteln:");
 
     @OriginalMember(owner = "client!ra", name = "Z", descriptor = "J")
     public static volatile long field3633 = 0L;
 
     @OriginalMember(owner = "client!ra", name = "eb", descriptor = "Li;")
-    public static JString field3638 = class208.method1425(105, "<col=ff3000>");
+    public static JString field3638 = class208.method1425("<col=ff3000>");
 
     @OriginalMember(owner = "client!ra", name = "R", descriptor = "Ltc;")
     public static class210 field3625 = new class210();

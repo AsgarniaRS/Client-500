@@ -12,49 +12,49 @@ public class class53 implements KeyListener, FocusListener {
     public static volatile boolean field971 = true;
 
     @OriginalMember(owner = "client!eh", name = "k", descriptor = "Li;")
-    private static JString field977 = class208.method1425(105, "Jun");
+    private static JString field977 = class208.method1425("Jun");
 
     @OriginalMember(owner = "client!eh", name = "n", descriptor = "Li;")
-    private static JString field980 = class208.method1425(105, "Sep");
+    private static JString field980 = class208.method1425("Sep");
 
     @OriginalMember(owner = "client!eh", name = "l", descriptor = "Li;")
-    private static JString field978 = class208.method1425(105, "Aug");
+    private static JString field978 = class208.method1425("Aug");
 
     @OriginalMember(owner = "client!eh", name = "s", descriptor = "Li;")
-    private static JString field985 = class208.method1425(105, "Dec");
+    private static JString field985 = class208.method1425("Dec");
 
     @OriginalMember(owner = "client!eh", name = "r", descriptor = "Li;")
-    private static JString field984 = class208.method1425(105, "Please wait 5 minutes before trying again)3");
+    private static JString field984 = class208.method1425("Please wait 5 minutes before trying again)3");
 
     @OriginalMember(owner = "client!eh", name = "u", descriptor = "Li;")
-    private static JString field987 = class208.method1425(105, "May");
+    private static JString field987 = class208.method1425("May");
 
     @OriginalMember(owner = "client!eh", name = "v", descriptor = "Li;")
-    private static JString field988 = class208.method1425(105, "Jan");
+    private static JString field988 = class208.method1425("Jan");
 
     @OriginalMember(owner = "client!eh", name = "m", descriptor = "Li;")
-    public static JString field979 = class208.method1425(105, ")1");
+    public static JString field979 = class208.method1425(")1");
 
     @OriginalMember(owner = "client!eh", name = "w", descriptor = "Li;")
-    private static JString field989 = class208.method1425(105, "Oct");
+    private static JString field989 = class208.method1425("Oct");
 
     @OriginalMember(owner = "client!eh", name = "B", descriptor = "[S")
     public static short[] field994 = new short[500];
 
     @OriginalMember(owner = "client!eh", name = "A", descriptor = "Li;")
-    public static JString field993 = class208.method1425(105, "Fps:");
+    public static JString field993 = class208.method1425("Fps:");
 
     @OriginalMember(owner = "client!eh", name = "E", descriptor = "Z")
     public static boolean field997 = false;
 
     @OriginalMember(owner = "client!eh", name = "o", descriptor = "Li;")
-    private static JString field981 = class208.method1425(105, "Mar");
+    private static JString field981 = class208.method1425("Mar");
 
     @OriginalMember(owner = "client!eh", name = "y", descriptor = "Li;")
-    private static JString field991 = class208.method1425(105, "Nov");
+    private static JString field991 = class208.method1425("Nov");
 
     @OriginalMember(owner = "client!eh", name = "t", descriptor = "Li;")
-    private static JString field986 = class208.method1425(105, "This computers address has been blocked");
+    private static JString field986 = class208.method1425("This computers address has been blocked");
 
     @OriginalMember(owner = "client!eh", name = "q", descriptor = "Li;")
     public static JString field983 = field986;
@@ -63,19 +63,19 @@ public class class53 implements KeyListener, FocusListener {
     public static class174 field967 = null;
 
     @OriginalMember(owner = "client!eh", name = "C", descriptor = "Li;")
-    private static JString field995 = class208.method1425(105, "Feb");
+    private static JString field995 = class208.method1425("Feb");
 
     @OriginalMember(owner = "client!eh", name = "G", descriptor = "[I")
     public static int[] field999 = new int[1000];
 
     @OriginalMember(owner = "client!eh", name = "D", descriptor = "Li;")
-    private static JString field996 = class208.method1425(105, "Jul");
+    private static JString field996 = class208.method1425("Jul");
 
     @OriginalMember(owner = "client!eh", name = "F", descriptor = "Li;")
     public static JString field998 = field984;
 
     @OriginalMember(owner = "client!eh", name = "d", descriptor = "Li;")
-    private static JString field970 = class208.method1425(105, "Apr");
+    private static JString field970 = class208.method1425("Apr");
 
     @OriginalMember(owner = "client!eh", name = "I", descriptor = "[I")
     public static int[] field1001 = new int[] { 0, 0, 2, 0, 0, 2, 1, 1, 0 };

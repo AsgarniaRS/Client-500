@@ -13,13 +13,13 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static boolean[] field255 = new boolean[] { true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, true, false };
 
     @OriginalMember(owner = "client!be", name = "j", descriptor = "Li;")
-    public static JString field259 = class208.method1425(105, "<col=00ffff>");
+    public static JString field259 = class208.method1425("<col=00ffff>");
 
     @OriginalMember(owner = "client!be", name = "a", descriptor = "Li;")
-    public static JString field250 = class208.method1425(105, "Neuer Benutzer");
+    public static JString field250 = class208.method1425("Neuer Benutzer");
 
     @OriginalMember(owner = "client!be", name = "k", descriptor = "Li;")
-    public static JString field260 = class208.method1425(105, "mapscene");
+    public static JString field260 = class208.method1425("mapscene");
 
     @OriginalMember(owner = "client!be", name = "p", descriptor = "I")
     public static int cacheMinCount = 0;
@@ -28,13 +28,13 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
     public static int field261 = 0;
 
     @OriginalMember(owner = "client!be", name = "w", descriptor = "Li;")
-    private static JString field272 = class208.method1425(105, "scroll:");
+    private static JString field272 = class208.method1425("scroll:");
 
     @OriginalMember(owner = "client!be", name = "r", descriptor = "Li;")
     public static JString field267 = field272;
 
     @OriginalMember(owner = "client!be", name = "v", descriptor = "Li;")
-    public static JString field271 = class208.method1425(105, "Sie haben gerade eine andere Welt verlassen)3");
+    public static JString field271 = class208.method1425("Sie haben gerade eine andere Welt verlassen)3");
 
     @OriginalMember(owner = "client!be", name = "n", descriptor = "Li;")
     public static JString field263 = field272;
