@@ -118,7 +118,7 @@ public class class80 extends class23 {
 		class192 var2 = (class192) class31.field495.get(-1, ((long) arg1.parentId << 32) + ((long) arg1.field3408));
 		field1438++;
 		if (arg0 == -881710560) {
-			return var2 == null ? arg1.field3496 : var2.field3700;
+			return var2 == null ? arg1.eventCode : var2.field3700;
 		} else {
 			return 108;
 		}

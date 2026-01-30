@@ -80,38 +80,38 @@ public class class57 extends class23 {
 		int var5 = arg3.field3382;
 		if (~arg3.field3465 != -1) {
 			if (~arg3.field3465 == -2) {
-				arg3.field3382 = arg2 - arg3.field3503;
+				arg3.field3382 = arg2 - arg3.height;
 			} else if (arg3.field3465 == 2) {
-				arg3.field3382 = arg3.field3503 * arg2 >> 14;
+				arg3.field3382 = arg3.height * arg2 >> 14;
 			} else if (arg3.field3465 == 3) {
 				if (~arg3.type != -3) {
 					if (~arg3.type == -8) {
-						arg3.field3382 = (arg3.field3503 + -1) * arg3.field3468 + arg3.field3503 * 115;
+						arg3.field3382 = (arg3.height + -1) * arg3.field3468 + arg3.height * 115;
 					}
 				} else {
-					arg3.field3382 = (arg3.field3503 + -1) * arg3.field3468 + arg3.field3503 * 32;
+					arg3.field3382 = (arg3.height + -1) * arg3.field3468 + arg3.height * 32;
 				}
 			}
 		} else {
-			arg3.field3382 = arg3.field3503;
+			arg3.field3382 = arg3.height;
 		}
 		int var6 = arg3.field3424;
 		if (arg3.field3396 != 0) {
 			if (~arg3.field3396 == -2) {
-				arg3.field3424 = -arg3.field3420 + arg1;
+				arg3.field3424 = -arg3.width + arg1;
 			} else if (~arg3.field3396 == -3) {
-				arg3.field3424 = arg3.field3420 * arg1 >> 14;
+				arg3.field3424 = arg3.width * arg1 >> 14;
 			} else if (arg3.field3396 == 3) {
 				if (arg3.type != 2) {
 					if (~arg3.type == -8) {
-						arg3.field3424 = (arg3.field3420 - 1) * arg3.field3510 + arg3.field3420 * 12;
+						arg3.field3424 = (arg3.width - 1) * arg3.field3510 + arg3.width * 12;
 					}
 				} else {
-					arg3.field3424 = (arg3.field3420 + -1) * arg3.field3510 + arg3.field3420 * 32;
+					arg3.field3424 = (arg3.width + -1) * arg3.field3510 + arg3.width * 32;
 				}
 			}
 		} else {
-			arg3.field3424 = arg3.field3420;
+			arg3.field3424 = arg3.width;
 		}
 		if (arg4 >= -93) {
 			method420(45);

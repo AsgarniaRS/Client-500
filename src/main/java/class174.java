@@ -44,7 +44,7 @@ public class class174 {
 	private int field3378 = 1;
 
 	@OriginalMember(owner = "client!q", name = "v", descriptor = "I")
-	public int field3388 = -1;
+	public int modelAnim2 = -1;
 
 	@OriginalMember(owner = "client!q", name = "ab", descriptor = "I")
 	public int field3419 = 0;
@@ -53,7 +53,7 @@ public class class174 {
 	public int field3393 = 0;
 
 	@OriginalMember(owner = "client!q", name = "k", descriptor = "I")
-	public int field3377 = 0;
+	public int scrollHeight = 0;
 
 	@OriginalMember(owner = "client!q", name = "X", descriptor = "I")
 	public int colour = 0;
@@ -62,10 +62,10 @@ public class class174 {
 	public int field3381 = 0;
 
 	@OriginalMember(owner = "client!q", name = "Db", descriptor = "Li;")
-	public JString field3448 = class66.field1188;
+	public JString text2 = class66.field1188;
 
 	@OriginalMember(owner = "client!q", name = "bb", descriptor = "I")
-	public int field3420 = 0;
+	public int width = 0;
 
 	@OriginalMember(owner = "client!q", name = "s", descriptor = "Li;")
 	public JString text = class66.field1188;
@@ -101,7 +101,7 @@ public class class174 {
 	public int field3376 = 0;
 
 	@OriginalMember(owner = "client!q", name = "Qb", descriptor = "Li;")
-	public JString field3461 = class66.field1188;
+	public JString targetBase = class66.field1188;
 
 	@OriginalMember(owner = "client!q", name = "Gb", descriptor = "Z")
 	public boolean hashook = false;
@@ -110,7 +110,7 @@ public class class174 {
 	public int field3415 = 0;
 
 	@OriginalMember(owner = "client!q", name = "S", descriptor = "I")
-	public int field3411 = -1;
+	public int model1Id = -1;
 
 	@OriginalMember(owner = "client!q", name = "Xb", descriptor = "I")
 	public int field3468 = 0;
@@ -134,19 +134,19 @@ public class class174 {
 	public boolean field3480 = false;
 
 	@OriginalMember(owner = "client!q", name = "N", descriptor = "I")
-	public int field3406 = -1;
+	public int modelAnim = -1;
 
 	@OriginalMember(owner = "client!q", name = "pb", descriptor = "I")
 	public int field3434 = 0;
 
 	@OriginalMember(owner = "client!q", name = "Rb", descriptor = "Li;")
-	public JString field3462 = class158.field3045;
+	public JString buttonText = class158.field3045;
 
 	@OriginalMember(owner = "client!q", name = "lc", descriptor = "I")
 	public int trans = 0;
 
 	@OriginalMember(owner = "client!q", name = "d", descriptor = "I")
-	public int field3370 = 0;
+	public int buttonType = 0;
 
 	@OriginalMember(owner = "client!q", name = "sb", descriptor = "Z")
 	public boolean shadow = false;
@@ -188,7 +188,7 @@ public class class174 {
 	public int field3435 = -1;
 
 	@OriginalMember(owner = "client!q", name = "zb", descriptor = "I")
-	private int field3444 = -1;
+	private int model2Id = -1;
 
 	@OriginalMember(owner = "client!q", name = "Ob", descriptor = "Li;")
 	public JString field3459 = class66.field1188;
@@ -212,13 +212,13 @@ public class class174 {
 	public int field3427 = 0;
 
 	@OriginalMember(owner = "client!q", name = "kc", descriptor = "I")
-	public int field3481 = 0;
+	public int hAlign = 0;
 
 	@OriginalMember(owner = "client!q", name = "Tb", descriptor = "I")
 	public int field3464 = -1;
 
 	@OriginalMember(owner = "client!q", name = "T", descriptor = "Z")
-	public boolean field3412 = false;
+	public boolean v3 = false;
 
 	@OriginalMember(owner = "client!q", name = "bc", descriptor = "Z")
 	public boolean field3472 = false;
@@ -260,7 +260,7 @@ public class class174 {
 	public int field3432 = 1;
 
 	@OriginalMember(owner = "client!q", name = "Gc", descriptor = "I")
-	public int field3503 = 0;
+	public int height = 0;
 
 	@OriginalMember(owner = "client!q", name = "Sc", descriptor = "I")
 	public int field3515 = 0;
@@ -272,7 +272,7 @@ public class class174 {
 	public int field3519 = 0;
 
 	@OriginalMember(owner = "client!q", name = "zc", descriptor = "I")
-	public int field3496 = 0;
+	public int eventCode = 0;
 
 	@OriginalMember(owner = "client!q", name = "lb", descriptor = "[I")
 	public static int[] field3430 = new int[2048];
@@ -344,7 +344,7 @@ public class class174 {
 	public int[] field3390;
 
 	@OriginalMember(owner = "client!q", name = "y", descriptor = "[I")
-	public int[] field3391;
+	public int[] invBackground;
 
 	@OriginalMember(owner = "client!q", name = "G", descriptor = "[I")
 	public int[] field3399;
@@ -380,7 +380,7 @@ public class class174 {
 	public JString[] opNames;
 
 	@OriginalMember(owner = "client!q", name = "Qc", descriptor = "[Li;")
-	public JString[] field3513;
+	public JString[] iop;
 
 	@OriginalMember(owner = "client!q", name = "f", descriptor = "[Ljava/lang/Object;")
 	public Object[] field3372;
@@ -499,10 +499,10 @@ public class class174 {
 		int var7;
 		if (arg3) {
 			var6 = this.field3378;
-			var7 = this.field3444;
+			var7 = this.model2Id;
 		} else {
 			var6 = this.field3432;
-			var7 = this.field3411;
+			var7 = this.model1Id;
 		}
 		if (var6 == 0) {
 			return null;
@@ -596,7 +596,7 @@ public class class174 {
 			this.field3423[var3] = var5 - var4;
 		}
 		if (arg0 != -15543) {
-			this.method1257(-88, null);
+			this.decode(null);
 		}
 		return true;
 	}
@@ -613,10 +613,10 @@ public class class174 {
 	public final class188 method1250(int arg0, byte arg1) {
 		class248.field4551 = false;
 		field3493++;
-		if (arg0 < 0 || this.field3391.length <= arg0) {
+		if (arg0 < 0 || this.invBackground.length <= arg0) {
 			return null;
 		} else if (arg1 == -120) {
-			int var3 = this.field3391[arg0];
+			int var3 = this.invBackground[arg0];
 			if (var3 == -1) {
 				return null;
 			}
@@ -685,14 +685,14 @@ public class class174 {
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(BLea;)V")
 	public final void method1252(byte arg0, Packet buf) {
 		buf.pos++;
-		this.field3412 = true;
+		this.v3 = true;
 		field3478++;
 		this.type = buf.g1();
 		this.field3441 = buf.g2();
 		this.field3393 = buf.g2b();
 		this.field3516 = buf.g2b();
-		this.field3503 = buf.g2();
-		this.field3420 = buf.g2();
+		this.height = buf.g2();
+		this.width = buf.g2();
 		this.field3465 = buf.g1b();
 		this.field3396 = buf.g1b();
 		this.field3369 = buf.g1b();
@@ -709,7 +709,7 @@ public class class174 {
 		if (this.type == 0) {
 			// layer
 			this.field3386 = buf.g2();
-			this.field3377 = buf.g2();
+			this.scrollHeight = buf.g2();
 			this.field3472 = buf.g1() == 1;
 		}
 
@@ -730,9 +730,9 @@ public class class174 {
 		if (this.type == 6) {
 			this.field3432 = 1;
 
-			this.field3411 = buf.g2();
-			if (this.field3411 == 65535) {
-				this.field3411 = -1;
+			this.model1Id = buf.g2();
+			if (this.model1Id == 65535) {
+				this.model1Id = -1;
 			}
 
 			this.field3434 = buf.g2b();
@@ -742,9 +742,9 @@ public class class174 {
 			this.field3519 = buf.g2();
 			this.field3487 = buf.g2();
 
-			this.field3406 = buf.g2();
-			if (this.field3406 == 65535) {
-				this.field3406 = -1;
+			this.modelAnim = buf.g2();
+			if (this.modelAnim == 65535) {
+				this.modelAnim = -1;
 			}
 
 			this.field3405 = buf.g1() == 1;
@@ -767,7 +767,7 @@ public class class174 {
 
 			this.text = buf.gjstr();
 			this.field3398 = buf.g1();
-			this.field3481 = buf.g1();
+			this.hAlign = buf.g1();
 			this.field3471 = buf.g1();
 			this.shadow = buf.g1() == 1;
 			this.colour = buf.g4();
@@ -787,7 +787,7 @@ public class class174 {
 			this.field3494 = buf.g1() == 1;
 		}
 
-		this.field3496 = buf.g3();
+		this.eventCode = buf.g3();
 		int var4 = buf.g1();
 
 		if (var4 > 0) {
@@ -856,7 +856,7 @@ public class class174 {
 			return null;
 		}
 		if (arg0 != -2) {
-			this.field3448 = null;
+			this.text2 = null;
 		}
 		class26 var3 = (class26) class157.field3022.method666((long) this.font, 0);
 		if (var3 != null) {
@@ -910,220 +910,268 @@ public class class174 {
 	}
 
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(ILea;)V")
-	public final void method1257(int arg0, Packet arg1) {
-		field3402++;
-		this.field3412 = false;
-		this.type = arg1.g1();
-		this.field3370 = arg1.g1();
-		this.field3441 = arg1.g2();
-		this.field3393 = arg1.g2b();
-		this.field3516 = arg1.g2b();
-		this.field3503 = arg1.g2();
-		this.field3420 = arg1.g2();
+	public final void decode(Packet buf) {
+		this.v3 = false;
+
+		this.type = buf.g1();
+		this.buttonType = buf.g1();
+		this.field3441 = buf.g2();
+		this.field3393 = buf.g2b();
+		this.field3516 = buf.g2b();
+		this.height = buf.g2();
+		this.width = buf.g2();
+
 		this.field3396 = 0;
 		this.field3465 = 0;
 		this.field3369 = 0;
 		this.field3453 = 0;
-		this.trans = arg1.g1();
-		this.layerId = arg1.g2();
+		this.trans = buf.g1();
+
+		this.layerId = buf.g2();
 		if (this.layerId == 65535) {
 			this.layerId = -1;
 		} else {
 			this.layerId = (this.parentId & 0xFFFF0000) + this.layerId;
 		}
-		this.field3426 = arg1.g2();
+
+		this.field3426 = buf.g2();
 		if (this.field3426 == 65535) {
 			this.field3426 = -1;
 		}
-		int var3 = arg1.g1();
+
+		int var3 = buf.g1();
 		if (var3 > 0) {
 			this.field3488 = new int[var3];
 			this.field3518 = new int[var3];
 			for (int var4 = 0; var4 < var3; var4++) {
-				this.field3518[var4] = arg1.g1();
-				this.field3488[var4] = arg1.g2();
+				this.field3518[var4] = buf.g1();
+				this.field3488[var4] = buf.g2();
 			}
 		}
-		int var5 = arg1.g1();
+
+		int var5 = buf.g1();
 		if (var5 > 0) {
 			this.field3394 = new int[var5][];
 			for (int var6 = 0; var6 < var5; var6++) {
-				int var7 = arg1.g2();
+				int var7 = buf.g2();
 				this.field3394[var6] = new int[var7];
 				for (int var8 = 0; var8 < var7; var8++) {
-					this.field3394[var6][var8] = arg1.g2();
+					this.field3394[var6][var8] = buf.g2();
 					if (this.field3394[var6][var8] == 65535) {
 						this.field3394[var6][var8] = -1;
 					}
 				}
 			}
 		}
+
 		if (this.type == 0) {
-			this.field3377 = arg1.g2();
-			this.hide = arg1.g1() == 1;
+			// layer
+			this.scrollHeight = buf.g2();
+			this.hide = buf.g1() == 1;
 		}
+
 		if (this.type == 1) {
-			arg1.g2();
-			arg1.g1();
+			// unknown
+			buf.g2();
+			buf.g1();
 		}
+
 		if (this.type == 2) {
-			this.field3390 = new int[this.field3503 * this.field3420];
-			this.field3476 = new int[this.field3503 * this.field3420];
+			// inv
+			this.field3390 = new int[this.height * this.width];
+			this.field3476 = new int[this.height * this.width];
+
 			this.field3396 = 3;
 			this.field3465 = 3;
-			int var9 = arg1.g1();
-			if (var9 == 1) {
-				this.field3496 |= 0x10000000;
+
+			int draggable = buf.g1();
+			if (draggable == 1) {
+				this.eventCode |= 0x10000000;
 			}
-			int var10 = arg1.g1();
-			if (var10 == 1) {
-				this.field3496 |= 0x40000000;
+
+			int interactable = buf.g1();
+			if (interactable == 1) {
+				this.eventCode |= 0x40000000;
 			}
-			int var11 = arg1.g1();
-			if (var11 == 1) {
-				this.field3496 |= Integer.MIN_VALUE;
+
+			int usable = buf.g1();
+			if (usable == 1) {
+				this.eventCode |= Integer.MIN_VALUE;
 			}
-			int var12 = arg1.g1();
-			if (var12 == 1) {
-				this.field3496 |= 0x20000000;
+
+			int swappable = buf.g1();
+			if (swappable == 1) {
+				this.eventCode |= 0x20000000;
 			}
-			this.field3468 = arg1.g1();
-			this.field3510 = arg1.g1();
-			this.field3391 = new int[20];
+
+			this.field3468 = buf.g1();
+			this.field3510 = buf.g1();
+
+			this.invBackground = new int[20];
 			this.field3399 = new int[20];
 			this.field3474 = new int[20];
-			for (int var13 = 0; var13 < 20; var13++) {
-				int var16 = arg1.g1();
-				if (var16 == 1) {
-					this.field3474[var13] = arg1.g2b();
-					this.field3399[var13] = arg1.g2b();
-					this.field3391[var13] = arg1.g4();
+
+			for (int i = 0; i < 20; i++) {
+				int hasGraphic = buf.g1();
+				if (hasGraphic == 1) {
+					this.field3474[i] = buf.g2b();
+					this.field3399[i] = buf.g2b();
+					this.invBackground[i] = buf.g4();
 				} else {
-					this.field3391[var13] = -1;
+					this.invBackground[i] = -1;
 				}
 			}
-			this.field3513 = new JString[5];
-			for (int var14 = 0; var14 < 5; var14++) {
-				JString var15 = arg1.gjstr();
-				if (var15.length() > 0) {
-					this.field3513[var14] = var15;
-					this.field3496 |= 0x1 << var14 + 23;
+
+			this.iop = new JString[5];
+			for (int i = 0; i < 5; i++) {
+				JString op = buf.gjstr();
+				if (op.length() > 0) {
+					this.iop[i] = op;
+					this.eventCode |= 0x1 << i + 23;
 				}
 			}
 		}
 		if (this.type == 3) {
-			this.fill = arg1.g1() == 1;
+			// rect
+			this.fill = buf.g1() == 1;
 		}
 		if (this.type == 4 || this.type == 1) {
-			this.field3481 = arg1.g1();
-			this.field3471 = arg1.g1();
-			this.field3398 = arg1.g1();
-			this.font = arg1.g2();
+			// text || unknown
+			this.hAlign = buf.g1();
+			this.field3471 = buf.g1();
+			this.field3398 = buf.g1();
+
+			this.font = buf.g2();
 			if (this.font == 65535) {
 				this.font = -1;
 			}
-			this.shadow = arg1.g1() == 1;
+
+			this.shadow = buf.g1() == 1;
 		}
+
 		if (this.type == 4) {
-			this.text = arg1.gjstr();
-			this.field3448 = arg1.gjstr();
+			// text
+			this.text = buf.gjstr();
+			this.text2 = buf.gjstr();
 		}
+
 		if (this.type == 1 || this.type == 3 || this.type == 4) {
-			this.colour = arg1.g4();
+			// unknown || rect || text
+			this.colour = buf.g4();
 		}
+
 		if (this.type == 3 || this.type == 4) {
-			this.field3515 = arg1.g4();
-			this.field3433 = arg1.g4();
-			this.field3376 = arg1.g4();
+			// rect || text
+			this.field3515 = buf.g4();
+			this.field3433 = buf.g4();
+			this.field3376 = buf.g4();
 		}
+
 		if (this.type == 5) {
-			this.field3475 = arg1.g4();
-			this.field3435 = arg1.g4();
+			// graphic
+			this.field3475 = buf.g4();
+			this.field3435 = buf.g4();
 		}
+
 		if (this.type == 6) {
+			// model
 			this.field3432 = 1;
-			this.field3411 = arg1.g2();
+			this.model1Id = buf.g2();
 			this.field3378 = 1;
-			if (this.field3411 == 65535) {
-				this.field3411 = -1;
+			if (this.model1Id == 65535) {
+				this.model1Id = -1;
 			}
-			this.field3444 = arg1.g2();
-			if (this.field3444 == 65535) {
-				this.field3444 = -1;
+
+			this.model2Id = buf.g2();
+			if (this.model2Id == 65535) {
+				this.model2Id = -1;
 			}
-			this.field3406 = arg1.g2();
-			if (this.field3406 == 65535) {
-				this.field3406 = -1;
+
+			this.modelAnim = buf.g2();
+			if (this.modelAnim == 65535) {
+				this.modelAnim = -1;
 			}
-			this.field3388 = arg1.g2();
-			if (this.field3388 == 65535) {
-				this.field3388 = -1;
+
+			this.modelAnim2 = buf.g2();
+			if (this.modelAnim2 == 65535) {
+				this.modelAnim2 = -1;
 			}
-			this.field3487 = arg1.g2();
-			this.field3457 = arg1.g2();
-			this.field3511 = arg1.g2();
+
+			this.field3487 = buf.g2();
+			this.field3457 = buf.g2();
+			this.field3511 = buf.g2();
 		}
-		if (arg0 >= -47) {
-			return;
-		}
+
 		if (this.type == 7) {
+			// invtext
 			this.field3396 = 3;
-			this.field3390 = new int[this.field3503 * this.field3420];
+			this.field3390 = new int[this.height * this.width];
 			this.field3465 = 3;
-			this.field3476 = new int[this.field3503 * this.field3420];
-			this.field3481 = arg1.g1();
-			this.font = arg1.g2();
+			this.field3476 = new int[this.height * this.width];
+
+			this.hAlign = buf.g1();
+			this.font = buf.g2();
 			if (this.font == 65535) {
 				this.font = -1;
 			}
-			this.shadow = arg1.g1() == 1;
-			this.colour = arg1.g4();
-			this.field3468 = arg1.g2b();
-			this.field3510 = arg1.g2b();
-			int var17 = arg1.g1();
-			this.field3513 = new JString[5];
-			if (var17 == 1) {
-				this.field3496 |= 0x40000000;
+
+			this.shadow = buf.g1() == 1;
+			this.colour = buf.g4();
+			this.field3468 = buf.g2b();
+			this.field3510 = buf.g2b();
+
+			int interactable = buf.g1();
+			this.iop = new JString[5];
+
+			if (interactable == 1) {
+				this.eventCode |= 0x40000000;
 			}
-			for (int var18 = 0; var18 < 5; var18++) {
-				JString var19 = arg1.gjstr();
-				if (var19.length() > 0) {
-					this.field3513[var18] = var19;
-					this.field3496 |= 0x1 << var18 + 23;
+
+			for (int i = 0; i < 5; i++) {
+				JString op = buf.gjstr();
+				if (op.length() > 0) {
+					this.iop[i] = op;
+					this.eventCode |= 0x1 << i + 23;
 				}
 			}
 		}
 		if (this.type == 8) {
-			this.text = arg1.gjstr();
+			// tooltip
+			this.text = buf.gjstr();
 		}
-		if (this.field3370 == 2 || this.type == 2) {
-			this.targetVerb = arg1.gjstr();
-			this.field3461 = arg1.gjstr();
-			int var20 = arg1.g2() & 0x3F;
-			this.field3496 |= var20 << 11;
+		if (this.buttonType == 2 || this.type == 2) {
+			this.targetVerb = buf.gjstr();
+			this.targetBase = buf.gjstr();
+
+			int targetMask = buf.g2() & 0x3F;
+			this.eventCode |= targetMask << 11;
 		}
-		if (this.field3370 == 1 || this.field3370 == 4 || this.field3370 == 5 || this.field3370 == 6) {
-			this.field3462 = arg1.gjstr();
-			if (this.field3462.length() == 0) {
-				if (this.field3370 == 1) {
-					this.field3462 = class158.field3045;
+
+		if (this.buttonType == 1 || this.buttonType == 4 || this.buttonType == 5 || this.buttonType == 6) {
+			this.buttonText = buf.gjstr();
+
+			if (this.buttonText.length() == 0) {
+				if (this.buttonType == 1) {
+					this.buttonText = class158.field3045;
 				}
-				if (this.field3370 == 4) {
-					this.field3462 = class216.field4053;
+				if (this.buttonType == 4) {
+					this.buttonText = class216.field4053;
 				}
-				if (this.field3370 == 5) {
-					this.field3462 = class216.field4053;
+				if (this.buttonType == 5) {
+					this.buttonText = class216.field4053;
 				}
-				if (this.field3370 == 6) {
-					this.field3462 = class189.field3667;
+				if (this.buttonType == 6) {
+					this.buttonText = class189.field3667;
 				}
 			}
 		}
-		if (this.field3370 == 1 || this.field3370 == 4 || this.field3370 == 5) {
-			this.field3496 |= 0x400000;
+
+		if (this.buttonType == 1 || this.buttonType == 4 || this.buttonType == 5) {
+			this.eventCode |= 0x400000;
 		}
-		if (this.field3370 == 6) {
-			this.field3496 |= 0x1;
+
+		if (this.buttonType == 6) {
+			this.eventCode |= 0x1;
 		}
 	}
 }

@@ -155,7 +155,7 @@ public class class165 {
 				}
 				var11.field3373 = class117.field2115;
 				var11.field3384 = var12;
-				if (!var11.field3412 || !class71.method475(0, var11)) {
+				if (!var11.v3 || !class71.method475(0, var11)) {
 					if (var11.field3441 > 0) {
 						class16.method78(6479, var11);
 					}
@@ -217,7 +217,7 @@ public class class165 {
 						var22 = var25 >= arg5 ? arg5 : var25;
 						var21 = arg9 <= var24 ? arg9 : var24;
 					}
-					if (!var11.field3412 || var23 < var21 && var20 < var22) {
+					if (!var11.v3 || var23 < var21 && var20 < var22) {
 						if (var11.field3441 != 0) {
 							if (var11.field3441 == 1337) {
 								class58.field1101 = var13;
@@ -267,12 +267,12 @@ public class class165 {
 							class12.method65(var27 - var14, -var13 + var26, var11, (byte) 74);
 						}
 						if (var11.type == 0) {
-							if (!var11.field3412 && class71.method475(0, var11) && class65.field1177 != var11) {
+							if (!var11.v3 && class71.method475(0, var11) && class65.field1177 != var11) {
 								continue;
 							}
-							if (!var11.field3412) {
-								if (var11.field3417 > var11.field3377 - var11.field3424) {
-									var11.field3417 = var11.field3377 - var11.field3424;
+							if (!var11.v3) {
+								if (var11.field3417 > var11.scrollHeight - var11.field3424) {
+									var11.field3417 = var11.scrollHeight - var11.field3424;
 								}
 								if (var11.field3417 < 0) {
 									var11.field3417 = 0;
@@ -296,14 +296,14 @@ public class class165 {
 							class173.method1237();
 						}
 						if (class113.field2045[var12] || class134.field2505 > 1) {
-							if (var11.type == 0 && !var11.field3412 && var11.field3424 < var11.field3377) {
-								class241.method1594(var11.field3417, 17, var11.field3424, var14, var11.field3377, var13 + var11.field3382);
+							if (var11.type == 0 && !var11.v3 && var11.field3424 < var11.scrollHeight) {
+								class241.method1594(var11.field3417, 17, var11.field3424, var14, var11.scrollHeight, var13 + var11.field3382);
 							}
 							if (var11.type != 1) {
 								if (var11.type == 2) {
 									int var29 = 0;
-									for (int var30 = 0; var30 < var11.field3420; var30++) {
-										for (int var31 = 0; var31 < var11.field3503; var31++) {
+									for (int var30 = 0; var30 < var11.width; var30++) {
+										for (int var31 = 0; var31 < var11.height; var31++) {
 											int var32 = var14 + (var11.field3510 + 32) * var30;
 											int var33 = var13 + (var11.field3468 + 32) * var31;
 											if (var29 < 20) {
@@ -356,13 +356,13 @@ public class class165 {
 																class48.field894 += var44;
 																class200.method1373(65280, var41);
 															}
-															if (var32 + var40 + 32 > var42 && var41.field3377 - var41.field3424 > var41.field3417) {
+															if (var32 + var40 + 32 > var42 && var41.scrollHeight - var41.field3424 > var41.field3417) {
 																int var45 = (var32 + var40 + 32 - var42) * class17.field261 / 3;
 																if (class17.field261 * 10 < var45) {
 																	var45 = class17.field261 * 10;
 																}
-																if (var41.field3377 - var41.field3424 - var41.field3417 < var45) {
-																	var45 = var41.field3377 - var41.field3424 - var41.field3417;
+																if (var41.scrollHeight - var41.field3424 - var41.field3417 < var45) {
+																	var45 = var41.scrollHeight - var41.field3424 - var41.field3417;
 																}
 																var41.field3417 += var45;
 																class48.field894 -= var45;
@@ -375,7 +375,7 @@ public class class165 {
 														var38.method1157(var33, var32);
 													}
 												}
-											} else if (var11.field3391 != null && var29 < 20) {
+											} else if (var11.invBackground != null && var29 < 20) {
 												class188 var34 = var11.method1250(var29, (byte) -120);
 												if (var34 != null) {
 													var34.method1157(var33, var32);
@@ -420,8 +420,8 @@ public class class165 {
 											if (class65.field1177 == var11 && var11.field3376 != 0) {
 												var49 = var11.field3376;
 											}
-											if (var11.field3448.length() > 0) {
-												var48 = var11.field3448;
+											if (var11.text2.length() > 0) {
+												var48 = var11.text2;
 											}
 										} else {
 											var49 = var11.colour;
@@ -429,7 +429,7 @@ public class class165 {
 												var49 = var11.field3433;
 											}
 										}
-										if (var11.field3412 && var11.field3401 != -1) {
+										if (var11.v3 && var11.field3401 != -1) {
 											class149 var50 = class71.method472(var11.field3401, (byte) -119);
 											var48 = var50.field2894;
 											if (var48 == null) {
@@ -443,15 +443,15 @@ public class class165 {
 											var48 = class143.field2652;
 											var49 = var11.colour;
 										}
-										if (!var11.field3412) {
+										if (!var11.v3) {
 											var48 = class161.method1086(var48, var11, 64);
 										}
-										var47.method153(var48, var13, var14, var11.field3382, var11.field3424, var49, var11.shadow ? 0 : -1, var11.field3481, var11.field3471, var11.field3398);
+										var47.method153(var48, var13, var14, var11.field3382, var11.field3424, var49, var11.shadow ? 0 : -1, var11.hAlign, var11.field3471, var11.field3398);
 									} else if (class248.field4551) {
 										class200.method1373(65280, var11);
 									}
 								} else if (var11.type == 5) {
-									if (var11.field3412) {
+									if (var11.v3) {
 										class188 var51;
 										if (var11.field3401 == -1) {
 											var51 = var11.method1251(false, -100);
@@ -506,9 +506,9 @@ public class class165 {
 									class30 var62 = null;
 									int var63;
 									if (var60) {
-										var63 = var11.field3388;
+										var63 = var11.modelAnim2;
 									} else {
-										var63 = var11.field3406;
+										var63 = var11.modelAnim;
 									}
 									if (var11.field3401 != -1) {
 										class149 var68 = class71.method472(var11.field3401, (byte) -89);
@@ -522,16 +522,16 @@ public class class165 {
 											}
 										}
 									} else if (var11.field3432 == 5) {
-										if (var11.field3411 == -1) {
+										if (var11.model1Id == -1) {
 											var62 = class130.field2443.method1432(null, 1549114312, -1, -1, null);
 										} else {
-											int var65 = var11.field3411 & 0x7FF;
+											int var65 = var11.model1Id & 0x7FF;
 											if (class220.localPid == var65) {
 												var65 = 2047;
 											}
 											scene var66 = class244.field4493[var65];
 											SeqType var67 = var63 == -1 ? null : class15.method75(var63, (byte) -38);
-											if (var66 != null && (int) var66.name.method630(false) << 11 == (var11.field3411 & 0xFFFFF800)) {
+											if (var66 != null && (int) var66.name.method630(false) << 11 == (var11.model1Id & 0xFFFFF800)) {
 												var62 = var66.field768.method1432(null, 1549114312, var11.field3381, 0, var67);
 											}
 										}
@@ -565,7 +565,7 @@ public class class165 {
 										class173.method1230(var72, var73);
 										int var74 = class173.field3356[var11.field3457] * var11.field3487 >> 16;
 										int var75 = class173.field3361[var11.field3457] * var11.field3487 >> 16;
-										if (!var11.field3412) {
+										if (!var11.v3) {
 											var62.method193(0, var11.field3511, 0, var11.field3457, 0, var75, var74);
 										} else if (var11.field3405) {
 											((class125) var62).method851(0, var11.field3511, var11.field3519, var11.field3457, var11.field3367, var75 + var11.field3500 + var61, var11.field3500 + var74, var11.field3487);
@@ -584,8 +584,8 @@ public class class165 {
 											continue;
 										}
 										int var77 = 0;
-										for (int var78 = 0; var78 < var11.field3420; var78++) {
-											for (int var79 = 0; var79 < var11.field3503; var79++) {
+										for (int var78 = 0; var78 < var11.width; var78++) {
+											for (int var79 = 0; var79 < var11.height; var79++) {
 												if (var11.field3390[var77] > 0) {
 													class149 var80 = class71.method472(var11.field3390[var77] - 1, (byte) -126);
 													JString var81;
@@ -596,9 +596,9 @@ public class class165 {
 													}
 													int var82 = (var11.field3468 + 115) * var79 + var13;
 													int var83 = (var11.field3510 + 12) * var78 + var14;
-													if (var11.field3481 == 0) {
+													if (var11.hAlign == 0) {
 														var76.method154(var81, var82, var83, var11.colour, var11.shadow ? 0 : -1);
-													} else if (var11.field3481 == 1) {
+													} else if (var11.hAlign == 1) {
 														var76.method141(var81, var82 + 57, var83, var11.colour, var11.shadow ? 0 : -1);
 													} else {
 														var76.method150(var81, var82 + 115 - 1, var83, var11.colour, var11.shadow ? 0 : -1);

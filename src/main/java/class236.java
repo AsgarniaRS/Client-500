@@ -536,8 +536,8 @@ public class class236 extends class27 {
 				var102 = -1;
 			}
 			class174 var103 = class239.method1581(-64, var101);
-			if (var103.field3432 != 2 || var103.field3411 != var102) {
-				var103.field3411 = var102;
+			if (var103.field3432 != 2 || var103.model1Id != var102) {
+				var103.model1Id = var102;
 				var103.field3432 = 2;
 				class200.method1373(65280, var103);
 			}
@@ -579,7 +579,7 @@ public class class236 extends class27 {
 				var112 = -1;
 			}
 			class174 var113 = class239.method1581(-64, var110);
-			if (var113.field3412) {
+			if (var113.v3) {
 				var113.field3401 = var112;
 				var113.field3484 = var111;
 				class149 var114 = class71.method472(var112, (byte) -99);
@@ -591,8 +591,8 @@ public class class236 extends class27 {
 				var113.field3519 = var114.field2849;
 				if (var113.field3470 > 0) {
 					var113.field3487 = var113.field3487 * 32 / var113.field3470;
-				} else if (var113.field3503 > 0) {
-					var113.field3487 = var113.field3487 * 32 / var113.field3503;
+				} else if (var113.height > 0) {
+					var113.field3487 = var113.field3487 * 32 / var113.height;
 				}
 				class200.method1373(65280, var113);
 			} else if (var112 == -1) {
@@ -605,7 +605,7 @@ public class class236 extends class27 {
 				var113.field3511 = var115.field2874;
 				var113.field3432 = 4;
 				var113.field3457 = var115.field2875;
-				var113.field3411 = var112;
+				var113.model1Id = var112;
 				class200.method1373(65280, var113);
 			}
 			class238.packetType = -1;
@@ -958,9 +958,9 @@ public class class236 extends class27 {
 			}
 			int var207 = class230.in.g4_alt1();
 			class174 var208 = class239.method1581(-64, var207);
-			if (var208.field3432 != 1 || var208.field3411 != var206) {
+			if (var208.field3432 != 1 || var208.model1Id != var206) {
 				var208.field3432 = 1;
-				var208.field3411 = var206;
+				var208.model1Id = var206;
 				class200.method1373(65280, var208);
 			}
 			class238.packetType = -1;
@@ -1110,7 +1110,7 @@ public class class236 extends class27 {
 			int var245 = class230.in.g4();
 			class174 var246 = class239.method1581(-64, var245);
 			var246.field3432 = 3;
-			var246.field3411 = class240.field4458.field768.method1429(112);
+			var246.model1Id = class240.field4458.field768.method1429(112);
 			class200.method1373(65280, var246);
 			class238.packetType = -1;
 			return true;
@@ -1332,8 +1332,8 @@ public class class236 extends class27 {
 			int var300 = class230.in.g4_alt1();
 			int var301 = class230.in.g2b_alt2();
 			class174 var302 = class239.method1581(-64, var300);
-			if (var302.field3406 != var301 || var301 == -1) {
-				var302.field3406 = var301;
+			if (var302.modelAnim != var301 || var301 == -1) {
+				var302.modelAnim = var301;
 				var302.field3489 = 0;
 				var302.field3381 = 0;
 				class200.method1373(65280, var302);
@@ -1409,8 +1409,8 @@ public class class236 extends class27 {
 			int var314 = class230.in.g2_alt2();
 			class174 var315 = class239.method1581(-64, var313);
 			if (var315 != null && var315.type == 0) {
-				if (var315.field3377 - var315.field3424 < var314) {
-					var314 = var315.field3377 - var315.field3424;
+				if (var315.scrollHeight - var315.field3424 < var314) {
+					var314 = var315.scrollHeight - var315.field3424;
 				}
 				if (var314 < 0) {
 					var314 = 0;

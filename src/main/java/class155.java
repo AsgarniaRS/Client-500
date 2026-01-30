@@ -54,8 +54,8 @@ public class class155 extends Linkable {
 			if (var7 != null && var7.layerId == arg3) {
 				class57.method416(arg2, arg4, arg0, var7, -121);
 				class200.method1376(var7, arg0, (byte) -127, arg4);
-				if (var7.field3417 > var7.field3377 - var7.field3424) {
-					var7.field3417 = var7.field3377 - var7.field3424;
+				if (var7.field3417 > var7.scrollHeight - var7.field3424) {
+					var7.field3417 = var7.scrollHeight - var7.field3424;
 				}
 				if (var7.field3386 - var7.field3382 < var7.field3395) {
 					var7.field3395 = var7.field3386 - var7.field3382;

@@ -168,11 +168,11 @@ public class class103 extends class50 {
 		}
 		while (var3 < arg2.length) {
 			class174 var4 = arg2[var3];
-			if (var4 != null && var4.layerId == arg0 && (!var4.field3412 || !class71.method475(0, var4))) {
+			if (var4 != null && var4.layerId == arg0 && (!var4.v3 || !class71.method475(0, var4))) {
 				label99:
 				{
 					if (~var4.type == -1) {
-						if (!var4.field3412 && class71.method475(0, var4) && class65.field1177 != var4) {
+						if (!var4.v3 && class71.method475(0, var4) && class65.field1177 != var4) {
 							break label99;
 						}
 						method716(var4.parentId, (byte) 126, arg2);
@@ -185,13 +185,13 @@ public class class103 extends class50 {
 						}
 					}
 					if (~var4.type == -7) {
-						if (~var4.field3406 != 0 || ~var4.field3388 != 0) {
+						if (~var4.modelAnim != 0 || ~var4.modelAnim2 != 0) {
 							boolean var6 = class80.method533(-31987, var4);
 							int var7;
 							if (var6) {
-								var7 = var4.field3388;
+								var7 = var4.modelAnim2;
 							} else {
-								var7 = var4.field3406;
+								var7 = var4.modelAnim;
 							}
 							if (~var7 != 0) {
 								SeqType var8 = class15.method75(var7, (byte) -42);
@@ -211,7 +211,7 @@ public class class103 extends class50 {
 								}
 							}
 						}
-						if (~var4.field3387 != -1 && !var4.field3412) {
+						if (~var4.field3387 != -1 && !var4.v3) {
 							int var9 = var4.field3387 << 16 >> 16;
 							int var10 = var4.field3387 >> 16;
 							int var11 = class17.field261 * var10;

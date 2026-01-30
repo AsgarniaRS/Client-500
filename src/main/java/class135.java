@@ -540,7 +540,7 @@ public class class135 extends class23 {
 						}
 
 						class174 var51 = new class174();
-						var51.field3412 = true;
+						var51.v3 = true;
 						var51.field3408 = var47;
 						var51.type = var46;
 						var51.layerId = var51.parentId = var48.parentId;
@@ -625,7 +625,7 @@ public class class135 extends class23 {
 									int var62 = class108.intStack[isp];
 									if (~var62 == 0) {
 										var60.field3401 = -1;
-										var60.field3411 = -1;
+										var60.model1Id = -1;
 										var60.field3432 = 1;
 									} else {
 										var60.field3401 = var62;
@@ -644,8 +644,8 @@ public class class135 extends class23 {
 										var60.field3487 = var63.field2891;
 										if (var60.field3470 > 0) {
 											var60.field3487 = var60.field3487 * 32 / var60.field3470;
-										} else if (~var60.field3503 < -1) {
-											var60.field3487 = var60.field3487 * 32 / var60.field3503;
+										} else if (~var60.height < -1) {
+											var60.field3487 = var60.field3487 * 32 / var60.height;
 										}
 									}
 									continue;
@@ -653,24 +653,24 @@ public class class135 extends class23 {
 								if (~opcode == -1202) {
 									var60.field3432 = 2;
 									--isp;
-									var60.field3411 = class108.intStack[isp];
+									var60.model1Id = class108.intStack[isp];
 									continue;
 								}
 								if (opcode == 1202) {
 									var60.field3432 = 3;
-									var60.field3411 = class240.field4458.field768.method1429(108);
+									var60.model1Id = class240.field4458.field768.method1429(108);
 									continue;
 								}
 								if (opcode == 1203) {
 									var60.field3432 = 6;
 									--isp;
-									var60.field3411 = class108.intStack[isp];
+									var60.model1Id = class108.intStack[isp];
 									continue;
 								}
 								if (opcode == 1204) {
 									var60.field3432 = 5;
 									--isp;
-									var60.field3411 = class108.intStack[isp];
+									var60.model1Id = class108.intStack[isp];
 									continue;
 								}
 							} else if ((~opcode > -1301 || opcode >= 1400) && (~opcode > -2301 || opcode >= 2400)) {
@@ -844,7 +844,7 @@ public class class135 extends class23 {
 										continue;
 									}
 									if (opcode == 1604) {
-										class108.intStack[isp++] = var72.field3377;
+										class108.intStack[isp++] = var72.scrollHeight;
 										continue;
 									}
 									if (~opcode == -1606) {
@@ -957,7 +957,7 @@ public class class135 extends class23 {
 										continue;
 									}
 									if (opcode == 2604) {
-										class108.intStack[isp++] = var77.field3377;
+										class108.intStack[isp++] = var77.scrollHeight;
 										continue;
 									}
 									if (~opcode == -2606) {
@@ -2801,8 +2801,8 @@ public class class135 extends class23 {
 									var366.field3395 = 0;
 								}
 								var366.field3417 = class108.intStack[isp + 1];
-								if (~var366.field3417 < ~(-var366.field3424 + var366.field3377)) {
-									var366.field3417 = -var366.field3424 + var366.field3377;
+								if (~var366.field3417 < ~(-var366.field3424 + var366.scrollHeight)) {
+									var366.field3417 = -var366.field3424 + var366.scrollHeight;
 								}
 								if (var366.field3417 < 0) {
 									var366.field3417 = 0;
@@ -2855,7 +2855,7 @@ public class class135 extends class23 {
 							if (opcode == 1108) {
 								var366.field3432 = 1;
 								--isp;
-								var366.field3411 = class108.intStack[isp];
+								var366.model1Id = class108.intStack[isp];
 								class200.method1373(65280, var366);
 								continue;
 							}
@@ -2873,9 +2873,9 @@ public class class135 extends class23 {
 							if (opcode == 1110) {
 								--isp;
 								int var367 = class108.intStack[isp];
-								if (var366.field3406 != var367) {
+								if (var366.modelAnim != var367) {
 									var366.field3489 = 0;
-									var366.field3406 = var367;
+									var366.modelAnim = var367;
 									var366.field3381 = 0;
 									class200.method1373(65280, var366);
 								}
@@ -2904,7 +2904,7 @@ public class class135 extends class23 {
 							}
 							if (opcode == 1114) {
 								isp -= 3;
-								var366.field3481 = class108.intStack[isp];
+								var366.hAlign = class108.intStack[isp];
 								var366.field3471 = class108.intStack[isp + 1];
 								var366.field3398 = class108.intStack[isp + 2];
 								class200.method1373(65280, var366);
@@ -2943,7 +2943,7 @@ public class class135 extends class23 {
 							if (opcode == 1120) {
 								isp -= 2;
 								var366.field3386 = class108.intStack[isp];
-								var366.field3377 = class108.intStack[isp - -1];
+								var366.scrollHeight = class108.intStack[isp - -1];
 								class200.method1373(65280, var366);
 								if (~var366.type == -1) {
 									class110.method761(false, var366, (byte) 13);
@@ -2983,10 +2983,10 @@ public class class135 extends class23 {
 						if (opcode == 1001) {
 							var369.field3465 = 0;
 							isp -= 2;
-							var369.field3382 = var369.field3503 = class108.intStack[isp];
+							var369.field3382 = var369.height = class108.intStack[isp];
 							var369.field3470 = 0;
 							var369.field3396 = 0;
-							var369.field3424 = var369.field3420 = class108.intStack[isp + 1];
+							var369.field3424 = var369.width = class108.intStack[isp + 1];
 							var369.field3419 = 0;
 							class200.method1373(65280, var369);
 							if (var369.type == 0) {

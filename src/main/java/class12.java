@@ -272,41 +272,41 @@ public class class12 {
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(IILq;B)V")
 	public static final void method65(int arg0, int arg1, class174 arg2, byte arg3) {
-		if (arg2.field3370 == 1) {
+		if (arg2.buttonType == 1) {
 			class103.field1859++;
-			class98.method687(9746, 0, arg2.field3462, (short) 11, 0L, class174.field3455, arg2.parentId);
+			class98.method687(9746, 0, arg2.buttonText, (short) 11, 0L, class174.field3455, arg2.parentId);
 		}
 		field180++;
 		if (arg3 < 47) {
 			method65(27, 118, null, (byte) -116);
 		}
-		if (arg2.field3370 == 2 && !class10.field145) {
+		if (arg2.buttonType == 2 && !class10.field145) {
 			JString var4 = class194.method1347(arg2, -2);
 			if (var4 != null) {
-				class98.method687(9746, -1, var4, (short) 15, 0L, class166.method1142(new JString[]{field182, arg2.field3461}, -3), arg2.parentId);
+				class98.method687(9746, -1, var4, (short) 15, 0L, class166.method1142(new JString[]{field182, arg2.targetBase}, -3), arg2.parentId);
 				class111.field2025++;
 			}
 		}
-		if (arg2.field3370 == 3) {
+		if (arg2.buttonType == 3) {
 			class98.method687(9746, 0, class33.field530, (short) 14, 0L, class174.field3455, arg2.parentId);
 			class204.field3888++;
 		}
-		if (arg2.field3370 == 4) {
+		if (arg2.buttonType == 4) {
 			Isaac.field2738++;
-			class98.method687(9746, 0, arg2.field3462, (short) 36, 0L, class174.field3455, arg2.parentId);
+			class98.method687(9746, 0, arg2.buttonText, (short) 36, 0L, class174.field3455, arg2.parentId);
 		}
-		if (arg2.field3370 == 5) {
-			class98.method687(9746, 0, arg2.field3462, (short) 20, 0L, class174.field3455, arg2.parentId);
+		if (arg2.buttonType == 5) {
+			class98.method687(9746, 0, arg2.buttonText, (short) 20, 0L, class174.field3455, arg2.parentId);
 			class90.field1700++;
 		}
-		if (arg2.field3370 == 6 && class53.field967 == null) {
+		if (arg2.buttonType == 6 && class53.field967 == null) {
 			class9.field134++;
-			class98.method687(9746, -1, arg2.field3462, (short) 47, 0L, class174.field3455, arg2.parentId);
+			class98.method687(9746, -1, arg2.buttonText, (short) 47, 0L, class174.field3455, arg2.parentId);
 		}
 		if (arg2.type == 2) {
 			int var5 = 0;
-			for (int var6 = 0; var6 < arg2.field3420; var6++) {
-				for (int var7 = 0; var7 < arg2.field3503; var7++) {
+			for (int var6 = 0; var6 < arg2.width; var6++) {
+				for (int var7 = 0; var7 < arg2.height; var7++) {
 					int var8 = (arg2.field3510 + 32) * var6;
 					int var9 = (arg2.field3468 + 32) * var7;
 					if (var5 < 20) {
@@ -368,7 +368,7 @@ public class class12 {
 										}
 									}
 								}
-								JString[] var16 = arg2.field3513;
+								JString[] var16 = arg2.iop;
 								if (IntHashTable.field1809) {
 									var16 = class138.method923(var16, (byte) -114);
 								}
@@ -407,7 +407,7 @@ public class class12 {
 				}
 			}
 		}
-		if (!arg2.field3412) {
+		if (!arg2.v3) {
 			return;
 		}
 		if (!class10.field145) {

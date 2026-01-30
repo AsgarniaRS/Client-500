@@ -132,7 +132,7 @@ public class class143 extends Linkable {
 		field2653++;
 		for (int var9 = 0; var9 < arg6.length; var9++) {
 			class174 var10 = arg6[var9];
-			if (var10 != null && (!var10.field3412 || var10.type == 0 || var10.hashook || class80.method530(-881710560, var10) != 0 || class49.field923 == var10 || var10.field3441 == 1338) && var10.layerId == arg4 && (!var10.field3412 || !class71.method475(0, var10))) {
+			if (var10 != null && (!var10.v3 || var10.type == 0 || var10.hashook || class80.method530(-881710560, var10) != 0 || class49.field923 == var10 || var10.field3441 == 1338) && var10.layerId == arg4 && (!var10.v3 || !class71.method475(0, var10))) {
 				int var11 = var10.field3368 + arg3;
 				int var12 = var10.field3443 + arg8;
 				int var13;
@@ -161,9 +161,9 @@ public class class143 extends Linkable {
 					class149.field2907 = true;
 					class135.field2508 = var12;
 				}
-				if (!var10.field3412 || var16 < var18 && var13 < var17) {
+				if (!var10.v3 || var16 < var18 && var13 < var17) {
 					if (var10.type == 0) {
-						if (!var10.field3412 && class71.method475(arg2 ^ 0x1F, var10) && class65.field1177 != var10) {
+						if (!var10.v3 && class71.method475(arg2 ^ 0x1F, var10) && class65.field1177 != var10) {
 							continue;
 						}
 						if (var10.field3472 && var16 <= class28.field471 && class239.field4451 >= var13 && var18 > class28.field471 && class239.field4451 < var17) {
@@ -184,7 +184,7 @@ public class class143 extends Linkable {
 							class175.field3534 = false;
 						}
 					}
-					if (var10.field3412) {
+					if (var10.v3) {
 						boolean var21 = false;
 						boolean var22 = false;
 						boolean var23;
@@ -470,7 +470,7 @@ public class class143 extends Linkable {
 							}
 						}
 					}
-					if (!var10.field3412 && class179.field3570 == null && class135.field2516 == null && !class108.field1960) {
+					if (!var10.v3 && class179.field3570 == null && class135.field2516 == null && !class108.field1960) {
 						if ((var10.field3426 >= 0 || var10.field3433 != 0) && var16 <= class28.field471 && class239.field4451 >= var13 && class28.field471 < var18 && var17 > class239.field4451) {
 							if (var10.field3426 < 0) {
 								class65.field1177 = var10;
@@ -481,8 +481,8 @@ public class class143 extends Linkable {
 						if (var10.type == 8 && var16 <= class28.field471 && var13 <= class239.field4451 && var18 > class28.field471 && class239.field4451 < var17) {
 							class36.field635 = var10;
 						}
-						if (var10.field3424 < var10.field3377) {
-							class118.method807(var11 + var10.field3382, var10.field3377, -16519, class28.field471, var10.field3424, class239.field4451, var10, var12);
+						if (var10.field3424 < var10.scrollHeight) {
+							class118.method807(var11 + var10.field3382, var10.scrollHeight, -16519, class28.field471, var10.field3424, class239.field4451, var10, var12);
 						}
 					}
 					if (var10.type == 0) {

@@ -53,7 +53,7 @@ public class class110 {
 	public static final void method761(boolean arg0, class174 arg1, byte arg2) {
 		field2010++;
 		int var3 = arg1.field3386 == 0 ? arg1.field3382 : arg1.field3386;
-		int var4 = arg1.field3377 == 0 ? arg1.field3424 : arg1.field3377;
+		int var4 = arg1.scrollHeight == 0 ? arg1.field3424 : arg1.scrollHeight;
 		int var5 = 84 / ((-arg2 - 47) / 44);
 		class155.method1057(var3, (byte) -94, arg0, arg1.parentId, var4, class78.field1418[arg1.parentId >> 16]);
 		if (arg1.field3467 != null) {
