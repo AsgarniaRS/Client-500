@@ -146,17 +146,17 @@ public class class194 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!ri", name = "a", descriptor = "(Lq;I)Li;")
-	public static final JString method1347(class174 arg0, int arg1) {
+	public static final JString method1347(IfType arg0, int arg1) {
 		++field3715;
 		if (arg1 != -2) {
-			method1347((class174) null, -107);
+			method1347((IfType) null, -107);
 		}
 		if (~GameShell.method592(1281959627, class80.method530(arg1 + -881710558, arg0)) == -1) {
 			return null;
 		} else if (arg0.targetVerb != null && ~arg0.targetVerb.method602(-125).length() != -1) {
 			return arg0.targetVerb;
 		} else {
-			return class116.field2105 ? class126.field2323 : null;
+			return class116.field2105 ? NpcType.field2323 : null;
 		}
 	}
 }

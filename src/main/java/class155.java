@@ -44,13 +44,13 @@ public class class155 extends Linkable {
 	public static Js5Local field2996;
 
 	@OriginalMember(owner = "client!oc", name = "a", descriptor = "(IBZII[Lq;)V")
-	public static final void method1057(int arg0, byte arg1, boolean arg2, int arg3, int arg4, class174[] arg5) {
+	public static final void method1057(int arg0, byte arg1, boolean arg2, int arg3, int arg4, IfType[] arg5) {
 		if (arg1 > -64) {
 			return;
 		}
 		field2998++;
 		for (int var6 = 0; var6 < arg5.length; var6++) {
-			class174 var7 = arg5[var6];
+			IfType var7 = arg5[var6];
 			if (var7 != null && var7.layerId == arg3) {
 				class57.method416(arg2, arg4, arg0, var7, -121);
 				class200.method1376(var7, arg0, (byte) -127, arg4);

@@ -170,10 +170,8 @@ public class class211 extends class23 {
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(ILnb;Lnb;)V")
 	public static final void method1445(int arg0, Js5Index arg1, Js5Index arg2) {
-		int var3 = 68 % ((arg0 - 26) / 61);
 		class141.field2609 = arg1;
 		GZip.field1114 = arg2;
-		++field4002;
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(Lu;I)V")
@@ -182,8 +180,8 @@ public class class211 extends class23 {
 			int var2 = -arg0.field4135 + class117.field2115;
 			int var3 = arg0.field4115 * 128 + arg0.field4105 * 64;
 			int var4 = arg0.field4132 - arg0.field4135;
-			int var5 = arg0.field4096 * 128 - -(arg0.field4105 * 64);
-			int var6 = arg0.field4102 * 128 - -(arg0.field4105 * 64);
+			int var5 = arg0.field4096 * 128 - (arg0.field4105 * 64);
+			int var6 = arg0.field4102 * 128 - (arg0.field4105 * 64);
 			int var7 = arg0.field4105 * 64 + arg0.field4074 * 128;
 			arg0.field4123 = ((var4 - var2) * var5 - -(var2 * var7)) / var4;
 			arg0.field4138 = ((-var2 + var4) * var3 - -(var2 * var6)) / var4;
@@ -192,7 +190,6 @@ public class class211 extends class23 {
 		if (arg1 != -1) {
 			method1442((byte) 0);
 		}
-		++field3995;
 		if (arg0.field4141 == 0) {
 			arg0.field4121 = 1024;
 		}
@@ -206,42 +203,6 @@ public class class211 extends class23 {
 			arg0.field4121 = 512;
 		}
 		arg0.field4087 = arg0.field4121;
-	}
-
-	@OriginalMember(owner = "client!td", name = "c", descriptor = "(II)Z")
-	public static final boolean method1447(int arg0, int arg1) {
-		++field4005;
-		if (class167.field3213[arg1]) {
-			return true;
-		} else if (!class85.field1545.method972(arg1, (byte) -68)) {
-			return false;
-		} else {
-			int var2 = class85.field1545.method944(128, arg1);
-			if (arg0 == var2) {
-				class167.field3213[arg1] = true;
-				return true;
-			} else {
-				if (class78.field1418[arg1] == null) {
-					class78.field1418[arg1] = new class174[var2];
-				}
-				for (int var3 = 0; var2 > var3; ++var3) {
-					if (class78.field1418[arg1][var3] == null) {
-						byte[] var4 = class85.field1545.method941((byte) 56, var3, arg1);
-						if (var4 != null) {
-							class78.field1418[arg1][var3] = new class174();
-							class78.field1418[arg1][var3].parentId = (arg1 << 16) + var3;
-							if (var4[0] == -1) {
-								class78.field1418[arg1][var3].decode3(new Packet(var4));
-							} else {
-								class78.field1418[arg1][var3].decode(new Packet(var4));
-							}
-						}
-					}
-				}
-				class167.field3213[arg1] = true;
-				return true;
-			}
-		}
 	}
 
 	@OriginalMember(owner = "client!td", name = "<init>", descriptor = "()V")

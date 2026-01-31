@@ -89,7 +89,7 @@ public class class230 {
 	public static int field4316;
 
 	@OriginalMember(owner = "client!va", name = "w", descriptor = "Lob;")
-	public static class154 field4315;
+	public static HashTable field4315;
 
 	@OriginalMember(owner = "client!va", name = "E", descriptor = "[Lrh;")
 	public static class193[] field4322;
@@ -125,8 +125,8 @@ public class class230 {
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(IIIIIIII)V")
 	public static final void method1535(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7) {
 		field4301++;
-		if (class211.method1447(0, arg6)) {
-			class143.method935(arg2, arg4, 31, arg7, -1, arg1, class78.field1418[arg6], arg3, arg0);
+		if (IfType.openInterface(arg6, 0)) {
+			class143.method935(arg2, arg4, 31, arg7, -1, arg1, class78.list[arg6], arg3, arg0);
 			int var8 = -83 / ((24 - arg5) / 34);
 		}
 	}
@@ -229,19 +229,19 @@ public class class230 {
 	}
 
 	@OriginalMember(owner = "client!va", name = "a", descriptor = "(IZ[Lq;)V")
-	public static final void method1538(int arg0, boolean arg1, class174[] arg2) {
+	public static final void method1538(int arg0, boolean arg1, IfType[] arg2) {
 		if (arg1) {
 			field4317 = null;
 		}
 		field4306++;
 		for (int var3 = 0; var3 < arg2.length; var3++) {
-			class174 var4 = arg2[var3];
+			IfType var4 = arg2[var3];
 			if (var4 != null) {
 				if (var4.type == 0) {
 					if (var4.field3467 != null) {
 						method1538(arg0, false, var4.field3467);
 					}
-					class168 var5 = (class168) class128.field2397.get(-1, (long) var4.parentId);
+					class168 var5 = (class168) class128.field2397.find((long) var4.parentId);
 					if (var5 != null) {
 						ClientStream.method914(var5.field3231, arg0, 4);
 					}
@@ -254,7 +254,7 @@ public class class230 {
 				}
 				if (arg0 == 1 && var4.field3497 != null) {
 					if (var4.field3408 >= 0) {
-						class174 var7 = class239.method1581(-64, var4.parentId);
+						IfType var7 = class239.method1581(-64, var4.parentId);
 						if (var7 == null || var7.field3467 == null || var4.field3408 >= var7.field3467.length || var7.field3467[var4.field3408] != var4) {
 							continue;
 						}

@@ -50,16 +50,16 @@ public class class110 {
 	public static class188 field2012;
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(ZLq;B)V")
-	public static final void method761(boolean arg0, class174 arg1, byte arg2) {
+	public static final void method761(boolean arg0, IfType arg1, byte arg2) {
 		field2010++;
 		int var3 = arg1.field3386 == 0 ? arg1.field3382 : arg1.field3386;
 		int var4 = arg1.scrollHeight == 0 ? arg1.field3424 : arg1.scrollHeight;
 		int var5 = 84 / ((-arg2 - 47) / 44);
-		class155.method1057(var3, (byte) -94, arg0, arg1.parentId, var4, class78.field1418[arg1.parentId >> 16]);
+		class155.method1057(var3, (byte) -94, arg0, arg1.parentId, var4, class78.list[arg1.parentId >> 16]);
 		if (arg1.field3467 != null) {
 			class155.method1057(var3, (byte) -99, arg0, arg1.parentId, var4, arg1.field3467);
 		}
-		class168 var6 = (class168) class128.field2397.get(-1, (long) arg1.parentId);
+		class168 var6 = (class168) class128.field2397.find((long) arg1.parentId);
 		if (var6 != null) {
 			class212.method1451(var3, var6.field3231, (byte) 34, var4, arg0);
 		}
@@ -79,7 +79,7 @@ public class class110 {
 	}
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "(BILq;)I")
-	public static final int method763(byte arg0, int arg1, class174 arg2) {
+	public static final int method763(byte arg0, int arg1, IfType arg2) {
 		field2015++;
 		if (arg2.field3394 == null || arg1 >= arg2.field3394.length) {
 			return -2;
@@ -111,7 +111,7 @@ public class class110 {
 				if (var7 == 4) {
 					int var10 = var3[var5++] << 16;
 					int var11 = var10 + var3[var5++];
-					class174 var12 = class239.method1581(-64, var11);
+					IfType var12 = class239.method1581(-64, var11);
 					int var13 = var3[var5++];
 					if (var13 != -1 && (!class71.method472(var13, (byte) -122).field2879 || Linkable.field1215)) {
 						for (int var14 = 0; var14 < var12.field3390.length; var14++) {
@@ -122,13 +122,13 @@ public class class110 {
 					}
 				}
 				if (var7 == 5) {
-					var9 = class113.field2052[var3[var5++]];
+					var9 = class113.var[var3[var5++]];
 				}
 				if (var7 == 6) {
 					var9 = class90.field1711[class217.field4068[var3[var5++]] - 1];
 				}
 				if (var7 == 7) {
-					var9 = class113.field2052[var3[var5++]] * 100 / 46875;
+					var9 = class113.var[var3[var5++]] * 100 / 46875;
 				}
 				if (var7 == 8) {
 					var9 = class240.field4458.combatLevel;
@@ -143,7 +143,7 @@ public class class110 {
 				if (var7 == 10) {
 					int var16 = var3[var5++] << 16;
 					int var17 = var16 + var3[var5++];
-					class174 var18 = class239.method1581(-64, var17);
+					IfType var18 = class239.method1581(-64, var17);
 					int var19 = var3[var5++];
 					if (var19 != -1 && (!class71.method472(var19, (byte) -127).field2879 || Linkable.field1215)) {
 						for (int var20 = 0; var20 < var18.field3390.length; var20++) {
@@ -164,7 +164,7 @@ public class class110 {
 					var9 = class199.field3790;
 				}
 				if (var7 == 13) {
-					int var21 = class113.field2052[var3[var5++]];
+					int var21 = class113.var[var3[var5++]];
 					int var22 = var3[var5++];
 					var9 = (0x1 << var22 & var21) == 0 ? 0 : 1;
 				}

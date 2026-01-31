@@ -300,7 +300,7 @@ public class class116 extends class23 {
 								if (class43.field739 && class248.field4537 >= 5) {
 									if (class225.field4231 == class135.field2516 && class18.field305 != class172.field3335) {
 										++class21.field328;
-										class174 var20 = class135.field2516;
+										IfType var20 = class135.field2516;
 										byte var21 = 0;
 										if (class155.field2993 == 1 && ~var20.field3441 == -207) {
 											var21 = 1;
@@ -337,7 +337,7 @@ public class class116 extends class23 {
 										Isaac.out.p2_alt3(class172.field3335);
 									}
 								} else if ((~class203.field3861 == -2 || class234.method1556(class203.field3864 + -1, -1)) && ~class203.field3864 < -3) {
-									class136.method906(32768);
+									Linkable2.method906(32768);
 								} else if (~class203.field3864 < -1) {
 									class175.method1259(2, class203.field3864 + -1);
 								}
@@ -349,8 +349,8 @@ public class class116 extends class23 {
 						class81.field1467 = 0;
 						class149.field2907 = false;
 						class122.field2219 = null;
-						class174 var26 = class36.field635;
-						class174 var27 = class65.field1177;
+						IfType var26 = class36.field635;
+						IfType var27 = class65.field1177;
 						class65.field1177 = null;
 						class29.field487 = false;
 						class36.field635 = null;
@@ -366,22 +366,22 @@ public class class116 extends class23 {
 						++Linkable.field1211;
 						while (true) {
 							class39 var28;
-							class174 var29;
-							class174 var30;
+							IfType var29;
+							IfType var30;
 							do {
 								var28 = (class39) class35.field619.method1615(126);
 								if (var28 == null) {
 									while (true) {
 										class39 var31;
-										class174 var32;
-										class174 var33;
+										IfType var32;
+										IfType var33;
 										do {
 											var31 = (class39) class199.field3812.method1615(124);
 											if (var31 == null) {
 												while (true) {
 													class39 var34;
-													class174 var35;
-													class174 var36;
+													IfType var35;
+													IfType var36;
 													do {
 														var34 = (class39) class74.field1349.method1615(127);
 														if (var34 == null) {
@@ -437,7 +437,7 @@ public class class116 extends class23 {
 															for (int var40 = 0; var40 < 5; ++var40) {
 																int var10002 = class190.field3676[var40]++;
 															}
-															int var41 = class147.method986(2);
+															int var41 = class147.method986();
 															int var42 = class105.method731(0);
 															if (~var41 < -4501 && ~var42 < -4501) {
 																class105.field1912 = 250;
@@ -458,7 +458,7 @@ public class class116 extends class23 {
 																	class33.field536 += class232.field4359;
 																}
 																if ((1 & var43) == 1) {
-																	class223.field4201 += class136.field2533;
+																	class223.field4201 += Linkable2.field2533;
 																}
 															}
 															if (~class77.field1384 < -501) {
@@ -496,10 +496,10 @@ public class class116 extends class23 {
 																JString.field1644 = -2;
 															}
 															if (class223.field4201 < -50) {
-																class136.field2533 = 2;
+																Linkable2.field2533 = 2;
 															}
 															if (class223.field4201 > 50) {
-																class136.field2533 = -2;
+																Linkable2.field2533 = -2;
 															}
 															if (~Js5Index.field2709 < -51) {
 																Isaac.out.method30(19);

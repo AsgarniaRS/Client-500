@@ -108,9 +108,9 @@ public class class127 extends Linkable {
 		}
 		for (class168 var1 = (class168) class128.field2397.method1049(0); var1 != null; var1 = (class168) class128.field2397.method1050((byte) -73)) {
 			int var2 = var1.field3231;
-			if (class211.method1447(0, var2)) {
+			if (IfType.openInterface(var2, 0)) {
 				boolean var3 = true;
-				class174[] var4 = class78.field1418[var2];
+				IfType[] var4 = class78.list[var2];
 				for (int var5 = 0; var5 < var4.length; var5++) {
 					if (var4[var5] != null) {
 						var3 = var4[var5].v3;
@@ -119,7 +119,7 @@ public class class127 extends Linkable {
 				}
 				if (!var3) {
 					int var6 = (int) var1.nodeId;
-					class174 var7 = class239.method1581(-64, var6);
+					IfType var7 = class239.method1581(-64, var6);
 					if (var7 != null) {
 						class200.method1373(65280, var7);
 					}

@@ -86,7 +86,7 @@ public class IntHashTable {
 					var7.p1(0);
 					var7.p3((int) var6.nodeId);
 					class214.clientStream.write(var7.data, 0, 4);
-					var6.method909(arg0 ^ 0x753B);
+					var6.unlink2(arg0 ^ 0x753B);
 					class108.prefetchQueue.put(var6.nodeId, var6, arg0 ^ 0xFFFF8A04);
 					class231.field4335++;
 					class220.pendingPrefetchQueueSize--;
@@ -128,10 +128,10 @@ public class IntHashTable {
 							long var15 = (long) ((var13 << 16) + var14);
 							int var17 = class78.field1408.g1();
 							int var18 = class78.field1408.g4();
-							class97 var19 = (class97) class151.urgentQueue.get(-1, var15);
+							class97 var19 = (class97) class151.urgentQueue.find(var15);
 							class138.field2569 = true;
 							if (var19 == null) {
-								var19 = (class97) class108.prefetchQueue.get(arg0 ^ 0xFFFF8A04, var15);
+								var19 = (class97) class108.prefetchQueue.find(var15);
 								class138.field2569 = false;
 							}
 							if (var19 == null) {
@@ -287,7 +287,7 @@ public class IntHashTable {
 						Isaac.out.p2_alt3(class122.field2219.field3408);
 					}
 				} else if ((class203.field3861 == 1 || class234.method1556(class203.field3864 - 1, -1)) && class203.field3864 > 2) {
-					class136.method906(arg0 + 32795);
+					Linkable2.method906(arg0 + 32795);
 				} else if (class203.field3864 > 0) {
 					class175.method1259(2, class203.field3864 - 1);
 				}

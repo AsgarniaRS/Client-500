@@ -97,14 +97,14 @@ public class class71 extends Linkable {
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(IB)Lng;")
 	public static final class149 method472(int arg0, byte arg1) {
 		field1319++;
-		class149 var2 = (class149) class211.field4000.method666((long) arg0, 0);
+		class149 var2 = (class149) class211.field4000.find((long) arg0);
 		if (arg1 >= -87) {
 			field1313 = null;
 		}
 		if (var2 != null) {
 			return var2;
 		}
-		byte[] var3 = class236.field4402.method941((byte) 56, class129.method874(115, arg0), class138.method922(arg0, -27988));
+		byte[] var3 = class236.field4402.getFile(class129.method874(115, arg0), class138.method922(arg0, -27988));
 		class149 var4 = new class149();
 		var4.field2846 = arg0;
 		if (var3 != null) {
@@ -124,7 +124,7 @@ public class class71 extends Linkable {
 			var4.field2894 = class176.field3535;
 			var4.field2906 = null;
 		}
-		class211.field4000.put((long) arg0, var4, false);
+		class211.field4000.put(var4, (long) arg0, false);
 		return var4;
 	}
 
@@ -147,7 +147,7 @@ public class class71 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!ge", name = "a", descriptor = "(ILq;)Z")
-	public static final boolean method475(int arg0, class174 arg1) {
+	public static final boolean method475(int arg0, IfType arg1) {
 		if (arg0 != 0) {
 			method471(-74);
 		}

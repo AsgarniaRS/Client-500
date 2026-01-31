@@ -133,7 +133,7 @@ public class class165 {
 	public byte[] field3185;
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "([Lq;IIZIIIIII)V")
-	public static final void method1133(class174[] arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
+	public static final void method1133(IfType[] arg0, int arg1, int arg2, boolean arg3, int arg4, int arg5, int arg6, int arg7, int arg8, int arg9) {
 		field3165++;
 		class72.method480(arg1, arg2, arg9, arg5);
 		if (!arg3) {
@@ -141,7 +141,7 @@ public class class165 {
 		}
 		class173.method1237();
 		for (int var10 = 0; var10 < arg0.length; var10++) {
-			class174 var11 = arg0[var10];
+			IfType var11 = arg0[var10];
 			if (var11 != null && (var11.layerId == arg8 || arg8 == -1412584499 && class179.field3570 == var11)) {
 				int var12;
 				if (arg4 == -1) {
@@ -259,7 +259,7 @@ public class class165 {
 						if (var11.type == 0 && var11.field3472 && var23 <= class28.field471 && class239.field4451 >= var20 && var21 > class28.field471 && class239.field4451 < var22 && !class108.field1960 && !class116.field2105) {
 							class203.field3864 = 1;
 							class66.field1191[0] = class6.field76;
-							class201.field3838[0] = class174.field3455;
+							class201.field3838[0] = IfType.field3455;
 							class53.field994[0] = 1007;
 						}
 						int var27 = class239.field4451;
@@ -282,13 +282,13 @@ public class class165 {
 							if (var11.field3467 != null) {
 								method1133(var11.field3467, var23, var20, true, var12, var22, var13 - var11.field3395, -var11.field3417 + var14, var11.parentId, var21);
 							}
-							class168 var28 = (class168) class128.field2397.get(-1, (long) var11.parentId);
+							class168 var28 = (class168) class128.field2397.find((long) var11.parentId);
 							if (var28 != null) {
 								if (var28.field3235 == 0 && var23 <= class28.field471 && var20 <= class239.field4451 && class28.field471 < var21 && class239.field4451 < var22 && !class108.field1960 && !class116.field2105) {
 									class53.field994[0] = 1007;
 									class203.field3864 = 1;
 									class66.field1191[0] = class6.field76;
-									class201.field3838[0] = class174.field3455;
+									class201.field3838[0] = IfType.field3455;
 								}
 								class53.method393(var22, var28.field3231, (byte) -39, var20, var12, var14, var23, var13, var21);
 							}
@@ -341,7 +341,7 @@ public class class165 {
 														}
 														var38.method1166(var33 + var39, var32 + var40, 128);
 														if (arg8 != -1) {
-															class174 var41 = arg0[arg8 & 0xFFFF];
+															IfType var41 = arg0[arg8 & 0xFFFF];
 															int var42 = class72.field1335;
 															int var43 = class72.field1334;
 															if (var32 + var40 < var43 && var41.field3417 > 0) {
@@ -436,7 +436,7 @@ public class class165 {
 												var48 = class180.field3574;
 											}
 											if ((var50.field2854 == 1 || var11.field3484 != 1) && var11.field3484 != -1) {
-												var48 = class166.method1142(new JString[]{class136.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484)}, -3);
+												var48 = class166.method1142(new JString[]{Linkable2.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484)}, -3);
 											}
 										}
 										if (class53.field967 == var11) {
@@ -590,9 +590,9 @@ public class class165 {
 													class149 var80 = class71.method472(var11.field3390[var77] - 1, (byte) -126);
 													JString var81;
 													if (var80.field2854 != 1 && var11.field3476[var77] == 1) {
-														var81 = class166.method1142(new JString[]{class136.field2531, var80.field2894, class120.field2201}, -3);
+														var81 = class166.method1142(new JString[]{Linkable2.field2531, var80.field2894, class120.field2201}, -3);
 													} else {
-														var81 = class166.method1142(new JString[]{class136.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77])}, -3);
+														var81 = class166.method1142(new JString[]{Linkable2.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77])}, -3);
 													}
 													int var82 = (var11.field3468 + 115) * var79 + var13;
 													int var83 = (var11.field3510 + 12) * var78 + var14;
@@ -619,7 +619,7 @@ public class class165 {
 											JString var97;
 											if (var96 == -1) {
 												var97 = var87;
-												var87 = class174.field3455;
+												var87 = IfType.field3455;
 											} else {
 												var97 = var87.method623(0, (byte) -23, var96);
 												var87 = var87.substring(var96 + 4);
@@ -653,7 +653,7 @@ public class class165 {
 											JString var95;
 											if (var94 == -1) {
 												var95 = var93;
-												var93 = class174.field3455;
+												var93 = IfType.field3455;
 											} else {
 												var95 = var93.method623(0, (byte) -85, var94);
 												var93 = var93.substring(var94 + 4);
@@ -696,12 +696,12 @@ public class class165 {
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(ILi;)V")
 	public static final void method1134(int arg0, JString arg1) {
 		field3188++;
-		if (class126.field2326.field3599 == null) {
+		if (NpcType.field2326.field3599 == null) {
 			return;
 		}
 		try {
-			JString var2 = class227.field4267.method608(class126.field2326.field3599, -64);
-			JString var3 = ClientScript.field4518.method608(class126.field2326.field3599, 116);
+			JString var2 = class227.field4267.method608(NpcType.field2326.field3599, -64);
+			JString var3 = ClientScript.field4518.method608(NpcType.field2326.field3599, 116);
 			JString var4 = class166.method1142(new JString[]{var2, class36.field651, arg1, class54.field1005, var3}, -3);
 			JString var5;
 			if (arg0 == arg1.length()) {
@@ -709,7 +709,7 @@ public class class165 {
 			} else {
 				var5 = class166.method1142(new JString[]{var4, SeqType.field1984, method1141(class206.method1420(false) + 94608000000L, 7085), class95.field1768, class234.method1558(arg0 + 75, 94608000L)}, -3);
 			}
-			class166.method1142(new JString[]{class168.field3239, var5, class34.field591}, -3).method636(0, class126.field2326.field3599);
+			class166.method1142(new JString[]{class168.field3239, var5, class34.field591}, -3).method636(0, NpcType.field2326.field3599);
 		} catch (Throwable var6) {
 		}
 	}
@@ -771,7 +771,7 @@ public class class165 {
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(IIIII)V")
 	public static final void method1139(int arg0, int arg1, int arg2, int arg3, int arg4) {
-		class126.field2332 = SeqType.field1990 * arg3 / arg1;
+		NpcType.field2332 = SeqType.field1990 * arg3 / arg1;
 		field3161++;
 		class157.field3035 = scene.field760 * arg2 / arg4;
 		class34.field594 = -1;

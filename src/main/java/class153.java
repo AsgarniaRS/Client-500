@@ -99,11 +99,11 @@ public class class153 extends Linkable {
 	@OriginalMember(owner = "client!oa", name = "b", descriptor = "(II)Luh;")
 	public static final class226 method1045(int arg0, int arg1) {
 		field2956++;
-		class226 var2 = (class226) class108.field1957.method666((long) arg1, 0);
+		class226 var2 = (class226) class108.field1957.find((long) arg1);
 		if (var2 != null) {
 			return var2;
 		}
-		byte[] var3 = class204.field3885.method941((byte) 56, class71.method473((byte) 44, arg1), class240.method1587(arg0 ^ 0xFFFFC1B3, arg1));
+		byte[] var3 = class204.field3885.getFile(class71.method473((byte) 44, arg1), class240.method1587(arg0 ^ 0xFFFFC1B3, arg1));
 		class226 var4 = new class226();
 		if (var3 != null) {
 			var4.method1518(new Packet(var3), arg0 ^ 0x3E29);
@@ -111,7 +111,7 @@ public class class153 extends Linkable {
 		if (arg0 != 15913) {
 			stringLocals = null;
 		}
-		class108.field1957.put((long) arg1, var4, false);
+		class108.field1957.put(var4, (long) arg1, false);
 		return var4;
 	}
 
@@ -146,7 +146,7 @@ public class class153 extends Linkable {
 			if (var1 == -1) {
 				var5 = 2047;
 			} else {
-				var5 = class174.field3430[var1];
+				var5 = IfType.field3430[var1];
 			}
 			scene var6 = class244.field4493[var5];
 			if (var6 != null && var6.field4114 > 0) {

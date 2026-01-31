@@ -141,7 +141,7 @@ public class class175 {
 			Isaac.out.p2_alt3(var2 + class223.field4214);
 		}
 		if (var4 == 15) {
-			class174 var9 = class36.method238(var2, var3, true);
+			IfType var9 = class36.method238(var2, var3, true);
 			if (var9 != null) {
 				EnumType.method363(-86);
 				class158.method1066(true, var3, GameShell.method592(1281959627, class80.method530(-881710560, var9)), var2);
@@ -234,21 +234,21 @@ public class class175 {
 			Isaac.out.method30(109);
 			Isaac.out.p4(var3);
 			class246.field4511++;
-			class174 var14 = class239.method1581(-64, var3);
+			IfType var14 = class239.method1581(-64, var3);
 			if (var14.field3394 != null && var14.field3394[0][0] == 5) {
 				int var15 = var14.field3394[0][1];
-				class113.field2052[var15] = 1 - class113.field2052[var15];
+				class113.var[var15] = 1 - class113.var[var15];
 				class158.method1070(arg0 ^ 0x42, var15);
 			}
 		}
 		if (var4 == 1001) {
-			class174 var16 = class239.method1581(-64, var3);
+			IfType var16 = class239.method1581(-64, var3);
 			if (var16 == null || var16.field3476[var2] < 100000) {
 				Isaac.out.method30(191);
 				Isaac.out.p2(var7);
 				class157.field3032++;
 			} else {
-				class223.method1501(class166.method1142(new JString[]{class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894}, -3), 12, 0, class174.field3455);
+				class223.method1501(class166.method1142(new JString[]{class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894}, -3), 12, 0, IfType.field3455);
 			}
 			class139.field2575 = 0;
 			class57.field1091 = class239.method1581(-64, var3);
@@ -378,13 +378,13 @@ public class class175 {
 		}
 		if (var4 == 12) {
 			EnumType.method363(-125);
-			class174 var23 = class239.method1581(-64, var3);
+			IfType var23 = class239.method1581(-64, var3);
 			class28.field475 = 1;
 			class58.field1105 = var2;
 			class209.field3967 = var3;
 			class48.field905 = var7;
 			class200.method1373(65280, var23);
-			class78.field1414 = class166.method1142(new JString[]{class136.field2531, class71.method472(var7, (byte) -96).field2894, JString.field1637}, arg0 - 5);
+			class78.field1414 = class166.method1142(new JString[]{Linkable2.field2531, class71.method472(var7, (byte) -96).field2894, JString.field1637}, arg0 - 5);
 			if (class78.field1414 == null) {
 				class78.field1414 = class180.field3574;
 			}
@@ -486,13 +486,13 @@ public class class175 {
 			class157.field3019 = 2;
 			class191 var29 = class225.field4225[var7];
 			if (var29 != null) {
-				class126 var30 = var29.field3684;
-				if (var30.field2329 != null) {
-					var30 = var30.method864((byte) 28);
+				NpcType var30 = var29.field3684;
+				if (var30.multinpc != null) {
+					var30 = var30.getMultiNpc();
 				}
 				if (var30 != null) {
 					Isaac.out.method30(127);
-					Isaac.out.method314(var30.field2316, (byte) -123);
+					Isaac.out.method314(var30.index, (byte) -123);
 					class207.field3937++;
 				}
 			}
@@ -598,11 +598,11 @@ public class class175 {
 			Isaac.out.method30(109);
 			Isaac.out.p4(var3);
 			class246.field4511++;
-			class174 var37 = class239.method1581(-64, var3);
+			IfType var37 = class239.method1581(-64, var3);
 			if (var37.field3394 != null && var37.field3394[0][0] == 5) {
 				int var38 = var37.field3394[0][1];
-				if (class113.field2052[var38] != var37.field3488[0]) {
-					class113.field2052[var38] = var37.field3488[0];
+				if (class113.var[var38] != var37.field3488[0]) {
+					class113.var[var38] = var37.field3488[0];
 					class158.method1070(arg0 ^ 0x42, var38);
 				}
 			}
@@ -644,7 +644,7 @@ public class class175 {
 			Isaac.out.p2_alt3(class223.field4214 + var2);
 		}
 		if (var4 == 11) {
-			class174 var40 = class239.method1581(-64, var3);
+			IfType var40 = class239.method1581(-64, var3);
 			boolean var41 = true;
 			if (var40.field3441 > 0) {
 				var41 = class53.method389(arg0 + 122, var40);

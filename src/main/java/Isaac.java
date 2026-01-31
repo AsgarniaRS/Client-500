@@ -85,12 +85,12 @@ public class Isaac {
 			method978(true);
 		}
 		field2734++;
-		if (arg1 == -1 || !class211.method1447(0, arg1)) {
+		if (arg1 == -1 || !IfType.openInterface(arg1, 0)) {
 			return;
 		}
-		class174[] var2 = class78.field1418[arg1];
+		IfType[] var2 = class78.list[arg1];
 		for (int var3 = 0; var3 < var2.length; var3++) {
-			class174 var4 = var2[var3];
+			IfType var4 = var2[var3];
 			if (var4.field3438 != null) {
 				class39 var5 = new class39();
 				var5.field678 = var4;
@@ -171,7 +171,7 @@ public class Isaac {
 		Object var1 = class33.field533;
 		synchronized (class33.field533) {
 			if (class225.field4233 == 0) {
-				class126.field2326.method1289(2, new class31(), 5);
+				NpcType.field2326.method1289(2, new class31(), 5);
 			}
 			class225.field4233 = 600;
 			if (arg0 >= -126) {

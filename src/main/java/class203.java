@@ -65,7 +65,7 @@ public class class203 extends class50 {
 	public static int field3879;
 
 	@OriginalMember(owner = "client!sg", name = "x", descriptor = "Lq;")
-	public static class174 field3873;
+	public static IfType field3873;
 
 	@OriginalMember(owner = "client!sg", name = "w", descriptor = "Lbj;")
 	public static Js5Local field3872;
@@ -114,7 +114,7 @@ public class class203 extends class50 {
 	@OriginalMember(owner = "client!sg", name = "a", descriptor = "(ILi;III)V")
 	public static final void method1392(int arg0, JString arg1, int arg2, int arg3, int arg4) {
 		++field3874;
-		class174 var5 = class36.method238(arg2, arg4, true);
+		IfType var5 = class36.method238(arg2, arg4, true);
 		if (var5 != null) {
 			if (var5.field3403 != null) {
 				class39 var6 = new class39();

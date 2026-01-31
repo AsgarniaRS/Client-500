@@ -5,7 +5,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class202 {
 
     @OriginalMember(owner = "client!sf", name = "h", descriptor = "Lme;")
-    private class136 field3850 = new class136();
+    private Linkable2 sentinel = new Linkable2();
 
     @OriginalMember(owner = "client!sf", name = "c", descriptor = "Li;")
     public static JString field3845 = class208.method1425("<col=ffff00>*V");
@@ -53,25 +53,25 @@ public class class202 {
     public static class70[] field3847;
 
     @OriginalMember(owner = "client!sf", name = "a", descriptor = "(I)Lme;")
-    public final class136 method1383(int arg0) {
+    public final Linkable2 method1383(int arg0) {
         if (arg0 != 13753) {
             field3854 = null;
         }
         field3844++;
-        class136 var2 = this.field3850.field2530;
-        return this.field3850 == var2 ? null : var2;
+        Linkable2 var2 = this.sentinel.next2;
+        return this.sentinel == var2 ? null : var2;
     }
 
     @OriginalMember(owner = "client!sf", name = "b", descriptor = "(I)Lme;")
-    public final class136 method1384(int arg0) {
+    public final Linkable2 method1384(int arg0) {
         field3843++;
-        class136 var2 = this.field3850.field2530;
-        if (this.field3850 == var2) {
+        Linkable2 var2 = this.sentinel.next2;
+        if (this.sentinel == var2) {
             return null;
         }
-        var2.method909(192);
+        var2.unlink2(192);
         if (arg0 != 0) {
-            this.method1389(-58, null);
+            this.push(null, -58);
         }
         return var2;
     }
@@ -167,30 +167,26 @@ public class class202 {
     }
 
     @OriginalMember(owner = "client!sf", name = "a", descriptor = "(ILme;)V")
-    public final void method1389(int arg0, class136 arg1) {
-        if (arg1.field2532 != null) {
-            arg1.method909(arg0 + 20230);
+    public final void push(Linkable2 node, int arg0) {
+        if (node.prev2 != null) {
+            node.unlink2(arg0 + 20230);
         }
-        field3858++;
-        arg1.field2530 = this.field3850;
-        if (arg0 != -20038) {
-            field3851 = null;
-        }
-        arg1.field2532 = this.field3850.field2532;
-        arg1.field2532.field2530 = arg1;
-        arg1.field2530.field2532 = arg1;
+        node.next2 = this.sentinel;
+        node.prev2 = this.sentinel.prev2;
+        node.prev2.next2 = node;
+        node.next2.prev2 = node;
     }
 
     @OriginalMember(owner = "client!sf", name = "a", descriptor = "(Lme;B)V")
-    public final void method1390(class136 arg0, byte arg1) {
+    public final void method1390(Linkable2 arg0, byte arg1) {
         field3849++;
-        if (arg0.field2532 != null) {
-            arg0.method909(192);
+        if (arg0.prev2 != null) {
+            arg0.unlink2(192);
         }
-        arg0.field2532 = this.field3850;
-        arg0.field2530 = this.field3850.field2530;
-        arg0.field2532.field2530 = arg0;
-        arg0.field2530.field2532 = arg0;
+        arg0.prev2 = this.sentinel;
+        arg0.next2 = this.sentinel.next2;
+        arg0.prev2.next2 = arg0;
+        arg0.next2.prev2 = arg0;
         if (arg1 != 43) {
             this.method1390(null, (byte) 11);
         }
@@ -198,7 +194,7 @@ public class class202 {
 
     @OriginalMember(owner = "client!sf", name = "<init>", descriptor = "()V")
     public class202() {
-        this.field3850.field2530 = this.field3850;
-        this.field3850.field2532 = this.field3850;
+        this.sentinel.next2 = this.sentinel;
+        this.sentinel.prev2 = this.sentinel;
     }
 }

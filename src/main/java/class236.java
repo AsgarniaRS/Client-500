@@ -118,8 +118,8 @@ public class class236 extends class27 {
 		if (class238.packetType == 239) {
 			int var2 = class230.in.g4();
 			int var3 = class230.in.g4();
-			class168 var4 = (class168) class128.field2397.get(-1, (long) var2);
-			class168 var5 = (class168) class128.field2397.get(-1, (long) var3);
+			class168 var4 = (class168) class128.field2397.find((long) var2);
+			class168 var5 = (class168) class128.field2397.find((long) var3);
 			if (var5 != null) {
 				class93.method673((byte) -124, var5, var4 == null || var4.field3231 != var5.field3231);
 			}
@@ -127,11 +127,11 @@ public class class236 extends class27 {
 				var4.unlink();
 				class128.field2397.put((long) var3, var4, -1);
 			}
-			class174 var6 = class239.method1581(-64, var2);
+			IfType var6 = class239.method1581(-64, var2);
 			if (var6 != null) {
 				class200.method1373(65280, var6);
 			}
-			class174 var7 = class239.method1581(-64, var3);
+			IfType var7 = class239.method1581(-64, var3);
 			if (var7 != null) {
 				class200.method1373(65280, var7);
 				class110.method761(true, var7, (byte) -111);
@@ -145,7 +145,7 @@ public class class236 extends class27 {
 			int var8 = class230.in.method320(3);
 			int var9 = class230.in.g2b_alt2();
 			int var10 = class230.in.method312((byte) 63);
-			class174 var11 = class239.method1581(-64, var8);
+			IfType var11 = class239.method1581(-64, var8);
 			var11.field3453 = 0;
 			var11.field3443 = var11.field3516 = var10;
 			var11.field3369 = 0;
@@ -174,7 +174,7 @@ public class class236 extends class27 {
 				int var24 = class230.in.g4();
 				int var25 = class230.in.g2();
 				int var26 = class230.in.g1();
-				class168 var27 = (class168) class128.field2397.get(-1, (long) var24);
+				class168 var27 = (class168) class128.field2397.find((long) var24);
 				if (var27 != null && var27.field3231 != var25) {
 					class93.method673((byte) -121, var27, true);
 					var27 = null;
@@ -191,7 +191,7 @@ public class class236 extends class27 {
 					class93.method673((byte) -117, var16, true);
 				}
 			}
-			class31.field495 = new class154(512);
+			class31.field495 = new HashTable(512);
 			while (class230.in.pos < var12) {
 				int var17 = class230.in.g4();
 				int var18 = class230.in.g2();
@@ -221,7 +221,7 @@ public class class236 extends class27 {
 		} else if (class238.packetType == 186) {
 			int var28 = class230.in.g4();
 			int var29 = class230.in.g2();
-			class174 var30;
+			IfType var30;
 			if (var28 < 0) {
 				var30 = null;
 			} else {
@@ -297,20 +297,20 @@ public class class236 extends class27 {
 					}
 				}
 				if (!var42 && Client.field563 == 0) {
-					class223.method1501(class174.field3455, 12, 10, var43);
+					class223.method1501(IfType.field3455, 12, 10, var43);
 				}
 			} else if (var36.method631(0, class172.field3336)) {
 				JString var64 = var36.method623(0, (byte) -92, var36.method617(-41, class172.field3336));
-				class223.method1501(var64, 12, 11, class174.field3455);
+				class223.method1501(var64, 12, 11, IfType.field3455);
 			} else if (var36.method631(0, class43.field731)) {
 				JString var63 = var36.method623(0, (byte) -89, var36.method617(-63, class43.field731));
 				if (Client.field563 == 0) {
-					class223.method1501(var63, 12, 12, class174.field3455);
+					class223.method1501(var63, 12, 12, IfType.field3455);
 				}
 			} else if (var36.method631(0, class128.field2402)) {
 				JString var47 = var36.method623(0, (byte) -34, var36.method617(99, class128.field2402));
 				if (Client.field563 == 0) {
-					class223.method1501(var47, 12, 13, class174.field3455);
+					class223.method1501(var47, 12, 13, IfType.field3455);
 				}
 			} else if (var36.method631(0, class157.field3027)) {
 				JString var48 = var36.method623(0, (byte) -51, var36.method617(102, SeqType.field1961));
@@ -323,7 +323,7 @@ public class class236 extends class27 {
 					}
 				}
 				if (!var51 && Client.field563 == 0) {
-					class223.method1501(class174.field3455, 12, 14, var48);
+					class223.method1501(IfType.field3455, 12, 14, var48);
 				}
 			} else if (var36.method631(0, class228.field4277)) {
 				JString var53 = var36.method623(0, (byte) -118, var36.method617(-84, SeqType.field1961));
@@ -336,7 +336,7 @@ public class class236 extends class27 {
 					}
 				}
 				if (!var56 && Client.field563 == 0) {
-					class223.method1501(class174.field3455, 12, 15, var53);
+					class223.method1501(IfType.field3455, 12, 15, var53);
 				}
 			} else if (var36.method631(0, class37.field665)) {
 				JString var58 = var36.method623(0, (byte) -25, var36.method617(97, SeqType.field1961));
@@ -349,10 +349,10 @@ public class class236 extends class27 {
 					}
 				}
 				if (!var61 && Client.field563 == 0) {
-					class223.method1501(class174.field3455, 12, 16, var58);
+					class223.method1501(IfType.field3455, 12, 16, var58);
 				}
 			} else {
-				class223.method1501(var36, 12, 0, class174.field3455);
+				class223.method1501(var36, 12, 0, IfType.field3455);
 			}
 			class238.packetType = -1;
 			return true;
@@ -424,7 +424,7 @@ public class class236 extends class27 {
 			}
 			for (int var79 = var77; var79 <= var78; var79++) {
 				long var80 = ((long) var76 << 32) + (long) var79;
-				Linkable var82 = class31.field495.get(-1, var80);
+				Linkable var82 = class31.field495.find(var80);
 				if (var82 != null) {
 					var82.unlink();
 				}
@@ -442,7 +442,7 @@ public class class236 extends class27 {
 		} else if (class238.packetType == 214) {
 			int var84 = class230.in.g4_alt3();
 			JString var85 = class230.in.gjstr();
-			class174 var86 = class239.method1581(-64, var84);
+			IfType var86 = class239.method1581(-64, var84);
 			if (!var85.method597(-113, var86.text)) {
 				var86.text = var85;
 				class200.method1373(65280, var86);
@@ -535,7 +535,7 @@ public class class236 extends class27 {
 			if (var102 == 65535) {
 				var102 = -1;
 			}
-			class174 var103 = class239.method1581(-64, var101);
+			IfType var103 = class239.method1581(-64, var101);
 			if (var103.field3432 != 2 || var103.model1Id != var102) {
 				var103.model1Id = var102;
 				var103.field3432 = 2;
@@ -554,7 +554,7 @@ public class class236 extends class27 {
 		} else if (class238.packetType == 191) {
 			boolean var104 = class230.in.g1_alt2() == 1;
 			int var105 = class230.in.g4_alt3();
-			class174 var106 = class239.method1581(-64, var105);
+			IfType var106 = class239.method1581(-64, var105);
 			if (var104 != var106.hide) {
 				var106.hide = var104;
 				class200.method1373(65280, var106);
@@ -563,7 +563,7 @@ public class class236 extends class27 {
 			return true;
 		} else if (class238.packetType == 200) {
 			int var107 = class230.in.g4_alt3();
-			class174 var108 = class239.method1581(-64, var107);
+			IfType var108 = class239.method1581(-64, var107);
 			for (int var109 = 0; var109 < var108.field3390.length; var109++) {
 				var108.field3390[var109] = -1;
 				var108.field3390[var109] = 0;
@@ -578,7 +578,7 @@ public class class236 extends class27 {
 			if (var112 == 65535) {
 				var112 = -1;
 			}
-			class174 var113 = class239.method1581(-64, var110);
+			IfType var113 = class239.method1581(-64, var110);
 			if (var113.v3) {
 				var113.field3401 = var112;
 				var113.field3484 = var111;
@@ -742,7 +742,7 @@ public class class236 extends class27 {
 				var153 = false;
 				var151 &= Long.MAX_VALUE;
 			}
-			JString var156 = class174.field3455;
+			JString var156 = IfType.field3455;
 			if (var154 > 0) {
 				var156 = class230.in.gjstr();
 			}
@@ -752,10 +752,10 @@ public class class236 extends class27 {
 					if (class160.field3094[var158] != var154) {
 						class160.field3094[var158] = var154;
 						if (var154 > 0) {
-							class223.method1501(class166.method1142(new JString[]{var157, class171.field3323}, -3), 12, 5, class174.field3455);
+							class223.method1501(class166.method1142(new JString[]{var157, class171.field3323}, -3), 12, 5, IfType.field3455);
 						}
 						if (var154 == 0) {
-							class223.method1501(class166.method1142(new JString[]{var157, class117.field2125}, -3), 12, 5, class174.field3455);
+							class223.method1501(class166.method1142(new JString[]{var157, class117.field2125}, -3), 12, 5, IfType.field3455);
 						}
 					}
 					var157 = null;
@@ -816,7 +816,7 @@ public class class236 extends class27 {
 			int var173 = var170 >> 5 & 0x1F;
 			int var174 = var170 & 0x1F;
 			int var175 = (var173 << 11) + (var172 << 19) + (var174 << 3);
-			class174 var176 = class239.method1581(-64, var171);
+			IfType var176 = class239.method1581(-64, var171);
 			if (var176.colour != var175) {
 				var176.colour = var175;
 				class200.method1373(65280, var176);
@@ -830,9 +830,9 @@ public class class236 extends class27 {
 			class208.field3954 = Linkable.field1211;
 			return true;
 		} else if (class238.packetType == 24) {
-			for (int var177 = 0; var177 < class113.field2052.length; var177++) {
-				if (class168.field3247[var177] != class113.field2052[var177]) {
-					class113.field2052[var177] = class168.field3247[var177];
+			for (int var177 = 0; var177 < class113.var.length; var177++) {
+				if (class168.field3247[var177] != class113.var[var177]) {
+					class113.var[var177] = class168.field3247[var177];
 					class158.method1070(64, var177);
 					class244.field4497[class70.method470(class226.field4246++, 31)] = var177;
 				}
@@ -957,7 +957,7 @@ public class class236 extends class27 {
 				var206 = -1;
 			}
 			int var207 = class230.in.g4_alt1();
-			class174 var208 = class239.method1581(-64, var207);
+			IfType var208 = class239.method1581(-64, var207);
 			if (var208.field3432 != 1 || var208.model1Id != var206) {
 				var208.field3432 = 1;
 				var208.model1Id = var206;
@@ -997,7 +997,7 @@ public class class236 extends class27 {
 			return true;
 		} else if (class238.packetType == 177) {
 			int var219 = class230.in.method320(3);
-			class49.field912 = class126.field2326.method1294(0, var219);
+			class49.field912 = NpcType.field2326.method1294(0, var219);
 			class238.packetType = -1;
 			return true;
 		} else if (class238.packetType == 88) {
@@ -1066,7 +1066,7 @@ public class class236 extends class27 {
 			if (var237 < -70000) {
 				var238 += 32768;
 			}
-			class174 var239;
+			IfType var239;
 			if (var237 < 0) {
 				var239 = null;
 			} else {
@@ -1099,8 +1099,8 @@ public class class236 extends class27 {
 			byte var243 = class230.in.g1b_alt2();
 			int var244 = class230.in.g2_alt3(255);
 			class168.field3247[var244] = var243;
-			if (class113.field2052[var244] != var243) {
-				class113.field2052[var244] = var243;
+			if (class113.var[var244] != var243) {
+				class113.var[var244] = var243;
 				class158.method1070(64, var244);
 			}
 			class244.field4497[class70.method470(class226.field4246++, 31)] = var244;
@@ -1108,7 +1108,7 @@ public class class236 extends class27 {
 			return true;
 		} else if (class238.packetType == 100) {
 			int var245 = class230.in.g4();
-			class174 var246 = class239.method1581(-64, var245);
+			IfType var246 = class239.method1581(-64, var245);
 			var246.field3432 = 3;
 			var246.model1Id = class240.field4458.field768.method1429(112);
 			class200.method1373(65280, var246);
@@ -1118,7 +1118,7 @@ public class class236 extends class27 {
 			int var247 = class230.in.g4();
 			int var248 = class230.in.g2();
 			int var249 = class230.in.g1();
-			class168 var250 = (class168) class128.field2397.get(-1, (long) var247);
+			class168 var250 = (class168) class128.field2397.find((long) var247);
 			if (var250 != null) {
 				class93.method673((byte) -117, var250, var250.field3231 != var248);
 			}
@@ -1276,7 +1276,7 @@ public class class236 extends class27 {
 			int var288 = class230.in.g1();
 			int var289 = class230.in.g1();
 			if (var288 >= 1 && var288 <= 8) {
-				if (var287.method624(class180.field3574, (byte) 92)) {
+				if (var287.equalsIgnoreCase(class180.field3574)) {
 					var287 = null;
 				}
 				class130.field2438[var288 - 1] = var287;
@@ -1289,7 +1289,7 @@ public class class236 extends class27 {
 				class229 var291 = class106.method734(var290, (byte) 69);
 				if (var291 != null && var291.field4290 == 0) {
 					class168.field3247[var290] = 0;
-					class113.field2052[var290] = 0;
+					class113.var[var290] = 0;
 				}
 			}
 			class127.method869((byte) 125);
@@ -1305,7 +1305,7 @@ public class class236 extends class27 {
 			int var293 = class230.in.g2_alt2();
 			int var294 = class230.in.g4_alt3();
 			int var295 = class230.in.g2_alt1();
-			class174 var296 = class239.method1581(-64, var294);
+			IfType var296 = class239.method1581(-64, var294);
 			if (var296.field3457 != var295 || var296.field3511 != var293 || var296.field3487 != var292) {
 				var296.field3511 = var293;
 				var296.field3487 = var292;
@@ -1331,7 +1331,7 @@ public class class236 extends class27 {
 		} else if (class238.packetType == 162) {
 			int var300 = class230.in.g4_alt1();
 			int var301 = class230.in.g2b_alt2();
-			class174 var302 = class239.method1581(-64, var300);
+			IfType var302 = class239.method1581(-64, var300);
 			if (var302.modelAnim != var301 || var301 == -1) {
 				var302.modelAnim = var301;
 				var302.field3489 = 0;
@@ -1390,7 +1390,7 @@ public class class236 extends class27 {
 			int var312 = class230.in.g2_alt2();
 			class64.field1173 = var311;
 			class207.field3932 = var312;
-			class136.method907((byte) -51);
+			Linkable2.method907((byte) -51);
 			class238.packetType = -1;
 			return true;
 		} else if (class238.packetType == 189) {
@@ -1407,7 +1407,7 @@ public class class236 extends class27 {
 		} else if (class238.packetType == 220) {
 			int var313 = class230.in.g4_alt3();
 			int var314 = class230.in.g2_alt2();
-			class174 var315 = class239.method1581(-64, var313);
+			IfType var315 = class239.method1581(-64, var313);
 			if (var315 != null && var315.type == 0) {
 				if (var315.scrollHeight - var315.field3424 < var314) {
 					var314 = var315.scrollHeight - var315.field3424;
@@ -1426,7 +1426,7 @@ public class class236 extends class27 {
 			int var316 = class230.in.g2_alt3(255);
 			int var317 = class230.in.g2();
 			int var318 = class230.in.method320(3);
-			class174 var319 = class239.method1581(-64, var318);
+			IfType var319 = class239.method1581(-64, var318);
 			class238.packetType = -1;
 			var319.field3387 = (var317 << 16) + var316;
 			return true;
@@ -1453,7 +1453,7 @@ public class class236 extends class27 {
 			return true;
 		} else if (class238.packetType == 242) {
 			int var323 = class230.in.g4();
-			class168 var324 = (class168) class128.field2397.get(-1, (long) var323);
+			class168 var324 = (class168) class128.field2397.find((long) var323);
 			if (var324 != null) {
 				class93.method673((byte) -116, var324, true);
 			}
@@ -1467,8 +1467,8 @@ public class class236 extends class27 {
 			int var325 = class230.in.g2_alt2();
 			int var326 = class230.in.g4_alt1();
 			class168.field3247[var325] = var326;
-			if (class113.field2052[var325] != var326) {
-				class113.field2052[var325] = var326;
+			if (class113.var[var325] != var326) {
+				class113.var[var325] = var326;
 				class158.method1070(64, var325);
 			}
 			class244.field4497[class70.method470(31, class226.field4246++)] = var325;
@@ -1478,8 +1478,8 @@ public class class236 extends class27 {
 			class50.field926 = (short) class230.in.g2();
 			if (class50.field926 <= 0) {
 				class50.field926 = 32767;
-			} else if (class50.field926 < class136.field2529) {
-				class50.field926 = class136.field2529;
+			} else if (class50.field926 < Linkable2.field2529) {
+				class50.field926 = Linkable2.field2529;
 			}
 			GameShell.field1578 = (short) class230.in.g2_alt1();
 			if (GameShell.field1578 <= 0) {
@@ -1491,9 +1491,9 @@ public class class236 extends class27 {
 			} else if (class222.field4181 < GameShell.field1578) {
 				class222.field4181 = GameShell.field1578;
 			}
-			class136.field2529 = (short) class230.in.g2_alt3(255);
-			if (class136.field2529 <= 0) {
-				class136.field2529 = 1;
+			Linkable2.field2529 = (short) class230.in.g2_alt3(255);
+			if (Linkable2.field2529 <= 0) {
+				Linkable2.field2529 = 1;
 			}
 			class238.packetType = -1;
 			return true;
@@ -1528,7 +1528,7 @@ public class class236 extends class27 {
 			class238.packetType = -1;
 			return true;
 		} else if (class238.packetType == 110) {
-			class230.method1537(class126.field2326, 0, class228.packetSize, class230.in);
+			class230.method1537(NpcType.field2326, 0, class228.packetSize, class230.in);
 			class238.packetType = -1;
 			return true;
 		} else if (class238.packetType == 184) {

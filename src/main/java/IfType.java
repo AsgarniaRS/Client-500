@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!q")
-public class class174 {
+public class IfType {
 
 	@OriginalMember(owner = "client!q", name = "b", descriptor = "I")
 	public int field3368 = 0;
@@ -227,7 +227,7 @@ public class class174 {
 	public boolean field3466 = true;
 
 	@OriginalMember(owner = "client!q", name = "Hc", descriptor = "Lq;")
-	public class174 field3504 = null;
+	public IfType field3504 = null;
 
 	@OriginalMember(owner = "client!q", name = "Rc", descriptor = "Li;")
 	public JString targetVerb = class66.field1188;
@@ -374,7 +374,7 @@ public class class174 {
 	public int[] field3518;
 
 	@OriginalMember(owner = "client!q", name = "Wb", descriptor = "[Lq;")
-	public class174[] field3467;
+	public IfType[] field3467;
 
 	@OriginalMember(owner = "client!q", name = "i", descriptor = "[Li;")
 	public JString[] opNames;
@@ -478,6 +478,41 @@ public class class174 {
 		return var2;
 	}
 
+	@OriginalMember(owner = "client!td", name = "c", descriptor = "(II)Z")
+	public static final boolean openInterface(int id, int arg0) {
+		if (class167.open[id]) {
+			return true;
+		} else if (!class85.interfaces.method972(id, (byte) -68)) {
+			return false;
+		} else {
+			int var2 = class85.interfaces.method944(128, id);
+			if (arg0 == var2) {
+				class167.open[id] = true;
+				return true;
+			} else {
+				if (class78.list[id] == null) {
+					class78.list[id] = new IfType[var2];
+				}
+				for (int sub = 0; var2 > sub; ++sub) {
+					if (class78.list[id][sub] == null) {
+						byte[] data = class85.interfaces.getFile(sub, id);
+						if (data != null) {
+							class78.list[id][sub] = new IfType();
+							class78.list[id][sub].parentId = (id << 16) + sub;
+							if (data[0] == -1) {
+								class78.list[id][sub].decode3(new Packet(data));
+							} else {
+								class78.list[id][sub].decode(new Packet(data));
+							}
+						}
+					}
+				}
+				class167.open[id] = true;
+				return true;
+			}
+		}
+	}
+
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(III)V")
 	public final void method1246(int arg0, int arg1, int arg2) {
 		field3413++;
@@ -511,12 +546,12 @@ public class class174 {
 		} else if (var6 == 1) {
 			class30 var8 = (class30) class168.field3238.method135(-115, (long) ((var6 << 16) + var7));
 			if (var8 == null) {
-				ModelUnlit var9 = ModelUnlit.method568(class90.field1705, var7, 0);
+				ModelUnlit var9 = ModelUnlit.load(class90.field1705, var7, 0);
 				if (var9 == null) {
 					class248.field4551 = true;
 					return null;
 				}
-				var8 = var9.method546(64, 768, -50, -10, -50);
+				var8 = var9.light(64, 768, -50, -10, -50);
 				class168.field3238.method130(37, (long) ((var6 << 16) + var7), var8);
 			}
 			if (arg0 != null) {
@@ -524,7 +559,7 @@ public class class174 {
 			}
 			return var8;
 		} else if (~var6 == arg4) {
-			class30 var10 = class147.method987(var7, -113).method866(arg2, 0, arg0);
+			class30 var10 = class147.list(var7).method866(arg2, 0, arg0);
 			if (var10 == null) {
 				class248.field4551 = true;
 				return null;
@@ -552,7 +587,7 @@ public class class174 {
 				return var13;
 			}
 		} else if (var6 == 6) {
-			class30 var14 = class147.method987(var7, -96).method867(0, null, 0, arg2, arg0);
+			class30 var14 = class147.list(var7).method867(0, null, 0, arg2, arg0);
 			if (var14 == null) {
 				class248.field4551 = true;
 				return null;
@@ -620,7 +655,7 @@ public class class174 {
 			if (var3 == -1) {
 				return null;
 			}
-			class188 var4 = (class188) class113.field2041.method666((long) var3, 0);
+			class188 var4 = (class188) class113.field2041.find((long) var3);
 			if (var4 != null) {
 				return var4;
 			}
@@ -628,7 +663,7 @@ public class class174 {
 			if (var5 == null) {
 				class248.field4551 = true;
 			} else {
-				class113.field2041.put((long) var3, var5, false);
+				class113.field2041.put(var5, (long) var3, false);
 			}
 			return var5;
 		} else {
@@ -650,7 +685,7 @@ public class class174 {
 			return null;
 		}
 		long var4 = ((long) this.field3427 << 40) + ((this.field3485 ? 1L : 0L) << 39) + ((this.field3389 ? 1L : 0L) << 38) + (long) var3 + ((this.field3479 ? 1L : 0L) << 35) + ((long) this.field3431 << 36);
-		class188 var6 = (class188) class113.field2041.method666(var4, 0);
+		class188 var6 = (class188) class113.field2041.find(var4);
 		if (var6 != null) {
 			return var6;
 		}
@@ -678,7 +713,7 @@ public class class174 {
 		if (this.field3427 != 0) {
 			var7.method1156(this.field3427);
 		}
-		class113.field2041.put(var4, var7, false);
+		class113.field2041.put(var7, var4, false);
 		return var7;
 	}
 
@@ -857,7 +892,7 @@ public class class174 {
 		if (arg0 != -2) {
 			this.text2 = null;
 		}
-		class26 var3 = (class26) class157.field3022.method666((long) this.font, 0);
+		class26 var3 = (class26) class157.field3022.find((long) this.font);
 		if (var3 != null) {
 			return var3;
 		}
@@ -866,7 +901,7 @@ public class class174 {
 			class248.field4551 = true;
 		} else {
 			var4.method149(arg1, null);
-			class157.field3022.put((long) this.font, var4, false);
+			class157.field3022.put(var4, (long) this.font, false);
 		}
 		return var4;
 	}

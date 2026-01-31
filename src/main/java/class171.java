@@ -222,7 +222,7 @@ public class class171 extends class23 {
 			if (var1 == -1) {
 				var2 = 2047;
 			} else {
-				var2 = class174.field3430[var1];
+				var2 = IfType.field3430[var1];
 			}
 			scene var3 = class244.field4493[var2];
 			if (var3 != null) {

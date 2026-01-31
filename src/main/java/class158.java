@@ -45,7 +45,7 @@ public class class158 {
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(ZIII)V")
 	public static final void method1066(boolean arg0, int arg1, int arg2, int arg3) {
-		class174 var4 = class36.method238(arg3, arg1, arg0);
+		IfType var4 = class36.method238(arg3, arg1, arg0);
 		if (var4 != null && var4.field3449 != null) {
 			class39 var5 = new class39();
 			var5.field678 = var4;
@@ -117,7 +117,7 @@ public class class158 {
 		if (var2 == 0) {
 			return;
 		}
-		int var3 = class113.field2052[arg1];
+		int var3 = class113.var[arg1];
 		if (var2 == 1) {
 			class175.field3530 = var3;
 			if (class175.field3530 == 1) {

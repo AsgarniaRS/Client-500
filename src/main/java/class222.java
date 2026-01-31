@@ -50,7 +50,7 @@ public class class222 {
 	public static int field4194;
 
 	@OriginalMember(owner = "client!ud", name = "a", descriptor = "(Lq;BI)Li;")
-	public static final JString method1496(class174 arg0, byte arg1, int arg2) {
+	public static final JString method1496(IfType arg0, byte arg1, int arg2) {
 		field4191++;
 		if (!class105.method728(108, arg2, class80.method530(-881710560, arg0)) && arg0.field3403 == null) {
 			return null;

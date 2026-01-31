@@ -98,16 +98,16 @@ public class class103 extends class50 {
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(II)Lvb;")
 	public static final class231 method712(int arg0, int arg1) {
 		++field1873;
-		class231 var2 = (class231) class216.field4049.method666((long) arg0, arg1 ^ arg1);
+		class231 var2 = (class231) class216.field4049.find((long) arg0);
 		if (var2 != null) {
 			return var2;
 		} else {
-			byte[] var3 = class129.field2424.method941((byte) 56, arg0, 3);
+			byte[] var3 = class129.field2424.getFile(arg0, 3);
 			class231 var4 = new class231();
 			if (var3 != null) {
 				var4.method1548(-1, new Packet(var3));
 			}
-			class216.field4049.put((long) arg0, var4, false);
+			class216.field4049.put(var4, (long) arg0, false);
 			return var4;
 		}
 	}
@@ -160,14 +160,14 @@ public class class103 extends class50 {
 	}
 
 	@OriginalMember(owner = "client!je", name = "a", descriptor = "(IB[Lq;)V")
-	public static final void method716(int arg0, byte arg1, class174[] arg2) {
+	public static final void method716(int arg0, byte arg1, IfType[] arg2) {
 		++field1860;
 		int var3 = 0;
 		if (arg1 < 125) {
 			method712(107, 112);
 		}
 		while (var3 < arg2.length) {
-			class174 var4 = arg2[var3];
+			IfType var4 = arg2[var3];
 			if (var4 != null && var4.layerId == arg0 && (!var4.v3 || !class71.method475(0, var4))) {
 				label99:
 				{
@@ -179,7 +179,7 @@ public class class103 extends class50 {
 						if (var4.field3467 != null) {
 							method716(var4.parentId, (byte) 127, var4.field3467);
 						}
-						class168 var5 = (class168) class128.field2397.get(-1, (long) var4.parentId);
+						class168 var5 = (class168) class128.field2397.find((long) var4.parentId);
 						if (var5 != null) {
 							class217.method1473(var5.field3231, -119);
 						}

@@ -125,13 +125,13 @@ public class class143 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!na", name = "a", descriptor = "(IIIIII[Lq;II)V")
-	public static final void method935(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, class174[] arg6, int arg7, int arg8) {
+	public static final void method935(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, IfType[] arg6, int arg7, int arg8) {
 		if (arg2 != 31) {
 			field2635 = null;
 		}
 		field2653++;
 		for (int var9 = 0; var9 < arg6.length; var9++) {
-			class174 var10 = arg6[var9];
+			IfType var10 = arg6[var9];
 			if (var10 != null && (!var10.v3 || var10.type == 0 || var10.hashook || class80.method530(-881710560, var10) != 0 || class49.field923 == var10 || var10.field3441 == 1338) && var10.layerId == arg4 && (!var10.v3 || !class71.method475(0, var10))) {
 				int var11 = var10.field3368 + arg3;
 				int var12 = var10.field3443 + arg8;
@@ -204,7 +204,7 @@ public class class143 extends Linkable {
 								for (int var25 = 0; var25 < class81.field1467; var25++) {
 									int var26 = var10.field3495[var24] & 0xFF;
 									if (class242.field4481[var25] == var26) {
-										class203.method1392(var24 + 1, class174.field3455, -1, -3655, var10.parentId);
+										class203.method1392(var24 + 1, IfType.field3455, -1, -3655, var10.parentId);
 									}
 								}
 							}
@@ -249,7 +249,7 @@ public class class143 extends Linkable {
 								if (var22) {
 									if (ClientScript.field4513[82] && Linkable.field1208 > 0) {
 										int var28 = class119.field2183 + scene.field760 - (int) ((double) (class172.field3341 - var12 - var10.field3424 / 2) * 2.0D / GZip.field1110) - class157.field3035;
-										int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / GZip.field1110) + class126.field2332 + class16.field239;
+										int var29 = (int) ((double) (class226.field4241 - var11 - var10.field3382 / 2) * 2.0D / GZip.field1110) + NpcType.field2332 + class16.field239;
 										JString var30 = class166.method1142(new JString[]{class212.field4011, class170.method1214(var29 >> 6, arg2 - 150), class53.field979, class170.method1214(var28 >> 6, 111), class53.field979, class170.method1214(var29 & 0x3F, 94), class53.field979, class170.method1214(var28 & 0x3F, -79)}, -3);
 										var30.method610(-5446);
 										class97.method684(var30, arg2 - 29);
@@ -260,7 +260,7 @@ public class class143 extends Linkable {
 									class98.field1803 = class157.field3035;
 									class207.field3943 = class239.field4451;
 									class175.field3534 = true;
-									EnumType.field890 = class126.field2332;
+									EnumType.field890 = NpcType.field2332;
 									continue;
 								}
 								if (var21 && class175.field3534) {
@@ -490,7 +490,7 @@ public class class143 extends Linkable {
 						if (var10.field3467 != null) {
 							method935(var13, var18, 31, var11 - var10.field3395, var10.parentId, var17, var10.field3467, var16, var12 - var10.field3417);
 						}
-						class168 var61 = (class168) class128.field2397.get(-1, (long) var10.parentId);
+						class168 var61 = (class168) class128.field2397.find((long) var10.parentId);
 						if (var61 != null) {
 							class230.method1535(var12, var17, var13, var16, var18, 66, var61.field3231, var11);
 						}

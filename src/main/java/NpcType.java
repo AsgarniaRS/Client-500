@@ -2,82 +2,82 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!lf")
-public class class126 extends class136 {
+public class NpcType extends Linkable2 {
 
 	@OriginalMember(owner = "client!lf", name = "Q", descriptor = "I")
-	public int field2328 = -1;
+	public int headicon = -1;
 
 	@OriginalMember(owner = "client!lf", name = "T", descriptor = "S")
 	public short field2331 = 0;
 
 	@OriginalMember(owner = "client!lf", name = "eb", descriptor = "I")
-	public int field2341 = 32;
+	public int turnspeed = 32;
 
 	@OriginalMember(owner = "client!lf", name = "J", descriptor = "I")
-	private int field2321 = 0;
+	private int contrast = 0;
 
 	@OriginalMember(owner = "client!lf", name = "H", descriptor = "I")
-	public int field2319 = -1;
+	public int turnleftanim = -1;
 
 	@OriginalMember(owner = "client!lf", name = "fb", descriptor = "I")
-	private int field2342 = 128;
+	private int resizeh = 128;
 
 	@OriginalMember(owner = "client!lf", name = "W", descriptor = "I")
-	public int field2333 = -1;
+	public int vislevel = -1;
 
 	@OriginalMember(owner = "client!lf", name = "mb", descriptor = "I")
-	private int field2349 = 128;
+	private int resizev = 128;
 
 	@OriginalMember(owner = "client!lf", name = "P", descriptor = "I")
-	public int field2327 = -1;
+	public int readyanim = -1;
 
 	@OriginalMember(owner = "client!lf", name = "ib", descriptor = "I")
-	public int field2345 = -1;
+	public int walkanim_b = -1;
 
 	@OriginalMember(owner = "client!lf", name = "ob", descriptor = "I")
-	public int field2351 = 1;
+	public int size = 1;
 
 	@OriginalMember(owner = "client!lf", name = "gb", descriptor = "Li;")
-	public JString field2343 = class3.field34;
+	public JString name = class3.field34;
 
 	@OriginalMember(owner = "client!lf", name = "M", descriptor = "I")
-	public int field2324 = -1;
+	public int walkanim = -1;
 
 	@OriginalMember(owner = "client!lf", name = "sb", descriptor = "I")
-	private int field2355 = -1;
+	private int multivarbit = -1;
 
 	@OriginalMember(owner = "client!lf", name = "wb", descriptor = "Z")
-	public boolean field2359 = true;
+	public boolean minimap = true;
 
 	@OriginalMember(owner = "client!lf", name = "hb", descriptor = "[Li;")
-	public JString[] field2344 = new JString[5];
+	public JString[] op = new JString[5];
 
 	@OriginalMember(owner = "client!lf", name = "xb", descriptor = "I")
-	private int field2360 = 0;
+	private int ambient = 0;
 
 	@OriginalMember(owner = "client!lf", name = "pb", descriptor = "S")
 	public short field2352 = 0;
 
 	@OriginalMember(owner = "client!lf", name = "yb", descriptor = "Z")
-	public boolean field2361 = true;
+	public boolean active = true;
 
 	@OriginalMember(owner = "client!lf", name = "tb", descriptor = "Z")
-	public boolean field2356 = true;
+	public boolean walksmooth = true;
 
 	@OriginalMember(owner = "client!lf", name = "cb", descriptor = "I")
-	public int field2339 = -1;
+	public int walkanim_l = -1;
 
 	@OriginalMember(owner = "client!lf", name = "zb", descriptor = "I")
-	public int field2362 = -1;
+	public int turnrightanim = -1;
 
 	@OriginalMember(owner = "client!lf", name = "Cb", descriptor = "Z")
-	public boolean field2365 = false;
+	public boolean alwaysontop = false;
 
 	@OriginalMember(owner = "client!lf", name = "Eb", descriptor = "I")
-	private int field2367 = -1;
+	private int multivarp = -1;
 
 	@OriginalMember(owner = "client!lf", name = "qb", descriptor = "I")
-	public int field2353 = -1;
+	public int walkanim_r = -1;
 
 	@OriginalMember(owner = "client!lf", name = "L", descriptor = "Li;")
 	public static JString field2323 = class208.method1425("Hidden)2use");
@@ -98,7 +98,7 @@ public class class126 extends class136 {
 	public static int field2315;
 
 	@OriginalMember(owner = "client!lf", name = "E", descriptor = "I")
-	public int field2316;
+	public int index;
 
 	@OriginalMember(owner = "client!lf", name = "F", descriptor = "I")
 	public static int field2317;
@@ -137,22 +137,22 @@ public class class126 extends class136 {
 	public static int field2368;
 
 	@OriginalMember(owner = "client!lf", name = "jb", descriptor = "Lob;")
-	private class154 field2346;
+	private HashTable field2346;
 
 	@OriginalMember(owner = "client!lf", name = "O", descriptor = "Lqg;")
 	public static class181 field2326;
 
 	@OriginalMember(owner = "client!lf", name = "ab", descriptor = "[B")
-	private byte[] field2337;
+	private byte[] recol_s;
 
 	@OriginalMember(owner = "client!lf", name = "R", descriptor = "[I")
-	public int[] field2329;
+	public int[] multinpc;
 
 	@OriginalMember(owner = "client!lf", name = "Ab", descriptor = "[I")
-	private int[] field2363;
+	private int[] model;
 
 	@OriginalMember(owner = "client!lf", name = "Bb", descriptor = "[I")
-	private int[] field2364;
+	private int[] head;
 
 	@OriginalMember(owner = "client!lf", name = "G", descriptor = "[S")
 	private short[] field2318;
@@ -164,43 +164,37 @@ public class class126 extends class136 {
 	private short[] field2347;
 
 	@OriginalMember(owner = "client!lf", name = "ub", descriptor = "[S")
-	private short[] field2357;
+	private short[] retex_s;
 
 	@OriginalMember(owner = "client!lf", name = "b", descriptor = "(Z)Z")
-	public final boolean method854(boolean arg0) {
-		field2330++;
-		if (this.field2329 == null) {
+	public final boolean isMultiNpcVisible() {
+		if (this.multinpc == null) {
 			return true;
 		}
+
 		int var2 = -1;
-		if (this.field2355 != -1) {
-			var2 = class142.getVarbit(this.field2355);
-		} else if (this.field2367 != -1) {
-			var2 = class113.field2052[this.field2367];
+		if (this.multivarbit != -1) {
+			var2 = class142.getVarbit(this.multivarbit);
+		} else if (this.multivarp != -1) {
+			var2 = class113.var[this.multivarp];
 		}
-		if (var2 < 0 || var2 >= this.field2329.length - 1 || this.field2329[var2] == -1) {
-			int var3 = this.field2329[this.field2329.length - 1];
+
+		if (var2 < 0 || var2 >= this.multinpc.length - 1 || this.multinpc[var2] == -1) {
+			int var3 = this.multinpc[this.multinpc.length - 1];
 			return var3 != -1;
 		} else {
-			if (arg0) {
-				field2323 = null;
-			}
 			return true;
 		}
 	}
 
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(Lea;I)V")
-	public final void method855(Packet arg0, int arg1) {
+	public final void decode(Packet buf) {
 		while (true) {
-			int var3 = arg0.g1();
-			if (var3 == 0) {
-				if (arg1 != 1) {
-					return;
-				}
-				field2366++;
+			int code = buf.g1();
+			if (code == 0) {
 				return;
 			}
-			this.method859(var3, false, arg0);
+			this.decode(buf, code, false);
 		}
 	}
 
@@ -210,7 +204,7 @@ public class class126 extends class136 {
 		if (this.field2346 == null) {
 			return arg1;
 		} else if (arg0 == -8931) {
-			class192 var4 = (class192) this.field2346.get(-1, (long) arg2);
+			class192 var4 = (class192) this.field2346.find((long) arg2);
 			return var4 == null ? arg1 : var4.field3700;
 		} else {
 			return 69;
@@ -227,160 +221,154 @@ public class class126 extends class136 {
 		if (arg1 < 9) {
 			field2350 = 1;
 		}
-		field2368++;
 		class90.field1705 = arg4;
 		class65.field1176 = arg0;
-		class85.field1545 = arg2;
+		class85.interfaces = arg2;
 		class106.field1928 = arg3;
-		class78.field1418 = new class174[class85.field1545.method942((byte) -42)][];
-		class167.field3213 = new boolean[class85.field1545.method942((byte) -110)];
+		class78.list = new IfType[class85.interfaces.method942((byte) -42)][];
+		class167.open = new boolean[class85.interfaces.method942((byte) -110)];
 	}
 
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(IZLea;)V")
-	private void method859(int arg0, boolean arg1, Packet arg2) {
-		if (arg0 == 1) {
-			int var4 = arg2.g1();
-			this.field2363 = new int[var4];
-			for (int var5 = 0; var5 < var4; var5++) {
-				this.field2363[var5] = arg2.g2();
+	private void decode(Packet buf, int code, boolean arg1) {
+		if (code == 1) {
+			int count = buf.g1();
+			this.model = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.model[i] = buf.g2();
 			}
-		} else if (arg0 == 2) {
-			this.field2343 = arg2.gjstr();
-		} else if (arg0 == 12) {
-			this.field2351 = arg2.g1();
-		} else if (arg0 == 13) {
-			this.field2327 = arg2.g2();
-		} else if (arg0 == 14) {
-			this.field2324 = arg2.g2();
-		} else if (arg0 == 15) {
-			this.field2319 = arg2.g2();
-		} else if (arg0 == 16) {
-			this.field2362 = arg2.g2();
-		} else if (arg0 == 17) {
-			this.field2324 = arg2.g2();
-			this.field2345 = arg2.g2();
-			this.field2353 = arg2.g2();
-			this.field2339 = arg2.g2();
-		} else if (arg0 >= 30 && arg0 < 35) {
-			this.field2344[arg0 - 30] = arg2.gjstr();
-			if (this.field2344[arg0 - 30].method624(class192.HIDDEN, (byte) 71)) {
-				this.field2344[arg0 - 30] = null;
+		} else if (code == 2) {
+			this.name = buf.gjstr();
+		} else if (code == 12) {
+			this.size = buf.g1();
+		} else if (code == 13) {
+			this.readyanim = buf.g2();
+		} else if (code == 14) {
+			this.walkanim = buf.g2();
+		} else if (code == 15) {
+			this.turnleftanim = buf.g2();
+		} else if (code == 16) {
+			this.turnrightanim = buf.g2();
+		} else if (code == 17) {
+			this.walkanim = buf.g2();
+			this.walkanim_b = buf.g2();
+			this.walkanim_r = buf.g2();
+			this.walkanim_l = buf.g2();
+		} else if (code >= 30 && code < 35) {
+			this.op[code - 30] = buf.gjstr();
+			if (this.op[code - 30].equalsIgnoreCase(class192.HIDDEN)) {
+				this.op[code - 30] = null;
 			}
-		} else if (arg0 == 40) {
-			int var21 = arg2.g1();
-			this.field2318 = new short[var21];
-			this.field2335 = new short[var21];
-			for (int var22 = 0; var22 < var21; var22++) {
-				this.field2335[var22] = (short) arg2.g2();
-				this.field2318[var22] = (short) arg2.g2();
+		} else if (code == 40) {
+			int count = buf.g1();
+			this.field2318 = new short[count];
+			this.field2335 = new short[count];
+			for (int i = 0; i < count; i++) {
+				this.field2335[i] = (short) buf.g2();
+				this.field2318[i] = (short) buf.g2();
 			}
-		} else if (arg0 == 41) {
-			int var19 = arg2.g1();
-			this.field2347 = new short[var19];
-			this.field2357 = new short[var19];
-			for (int var20 = 0; var20 < var19; var20++) {
-				this.field2357[var20] = (short) arg2.g2();
-				this.field2347[var20] = (short) arg2.g2();
+		} else if (code == 41) {
+			int count = buf.g1();
+			this.field2347 = new short[count];
+			this.retex_s = new short[count];
+			for (int i = 0; i < count; i++) {
+				this.retex_s[i] = (short) buf.g2();
+				this.field2347[i] = (short) buf.g2();
 			}
-		} else if (arg0 == 42) {
-			int var6 = arg2.g1();
-			this.field2337 = new byte[var6];
-			for (int var7 = 0; var7 < var6; var7++) {
-				this.field2337[var7] = arg2.g1b();
+		} else if (code == 42) {
+			int count = buf.g1();
+			this.recol_s = new byte[count];
+			for (int i = 0; i < count; i++) {
+				this.recol_s[i] = buf.g1b();
 			}
-		} else if (arg0 == 60) {
-			int var17 = arg2.g1();
-			this.field2364 = new int[var17];
-			for (int var18 = 0; var18 < var17; var18++) {
-				this.field2364[var18] = arg2.g2();
+		} else if (code == 60) {
+			int count = buf.g1();
+			this.head = new int[count];
+			for (int i = 0; i < count; i++) {
+				this.head[i] = buf.g2();
 			}
-		} else if (arg0 == 93) {
-			this.field2359 = false;
-		} else if (arg0 == 95) {
-			this.field2333 = arg2.g2();
-		} else if (arg0 == 97) {
-			this.field2342 = arg2.g2();
-		} else if (arg0 == 98) {
-			this.field2349 = arg2.g2();
-		} else if (arg0 == 99) {
-			this.field2365 = true;
-		} else if (arg0 == 100) {
-			this.field2360 = arg2.g1b();
-		} else if (arg0 == 101) {
-			this.field2321 = arg2.g1b() * 5;
-		} else if (arg0 == 102) {
-			this.field2328 = arg2.g2();
-		} else if (arg0 == 103) {
-			this.field2341 = arg2.g2();
-		} else if (arg0 == 106 || arg0 == 118) {
+		} else if (code == 93) {
+			this.minimap = false;
+		} else if (code == 95) {
+			this.vislevel = buf.g2();
+		} else if (code == 97) {
+			this.resizeh = buf.g2();
+		} else if (code == 98) {
+			this.resizev = buf.g2();
+		} else if (code == 99) {
+			this.alwaysontop = true;
+		} else if (code == 100) {
+			this.ambient = buf.g1b();
+		} else if (code == 101) {
+			this.contrast = buf.g1b() * 5;
+		} else if (code == 102) {
+			this.headicon = buf.g2();
+		} else if (code == 103) {
+			this.turnspeed = buf.g2();
+		} else if (code == 106 || code == 118) {
 			int var14 = -1;
-			this.field2355 = arg2.g2();
-			if (this.field2355 == 65535) {
-				this.field2355 = -1;
+			this.multivarbit = buf.g2();
+			if (this.multivarbit == 65535) {
+				this.multivarbit = -1;
 			}
-			this.field2367 = arg2.g2();
-			if (this.field2367 == 65535) {
-				this.field2367 = -1;
+			this.multivarp = buf.g2();
+			if (this.multivarp == 65535) {
+				this.multivarp = -1;
 			}
-			if (arg0 == 118) {
-				var14 = arg2.g2();
+			if (code == 118) {
+				var14 = buf.g2();
 				if (var14 == 65535) {
 					var14 = -1;
 				}
 			}
-			int var15 = arg2.g1();
-			this.field2329 = new int[var15 + 2];
+			int var15 = buf.g1();
+			this.multinpc = new int[var15 + 2];
 			for (int var16 = 0; var16 <= var15; var16++) {
-				this.field2329[var16] = arg2.g2();
-				if (this.field2329[var16] == 65535) {
-					this.field2329[var16] = -1;
+				this.multinpc[var16] = buf.g2();
+				if (this.multinpc[var16] == 65535) {
+					this.multinpc[var16] = -1;
 				}
 			}
-			this.field2329[var15 + 1] = var14;
-		} else if (arg0 == 107) {
-			this.field2361 = false;
-		} else if (arg0 == 109) {
-			this.field2356 = false;
-		} else if (arg0 != 111) {
-			if (arg0 == 113) {
-				arg2.g2();
-				arg2.g2();
-			} else if (arg0 == 114) {
-				arg2.g1b();
-				arg2.g1b();
-			} else if (arg0 == 115) {
-				this.field2352 = (short) (arg2.g1() * 4);
-				this.field2331 = (short) (arg2.g1() * 4);
-			} else if (arg0 == 119) {
-				arg2.g1b();
-			} else if (arg0 == 249) {
-				int var8 = arg2.g1();
+			this.multinpc[var15 + 1] = var14;
+		} else if (code == 107) {
+			this.active = false;
+		} else if (code == 109) {
+			this.walksmooth = false;
+		} else if (code != 111) {
+			if (code == 113) {
+				buf.g2();
+				buf.g2();
+			} else if (code == 114) {
+				buf.g1b();
+				buf.g1b();
+			} else if (code == 115) {
+				this.field2352 = (short) (buf.g1() * 4);
+				this.field2331 = (short) (buf.g1() * 4);
+			} else if (code == 119) {
+				buf.g1b();
+			} else if (code == 249) {
+				int var8 = buf.g1();
 				if (this.field2346 == null) {
 					int var9 = class184.method1298(!arg1, var8);
-					this.field2346 = new class154(var9);
+					this.field2346 = new HashTable(var9);
 				}
 				for (int var10 = 0; var10 < var8; var10++) {
-					boolean var11 = arg2.g1() == 1;
-					int var12 = arg2.g3();
+					boolean var11 = buf.g1() == 1;
+					int var12 = buf.g3();
 					Linkable var13;
 					if (var11) {
-						var13 = new class216(arg2.gjstr());
+						var13 = new class216(buf.gjstr());
 					} else {
-						var13 = new class192(arg2.g4());
+						var13 = new class192(buf.g4());
 					}
 					this.field2346.put((long) var12, var13, -1);
 				}
 			}
 		}
-		if (!arg1) {
-			field2336++;
-		}
 	}
 
 	@OriginalMember(owner = "client!lf", name = "d", descriptor = "(I)V")
-	public final void method860(int arg0) {
-		field2317++;
-		int var2 = 66 % ((42 - arg0) / 52);
+	public final void postDecode() {
 	}
 
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(IIIIILnc;IJZ)Z")
@@ -420,7 +408,7 @@ public class class126 extends class136 {
 		if (this.field2346 == null) {
 			return arg2;
 		} else {
-			class216 var5 = (class216) this.field2346.get(-1, (long) arg0);
+			class216 var5 = (class216) this.field2346.find((long) arg0);
 			return var5 == null ? arg2 : var5.field4048;
 		}
 	}
@@ -439,22 +427,19 @@ public class class126 extends class136 {
 	}
 
 	@OriginalMember(owner = "client!lf", name = "d", descriptor = "(B)Llf;")
-	public final class126 method864(byte arg0) {
-		field2348++;
-		int var2 = -1;
-		if (this.field2355 != -1) {
-			var2 = class142.getVarbit(this.field2355);
-		} else if (this.field2367 != -1) {
-			var2 = class113.field2052[this.field2367];
+	public final NpcType getMultiNpc() {
+		int value = -1;
+		if (this.multivarbit != -1) {
+			value = class142.getVarbit(this.multivarbit);
+		} else if (this.multivarp != -1) {
+			value = class113.var[this.multivarp];
 		}
-		if (arg0 <= 21) {
-			field2332 = 14;
-		}
-		if (var2 < 0 || this.field2329.length - 1 <= var2 || this.field2329[var2] == -1) {
-			int var3 = this.field2329[this.field2329.length - 1];
-			return var3 == -1 ? null : class147.method987(var3, -77);
+
+		if (value < 0 || this.multinpc.length - 1 <= value || this.multinpc[value] == -1) {
+			int var3 = this.multinpc[this.multinpc.length - 1];
+			return var3 == -1 ? null : class147.list(var3);
 		} else {
-			return class147.method987(this.field2329[var2], -104);
+			return class147.list(this.multinpc[value]);
 		}
 	}
 
@@ -472,29 +457,29 @@ public class class126 extends class136 {
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(IILk;)Lcg;")
 	public final class30 method866(int arg0, int arg1, SeqType arg2) {
 		field2315++;
-		if (this.field2329 != null) {
-			class126 var4 = this.method864((byte) 100);
+		if (this.multinpc != null) {
+			NpcType var4 = this.getMultiNpc();
 			return var4 == null ? null : var4.method866(arg0, arg1, arg2);
-		} else if (this.field2364 == null) {
+		} else if (this.head == null) {
 			return null;
 		} else {
-			class30 var5 = (class30) class141.field2608.method135(arg1 - 116, (long) this.field2316);
+			class30 var5 = (class30) class141.field2608.method135(arg1 - 116, (long) this.index);
 			if (arg1 != 0) {
 				cacheMax = null;
 			}
 			if (var5 == null) {
 				boolean var6 = false;
-				for (int var7 = 0; var7 < this.field2364.length; var7++) {
-					if (!class170.field3264.download(this.field2364[var7], 0)) {
+				for (int var7 = 0; var7 < this.head.length; var7++) {
+					if (!class170.models.requestDownload(this.head[var7], 0)) {
 						var6 = true;
 					}
 				}
 				if (var6) {
 					return null;
 				}
-				ModelUnlit[] var8 = new ModelUnlit[this.field2364.length];
-				for (int var9 = 0; var9 < this.field2364.length; var9++) {
-					var8[var9] = ModelUnlit.method568(class170.field3264, this.field2364[var9], 0);
+				ModelUnlit[] var8 = new ModelUnlit[this.head.length];
+				for (int var9 = 0; var9 < this.head.length; var9++) {
+					var8[var9] = ModelUnlit.load(class170.models, this.head[var9], 0);
 				}
 				ModelUnlit var10;
 				if (var8.length == 1) {
@@ -504,20 +489,20 @@ public class class126 extends class136 {
 				}
 				if (this.field2335 != null) {
 					for (int var11 = 0; var11 < this.field2335.length; var11++) {
-						if (this.field2337 == null || this.field2337.length <= var11) {
+						if (this.recol_s == null || this.recol_s.length <= var11) {
 							var10.recolour(this.field2335[var11], this.field2318[var11]);
 						} else {
-							var10.recolour(this.field2335[var11], class7.field108[this.field2337[var11] & 0xFF]);
+							var10.recolour(this.field2335[var11], class7.field108[this.recol_s[var11] & 0xFF]);
 						}
 					}
 				}
-				if (this.field2357 != null) {
-					for (int var12 = 0; var12 < this.field2357.length; var12++) {
-						var10.retexture(this.field2357[var12], this.field2347[var12]);
+				if (this.retex_s != null) {
+					for (int var12 = 0; var12 < this.retex_s.length; var12++) {
+						var10.retexture(this.retex_s[var12], this.field2347[var12]);
 					}
 				}
-				var5 = var10.method546(64, 768, -50, -10, -50);
-				class141.field2608.method130(37, (long) this.field2316, var5);
+				var5 = var10.light(64, 768, -50, -10, -50);
+				class141.field2608.method130(37, (long) this.index, var5);
 			}
 			if (arg2 != null) {
 				var5 = arg2.method760(arg0, var5, (byte) -83);
@@ -529,64 +514,63 @@ public class class126 extends class136 {
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(ILk;IILk;)Lcg;")
 	public final class30 method867(int arg0, SeqType arg1, int arg2, int arg3, SeqType arg4) {
 		field2338++;
-		if (this.field2329 != null) {
-			class126 var6 = this.method864((byte) 28);
-			return var6 == null ? null : var6.method867(0, arg1, arg2, arg3, arg4);
+		if (this.multinpc != null) {
+			NpcType npc = this.getMultiNpc();
+			return npc == null ? null : npc.method867(0, arg1, arg2, arg3, arg4);
 		}
-		class30 var7 = (class30) class106.field1925.method135(-99, (long) this.field2316);
-		if (var7 == null) {
-			boolean var8 = false;
-			for (int var9 = 0; var9 < this.field2363.length; var9++) {
-				if (!class170.field3264.download(this.field2363[var9], 0)) {
-					var8 = true;
+		class30 cached = (class30) class106.field1925.method135(-99, (long) this.index);
+		if (cached == null) {
+			boolean needsModel = false;
+			for (int var9 = 0; var9 < this.model.length; var9++) {
+				if (!class170.models.requestDownload(this.model[var9], 0)) {
+					needsModel = true;
 				}
 			}
-			if (var8) {
+			if (needsModel) {
 				return null;
 			}
-			ModelUnlit[] var10 = new ModelUnlit[this.field2363.length];
-			for (int var11 = 0; var11 < this.field2363.length; var11++) {
-				var10[var11] = ModelUnlit.method568(class170.field3264, this.field2363[var11], 0);
+			ModelUnlit[] models = new ModelUnlit[this.model.length];
+			for (int i = 0; i < this.model.length; i++) {
+				models[i] = ModelUnlit.load(class170.models, this.model[i], 0);
 			}
-			ModelUnlit var12;
-			if (var10.length == 1) {
-				var12 = var10[0];
+			ModelUnlit model;
+			if (models.length == 1) {
+				model = models[0];
 			} else {
-				var12 = new ModelUnlit(var10, var10.length);
+				model = new ModelUnlit(models, models.length);
 			}
 			if (this.field2335 != null) {
-				for (int var13 = 0; var13 < this.field2335.length; var13++) {
-					if (this.field2337 == null || var13 >= this.field2337.length) {
-						var12.recolour(this.field2335[var13], this.field2318[var13]);
+				for (int i = 0; i < this.field2335.length; i++) {
+					if (this.recol_s == null || i >= this.recol_s.length) {
+						model.recolour(this.field2335[i], this.field2318[i]);
 					} else {
-						var12.recolour(this.field2335[var13], class7.field108[this.field2337[var13] & 0xFF]);
+						model.recolour(this.field2335[i], class7.field108[this.recol_s[i] & 0xFF]);
 					}
 				}
 			}
-			if (this.field2357 != null) {
-				for (int var14 = 0; var14 < this.field2357.length; var14++) {
-					var12.retexture(this.field2357[var14], this.field2347[var14]);
+			if (this.retex_s != null) {
+				for (int i = 0; i < this.retex_s.length; i++) {
+					model.retexture(this.retex_s[i], this.field2347[i]);
 				}
 			}
-			var7 = var12.method546(this.field2360 + 64, 850 - -this.field2321, -30, -50, -30);
-			class106.field1925.method130(37, (long) this.field2316, var7);
+			cached = model.light(this.ambient + 64, 850 - -this.contrast, -30, -50, -30);
+			class106.field1925.method130(37, (long) this.index, cached);
 		}
-		class30 var15;
+
+		class30 model;
 		if (arg4 != null && arg1 != null) {
-			var15 = arg4.method756(arg3, arg1, arg2, (byte) 82, var7);
+			model = arg4.method756(arg3, arg1, arg2, (byte) 82, cached);
 		} else if (arg4 != null) {
-			var15 = arg4.method752(arg0 ^ 0xFFFF, arg3, var7);
+			model = arg4.method752(arg0 ^ 0xFFFF, arg3, cached);
 		} else if (arg1 == null) {
-			var15 = var7.method184(true, true);
+			model = cached.method184(true, true);
 		} else {
-			var15 = arg1.method752(65535, arg2, var7);
+			model = arg1.method752(65535, arg2, cached);
 		}
-		if (arg0 != 0) {
-			this.field2316 = -93;
+
+		if (this.resizeh != 128 || this.resizev != 128) {
+			model.resize(this.resizeh, this.resizev, this.resizeh);
 		}
-		if (this.field2342 != 128 || this.field2349 != 128) {
-			var15.method183(this.field2342, this.field2349, this.field2342);
-		}
-		return var15;
+		return model;
 	}
 }

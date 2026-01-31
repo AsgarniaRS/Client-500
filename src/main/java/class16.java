@@ -62,7 +62,7 @@ public class class16 {
 	}
 
 	@OriginalMember(owner = "client!bd", name = "a", descriptor = "(ILq;)V")
-	public static final void method78(int arg0, class174 arg1) {
+	public static final void method78(int arg0, IfType arg1) {
 		field244++;
 		int var2 = arg1.field3441;
 		if (var2 == 324) {
@@ -114,7 +114,7 @@ public class class16 {
 		int var1 = class230.in.method28(8, -315);
 		if (var1 < class55.field1027) {
 			for (int var2 = var1; var2 < class55.field1027; var2++) {
-				class53.field999[class223.field4198++] = class174.field3430[var2];
+				class53.field999[class223.field4198++] = IfType.field3430[var2];
 			}
 		}
 		field237++;
@@ -124,20 +124,20 @@ public class class16 {
 		}
 		class55.field1027 = 0;
 		for (int var4 = 0; var4 < var1; var4++) {
-			int var5 = class174.field3430[var4];
+			int var5 = IfType.field3430[var4];
 			scene var6 = class244.field4493[var5];
 			int var7 = class230.in.method28(1, -315);
 			if (var7 == 0) {
-				class174.field3430[class55.field1027++] = var5;
+				IfType.field3430[class55.field1027++] = var5;
 				var6.field4083 = class117.field2115;
 			} else {
 				int var8 = class230.in.method28(2, -315);
 				if (var8 == 0) {
-					class174.field3430[class55.field1027++] = var5;
+					IfType.field3430[class55.field1027++] = var5;
 					var6.field4083 = class117.field2115;
 					class139.field2581[class192.field3704++] = var5;
 				} else if (var8 == 1) {
-					class174.field3430[class55.field1027++] = var5;
+					IfType.field3430[class55.field1027++] = var5;
 					var6.field4083 = class117.field2115;
 					int var9 = class230.in.method28(3, -315);
 					var6.method1478((byte) 127, false, var9);
@@ -146,7 +146,7 @@ public class class16 {
 						class139.field2581[class192.field3704++] = var5;
 					}
 				} else if (var8 == 2) {
-					class174.field3430[class55.field1027++] = var5;
+					IfType.field3430[class55.field1027++] = var5;
 					var6.field4083 = class117.field2115;
 					int var11 = class230.in.method28(3, -315);
 					var6.method1478((byte) 127, true, var11);

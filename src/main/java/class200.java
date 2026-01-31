@@ -68,7 +68,7 @@ public class class200 {
 	public static class188 field3828;
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(ILq;)V")
-	public static final void method1373(int arg0, class174 arg1) {
+	public static final void method1373(int arg0, IfType arg1) {
 		field3823++;
 		if (arg0 != 65280) {
 			field3815 = null;
@@ -106,7 +106,7 @@ public class class200 {
 	}
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(Lq;IBI)V")
-	public static final void method1376(class174 arg0, int arg1, byte arg2, int arg3) {
+	public static final void method1376(IfType arg0, int arg1, byte arg2, int arg3) {
 		if (arg0.field3453 == 0) {
 			arg0.field3443 = arg0.field3516;
 		} else if (arg0.field3453 == 1) {

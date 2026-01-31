@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!wh")
-public class ClientScript extends class136 {
+public class ClientScript extends Linkable2 {
 
 	@OriginalMember(owner = "client!wh", name = "E", descriptor = "I")
 	public static int field4514 = 0;
@@ -56,7 +56,7 @@ public class ClientScript extends class136 {
 	public static int[] field4530;
 
 	@OriginalMember(owner = "client!wh", name = "G", descriptor = "[Lob;")
-	public class154[] field4516;
+	public HashTable[] field4516;
 
 	@OriginalMember(owner = "client!wh", name = "T", descriptor = "[Lrc;")
 	public static class188[] field4527;
@@ -82,12 +82,12 @@ public class ClientScript extends class136 {
 
 	@OriginalMember(owner = "client!fc", name = "b", descriptor = "(II)Lwh;")
 	public static final ClientScript get(int arg0, int arg1) {
-		ClientScript var2 = (ClientScript) class33.cache.method666((long) arg0, arg1);
+		ClientScript var2 = (ClientScript) class33.cache.find((long) arg0);
 		if (var2 != null) {
 			return var2;
 		}
 
-		byte[] var3 = class18.field300.method941((byte) 56, 0, arg0);
+		byte[] var3 = class18.field300.getFile(0, arg0);
 		if (var3 == null) {
 			return null;
 		}
@@ -107,10 +107,10 @@ public class ClientScript extends class136 {
 		script.stringArgCount = buf.g2();
 		int var9 = buf.g1();
 		if (var9 > 0) {
-			script.field4516 = new class154[var9];
+			script.field4516 = new HashTable[var9];
 			for (int var10 = 0; var10 < var9; var10++) {
 				int var11 = buf.g2();
-				class154 var12 = new class154(class184.method1298(true, var11));
+				HashTable var12 = new HashTable(class184.method1298(true, var11));
 				script.field4516[var10] = var12;
 				while (var11-- > 0) {
 					int var13 = buf.g4();
@@ -139,7 +139,7 @@ public class ClientScript extends class136 {
 			}
 			script.instructions[var15++] = op;
 		}
-		class33.cache.put((long) arg0, script, false);
+		class33.cache.put(script, (long) arg0, false);
 		return script;
 	}
 }

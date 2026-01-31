@@ -109,7 +109,7 @@ public class class106 {
 		class92.field1725 = 0;
 		class147.field2760 = 0;
 		class208.field3956 = 0;
-		class174.field3490 = 0;
+		IfType.field3490 = 0;
 		class6.field94 = 0;
 		class202.field3858 = 0;
 		class218.field4117 = 0;
@@ -120,7 +120,7 @@ public class class106 {
 		EnumType.field878 = 0;
 		class227.field4263 = 0;
 		class152.field2944 = 0;
-		class154.field2985 = 0;
+		HashTable.field2985 = 0;
 		class113.field2054 = 0;
 		class206.field3920 = 0;
 		Client.field559 = 0;
@@ -134,7 +134,7 @@ public class class106 {
 		class142.field2616 = 0;
 		GameShell.field1559 = 0;
 		class212.field4014 = 0;
-		class126.field2348 = 0;
+		NpcType.field2348 = 0;
 		class209.field3966 = 0;
 		class149.field2862 = 0;
 		class231.field4331 = 0;
@@ -145,7 +145,7 @@ public class class106 {
 		class196.field3767 = 0;
 		class33.field546 = 0;
 		Packet.field827 = 0;
-		class154.field2967 = 0;
+		HashTable.field2967 = 0;
 		class205.field3912 = 0;
 		class11.field164 = 0;
 		class170.field3279 = 0;
@@ -155,13 +155,13 @@ public class class106 {
 		class53.field982 = 0;
 		class12.field180 = 0;
 		Packet.field828 = 0;
-		class126.field2317 = 0;
+		NpcType.field2317 = 0;
 		class60.field1135 = 0;
 		class165.field3161 = 0;
 		class32.field514 = 0;
 		class105.field1904 = 0;
 		class188.field3657 = 0;
-		class126.field2315 = 0;
+		NpcType.field2315 = 0;
 		class159.field3059 = 0;
 		class210.field3988 = 0;
 		class34.field579 = 0;
@@ -307,7 +307,7 @@ public class class106 {
 		class220.field4153 = 0;
 		class129.field2420 = 0;
 		Ground.field940 = 0;
-		class174.field3413 = 0;
+		IfType.field3413 = 0;
 		class1.field3 = 0;
 		class248.field4543 = 0;
 		JString.field1656 = 0;
@@ -339,7 +339,7 @@ public class class106 {
 		GameShell.field1570 = 0;
 		class212.field4029 = 0;
 		class11.field157 = 0;
-		class154.field2986 = 0;
+		HashTable.field2986 = 0;
 		class55.field1030 = 0;
 		class110.field2010 = 0;
 		class3.field31 = 0;
@@ -363,7 +363,7 @@ public class class106 {
 		class77.field1402 = 0;
 		class15.field225 = 0;
 		Client.field562 = 0;
-		class174.field3517 = 0;
+		IfType.field3517 = 0;
 		Packet.field837 = 0;
 		Linkable.field1213 = 0;
 		class153.field2963 = 0;
@@ -415,7 +415,7 @@ public class class106 {
 		EnumType.field886 = 0;
 		scene.field765 = 0;
 		SeqType.field2004 = 0;
-		class154.field2969 = 0;
+		HashTable.field2969 = 0;
 		class92.field1727 = 0;
 		class102.field1847 = 0;
 		class43.field730 = 0;
@@ -460,7 +460,7 @@ public class class106 {
 		class211.field4004 = 0;
 		class43.field735 = 0;
 		class147.field2757 = 0;
-		class126.field2366 = 0;
+		NpcType.field2366 = 0;
 		Js5Index.field2703 = 0;
 		class90.field1712 = 0;
 		class164.field3139 = 0;
@@ -473,7 +473,7 @@ public class class106 {
 		Js5Local.field337 = 0;
 		class231.field4324 = 0;
 		IntHashTable.field1808 = 0;
-		class136.field2534 = 0;
+		Linkable2.field2534 = 0;
 		class167.field3229 = 0;
 		LocType.field2786 = 0;
 		class120.field2195 = 0;
@@ -492,7 +492,7 @@ public class class106 {
 		GZip.field1109 = 0;
 		class232.field4349 = 0;
 		class105.field1916 = 0;
-		class126.field2322 = 0;
+		NpcType.field2322 = 0;
 		class205.field3914 = 0;
 		Js5Index.field2688 = 0;
 		GZip.field1111 = 0;
@@ -509,7 +509,7 @@ public class class106 {
 		class165.field3158 = 0;
 		class166.field3189 = 0;
 		class159.field3052 = 0;
-		class126.field2336 = 0;
+		NpcType.field2336 = 0;
 		class143.field2658 = 0;
 		class3.field44 = 0;
 		class170.field3286 = 0;
@@ -519,12 +519,12 @@ public class class106 {
 		class170.field3271 = 0;
 		JString.field1627 = 0;
 		class165.field3165 = 0;
-		class174.field3491 = 0;
+		IfType.field3491 = 0;
 		Packet.field869 = 0;
 		class101.field1837 = 0;
 		class1.field1 = 0;
 		class81.field1471 = 0;
-		class174.field3397 = 0;
+		IfType.field3397 = 0;
 		class36.field646 = 0;
 		class118.field2134 = 0;
 		class45.field800 = 0;
@@ -631,12 +631,12 @@ public class class106 {
 		class179.field3561 = 0;
 		class209.field3971 = 0;
 		JString.field1646 = 0;
-		class154.field2980 = 0;
+		HashTable.field2980 = 0;
 		class230.field4309 = 0;
 		class212.field4022 = 0;
 		class108.field1948 = 0;
 		class233.field4373 = 0;
-		class174.field3478 = 0;
+		IfType.field3478 = 0;
 		SeqType.field1979 = 0;
 		JString.field1633 = 0;
 		class21.field329 = 0;
@@ -661,7 +661,7 @@ public class class106 {
 		class149.field2884 = 0;
 		class135.field2521 = 0;
 		SeqType.field1993 = 0;
-		class174.field3493 = 0;
+		IfType.field3493 = 0;
 		class79.field1425 = 0;
 		class168.field3234 = 0;
 		class161.field3105 = 0;
@@ -713,7 +713,7 @@ public class class106 {
 		Client.field564 = 0;
 		class45.field785 = 0;
 		Isaac.field2750 = 0;
-		class126.field2325 = 0;
+		NpcType.field2325 = 0;
 		class226.field4242 = 0;
 		class170.field3267 = 0;
 		GameShell.field1571 = 0;
@@ -729,7 +729,7 @@ public class class106 {
 		class200.field3823 = 0;
 		class35.field599 = 0;
 		class43.field726 = 0;
-		class126.field2368 = 0;
+		NpcType.field2368 = 0;
 		class9.field133 = 0;
 		class222.field4191 = 0;
 		Js5Index.field2694 = 0;
@@ -773,7 +773,7 @@ public class class106 {
 		class54.field1003 = 0;
 		class74.field1342 = 0;
 		class248.field4546 = 0;
-		class136.field2525 = 0;
+		Linkable2.field2525 = 0;
 		class6.field74 = 0;
 		class68.field1225 = 0;
 		class138.field2568 = 0;
@@ -792,7 +792,7 @@ public class class106 {
 		ClientStream.field2556 = 0;
 		class28.field467 = 0;
 		class36.field648 = 0;
-		class174.field3418 = 0;
+		IfType.field3418 = 0;
 		class2.field19 = 0;
 		class160.field3084 = 0;
 		Isaac.field2735 = 0;
@@ -815,7 +815,7 @@ public class class106 {
 		class180.field3575 = 0;
 		Packet.field811 = 0;
 		class186.field3632 = 0;
-		class154.field2989 = 0;
+		HashTable.field2989 = 0;
 		class114.field2056 = 0;
 		Packet.field825 = 0;
 		class121.field2216 = 0;
@@ -872,7 +872,7 @@ public class class106 {
 		CollisionMap.field1689 = 0;
 		Packet.field856 = 0;
 		class21.field327 = 0;
-		class136.field2526 = 0;
+		Linkable2.field2526 = 0;
 		class81.field1464 = 0;
 		Client.field572 = 0;
 		class37.field667 = 0;
@@ -958,7 +958,7 @@ public class class106 {
 		class129.field2415 = 0;
 		class152.field2948 = 0;
 		class129.field2425 = 0;
-		class126.field2320 = 0;
+		NpcType.field2320 = 0;
 		class114.field2060 = 0;
 		class71.field1327 = 0;
 		class203.field3866 = 0;
@@ -1033,7 +1033,7 @@ public class class106 {
 		class248.field4533 = 0;
 		class208.field3955 = 0;
 		class230.field4311 = 0;
-		class174.field3508 = 0;
+		IfType.field3508 = 0;
 		Js5Index.field2704 = 0;
 		class248.field4544 = 0;
 		Js5Index.field2667 = 0;
@@ -1067,7 +1067,7 @@ public class class106 {
 		class115.field2089 = 0;
 		class170.field3302 = 0;
 		class204.field3888 = 0;
-		class174.field3402 = 0;
+		IfType.field3402 = 0;
 		Packet.field830 = 0;
 		class237.field4417 = 0;
 		class170.field3296 = 0;
@@ -1131,7 +1131,7 @@ public class class106 {
 		class209.field3975 = 0;
 		class151.field2932 = 0;
 		JString.field1609 = 0;
-		class154.field2979 = 0;
+		HashTable.field2979 = 0;
 		class242.field4477 = 0;
 		class190.field3679 = 0;
 		class170.field3298 = 0;
@@ -1148,11 +1148,11 @@ public class class106 {
 		class204.field3901 = 0;
 		CollisionMap.field1670 = 0;
 		class189.field3664 = 0;
-		class126.field2330 = 0;
+		NpcType.field2330 = 0;
 		class234.field4382 = 0;
 		class145.field2716 = 0;
 		class37.field670 = 0;
-		class174.field3502 = 0;
+		IfType.field3502 = 0;
 		class81.field1461 = 0;
 		GameShell.field1569 = 0;
 		class17.field252 = 0;
@@ -1171,7 +1171,7 @@ public class class106 {
 		class23.field375 = 0;
 		class120.field2192 = 0;
 		class205.field3913 = 0;
-		class136.field2527 = 0;
+		Linkable2.field2527 = 0;
 		class74.field1348 = 0;
 		class39.field685 = 0;
 		class140.field2599 = 0;
@@ -1206,7 +1206,7 @@ public class class106 {
 		class175.field3532 = 0;
 		class55.field1020 = 0;
 		class208.field3946 = 0;
-		class174.field3421 = 0;
+		IfType.field3421 = 0;
 		class97.field1790 = 0;
 		class244.field4491 = 0;
 		LocType.field2814 = 0;
@@ -1261,7 +1261,7 @@ public class class106 {
 		class188.field3649 = 0;
 		EnumType.field883 = 0;
 		class114.field2072 = 0;
-		class126.field2338 = 0;
+		NpcType.field2338 = 0;
 		Packet.field853 = 0;
 		class184.field3614 = 0;
 		class225.field4226 = 0;
@@ -1344,7 +1344,7 @@ public class class106 {
 		class21.field323 = 0;
 		JString.field1652 = 0;
 		class35.field614 = 0;
-		class126.field2358 = 0;
+		NpcType.field2358 = 0;
 		class119.field2155 = 0;
 		class104.field1893 = 0;
 		class221.field4180 = 0;
@@ -1432,7 +1432,7 @@ public class class106 {
 		class55.field1027 = 0;
 		class33.field536 = (int) (Math.random() * 110.0D) - 55;
 		class207.field3932 = (int) (Math.random() * 20.0D) - 10 & 0x7FF;
-		class174.field3447 = 0;
+		IfType.field3447 = 0;
 		ClientScript.field4514 = 0;
 		class98.field1797 = (int) (Math.random() * 80.0D) - 40;
 		class223.field4201 = (int) (Math.random() * 100.0D) - 50;
@@ -1464,7 +1464,7 @@ public class class106 {
 			class229 var13 = method734(var6, (byte) -88);
 			if (var13 != null && var13.field4290 == 0) {
 				class168.field3247[var6] = 0;
-				class113.field2052[var6] = 0;
+				class113.var[var6] = 0;
 			}
 		}
 		for (int var7 = 0; var7 < class119.varcInt.length; var7++) {
@@ -1477,7 +1477,7 @@ public class class106 {
 			class93.method673((byte) -116, var8, true);
 		}
 		class43.field723 = -1;
-		class128.field2397 = new class154(8);
+		class128.field2397 = new HashTable(8);
 		class203.field3864 = 0;
 		class53.field967 = null;
 		class108.field1960 = false;
@@ -1487,7 +1487,7 @@ public class class106 {
 			class203.field3877[var9] = false;
 		}
 		class42.method276((byte) -47);
-		class154.field2982 = true;
+		HashTable.field2982 = true;
 		for (int var10 = 0; var10 < 100; var10++) {
 			class225.field4230[var10] = true;
 		}
@@ -1510,17 +1510,17 @@ public class class106 {
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(IB)Lv;")
 	public static final class229 method734(int arg0, byte arg1) {
 		field1929++;
-		class229 var2 = (class229) class118.field2135.method666((long) arg0, 0);
+		class229 var2 = (class229) class118.field2135.find((long) arg0);
 		int var3 = 18 / ((-arg1 - 39) / 48);
 		if (var2 != null) {
 			return var2;
 		}
-		byte[] var4 = field1933.method941((byte) 56, arg0, 16);
+		byte[] var4 = field1933.getFile(arg0, 16);
 		class229 var5 = new class229();
 		if (var4 != null) {
 			var5.method1530(true, new Packet(var4));
 		}
-		class118.field2135.put((long) arg0, var5, false);
+		class118.field2135.put(var5, (long) arg0, false);
 		return var5;
 	}
 
@@ -1551,7 +1551,7 @@ public class class106 {
 		if (arg3 < 53) {
 			return null;
 		} else if (EnumType.method358(854010832, arg4, arg2, arg0)) {
-			return class36.method241((byte) -90, arg1.method941((byte) 56, arg0, arg2));
+			return class36.method241((byte) -90, arg1.getFile(arg0, arg2));
 		} else {
 			return null;
 		}

@@ -55,7 +55,7 @@ public class class135 extends class23 {
 	private int field2524;
 
 	@OriginalMember(owner = "client!md", name = "ab", descriptor = "Lq;")
-	public static class174 field2516;
+	public static IfType field2516;
 
 	@OriginalMember(owner = "client!md", name = "W", descriptor = "[I")
 	public static int[] field2512;
@@ -92,11 +92,11 @@ public class class135 extends class23 {
 		long var7 = (long) arg4;
 		class30 var9 = (class30) class108.field1958.method135(-108, var7);
 		if (var9 == null) {
-			ModelUnlit var10 = ModelUnlit.method568(class233.field4367, arg4, 0);
+			ModelUnlit var10 = ModelUnlit.load(class233.field4367, arg4, 0);
 			if (var10 == null) {
 				return null;
 			}
-			var9 = var10.method546(64, 768, -50, -10, -50);
+			var9 = var10.light(64, 768, -50, -10, -50);
 			class108.field1958.method130(37, var7, var9);
 		}
 		int var11 = arg0.method194();
@@ -158,14 +158,14 @@ public class class135 extends class23 {
 			return false;
 		} else {
 			for (int var2 = 0; var2 < Isaac.field2731; ++var2) {
-				if (arg1.method624(class23.field370[var2], (byte) 114)) {
+				if (arg1.equalsIgnoreCase(class23.field370[var2])) {
 					return true;
 				}
 			}
 			if (arg0 >= -36) {
 				field2514 = -46;
 			}
-			return arg1.method624(class240.field4458.name, (byte) -121);
+			return arg1.equalsIgnoreCase(class240.field4458.name);
 		}
 	}
 
@@ -245,14 +245,14 @@ public class class135 extends class23 {
 					if (opcode == 1) {
 						// push_varp
 						int var18 = intOperands[pc];
-						class108.intStack[isp++] = class113.field2052[var18];
+						class108.intStack[isp++] = class113.var[var18];
 						continue;
 					}
 					if (opcode == 2) {
 						// pop_varp
 						int var19 = intOperands[pc];
 						isp--;
-						class113.field2052[var19] = class108.intStack[isp];
+						class113.var[var19] = class108.intStack[isp];
 						continue;
 					}
 					if (opcode == 3) {
@@ -495,9 +495,9 @@ public class class135 extends class23 {
 						continue;
 					}
 					if (opcode == 51) {
-						class154 var42 = script.field4516[intOperands[pc]];
+						HashTable var42 = script.field4516[intOperands[pc]];
 						--isp;
-						class192 var43 = (class192) var42.get(-1, (long) class108.intStack[isp]);
+						class192 var43 = (class192) var42.find((long) class108.intStack[isp]);
 						if (var43 != null) {
 							pc += var43.field3700;
 						}
@@ -522,13 +522,13 @@ public class class135 extends class23 {
 							throw new RuntimeException();
 						}
 
-						class174 var48 = class239.method1581(-64, var45);
+						IfType var48 = class239.method1581(-64, var45);
 						if (var48.field3467 == null) {
-							var48.field3467 = new class174[var47 + 1];
+							var48.field3467 = new IfType[var47 + 1];
 						}
 
 						if (var47 >= var48.field3467.length) {
-							class174[] var49 = new class174[var47 + 1];
+							IfType[] var49 = new IfType[var47 + 1];
 							for (int var50 = 0; var48.field3467.length > var50; ++var50) {
 								var49[var50] = var48.field3467[var50];
 							}
@@ -539,7 +539,7 @@ public class class135 extends class23 {
 							throw new RuntimeException("Gap at:" + (var47 + -1));
 						}
 
-						class174 var51 = new class174();
+						IfType var51 = new IfType();
 						var51.v3 = true;
 						var51.field3408 = var47;
 						var51.type = var46;
@@ -554,21 +554,21 @@ public class class135 extends class23 {
 						continue;
 					}
 					if (~opcode == -102) {
-						class174 var52 = !secondary ? class129.field2428 : class203.field3873;
+						IfType var52 = !secondary ? class129.field2428 : class203.field3873;
 						if (var52.field3408 == -1) {
 							if (secondary) {
 								throw new RuntimeException("Tried to .cc_delete static .active-component!");
 							}
 							throw new RuntimeException("Tried to cc_delete static active-component!");
 						}
-						class174 var53 = class239.method1581(-64, var52.parentId);
+						IfType var53 = class239.method1581(-64, var52.parentId);
 						var53.field3467[var52.field3408] = null;
 						class200.method1373(65280, var53);
 						continue;
 					}
 					if (opcode == 102) {
 						--isp;
-						class174 var54 = class239.method1581(-64, class108.intStack[isp]);
+						IfType var54 = class239.method1581(-64, class108.intStack[isp]);
 						var54.field3467 = null;
 						class200.method1373(65280, var54);
 						continue;
@@ -577,7 +577,7 @@ public class class135 extends class23 {
 						isp -= 2;
 						int var55 = class108.intStack[isp + 1];
 						int var56 = class108.intStack[isp];
-						class174 var57 = class36.method238(var55, var56, true);
+						IfType var57 = class36.method238(var55, var56, true);
 						if (var57 != null && ~var55 != 0) {
 							class108.intStack[isp++] = 1;
 							if (!secondary) {
@@ -593,7 +593,7 @@ public class class135 extends class23 {
 					if (opcode == 201) {
 						--isp;
 						int var58 = class108.intStack[isp];
-						class174 var59 = class239.method1581(-64, var58);
+						IfType var59 = class239.method1581(-64, var58);
 						if (var59 == null) {
 							class108.intStack[isp++] = 0;
 						} else {
@@ -610,7 +610,7 @@ public class class135 extends class23 {
 					if ((opcode < 1000 || ~opcode <= -1101) && (opcode < 2000 || ~opcode <= -2101)) {
 						if ((~opcode > -1101 || ~opcode <= -1201) && (~opcode > -2101 || ~opcode <= -2201)) {
 							if (opcode >= 1200 && opcode < 1300 || ~opcode <= -2201 && ~opcode > -2301) {
-								class174 var60;
+								IfType var60;
 								if (opcode >= 2000) {
 									opcode -= 1000;
 									--isp;
@@ -676,7 +676,7 @@ public class class135 extends class23 {
 							} else if ((~opcode > -1301 || opcode >= 1400) && (~opcode > -2301 || opcode >= 2400)) {
 								if (opcode >= 1400 && opcode < 1500 || ~opcode <= -2401 && ~opcode > -2501) {
 									int[] var64 = null;
-									class174 var65;
+									IfType var65;
 									if (~opcode > -2001) {
 										var65 = !secondary ? class129.field2428 : class203.field3873;
 									} else {
@@ -800,7 +800,7 @@ public class class135 extends class23 {
 									continue;
 								}
 								if (opcode < 1600) {
-									class174 var71 = !secondary ? class129.field2428 : class203.field3873;
+									IfType var71 = !secondary ? class129.field2428 : class203.field3873;
 									if (~opcode == -1501) {
 										class108.intStack[isp++] = var71.field3368;
 										continue;
@@ -826,7 +826,7 @@ public class class135 extends class23 {
 										continue;
 									}
 								} else if (opcode < 1700) {
-									class174 var72 = secondary ? class203.field3873 : class129.field2428;
+									IfType var72 = secondary ? class203.field3873 : class129.field2428;
 									if (~opcode == -1601) {
 										class108.intStack[isp++] = var72.field3395;
 										continue;
@@ -868,7 +868,7 @@ public class class135 extends class23 {
 										continue;
 									}
 								} else if (opcode < 1800) {
-									class174 var73 = secondary ? class203.field3873 : class129.field2428;
+									IfType var73 = secondary ? class203.field3873 : class129.field2428;
 									if (opcode == 1700) {
 										class108.intStack[isp++] = var73.field3401;
 										continue;
@@ -886,7 +886,7 @@ public class class135 extends class23 {
 										continue;
 									}
 								} else if (opcode < 1900) {
-									class174 var74 = secondary ? class203.field3873 : class129.field2428;
+									IfType var74 = secondary ? class203.field3873 : class129.field2428;
 									if (opcode == 1800) {
 										class108.intStack[isp++] = GameShell.method592(1281959627, class80.method530(-881710560, var74));
 										continue;
@@ -912,7 +912,7 @@ public class class135 extends class23 {
 									}
 								} else if (opcode < 2600) {
 									--isp;
-									class174 var76 = class239.method1581(-64, class108.intStack[isp]);
+									IfType var76 = class239.method1581(-64, class108.intStack[isp]);
 									if (opcode == 2500) {
 										class108.intStack[isp++] = var76.field3368;
 										continue;
@@ -939,7 +939,7 @@ public class class135 extends class23 {
 									}
 								} else if (opcode < 2700) {
 									--isp;
-									class174 var77 = class239.method1581(-64, class108.intStack[isp]);
+									IfType var77 = class239.method1581(-64, class108.intStack[isp]);
 									if (opcode == 2600) {
 										class108.intStack[isp++] = var77.field3395;
 										continue;
@@ -983,7 +983,7 @@ public class class135 extends class23 {
 								} else if (opcode >= 2800) {
 									if (~opcode > -2901) {
 										--isp;
-										class174 var78 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var78 = class239.method1581(-64, class108.intStack[isp]);
 										if (opcode == 2800) {
 											class108.intStack[isp++] = GameShell.method592(1281959627, class80.method530(-881710560, var78));
 											continue;
@@ -1218,7 +1218,7 @@ public class class135 extends class23 {
 													if (opcode == 3624) {
 														--isp;
 														int var98 = class108.intStack[isp];
-														if (JString.field1647 != null && EnumType.field885 > var98 && JString.field1647[var98].field1323.method624(class240.field4458.name, (byte) 75)) {
+														if (JString.field1647 != null && EnumType.field885 > var98 && JString.field1647[var98].field1323.equalsIgnoreCase(class240.field4458.name)) {
 															class108.intStack[isp++] = 1;
 															continue;
 														}
@@ -1587,9 +1587,9 @@ public class class135 extends class23 {
 															int var181 = class108.intStack[isp + 1];
 															class4 var182 = class216.method1469(var181, (byte) -77);
 															if (!var182.method17(-69)) {
-																class108.intStack[isp++] = class147.method987(var180, -126).method856(-8931, var182.field53, var181);
+																class108.intStack[isp++] = class147.list(var180).method856(-8931, var182.field53, var181);
 															} else {
-																class171.stringStack[ssp++] = class147.method987(var180, -95).method862(var181, -97, var182.field57);
+																class171.stringStack[ssp++] = class147.list(var180).method862(var181, -97, var182.field57);
 															}
 															continue;
 														}
@@ -1692,7 +1692,7 @@ public class class135 extends class23 {
 																						if (colorLower.startsWith(class192.field3705)) {
 																							message = message.substring(class192.field3705.length());
 																							color = 11;
-																						} else if (class126.field2350 != 0) {
+																						} else if (NpcType.field2350 != 0) {
 																							if (!colorLower.startsWith(class29.field485)) {
 																								if (colorLower.startsWith(class101.field1844)) {
 																									message = message.substring(class101.field1844.length());
@@ -1770,7 +1770,7 @@ public class class135 extends class23 {
 																				if (var193.startsWith(class216.field4052)) {
 																					message = message.substring(class216.field4052.length());
 																					var194 = 5;
-																				} else if (class126.field2350 != 0) {
+																				} else if (NpcType.field2350 != 0) {
 																					if (!var193.startsWith(class57.field1086)) {
 																						if (!var193.startsWith(class35.field618)) {
 																							if (var193.startsWith(class71.field1313)) {
@@ -2093,7 +2093,7 @@ public class class135 extends class23 {
 																				class7.method37((byte) 99);
 																				class204.method1401((byte) -75);
 																				class103.method713(8);
-																				class154.method1052((byte) -120);
+																				HashTable.method1052((byte) -120);
 																				class106.method735(0);
 																				continue;
 																			}
@@ -2251,7 +2251,7 @@ public class class135 extends class23 {
 														--ssp;
 														JString var272 = class171.stringStack[ssp];
 														int var273 = class108.intStack[isp + 1];
-														byte[] var274 = class98.field1795.method941((byte) 56, 0, var273);
+														byte[] var274 = class98.field1795.getFile(0, var273);
 														class41 var275 = new class41(var274);
 														var275.method149(class34.field587, (int[]) null);
 														class108.intStack[isp++] = var275.method163(var272, var271);
@@ -2263,7 +2263,7 @@ public class class135 extends class23 {
 														JString var276 = class171.stringStack[ssp];
 														int var277 = class108.intStack[isp + 1];
 														int var278 = class108.intStack[isp];
-														byte[] var279 = class98.field1795.method941((byte) 56, 0, var277);
+														byte[] var279 = class98.field1795.getFile(0, var277);
 														class41 var280 = new class41(var279);
 														var280.method149(class34.field587, (int[]) null);
 														class108.intStack[isp++] = var280.method156(var276, var278);
@@ -2646,7 +2646,7 @@ public class class135 extends class23 {
 											int var344 = class108.intStack[isp];
 											int var345 = class108.intStack[isp - -1];
 											int var346 = class108.intStack[isp + 2];
-											class174 var347 = class239.method1581(-64, var346);
+											IfType var347 = class239.method1581(-64, var346);
 											class80.method532(var344, 2, var345, var347);
 											continue;
 										}
@@ -2654,7 +2654,7 @@ public class class135 extends class23 {
 											isp -= 2;
 											int var348 = class108.intStack[isp];
 											int var349 = class108.intStack[isp + 1];
-											class174 var350 = !secondary ? class129.field2428 : class203.field3873;
+											IfType var350 = !secondary ? class129.field2428 : class203.field3873;
 											class80.method532(var348, 2, var349, var350);
 											continue;
 										}
@@ -2670,13 +2670,13 @@ public class class135 extends class23 {
 								} else {
 									if (~opcode == -2701) {
 										--isp;
-										class174 var352 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var352 = class239.method1581(-64, class108.intStack[isp]);
 										class108.intStack[isp++] = var352.field3401;
 										continue;
 									}
 									if (~opcode == -2702) {
 										--isp;
-										class174 var353 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var353 = class239.method1581(-64, class108.intStack[isp]);
 										if (var353.field3401 == -1) {
 											class108.intStack[isp++] = 0;
 										} else {
@@ -2687,7 +2687,7 @@ public class class135 extends class23 {
 									if (~opcode == -2703) {
 										--isp;
 										int var354 = class108.intStack[isp];
-										class168 var355 = (class168) class128.field2397.get(-1, (long) var354);
+										class168 var355 = (class168) class128.field2397.find((long) var354);
 										if (var355 == null) {
 											class108.intStack[isp++] = 0;
 										} else {
@@ -2697,7 +2697,7 @@ public class class135 extends class23 {
 									}
 									if (~opcode == -2704) {
 										--isp;
-										class174 var356 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var356 = class239.method1581(-64, class108.intStack[isp]);
 										if (var356.field3467 == null) {
 											class108.intStack[isp++] = 0;
 											continue;
@@ -2716,7 +2716,7 @@ public class class135 extends class23 {
 										isp -= 2;
 										int var359 = class108.intStack[isp];
 										int var360 = class108.intStack[isp - -1];
-										class168 var361 = (class168) class128.field2397.get(-1, (long) var359);
+										class168 var361 = (class168) class128.field2397.find((long) var359);
 										if (var361 != null && var361.field3231 == var360) {
 											class108.intStack[isp++] = 1;
 											continue;
@@ -2726,7 +2726,7 @@ public class class135 extends class23 {
 									}
 								}
 							} else {
-								class174 var362;
+								IfType var362;
 								if (~opcode > -2001) {
 									var362 = secondary ? class203.field3873 : class129.field2428;
 								} else {
@@ -2783,7 +2783,7 @@ public class class135 extends class23 {
 								}
 							}
 						} else {
-							class174 var366;
+							IfType var366;
 							if (~opcode <= -2001) {
 								--isp;
 								var366 = class239.method1581(-64, class108.intStack[isp]);
@@ -2963,7 +2963,7 @@ public class class135 extends class23 {
 							}
 						}
 					} else {
-						class174 var369;
+						IfType var369;
 						if (~opcode > -2001) {
 							var369 = !secondary ? class129.field2428 : class203.field3873;
 						} else {

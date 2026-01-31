@@ -17,7 +17,7 @@ public class class108 {
 	public static JString field1944 = class208.method1425("blinken1:");
 
 	@OriginalMember(owner = "client!jj", name = "s", descriptor = "Lob;")
-	public static class154 prefetchQueue = new class154(4096);
+	public static HashTable prefetchQueue = new HashTable(4096);
 
 	@OriginalMember(owner = "client!jj", name = "w", descriptor = "Lid;")
 	public static class92 field1957 = new class92(64);

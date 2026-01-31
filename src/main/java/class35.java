@@ -192,24 +192,24 @@ public class class35 extends class23 {
 	public static final void method233(int arg0, byte arg1) {
 		++field617;
 		if (arg0 != -1) {
-			if (class167.field3213[arg0]) {
-				class85.field1545.method957(arg0, (byte) -23);
-				if (class78.field1418[arg0] != null) {
+			if (class167.open[arg0]) {
+				class85.interfaces.method957(arg0, (byte) -23);
+				if (class78.list[arg0] != null) {
 					int var2 = 34 % ((arg1 - 1) / 49);
 					boolean var3 = true;
-					for (int var4 = 0; ~var4 > ~class78.field1418[arg0].length; ++var4) {
-						if (class78.field1418[arg0][var4] != null) {
-							if (class78.field1418[arg0][var4].type == 2) {
+					for (int var4 = 0; ~var4 > ~class78.list[arg0].length; ++var4) {
+						if (class78.list[arg0][var4] != null) {
+							if (class78.list[arg0][var4].type == 2) {
 								var3 = false;
 							} else {
-								class78.field1418[arg0][var4] = null;
+								class78.list[arg0][var4] = null;
 							}
 						}
 					}
 					if (var3) {
-						class78.field1418[arg0] = null;
+						class78.list[arg0] = null;
 					}
-					class167.field3213[arg0] = false;
+					class167.open[arg0] = false;
 				}
 			}
 		}

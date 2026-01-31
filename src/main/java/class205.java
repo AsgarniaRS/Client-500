@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!si")
-public class class205 extends class136 {
+public class class205 extends Linkable2 {
 
 	@OriginalMember(owner = "client!si", name = "S", descriptor = "Li;")
 	public static JString field3917 = class208.method1425("Untersuchen");
@@ -14,7 +14,7 @@ public class class205 extends class136 {
 	public static JString field3905 = field3916;
 
 	@OriginalMember(owner = "client!si", name = "K", descriptor = "Lob;")
-	public static class154 pendingPrefetchQueue = new class154(4096);
+	public static HashTable pendingPrefetchQueue = new HashTable(4096);
 
 	@OriginalMember(owner = "client!si", name = "D", descriptor = "I")
 	public static int field3902;
@@ -181,7 +181,7 @@ public class class205 extends class136 {
 	}
 
 	@OriginalMember(owner = "client!si", name = "a", descriptor = "(BLq;)Lq;")
-	public static final class174 method1415(byte arg0, class174 arg1) {
+	public static final IfType method1415(byte arg0, IfType arg1) {
 		field3914++;
 		if (arg1.layerId != -1) {
 			return class239.method1581(-64, arg1.layerId);

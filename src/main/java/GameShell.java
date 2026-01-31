@@ -160,7 +160,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	}
 
 	@OriginalMember(owner = "client!hj", name = "a", descriptor = "(ILq;)Lq;")
-	public static final class174 method583(int arg0, class174 arg1) {
+	public static final IfType method583(int arg0, IfType arg1) {
 		field1595++;
 		int var2 = class17.method81((byte) -98, class80.method530(-881710560, arg1));
 		if (var2 == 0) {
@@ -215,7 +215,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final URL getCodeBase() {
 		field1570++;
 		if (class201.field3834 == null) {
-			return class126.field2326 == null || class126.field2326.field3599 == this ? super.getCodeBase() : class126.field2326.field3599.getCodeBase();
+			return NpcType.field2326 == null || NpcType.field2326.field3599 == this ? super.getCodeBase() : NpcType.field2326.field3599.getCodeBase();
 		} else {
 			return null;
 		}
@@ -226,29 +226,29 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		field1571++;
 		Container var2;
 		if (class201.field3834 == null) {
-			var2 = class126.field2326.field3599;
+			var2 = NpcType.field2326.field3599;
 		} else {
 			var2 = class201.field3834;
 		}
-		if (class154.field2977 != null) {
-			class154.field2977.removeFocusListener(this);
-			var2.remove(class154.field2977);
+		if (HashTable.field2977 != null) {
+			HashTable.field2977.removeFocusListener(this);
+			var2.remove(HashTable.field2977);
 		}
 		if (arg0 < 33) {
 			return;
 		}
-		class154.field2977 = new class66(this);
-		var2.add(class154.field2977);
-		class154.field2977.setSize(class222.field4194, class145.field2727);
-		class154.field2977.setVisible(true);
+		HashTable.field2977 = new class66(this);
+		var2.add(HashTable.field2977);
+		HashTable.field2977.setSize(class222.field4194, class145.field2727);
+		HashTable.field2977.setVisible(true);
 		if (class201.field3834 == null) {
-			class154.field2977.setLocation(0, 0);
+			HashTable.field2977.setLocation(0, 0);
 		} else {
 			Insets var3 = class201.field3834.getInsets();
-			class154.field2977.setLocation(var3.left, var3.top);
+			HashTable.field2977.setLocation(var3.left, var3.top);
 		}
-		class154.field2977.addFocusListener(this);
-		class154.field2977.requestFocus();
+		HashTable.field2977.addFocusListener(this);
+		HashTable.field2977.requestFocus();
 		class53.field971 = true;
 		class116.field2093 = class206.method1420(false);
 	}
@@ -291,8 +291,8 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			class201.field3834.toFront();
 			Insets var8 = class201.field3834.getInsets();
 			class201.field3834.setSize(var8.left + arg2 + var8.right, var8.bottom + arg1 - -var8.top);
-			class6.field93 = class126.field2326 = new class181(true, null, arg4, arg6, arg0);
-			class126.field2326.method1289(arg5 + 11126, this, 1);
+			class6.field93 = NpcType.field2326 = new class181(true, null, arg4, arg6, arg0);
+			NpcType.field2326.method1289(arg5 + 11126, this, 1);
 		} catch (Exception var10) {
 			class221.method1490((byte) 0, null, var10);
 		}
@@ -313,7 +313,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final AppletContext getAppletContext() {
 		field1565++;
 		if (class201.field3834 == null) {
-			return class126.field2326 == null || class126.field2326.field3599 == this ? super.getAppletContext() : class126.field2326.field3599.getAppletContext();
+			return NpcType.field2326 == null || NpcType.field2326.field3599 == this ? super.getAppletContext() : NpcType.field2326.field3599.getAppletContext();
 		} else {
 			return null;
 		}
@@ -331,19 +331,19 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			}
 			class48.field909 = true;
 		}
-		if (class126.field2326.field3599 != null) {
-			class126.field2326.field3599.destroy();
+		if (NpcType.field2326.field3599 != null) {
+			NpcType.field2326.field3599.destroy();
 		}
-		if (class154.field2977 != null) {
+		if (HashTable.field2977 != null) {
 			try {
-				class154.field2977.removeFocusListener(this);
+				HashTable.field2977.removeFocusListener(this);
 				Container var4;
 				if (class201.field3834 == null) {
-					var4 = class126.field2326.field3599;
+					var4 = NpcType.field2326.field3599;
 				} else {
 					var4 = class201.field3834;
 				}
-				var4.remove(class154.field2977);
+				var4.remove(HashTable.field2977);
 			} catch (Exception var10) {
 			}
 		}
@@ -351,9 +351,9 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			this.method218(arg0 ^ 0x65);
 		} catch (Exception var9) {
 		}
-		if (class126.field2326 != null) {
+		if (NpcType.field2326 != null) {
 			try {
-				class126.field2326.method1291(-108);
+				NpcType.field2326.method1291(-108);
 			} catch (Exception var8) {
 			}
 		}
@@ -406,13 +406,13 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 		if (field1575++ > 50) {
 			field1575 -= 50;
 			class53.field971 = true;
-			class154.field2977.setSize(class222.field4194, class145.field2727);
-			class154.field2977.setVisible(true);
+			HashTable.field2977.setSize(class222.field4194, class145.field2727);
+			HashTable.field2977.setVisible(true);
 			if (class201.field3834 == null) {
-				class154.field2977.setLocation(0, 0);
+				HashTable.field2977.setLocation(0, 0);
 			} else {
 				Insets var7 = class201.field3834.getInsets();
-				class154.field2977.setLocation(var7.left, var7.top);
+				HashTable.field2977.setLocation(var7.left, var7.top);
 			}
 		}
 		this.method220(15729);
@@ -477,7 +477,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	@OriginalMember(owner = "client!hj", name = "providesignlink", descriptor = "(Lqg;)V")
 	public static final void providesignlink(class181 arg0) {
 		field1563++;
-		class126.field2326 = arg0;
+		NpcType.field2326 = arg0;
 		class6.field93 = arg0;
 	}
 
@@ -485,7 +485,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final String getParameter(String arg0) {
 		field1560++;
 		if (class201.field3834 == null) {
-			return class126.field2326 == null || class126.field2326.field3599 == this ? super.getParameter(arg0) : class126.field2326.field3599.getParameter(arg0);
+			return NpcType.field2326 == null || NpcType.field2326.field3599 == this ? super.getParameter(arg0) : NpcType.field2326.field3599.getParameter(arg0);
 		} else {
 			return null;
 		}
@@ -524,17 +524,17 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					return;
 				}
 			}
-			if (class126.field2326.field3599 != null) {
+			if (NpcType.field2326.field3599 != null) {
 				Method var3 = class181.field3583;
 				if (var3 != null) {
 					try {
-						var3.invoke(class126.field2326.field3599, Boolean.TRUE);
+						var3.invoke(NpcType.field2326.field3599, Boolean.TRUE);
 					} catch (Throwable var6) {
 					}
 				}
 			}
 			this.method585((byte) 40);
-			class202.field3854 = class176.method1261(2, class222.field4194, class154.field2977, class145.field2727);
+			class202.field3854 = class176.method1261(2, class222.field4194, HashTable.field2977, class145.field2727);
 			this.method214(100);
 			class143.field2656 = class196.method1360(0);
 			while (class35.field602 == 0L || class35.field602 > class206.method1420(false)) {
@@ -543,7 +543,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 					this.method584((byte) 115);
 				}
 				this.method589(-23496);
-				class149.method1008(-1, class154.field2977, class126.field2326);
+				class149.method1008(-1, HashTable.field2977, NpcType.field2326);
 			}
 		} catch (Exception var7) {
 			class221.method1490((byte) 0, null, var7);
@@ -589,10 +589,10 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 				class55.field1032 = this;
 				class145.field2727 = arg3;
 				class225.field4228 = arg1;
-				if (class126.field2326 == null) {
-					class6.field93 = class126.field2326 = new class181(false, this, arg2, null, 0);
+				if (NpcType.field2326 == null) {
+					class6.field93 = NpcType.field2326 = new class181(false, this, arg2, null, 0);
 				}
-				class126.field2326.method1289(2, this, 1);
+				NpcType.field2326.method1289(2, this, 1);
 			}
 		} catch (Exception var7) {
 			class221.method1490((byte) 0, null, var7);
@@ -604,7 +604,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 	public final URL getDocumentBase() {
 		field1589++;
 		if (class201.field3834 == null) {
-			return class126.field2326 == null || class126.field2326.field3599 == this ? super.getDocumentBase() : class126.field2326.field3599.getDocumentBase();
+			return NpcType.field2326 == null || NpcType.field2326.field3599 == this ? super.getDocumentBase() : NpcType.field2326.field3599.getDocumentBase();
 		} else {
 			return null;
 		}

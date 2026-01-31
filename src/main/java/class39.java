@@ -62,10 +62,10 @@ public class class39 extends Linkable {
 	public static Js5Index field684;
 
 	@OriginalMember(owner = "client!de", name = "t", descriptor = "Lq;")
-	public class174 field676;
+	public IfType field676;
 
 	@OriginalMember(owner = "client!de", name = "v", descriptor = "Lq;")
-	public class174 field678;
+	public IfType field678;
 
 	@OriginalMember(owner = "client!de", name = "u", descriptor = "Li;")
 	public JString opbase;
@@ -82,7 +82,7 @@ public class class39 extends Linkable {
 			method255(-34, false, -102);
 		}
 		field695++;
-		class177 var3 = (class177) class64.field1163.get(-1, (long) arg2);
+		class177 var3 = (class177) class64.field1163.find((long) arg2);
 		if (var3 == null) {
 			return -1;
 		} else if (arg0 >= 0 && arg0 < var3.field3555.length) {
@@ -122,7 +122,7 @@ public class class39 extends Linkable {
 					}
 				}
 				var2.method517(0, class17.field261);
-				class126.method861(class149.field2909, (int) var2.field1406, (int) var2.field1391, (int) var2.field1375, 60, var2, var2.field1381, -1L, false);
+				NpcType.method861(class149.field2909, (int) var2.field1406, (int) var2.field1391, (int) var2.field1375, 60, var2, var2.field1381, -1L, false);
 			}
 		}
 	}

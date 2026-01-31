@@ -114,8 +114,8 @@ public class class80 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(ILq;)I")
-	public static final int method530(int arg0, class174 arg1) {
-		class192 var2 = (class192) class31.field495.get(-1, ((long) arg1.parentId << 32) + ((long) arg1.field3408));
+	public static final int method530(int arg0, IfType arg1) {
+		class192 var2 = (class192) class31.field495.find(((long) arg1.parentId << 32) + ((long) arg1.field3408));
 		field1438++;
 		if (arg0 == -881710560) {
 			return var2 == null ? arg1.eventCode : var2.field3700;
@@ -145,7 +145,7 @@ public class class80 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "a", descriptor = "(IIILq;)V")
-	public static final void method532(int arg0, int arg1, int arg2, class174 arg3) {
+	public static final void method532(int arg0, int arg1, int arg2, IfType arg3) {
 		field1453++;
 		if (class179.field3570 != null || class108.field1960 || (arg3 == null || class225.method1514(115, arg3) == null)) {
 			return;
@@ -162,7 +162,7 @@ public class class80 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!hc", name = "b", descriptor = "(ILq;)Z")
-	public static final boolean method533(int arg0, class174 arg1) {
+	public static final boolean method533(int arg0, IfType arg1) {
 		field1443++;
 		if (arg1.field3518 == null) {
 			return false;
@@ -259,16 +259,16 @@ public class class80 extends class23 {
 		if (arg0 <= 116) {
 			method529(true, -96, null);
 		}
-		if (class154.field2971 > 0) {
-			class154.field2971 -= arg1 * 4;
+		if (HashTable.field2971 > 0) {
+			HashTable.field2971 -= arg1 * 4;
 		}
-		if (class154.field2971 == 0 && class161.field3101 == 0) {
+		if (HashTable.field2971 == 0 && class161.field3101 == 0) {
 			int var9 = (int) (Math.random() * (double) (2000 / arg1));
 			if (var9 == 1) {
 				class161.field3101 = 1024;
 			}
 			if (var9 == 0) {
-				class154.field2971 = 1024;
+				HashTable.field2971 = 1024;
 			}
 		}
 		for (int var10 = 0; var10 < var2 - arg1; var10++) {

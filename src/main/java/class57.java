@@ -53,7 +53,7 @@ public class class57 extends class23 {
 	public static int field1090;
 
 	@OriginalMember(owner = "client!fa", name = "gb", descriptor = "Lq;")
-	public static class174 field1091;
+	public static IfType field1091;
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(Lea;II)V")
 	public final void method11(Packet arg0, int arg1, int arg2) {
@@ -75,7 +75,7 @@ public class class57 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(ZIILq;I)V")
-	public static final void method416(boolean arg0, int arg1, int arg2, class174 arg3, int arg4) {
+	public static final void method416(boolean arg0, int arg1, int arg2, IfType arg3, int arg4) {
 		++field1081;
 		int var5 = arg3.field3382;
 		if (~arg3.field3465 != -1) {
@@ -187,7 +187,7 @@ public class class57 extends class23 {
 																class34.method227((byte) -57, class70.field1303, class132.field2472, class232.field4350);
 															}
 														} else {
-															class34.method227((byte) 118, class70.field1269, class48.field906, class154.field2990);
+															class34.method227((byte) 118, class70.field1269, class48.field906, HashTable.field2990);
 														}
 													} else {
 														class34.method227((byte) 121, class230.field4319, class155.field3004, class117.field2113);
@@ -199,7 +199,7 @@ public class class57 extends class23 {
 												class34.method227((byte) -3, class70.field1272, class20.field312, class153.field2953);
 											}
 										} else {
-											class34.method227((byte) 119, class70.field1300, class166.field3193, class154.field2970);
+											class34.method227((byte) 119, class70.field1300, class166.field3193, HashTable.field2970);
 										}
 									} else {
 										class34.method227((byte) -38, class70.field1282, class122.field2228, class210.field3993);
@@ -230,7 +230,7 @@ public class class57 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(IIIILq;Lrc;I)V")
-	public static final void method418(int arg0, int arg1, int arg2, int arg3, class174 arg4, class188 arg5, int arg6) {
+	public static final void method418(int arg0, int arg1, int arg2, int arg3, IfType arg4, class188 arg5, int arg6) {
 		++field1082;
 		if (arg5 != null) {
 			int var7 = 2047 & Ground.field943 + class207.field3932;
@@ -304,7 +304,7 @@ public class class57 extends class23 {
 			}
 		}
 		if (arg1 <= 19) {
-			method418(-104, -17, 75, 42, (class174) null, (class188) null, -52);
+			method418(-104, -17, 75, 42, (IfType) null, (class188) null, -52);
 		}
 		return var3;
 	}

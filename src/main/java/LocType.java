@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!nf")
-public class LocType extends class136 {
+public class LocType extends Linkable2 {
 
 	@OriginalMember(owner = "client!nf", name = "I", descriptor = "Z")
 	public boolean field2774 = false;
@@ -182,7 +182,7 @@ public class LocType extends class136 {
 	public static Js5Index field2780;
 
 	@OriginalMember(owner = "client!nf", name = "N", descriptor = "Lob;")
-	private class154 field2779;
+	private HashTable field2779;
 
 	@OriginalMember(owner = "client!nf", name = "Ib", descriptor = "[B")
 	private byte[] field2826;
@@ -271,7 +271,7 @@ public class LocType extends class136 {
 		boolean var2 = true;
 		if (arg0 == -23555) {
 			for (int var3 = 0; var3 < this.model.length; var3++) {
-				var2 &= class175.field3526.download(this.model[var3] & 0xFFFF, 0);
+				var2 &= class175.field3526.requestDownload(this.model[var3] & 0xFFFF, 0);
 			}
 			return var2;
 		} else {
@@ -288,7 +288,7 @@ public class LocType extends class136 {
 		if (this.shape != null) {
 			for (int var5 = 0; var5 < this.shape.length; var5++) {
 				if (this.shape[var5] == arg1) {
-					return class175.field3526.download(this.model[var5] & 0xFFFF, 0);
+					return class175.field3526.requestDownload(this.model[var5] & 0xFFFF, 0);
 				}
 			}
 			return true;
@@ -297,7 +297,7 @@ public class LocType extends class136 {
 		} else if (arg1 == 10) {
 			boolean var3 = true;
 			for (int var4 = 0; var4 < this.model.length; var4++) {
-				var3 &= class175.field3526.download(this.model[var4] & 0xFFFF, 0);
+				var3 &= class175.field3526.requestDownload(this.model[var4] & 0xFFFF, 0);
 			}
 			return var3;
 		} else {
@@ -361,7 +361,7 @@ public class LocType extends class136 {
 		if (arg0 != -63) {
 			this.offsetx = 74;
 		}
-		class192 var4 = (class192) this.field2779.get(arg0 + 62, (long) arg2);
+		class192 var4 = (class192) this.field2779.find((long) arg2);
 		return var4 == null ? arg1 : var4.field3700;
 	}
 
@@ -370,7 +370,7 @@ public class LocType extends class136 {
 		if (arg1 < 82) {
 			field2780 = null;
 		}
-		class177 var2 = (class177) class64.field1163.get(-1, (long) arg0);
+		class177 var2 = (class177) class64.field1163.find((long) arg0);
 		field2786++;
 		if (var2 != null) {
 			var2.unlink();
@@ -435,7 +435,7 @@ public class LocType extends class136 {
 		if (this.multivarbit != -1) {
 			var3 = class142.getVarbit(this.multivarbit);
 		} else if (this.multivarp != -1) {
-			var3 = class113.field2052[this.multivarp];
+			var3 = class113.var[this.multivarp];
 		}
 		field2771++;
 		if (var3 < 0 || var3 >= this.multiloc.length - 1 || this.multiloc[var3] == -1) {
@@ -452,7 +452,7 @@ public class LocType extends class136 {
 		if (this.field2779 == null) {
 			return arg1;
 		} else if (arg0 == -25925) {
-			class216 var4 = (class216) this.field2779.get(-1, (long) arg2);
+			class216 var4 = (class216) this.field2779.find((long) arg2);
 			return var4 == null ? arg1 : var4.field4048;
 		} else {
 			return null;
@@ -481,7 +481,7 @@ public class LocType extends class136 {
 				}
 				var4 = (ModelUnlit) class60.field1123.method135(-106, (long) var8);
 				if (var4 == null) {
-					var4 = ModelUnlit.method568(class175.field3526, var8 & 0xFFFF, 0);
+					var4 = ModelUnlit.load(class175.field3526, var8 & 0xFFFF, 0);
 					if (var4 == null) {
 						return null;
 					}
@@ -514,7 +514,7 @@ public class LocType extends class136 {
 			}
 			var4 = (ModelUnlit) class60.field1123.method135(-115, (long) var11);
 			if (var4 == null) {
-				var4 = ModelUnlit.method568(class175.field3526, var11 & 0xFFFF, 0);
+				var4 = ModelUnlit.load(class175.field3526, var11 & 0xFFFF, 0);
 				if (var4 == null) {
 					return null;
 				}
@@ -642,7 +642,7 @@ public class LocType extends class136 {
 			this.contrast = buf.g1b() * 5;
 		} else if (code >= 30 && code < 35) {
 			this.op[code - 30] = buf.gjstr();
-			if (this.op[code - 30].method624(class192.HIDDEN, (byte) 105)) {
+			if (this.op[code - 30].equalsIgnoreCase(class192.HIDDEN)) {
 				this.op[code - 30] = null;
 			}
 		} else if (code == 40) {
@@ -763,7 +763,7 @@ public class LocType extends class136 {
 			int var10 = buf.g1();
 			if (this.field2779 == null) {
 				int var11 = class184.method1298(true, var10);
-				this.field2779 = new class154(var11);
+				this.field2779 = new HashTable(var11);
 			}
 			for (int var12 = 0; var12 < var10; var12++) {
 				boolean var13 = buf.g1() == 1;
