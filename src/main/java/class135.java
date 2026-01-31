@@ -121,7 +121,7 @@ public class class135 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!md", name = "a", descriptor = "(Lnb;I)V")
-	public static final void method900(Js5Index arg0, int arg1) {
+	public static final void method900(Js5 arg0, int arg1) {
 		class31.field506 = arg0;
 		if (arg1 == 28809) {
 			++field2511;

@@ -169,7 +169,7 @@ public class class211 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!td", name = "a", descriptor = "(ILnb;Lnb;)V")
-	public static final void method1445(int arg0, Js5Index arg1, Js5Index arg2) {
+	public static final void method1445(int arg0, Js5 arg1, Js5 arg2) {
 		class141.field2609 = arg1;
 		GZip.field1114 = arg2;
 	}

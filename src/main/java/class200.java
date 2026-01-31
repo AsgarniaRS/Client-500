@@ -62,7 +62,7 @@ public class class200 {
 	public int field3832;
 
 	@OriginalMember(owner = "client!sd", name = "p", descriptor = "Lnb;")
-	public static Js5Index field3829;
+	public static Js5 field3829;
 
 	@OriginalMember(owner = "client!sd", name = "o", descriptor = "Lrc;")
 	public static class188 field3828;

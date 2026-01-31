@@ -49,7 +49,7 @@ public class class12 {
 	public static int field181;
 
 	@OriginalMember(owner = "client!b", name = "j", descriptor = "Lnb;")
-	public static Js5Index field177;
+	public static Js5 field177;
 
 	@OriginalMember(owner = "client!b", name = "e", descriptor = "Lbj;")
 	public static Js5Local field172;
@@ -99,7 +99,7 @@ public class class12 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(DIZLnb;Lfe;IIZ)[I")
-	public final int[] method60(double arg0, int arg1, boolean arg2, Js5Index arg3, class61 arg4, int arg5, int arg6, boolean arg7) {
+	public final int[] method60(double arg0, int arg1, boolean arg2, Js5 arg3, class61 arg4, int arg5, int arg6, boolean arg7) {
 		scene.method282(arg0, (byte) -125);
 		class244.field4490 = arg4;
 		class39.field684 = arg3;
@@ -212,7 +212,7 @@ public class class12 {
 	}
 
 	@OriginalMember(owner = "client!b", name = "a", descriptor = "(Lfe;Lnb;I)Z")
-	public final boolean method63(class61 arg0, Js5Index arg1, int arg2) {
+	public final boolean method63(class61 arg0, Js5 arg1, int arg2) {
 		field181++;
 		if (arg2 > -11) {
 			this.field170 = null;

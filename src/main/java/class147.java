@@ -52,7 +52,7 @@ public class class147 {
 	public static Js5Local field2762;
 
 	@OriginalMember(owner = "client!ne", name = "a", descriptor = "(ILi;Li;Lnb;)[Lrh;")
-	public static final class193[] method983(int arg0, JString arg1, JString arg2, Js5Index arg3) {
+	public static final class193[] method983(int arg0, JString arg1, JString arg2, Js5 arg3) {
 		field2755++;
 		int var4 = arg3.method966(arg1, (byte) -3);
 		if (arg0 != 2) {

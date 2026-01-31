@@ -436,7 +436,7 @@ public class class165 {
 												var48 = class180.field3574;
 											}
 											if ((var50.field2854 == 1 || var11.field3484 != 1) && var11.field3484 != -1) {
-												var48 = class166.method1142(new JString[]{Linkable2.field2531, var48, class32.field523, Js5Index.method960(0, var11.field3484)}, -3);
+												var48 = class166.method1142(new JString[]{Linkable2.field2531, var48, class32.field523, Js5.method960(0, var11.field3484)}, -3);
 											}
 										}
 										if (class53.field967 == var11) {
@@ -592,7 +592,7 @@ public class class165 {
 													if (var80.field2854 != 1 && var11.field3476[var77] == 1) {
 														var81 = class166.method1142(new JString[]{Linkable2.field2531, var80.field2894, class120.field2201}, -3);
 													} else {
-														var81 = class166.method1142(new JString[]{Linkable2.field2531, var80.field2894, class32.field523, Js5Index.method960(0, var11.field3476[var77])}, -3);
+														var81 = class166.method1142(new JString[]{Linkable2.field2531, var80.field2894, class32.field523, Js5.method960(0, var11.field3476[var77])}, -3);
 													}
 													int var82 = (var11.field3468 + 115) * var79 + var13;
 													int var83 = (var11.field3510 + 12) * var78 + var14;
@@ -739,7 +739,7 @@ public class class165 {
 	}
 
 	@OriginalMember(owner = "client!pb", name = "a", descriptor = "(BLnb;Lpg;Lnb;Lnb;)Z")
-	public static final boolean method1136(byte arg0, Js5Index arg1, class170 arg2, Js5Index arg3, Js5Index arg4) {
+	public static final boolean method1136(byte arg0, Js5 arg1, class170 arg2, Js5 arg3, Js5 arg4) {
 		class31.field503 = arg2;
 		field3158++;
 		class86.field1553 = arg1;

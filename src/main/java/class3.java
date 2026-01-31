@@ -141,7 +141,7 @@ public class class3 {
 	}
 
 	@OriginalMember(owner = "client!ab", name = "a", descriptor = "(Li;ZLi;Lnb;)[Lpf;")
-	public static final class169[] method15(JString arg0, boolean arg1, JString arg2, Js5Index arg3) {
+	public static final class169[] method15(JString arg0, boolean arg1, JString arg2, Js5 arg3) {
 		field28++;
 		if (arg1) {
 			field27 = null;

@@ -53,7 +53,7 @@ public class class85 extends class23 {
 	public static int field1548;
 
 	@OriginalMember(owner = "client!hh", name = "fb", descriptor = "Lnb;")
-	public static Js5Index interfaces;
+	public static Js5 interfaces;
 
 	@OriginalMember(owner = "client!hh", name = "gb", descriptor = "Lbj;")
 	public static Js5Local field1546;

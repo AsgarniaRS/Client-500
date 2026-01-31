@@ -513,6 +513,19 @@ public class IfType {
 		}
 	}
 
+	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(Lnb;ILnb;Lnb;Lnb;)V")
+	public static final void init(Js5 arg0, int arg1, Js5 arg2, Js5 arg3, Js5 arg4) {
+		if (arg1 < 9) {
+			NpcType.field2350 = 1;
+		}
+		class90.field1705 = arg4;
+		class65.field1176 = arg0;
+		class85.interfaces = arg2;
+		class106.field1928 = arg3;
+		class78.list = new IfType[class85.interfaces.getGroupCount()][];
+		class167.open = new boolean[class85.interfaces.getGroupCount()];
+	}
+
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(III)V")
 	public final void method1246(int arg0, int arg1, int arg2) {
 		field3413++;

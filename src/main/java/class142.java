@@ -38,7 +38,7 @@ public class class142 {
 	public static int field2617;
 
 	@OriginalMember(owner = "client!n", name = "l", descriptor = "Lnb;")
-	public static Js5Index field2626;
+	public static Js5 field2626;
 
 	@OriginalMember(owner = "client!n", name = "k", descriptor = "Z")
 	public static boolean field2625;

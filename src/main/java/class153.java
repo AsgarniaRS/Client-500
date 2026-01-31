@@ -38,7 +38,7 @@ public class class153 extends Linkable {
 	public static int field2964;
 
 	@OriginalMember(owner = "client!oa", name = "x", descriptor = "Lnb;")
-	public static Js5Index field2957;
+	public static Js5 field2957;
 
 	@OriginalMember(owner = "client!oa", name = "F", descriptor = "[Li;")
 	public static JString[] stringLocals;
@@ -131,7 +131,7 @@ public class class153 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!oa", name = "a", descriptor = "(Lnb;Lsb;Lnb;B)V")
-	public static final void method1047(Js5Index arg0, class198 arg1, Js5Index arg2, byte arg3) {
+	public static final void method1047(Js5 arg0, class198 arg1, Js5 arg2, byte arg3) {
 		class78.field1417 = arg2;
 		int var4 = -76 / ((8 - arg3) / 39);
 		field2964++;

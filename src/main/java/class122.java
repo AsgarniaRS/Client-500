@@ -50,7 +50,7 @@ public class class122 extends class50 {
 	public static int field2231;
 
 	@OriginalMember(owner = "client!lb", name = "a", descriptor = "(BILnb;)Llj;")
-	public static final class130 method828(byte arg0, int arg1, Js5Index arg2) {
+	public static final class130 method828(byte arg0, int arg1, Js5 arg2) {
 		if (arg0 != -70) {
 			return null;
 		} else {
@@ -240,7 +240,7 @@ public class class122 extends class50 {
 	}
 
 	@OriginalMember(owner = "client!lb", name = "a", descriptor = "(Lnb;II)[Lrh;")
-	public static final class193[] method832(Js5Index arg0, int arg1, int arg2) {
+	public static final class193[] method832(Js5 arg0, int arg1, int arg2) {
 		++field2221;
 		if (arg1 != 30675) {
 			return null;

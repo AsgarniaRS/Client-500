@@ -51,7 +51,7 @@ public class class180 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!qf", name = "a", descriptor = "(Lnb;B)V")
-	public static final void method1284(Js5Index arg0, byte arg1) {
+	public static final void method1284(Js5 arg0, byte arg1) {
 		++field3578;
 		if (arg1 == -32) {
 			class204.field3885 = arg0;

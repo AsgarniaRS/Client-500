@@ -11,10 +11,10 @@ public class class151 {
 	private HashTable field2939 = new HashTable(256);
 
 	@OriginalMember(owner = "client!nj", name = "o", descriptor = "Lnb;")
-	private Js5Index field2938;
+	private Js5 field2938;
 
 	@OriginalMember(owner = "client!nj", name = "h", descriptor = "Lnb;")
-	private Js5Index field2931;
+	private Js5 field2931;
 
 	@OriginalMember(owner = "client!nj", name = "k", descriptor = "I")
 	public static int field2934 = -1;
@@ -91,7 +91,7 @@ public class class151 {
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "(II[I)Ltf;")
 	public final class213 method1034(int arg0, int arg1, int[] arg2) {
 		field2935++;
-		if (this.field2931.method942((byte) -55) == 1) {
+		if (this.field2931.getGroupCount() == 1) {
 			return this.method1036(-1673520700, arg1, arg2, 0);
 		}
 		int var4 = 50 % ((23 - arg0) / 36);
@@ -166,7 +166,7 @@ public class class151 {
 	@OriginalMember(owner = "client!nj", name = "a", descriptor = "([III)Ltf;")
 	public final class213 method1037(int[] arg0, int arg1, int arg2) {
 		field2937++;
-		if (this.field2938.method942((byte) -110) == 1) {
+		if (this.field2938.getGroupCount() == 1) {
 			return this.method1035(arg0, 0, -41513424, arg2);
 		}
 		if (arg1 != 25304) {
@@ -196,7 +196,7 @@ public class class151 {
 	}
 
 	@OriginalMember(owner = "client!nj", name = "<init>", descriptor = "(Lnb;Lnb;)V")
-	public class151(Js5Index arg0, Js5Index arg1) {
+	public class151(Js5 arg0, Js5 arg1) {
 		this.field2938 = arg1;
 		this.field2931 = arg0;
 	}

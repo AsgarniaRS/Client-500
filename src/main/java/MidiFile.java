@@ -83,7 +83,7 @@ public class MidiFile extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!ic", name = "a", descriptor = "(Lnb;II)Lic;")
-	public static final MidiFile method663(Js5Index arg0, int arg1, int arg2) {
+	public static final MidiFile method663(Js5 arg0, int arg1, int arg2) {
 		byte[] var3 = arg0.getFile(arg2, arg1);
 		return var3 == null ? null : new MidiFile(new Packet(var3));
 	}

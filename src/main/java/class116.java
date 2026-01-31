@@ -447,7 +447,7 @@ public class class116 extends class23 {
 															}
 															++class111.field2029;
 															++class77.field1384;
-															++Js5Index.field2709;
+															++Js5.field2709;
 															if (class111.field2029 > 500) {
 																class111.field2029 = 0;
 																int var43 = (int) (8.0D * Math.random());
@@ -501,7 +501,7 @@ public class class116 extends class23 {
 															if (class223.field4201 > 50) {
 																Linkable2.field2533 = -2;
 															}
-															if (~Js5Index.field2709 < -51) {
+															if (~Js5.field2709 < -51) {
 																Isaac.out.method30(19);
 																++class31.field498;
 															}
@@ -509,7 +509,7 @@ public class class116 extends class23 {
 																if (class33.stream != null && Isaac.out.pos > 0) {
 																	class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
 																	Isaac.out.pos = 0;
-																	Js5Index.field2709 = 0;
+																	Js5.field2709 = 0;
 																	return;
 																}
 																return;

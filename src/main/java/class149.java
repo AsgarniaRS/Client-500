@@ -264,7 +264,7 @@ public class class149 extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!ng", name = "a", descriptor = "(Lnb;I)V")
-	public static final void method1009(Js5Index arg0, int arg1) {
+	public static final void method1009(Js5 arg0, int arg1) {
 		field2904++;
 		if (arg1 == 21644) {
 			class106.field1933 = arg0;

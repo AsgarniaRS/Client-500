@@ -200,7 +200,6 @@ public class NpcType extends Linkable2 {
 
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(III)I")
 	public final int method856(int arg0, int arg1, int arg2) {
-		field2358++;
 		if (this.field2346 == null) {
 			return arg1;
 		} else if (arg0 == -8931) {
@@ -214,19 +213,6 @@ public class NpcType extends Linkable2 {
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(IIIILnc;IJIIII)Z")
 	public static final boolean method857(int arg0, int arg1, int arg2, int arg3, class145 arg4, int arg5, long arg6, int arg7, int arg8, int arg9, int arg10) {
 		return arg4 == null ? true : class112.method770(arg0, arg7, arg8, arg9 + 1 - arg7, arg10 - arg8 + 1, arg1, arg2, arg3, arg4, arg5, true, arg6);
-	}
-
-	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(Lnb;ILnb;Lnb;Lnb;)V")
-	public static final void method858(Js5Index arg0, int arg1, Js5Index arg2, Js5Index arg3, Js5Index arg4) {
-		if (arg1 < 9) {
-			field2350 = 1;
-		}
-		class90.field1705 = arg4;
-		class65.field1176 = arg0;
-		class85.interfaces = arg2;
-		class106.field1928 = arg3;
-		class78.list = new IfType[class85.interfaces.method942((byte) -42)][];
-		class167.open = new boolean[class85.interfaces.method942((byte) -110)];
 	}
 
 	@OriginalMember(owner = "client!lf", name = "a", descriptor = "(IZLea;)V")

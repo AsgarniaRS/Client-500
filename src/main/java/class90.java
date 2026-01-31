@@ -35,7 +35,7 @@ public class class90 extends Linkable {
 	public static int field1713;
 
 	@OriginalMember(owner = "client!ib", name = "y", descriptor = "Lnb;")
-	public static Js5Index field1705;
+	public static Js5 field1705;
 
 	@OriginalMember(owner = "client!ib", name = "A", descriptor = "Lq;")
 	public static IfType field1707;

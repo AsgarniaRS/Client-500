@@ -11,10 +11,10 @@ public class class68 implements class61 {
 	private boolean field1248 = false;
 
 	@OriginalMember(owner = "client!ga", name = "e", descriptor = "Lnb;")
-	private Js5Index field1226;
+	private Js5 field1226;
 
 	@OriginalMember(owner = "client!ga", name = "n", descriptor = "Lnb;")
-	private Js5Index field1235;
+	private Js5 field1235;
 
 	@OriginalMember(owner = "client!ga", name = "k", descriptor = "Lid;")
 	private class92 field1232;
@@ -220,7 +220,7 @@ public class class68 implements class61 {
 	}
 
 	@OriginalMember(owner = "client!ga", name = "<init>", descriptor = "(Lnb;Lnb;Lnb;IZ)V")
-	public class68(Js5Index arg0, Js5Index arg1, Js5Index arg2, int arg3, boolean arg4) {
+	public class68(Js5 arg0, Js5 arg1, Js5 arg2, int arg3, boolean arg4) {
 		this.field1248 = arg4;
 		this.field1226 = arg0;
 		this.field1235 = arg2;

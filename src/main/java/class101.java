@@ -53,7 +53,7 @@ public class class101 extends Linkable2 {
 	public static int[] field1833;
 
 	@OriginalMember(owner = "client!jc", name = "a", descriptor = "(Lnb;BI)[Llj;")
-	public static final class130[] method702(Js5Index arg0, byte arg1, int arg2) {
+	public static final class130[] method702(Js5 arg0, byte arg1, int arg2) {
 		if (arg1 != 30) {
 			field1844 = null;
 		}

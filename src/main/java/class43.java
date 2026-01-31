@@ -53,7 +53,7 @@ public class class43 extends class23 {
 	public static int field738;
 
 	@OriginalMember(owner = "client!di", name = "bb", descriptor = "Lnb;")
-	public static Js5Index field733;
+	public static Js5 field733;
 
 	@OriginalMember(owner = "client!di", name = "eb", descriptor = "[Llj;")
 	public static class130[] field736;

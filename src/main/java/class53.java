@@ -184,7 +184,7 @@ public class class53 implements KeyListener, FocusListener {
 	}
 
 	@OriginalMember(owner = "client!eh", name = "a", descriptor = "(ILnb;BZII)V")
-	public static final void method388(int arg0, Js5Index arg1, byte arg2, boolean arg3, int arg4, int arg5) {
+	public static final void method388(int arg0, Js5 arg1, byte arg2, boolean arg3, int arg4, int arg5) {
 		class11.field159 = arg5;
 		if (arg2 > -38) {
 			method391(-6, -128, -9, -47, -19, 12, 24);

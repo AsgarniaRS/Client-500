@@ -43,7 +43,7 @@ public class class175 {
 	public static class119 field3531;
 
 	@OriginalMember(owner = "client!qa", name = "f", descriptor = "Lnb;")
-	public static Js5Index field3526;
+	public static Js5 field3526;
 
 	@OriginalMember(owner = "client!qa", name = "b", descriptor = "Z")
 	public static boolean field3522;

@@ -62,7 +62,7 @@ public class class204 extends Linkable {
 	public static int field3901;
 
 	@OriginalMember(owner = "client!sh", name = "x", descriptor = "Lnb;")
-	public static Js5Index field3885;
+	public static Js5 field3885;
 
 	@OriginalMember(owner = "client!sh", name = "w", descriptor = "[I")
 	public static int[] field3884;

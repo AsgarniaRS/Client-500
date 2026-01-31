@@ -117,7 +117,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
 	public static long field631;
 
 	@OriginalMember(owner = "client!db", name = "B", descriptor = "Lnb;")
-	public static Js5Index field633;
+	public static Js5 field633;
 
 	@OriginalMember(owner = "client!db", name = "D", descriptor = "Lq;")
 	public static IfType field635;

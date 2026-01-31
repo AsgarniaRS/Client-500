@@ -50,7 +50,7 @@ public class class139 extends class23 {
 	public static int field2583;
 
 	@OriginalMember(owner = "client!mh", name = "W", descriptor = "Lnb;")
-	public static Js5Index field2580;
+	public static Js5 field2580;
 
 	@OriginalMember(owner = "client!mh", name = "b", descriptor = "(IB)[[I")
 	public final int[][] method7(int arg0, byte arg1) {

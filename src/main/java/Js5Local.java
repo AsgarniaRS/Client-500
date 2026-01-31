@@ -4,7 +4,7 @@ import org.openrs2.deob.annotation.OriginalMember;
 import java.util.Calendar;
 
 @OriginalClass("client!bj")
-public class Js5Local extends Js5Index {
+public class Js5Local extends Js5 {
 
 	@OriginalMember(owner = "client!bj", name = "ub", descriptor = "Z")
 	private volatile boolean field348 = false;

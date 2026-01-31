@@ -129,7 +129,7 @@ public class class205 extends Linkable2 {
 		if (this.field3907 != null) {
 			for (int var4 = 0; var4 < this.field3907.length; var4++) {
 				var3.method616(this.field3903[var4], (byte) 57);
-				var3.method616(Js5Index.method954(arg0.method300(class78.field1420[this.field3907[var4]], 51), 118, this.field3907[var4], this.field3911[var4]), (byte) -71);
+				var3.method616(Js5.method954(arg0.method300(class78.field1420[this.field3907[var4]], 51), 118, this.field3907[var4], this.field3911[var4]), (byte) -71);
 			}
 		}
 		var3.method616(this.field3903[this.field3903.length - 1], (byte) 62);

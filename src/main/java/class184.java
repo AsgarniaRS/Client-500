@@ -237,13 +237,13 @@ public class class184 extends class23 {
 			this.field3612 = arg0.g2();
 		}
 		if (arg1 != -3) {
-			method1300((Js5Index) null, (Component) null, true, (Js5Index) null);
+			method1300((Js5) null, (Component) null, true, (Js5) null);
 		}
 		++field3614;
 	}
 
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(Lnb;Ljava/awt/Component;ZLnb;)V")
-	public static final void method1300(Js5Index arg0, Component arg1, boolean arg2, Js5Index arg3) {
+	public static final void method1300(Js5 arg0, Component arg1, boolean arg2, Js5 arg3) {
 		++field3611;
 		if (!class90.field1708) {
 			class72.method481();

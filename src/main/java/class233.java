@@ -143,7 +143,7 @@ public class class233 {
 	}
 
 	@OriginalMember(owner = "client!vd", name = "a", descriptor = "(IILnb;I)Lrh;")
-	public static final class193 method1555(int arg0, int arg1, Js5Index arg2, int arg3) {
+	public static final class193 method1555(int arg0, int arg1, Js5 arg2, int arg3) {
 		int var4 = -50 % ((83 - arg1) / 42);
 		field4371++;
 		return EnumType.method358(854010832, arg2, arg3, arg0) ? class164.method1131(0) : null;

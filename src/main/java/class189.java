@@ -69,7 +69,7 @@ public class class189 extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(BLnb;Lnb;)V")
-	public static final void method1318(byte arg0, Js5Index arg1, Js5Index arg2) {
+	public static final void method1318(byte arg0, Js5 arg1, Js5 arg2) {
 		if (arg0 < 110) {
 			field3667 = null;
 		}
@@ -89,13 +89,13 @@ public class class189 extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!rd", name = "a", descriptor = "(ZLnb;Ldg;Lnb;B)V")
-	public static final void method1320(boolean arg0, Js5Index arg1, class41 arg2, Js5Index arg3, byte arg4) {
+	public static final void method1320(boolean arg0, Js5 arg1, class41 arg2, Js5 arg3, byte arg4) {
 		class156.field3010 = arg3;
 		field3666++;
 		class142.field2625 = arg0;
 		class236.field4402 = arg1;
 		if (arg4 == 17) {
-			int var5 = class236.field4402.method942((byte) -100) - 1;
+			int var5 = class236.field4402.getGroupCount() - 1;
 			class202.field3857 = var5 * 256 + class236.field4402.method944(arg4 + 111, var5);
 			class180.field3573 = arg2;
 		}

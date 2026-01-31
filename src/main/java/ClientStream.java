@@ -104,7 +104,7 @@ public class ClientStream implements Runnable {
 	}
 
 	@OriginalMember(owner = "client!mf", name = "a", descriptor = "(BLnb;)V")
-	public static final void method912(byte arg0, Js5Index arg1) {
+	public static final void method912(byte arg0, Js5 arg1) {
 		class139.field2580 = arg1;
 		field2556++;
 		if (arg0 != 64) {

@@ -393,7 +393,7 @@ public class class176 extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!qb", name = "a", descriptor = "(ZLnb;I)Lsh;")
-	public static final class204 method1268(boolean arg0, Js5Index arg1, int arg2) {
+	public static final class204 method1268(boolean arg0, Js5 arg1, int arg2) {
 		if (arg0) {
 			return null;
 		} else {

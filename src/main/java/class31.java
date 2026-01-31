@@ -41,7 +41,7 @@ public class class31 implements Runnable {
 	public static int field500;
 
 	@OriginalMember(owner = "client!ch", name = "l", descriptor = "Lnb;")
-	public static Js5Index field506;
+	public static Js5 field506;
 
 	@OriginalMember(owner = "client!ch", name = "i", descriptor = "Lpg;")
 	public static class170 field503;

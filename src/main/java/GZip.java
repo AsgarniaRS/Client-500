@@ -46,7 +46,7 @@ public class GZip {
 	public static int field1116;
 
 	@OriginalMember(owner = "client!fc", name = "i", descriptor = "Lnb;")
-	public static Js5Index field1114;
+	public static Js5 field1114;
 
 	@OriginalMember(owner = "client!fc", name = "g", descriptor = "Ljava/util/zip/Inflater;")
 	private Inflater field1112;

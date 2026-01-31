@@ -40,7 +40,7 @@ public class class38 {
 	}
 
 	@OriginalMember(owner = "client!dd", name = "a", descriptor = "(Lnb;II)Ldd;")
-	public static final class38 method252(Js5Index arg0, int arg1, int arg2) {
+	public static final class38 method252(Js5 arg0, int arg1, int arg2) {
 		byte[] var3 = arg0.getFile(arg2, arg1);
 		return var3 == null ? null : new class38(new Packet(var3));
 	}

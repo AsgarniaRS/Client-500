@@ -2,7 +2,7 @@ import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
 
 @OriginalClass("client!nb")
-public abstract class Js5Index {
+public abstract class Js5 {
 
 	@OriginalMember(owner = "client!nb", name = "r", descriptor = "Z")
 	private boolean field2679;
@@ -179,17 +179,12 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(B)I")
-	public final int method942(byte arg0) {
-		if (arg0 >= -37) {
-			field2666 = null;
-		}
-		field2678++;
+	public final int getGroupCount() {
 		return this.field2676.length;
 	}
 
 	@OriginalMember(owner = "client!nb", name = "a", descriptor = "(I)V")
 	public final void method943(int arg0) {
-		field2703++;
 		for (int var2 = arg0; var2 < this.unpacked.length; var2++) {
 			this.unpacked[var2] = null;
 		}
@@ -197,7 +192,6 @@ public abstract class Js5Index {
 
 	@OriginalMember(owner = "client!nb", name = "b", descriptor = "(II)I")
 	public final int method944(int arg0, int arg1) {
-		field2669++;
 		if (this.method970(121, arg1)) {
 			return arg0 == 128 ? this.field2676[arg1] : 25;
 		} else {
@@ -944,7 +938,7 @@ public abstract class Js5Index {
 	}
 
 	@OriginalMember(owner = "client!nb", name = "<init>", descriptor = "(ZZ)V")
-	public Js5Index(boolean arg0, boolean arg1) {
+	public Js5(boolean arg0, boolean arg1) {
 		this.field2679 = arg0;
 		this.discardUnpacked = arg1;
 	}

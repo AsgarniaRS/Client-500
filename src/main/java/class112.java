@@ -38,7 +38,7 @@ public class class112 {
 		class101.field1844 = class25.field405;
 		class184.field3603 = class17.field250;
 		class232.field4350 = class139.field2587;
-		class58.field1093 = Js5Index.field2668;
+		class58.field1093 = Js5.field2668;
 		class4.field56 = class155.field2997;
 		class151.field2941 = class104.field1895;
 		class10.field143 = class68.field1234;
@@ -87,7 +87,7 @@ public class class112 {
 		class54.field1007 = class58.field1096;
 		class150.field2923 = class57.field1084;
 		class70.field1272 = class64.field1170;
-		class118.field2144 = Js5Index.field2699;
+		class118.field2144 = Js5.field2699;
 		class10.field144 = class85.field1537;
 		class65.field1174 = class205.field3917;
 		class132.field2472 = class242.field4483;

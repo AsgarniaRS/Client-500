@@ -119,13 +119,13 @@ public class EnumType extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(ILnb;Lnb;)V")
-	public static final void method357(int arg0, Js5Index arg1, Js5Index arg2) {
+	public static final void method357(int arg0, Js5 arg1, Js5 arg2) {
 		class209.configClient = arg1;
 		class170.models = arg2;
 	}
 
 	@OriginalMember(owner = "client!eb", name = "a", descriptor = "(ILnb;II)Z")
-	public static final boolean method358(int arg0, Js5Index arg1, int arg2, int arg3) {
+	public static final boolean method358(int arg0, Js5 arg1, int arg2, int arg3) {
 		if (arg0 != 854010832) {
 			method359(-5, 0, 41, 16, 98, 4, -115, -87);
 		}

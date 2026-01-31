@@ -179,7 +179,7 @@ public class LocType extends Linkable2 {
 	public int field2833;
 
 	@OriginalMember(owner = "client!nf", name = "O", descriptor = "Lnb;")
-	public static Js5Index field2780;
+	public static Js5 field2780;
 
 	@OriginalMember(owner = "client!nf", name = "N", descriptor = "Lob;")
 	private HashTable field2779;

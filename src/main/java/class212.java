@@ -209,7 +209,7 @@ public class class212 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!te", name = "a", descriptor = "(BILnb;)Z")
-	public static final boolean method1453(byte arg0, int arg1, Js5Index arg2) {
+	public static final boolean method1453(byte arg0, int arg1, Js5 arg2) {
 		++field4016;
 		byte[] var3 = arg2.method958(arg1, 0);
 		if (arg0 != 53) {

@@ -168,7 +168,7 @@ public class class113 extends class23 {
 		class246.field4512 = arg7;
 		scene.field740 = arg8;
 		class184.field3607 = arg9;
-		Js5Index.field2715 = arg10;
+		Js5.field2715 = arg10;
 		class204.field3884 = arg11;
 		class192.method1333();
 		class118.method805(arg0, arg1, arg2, arg6, arg12, arg13, arg14, arg15);

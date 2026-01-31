@@ -32,13 +32,13 @@ public class class106 {
 	public static int field1931;
 
 	@OriginalMember(owner = "client!jh", name = "f", descriptor = "Lnb;")
-	public static Js5Index field1928;
+	public static Js5 field1928;
 
 	@OriginalMember(owner = "client!jh", name = "k", descriptor = "Lnb;")
-	public static Js5Index field1933;
+	public static Js5 field1933;
 
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(IIZIILnb;I)V")
-	public static final void method732(int arg0, int arg1, boolean arg2, int arg3, int arg4, Js5Index arg5, int arg6) {
+	public static final void method732(int arg0, int arg1, boolean arg2, int arg3, int arg4, Js5 arg5, int arg6) {
 		if (arg0 != 0) {
 			return;
 		}
@@ -90,10 +90,10 @@ public class class106 {
 		class132.field2465 = 0;
 		class204.field3890 = 0;
 		class120.field2203 = 0;
-		Js5Index.field2686 = 0;
+		Js5.field2686 = 0;
 		class31.field497 = 0;
 		field1931 = 0;
-		Js5Index.field2713 = 0;
+		Js5.field2713 = 0;
 		class190.field3680 = 0;
 		class17.field266 = 0;
 		class119.field2179 = 0;
@@ -177,7 +177,7 @@ public class class106 {
 		class149.field2848 = 0;
 		class114.field2064 = 0;
 		class120.field2198 = 0;
-		Js5Index.field2693 = 0;
+		Js5.field2693 = 0;
 		GameShell.field1568 = 0;
 		class128.field2399 = 0;
 		class68.field1244 = 0;
@@ -200,7 +200,7 @@ public class class106 {
 		class32.field525 = 0;
 		class218.field4112 = 0;
 		CollisionMap.field1672 = 0;
-		Js5Index.field2700 = 0;
+		Js5.field2700 = 0;
 		class175.field3533 = 0;
 		class111.field2030 = 0;
 		class135.field2518 = 0;
@@ -215,7 +215,7 @@ public class class106 {
 		class147.field2766 = 0;
 		JString.field1618 = 0;
 		class71.field1324 = 0;
-		Js5Index.field2672 = 0;
+		Js5.field2672 = 0;
 		class60.field1131 = 0;
 		Client.field573 = 0;
 		JString.field1630 = 0;
@@ -243,7 +243,7 @@ public class class106 {
 		Packet.field819 = 0;
 		Packet.field855 = 0;
 		class190.field3678 = 0;
-		Js5Index.field2681 = 0;
+		Js5.field2681 = 0;
 		Packet.field844 = 0;
 		class24.field386 = 0;
 		class112.field2037 = 0;
@@ -282,7 +282,7 @@ public class class106 {
 		class133.field2490 = 0;
 		class31.field500 = 0;
 		class234.field4383 = 0;
-		Js5Index.field2665 = 0;
+		Js5.field2665 = 0;
 		class232.field4351 = 0;
 		class58.field1092 = 0;
 		Client.field565 = 0;
@@ -301,7 +301,7 @@ public class class106 {
 		class134.field2496 = 0;
 		JString.field1625 = 0;
 		class165.field3181 = 0;
-		Js5Index.field2674 = 0;
+		Js5.field2674 = 0;
 		class217.field4063 = 0;
 		class77.field1369 = 0;
 		class220.field4153 = 0;
@@ -427,7 +427,7 @@ public class class106 {
 		class168.field3236 = 0;
 		class85.field1532 = 0;
 		class143.field2651 = 0;
-		Js5Index.field2691 = 0;
+		Js5.field2691 = 0;
 		Client.field566 = 0;
 		class199.field3798 = 0;
 		class155.field3005 = 0;
@@ -461,7 +461,7 @@ public class class106 {
 		class43.field735 = 0;
 		class147.field2757 = 0;
 		NpcType.field2366 = 0;
-		Js5Index.field2703 = 0;
+		Js5.field2703 = 0;
 		class90.field1712 = 0;
 		class164.field3139 = 0;
 		class242.field4478 = 0;
@@ -494,7 +494,7 @@ public class class106 {
 		class105.field1916 = 0;
 		NpcType.field2322 = 0;
 		class205.field3914 = 0;
-		Js5Index.field2688 = 0;
+		Js5.field2688 = 0;
 		GZip.field1111 = 0;
 		class153.field2954 = 0;
 		class205.field3908 = 0;
@@ -541,7 +541,7 @@ public class class106 {
 		class170.field3300 = 0;
 		class92.field1719 = 0;
 		Packet.field849 = 0;
-		Js5Index.field2695 = 0;
+		Js5.field2695 = 0;
 		class230.field4310 = 0;
 		class36.field636 = 0;
 		Packet.field820 = 0;
@@ -553,7 +553,7 @@ public class class106 {
 		class147.field2755 = 0;
 		class176.field3538 = 0;
 		class244.field4486 = 0;
-		Js5Index.field2664 = 0;
+		Js5.field2664 = 0;
 		class64.field1162 = 0;
 		class218.field4090 = 0;
 		Packet.field802 = 0;
@@ -598,7 +598,7 @@ public class class106 {
 		field1927 = 0;
 		class160.field3079 = 0;
 		class39.field680 = 0;
-		Js5Index.field2662 = 0;
+		Js5.field2662 = 0;
 		class142.field2617 = 0;
 		class202.field3843 = 0;
 		class226.field4240 = 0;
@@ -667,10 +667,10 @@ public class class106 {
 		class161.field3105 = 0;
 		class176.field3544 = 0;
 		class53.field975 = 0;
-		Js5Index.field2663 = 0;
+		Js5.field2663 = 0;
 		class85.field1533 = 0;
 		class129.field2417 = 0;
-		Js5Index.field2707 = 0;
+		Js5.field2707 = 0;
 		class93.field1736 = 0;
 		class60.field1121 = 0;
 		CollisionMap.field1679 = 0;
@@ -703,7 +703,7 @@ public class class106 {
 		class241.field4471 = 0;
 		CollisionMap.field1664 = 0;
 		class236.field4403 = 0;
-		Js5Index.field2697 = 0;
+		Js5.field2697 = 0;
 		class45.field778 = 0;
 		class199.field3799 = 0;
 		class210.field3987 = 0;
@@ -732,7 +732,7 @@ public class class106 {
 		NpcType.field2368 = 0;
 		class9.field133 = 0;
 		class222.field4191 = 0;
-		Js5Index.field2694 = 0;
+		Js5.field2694 = 0;
 		GameShell.field1589 = 0;
 		class114.field2071 = 0;
 		class48.field907 = 0;
@@ -780,7 +780,7 @@ public class class106 {
 		class6.field80 = 0;
 		class77.field1404 = 0;
 		class161.field3106 = 0;
-		Js5Index.field2687 = 0;
+		Js5.field2687 = 0;
 		class130.field2432 = 0;
 		class138.field2573 = 0;
 		SeqType.field1983 = 0;
@@ -811,7 +811,7 @@ public class class106 {
 		Packet.field852 = 0;
 		ClientStream.field2549 = 0;
 		class39.field699 = 0;
-		Js5Index.field2673 = 0;
+		Js5.field2673 = 0;
 		class180.field3575 = 0;
 		Packet.field811 = 0;
 		class186.field3632 = 0;
@@ -849,7 +849,7 @@ public class class106 {
 		class42.field709 = 0;
 		class204.field3893 = 0;
 		GameShell.field1577 = 0;
-		Js5Index.field2696 = 0;
+		Js5.field2696 = 0;
 		class149.field2902 = 0;
 		GameShell.field1592 = 0;
 		class246.field4507 = 0;
@@ -861,7 +861,7 @@ public class class106 {
 		EnumType.field888 = 0;
 		class53.field974 = 0;
 		class234.field4384 = 0;
-		Js5Index.field2683 = 0;
+		Js5.field2683 = 0;
 		class165.field3148 = 0;
 		SeqType.field1994 = 0;
 		class170.field3305 = 0;
@@ -970,7 +970,7 @@ public class class106 {
 		class97.field1792 = 0;
 		class158.field3039 = 0;
 		class199.field3794 = 0;
-		Js5Index.field2712 = 0;
+		Js5.field2712 = 0;
 		class184.field3611 = 0;
 		class191.field3688 = 0;
 		class189.field3666 = 0;
@@ -989,7 +989,7 @@ public class class106 {
 		class103.field1866 = 0;
 		class55.field1024 = 0;
 		class43.field728 = 0;
-		Js5Index.field2711 = 0;
+		Js5.field2711 = 0;
 		class168.field3233 = 0;
 		class103.field1865 = 0;
 		class209.field3979 = 0;
@@ -1034,9 +1034,9 @@ public class class106 {
 		class208.field3955 = 0;
 		class230.field4311 = 0;
 		IfType.field3508 = 0;
-		Js5Index.field2704 = 0;
+		Js5.field2704 = 0;
 		class248.field4544 = 0;
-		Js5Index.field2667 = 0;
+		Js5.field2667 = 0;
 		Packet.field840 = 0;
 		class90.field1704 = 0;
 		class58.field1095 = 0;
@@ -1139,7 +1139,7 @@ public class class106 {
 		class170.field3252 = 0;
 		Js5Local.field345 = 0;
 		class86.field1551 = 0;
-		Js5Index.field2678 = 0;
+		Js5.field2678 = 0;
 		class225.field4223 = 0;
 		class151.field2926 = 0;
 		class113.field2049 = 0;
@@ -1167,7 +1167,7 @@ public class class106 {
 		class68.field1245 = 0;
 		class212.field4018 = 0;
 		Packet.field834 = 0;
-		Js5Index.field2682 = 0;
+		Js5.field2682 = 0;
 		class23.field375 = 0;
 		class120.field2192 = 0;
 		class205.field3913 = 0;
@@ -1243,11 +1243,11 @@ public class class106 {
 		class205.field3904 = 0;
 		class140.field2592 = 0;
 		class150.field2915 = 0;
-		Js5Index.field2669 = 0;
+		Js5.field2669 = 0;
 		class23.field377 = 0;
 		class80.field1440 = 0;
 		class133.field2482 = 0;
-		Js5Index.field2689 = 0;
+		Js5.field2689 = 0;
 		class35.field598 = 0;
 		LocType.field2810 = 0;
 		GZip.field1115 = 0;
@@ -1291,7 +1291,7 @@ public class class106 {
 		class53.field976 = 0;
 		class217.field4065 = 0;
 		GameShell.field1583 = 0;
-		Js5Index.field2671 = 0;
+		Js5.field2671 = 0;
 		class39.field697 = 0;
 		class34.field578 = 0;
 		JString.field1629 = 0;
@@ -1329,7 +1329,7 @@ public class class106 {
 		class101.field1835 = 0;
 		class149.field2861 = 0;
 		SeqType.field1981 = 0;
-		Js5Index.field2705 = 0;
+		Js5.field2705 = 0;
 		Ground.field942 = 0;
 		class117.field2131 = 0;
 		class171.field3325 = 0;
@@ -1367,7 +1367,7 @@ public class class106 {
 		class18.field285 = 0;
 		class104.field1890 = 0;
 		class17.field275 = 0;
-		Js5Index.field2677 = 0;
+		Js5.field2677 = 0;
 		class192.field3699 = 0;
 		class206.field3921 = 0;
 		class188.field3658 = 0;
@@ -1546,7 +1546,7 @@ public class class106 {
 	}
 
 	@OriginalMember(owner = "client!jh", name = "a", descriptor = "(ILnb;IILnb;)Lcc;")
-	public static final class26 method737(int arg0, Js5Index arg1, int arg2, int arg3, Js5Index arg4) {
+	public static final class26 method737(int arg0, Js5 arg1, int arg2, int arg3, Js5 arg4) {
 		field1924++;
 		if (arg3 < 53) {
 			return null;

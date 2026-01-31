@@ -1043,7 +1043,7 @@ public class ModelUnlit extends class145 {
 	}
 
 	@OriginalMember(owner = "client!he", name = "a", descriptor = "(Lnb;II)Lhe;")
-	public static final ModelUnlit load(Js5Index arg0, int arg1, int arg2) {
+	public static final ModelUnlit load(Js5 arg0, int arg1, int arg2) {
 		byte[] var3 = arg0.getFile(arg2, arg1);
 		return var3 == null ? null : new ModelUnlit(var3);
 	}

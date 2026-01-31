@@ -515,7 +515,7 @@ public class class143 extends Linkable {
 			int var13 = (Isaac.field2733[var5] & 0xFF) * 64 - class190.field3681;
 			if (var12 != null) {
 				class219.method1481(2);
-				Js5Index.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
+				Js5.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
 			}
 		}
 		for (int var6 = 0; var6 < var4; var6++) {

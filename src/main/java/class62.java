@@ -47,7 +47,7 @@ public class class62 extends class23 {
 	public static int field1142;
 
 	@OriginalMember(owner = "client!ff", name = "ab", descriptor = "Lnb;")
-	public static Js5Index field1146;
+	public static Js5 field1146;
 
 	@OriginalMember(owner = "client!ff", name = "fb", descriptor = "Lp;")
 	public static class163 field1151;

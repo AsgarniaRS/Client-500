@@ -258,7 +258,7 @@ public class class195 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "(Lnb;)Z")
-	private static boolean method1354(Js5Index arg0) {
+	private static boolean method1354(Js5 arg0) {
 		if (!field3725) {
 			byte[] var1 = arg0.getFile(0, 0);
 			if (var1 == null) {
@@ -292,7 +292,7 @@ public class class195 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!rj", name = "a", descriptor = "(Lnb;II)Lrj;")
-	public static final class195 method1356(Js5Index arg0, int arg1, int arg2) {
+	public static final class195 method1356(Js5 arg0, int arg1, int arg2) {
 		if (method1354(arg0)) {
 			byte[] var3 = arg0.getFile(arg2, arg1);
 			return var3 == null ? null : new class195(var3);

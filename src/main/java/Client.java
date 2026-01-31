@@ -64,7 +64,7 @@ public class Client extends GameShell {
 	public static int field575;
 
 	@OriginalMember(owner = "client!client", name = "Z", descriptor = "Lnb;")
-	public static Js5Index field567;
+	public static Js5 field567;
 
 	@OriginalMember(owner = "client!client", name = "ib", descriptor = "Z")
 	public static boolean field576;
@@ -618,7 +618,7 @@ public class Client extends GameShell {
 				class211.method1445(94, class233.field4367, class17.field274);
 				class180.method1284(class238.field4433, (byte) -32);
 				class149.method1009(class85.field1546, 21644);
-				NpcType.method858(class226.field4245, 95, CollisionMap.field1671, class98.field1795, class233.field4367);
+				IfType.init(class226.field4245, 95, CollisionMap.field1671, class98.field1795, class233.field4367);
 				class190.method1326(class85.field1546, 99);
 				class74.method502(2, class190.field3674);
 				class153.method1047(class203.field3872, new class164(), class20.field321, (byte) -60);
@@ -650,7 +650,7 @@ public class Client extends GameShell {
 				var50++;
 			}
 			if (class145.field2720 == null) {
-				class145.field2720 = class239.method1584(Js5Index.field2666, true, class226.field4245, IfType.field3455);
+				class145.field2720 = class239.method1584(Js5.field2666, true, class226.field4245, IfType.field3455);
 			} else {
 				var50++;
 			}
@@ -1037,7 +1037,7 @@ public class Client extends GameShell {
 		class115.method786(0);
 		LocType.method994(-125);
 		Linkable2.method905((byte) -3);
-		Js5Index.method963(true);
+		Js5.method963(true);
 		class92.method670((byte) -112);
 		ModelUnlit.method557();
 		class210.method1438(108);
