@@ -44,15 +44,11 @@ public class class244 extends Linkable {
 	public JString[] field4492;
 
 	@OriginalMember(owner = "client!we", name = "b", descriptor = "(I)V")
-	public static final void method1600(int arg0) {
-		field4491++;
-		if (arg0 != -9063) {
-			return;
-		}
+	public static void readZonePacket(int arg0) {
 		if (class238.ptype == 123) {
 			int var1 = class230.in.g1();
-			int var2 = (var1 & 0xF) + class150.field2912 * 2;
-			int var3 = (var1 >> 4 & 0xF) + class121.field2215 * 2;
+			int var2 = (var1 & 0xF) + class150.baseZ * 2;
+			int var3 = (var1 >> 4 & 0xF) + class121.baseX * 2;
 			int var4 = class230.in.g1b() + var3;
 			int var5 = var2 + class230.in.g1b();
 			int var6 = class230.in.g2b();
@@ -74,8 +70,8 @@ public class class244 extends Linkable {
 			}
 		} else if (class238.ptype == 135) {
 			int var19 = class230.in.g1_alt1();
-			int var20 = (var19 & 0x7) + class150.field2912;
-			int var21 = class121.field2215 + (var19 >> 4 & 0x7);
+			int var20 = (var19 & 0x7) + class150.baseZ;
+			int var21 = class121.baseX + (var19 >> 4 & 0x7);
 			int var22 = class230.in.g2_alt3(arg0 ^ 0xFFFFDC66);
 			int var23 = class230.in.g2_alt2();
 			int var24 = class230.in.g2_alt2();
@@ -90,9 +86,10 @@ public class class244 extends Linkable {
 				class29.method175(21280, var21, var20);
 			}
 		} else if (class238.ptype == 173) {
+			// MAP_ANIM
 			int var26 = class230.in.g1();
-			int var27 = class150.field2912 + (var26 & 0x7);
-			int var28 = (var26 >> 4 & 0x7) + class121.field2215;
+			int var27 = class150.baseZ + (var26 & 0x7);
+			int var28 = (var26 >> 4 & 0x7) + class121.baseX;
 			int var29 = class230.in.g2();
 			int var30 = class230.in.g1();
 			int var31 = class230.in.g2();
@@ -104,8 +101,8 @@ public class class244 extends Linkable {
 			}
 		} else if (class238.ptype == 232) {
 			int var35 = class230.in.g1();
-			int var36 = (var35 & 0x7) + class150.field2912;
-			int var37 = (var35 >> 4 & 0x7) + class121.field2215;
+			int var36 = (var35 & 0x7) + class150.baseZ;
+			int var37 = (var35 >> 4 & 0x7) + class121.baseX;
 			int var38 = class230.in.g2();
 			int var39 = class230.in.g2();
 			int var40 = class230.in.g2();
@@ -129,8 +126,8 @@ public class class244 extends Linkable {
 			int var47 = class98.field1794[var45];
 			int var48 = class230.in.g2_alt3(255);
 			int var49 = class230.in.g1_alt1();
-			int var50 = (var49 >> 4 & 0x7) + class121.field2215;
-			int var51 = class150.field2912 + (var49 & 0x7);
+			int var50 = (var49 >> 4 & 0x7) + class121.baseX;
+			int var51 = class150.baseZ + (var49 & 0x7);
 			if (var50 >= 0 && var51 >= 0 && var50 < 104 && var51 < 104) {
 				class220.method1488(0, var51, var47, var46, -1, var45, class149.minusedLevel, var50, arg0 ^ 0xFFFFDC99, var48);
 			}
@@ -144,8 +141,8 @@ public class class244 extends Linkable {
 				var56 = -1;
 			}
 			int var57 = class230.in.g1_alt3(24758);
-			int var58 = (var57 >> 4 & 0x7) + class121.field2215;
-			int var59 = (var57 & 0x7) + class150.field2912;
+			int var58 = (var57 >> 4 & 0x7) + class121.baseX;
+			int var59 = (var57 & 0x7) + class150.baseZ;
 			class113.method776(var54, var58, 12019, var55, var53, class149.minusedLevel, var59, var56);
 		} else {
 			if (class238.ptype == 61) {
@@ -161,12 +158,12 @@ public class class244 extends Linkable {
 				byte var69 = class230.in.g1b_alt2();
 				int var70 = class230.in.g2();
 				int var71 = class230.in.g1();
-				int var72 = (var71 & 0x7) + class150.field2912;
-				int var73 = (var71 >> 4 & 0x7) + class121.field2215;
+				int var72 = (var71 & 0x7) + class150.baseZ;
+				int var73 = (var71 >> 4 & 0x7) + class121.baseX;
 				int var74 = class230.in.g2_alt2();
 				scene var75;
 				if (class220.localPid == var60) {
-					var75 = class240.field4458;
+					var75 = class240.localPlayer;
 				} else {
 					var75 = field4493[var60];
 				}
@@ -221,8 +218,8 @@ public class class244 extends Linkable {
 			}
 			if (class238.ptype == 99) {
 				int var91 = class230.in.g1();
-				int var92 = (var91 & 0x7) + class150.field2912;
-				int var93 = (var91 >> 4 & 0x7) + class121.field2215;
+				int var92 = (var91 & 0x7) + class150.baseZ;
+				int var93 = (var91 >> 4 & 0x7) + class121.baseX;
 				int var94 = class230.in.g2_alt2();
 				int var95 = class230.in.g2_alt3(255);
 				if (var93 >= 0 && var92 >= 0 && var93 < 104 && var92 < 104) {
@@ -236,9 +233,10 @@ public class class244 extends Linkable {
 					class29.method175(arg0 + 30343, var93, var92);
 				}
 			} else if (class238.ptype == 150) {
+				// MAP_PROJANIM
 				int var97 = class230.in.g1();
-				int var98 = class121.field2215 + (var97 >> 4 & 0x7);
-				int var99 = (var97 & 0x7) + class150.field2912;
+				int var98 = class121.baseX + (var97 >> 4 & 0x7);
+				int var99 = (var97 & 0x7) + class150.baseZ;
 				int var100 = var98 + class230.in.g1b();
 				int var101 = class230.in.g1b() + var99;
 				int var102 = class230.in.g2b();
@@ -260,8 +258,8 @@ public class class244 extends Linkable {
 				}
 			} else if (class238.ptype == 198) {
 				int var115 = class230.in.g1_alt1();
-				int var116 = (var115 >> 4 & 0x7) + class121.field2215;
-				int var117 = (var115 & 0x7) + class150.field2912;
+				int var116 = (var115 >> 4 & 0x7) + class121.baseX;
+				int var117 = (var115 & 0x7) + class150.baseZ;
 				int var118 = class230.in.g2_alt3(arg0 + 9318);
 				if (var116 >= 0 && var117 >= 0 && var116 < 104 && var117 < 104) {
 					class248 var119 = class134.field2499[class149.minusedLevel][var116][var117];
@@ -284,15 +282,15 @@ public class class244 extends Linkable {
 				int var123 = class98.field1794[var122];
 				int var124 = var121 & 0x3;
 				int var125 = class230.in.g1_alt2();
-				int var126 = class150.field2912 + (var125 & 0x7);
-				int var127 = (var125 >> 4 & 0x7) + class121.field2215;
+				int var126 = class150.baseZ + (var125 & 0x7);
+				int var127 = (var125 >> 4 & 0x7) + class121.baseX;
 				if (var127 >= 0 && var126 >= 0 && var127 < 104 && var126 < 104) {
 					class220.method1488(0, var126, var123, var124, -1, var122, class149.minusedLevel, var127, arg0 + 9063, -1);
 				}
 			} else if (class238.ptype == 52) {
 				int var128 = class230.in.g1();
-				int var129 = class150.field2912 + (var128 & 0x7);
-				int var130 = (var128 >> 4 & 0x7) + class121.field2215;
+				int var129 = class150.baseZ + (var128 & 0x7);
+				int var130 = (var128 >> 4 & 0x7) + class121.baseX;
 				int var131 = class230.in.g2();
 				int var132 = class230.in.g1();
 				if (var131 == 65535) {
@@ -303,7 +301,7 @@ public class class244 extends Linkable {
 				int var135 = var132 >> 4 & 0xF;
 				if (var130 >= 0 && var129 >= 0 && var130 < 104 && var129 < 104) {
 					int var136 = var135 + 1;
-					if (class240.field4458.field4089[0] >= var130 - var136 && var130 + var136 >= class240.field4458.field4089[0] && var129 - var136 <= class240.field4458.field4143[0] && class240.field4458.field4143[0] <= var129 + var136 && class223.field4213 != 0 && var133 > 0 && IfType.field3447 < 50 && var131 != -1) {
+					if (class240.localPlayer.field4089[0] >= var130 - var136 && var130 + var136 >= class240.localPlayer.field4089[0] && var129 - var136 <= class240.localPlayer.field4143[0] && class240.localPlayer.field4143[0] <= var129 + var136 && class223.field4213 != 0 && var133 > 0 && IfType.field3447 < 50 && var131 != -1) {
 						class25.field397[IfType.field3447] = var131;
 						class110.field2018[IfType.field3447] = var133;
 						class8.field116[IfType.field3447] = var134;

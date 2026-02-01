@@ -149,7 +149,7 @@ public class class242 extends Linkable2 {
 						int var16 = var10;
 						int var17 = var11;
 						if (var15 != 22 && var15 != 29 && var15 != 34 && var15 != 36 && var15 != 46 && var15 != 47 && var15 != 48) {
-							int[][] var18 = class166.field3202[class149.minusedLevel].field1668;
+							int[][] var18 = class166.levelCollisionMap[class149.minusedLevel].flags;
 							for (int var19 = 0; var19 < 10; var19++) {
 								int var20 = (int) (Math.random() * 4.0D);
 								if (var20 == 0 && var16 > 0 && var10 - 3 < var16 && (var18[var16 - 1][var17] & 0x12C0108) == 0) {

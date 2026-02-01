@@ -8,7 +8,7 @@ public class class90 extends Linkable {
 	public static JString field1710 = class208.method1425("Standort");
 
 	@OriginalMember(owner = "client!ib", name = "E", descriptor = "[I")
-	public static int[] field1711 = new int[99];
+	public static int[] skillxp = new int[99];
 
 	@OriginalMember(owner = "client!ib", name = "C", descriptor = "I")
 	public static int field1709 = 0;
@@ -79,7 +79,7 @@ public class class90 extends Linkable {
 
 	@OriginalMember(owner = "client!ib", name = "b", descriptor = "(Z)V")
 	public static void method658(boolean arg0) {
-		field1711 = null;
+		skillxp = null;
 		field1707 = null;
 		field1705 = null;
 		if (!arg0) {
@@ -113,7 +113,7 @@ public class class90 extends Linkable {
 	@OriginalMember(owner = "client!ib", name = "a", descriptor = "(IIIII)V")
 	public static final void method660(int arg0, int arg1, int arg2, int arg3, int arg4) {
 		if (arg4 < 75) {
-			field1711 = null;
+			skillxp = null;
 		}
 		if (class49.field919 <= arg1 && arg1 <= class18.field279) {
 			int var5 = class156.method1060(Linkable.field1207, class12.field183, -102, arg3);
@@ -129,7 +129,7 @@ public class class90 extends Linkable {
 			int var2 = var1 + 1;
 			int var3 = (int) ((double) var2 + Math.pow(2.0D, (double) var2 / 7.0D) * 300.0D);
 			var0 += var3;
-			field1711[var1] = var0 / 4;
+			skillxp[var1] = var0 / 4;
 		}
 	}
 }

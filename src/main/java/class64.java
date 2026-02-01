@@ -68,7 +68,7 @@ public class class64 {
 			for (int var12 = 0; var12 < 8; var12++) {
 				for (int var13 = 0; var13 < 8; var13++) {
 					if (arg0 + var12 > 0 && arg0 + var12 < 103 && arg9 + var13 > 0 && arg9 + var13 < 103) {
-						arg6[arg10].field1668[arg0 + var12][arg9 + var13] = class70.method470(arg6[arg10].field1668[arg0 + var12][arg9 + var13], -16777217);
+						arg6[arg10].flags[arg0 + var12][arg9 + var13] = class70.method470(arg6[arg10].flags[arg0 + var12][arg9 + var13], -16777217);
 					}
 				}
 			}

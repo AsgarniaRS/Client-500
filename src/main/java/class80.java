@@ -71,10 +71,10 @@ public class class80 extends class23 {
 		class78.field1408.pos = 0;
 		field1450++;
 		while (true) {
-			class97 var3 = (class97) class151.urgentQueue.method1049(0);
+			class97 var3 = (class97) class151.urgentQueue.search(0);
 			if (var3 == null) {
 				while (true) {
-					class97 var4 = (class97) class108.prefetchQueue.method1049(0);
+					class97 var4 = (class97) class108.prefetchQueue.search(0);
 					if (var4 == null) {
 						if (class18.field294 != 0) {
 							try {

@@ -153,9 +153,9 @@ public class class101 extends Linkable2 {
 			if (var7 != 0) {
 				var11 = (var11 >> 4 - var7) + (var11 << var7 & 0xF);
 			}
-			class207.method1423(3044, var10, 0, arg1, arg3, class240.field4458.field4089[0], var9, 0, 2, true, var11, class240.field4458.field4143[0]);
+			class207.method1423(3044, var10, 0, arg1, arg3, class240.localPlayer.field4089[0], var9, 0, 2, true, var11, class240.localPlayer.field4143[0]);
 		} else {
-			class207.method1423(3044, 0, var7, arg1, arg3, class240.field4458.field4089[0], 0, var6 + 1, 2, true, 0, class240.field4458.field4143[0]);
+			class207.method1423(3044, 0, var7, arg1, arg3, class240.localPlayer.field4089[0], 0, var6 + 1, 2, true, 0, class240.localPlayer.field4143[0]);
 		}
 		class155.field2999 = class172.field3341;
 		class157.field3019 = 2;

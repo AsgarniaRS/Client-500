@@ -111,7 +111,7 @@ public class class175 {
 			scene var8 = class244.field4493[var7];
 			if (var8 != null) {
 				class116.field2102++;
-				class207.method1423(3044, 1, 0, var8.field4143[0], var8.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var8.field4143[0], var8.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class157.field3019 = 2;
 				class147.field2759 = class226.field4241;
 				class45.field796 = 0;
@@ -162,7 +162,7 @@ public class class175 {
 			scene var10 = class244.field4493[var7];
 			if (var10 != null) {
 				scene.field770++;
-				class207.method1423(3044, 1, 0, var10.field4143[0], var10.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var10.field4143[0], var10.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class157.field3019 = 2;
 				class155.field2999 = class172.field3341;
@@ -182,7 +182,7 @@ public class class175 {
 		if (var4 == 34) {
 			class191 var11 = class225.field4225[var7];
 			if (var11 != null) {
-				class207.method1423(3044, 1, 0, var11.field4143[0], var11.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var11.field4143[0], var11.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class157.field3019 = 2;
 				class155.field2999 = class172.field3341;
@@ -195,7 +195,7 @@ public class class175 {
 		if (var4 == 58) {
 			scene var12 = class244.field4493[var7];
 			if (var12 != null) {
-				class207.method1423(3044, 1, 0, var12.field4143[0], var12.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var12.field4143[0], var12.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class157.field3019 = 2;
 				class147.field2759 = class226.field4241;
@@ -208,7 +208,7 @@ public class class175 {
 		if (var4 == 4) {
 			class191 var13 = class225.field4225[var7];
 			if (var13 != null) {
-				class207.method1423(3044, 1, 0, var13.field4143[0], var13.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var13.field4143[0], var13.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class147.field2759 = class226.field4241;
 				class242.field4477++;
 				class45.field796 = 0;
@@ -258,7 +258,7 @@ public class class175 {
 			scene var17 = class244.field4493[var7];
 			if (var17 != null) {
 				class209.field3975++;
-				class207.method1423(3044, 1, 0, var17.field4143[0], var17.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var17.field4143[0], var17.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class157.field3019 = 2;
 				class155.field2999 = class172.field3341;
 				class147.field2759 = class226.field4241;
@@ -310,7 +310,7 @@ public class class175 {
 			scene var18 = class244.field4493[var7];
 			if (var18 != null) {
 				class120.field2203++;
-				class207.method1423(3044, 1, 0, var18.field4143[0], var18.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var18.field4143[0], var18.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class157.field3019 = 2;
 				class147.field2759 = class226.field4241;
@@ -322,7 +322,7 @@ public class class175 {
 		if (var4 == 48) {
 			class191 var19 = class225.field4225[var7];
 			if (var19 != null) {
-				class207.method1423(3044, 1, 0, var19.field4143[0], var19.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var19.field4143[0], var19.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class147.field2759 = class226.field4241;
 				class155.field2999 = class172.field3341;
 				class45.field796 = 0;
@@ -351,7 +351,7 @@ public class class175 {
 		if (var4 == 17) {
 			class191 var20 = class225.field4225[var7];
 			if (var20 != null) {
-				class207.method1423(3044, 1, 0, var20.field4143[0], var20.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var20.field4143[0], var20.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class157.field3019 = 2;
 				class45.field796 = 0;
 				class227.field4263++;
@@ -363,9 +363,9 @@ public class class175 {
 		}
 		if (var4 == 57) {
 			class131.field2453++;
-			boolean var21 = class207.method1423(arg0 ^ 0xBE6, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var21 = class207.method1423(arg0 ^ 0xBE6, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var21) {
-				class207.method1423(arg0 + 3042, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(arg0 + 3042, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class155.field2999 = class172.field3341;
 			class147.field2759 = class226.field4241;
@@ -383,7 +383,7 @@ public class class175 {
 			class58.field1105 = var2;
 			class209.field3967 = var3;
 			class48.field905 = var7;
-			class200.method1373(65280, var23);
+			class200.componentUpdated(var23);
 			class78.field1414 = class166.method1142(new JString[]{Linkable2.field2531, class71.method472(var7, (byte) -96).field2894, JString.field1637}, arg0 - 5);
 			if (class78.field1414 == null) {
 				class78.field1414 = class180.field3574;
@@ -393,7 +393,7 @@ public class class175 {
 		if (var4 == 23) {
 			scene var24 = class244.field4493[var7];
 			if (var24 != null) {
-				class207.method1423(3044, 1, 0, var24.field4143[0], var24.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var24.field4143[0], var24.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class157.field3019 = 2;
 				class155.field2999 = class172.field3341;
 				class45.field796 = 0;
@@ -430,10 +430,10 @@ public class class175 {
 			class203.method1392(var7, class201.field3838[arg1], var2, -3655, var3);
 		}
 		if (var4 == 3) {
-			boolean var25 = class207.method1423(arg0 + 3042, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var25 = class207.method1423(arg0 + 3042, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			class203.field3866++;
 			if (!var25) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class155.field2999 = class172.field3341;
 			class147.field2759 = class226.field4241;
@@ -466,9 +466,9 @@ public class class175 {
 		}
 		if (var4 == 41) {
 			class39.field685++;
-			boolean var27 = class207.method1423(arg0 + 3042, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var27 = class207.method1423(arg0 + 3042, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var27) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class155.field2999 = class172.field3341;
 			class45.field796 = 0;
@@ -521,7 +521,7 @@ public class class175 {
 			scene var31 = class244.field4493[var7];
 			if (var31 != null) {
 				class28.field463++;
-				class207.method1423(3044, 1, 0, var31.field4143[0], var31.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var31.field4143[0], var31.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class147.field2759 = class226.field4241;
 				class155.field2999 = class172.field3341;
@@ -532,9 +532,9 @@ public class class175 {
 		}
 		if (var4 == 25) {
 			class36.field655++;
-			boolean var32 = class207.method1423(3044, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var32 = class207.method1423(3044, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var32) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class157.field3019 = 2;
 			class155.field2999 = class172.field3341;
@@ -549,9 +549,9 @@ public class class175 {
 		}
 		if (var4 == 22) {
 			class202.field3853++;
-			boolean var34 = class207.method1423(3044, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var34 = class207.method1423(3044, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var34) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class157.field3019 = 2;
 			class155.field2999 = class172.field3341;
@@ -566,7 +566,7 @@ public class class175 {
 			class191 var36 = class225.field4225[var7];
 			if (var36 != null) {
 				class245.field4503++;
-				class207.method1423(3044, 1, 0, var36.field4143[0], var36.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var36.field4143[0], var36.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class147.field2759 = class226.field4241;
 				class155.field2999 = class172.field3341;
 				class157.field3019 = 2;
@@ -620,13 +620,13 @@ public class class175 {
 		if (var4 == 47 && class53.field967 == null) {
 			class203.method1393(var2, false, var3);
 			class53.field967 = class36.method238(var2, var3, true);
-			class200.method1373(65280, class53.field967);
+			class200.componentUpdated(class53.field967);
 		}
 		if (var4 == 32) {
 			class191 var39 = class225.field4225[var7];
 			if (var39 != null) {
 				class218.field4118++;
-				class207.method1423(3044, 1, 0, var39.field4143[0], var39.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var39.field4143[0], var39.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class147.field2759 = class226.field4241;
 				class157.field3019 = 2;
 				class45.field796 = 0;
@@ -667,9 +667,9 @@ public class class175 {
 		}
 		if (var4 == 5) {
 			class233.field4372++;
-			boolean var42 = class207.method1423(3044, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var42 = class207.method1423(3044, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var42) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class45.field796 = 0;
 			class157.field3019 = 2;
@@ -697,7 +697,7 @@ public class class175 {
 			scene var44 = class244.field4493[var7];
 			if (var44 != null) {
 				class151.field2926++;
-				class207.method1423(3044, 1, 0, var44.field4143[0], var44.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var44.field4143[0], var44.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class147.field2759 = class226.field4241;
 				class155.field2999 = class172.field3341;
@@ -709,7 +709,7 @@ public class class175 {
 		if (var4 == 16) {
 			scene var45 = class244.field4493[var7];
 			if (var45 != null) {
-				class207.method1423(3044, 1, 0, var45.field4143[0], var45.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var45.field4143[0], var45.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class147.field2759 = class226.field4241;
 				class155.field2999 = class172.field3341;
@@ -732,7 +732,7 @@ public class class175 {
 			scene var46 = class244.field4493[var7];
 			if (var46 != null) {
 				class14.field214++;
-				class207.method1423(3044, 1, 0, var46.field4143[0], var46.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var46.field4143[0], var46.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class157.field3019 = 2;
 				class45.field796 = 0;
 				class155.field2999 = class172.field3341;
@@ -744,7 +744,7 @@ public class class175 {
 		if (var4 == 19) {
 			class191 var47 = class225.field4225[var7];
 			if (var47 != null) {
-				class207.method1423(3044, 1, 0, var47.field4143[0], var47.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var47.field4143[0], var47.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				class45.field796 = 0;
 				class147.field2759 = class226.field4241;
 				class217.field4065++;
@@ -758,9 +758,9 @@ public class class175 {
 		}
 		if (var4 == 46) {
 			class231.field4336++;
-			boolean var48 = class207.method1423(arg0 ^ 0xBE6, 0, 0, var3, var2, class240.field4458.field4089[0], 0, 0, 2, false, 0, class240.field4458.field4143[0]);
+			boolean var48 = class207.method1423(arg0 ^ 0xBE6, 0, 0, var3, var2, class240.localPlayer.field4089[0], 0, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			if (!var48) {
-				class207.method1423(3044, 1, 0, var3, var2, class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var3, var2, class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 			}
 			class157.field3019 = 2;
 			class45.field796 = 0;
@@ -776,13 +776,13 @@ public class class175 {
 		}
 		if (class28.field475 != 0) {
 			class28.field475 = 0;
-			class200.method1373(65280, IfType.get(-64, class209.field3967));
+			class200.componentUpdated(IfType.get(-64, class209.field3967));
 		}
 		if (class10.field145) {
 			EnumType.method363(arg0 ^ 0xFFFFFF9D);
 		}
 		if (class57.field1091 != null && class139.field2575 == 0) {
-			class200.method1373(65280, class57.field1091);
+			class200.componentUpdated(class57.field1091);
 		}
 	}
 

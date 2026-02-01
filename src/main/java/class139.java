@@ -108,11 +108,11 @@ public class class139 extends class23 {
 	public static final void method924(int arg0, int arg1, int arg2, int arg3, scene arg4) {
 		++field2583;
 		if (arg1 == 31) {
-			if (class240.field4458 != arg4) {
+			if (class240.localPlayer != arg4) {
 				if (class203.field3864 < 400) {
 					JString var5;
 					if (~arg4.field749 == -1) {
-						var5 = class166.method1142(new JString[]{arg4.name, class168.method1154(arg4.combatLevel, class240.field4458.combatLevel, arg1 ^ 14069), class68.field1238, class145.field2719, class170.method1214(arg4.combatLevel, arg1 + -150), class104.field1881}, -3);
+						var5 = class166.method1142(new JString[]{arg4.name, class168.method1154(arg4.combatLevel, class240.localPlayer.combatLevel, arg1 ^ 14069), class68.field1238, class145.field2719, class170.method1214(arg4.combatLevel, arg1 + -150), class104.field1881}, -3);
 					} else {
 						var5 = class166.method1142(new JString[]{arg4.name, class68.field1238, class143.field2639, class170.method1214(arg4.field749, arg1 ^ -116), class104.field1881}, -3);
 					}
@@ -123,11 +123,11 @@ public class class139 extends class23 {
 									++class143.field2650;
 									short var7 = 0;
 									if (~EnumType.field884 == -1 && class130.field2438[var6].equalsIgnoreCase(class158.field3043)) {
-										if (arg4.combatLevel > class240.field4458.combatLevel) {
+										if (arg4.combatLevel > class240.localPlayer.combatLevel) {
 											var7 = 2000;
 										}
-										if (~class240.field4458.field752 != -1 && arg4.field752 != 0) {
-											if (~class240.field4458.field752 != ~arg4.field752) {
+										if (~class240.localPlayer.field752 != -1 && arg4.field752 != 0) {
+											if (~class240.localPlayer.field752 != ~arg4.field752) {
 												var7 = 0;
 											} else {
 												var7 = 2000;

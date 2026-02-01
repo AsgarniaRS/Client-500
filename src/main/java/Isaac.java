@@ -114,7 +114,7 @@ public class Isaac {
 					class95.field1765[var4] = class95.field1765[var4 + 1];
 					field2743[var4] = field2743[var4 + 1];
 				}
-				class20.field313 = Linkable.field1211;
+				class20.field313 = Linkable.transmitNum;
 				out.method30(126);
 				out.p8(arg1);
 				return;

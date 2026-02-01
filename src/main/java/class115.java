@@ -101,24 +101,29 @@ public class class115 {
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(B)V")
-	public static final void method787(byte arg0) {
-		field2089++;
+	public static final void logout() {
 		if (class33.loginStream != null) {
 			class33.loginStream.close(true);
 			class33.loginStream = null;
 		}
-		class27.method167((byte) 61);
-		class85.method579();
-		for (int var1 = 0; var1 < 4; var1++) {
-			class166.field3202[var1].method644((byte) 15);
+
+		class27.clearCaches((byte) 61);
+		class85.resetMap();
+
+		for (int i = 0; i < 4; i++) {
+			class166.levelCollisionMap[i].reset();
 		}
+
 		class201.method1380(-83);
+
 		System.gc();
+
 		class117.method797(25335, 2);
-		int var2 = 14 % ((arg0 + 76) / 46);
-		class110.field2014 = false;
-		class2.field25 = -1;
+		class110.playingJingle = false;
+		class2.previousSong = -1;
+
 		scene.method288(-25844);
+
 		class131.setMainState(10, 65536);
 	}
 

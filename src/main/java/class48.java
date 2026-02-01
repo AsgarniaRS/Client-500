@@ -129,12 +129,12 @@ public class class48 extends class207 {
 					} else {
 						int var5 = (class145.field2728[var1] & 0xFF) * 128;
 						int var6 = class145.field2728[var1] >> 16 & 0xFF;
-						int var7 = var6 * 128 + 64 - class240.field4458.field4138;
+						int var7 = var6 * 128 + 64 - class240.localPlayer.field4138;
 						if (var7 < 0) {
 							var7 = -var7;
 						}
 						int var8 = class145.field2728[var1] >> 8 & 0xFF;
-						int var9 = var8 * 128 + 64 - class240.field4458.field4123;
+						int var9 = var8 * 128 + 64 - class240.localPlayer.field4123;
 						if (var9 < 0) {
 							var9 = -var9;
 						}
@@ -168,16 +168,16 @@ public class class48 extends class207 {
 				var1--;
 			}
 		}
-		if (class110.field2014 && !class102.method709(100)) {
-			if (class65.field1183 != 0 && class2.field25 != -1) {
-				class53.method388(0, IntHashTable.field1816, (byte) -105, false, class2.field25, class65.field1183);
+		if (class110.playingJingle && !class102.method709(100)) {
+			if (class65.field1183 != 0 && class2.previousSong != -1) {
+				class53.method388(0, IntHashTable.field1816, (byte) -105, false, class2.previousSong, class65.field1183);
 			}
-			class110.field2014 = false;
-		} else if (class65.field1183 != 0 && class2.field25 != -1 && !class102.method709(100)) {
+			class110.playingJingle = false;
+		} else if (class65.field1183 != 0 && class2.previousSong != -1 && !class102.method709(100)) {
 			class131.field2451++;
 			Isaac.out.method30(133);
-			Isaac.out.p4(class2.field25);
-			class2.field25 = -1;
+			Isaac.out.p4(class2.previousSong);
+			class2.previousSong = -1;
 		}
 		if (arg0 != 11449) {
 			method366(109);

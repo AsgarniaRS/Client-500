@@ -192,7 +192,7 @@ public class class151 {
 		var8.field205 = arg5;
 		var8.field189 = arg6;
 		var8.field196 = arg7;
-		class62.field1149[arg0][class62.field1148[arg0]++] = var8;
+		class62.levelOccluders[arg0][class62.leveloccluderCount[arg0]++] = var8;
 	}
 
 	@OriginalMember(owner = "client!nj", name = "<init>", descriptor = "(Lnb;Lnb;)V")

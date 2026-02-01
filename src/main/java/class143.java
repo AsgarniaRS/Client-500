@@ -17,7 +17,7 @@ public class class143 extends Linkable {
 	public static JString field2652 = PLEASEWAIT;
 
 	@OriginalMember(owner = "client!na", name = "K", descriptor = "[I")
-	public static int[] field2644 = new int[32];
+	public static int[] statTransmit = new int[32];
 
 	@OriginalMember(owner = "client!na", name = "E", descriptor = "Li;")
 	public static JString field2639 = SKILL;
@@ -113,7 +113,7 @@ public class class143 extends Linkable {
 	public static void method934(boolean arg0) {
 		field2645 = null;
 		SKILL = null;
-		field2644 = null;
+		statTransmit = null;
 		field2656 = null;
 		field2635 = null;
 		field2652 = null;
@@ -235,7 +235,7 @@ public class class143 extends Linkable {
 								var21 = false;
 							}
 							if (var10.field3441 == 1337) {
-								class200.method1373(65280, var10);
+								class200.componentUpdated(var10);
 								continue;
 							}
 							if (var10.field3441 == 1338) {
@@ -404,16 +404,16 @@ public class class143 extends Linkable {
 								}
 								var10.field3409 = class223.field4200;
 							}
-							if (var10.field3456 != null && var10.field3501 < class118.field2133) {
-								if (var10.field3400 == null || class118.field2133 - var10.field3501 > 32) {
+							if (var10.field3456 != null && var10.field3501 < class118.statTransmitNum) {
+								if (var10.field3400 == null || class118.statTransmitNum - var10.field3501 > 32) {
 									class39 var53 = new class39();
 									var53.field681 = var10.field3456;
 									var53.field678 = var10;
 									class74.field1349.method1624(var53, arg2 ^ 0x3A);
 								} else {
 									label400:
-									for (int var49 = var10.field3501; var49 < class118.field2133; var49++) {
-										int var50 = field2644[var49 & 0x1F];
+									for (int var49 = var10.field3501; var49 < class118.statTransmitNum; var49++) {
+										int var50 = statTransmit[var49 & 0x1F];
 										for (int var51 = 0; var51 < var10.field3400.length; var51++) {
 											if (var10.field3400[var51] == var50) {
 												class39 var52 = new class39();
@@ -425,7 +425,7 @@ public class class143 extends Linkable {
 										}
 									}
 								}
-								var10.field3501 = class118.field2133;
+								var10.field3501 = class118.statTransmitNum;
 							}
 							if (var10.field3464 < class7.field100 && var10.field3520 != null) {
 								class39 var54 = new class39();
@@ -451,13 +451,13 @@ public class class143 extends Linkable {
 								var57.field681 = var10.field3507;
 								class74.field1349.method1624(var57, 98);
 							}
-							if (var10.field3464 < class208.field3954 && var10.field3446 != null) {
+							if (var10.field3464 < class208.miscTransmitNum && var10.field3446 != null) {
 								class39 var58 = new class39();
 								var58.field678 = var10;
 								var58.field681 = var10.field3446;
 								class74.field1349.method1624(var58, 59);
 							}
-							var10.field3464 = Linkable.field1211;
+							var10.field3464 = Linkable.transmitNum;
 							if (var10.field3379 != null) {
 								for (int var59 = 0; var59 < class81.field1467; var59++) {
 									class39 var60 = new class39();
@@ -490,9 +490,9 @@ public class class143 extends Linkable {
 						if (var10.field3467 != null) {
 							method935(var13, var18, 31, var11 - var10.field3395, var10.parentId, var17, var10.field3467, var16, var12 - var10.field3417);
 						}
-						class168 var61 = (class168) class128.field2397.find((long) var10.parentId);
+						class168 var61 = (class168) class128.subinterfaces.find((long) var10.parentId);
 						if (var61 != null) {
-							class230.method1535(var12, var17, var13, var16, var18, 66, var61.field3231, var11);
+							class230.method1535(var12, var17, var13, var16, var18, 66, var61.id, var11);
 						}
 					}
 				}
@@ -515,7 +515,7 @@ public class class143 extends Linkable {
 			int var13 = (Isaac.field2733[var5] & 0xFF) * 64 - class190.field3681;
 			if (var12 != null) {
 				class219.method1481(2);
-				Js5.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.field3202, var13, (byte) 92, var12, arg0);
+				Js5.method965(class110.field2016 * 8 - 48, var11, (class140.field2597 - 6) * 8, class166.levelCollisionMap, var13, (byte) 92, var12, arg0);
 			}
 		}
 		for (int var6 = 0; var6 < var4; var6++) {

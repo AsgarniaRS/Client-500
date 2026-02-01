@@ -26,7 +26,7 @@ public class class121 {
 	public int field2214;
 
 	@OriginalMember(owner = "client!la", name = "i", descriptor = "I")
-	public static int field2215;
+	public static int baseX;
 
 	@OriginalMember(owner = "client!la", name = "j", descriptor = "I")
 	public static int field2216;
@@ -52,12 +52,12 @@ public class class121 {
 			class72.method491(arg2, arg4, 0, arg0.field3404, arg0.field3423);
 		} else {
 			int var5 = Ground.field943 + class207.field3932 & 0x7FF;
-			int var6 = 464 - class240.field4458.field4123 / 32;
-			int var7 = class240.field4458.field4138 / 32 + 48;
+			int var6 = 464 - class240.localPlayer.field4123 / 32;
+			int var7 = class240.localPlayer.field4138 / 32 + 48;
 			((class169) class110.field2012).method1178(arg2, arg4, arg0.field3382, arg0.field3424, var7, var6, var5, class65.field1185 + 256, arg0.field3404, arg0.field3423);
 			for (int var8 = 0; var8 < class50.field930; var8++) {
-				int var41 = class139.field2579[var8] * 4 + 2 - class240.field4458.field4138 / 32;
-				int var42 = class134.field2503[var8] * 4 + 2 - class240.field4458.field4123 / 32;
+				int var41 = class139.field2579[var8] * 4 + 2 - class240.localPlayer.field4138 / 32;
+				int var42 = class134.field2503[var8] * 4 + 2 - class240.localPlayer.field4123 / 32;
 				LocType var43 = class190.method1323(Isaac.field2747[var8], -12450);
 				if (var43.multiloc != null) {
 					var43 = var43.method1000((byte) 126);
@@ -71,8 +71,8 @@ public class class121 {
 				for (int var37 = 0; var37 < 104; var37++) {
 					class248 var38 = class134.field2499[class149.minusedLevel][var9][var37];
 					if (var38 != null) {
-						int var39 = var9 * 4 + 2 - class240.field4458.field4138 / 32;
-						int var40 = var37 * 4 + 2 - class240.field4458.field4123 / 32;
+						int var39 = var9 * 4 + 2 - class240.localPlayer.field4138 / 32;
+						int var40 = var37 * 4 + 2 - class240.localPlayer.field4123 / 32;
 						class57.method418(arg4, arg2, 13481, var40, arg0, class35.field597[0], var39);
 					}
 				}
@@ -85,8 +85,8 @@ public class class121 {
 						var34 = var34.getMultiNpc();
 					}
 					if (var34 != null && var34.minimap && var34.active) {
-						int var35 = var33.field4123 / 32 - class240.field4458.field4123 / 32;
-						int var36 = var33.field4138 / 32 - class240.field4458.field4138 / 32;
+						int var35 = var33.field4123 / 32 - class240.localPlayer.field4123 / 32;
+						int var36 = var33.field4138 / 32 - class240.localPlayer.field4138 / 32;
 						class57.method418(arg4, arg2, 13481, var35, arg0, class35.field597[1], var36);
 					}
 				}
@@ -94,8 +94,8 @@ public class class121 {
 			for (int var11 = 0; var11 < class55.field1027; var11++) {
 				scene var25 = class244.field4493[IfType.field3430[var11]];
 				if (var25 != null && var25.method287(arg3 - 59)) {
-					int var26 = var25.field4138 / 32 - class240.field4458.field4138 / 32;
-					int var27 = var25.field4123 / 32 - class240.field4458.field4123 / 32;
+					int var26 = var25.field4138 / 32 - class240.localPlayer.field4138 / 32;
+					int var27 = var25.field4123 / 32 - class240.localPlayer.field4123 / 32;
 					boolean var28 = false;
 					long var29 = var25.name.method630(false);
 					for (int var31 = 0; var31 < Isaac.field2731; var31++) {
@@ -105,7 +105,7 @@ public class class121 {
 						}
 					}
 					boolean var32 = false;
-					if (class240.field4458.field752 != 0 && var25.field752 != 0 && class240.field4458.field752 == var25.field752) {
+					if (class240.localPlayer.field752 != 0 && var25.field752 != 0 && class240.localPlayer.field752 == var25.field752) {
 						var32 = true;
 					}
 					if (var28) {
@@ -120,33 +120,33 @@ public class class121 {
 			class118[] var12 = class64.field1171;
 			for (int var13 = 0; var13 < var12.length; var13++) {
 				class118 var16 = var12[var13];
-				if (var16 != null && var16.field2141 != 0 && class117.field2115 % 20 < 10) {
-					if (var16.field2141 == 1 && var16.field2148 >= 0 && var16.field2148 < class225.field4225.length) {
+				if (var16 != null && var16.hintType != 0 && class117.field2115 % 20 < 10) {
+					if (var16.hintType == 1 && var16.field2148 >= 0 && var16.field2148 < class225.field4225.length) {
 						class191 var17 = class225.field4225[var16.field2148];
 						if (var17 != null) {
-							int var18 = var17.field4138 / 32 - class240.field4458.field4138 / 32;
-							int var19 = var17.field4123 / 32 - class240.field4458.field4123 / 32;
+							int var18 = var17.field4138 / 32 - class240.localPlayer.field4138 / 32;
+							int var19 = var17.field4123 / 32 - class240.localPlayer.field4123 / 32;
 							class241.method1590(arg0, var18, arg4, var19, var16.field2139, (byte) 127, arg2);
 						}
 					}
-					if (var16.field2141 == 2) {
-						int var20 = (var16.field2140 - class223.field4214) * 4 + 2 - class240.field4458.field4138 / 32;
-						int var21 = (var16.field2137 - class190.field3681) * 4 + 2 - class240.field4458.field4123 / 32;
+					if (var16.hintType == 2) {
+						int var20 = (var16.field2140 - class223.field4214) * 4 + 2 - class240.localPlayer.field4138 / 32;
+						int var21 = (var16.field2137 - class190.field3681) * 4 + 2 - class240.localPlayer.field4123 / 32;
 						class241.method1590(arg0, var20, arg4, var21, var16.field2139, (byte) 127, arg2);
 					}
-					if (var16.field2141 == 10 && var16.field2148 >= 0 && var16.field2148 < class244.field4493.length) {
+					if (var16.hintType == 10 && var16.field2148 >= 0 && var16.field2148 < class244.field4493.length) {
 						scene var22 = class244.field4493[var16.field2148];
 						if (var22 != null) {
-							int var23 = var22.field4138 / 32 - class240.field4458.field4138 / 32;
-							int var24 = var22.field4123 / 32 - class240.field4458.field4123 / 32;
+							int var23 = var22.field4138 / 32 - class240.localPlayer.field4138 / 32;
+							int var24 = var22.field4123 / 32 - class240.localPlayer.field4123 / 32;
 							class241.method1590(arg0, var23, arg4, var24, var16.field2139, (byte) 127, arg2);
 						}
 					}
 				}
 			}
-			if (class116.field2104 != 0) {
-				int var14 = class140.field2596 * 4 + 2 - class240.field4458.field4123 / 32;
-				int var15 = class116.field2104 * 4 + 2 - class240.field4458.field4138 / 32;
+			if (class116.minimapFlagX != 0) {
+				int var14 = class140.field2596 * 4 + 2 - class240.localPlayer.field4123 / 32;
+				int var15 = class116.minimapFlagX * 4 + 2 - class240.localPlayer.field4138 / 32;
 				class57.method418(arg4, arg2, 13481, var14, arg0, class200.field3828, var15);
 			}
 			class72.method478(arg0.field3382 / 2 + arg2 - 1, arg4 - -(arg0.field3424 / 2) + -1, 3, 3, 16777215);

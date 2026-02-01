@@ -57,7 +57,7 @@ public class class158 {
 		class115.field2086 = arg2;
 		field3039++;
 		class16.field249 = arg1;
-		class200.method1373(65280, var4);
+		class200.componentUpdated(var4);
 	}
 
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(I)V")
@@ -108,7 +108,7 @@ public class class158 {
 	@OriginalMember(owner = "client!of", name = "a", descriptor = "(II)V")
 	public static final void method1070(int arg0, int arg1) {
 		field3044++;
-		class127.method869((byte) 127);
+		class127.legacyUpdated();
 		class8.method44((byte) 78);
 		int var2 = class106.method734(arg1, (byte) -104).field4290;
 		if (arg0 != 64) {
@@ -152,12 +152,12 @@ public class class158 {
 				var4 = 0;
 			}
 			if (class65.field1183 != var4) {
-				if (class65.field1183 == 0 && class2.field25 != -1) {
-					class53.method388(0, IntHashTable.field1816, (byte) -124, false, class2.field25, var4);
-					class110.field2014 = false;
+				if (class65.field1183 == 0 && class2.previousSong != -1) {
+					class53.method388(0, IntHashTable.field1816, (byte) -124, false, class2.previousSong, var4);
+					class110.playingJingle = false;
 				} else if (var4 == 0) {
 					class1.method5(31818);
-					class110.field2014 = false;
+					class110.playingJingle = false;
 				} else {
 					class103.method714(arg0 - 186, var4);
 				}

@@ -322,8 +322,8 @@ public class LocType extends Linkable2 {
 		}
 		while (var7.length > var8) {
 			class118 var9 = var7[var8];
-			if (var9 != null && var9.field2141 == 2) {
-				class97.method683(arg5 >> 1, arg3, var9.field2153 * 2, (var9.field2140 - class223.field4214 << 7) + var9.field2136, arg2, (byte) -98, arg6 >> 1, (var9.field2137 - class190.field3681 << 7) + var9.field2152);
+			if (var9 != null && var9.hintType == 2) {
+				class97.method683(arg5 >> 1, arg3, var9.field2153 * 2, (var9.field2140 - class223.field4214 << 7) + var9.hintOffsetX, arg2, (byte) -98, arg6 >> 1, (var9.field2137 - class190.field3681 << 7) + var9.hintOffsetZ);
 				if (class25.field401 > -1 && class117.field2115 % 20 < 10) {
 					class176.field3545[var9.field2139].method1157(arg0 + class25.field401 - 12, arg1 - 28 + class33.field541);
 				}

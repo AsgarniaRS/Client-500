@@ -176,7 +176,7 @@ public class class92 {
 			field1735 = null;
 		}
 		field1727++;
-		return this.cache.method1049(0);
+		return this.cache.search(0);
 	}
 
 	@OriginalMember(owner = "client!id", name = "<init>", descriptor = "(I)V")

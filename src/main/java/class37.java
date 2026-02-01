@@ -47,19 +47,19 @@ public class class37 {
 		class149.method1025(false, -11654);
 		class39.method256(-98);
 		class199.method1372(-1);
-		if (!class179.field3569) {
+		if (!class179.cinemaCam) {
 			int var5 = class64.field1173;
 			int var6 = class98.field1797 + class207.field3932 & 0x7FF;
 			if (class71.field1328 / 256 > var5) {
 				var5 = class71.field1328 / 256;
 			}
-			if (class233.field4370[4] && class66.field1194[4] + 128 > var5) {
+			if (class233.camShake[4] && class66.field1194[4] + 128 > var5) {
 				var5 = class66.field1194[4] + 128;
 			}
-			EnumType.method359(-114, field666, Client.getAvH(class240.field4458.field4138, class240.field4458.field4123, 2, class149.minusedLevel) - 50, var6, var5, var5 * 3 + 600, arg2, class233.field4368);
+			EnumType.method359(-114, field666, Client.getAvH(class240.localPlayer.field4138, class240.localPlayer.field4123, 2, class149.minusedLevel) - 50, var6, var5, var5 * 3 + 600, arg2, class233.field4368);
 		}
 		int var7;
-		if (class179.field3569) {
+		if (class179.cinemaCam) {
 			var7 = class152.method1042(-121);
 		} else {
 			var7 = class131.method887((byte) 39);
@@ -73,7 +73,7 @@ public class class37 {
 		int var11 = class184.field3610;
 		int var12 = class170.field3259;
 		for (int var13 = 0; var13 < 5; var13++) {
-			if (class233.field4370[var13]) {
+			if (class233.camShake[var13]) {
 				int var21 = (int) (Math.random() * (double) (class201.field3836[var13] * 2 + 1) + Math.sin((double) class194.field3716[var13] / 100.0D * (double) class190.field3676[var13]) * (double) class66.field1194[var13] - (double) class201.field3836[var13]);
 				if (var13 == 3) {
 					class170.field3259 = class170.field3259 + var21 & 0x7FF;
@@ -119,7 +119,7 @@ public class class37 {
 		class219.method1481(2);
 		class72.method478(arg1, arg4, arg0, arg2, 0);
 		if (!var14) {
-			class113.method774(class79.field1428, class108.field1956, class184.field3610, class207.field3936, class170.field3259, var7, null, null, null, null, null, null, 0, (byte) 0, class240.field4458.field4138 >> 7, class240.field4458.field4123 >> 7);
+			class113.method774(class79.field1428, class108.field1956, class184.field3610, class207.field3936, class170.field3259, var7, null, null, null, null, null, null, 0, (byte) 0, class240.localPlayer.field4138 >> 7, class240.localPlayer.field4123 >> 7);
 		}
 		class219.method1481(2);
 		class110.method765();

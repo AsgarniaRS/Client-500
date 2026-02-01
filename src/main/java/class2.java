@@ -23,7 +23,7 @@ public class class2 extends class23 {
 	public static JString field23 = class208.method1425("Ung-Ultiges Anmelde)2Paket)3");
 
 	@OriginalMember(owner = "client!aa", name = "db", descriptor = "I")
-	public static int field25 = -1;
+	public static int previousSong = -1;
 
 	@OriginalMember(owner = "client!aa", name = "Z", descriptor = "Li;")
 	public static JString field21 = class208.method1425(")1p");

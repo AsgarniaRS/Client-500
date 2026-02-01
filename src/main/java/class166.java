@@ -10,7 +10,7 @@ public class class166 {
 	public static JString field3191 = class208.method1425("(U2");
 
 	@OriginalMember(owner = "client!pc", name = "n", descriptor = "[Lia;")
-	public static CollisionMap[] field3202 = new CollisionMap[4];
+	public static CollisionMap[] levelCollisionMap = new CollisionMap[4];
 
 	@OriginalMember(owner = "client!pc", name = "l", descriptor = "Li;")
 	private static JString field3200 = class208.method1425("The server is being updated)3");
@@ -67,7 +67,7 @@ public class class166 {
 	public static void method1143(int arg0) {
 		field3191 = null;
 		field3201 = null;
-		field3202 = null;
+		levelCollisionMap = null;
 		field3200 = null;
 		field3193 = null;
 		field3190 = null;

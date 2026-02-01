@@ -275,7 +275,7 @@ public class class112 {
 			}
 		}
 		if (arg10) {
-			class149.field2908[class25.field396++] = var14;
+			class149.dynamicSprites[class25.dynamicCount++] = var14;
 		}
 		return true;
 	}

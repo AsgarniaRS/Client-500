@@ -169,8 +169,8 @@ public class class189 extends Linkable2 {
 		class54.field1009 = new int[class151.field2925 + 1];
 		scene.field760 = (var5 - var3) * 64 + 64;
 		SeqType.field1990 = (var4 + 1 - var2) * 64;
-		int var8 = class190.field3681 + (class240.field4458.field4123 >> 7) - class119.field2183;
-		int var9 = (class240.field4458.field4138 >> 7) + class223.field4214 - class16.field239;
+		int var8 = class190.field3681 + (class240.localPlayer.field4123 >> 7) - class119.field2183;
+		int var9 = (class240.localPlayer.field4138 >> 7) + class223.field4214 - class16.field239;
 		int var10 = var9 + (int) (Math.random() * 10.0D) - 5;
 		int var11 = var8 + (int) (Math.random() * 10.0D) - 5;
 		int var12 = scene.field760 >> 6;

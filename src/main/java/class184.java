@@ -106,10 +106,10 @@ public class class184 extends class23 {
 					Client.method221(class166.method1142(new JString[]{class242.field4480, class222.field4192}, -3), true, -22717);
 				}
 				class219.method1481(2);
-				class27.method167((byte) 61);
-				class85.method579();
+				class27.clearCaches((byte) 61);
+				class85.resetMap();
 				for (int var5 = 0; ~var5 > -5; ++var5) {
-					class166.field3202[var5].method644((byte) 15);
+					class166.levelCollisionMap[var5].reset();
 				}
 				for (int var6 = 0; ~var6 > -5; ++var6) {
 					for (int var17 = 0; ~var17 > -105; ++var17) {
@@ -134,10 +134,10 @@ public class class184 extends class23 {
 					class134.method895(true, (byte) 49);
 					class85.method576(false, 22711);
 				}
-				class27.method167((byte) 61);
+				class27.clearCaches((byte) 61);
 				class134.method895(true, (byte) 49);
 				class219.method1481(2);
-				class78.method523(arg0, false, class166.field3202);
+				class78.method523(arg0, false, class166.levelCollisionMap);
 				class134.method895(true, (byte) 49);
 				class219.method1481(2);
 				int var7 = class28.field468;
@@ -160,7 +160,7 @@ public class class184 extends class23 {
 				}
 				class219.method1481(2);
 				class210.method1439(0);
-				class27.method167((byte) 61);
+				class27.clearCaches((byte) 61);
 				if (class201.field3834 != null) {
 					Isaac.out.method30(198);
 					Isaac.out.p4(1057001181);

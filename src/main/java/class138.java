@@ -131,7 +131,7 @@ public abstract class class138 extends class26 {
 	@OriginalMember(owner = "client!mg", name = "b", descriptor = "(Z)V")
 	public static final void method920(boolean arg0) {
 		JString.ptype2 = -1;
-		class114.field2063 = 0;
+		class114.rebootTimer = 0;
 		class238.ptype = -1;
 		Isaac.out.pos = 0;
 		class192.timeoutTimer = 0;
@@ -142,7 +142,7 @@ public abstract class class138 extends class26 {
 		class228.psize = 0;
 		field2570++;
 		Packet.ptype1 = -1;
-		class116.field2104 = 0;
+		class116.minimapFlagX = 0;
 		class108.field1960 = false;
 		for (int var1 = 0; var1 < class244.field4493.length; var1++) {
 			if (class244.field4493[var1] != null) {
@@ -157,7 +157,7 @@ public abstract class class138 extends class26 {
 		class42.method276((byte) -47);
 		class131.setMainState(30, 65536);
 		for (int var3 = 0; var3 < 100; var3++) {
-			class225.field4230[var3] = true;
+			class225.componentRedrawRequested1[var3] = true;
 		}
 		if (!arg0) {
 			field2572 = null;

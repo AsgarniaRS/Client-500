@@ -93,17 +93,17 @@ public class class16 {
 				arg1.field3457 = 150;
 				arg1.field3511 = (int) (Math.sin((double) class117.field2115 / 40.0D) * 256.0D) & 0x7FF;
 				arg1.model1Id = -1;
-				arg1.field3432 = 5;
+				arg1.model1Type = 5;
 			} else if (var2 == 328) {
-				if (class240.field4458.name == null) {
+				if (class240.localPlayer.name == null) {
 					arg1.model1Id = 0;
 				} else {
 					arg1.field3457 = 150;
 					arg1.field3511 = (int) (Math.sin((double) class117.field2115 / 40.0D) * 256.0D) & 0x7FF;
-					arg1.field3432 = 5;
-					arg1.model1Id = ((int) class240.field4458.name.method630(false) << 11) + 2047;
-					arg1.modelAnim = class240.field4458.field4108;
-					arg1.field3381 = class240.field4458.field4129;
+					arg1.model1Type = 5;
+					arg1.model1Id = ((int) class240.localPlayer.name.method630(false) << 11) + 2047;
+					arg1.modelAnim = class240.localPlayer.field4108;
+					arg1.field3381 = class240.localPlayer.field4129;
 				}
 			}
 		}

@@ -95,7 +95,7 @@ public class scene extends class218 {
 	public int field773;
 
 	@OriginalMember(owner = "client!dj", name = "ic", descriptor = "Ltb;")
-	public class209 field768;
+	public class209 model;
 
 	@OriginalMember(owner = "client!dj", name = "Yb", descriptor = "Lcg;")
 	public class30 field758;
@@ -121,34 +121,34 @@ public class scene extends class218 {
 	@OriginalMember(owner = "client!dj", name = "a", descriptor = "(IIIIIIIIJ)V")
 	public final void method87(int arg0, int arg1, int arg2, int arg3, int arg4, int arg5, int arg6, int arg7, long arg8) {
 		++field771;
-		if (this.field768 != null) {
+		if (this.model != null) {
 			SeqType var11 = super.field4079 != -1 && super.field4142 == 0 ? class15.method75(super.field4079, (byte) -71) : null;
 			SeqType var12 = super.field4108 == -1 || this.field743 || super.field4108 == super.field4107 && var11 != null ? null : class15.method75(super.field4108, (byte) -110);
-			class30 var13 = this.field768.method1432(var12, 1549114312, super.field4103, super.field4129, var11);
+			class30 var13 = this.model.method1432(var12, 1549114312, super.field4103, super.field4129, var11);
 			if (var13 != null) {
 				super.field4109 = var13.method88();
-				if (class240.field4458 == this) {
+				if (class240.localPlayer == this) {
 					for (int var14 = class64.field1171.length - 1; ~var14 <= -1; --var14) {
 						class118 var15 = class64.field1171[var14];
 						if (var15 != null && ~var15.field2138 != 0) {
-							if (var15.field2141 == 1 && ~var15.field2148 <= -1 && class225.field4225.length > var15.field2148) {
+							if (var15.hintType == 1 && ~var15.field2148 <= -1 && class225.field4225.length > var15.field2148) {
 								class191 var16 = class225.field4225[var15.field2148];
 								if (var16 != null) {
-									int var17 = var16.field4138 / 32 + -(class240.field4458.field4138 / 32);
-									int var18 = var16.field4123 / 32 + -(class240.field4458.field4123 / 32);
+									int var17 = var16.field4138 / 32 + -(class240.localPlayer.field4138 / 32);
+									int var18 = var16.field4123 / 32 + -(class240.localPlayer.field4123 / 32);
 									this.method286(arg2, 360000, arg3, arg7, arg1, arg5, arg0, var18, arg4, var15.field2138, var13, arg6, var17);
 								}
 							}
-							if (~var15.field2141 == -3) {
-								int var19 = (-class223.field4214 + var15.field2140) * 4 - -2 + -(class240.field4458.field4138 / 32);
-								int var20 = (-class190.field3681 + var15.field2137) * 4 - -2 + -(class240.field4458.field4123 / 32);
+							if (~var15.hintType == -3) {
+								int var19 = (-class223.field4214 + var15.field2140) * 4 - -2 + -(class240.localPlayer.field4138 / 32);
+								int var20 = (-class190.field3681 + var15.field2137) * 4 - -2 + -(class240.localPlayer.field4123 / 32);
 								this.method286(arg2, 360000, arg3, arg7, arg1, arg5, arg0, var20, arg4, var15.field2138, var13, arg6, var19);
 							}
-							if (var15.field2141 == 10 && var15.field2148 >= 0 && var15.field2148 < class244.field4493.length) {
+							if (var15.hintType == 10 && var15.field2148 >= 0 && var15.field2148 < class244.field4493.length) {
 								scene var21 = class244.field4493[var15.field2148];
 								if (var21 != null) {
-									int var22 = var21.field4138 / 32 - class240.field4458.field4138 / 32;
-									int var23 = var21.field4123 / 32 + -(class240.field4458.field4123 / 32);
+									int var22 = var21.field4138 / 32 - class240.localPlayer.field4138 / 32;
+									int var23 = var21.field4123 / 32 + -(class240.localPlayer.field4123 / 32);
 									this.method286(arg2, 360000, arg3, arg7, arg1, arg5, arg0, var23, arg4, var15.field2138, var13, arg6, var22);
 								}
 							}
@@ -399,10 +399,10 @@ public class scene extends class218 {
 			} else {
 				this.field749 = arg0.g2();
 			}
-			if (this.field768 == null) {
-				this.field768 = new class209();
+			if (this.model == null) {
+				this.model = new class209();
 			}
-			this.field768.method1433(var6, false, var7, var12, ~var4 == -2);
+			this.model.method1433(var6, false, var7, var12, ~var4 == -2);
 		}
 	}
 
@@ -412,7 +412,7 @@ public class scene extends class218 {
 		int var14 = arg7 * arg7 + arg12 * arg12;
 		if (var14 >= 16 && var14 <= 360000) {
 			if (arg1 != 360000) {
-				this.field768 = null;
+				this.model = null;
 			}
 			int var15 = (int) (Math.atan2((double) arg12, (double) arg7) * 325.949D) & 2047;
 			class30 var16 = class135.method899(arg10, -21510, super.field4123, super.field4138, arg9, var15, super.field4099);
@@ -428,7 +428,7 @@ public class scene extends class218 {
 		if (arg0 != -1) {
 			return false;
 		} else {
-			return this.field768 != null;
+			return this.model != null;
 		}
 	}
 

@@ -86,7 +86,7 @@ public class class95 {
 						var7 -= 32;
 					}
 					int var8 = class230.in.method28(1, -315);
-					var3.teleport(var8 == 1, class240.field4458.field4089[0] + var7, 0, class240.field4458.field4143[0] + var6);
+					var3.teleport(var8 == 1, class240.localPlayer.field4089[0] + var7, 0, class240.localPlayer.field4143[0] + var6);
 					continue;
 				}
 			}

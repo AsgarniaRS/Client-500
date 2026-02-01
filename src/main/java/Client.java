@@ -459,7 +459,7 @@ public class Client extends GameShell {
 		} else if (class32.field519 == 10) {
 			class179.method1279(4, 104, 104, 25);
 			for (int var6 = 0; var6 < 4; var6++) {
-				class166.field3202[var6] = new CollisionMap(104, 104);
+				class166.levelCollisionMap[var6] = new CollisionMap(104, 104);
 			}
 			class6.field83 = 10;
 			class209.field3965 = class10.field144;
@@ -810,7 +810,7 @@ public class Client extends GameShell {
 		field568++;
 		boolean var2 = false;
 		boolean var3 = class142.method931(true);
-		if (var3 && class110.field2014 && class27.field458 != null) {
+		if (var3 && class110.playingJingle && class27.field458 != null) {
 			class27.field458.method401(-118);
 		}
 		if (class53.field971) {

@@ -51,8 +51,7 @@ public class class27 {
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(B)V")
-	public static final void method167(byte arg0) {
-		field455++;
+	public static final void clearCaches(byte arg0) {
 		class160.method1081(39);
 		class1.method6((byte) 122);
 		class248.method1620((byte) 110);
@@ -67,6 +66,7 @@ public class class27 {
 		class147.method985(true);
 		((class68) class173.field3358).method464(78);
 		class33.cache.method671(arg0 - 48);
+
 		Linkable.field1204.method943(0);
 		class223.field4203.method943(0);
 		CollisionMap.field1671.method943(0);
@@ -74,12 +74,10 @@ public class class27 {
 		field451.method943(0);
 		IntHashTable.field1816.method943(0);
 		class233.field4367.method943(0);
-		if (arg0 == 61) {
-			class226.field4245.method943(0);
-			class9.field137.method943(arg0 ^ 0x3D);
-			class133.field2488.method943(arg0 - 61);
-			class18.field300.method943(0);
-		}
+		class226.field4245.method943(0);
+		class9.field137.method943(arg0 ^ 0x3D);
+		class133.field2488.method943(arg0 - 61);
+		class18.field300.method943(0);
 	}
 
 	@OriginalMember(owner = "client!cd", name = "a", descriptor = "(III)V")

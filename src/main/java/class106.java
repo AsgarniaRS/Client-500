@@ -1411,7 +1411,7 @@ public class class106 {
 		class234.field4381 = 0;
 		class105.field1912 = 0;
 		class101.ptype0 = -1;
-		class114.field2063 = 0;
+		class114.rebootTimer = 0;
 		class192.timeoutTimer = 0;
 		class238.ptype = -1;
 		class230.in.pos = 0;
@@ -1427,7 +1427,7 @@ public class class106 {
 		class34.field582 = 0;
 		class140.field2596 = 0;
 		class65.field1185 = (int) (Math.random() * 30.0D) - 20;
-		class116.field2104 = 0;
+		class116.minimapFlagX = 0;
 		Ground.field943 = (int) (Math.random() * 120.0D) - 60;
 		class55.field1027 = 0;
 		class33.field536 = (int) (Math.random() * 110.0D) - 55;
@@ -1447,7 +1447,7 @@ public class class106 {
 		for (int var4 = 0; var4 < 32768; var4++) {
 			class225.field4225[var4] = null;
 		}
-		class240.field4458 = class244.field4493[2047] = new scene();
+		class240.localPlayer = class244.field4493[2047] = new scene();
 		class167.field3222.method1618(-3);
 		class42.field714.method1618(-3);
 		for (int var5 = 0; var5 < 4; var5++) {
@@ -1473,11 +1473,11 @@ public class class106 {
 		if (class43.field723 != -1) {
 			class35.method233(class43.field723, (byte) -80);
 		}
-		for (class168 var8 = (class168) class128.field2397.method1049(0); var8 != null; var8 = (class168) class128.field2397.method1050((byte) -73)) {
+		for (class168 var8 = (class168) class128.subinterfaces.search(0); var8 != null; var8 = (class168) class128.subinterfaces.method1050((byte) -73)) {
 			class93.method673((byte) -116, var8, true);
 		}
 		class43.field723 = -1;
-		class128.field2397 = new HashTable(8);
+		class128.subinterfaces = new HashTable(8);
 		class203.field3864 = 0;
 		class53.field967 = null;
 		class108.field1960 = false;
@@ -1489,7 +1489,7 @@ public class class106 {
 		class42.method276((byte) -47);
 		HashTable.field2982 = true;
 		for (int var10 = 0; var10 < 100; var10++) {
-			class225.field4230[var10] = true;
+			class225.componentRedrawRequested1[var10] = true;
 		}
 		EnumType.field885 = 0;
 		class222.field4184 = null;
@@ -1498,9 +1498,9 @@ public class class106 {
 			class9.field140[var11] = new class131();
 		}
 		for (int var12 = 0; var12 < 25; var12++) {
-			class105.field1909[var12] = 0;
-			class217.field4068[var12] = 0;
-			class179.field3564[var12] = 0;
+			class105.statEffectiveLevel[var12] = 0;
+			class217.statBaseLevel[var12] = 0;
+			class179.statXP[var12] = 0;
 		}
 		class117.field2110 = class120.field2194 = class7.field108 = SeqType.field1970 = new short[256];
 		class176.field3548 = true;
@@ -1528,7 +1528,7 @@ public class class106 {
 	public static final void method735(int arg0) {
 		field1931++;
 		for (int var1 = arg0; var1 < 100; var1++) {
-			class225.field4230[var1] = true;
+			class225.componentRedrawRequested1[var1] = true;
 		}
 	}
 

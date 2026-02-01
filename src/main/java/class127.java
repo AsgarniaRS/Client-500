@@ -101,27 +101,25 @@ public class class127 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!lg", name = "b", descriptor = "(B)V")
-	public static final void method869(byte arg0) {
-		field2371++;
-		if (arg0 <= 123) {
-			method869((byte) -61);
-		}
-		for (class168 var1 = (class168) class128.field2397.method1049(0); var1 != null; var1 = (class168) class128.field2397.method1050((byte) -73)) {
-			int var2 = var1.field3231;
-			if (IfType.openInterface(var2, 0)) {
-				boolean var3 = true;
-				IfType[] var4 = class78.list[var2];
-				for (int var5 = 0; var5 < var4.length; var5++) {
-					if (var4[var5] != null) {
-						var3 = var4[var5].v3;
+	public static final void legacyUpdated() {
+		for (class168 sub = (class168) class128.subinterfaces.search(0); sub != null; sub = (class168) class128.subinterfaces.method1050((byte) -73)) {
+			int id = sub.id;
+			if (IfType.openInterface(id, 0)) {
+				boolean newFormat = true;
+
+				IfType[] children = class78.list[id];
+				for (int i = 0; i < children.length; i++) {
+					if (children[i] != null) {
+						newFormat = children[i].v3;
 						break;
 					}
 				}
-				if (!var3) {
-					int var6 = (int) var1.nodeId;
-					IfType var7 = IfType.get(-64, var6);
-					if (var7 != null) {
-						class200.method1373(65280, var7);
+				if (!newFormat) {
+					int key = (int) sub.nodeId;
+
+					IfType com = IfType.get(-64, key);
+					if (com != null) {
+						class200.componentUpdated(com);
 					}
 				}
 			}
@@ -131,7 +129,7 @@ public class class127 extends Linkable {
 	@OriginalMember(owner = "client!lg", name = "b", descriptor = "(Z)V")
 	public static void method870(boolean arg0) {
 		if (!arg0) {
-			method869((byte) -33);
+			legacyUpdated();
 		}
 		field2390 = null;
 		field2372 = null;

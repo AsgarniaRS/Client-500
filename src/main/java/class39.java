@@ -113,7 +113,7 @@ public class class39 extends Linkable {
 					int var4 = -var2.field1387 - 1;
 					scene var5;
 					if (class220.localPid == var4) {
-						var5 = class240.field4458;
+						var5 = class240.localPlayer;
 					} else {
 						var5 = class244.field4493[var4];
 					}

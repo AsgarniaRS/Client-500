@@ -8,7 +8,7 @@ public class Linkable {
 	public static int field1207 = 0;
 
 	@OriginalMember(owner = "client!g", name = "i", descriptor = "I")
-	public static int field1211 = 1;
+	public static int transmitNum = 1;
 
 	@OriginalMember(owner = "client!g", name = "f", descriptor = "I")
 	public static int field1208 = 0;

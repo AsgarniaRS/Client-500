@@ -4,48 +4,48 @@ import org.openrs2.deob.annotation.OriginalMember;
 @OriginalClass("client!cb")
 public class class25 {
 
-    @OriginalMember(owner = "client!cb", name = "d", descriptor = "Li;")
-    public static JString field399 = class208.method1425("<col=ffff00>");
+	@OriginalMember(owner = "client!cb", name = "d", descriptor = "Li;")
+	public static JString field399 = class208.method1425("<col=ffff00>");
 
-    @OriginalMember(owner = "client!cb", name = "b", descriptor = "[I")
-    public static int[] field397 = new int[50];
+	@OriginalMember(owner = "client!cb", name = "b", descriptor = "[I")
+	public static int[] field397 = new int[50];
 
-    @OriginalMember(owner = "client!cb", name = "e", descriptor = "Li;")
-    public static JString field400 = class208.method1425("Lade Wordpack )2 ");
+	@OriginalMember(owner = "client!cb", name = "e", descriptor = "Li;")
+	public static JString field400 = class208.method1425("Lade Wordpack )2 ");
 
-    @OriginalMember(owner = "client!cb", name = "g", descriptor = "[I")
-    public static int[] field402 = new int[32768];
+	@OriginalMember(owner = "client!cb", name = "g", descriptor = "[I")
+	public static int[] field402 = new int[32768];
 
-    @OriginalMember(owner = "client!cb", name = "i", descriptor = "Li;")
-    public static JString field404 = class208.method1425("labels)3dat");
+	@OriginalMember(owner = "client!cb", name = "i", descriptor = "Li;")
+	public static JString field404 = class208.method1425("labels)3dat");
 
-    @OriginalMember(owner = "client!cb", name = "j", descriptor = "Li;")
-    public static JString field405 = class208.method1425("rot:");
+	@OriginalMember(owner = "client!cb", name = "j", descriptor = "Li;")
+	public static JString field405 = class208.method1425("rot:");
 
-    @OriginalMember(owner = "client!cb", name = "a", descriptor = "I")
-    public static int field396 = 0;
+	@OriginalMember(owner = "client!cb", name = "a", descriptor = "I")
+	public static int dynamicCount = 0;
 
-    @OriginalMember(owner = "client!cb", name = "h", descriptor = "Li;")
-    private static JString CHOOSEOPTION = class208.method1425("Choose Option");
+	@OriginalMember(owner = "client!cb", name = "h", descriptor = "Li;")
+	private static JString CHOOSEOPTION = class208.method1425("Choose Option");
 
-    @OriginalMember(owner = "client!cb", name = "f", descriptor = "I")
-    public static int field401 = -1;
+	@OriginalMember(owner = "client!cb", name = "f", descriptor = "I")
+	public static int field401 = -1;
 
-    @OriginalMember(owner = "client!cb", name = "c", descriptor = "Li;")
-    public static JString field398 = CHOOSEOPTION;
+	@OriginalMember(owner = "client!cb", name = "c", descriptor = "Li;")
+	public static JString field398 = CHOOSEOPTION;
 
-    @OriginalMember(owner = "client!cb", name = "a", descriptor = "(Z)V")
-    public static void method136(boolean arg0) {
-        if (!arg0) {
-            method136(false);
-        }
-        field404 = null;
-        field399 = null;
-        field398 = null;
-        field402 = null;
-        CHOOSEOPTION = null;
-        field405 = null;
-        field397 = null;
-        field400 = null;
-    }
+	@OriginalMember(owner = "client!cb", name = "a", descriptor = "(Z)V")
+	public static void method136(boolean arg0) {
+		if (!arg0) {
+			method136(false);
+		}
+		field404 = null;
+		field399 = null;
+		field398 = null;
+		field402 = null;
+		CHOOSEOPTION = null;
+		field405 = null;
+		field397 = null;
+		field400 = null;
+	}
 }

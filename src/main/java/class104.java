@@ -299,15 +299,15 @@ public class class104 extends class23 {
 			field1884 = false;
 		}
 		++field1886;
-		var4.field3231 = arg2;
-		class128.field2397.put((long) arg1, var4, -1);
+		var4.id = arg2;
+		class128.subinterfaces.put((long) arg1, var4, -1);
 		class149.method1007(arg2, arg3 + -106);
 		IfType var5 = IfType.get(-64, arg1);
 		if (var5 != null) {
-			class200.method1373(arg3 ^ 65385, var5);
+			class200.componentUpdated(var5);
 		}
 		if (class53.field967 != null) {
-			class200.method1373(65280, class53.field967);
+			class200.componentUpdated(class53.field967);
 			class53.field967 = null;
 		}
 		class108.field1960 = false;
@@ -334,12 +334,12 @@ public class class104 extends class23 {
 				if (arg0.field4129 < var2.frames.length && var2.delay[arg0.field4129] < arg0.field4113) {
 					arg0.field4113 = 1;
 					++arg0.field4129;
-					class60.method433(-122, class240.field4458 == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
+					class60.method433(-122, class240.localPlayer == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
 				}
 				if (~arg0.field4129 <= ~var2.frames.length) {
 					arg0.field4129 = 0;
 					arg0.field4113 = 0;
-					class60.method433(99, class240.field4458 == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
+					class60.method433(99, class240.localPlayer == arg0, arg0.field4123, arg0.field4129, arg0.field4138, var2);
 				}
 			} else {
 				arg0.field4108 = -1;
@@ -357,7 +357,7 @@ public class class104 extends class23 {
 					if (~var4.frames.length < ~arg0.field4077 && ~var4.delay[arg0.field4077] > ~arg0.field4122) {
 						++arg0.field4077;
 						arg0.field4122 = 1;
-						class60.method433(-114, class240.field4458 == arg0, arg0.field4123, arg0.field4077, arg0.field4138, var4);
+						class60.method433(-114, class240.localPlayer == arg0, arg0.field4123, arg0.field4077, arg0.field4138, var4);
 					}
 					if (~arg0.field4077 <= ~var4.frames.length) {
 						arg0.field4082 = -1;
@@ -383,14 +383,14 @@ public class class104 extends class23 {
 				if (~arg0.field4103 > ~var6.frames.length && var6.delay[arg0.field4103] < arg0.field4100) {
 					arg0.field4100 = 1;
 					++arg0.field4103;
-					class60.method433(20, class240.field4458 == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
+					class60.method433(20, class240.localPlayer == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
 				}
 				if (arg0.field4103 >= var6.frames.length) {
 					++arg0.field4134;
 					arg0.field4103 -= var6.loops;
 					if (~arg0.field4134 > ~var6.maxloops) {
 						if (~arg0.field4103 <= -1 && arg0.field4103 < var6.frames.length) {
-							class60.method433(-120, class240.field4458 == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
+							class60.method433(-120, class240.localPlayer == arg0, arg0.field4123, arg0.field4103, arg0.field4138, var6);
 						} else {
 							arg0.field4079 = -1;
 						}

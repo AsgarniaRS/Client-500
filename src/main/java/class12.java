@@ -192,12 +192,12 @@ public class class12 {
 			class201.method1382(80);
 			return true;
 		} catch (Exception var5) {
-			String var2 = "T2 - " + class238.ptype + "," + Packet.ptype1 + "," + JString.ptype2 + " - " + class228.psize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
+			String var2 = "T2 - " + class238.ptype + "," + Packet.ptype1 + "," + JString.ptype2 + " - " + class228.psize + "," + (class240.localPlayer.field4089[0] + class223.field4214) + "," + (class240.localPlayer.field4143[0] + class190.field3681) + " - ";
 			for (int var3 = 0; class228.psize > var3 && var3 < 50; var3++) {
 				var2 = var2 + class230.in.data[var3] + ",";
 			}
 			class221.method1490((byte) 0, var2, var5);
-			class115.method787((byte) -123);
+			class115.logout();
 			return true;
 		}
 	}
@@ -252,7 +252,7 @@ public class class12 {
 					return;
 				}
 			}
-			if (var3.method597(-122, class240.field4458.name)) {
+			if (var3.method597(-122, class240.localPlayer.name)) {
 				class223.addChat(0, class24.field395, IfType.field3455);
 			} else {
 				class90.field1712++;
@@ -262,7 +262,7 @@ public class class12 {
 				class168.field3240[Isaac.field2731] = IfType.field3455;
 				Packet.field845[Isaac.field2731] = 0;
 				GZip.field1120[Isaac.field2731] = false;
-				class20.field313 = Linkable.field1211;
+				class20.field313 = Linkable.transmitNum;
 				Isaac.field2731++;
 				Isaac.out.method30(82);
 				Isaac.out.p8(arg1);

@@ -189,7 +189,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
 		while (var5 < class55.field1027) {
 			scene var6 = class244.field4493[IfType.field3430[var5]];
 			if (var6 != null && var6.name != null && var6.name.equalsIgnoreCase(var3)) {
-				class207.method1423(3044, 1, 0, var6.field4143[0], var6.field4089[0], class240.field4458.field4089[0], 1, 0, 2, false, 0, class240.field4458.field4143[0]);
+				class207.method1423(3044, 1, 0, var6.field4143[0], var6.field4089[0], class240.localPlayer.field4089[0], 1, 0, 2, false, 0, class240.localPlayer.field4143[0]);
 				var4 = true;
 				if (arg2 == 1) {
 					scene.field770++;

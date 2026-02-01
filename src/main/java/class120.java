@@ -267,7 +267,7 @@ public class class120 extends class23 {
 			class149.minusedLevel = arg0;
 			byte var14 = 0;
 			byte var15 = 104;
-			class240.field4458.teleport(false, arg5, 0, arg1);
+			class240.localPlayer.teleport(false, arg5, 0, arg1);
 			byte var16 = 0;
 			byte var17 = 1;
 			if (~var9 > -1) {
@@ -302,12 +302,12 @@ public class class120 extends class23 {
 					var21.unlink();
 				}
 			}
-			if (~class116.field2104 != -1) {
-				class116.field2104 -= var9;
+			if (~class116.minimapFlagX != -1) {
+				class116.minimapFlagX -= var9;
 				class140.field2596 -= var8;
 			}
 			class172.field3338 = -1;
-			class179.field3569 = false;
+			class179.cinemaCam = false;
 			IfType.field3447 = 0;
 			class42.field714.method1618(-3);
 			class167.field3222.method1618(-3);

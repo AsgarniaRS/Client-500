@@ -133,7 +133,7 @@ public class class131 {
 		if (class207.field3936 < 310) {
 			int var2 = class79.field1428 >> 7;
 			int var3 = class184.field3610 >> 7;
-			int var4 = class240.field4458.field4138 >> 7;
+			int var4 = class240.localPlayer.field4138 >> 7;
 			if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
 				var1 = class149.minusedLevel;
 			}
@@ -143,7 +143,7 @@ public class class131 {
 			} else {
 				var5 = var2 - var4;
 			}
-			int var6 = class240.field4458.field4123 >> 7;
+			int var6 = class240.localPlayer.field4123 >> 7;
 			int var7;
 			if (var6 > var3) {
 				var7 = var6 - var3;
@@ -202,7 +202,7 @@ public class class131 {
 				}
 			}
 		}
-		if ((class116.mapl[class149.minusedLevel][class240.field4458.field4138 >> 7][class240.field4458.field4123 >> 7] & 0x4) != 0) {
+		if ((class116.mapl[class149.minusedLevel][class240.localPlayer.field4138 >> 7][class240.localPlayer.field4123 >> 7] & 0x4) != 0) {
 			var1 = class149.minusedLevel;
 		}
 		return var1;

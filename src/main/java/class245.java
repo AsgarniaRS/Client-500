@@ -92,15 +92,15 @@ public class class245 {
 			class217.method1473(class43.field723, -126);
 		}
 		for (int var1 = 0; var1 < class206.field3925; var1++) {
-			if (class225.field4230[var1]) {
+			if (class225.componentRedrawRequested1[var1]) {
 				class211.field4007[var1] = true;
 			}
-			class113.field2045[var1] = class225.field4230[var1];
-			class225.field4230[var1] = false;
+			class113.field2045[var1] = class225.componentRedrawRequested1[var1];
+			class225.componentRedrawRequested1[var1] = false;
 		}
 		class225.field4231 = null;
 		class58.field1101 = -1;
-		class110.field2020 = class117.field2115;
+		class110.componentDrawTime = class117.field2115;
 		class133.field2489 = -1;
 		if (class43.field723 != -1) {
 			class206.field3925 = 0;
@@ -122,7 +122,7 @@ public class class245 {
 				}
 			}
 		}
-		class15.method73(class240.field4458.field4123, class17.field261, class240.field4458.field4138, class149.minusedLevel, (byte) 6);
+		class15.method73(class240.localPlayer.field4123, class17.field261, class240.localPlayer.field4138, class149.minusedLevel, (byte) 6);
 		class17.field261 = arg0;
 	}
 

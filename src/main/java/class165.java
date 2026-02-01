@@ -153,8 +153,8 @@ public class class165 {
 				} else {
 					var12 = arg4;
 				}
-				var11.field3373 = class117.field2115;
-				var11.field3384 = var12;
+				var11.drawTime = class117.field2115;
+				var11.drawCount = var12;
 				if (!var11.v3 || !class71.method475(0, var11)) {
 					if (var11.field3441 > 0) {
 						class16.method78(6479, var11);
@@ -242,14 +242,14 @@ public class class165 {
 							}
 							if (var11.field3441 == 1400) {
 								class104.method721((byte) 103, var11.field3382, var11.field3424, var13, var14);
-								class225.field4230[var12] = true;
+								class225.componentRedrawRequested1[var12] = true;
 								class211.field4007[var12] = true;
 								class72.method480(arg1, arg2, arg9, arg5);
 								continue;
 							}
 							if (var11.field3441 == 1401) {
 								class241.method1592(var14, var13, var11.field3382, var11.field3424, 128);
-								class225.field4230[var12] = true;
+								class225.componentRedrawRequested1[var12] = true;
 								class211.field4007[var12] = true;
 								class72.method480(arg1, arg2, arg9, arg5);
 								continue;
@@ -282,7 +282,7 @@ public class class165 {
 							if (var11.field3467 != null) {
 								method1133(var11.field3467, var23, var20, true, var12, var22, var13 - var11.field3395, -var11.field3417 + var14, var11.parentId, var21);
 							}
-							class168 var28 = (class168) class128.field2397.find((long) var11.parentId);
+							class168 var28 = (class168) class128.subinterfaces.find((long) var11.parentId);
 							if (var28 != null) {
 								if (var28.field3235 == 0 && var23 <= class28.field471 && var20 <= class239.field4451 && class28.field471 < var21 && class239.field4451 < var22 && !class108.field1960 && !class116.field2105) {
 									class53.field994[0] = 1007;
@@ -290,7 +290,7 @@ public class class165 {
 									class66.field1191[0] = class6.field76;
 									class201.field3838[0] = IfType.field3455;
 								}
-								class53.method393(var22, var28.field3231, (byte) -39, var20, var12, var14, var23, var13, var21);
+								class53.method393(var22, var28.id, (byte) -39, var20, var12, var14, var23, var13, var21);
 							}
 							class72.method480(arg1, arg2, arg9, arg5);
 							class173.method1237();
@@ -322,10 +322,10 @@ public class class165 {
 														var38 = Js5Local.method117(1, (byte) -127, var37, var11.field3476[var29], var11.field3466, 3153952);
 													}
 													if (class173.field3366) {
-														class225.field4230[var12] = true;
+														class225.componentRedrawRequested1[var12] = true;
 													}
 													if (var38 == null) {
-														class200.method1373(65280, var11);
+														class200.componentUpdated(var11);
 													} else if (class135.field2516 == var11 && class18.field305 == var29) {
 														int var39 = class28.field471 - class219.field4148;
 														int var40 = class239.field4451 - class48.field894;
@@ -354,7 +354,7 @@ public class class165 {
 																}
 																var41.field3417 -= var44;
 																class48.field894 += var44;
-																class200.method1373(65280, var41);
+																class200.componentUpdated(var41);
 															}
 															if (var32 + var40 + 32 > var42 && var41.scrollHeight - var41.field3424 > var41.field3417) {
 																int var45 = (var32 + var40 + 32 - var42) * class17.field261 / 3;
@@ -366,7 +366,7 @@ public class class165 {
 																}
 																var41.field3417 += var45;
 																class48.field894 -= var45;
-																class200.method1373(65280, var41);
+																class200.componentUpdated(var41);
 															}
 														}
 													} else if (class57.field1091 == var11 && class93.field1743 == var29) {
@@ -380,7 +380,7 @@ public class class165 {
 												if (var34 != null) {
 													var34.method1157(var33, var32);
 												} else if (class248.field4551) {
-													class200.method1373(65280, var11);
+													class200.componentUpdated(var11);
 												}
 											}
 											var29++;
@@ -448,7 +448,7 @@ public class class165 {
 										}
 										var47.method153(var48, var13, var14, var11.field3382, var11.field3424, var49, var11.shadow ? 0 : -1, var11.hAlign, var11.field3471, var11.field3398);
 									} else if (class248.field4551) {
-										class200.method1373(65280, var11);
+										class200.componentUpdated(var11);
 									}
 								} else if (var11.type == 5) {
 									if (var11.v3) {
@@ -490,14 +490,14 @@ public class class165 {
 												}
 											}
 										} else if (class248.field4551) {
-											class200.method1373(65280, var11);
+											class200.componentUpdated(var11);
 										}
 									} else {
 										class188 var59 = var11.method1251(class80.method533(-31987, var11), -108);
 										if (var59 != null) {
 											var59.method1157(var13, var14);
 										} else if (class248.field4551) {
-											class200.method1373(65280, var11);
+											class200.componentUpdated(var11);
 										}
 									}
 								} else if (var11.type == 6) {
@@ -516,12 +516,12 @@ public class class165 {
 											class149 var69 = var68.method1023(var11.field3484, 27676);
 											var62 = var69.method1027(1, 1, 0, null);
 											if (var62 == null) {
-												class200.method1373(65280, var11);
+												class200.componentUpdated(var11);
 											} else {
 												var61 = -var62.method88() / 2;
 											}
 										}
-									} else if (var11.field3432 == 5) {
+									} else if (var11.model1Type == 5) {
 										if (var11.model1Id == -1) {
 											var62 = class130.field2443.method1432(null, 1549114312, -1, -1, null);
 										} else {
@@ -532,19 +532,19 @@ public class class165 {
 											scene var66 = class244.field4493[var65];
 											SeqType var67 = var63 == -1 ? null : class15.method75(var63, (byte) -38);
 											if (var66 != null && (int) var66.name.method630(false) << 11 == (var11.model1Id & 0xFFFFF800)) {
-												var62 = var66.field768.method1432(null, 1549114312, var11.field3381, 0, var67);
+												var62 = var66.model.method1432(null, 1549114312, var11.field3381, 0, var67);
 											}
 										}
 									} else if (var63 == -1) {
-										var62 = var11.method1247(null, class240.field4458.field768, -1, var60, -3);
+										var62 = var11.method1247(null, class240.localPlayer.model, -1, var60, -3);
 										if (var62 == null && class248.field4551) {
-											class200.method1373(65280, var11);
+											class200.componentUpdated(var11);
 										}
 									} else {
 										SeqType var64 = class15.method75(var63, (byte) 98);
-										var62 = var11.method1247(var64, class240.field4458.field768, var11.field3381, var60, -3);
+										var62 = var11.method1247(var64, class240.localPlayer.model, var11.field3381, var60, -3);
 										if (var62 == null && class248.field4551) {
-											class200.method1373(65280, var11);
+											class200.componentUpdated(var11);
 										}
 									}
 									if (var62 != null) {
@@ -563,12 +563,12 @@ public class class165 {
 										int var72 = var11.field3382 / 2 + var13 + (var11.field3434 * var71 >> 8);
 										int var73 = (var11.field3407 * var70 >> 8) + var11.field3424 / 2 + var14;
 										class173.method1230(var72, var73);
-										int var74 = class173.field3356[var11.field3457] * var11.field3487 >> 16;
-										int var75 = class173.field3361[var11.field3457] * var11.field3487 >> 16;
+										int var74 = class173.field3356[var11.field3457] * var11.modelZoom >> 16;
+										int var75 = class173.field3361[var11.field3457] * var11.modelZoom >> 16;
 										if (!var11.v3) {
 											var62.method193(0, var11.field3511, 0, var11.field3457, 0, var75, var74);
 										} else if (var11.field3405) {
-											((class125) var62).method851(0, var11.field3511, var11.field3519, var11.field3457, var11.field3367, var75 + var11.field3500 + var61, var11.field3500 + var74, var11.field3487);
+											((class125) var62).method851(0, var11.field3511, var11.field3519, var11.field3457, var11.field3367, var75 + var11.field3500 + var61, var11.field3500 + var74, var11.modelZoom);
 										} else {
 											var62.method193(0, var11.field3511, var11.field3519, var11.field3457, var11.field3367, var61 + var75 + var11.field3500, var11.field3500 + var74);
 										}
@@ -579,7 +579,7 @@ public class class165 {
 										class26 var76 = var11.method1254(-2, class34.field587);
 										if (var76 == null) {
 											if (class248.field4551) {
-												class200.method1373(65280, var11);
+												class200.componentUpdated(var11);
 											}
 											continue;
 										}

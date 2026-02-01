@@ -23,7 +23,7 @@ public class class217 {
 	public static JString field4059 = field4072;
 
 	@OriginalMember(owner = "client!tj", name = "l", descriptor = "[I")
-	public static int[] field4068 = new int[25];
+	public static int[] statBaseLevel = new int[25];
 
 	@OriginalMember(owner = "client!tj", name = "a", descriptor = "I")
 	public static int field4057;
@@ -60,7 +60,7 @@ public class class217 {
 			field4071 = null;
 		}
 		field4059 = null;
-		field4068 = null;
+		statBaseLevel = null;
 		field4062 = null;
 		field4072 = null;
 		field4058 = null;

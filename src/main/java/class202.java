@@ -125,12 +125,12 @@ public class class202 {
 	@OriginalMember(owner = "client!sf", name = "d", descriptor = "(I)V")
 	public static final void method1387(int arg0) {
 		Client.overrideChat = 0;
-		int var1 = (class240.field4458.field4138 >> 7) + class223.field4214;
+		int var1 = (class240.localPlayer.field4138 >> 7) + class223.field4214;
 		if (arg0 != 0) {
 			method1387(18);
 		}
 		field3846++;
-		int var2 = (class240.field4458.field4123 >> 7) + class190.field3681;
+		int var2 = (class240.localPlayer.field4123 >> 7) + class190.field3681;
 		if (var1 >= 3053 && var1 <= 3156 && var2 >= 3056 && var2 <= 3136) {
 			Client.overrideChat = 1;
 		}

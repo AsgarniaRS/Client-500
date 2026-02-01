@@ -71,7 +71,7 @@ public class IntHashTable {
 					throw new IOException();
 				}
 				while (class203.field3878 < 20 && class208.pendingUrgentQueueSize > 0) {
-					class97 var4 = (class97) class241.pendingUrgentQueue.method1049(0);
+					class97 var4 = (class97) class241.pendingUrgentQueue.search(0);
 					Packet var5 = new Packet(4);
 					var5.p1(1);
 					var5.p3((int) var4.nodeId);
@@ -231,7 +231,7 @@ public class IntHashTable {
 
 	@OriginalMember(owner = "client!ja", name = "a", descriptor = "(B)V")
 	public static final void method690(byte arg0) {
-		class200.method1373(arg0 ^ 0xFFFF00E5, class179.field3570);
+		class200.componentUpdated(class179.field3570);
 		class227.field4258++;
 		field1813++;
 		if (class149.field2907 && class29.field487) {
@@ -350,7 +350,7 @@ public class IntHashTable {
 		int var16 = 0;
 		int var32 = var15 + 1;
 		class97.field1783[var15] = arg2;
-		int[][] var17 = class166.field3202[class149.minusedLevel].field1668;
+		int[][] var17 = class166.levelCollisionMap[class149.minusedLevel].flags;
 		boolean var18 = false;
 		while (var32 != var16) {
 			var14 = class97.field1783[var16];
@@ -361,16 +361,16 @@ public class IntHashTable {
 				break;
 			}
 			if (arg1 != 0) {
-				if ((arg1 < 5 || arg1 == 10) && class166.field3202[class149.minusedLevel].method641(var14, arg1 - 1, arg4, arg0, 1, arg6, var13, 120)) {
+				if ((arg1 < 5 || arg1 == 10) && class166.levelCollisionMap[class149.minusedLevel].method641(var14, arg1 - 1, arg4, arg0, 1, arg6, var13, 120)) {
 					var18 = true;
 					break;
 				}
-				if (arg1 < 10 && class166.field3202[class149.minusedLevel].method649(arg6, var13, arg1 - 1, (byte) 117, arg0, 1, var14, arg4)) {
+				if (arg1 < 10 && class166.levelCollisionMap[class149.minusedLevel].method649(arg6, var13, arg1 - 1, (byte) 117, arg0, 1, var14, arg4)) {
 					var18 = true;
 					break;
 				}
 			}
-			if (arg8 != 0 && arg5 != 0 && class166.field3202[class149.minusedLevel].method651(1, arg0, arg8, arg7 ^ 0x21CE, var14, arg5, var13, arg4, arg10)) {
+			if (arg8 != 0 && arg5 != 0 && class166.levelCollisionMap[class149.minusedLevel].method651(1, arg0, arg8, arg7 ^ 0x21CE, var14, arg5, var13, arg4, arg10)) {
 				var18 = true;
 				break;
 			}

@@ -174,7 +174,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
 							int var13 = (var10 / 8 << 8) + var12 / 8;
 							for (int var14 = 0; ~Isaac.field2733.length < ~var14; ++var14) {
 								if (~Isaac.field2733[var14] == ~var13 && var2[var14] != null) {
-									class64.method449(var5 * 8, 4, arg1, var11, (7 & var10) * 8, (7 & var12) * 8, class166.field3202, var9, var2[var14], var6 * 8, var4);
+									class64.method449(var5 * 8, 4, arg1, var11, (7 & var10) * 8, (7 & var12) * 8, class166.levelCollisionMap, var9, var2[var14], var6 * 8, var4);
 									var7 = true;
 									break;
 								}

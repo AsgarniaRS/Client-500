@@ -211,6 +211,6 @@ public class EnumType extends Linkable2 {
 			class200.method1375(var2, -876775538);
 		}
 		class10.field145 = false;
-		class200.method1373(65280, var1);
+		class200.componentUpdated(var1);
 	}
 }

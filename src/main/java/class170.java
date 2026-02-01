@@ -229,7 +229,7 @@ public class class170 extends class51 {
 	@OriginalMember(owner = "client!pg", name = "c", descriptor = "(I)V")
 	public final synchronized void method1182(int arg0) {
 		field3287++;
-		class204 var2 = (class204) this.field3254.method1049(0);
+		class204 var2 = (class204) this.field3254.search(0);
 		if (arg0 >= -69) {
 			this.method1188((byte) 30, -39);
 		}
@@ -263,7 +263,7 @@ public class class170 extends class51 {
 		if (arg3 < arg0) {
 			var6 = new int[]{arg0};
 		}
-		for (class153 var8 = (class153) arg2.patches.method1049(0); var8 != null; var8 = (class153) arg2.patches.method1050((byte) -73)) {
+		for (class153 var8 = (class153) arg2.patches.search(0); var8 != null; var8 = (class153) arg2.patches.method1050((byte) -73)) {
 			int var9 = (int) var8.nodeId;
 			class204 var10 = (class204) this.field3254.find((long) var9);
 			if (var10 == null) {
@@ -448,7 +448,7 @@ public class class170 extends class51 {
 
 	@OriginalMember(owner = "client!pg", name = "e", descriptor = "(I)V")
 	public final synchronized void method1189(int arg0) {
-		for (class204 var2 = (class204) this.field3254.method1049(arg0); var2 != null; var2 = (class204) this.field3254.method1050((byte) -73)) {
+		for (class204 var2 = (class204) this.field3254.search(arg0); var2 != null; var2 = (class204) this.field3254.method1050((byte) -73)) {
 			var2.method1406((byte) 114);
 		}
 		field3293++;

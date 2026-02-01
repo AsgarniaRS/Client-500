@@ -66,8 +66,8 @@ public class class192 extends Linkable {
 
 	@OriginalMember(owner = "client!rg", name = "a", descriptor = "()V")
 	public static final void method1333() {
-		int var0 = class62.field1148[class155.field2995];
-		class13[] var1 = class62.field1149[class155.field2995];
+		int var0 = class62.leveloccluderCount[class155.field2995];
+		class13[] var1 = class62.levelOccluders[class155.field2995];
 		class71.field1316 = 0;
 		label191:
 		for (int var2 = 0; var2 < var0; var2++) {

@@ -17,7 +17,7 @@ public class class116 extends class23 {
 	public static byte[][][] mapl = new byte[4][104][104];
 
 	@OriginalMember(owner = "client!kg", name = "eb", descriptor = "I")
-	public static int field2104 = 0;
+	public static int minimapFlagX = 0;
 
 	@OriginalMember(owner = "client!kg", name = "T", descriptor = "J")
 	public static volatile long field2093 = 0L;
@@ -103,13 +103,13 @@ public class class116 extends class23 {
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(BI)V")
 	public static final void method790(byte arg0, int arg1) {
-		if (arg1 == -1 && !class110.field2014) {
+		if (arg1 == -1 && !class110.playingJingle) {
 			class1.method5(31818);
-		} else if (~arg1 != 0 && (~class2.field25 != ~arg1 || !class102.method709(100)) && class65.field1183 != 0 && !class110.field2014) {
+		} else if (~arg1 != 0 && (~class2.previousSong != ~arg1 || !class102.method709(100)) && class65.field1183 != 0 && !class110.playingJingle) {
 			class106.method732(0, class65.field1183, false, arg1, 2, IntHashTable.field1816, 0);
 		}
 		++field2101;
-		class2.field25 = arg1;
+		class2.previousSong = arg1;
 		int var2 = -105 % ((4 - arg0) / 35);
 	}
 
@@ -120,9 +120,9 @@ public class class116 extends class23 {
 
 	@OriginalMember(owner = "client!kg", name = "f", descriptor = "(I)V")
 	public static final void method791(int arg0) {
-		if (~class114.field2063 < -2) {
-			--class114.field2063;
-			class208.field3954 = Linkable.field1211;
+		if (~class114.rebootTimer < -2) {
+			--class114.rebootTimer;
+			class208.miscTransmitNum = Linkable.transmitNum;
 		}
 		int var1 = 79 % ((arg0 - 33) / 50);
 		if (~class105.field1912 < -1) {
@@ -286,12 +286,12 @@ public class class116 extends class23 {
 						if (class57.field1091 != null) {
 							++class139.field2575;
 							if (class139.field2575 >= 15) {
-								class200.method1373(65280, class57.field1091);
+								class200.componentUpdated(class57.field1091);
 								class57.field1091 = null;
 							}
 						}
 						if (class135.field2516 != null) {
-							class200.method1373(65280, class135.field2516);
+							class200.componentUpdated(class135.field2516);
 							++class248.field4537;
 							if (~class28.field471 < ~(class219.field4148 + 5) || class219.field4148 - 5 > class28.field471 || ~class239.field4451 < ~(class48.field894 - -5) || ~(class48.field894 + -5) < ~class239.field4451) {
 								class43.field739 = true;
@@ -363,7 +363,7 @@ public class class116 extends class23 {
 						if (class43.field723 != -1) {
 							class230.method1535(0, class145.field2727, 0, 0, class222.field4194, 94, class43.field723, 0);
 						}
-						++Linkable.field1211;
+						++Linkable.transmitNum;
 						while (true) {
 							class39 var28;
 							IfType var29;
@@ -394,7 +394,7 @@ public class class116 extends class23 {
 															if (~class114.field2059 != 0) {
 																int var37 = class114.field2059;
 																int var38 = class90.field1715;
-																boolean var39 = class207.method1423(3044, 0, 0, var38, var37, class240.field4458.field4089[0], 0, 0, 0, true, 0, class240.field4458.field4143[0]);
+																boolean var39 = class207.method1423(3044, 0, 0, var38, var37, class240.localPlayer.field4089[0], 0, 0, 0, true, 0, class240.localPlayer.field4143[0]);
 																class114.field2059 = -1;
 																if (var39) {
 																	class147.field2759 = class226.field4241;
@@ -406,32 +406,32 @@ public class class116 extends class23 {
 															class50.method372((byte) -95);
 															if (class65.field1177 != var27) {
 																if (var27 != null) {
-																	class200.method1373(65280, var27);
+																	class200.componentUpdated(var27);
 																}
 																if (class65.field1177 != null) {
-																	class200.method1373(65280, class65.field1177);
+																	class200.componentUpdated(class65.field1177);
 																}
 															}
 															if (class36.field635 != var26 && ~Packet.field859 == ~class138.field2565) {
 																if (var26 != null) {
-																	class200.method1373(65280, var26);
+																	class200.componentUpdated(var26);
 																}
 																if (class36.field635 != null) {
-																	class200.method1373(65280, class36.field635);
+																	class200.componentUpdated(class36.field635);
 																}
 															}
 															if (class36.field635 != null) {
 																if (~class138.field2565 < ~Packet.field859) {
 																	++Packet.field859;
 																	if (~Packet.field859 == ~class138.field2565) {
-																		class200.method1373(65280, class36.field635);
+																		class200.componentUpdated(class36.field635);
 																	}
 																}
 															} else if (~Packet.field859 < -1) {
 																--Packet.field859;
 															}
 															class180.method1285(false);
-															if (class179.field3569) {
+															if (class179.cinemaCam) {
 																class239.method1579((byte) -128);
 															}
 															for (int var40 = 0; var40 < 5; ++var40) {

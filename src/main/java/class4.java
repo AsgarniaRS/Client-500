@@ -77,10 +77,10 @@ public class class4 extends Linkable2 {
 			pUid(null, (byte) 121);
 		}
 		int var11 = var4 * var10 + var5 * var9 >> 11;
-		int var12 = class240.field4458.field4138 + var11 >> 7;
+		int var12 = class240.localPlayer.field4138 + var11 >> 7;
 		int var13 = var4 * var9 - var5 * var10 >> 11;
-		int var14 = class240.field4458.field4123 - var13 >> 7;
-		boolean var15 = class207.method1423(arg2 ^ 0xFFFFD90B, 0, 0, var14, var12, class240.field4458.field4089[0], 0, 0, 1, true, 0, class240.field4458.field4143[0]);
+		int var14 = class240.localPlayer.field4123 - var13 >> 7;
+		boolean var15 = class207.method1423(arg2 ^ 0xFFFFD90B, 0, 0, var14, var12, class240.localPlayer.field4089[0], 0, 0, 1, true, 0, class240.localPlayer.field4143[0]);
 		if (!var15) {
 			return;
 		}
@@ -91,8 +91,8 @@ public class class4 extends Linkable2 {
 		Isaac.out.p1(Ground.field943);
 		Isaac.out.p1(class65.field1185);
 		Isaac.out.p1(89);
-		Isaac.out.p2(class240.field4458.field4138);
-		Isaac.out.p2(class240.field4458.field4123);
+		Isaac.out.p2(class240.localPlayer.field4138);
+		Isaac.out.p2(class240.localPlayer.field4123);
 		Isaac.out.p1(class120.tryMoveNearest);
 		Isaac.out.p1(63);
 	}
@@ -200,7 +200,7 @@ public class class4 extends Linkable2 {
 		}
 		if (class65.field1183 != 0 && arg1 != -1) {
 			class53.method388(0, class133.field2488, (byte) -116, false, arg1, class65.field1183);
-			class110.field2014 = true;
+			class110.playingJingle = true;
 		}
 	}
 

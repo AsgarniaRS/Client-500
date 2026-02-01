@@ -241,9 +241,9 @@ public class class230 {
 					if (var4.field3467 != null) {
 						method1538(arg0, false, var4.field3467);
 					}
-					class168 var5 = (class168) class128.field2397.find((long) var4.parentId);
+					class168 var5 = (class168) class128.subinterfaces.find((long) var4.parentId);
 					if (var5 != null) {
-						ClientStream.method914(var5.field3231, arg0, 4);
+						ClientStream.method914(var5.id, arg0, 4);
 					}
 				}
 				if (arg0 == 0 && var4.field3436 != null) {

@@ -64,7 +64,7 @@ public abstract class class29 {
 	public static final void method174(int arg0) {
 		Isaac.out.method30(24);
 		class71.field1329++;
-		class168 var1 = (class168) class128.field2397.method1049(0);
+		class168 var1 = (class168) class128.subinterfaces.search(0);
 		if (arg0 > -2) {
 			field493 = null;
 		}
@@ -72,10 +72,10 @@ public abstract class class29 {
 			if (var1.field3235 == 0) {
 				class93.method673((byte) -128, var1, true);
 			}
-			var1 = (class168) class128.field2397.method1050((byte) -73);
+			var1 = (class168) class128.subinterfaces.method1050((byte) -73);
 		}
 		if (class53.field967 != null) {
-			class200.method1373(65280, class53.field967);
+			class200.componentUpdated(class53.field967);
 			class53.field967 = null;
 		}
 		field492++;

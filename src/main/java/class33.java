@@ -197,7 +197,7 @@ public class class33 extends Linkable2 {
 	}
 
 	@OriginalMember(owner = "client!cj", name = "d", descriptor = "(I)V")
-	public static final void method210(int arg0) {
+	public static final void getPlayerPos(int arg0) {
 		field538++;
 		class223.field4198 = 0;
 		class192.field3704 = 0;

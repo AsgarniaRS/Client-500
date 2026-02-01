@@ -68,13 +68,9 @@ public class class200 {
 	public static class188 field3828;
 
 	@OriginalMember(owner = "client!sd", name = "a", descriptor = "(ILq;)V")
-	public static final void method1373(int arg0, IfType arg1) {
-		field3823++;
-		if (arg0 != 65280) {
-			field3815 = null;
-		}
-		if (class110.field2020 == arg1.field3373) {
-			class225.field4230[arg1.field3384] = true;
+	public static void componentUpdated(IfType com) {
+		if (class110.componentDrawTime == com.drawTime) {
+			class225.componentRedrawRequested1[com.drawCount] = true;
 		}
 	}
 

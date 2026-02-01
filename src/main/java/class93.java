@@ -58,7 +58,7 @@ public class class93 {
 	@OriginalMember(owner = "client!ie", name = "a", descriptor = "(BLpe;Z)V")
 	public static final void method673(byte arg0, class168 arg1, boolean arg2) {
 		field1736++;
-		int var3 = arg1.field3231;
+		int var3 = arg1.id;
 		int var4 = (int) arg1.nodeId;
 		arg1.unlink();
 		if (arg2) {
@@ -70,7 +70,7 @@ public class class93 {
 		class14.method70(-13897, var3);
 		IfType var5 = IfType.get(-64, var4);
 		if (var5 != null) {
-			class200.method1373(65280, var5);
+			class200.componentUpdated(var5);
 		}
 		class203.field3864 = 0;
 		class108.field1960 = false;

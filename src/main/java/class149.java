@@ -124,7 +124,7 @@ public class class149 extends Linkable2 {
 	public static boolean field2907 = false;
 
 	@OriginalMember(owner = "client!ng", name = "Xb", descriptor = "[Ljj;")
-	public static class108[] field2908 = new class108[5000];
+	public static class108[] dynamicSprites = new class108[5000];
 
 	@OriginalMember(owner = "client!ng", name = "N", descriptor = "I")
 	public int field2846;
@@ -378,7 +378,7 @@ public class class149 extends Linkable2 {
 	@OriginalMember(owner = "client!ng", name = "d", descriptor = "(I)V")
 	public static void method1014(int arg0) {
 		incomingBuffer = null;
-		field2908 = null;
+		dynamicSprites = null;
 		field2858 = null;
 		if (arg0 > -65) {
 			field2897 = null;

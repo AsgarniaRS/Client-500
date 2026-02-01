@@ -64,8 +64,8 @@ public class class164 implements class198 {
 	@OriginalMember(owner = "client!pa", name = "a", descriptor = "(ZB)V")
 	public static final void method1130(boolean arg0, byte arg1) {
 		field3142++;
-		if (class240.field4458.field4138 >> 7 == class116.field2104 && class240.field4458.field4123 >> 7 == class140.field2596) {
-			class116.field2104 = 0;
+		if (class240.localPlayer.field4138 >> 7 == class116.minimapFlagX && class240.localPlayer.field4123 >> 7 == class140.field2596) {
+			class116.minimapFlagX = 0;
 		}
 		int var2 = class55.field1027;
 		if (arg0) {
@@ -80,7 +80,7 @@ public class class164 implements class198 {
 			long var5;
 			if (arg0) {
 				var5 = 8791798054912L;
-				var4 = class240.field4458;
+				var4 = class240.localPlayer;
 			} else {
 				var4 = class244.field4493[IfType.field3430[var3]];
 				var5 = (long) IfType.field3430[var3] << 32;

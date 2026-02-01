@@ -1001,7 +1001,7 @@ public class JString implements class187 {
 			var3.field4125 = var3.field3684.walkanim_b;
 			var3.field4094 = var3.field3684.walkanim;
 			var3.field4130 = var3.field3684.turnrightanim;
-			var3.teleport(var4 == 1, class240.field4458.field4089[0] + var5, arg0 ^ 0x7978, class240.field4458.field4143[0] + var8);
+			var3.teleport(var4 == 1, class240.localPlayer.field4089[0] + var5, arg0 ^ 0x7978, class240.localPlayer.field4143[0] + var8);
 		}
 		class230.in.method35(8);
 	}

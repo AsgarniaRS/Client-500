@@ -179,9 +179,9 @@ public class class103 extends class50 {
 						if (var4.field3467 != null) {
 							method716(var4.parentId, (byte) 127, var4.field3467);
 						}
-						class168 var5 = (class168) class128.field2397.find((long) var4.parentId);
+						class168 var5 = (class168) class128.subinterfaces.find((long) var4.parentId);
 						if (var5 != null) {
-							class217.method1473(var5.field3231, -119);
+							class217.method1473(var5.id, -119);
 						}
 					}
 					if (~var4.type == -7) {
@@ -206,19 +206,19 @@ public class class103 extends class50 {
 												var4.field3381 = 0;
 											}
 										}
-										class200.method1373(65280, var4);
+										class200.componentUpdated(var4);
 									}
 								}
 							}
 						}
-						if (~var4.field3387 != -1 && !var4.v3) {
-							int var9 = var4.field3387 << 16 >> 16;
-							int var10 = var4.field3387 >> 16;
+						if (~var4.modelSpin != -1 && !var4.v3) {
+							int var9 = var4.modelSpin << 16 >> 16;
+							int var10 = var4.modelSpin >> 16;
 							int var11 = class17.field261 * var10;
 							var4.field3457 = 2047 & var4.field3457 + var11;
 							int var12 = class17.field261 * var9;
 							var4.field3511 = 2047 & var4.field3511 + var12;
-							class200.method1373(65280, var4);
+							class200.componentUpdated(var4);
 						}
 					}
 				}

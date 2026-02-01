@@ -165,7 +165,7 @@ public class class135 extends class23 {
 			if (arg0 >= -36) {
 				field2514 = -46;
 			}
-			return arg1.equalsIgnoreCase(class240.field4458.name);
+			return arg1.equalsIgnoreCase(class240.localPlayer.name);
 		}
 	}
 
@@ -550,7 +550,7 @@ public class class135 extends class23 {
 						} else {
 							class129.field2428 = var51;
 						}
-						class200.method1373(65280, var48);
+						class200.componentUpdated(var48);
 						continue;
 					}
 					if (~opcode == -102) {
@@ -563,14 +563,14 @@ public class class135 extends class23 {
 						}
 						IfType var53 = IfType.get(-64, var52.parentId);
 						var53.field3467[var52.field3408] = null;
-						class200.method1373(65280, var53);
+						class200.componentUpdated(var53);
 						continue;
 					}
 					if (opcode == 102) {
 						--isp;
 						IfType var54 = IfType.get(-64, class108.intStack[isp]);
 						var54.field3467 = null;
-						class200.method1373(65280, var54);
+						class200.componentUpdated(var54);
 						continue;
 					}
 					if (opcode == 200) {
@@ -618,7 +618,7 @@ public class class135 extends class23 {
 								} else {
 									var60 = secondary ? class203.field3873 : class129.field2428;
 								}
-								class200.method1373(65280, var60);
+								class200.componentUpdated(var60);
 								if (opcode == 1200 || ~opcode == -1206) {
 									isp -= 2;
 									int var61 = class108.intStack[isp + 1];
@@ -626,7 +626,7 @@ public class class135 extends class23 {
 									if (~var62 == 0) {
 										var60.field3401 = -1;
 										var60.model1Id = -1;
-										var60.field3432 = 1;
+										var60.model1Type = 1;
 									} else {
 										var60.field3401 = var62;
 										var60.field3484 = var61;
@@ -641,34 +641,34 @@ public class class135 extends class23 {
 										}
 										var60.field3457 = var63.field2875;
 										var60.field3519 = var63.field2849;
-										var60.field3487 = var63.field2891;
+										var60.modelZoom = var63.field2891;
 										if (var60.field3470 > 0) {
-											var60.field3487 = var60.field3487 * 32 / var60.field3470;
+											var60.modelZoom = var60.modelZoom * 32 / var60.field3470;
 										} else if (~var60.height < -1) {
-											var60.field3487 = var60.field3487 * 32 / var60.height;
+											var60.modelZoom = var60.modelZoom * 32 / var60.height;
 										}
 									}
 									continue;
 								}
 								if (~opcode == -1202) {
-									var60.field3432 = 2;
+									var60.model1Type = 2;
 									--isp;
 									var60.model1Id = class108.intStack[isp];
 									continue;
 								}
 								if (opcode == 1202) {
-									var60.field3432 = 3;
-									var60.model1Id = class240.field4458.field768.method1429(108);
+									var60.model1Type = 3;
+									var60.model1Id = class240.localPlayer.model.method1429();
 									continue;
 								}
 								if (opcode == 1203) {
-									var60.field3432 = 6;
+									var60.model1Type = 6;
 									--isp;
 									var60.model1Id = class108.intStack[isp];
 									continue;
 								}
 								if (opcode == 1204) {
-									var60.field3432 = 5;
+									var60.model1Type = 5;
 									--isp;
 									var60.model1Id = class108.intStack[isp];
 									continue;
@@ -848,7 +848,7 @@ public class class135 extends class23 {
 										continue;
 									}
 									if (~opcode == -1606) {
-										class108.intStack[isp++] = var72.field3487;
+										class108.intStack[isp++] = var72.modelZoom;
 										continue;
 									}
 									if (~opcode == -1607) {
@@ -961,7 +961,7 @@ public class class135 extends class23 {
 										continue;
 									}
 									if (~opcode == -2606) {
-										class108.intStack[isp++] = var77.field3487;
+										class108.intStack[isp++] = var77.modelZoom;
 										continue;
 									}
 									if (~opcode == -2607) {
@@ -1218,7 +1218,7 @@ public class class135 extends class23 {
 													if (opcode == 3624) {
 														--isp;
 														int var98 = class108.intStack[isp];
-														if (JString.field1647 != null && EnumType.field885 > var98 && JString.field1647[var98].field1323.equalsIgnoreCase(class240.field4458.name)) {
+														if (JString.field1647 != null && EnumType.field885 > var98 && JString.field1647[var98].field1323.equalsIgnoreCase(class240.localPlayer.name)) {
 															class108.intStack[isp++] = 1;
 															continue;
 														}
@@ -1866,8 +1866,8 @@ public class class135 extends class23 {
 																}
 																if (~opcode == -5016) {
 																	JString var205;
-																	if (class240.field4458 != null && class240.field4458.name != null) {
-																		var205 = class240.field4458.name;
+																	if (class240.localPlayer != null && class240.localPlayer.name != null) {
+																		var205 = class240.localPlayer.name;
 																	} else {
 																		var205 = class209.field3969;
 																	}
@@ -2227,7 +2227,7 @@ public class class135 extends class23 {
 														ssp -= 2;
 														JString var268 = class171.stringStack[ssp];
 														JString var269 = class171.stringStack[ssp + 1];
-														if (class240.field4458.field768 != null && class240.field4458.field768.field3959) {
+														if (class240.localPlayer.model != null && class240.localPlayer.model.field3959) {
 															class171.stringStack[ssp++] = var269;
 															continue;
 														}
@@ -2458,25 +2458,25 @@ public class class135 extends class23 {
 											if (opcode == 3305) {
 												--isp;
 												int var322 = class108.intStack[isp];
-												class108.intStack[isp++] = class105.field1909[var322];
+												class108.intStack[isp++] = class105.statEffectiveLevel[var322];
 												continue;
 											}
 											if (opcode == 3306) {
 												--isp;
 												int var323 = class108.intStack[isp];
-												class108.intStack[isp++] = class217.field4068[var323];
+												class108.intStack[isp++] = class217.statBaseLevel[var323];
 												continue;
 											}
 											if (~opcode == -3308) {
 												--isp;
 												int var324 = class108.intStack[isp];
-												class108.intStack[isp++] = class179.field3564[var324];
+												class108.intStack[isp++] = class179.statXP[var324];
 												continue;
 											}
 											if (~opcode == -3309) {
 												int var325 = class149.minusedLevel;
-												int var326 = (class240.field4458.field4123 >> 7) + class190.field3681;
-												int var327 = (class240.field4458.field4138 >> 7) + class223.field4214;
+												int var326 = (class240.localPlayer.field4123 >> 7) + class190.field3681;
+												int var327 = (class240.localPlayer.field4138 >> 7) + class223.field4214;
 												class108.intStack[isp++] = (var325 << 28) + (var327 << 14) + var326;
 												continue;
 											}
@@ -2532,7 +2532,7 @@ public class class135 extends class23 {
 												continue;
 											}
 											if (~opcode == -3318) {
-												class108.intStack[isp++] = class114.field2063;
+												class108.intStack[isp++] = class114.rebootTimer;
 												continue;
 											}
 											if (opcode == 3318) {
@@ -2572,11 +2572,11 @@ public class class135 extends class23 {
 												continue;
 											}
 											if (opcode == 3326) {
-												class108.intStack[isp++] = class240.field4458.combatLevel;
+												class108.intStack[isp++] = class240.localPlayer.combatLevel;
 												continue;
 											}
 											if (~opcode == -3328) {
-												class108.intStack[isp++] = class240.field4458.field768.field3959 ? 1 : 0;
+												class108.intStack[isp++] = class240.localPlayer.model.field3959 ? 1 : 0;
 												continue;
 											}
 											if (~opcode == -3329) {
@@ -2597,7 +2597,7 @@ public class class135 extends class23 {
 										}
 										if (~opcode == -3102) {
 											isp -= 2;
-											class226.method1517((byte) -31, class108.intStack[isp], class108.intStack[isp + 1], class240.field4458);
+											class226.method1517((byte) -31, class108.intStack[isp], class108.intStack[isp + 1], class240.localPlayer);
 											continue;
 										}
 										if (opcode == 3103) {
@@ -2687,7 +2687,7 @@ public class class135 extends class23 {
 									if (~opcode == -2703) {
 										--isp;
 										int var354 = class108.intStack[isp];
-										class168 var355 = (class168) class128.field2397.find((long) var354);
+										class168 var355 = (class168) class128.subinterfaces.find((long) var354);
 										if (var355 == null) {
 											class108.intStack[isp++] = 0;
 										} else {
@@ -2716,8 +2716,8 @@ public class class135 extends class23 {
 										isp -= 2;
 										int var359 = class108.intStack[isp];
 										int var360 = class108.intStack[isp - -1];
-										class168 var361 = (class168) class128.field2397.find((long) var359);
-										if (var361 != null && var361.field3231 == var360) {
+										class168 var361 = (class168) class128.subinterfaces.find((long) var359);
+										if (var361 != null && var361.id == var360) {
 											class108.intStack[isp++] = 1;
 											continue;
 										}
@@ -2807,56 +2807,56 @@ public class class135 extends class23 {
 								if (var366.field3417 < 0) {
 									var366.field3417 = 0;
 								}
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1102) {
 								--isp;
 								var366.colour = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1103) {
 								--isp;
 								var366.fill = class108.intStack[isp] == 1;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1103) {
 								--isp;
 								var366.trans = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1104) {
 								--isp;
 								var366.lineWidth = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1106) {
 								--isp;
 								var366.field3475 = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1107) {
 								--isp;
 								var366.field3439 = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1107) {
 								--isp;
 								var366.field3422 = class108.intStack[isp] == 1;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1108) {
-								var366.field3432 = 1;
+								var366.model1Type = 1;
 								--isp;
 								var366.model1Id = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1110) {
@@ -2866,8 +2866,8 @@ public class class135 extends class23 {
 								var366.field3457 = class108.intStack[isp - -2];
 								var366.field3511 = class108.intStack[isp + 3];
 								var366.field3519 = class108.intStack[isp - -4];
-								var366.field3487 = class108.intStack[isp - -5];
-								class200.method1373(65280, var366);
+								var366.modelZoom = class108.intStack[isp - -5];
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1110) {
@@ -2877,14 +2877,14 @@ public class class135 extends class23 {
 									var366.field3489 = 0;
 									var366.modelAnim = var367;
 									var366.field3381 = 0;
-									class200.method1373(65280, var366);
+									class200.componentUpdated(var366);
 								}
 								continue;
 							}
 							if (~opcode == -1112) {
 								--isp;
 								var366.field3405 = class108.intStack[isp] == 1;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1113) {
@@ -2892,14 +2892,14 @@ public class class135 extends class23 {
 								JString var368 = class171.stringStack[ssp];
 								if (!var368.method597(-110, var366.text)) {
 									var366.text = var368;
-									class200.method1373(65280, var366);
+									class200.componentUpdated(var366);
 								}
 								continue;
 							}
 							if (opcode == 1113) {
 								--isp;
 								var366.font = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1114) {
@@ -2907,58 +2907,58 @@ public class class135 extends class23 {
 								var366.hAlign = class108.intStack[isp];
 								var366.field3471 = class108.intStack[isp + 1];
 								var366.field3398 = class108.intStack[isp + 2];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1116) {
 								--isp;
 								var366.shadow = class108.intStack[isp] == 1;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1116) {
 								--isp;
 								var366.field3431 = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (~opcode == -1118) {
 								--isp;
 								var366.field3427 = class108.intStack[isp];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1118) {
 								--isp;
 								var366.field3389 = ~class108.intStack[isp] == -2;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1119) {
 								--isp;
 								var366.field3485 = class108.intStack[isp] == 1;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 							if (opcode == 1120) {
 								isp -= 2;
 								var366.field3386 = class108.intStack[isp];
 								var366.scrollHeight = class108.intStack[isp - -1];
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								if (~var366.type == -1) {
 									class110.method761(false, var366, (byte) 13);
 								}
 								continue;
 							}
 							if (opcode == 1121) {
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								--isp;
 								continue;
 							}
 							if (~opcode == -1123) {
 								--isp;
 								var366.field3479 = ~class108.intStack[isp] == -2;
-								class200.method1373(65280, var366);
+								class200.componentUpdated(var366);
 								continue;
 							}
 						}
@@ -2977,7 +2977,7 @@ public class class135 extends class23 {
 							var369.field3368 = var369.field3393 = class108.intStack[isp];
 							var369.field3453 = 0;
 							var369.field3443 = var369.field3516 = class108.intStack[isp + 1];
-							class200.method1373(65280, var369);
+							class200.componentUpdated(var369);
 							continue;
 						}
 						if (opcode == 1001) {
@@ -2988,7 +2988,7 @@ public class class135 extends class23 {
 							var369.field3396 = 0;
 							var369.field3424 = var369.width = class108.intStack[isp + 1];
 							var369.field3419 = 0;
-							class200.method1373(65280, var369);
+							class200.componentUpdated(var369);
 							if (var369.type == 0) {
 								class110.method761(false, var369, (byte) 120);
 							}
@@ -3000,7 +3000,7 @@ public class class135 extends class23 {
 							boolean var370 = ~class108.intStack[isp] == -2;
 							if (!var369.hide != !var370) {
 								var369.hide = var370;
-								class200.method1373(65280, var369);
+								class200.componentUpdated(var369);
 							}
 							continue;
 						}
@@ -3022,7 +3022,7 @@ public class class135 extends class23 {
 								var371 = 2;
 							}
 							var369.field3369 = (byte) (var371 + 3);
-							class200.method1373(65280, var369);
+							class200.componentUpdated(var369);
 							class2.method10(var369, (byte) 102);
 							continue;
 						}
@@ -3032,7 +3032,7 @@ public class class135 extends class23 {
 							var369.field3393 = class108.intStack[isp];
 							var369.field3453 = 2;
 							var369.field3516 = class108.intStack[isp - -1];
-							class200.method1373(65280, var369);
+							class200.componentUpdated(var369);
 							if (~var369.type == -1) {
 								class110.method761(false, var369, (byte) -117);
 							}
@@ -3048,20 +3048,20 @@ public class class135 extends class23 {
 							var373 -= 7;
 						}
 						int var374 = class108.intStack[isp + 1];
-						class240.field4458.field768.method1437(var373, (byte) -47, var374);
+						class240.localPlayer.model.method1437(var373, (byte) -47, var374);
 						continue;
 					}
 					if (~opcode == -405) {
 						isp -= 2;
 						int var375 = class108.intStack[isp + 1];
 						int var376 = class108.intStack[isp];
-						class240.field4458.field768.method1434((byte) -95, var375, var376);
+						class240.localPlayer.model.method1434((byte) -95, var375, var376);
 						continue;
 					}
 					if (~opcode == -411) {
 						--isp;
 						boolean var377 = ~class108.intStack[isp] != -1;
-						class240.field4458.field768.method1436(11, var377);
+						class240.localPlayer.model.method1436(11, var377);
 						continue;
 					}
 				}

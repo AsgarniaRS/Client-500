@@ -88,7 +88,7 @@ public class HashTable {
 	public static int[][][] field2981;
 
 	@OriginalMember(owner = "client!ob", name = "a", descriptor = "(I)Lg;")
-	public final Linkable method1049(int arg0) {
+	public final Linkable search(int arg0) {
 		this.field2991 = arg0;
 		field2967++;
 		return this.method1050((byte) -73);

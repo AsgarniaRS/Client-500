@@ -118,22 +118,22 @@ public class class236 extends class27 {
 		if (class238.ptype == 239) {
 			int var2 = class230.in.g4();
 			int var3 = class230.in.g4();
-			class168 var4 = (class168) class128.field2397.find((long) var2);
-			class168 var5 = (class168) class128.field2397.find((long) var3);
+			class168 var4 = (class168) class128.subinterfaces.find((long) var2);
+			class168 var5 = (class168) class128.subinterfaces.find((long) var3);
 			if (var5 != null) {
-				class93.method673((byte) -124, var5, var4 == null || var4.field3231 != var5.field3231);
+				class93.method673((byte) -124, var5, var4 == null || var4.id != var5.id);
 			}
 			if (var4 != null) {
 				var4.unlink();
-				class128.field2397.put((long) var3, var4, -1);
+				class128.subinterfaces.put((long) var3, var4, -1);
 			}
 			IfType var6 = IfType.get(-64, var2);
 			if (var6 != null) {
-				class200.method1373(65280, var6);
+				class200.componentUpdated(var6);
 			}
 			IfType var7 = IfType.get(-64, var3);
 			if (var7 != null) {
-				class200.method1373(65280, var7);
+				class200.componentUpdated(var7);
 				class110.method761(true, var7, (byte) -111);
 			}
 			if (class43.field723 != -1) {
@@ -150,7 +150,7 @@ public class class236 extends class27 {
 			var11.field3443 = var11.field3516 = var10;
 			var11.field3369 = 0;
 			var11.field3368 = var11.field3393 = var9;
-			class200.method1373(65280, var11);
+			class200.componentUpdated(var11);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 79) {
@@ -167,15 +167,15 @@ public class class236 extends class27 {
 				class192.method1336(86, false);
 				Isaac.method974((byte) -113, class43.field723);
 				for (int var15 = 0; var15 < 100; var15++) {
-					class225.field4230[var15] = true;
+					class225.componentRedrawRequested1[var15] = true;
 				}
 			}
 			while (var14-- > 0) {
 				int var24 = class230.in.g4();
 				int var25 = class230.in.g2();
 				int var26 = class230.in.g1();
-				class168 var27 = (class168) class128.field2397.find((long) var24);
-				if (var27 != null && var27.field3231 != var25) {
+				class168 var27 = (class168) class128.subinterfaces.find((long) var24);
+				if (var27 != null && var27.id != var25) {
 					class93.method673((byte) -121, var27, true);
 					var27 = null;
 				}
@@ -184,7 +184,7 @@ public class class236 extends class27 {
 				}
 				var27.field3237 = true;
 			}
-			for (class168 var16 = (class168) class128.field2397.method1049(0); var16 != null; var16 = (class168) class128.field2397.method1050((byte) -73)) {
+			for (class168 var16 = (class168) class128.subinterfaces.search(0); var16 != null; var16 = (class168) class128.subinterfaces.method1050((byte) -73)) {
 				if (var16.field3237) {
 					var16.field3237 = false;
 				} else {
@@ -205,7 +205,7 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 192) {
-			class179.field3569 = true;
+			class179.cinemaCam = true;
 			class135.field2514 = class230.in.g1();
 			class171.field3329 = class230.in.g1();
 			class70.field1264 = class230.in.g2();
@@ -251,9 +251,9 @@ public class class236 extends class27 {
 				class177.set(1, var29, var35, var33, var34 - 1);
 			}
 			if (var30 != null) {
-				class200.method1373(65280, var30);
+				class200.componentUpdated(var30);
 			}
-			class127.method869((byte) 125);
+			class127.legacyUpdated();
 			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(32767, var29);
 			class238.ptype = -1;
 			return true;
@@ -366,40 +366,41 @@ public class class236 extends class27 {
 				class9.field140[var71] = new class131(class230.in);
 			}
 			class238.ptype = -1;
-			class117.field2129 = Linkable.field1211;
+			class117.field2129 = Linkable.transmitNum;
 			return true;
 		} else if (class238.ptype == 213) {
-			int var72 = class230.in.g1();
+			// HINT_ARROW
+			int hintType = class230.in.g1();
 			class118 var73 = new class118();
-			int var74 = var72 >> 6;
-			var73.field2141 = var72 & 0x3F;
+			int var74 = hintType >> 6;
+			var73.hintType = hintType & 0x3F;
 			var73.field2139 = class230.in.g1();
 			if (var73.field2139 >= 0 && var73.field2139 < class176.field3545.length) {
-				if (var73.field2141 == 1 || var73.field2141 == 10) {
+				if (var73.hintType == 1 || var73.hintType == 10) {
 					var73.field2148 = class230.in.g2();
 					class230.in.pos += 3;
-				} else if (var73.field2141 >= 2 && var73.field2141 <= 6) {
-					if (var73.field2141 == 2) {
-						var73.field2136 = 64;
-						var73.field2152 = 64;
+				} else if (var73.hintType >= 2 && var73.hintType <= 6) {
+					if (var73.hintType == 2) {
+						var73.hintOffsetX = 64;
+						var73.hintOffsetZ = 64;
 					}
-					if (var73.field2141 == 3) {
-						var73.field2136 = 0;
-						var73.field2152 = 64;
+					if (var73.hintType == 3) {
+						var73.hintOffsetX = 0;
+						var73.hintOffsetZ = 64;
 					}
-					if (var73.field2141 == 4) {
-						var73.field2136 = 128;
-						var73.field2152 = 64;
+					if (var73.hintType == 4) {
+						var73.hintOffsetX = 128;
+						var73.hintOffsetZ = 64;
 					}
-					if (var73.field2141 == 5) {
-						var73.field2136 = 64;
-						var73.field2152 = 0;
+					if (var73.hintType == 5) {
+						var73.hintOffsetX = 64;
+						var73.hintOffsetZ = 0;
 					}
-					if (var73.field2141 == 6) {
-						var73.field2152 = 128;
-						var73.field2136 = 64;
+					if (var73.hintType == 6) {
+						var73.hintOffsetZ = 128;
+						var73.hintOffsetX = 64;
 					}
-					var73.field2141 = 2;
+					var73.hintType = 2;
 					var73.field2140 = class230.in.g2();
 					var73.field2137 = class230.in.g2();
 					var73.field2153 = class230.in.g1();
@@ -434,9 +435,10 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 253) {
-			class179.field3569 = false;
-			for (int var83 = 0; var83 < 5; var83++) {
-				class233.field4370[var83] = false;
+			// CAM_RESET
+			class179.cinemaCam = false;
+			for (int i = 0; i < 5; i++) {
+				class233.camShake[i] = false;
 			}
 			class238.ptype = -1;
 			return true;
@@ -446,12 +448,14 @@ public class class236 extends class27 {
 			IfType var86 = IfType.get(-64, var84);
 			if (!var85.method597(-113, var86.text)) {
 				var86.text = var85;
-				class200.method1373(65280, var86);
+				class200.componentUpdated(var86);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 19) {
-			class60.method432(0);
+			// NPC_INFO
+			class60.getNpcPos(0);
+
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 205) {
@@ -499,7 +503,7 @@ public class class236 extends class27 {
 							class143.field2633 = var91;
 						}
 						class238.ptype = -1;
-						class77.field1394 = Linkable.field1211;
+						class77.field1394 = Linkable.transmitNum;
 						return true;
 					}
 					if (var99 < 0) {
@@ -523,7 +527,7 @@ public class class236 extends class27 {
 				}
 			}
 			class238.ptype = -1;
-			class77.field1394 = Linkable.field1211;
+			class77.field1394 = Linkable.transmitNum;
 			return true;
 		} else if (class238.ptype == 235) {
 			class218.field4136 = class230.in.gjstr();
@@ -531,16 +535,17 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 26) {
+			// IF_SETNPCHEAD
 			int var101 = class230.in.method320(3);
 			int var102 = class230.in.g2_alt3(255);
 			if (var102 == 65535) {
 				var102 = -1;
 			}
 			IfType var103 = IfType.get(-64, var101);
-			if (var103.field3432 != 2 || var103.model1Id != var102) {
+			if (var103.model1Type != 2 || var103.model1Id != var102) {
 				var103.model1Id = var102;
-				var103.field3432 = 2;
-				class200.method1373(65280, var103);
+				var103.model1Type = 2;
+				class200.componentUpdated(var103);
 			}
 			class238.ptype = -1;
 			return true;
@@ -553,26 +558,29 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 191) {
+			// IF_SETHIDE
 			boolean var104 = class230.in.g1_alt2() == 1;
 			int var105 = class230.in.g4_alt3();
 			IfType var106 = IfType.get(-64, var105);
 			if (var104 != var106.hide) {
 				var106.hide = var104;
-				class200.method1373(65280, var106);
+				class200.componentUpdated(var106);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 200) {
+			// UPDATE_INV_STOP_TRANSMIT
 			int var107 = class230.in.g4_alt3();
 			IfType var108 = IfType.get(-64, var107);
 			for (int var109 = 0; var109 < var108.field3390.length; var109++) {
 				var108.field3390[var109] = -1;
 				var108.field3390[var109] = 0;
 			}
-			class200.method1373(65280, var108);
+			class200.componentUpdated(var108);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 139) {
+			// IF_SETOBJECT
 			int var110 = class230.in.g4_alt3();
 			int var111 = class230.in.g4_alt3();
 			int var112 = class230.in.g2_alt2();
@@ -585,29 +593,29 @@ public class class236 extends class27 {
 				var113.field3484 = var111;
 				class149 var114 = class71.method472(var112, (byte) -99);
 				var113.field3500 = var114.field2872;
-				var113.field3487 = var114.field2891;
+				var113.modelZoom = var114.field2891;
 				var113.field3511 = var114.field2874;
 				var113.field3457 = var114.field2875;
 				var113.field3367 = var114.field2878;
 				var113.field3519 = var114.field2849;
 				if (var113.field3470 > 0) {
-					var113.field3487 = var113.field3487 * 32 / var113.field3470;
+					var113.modelZoom = var113.modelZoom * 32 / var113.field3470;
 				} else if (var113.height > 0) {
-					var113.field3487 = var113.field3487 * 32 / var113.height;
+					var113.modelZoom = var113.modelZoom * 32 / var113.height;
 				}
-				class200.method1373(65280, var113);
+				class200.componentUpdated(var113);
 			} else if (var112 == -1) {
 				class238.ptype = -1;
-				var113.field3432 = 0;
+				var113.model1Type = 0;
 				return true;
 			} else {
 				class149 var115 = class71.method472(var112, (byte) -112);
-				var113.field3487 = var115.field2891 * 100 / var111;
+				var113.modelZoom = var115.field2891 * 100 / var111;
 				var113.field3511 = var115.field2874;
-				var113.field3432 = 4;
+				var113.model1Type = 4;
 				var113.field3457 = var115.field2875;
 				var113.model1Id = var112;
-				class200.method1373(65280, var113);
+				class200.componentUpdated(var113);
 			}
 			class238.ptype = -1;
 			return true;
@@ -664,7 +672,7 @@ public class class236 extends class27 {
 				int var133 = var127 & 0xFFFF;
 				scene var134;
 				if (class220.localPid == var133) {
-					var134 = class240.field4458;
+					var134 = class240.localPlayer;
 				} else {
 					var134 = class244.field4493[var133];
 				}
@@ -690,7 +698,7 @@ public class class236 extends class27 {
 				class95.field1765[var141] = class230.in.method321(1054632416);
 				Isaac.field2743[var141] = class200.method1377(class95.field1765[var141], (byte) 90);
 			}
-			class20.field313 = Linkable.field1211;
+			class20.field313 = Linkable.transmitNum;
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 22) {
@@ -698,12 +706,13 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 221) {
+			// CAM_SHAKE
 			int var142 = class230.in.g1();
 			int var143 = class230.in.g1();
 			int var144 = class230.in.g1();
 			int var145 = class230.in.g1();
 			int var146 = class230.in.g2();
-			class233.field4370[var142] = true;
+			class233.camShake[var142] = true;
 			class201.field3836[var142] = var143;
 			class66.field1194[var142] = var144;
 			class194.field3716[var142] = var145;
@@ -715,9 +724,9 @@ public class class236 extends class27 {
 			int var147 = class230.in.g1();
 			int var148 = class230.in.g2_alt3(255);
 			if (var147 == 1) {
-				class85.method579();
+				class85.resetMap();
 				for (int var149 = 0; var149 < 4; var149++) {
-					class166.field3202[var149].method644((byte) 15);
+					class166.levelCollisionMap[var149].reset();
 				}
 				System.gc();
 			} else if (var147 == 2) {
@@ -730,7 +739,7 @@ public class class236 extends class27 {
 			class192.method1336(100, false);
 			Isaac.method974((byte) -84, class43.field723);
 			for (int var150 = 0; var150 < 100; var150++) {
-				class225.field4230[var150] = true;
+				class225.componentRedrawRequested1[var150] = true;
 			}
 			class238.ptype = -1;
 			return true;
@@ -776,7 +785,7 @@ public class class236 extends class27 {
 				GZip.field1120[Isaac.field2731] = var153;
 				Isaac.field2731++;
 			}
-			class20.field313 = Linkable.field1211;
+			class20.field313 = Linkable.transmitNum;
 			int var160 = Isaac.field2731;
 			while (var160 > 0) {
 				boolean var161 = true;
@@ -821,15 +830,15 @@ public class class236 extends class27 {
 			IfType var176 = IfType.get(-64, var171);
 			if (var176.colour != var175) {
 				var176.colour = var175;
-				class200.method1373(65280, var176);
+				class200.componentUpdated(var176);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 68) {
-			class127.method869((byte) 124);
+			class127.legacyUpdated();
 			class240.field4460 = class230.in.g1();
 			class238.ptype = -1;
-			class208.field3954 = Linkable.field1211;
+			class208.miscTransmitNum = Linkable.transmitNum;
 			return true;
 		} else if (class238.ptype == 24) {
 			for (int var177 = 0; var177 < class113.var.length; var177++) {
@@ -889,18 +898,19 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 134) {
-			class150.field2912 = class230.in.g1_alt1();
-			class121.field2215 = class230.in.g1();
+			// UPDATE_ZONE_PARTIAL_ENCLOSED
+			class150.baseZ = class230.in.g1_alt1();
+			class121.baseX = class230.in.g1();
 			while (class228.psize > class230.in.pos) {
 				class238.ptype = class230.in.g1();
-				class244.method1600(-9063);
+				class244.readZonePacket(-9063);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 84) {
 			class115.field2080 = class230.in.g1();
 			class238.ptype = -1;
-			class20.field313 = Linkable.field1211;
+			class20.field313 = Linkable.transmitNum;
 			return true;
 		} else if (class238.ptype == 6) {
 			long var193 = class230.in.method321(1054632416);
@@ -960,10 +970,10 @@ public class class236 extends class27 {
 			}
 			int var207 = class230.in.g4_alt1();
 			IfType var208 = IfType.get(-64, var207);
-			if (var208.field3432 != 1 || var208.model1Id != var206) {
-				var208.field3432 = 1;
+			if (var208.model1Type != 1 || var208.model1Id != var206) {
+				var208.model1Type = 1;
 				var208.model1Id = var206;
-				class200.method1373(65280, var208);
+				class200.componentUpdated(var208);
 			}
 			class238.ptype = -1;
 			return true;
@@ -1003,10 +1013,10 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 88) {
-			class121.field2215 = class230.in.g1_alt1();
-			class150.field2912 = class230.in.g1_alt2();
-			for (int var220 = class121.field2215; var220 < class121.field2215 + 8; var220++) {
-				for (int var222 = class150.field2912; var222 < class150.field2912 + 8; var222++) {
+			class121.baseX = class230.in.g1_alt1();
+			class150.baseZ = class230.in.g1_alt2();
+			for (int var220 = class121.baseX; var220 < class121.baseX + 8; var220++) {
+				for (int var222 = class150.baseZ; var222 < class150.baseZ + 8; var222++) {
 					if (class134.field2499[class149.minusedLevel][var220][var222] != null) {
 						class134.field2499[class149.minusedLevel][var220][var222] = null;
 						class29.method175(21280, var220, var222);
@@ -1014,7 +1024,7 @@ public class class236 extends class27 {
 				}
 			}
 			for (class159 var221 = (class159) class62.field1140.method1612(false); var221 != null; var221 = (class159) class62.field1140.method1621(82)) {
-				if (class121.field2215 <= var221.field3061 && var221.field3061 < class121.field2215 + 8 && class150.field2912 <= var221.field3054 && var221.field3054 < class150.field2912 + 8 && class149.minusedLevel == var221.field3057) {
+				if (class121.baseX <= var221.field3061 && var221.field3061 < class121.baseX + 8 && class150.baseZ <= var221.field3054 && var221.field3054 < class150.baseZ + 8 && class149.minusedLevel == var221.field3057) {
 					var221.field3063 = 0;
 				}
 			}
@@ -1092,9 +1102,9 @@ public class class236 extends class27 {
 				class177.set(1, invId, count, slot, id - 1);
 			}
 			if (com != null) {
-				class200.method1373(65280, com);
+				class200.componentUpdated(com);
 			}
-			class127.method869((byte) 127);
+			class127.legacyUpdated();
 			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(invId, 32767);
 			class238.ptype = -1;
 			return true;
@@ -1110,20 +1120,21 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 100) {
-			int var245 = class230.in.g4();
-			IfType var246 = IfType.get(-64, var245);
-			var246.field3432 = 3;
-			var246.model1Id = class240.field4458.field768.method1429(112);
-			class200.method1373(65280, var246);
+			// IF_SETPLAYERHEAD
+			int comId = class230.in.g4();
+			IfType var246 = IfType.get(-64, comId);
+			var246.model1Type = 3;
+			var246.model1Id = class240.localPlayer.model.method1429();
+			class200.componentUpdated(var246);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 25) {
 			int var247 = class230.in.g4();
 			int var248 = class230.in.g2();
 			int var249 = class230.in.g1();
-			class168 var250 = (class168) class128.field2397.find((long) var247);
+			class168 var250 = (class168) class128.subinterfaces.find((long) var247);
 			if (var250 != null) {
-				class93.method673((byte) -117, var250, var250.field3231 != var248);
+				class93.method673((byte) -117, var250, var250.id != var248);
 			}
 			class104.method722(var249, var247, var248, (byte) 105);
 			class238.ptype = -1;
@@ -1168,7 +1179,7 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 229) {
-			class77.field1394 = Linkable.field1211;
+			class77.field1394 = Linkable.transmitNum;
 			long var259 = class230.in.method321(1054632416);
 			if (var259 == 0L) {
 				EnumType.field885 = 0;
@@ -1296,12 +1307,12 @@ public class class236 extends class27 {
 					class113.var[var290] = 0;
 				}
 			}
-			class127.method869((byte) 125);
+			class127.legacyUpdated();
 			class226.field4246 += 32;
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 123 || class238.ptype == 52 || class238.ptype == 232 || class238.ptype == 61 || class238.ptype == 135 || class238.ptype == 173 || class238.ptype == 150 || class238.ptype == 198 || class238.ptype == 99 || class238.ptype == 171 || class238.ptype == 75 || class238.ptype == 44) {
-			class244.method1600(-9063);
+			class244.readZonePacket(-9063);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 120) {
@@ -1310,18 +1321,18 @@ public class class236 extends class27 {
 			int var294 = class230.in.g4_alt3();
 			int var295 = class230.in.g2_alt1();
 			IfType var296 = IfType.get(-64, var294);
-			if (var296.field3457 != var295 || var296.field3511 != var293 || var296.field3487 != var292) {
+			if (var296.field3457 != var295 || var296.field3511 != var293 || var296.modelZoom != var292) {
 				var296.field3511 = var293;
-				var296.field3487 = var292;
+				var296.modelZoom = var292;
 				var296.field3457 = var295;
-				class200.method1373(65280, var296);
+				class200.componentUpdated(var296);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 54) {
-			class127.method869((byte) 125);
+			class127.legacyUpdated();
 			class199.field3790 = class230.in.g2b();
-			class208.field3954 = Linkable.field1211;
+			class208.miscTransmitNum = Linkable.transmitNum;
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 114) {
@@ -1330,10 +1341,11 @@ public class class236 extends class27 {
 			int var298 = class230.in.g1_alt3(24758);
 			int var299 = class230.in.g1_alt2();
 			class149.minusedLevel = var297 >> 1;
-			class240.field4458.teleport((var297 & 0x1) == 1, var299, 0, var298);
+			class240.localPlayer.teleport((var297 & 0x1) == 1, var299, 0, var298);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 162) {
+			// IF_SETANIM
 			int var300 = class230.in.g4_alt1();
 			int var301 = class230.in.g2b_alt2();
 			IfType var302 = IfType.get(-64, var300);
@@ -1341,22 +1353,24 @@ public class class236 extends class27 {
 				var302.modelAnim = var301;
 				var302.field3489 = 0;
 				var302.field3381 = 0;
-				class200.method1373(65280, var302);
+				class200.componentUpdated(var302);
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 163) {
-			class121.field2215 = class230.in.g1();
-			class150.field2912 = class230.in.g1_alt1();
+			// UPDATE_ZONE_PARTIAL_FOLLOWS
+			class121.baseX = class230.in.g1();
+			class150.baseZ = class230.in.g1_alt1();
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 116) {
-			class33.method210(19190);
+			// PLAYER_INFO
+			class33.getPlayerPos(19190);
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 223) {
 			// CAM_LOOKAT
-			class179.field3569 = true;
+			class179.cinemaCam = true;
 			Packet.field848 = class230.in.g1();
 			class23.field368 = class230.in.g1();
 			class66.field1200 = class230.in.g2();
@@ -1423,18 +1437,19 @@ public class class236 extends class27 {
 				}
 				if (var315.field3417 != var314) {
 					var315.field3417 = var314;
-					class200.method1373(65280, var315);
+					class200.componentUpdated(var315);
 				}
 			}
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 4) {
+			// IF_SETROTATESPEED (unofficial name)
 			int var316 = class230.in.g2_alt3(255);
 			int var317 = class230.in.g2();
 			int var318 = class230.in.method320(3);
 			IfType var319 = IfType.get(-64, var318);
 			class238.ptype = -1;
-			var319.field3387 = (var317 << 16) + var316;
+			var319.modelSpin = (var317 << 16) + var316;
 			return true;
 		} else if (class238.ptype == 197) {
 			class160.field3085 = (short) class230.in.g2_alt3(255);
@@ -1458,13 +1473,14 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 242) {
+			// IF_CLOSESUB
 			int var323 = class230.in.g4();
-			class168 var324 = (class168) class128.field2397.find((long) var323);
+			class168 var324 = (class168) class128.subinterfaces.find((long) var323);
 			if (var324 != null) {
 				class93.method673((byte) -116, var324, true);
 			}
 			if (class53.field967 != null) {
-				class200.method1373(65280, class53.field967);
+				class200.componentUpdated(class53.field967);
 				class53.field967 = null;
 			}
 			class238.ptype = -1;
@@ -1504,27 +1520,36 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 240) {
-			class115.method787((byte) 28);
+			// LOGOUT
+			class115.logout();
 			class238.ptype = -1;
 			return false;
 		} else if (class238.ptype == 204) {
-			class127.method869((byte) 126);
-			int var327 = class230.in.g1_alt2();
-			int var328 = class230.in.g1_alt1();
-			int var329 = class230.in.g4_alt3();
-			class179.field3564[var327] = var329;
-			class105.field1909[var327] = var328;
-			class217.field4068[var327] = 1;
-			for (int var330 = 0; var330 < 98; var330++) {
-				if (var329 >= class90.field1711[var330]) {
-					class217.field4068[var327] = var330 + 2;
+			// UPDATE_STAT
+			class127.legacyUpdated();
+
+			int stat = class230.in.g1_alt2();
+			int level = class230.in.g1_alt1();
+			int xp = class230.in.g4_alt3();
+
+			class179.statXP[stat] = xp;
+			class105.statEffectiveLevel[stat] = level;
+			class217.statBaseLevel[stat] = 1;
+
+			for (int l = 0; l < 98; l++) {
+				if (xp >= class90.skillxp[l]) {
+					class217.statBaseLevel[stat] = l + 2;
 				}
 			}
-			class143.field2644[class70.method470(31, class118.field2133++)] = var327;
+
+			class143.statTransmit[class70.method470(31, class118.statTransmitNum++)] = stat;
+
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 255) {
-			class116.field2104 = 0;
+			// UNSET_MAP_FLAG (unofficial name)
+			class116.minimapFlagX = 0;
+
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 172) {
@@ -1538,16 +1563,17 @@ public class class236 extends class27 {
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 184) {
-			class114.field2063 = class230.in.g2_alt1() * 30;
+			// UPDATE_REBOOT_TIMER
+			class114.rebootTimer = class230.in.g2_alt1() * 30;
 			class238.ptype = -1;
-			class208.field3954 = Linkable.field1211;
+			class208.miscTransmitNum = Linkable.transmitNum;
 			return true;
 		} else {
 			class221.method1490((byte) 0, "T1 - " + class238.ptype + "," + Packet.ptype1 + "," + JString.ptype2 + " - " + class228.psize, null);
 			if (!arg0) {
 				method1567(97, -34, -99, -37, 80, (byte) -34);
 			}
-			class115.method787((byte) -3);
+			class115.logout();
 			return true;
 		}
 	}

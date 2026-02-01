@@ -140,7 +140,7 @@ public class class190 {
 				int var6 = (Isaac.field2733[var4] >> 8) * 64 - class223.field4214;
 				int var7 = (Isaac.field2733[var4] & 0xFF) * 64 - field3681;
 				class219.method1481(2);
-				class18.method85(class166.field3202, var5, var6, -109, arg1, var7);
+				class18.method85(class166.levelCollisionMap, var5, var6, -109, arg1, var7);
 			}
 		}
 		if (!arg0) {
@@ -155,7 +155,7 @@ public class class190 {
 			method1330(-13);
 		}
 		if (class245.lowMemory && class157.field3028 != class149.minusedLevel) {
-			class120.method822(class149.minusedLevel, class240.field4458.field4143[0], class140.field2597, class110.field2016, (byte) 126, class240.field4458.field4089[0]);
+			class120.method822(class149.minusedLevel, class240.localPlayer.field4143[0], class140.field2597, class110.field2016, (byte) 126, class240.localPlayer.field4089[0]);
 		} else if (class172.field3338 != class149.minusedLevel) {
 			class172.field3338 = class149.minusedLevel;
 			class242.method1597(-31422, class149.minusedLevel);

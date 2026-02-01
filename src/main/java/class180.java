@@ -116,7 +116,7 @@ public class class180 extends class23 {
 	@OriginalMember(owner = "client!qf", name = "c", descriptor = "(Z)V")
 	public static final void method1285(boolean arg0) {
 		++field3577;
-		int var1 = class33.field536 + class240.field4458.field4123;
+		int var1 = class33.field536 + class240.localPlayer.field4123;
 		if (!ClientScript.field4513[96]) {
 			if (ClientScript.field4513[97]) {
 				class85.field1531 += (-class85.field1531 + 24) / 2;
@@ -135,7 +135,7 @@ public class class180 extends class23 {
 		} else {
 			class55.field1022 += (-class55.field1022 + 12) / 2;
 		}
-		int var2 = class240.field4458.field4138 - -class223.field4201;
+		int var2 = class240.localPlayer.field4138 - -class223.field4201;
 		if (-var2 + class37.field666 < -500 || class37.field666 - var2 > 500 || ~(-var1 + class233.field4368) > 499 || -var1 + class233.field4368 > 500) {
 			class37.field666 = var2;
 			class233.field4368 = var1;

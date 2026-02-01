@@ -14,7 +14,7 @@ public class class239 {
 	public static JString field4452 = class208.method1425("RuneScape wird geladen )2 bitte warten)3)3)3");
 
 	@OriginalMember(owner = "client!w", name = "n", descriptor = "[Ljj;")
-	public static class108[] field4449 = new class108[100];
+	public static class108[] spriteBuffer = new class108[100];
 
 	@OriginalMember(owner = "client!w", name = "p", descriptor = "I")
 	public static int field4451 = 0;
@@ -99,7 +99,7 @@ public class class239 {
 			}
 		}
 		if (arg0 > -127) {
-			field4449 = null;
+			spriteBuffer = null;
 		}
 		int var5 = class23.field368 * 128 + 64;
 		if (var3 < class108.field1956) {
@@ -178,7 +178,7 @@ public class class239 {
 		if (!arg0) {
 			field4452 = null;
 			field4436 = null;
-			field4449 = null;
+			spriteBuffer = null;
 		}
 	}
 

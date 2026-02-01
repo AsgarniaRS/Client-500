@@ -195,13 +195,13 @@ public class class11 extends class23 {
 						return;
 					}
 				}
-				if (var3.method597(-125, class240.field4458.name)) {
+				if (var3.method597(-125, class240.localPlayer.name)) {
 					class223.addChat(0, field151, IfType.field3455);
 				} else {
 					++class159.field3060;
 					class95.field1765[Linkable.field1221] = arg1;
 					Isaac.field2743[Linkable.field1221++] = class200.method1377(arg1, (byte) 104);
-					class20.field313 = Linkable.field1211;
+					class20.field313 = Linkable.transmitNum;
 					Isaac.out.method30(28);
 					if (arg0 == -8) {
 						Isaac.out.p8(arg1);

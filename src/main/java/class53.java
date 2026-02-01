@@ -252,7 +252,7 @@ public class class53 implements KeyListener, FocusListener {
 		for (int var8 = -1; var8 < class55.field1041 + class55.field1027; var8++) {
 			class218 var24;
 			if (var8 == -1) {
-				var24 = class240.field4458;
+				var24 = class240.localPlayer;
 			} else if (var8 >= class55.field1027) {
 				var24 = class225.field4225[class25.field402[var8 - class55.field1027]];
 			} else {
@@ -282,7 +282,7 @@ public class class53 implements KeyListener, FocusListener {
 					class118[] var32 = class64.field1171;
 					for (int var33 = 0; var33 < var32.length; var33++) {
 						class118 var35 = var32[var33];
-						if (var35 != null && var35.field2141 == 1 && class25.field402[var8 - class55.field1027] == var35.field2148 && class117.field2115 % 20 < 10) {
+						if (var35 != null && var35.hintType == 1 && class25.field402[var8 - class55.field1027] == var35.field2148 && class117.field2115 % 20 < 10) {
 							class150.method1029(arg6 >> 1, arg4 >> 1, arg3, -4013, var24.method1477(64) + 15, var24, arg2);
 							if (class25.field401 > -1) {
 								class176.field3545[var35.field2139].method1157(arg0 + class25.field401 - 12, class33.field541 + arg1 - 28);
@@ -309,7 +309,7 @@ public class class53 implements KeyListener, FocusListener {
 						class118[] var28 = class64.field1171;
 						for (int var29 = 0; var29 < var28.length; var29++) {
 							class118 var30 = var28[var29];
-							if (var30 != null && var30.field2141 == 10 && IfType.field3430[var8] == var30.field2148) {
+							if (var30 != null && var30.hintType == 10 && IfType.field3430[var8] == var30.field2148) {
 								class150.method1029(arg6 >> 1, arg4 >> 1, arg3, -4013, var24.method1477(64) + 15, var24, arg2);
 								if (class25.field401 > -1) {
 									class176.field3545[var30.field2139].method1157(class25.field401 + arg0 - 12, arg1 - (-class33.field541 + var26));
@@ -506,10 +506,10 @@ public class class53 implements KeyListener, FocusListener {
 			}
 		} else if (arg4 == -1) {
 			for (int var9 = 0; var9 < 100; var9++) {
-				class225.field4230[var9] = true;
+				class225.componentRedrawRequested1[var9] = true;
 			}
 		} else {
-			class225.field4230[arg4] = true;
+			class225.componentRedrawRequested1[arg4] = true;
 		}
 	}
 }

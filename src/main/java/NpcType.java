@@ -403,7 +403,7 @@ public class NpcType extends Linkable2 {
 	public static final void method863(int arg0, int arg1, int arg2, int arg3, byte arg4) {
 		for (int var5 = 0; var5 < class206.field3925; var5++) {
 			if (arg3 < class81.field1455[var5] + class133.field2487[var5] && arg3 + arg1 > class81.field1455[var5] && arg2 < class132.field2473[var5] + class80.field1447[var5] && class132.field2473[var5] < arg0 + arg2) {
-				class225.field4230[var5] = true;
+				class225.componentRedrawRequested1[var5] = true;
 			}
 		}
 		field2320++;

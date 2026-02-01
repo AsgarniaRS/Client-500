@@ -86,11 +86,8 @@ public class class209 {
 	private int[] field3968;
 
 	@OriginalMember(owner = "client!tb", name = "a", descriptor = "(I)I")
-	public final int method1429(int arg0) {
-		field3973++;
-		if (arg0 <= 13) {
-			return 65;
-		} else if (this.field3977 == -1) {
+	public final int method1429() {
+		if (this.field3977 == -1) {
 			return (this.field3968[11] << 5) + (this.field3964[0] << 25) + (this.field3964[4] << 20) + (this.field3968[0] << 15) + (this.field3968[8] << 10) + this.field3968[1];
 		} else {
 			return class147.list(this.field3977).index + 305419896;

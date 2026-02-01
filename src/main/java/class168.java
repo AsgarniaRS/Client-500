@@ -38,7 +38,7 @@ public class class168 extends Linkable {
 	public static int[] field3247 = new int[2000];
 
 	@OriginalMember(owner = "client!pe", name = "u", descriptor = "I")
-	public int field3231;
+	public int id;
 
 	@OriginalMember(owner = "client!pe", name = "v", descriptor = "I")
 	public static int field3232;
@@ -118,16 +118,16 @@ public class class168 extends Linkable {
 			class139.field2581[class192.field3704++] = 2047;
 		} else if (var2 == 1) {
 			int var3 = class230.in.method28(3, -315);
-			class240.field4458.method1478((byte) 127, false, var3);
+			class240.localPlayer.method1478((byte) 127, false, var3);
 			int var4 = class230.in.method28(1, -315);
 			if (var4 == 1) {
 				class139.field2581[class192.field3704++] = 2047;
 			}
 		} else if (var2 == 2) {
 			int var5 = class230.in.method28(3, -315);
-			class240.field4458.method1478((byte) 127, true, var5);
+			class240.localPlayer.method1478((byte) 127, true, var5);
 			int var6 = class230.in.method28(3, -315);
-			class240.field4458.method1478((byte) 127, true, var6);
+			class240.localPlayer.method1478((byte) 127, true, var6);
 			int var7 = class230.in.method28(1, -315);
 			if (var7 == 1) {
 				class139.field2581[class192.field3704++] = 2047;
@@ -141,7 +141,7 @@ public class class168 extends Linkable {
 			}
 			int var10 = class230.in.method28(7, -315);
 			int var11 = class230.in.method28(7, -315);
-			class240.field4458.teleport(var8 == 1, var10, 0, var11);
+			class240.localPlayer.teleport(var8 == 1, var10, 0, var11);
 		} else if (arg0 >= -79) {
 			method1152((byte) -84, 3);
 		}

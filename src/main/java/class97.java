@@ -133,7 +133,7 @@ public class class97 extends Linkable2 {
 				for (int var5 = 0; var5 < 4; var5++) {
 					for (int var6 = 1; var6 < 103; var6++) {
 						for (int var7 = 1; var7 < 103; var7++) {
-							class166.field3202[var5].field1668[var6][var7] = 0;
+							class166.levelCollisionMap[var5].flags[var6][var7] = 0;
 						}
 					}
 				}

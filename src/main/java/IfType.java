@@ -8,7 +8,7 @@ public class IfType {
 	public int field3368 = 0;
 
 	@OriginalMember(owner = "client!q", name = "r", descriptor = "I")
-	public int field3384 = -1;
+	public int drawCount = -1;
 
 	@OriginalMember(owner = "client!q", name = "c", descriptor = "B")
 	public byte field3369 = 0;
@@ -32,13 +32,13 @@ public class IfType {
 	public boolean field3405 = false;
 
 	@OriginalMember(owner = "client!q", name = "u", descriptor = "I")
-	public int field3387 = 0;
+	public int modelSpin = 0;
 
 	@OriginalMember(owner = "client!q", name = "I", descriptor = "I")
 	public int field3401 = -1;
 
 	@OriginalMember(owner = "client!q", name = "g", descriptor = "I")
-	public int field3373 = -1;
+	public int drawTime = -1;
 
 	@OriginalMember(owner = "client!q", name = "l", descriptor = "I")
 	private int field3378 = 1;
@@ -158,7 +158,7 @@ public class IfType {
 	public int field3408 = -1;
 
 	@OriginalMember(owner = "client!q", name = "qc", descriptor = "I")
-	public int field3487 = 100;
+	public int modelZoom = 100;
 
 	@OriginalMember(owner = "client!q", name = "gc", descriptor = "I")
 	public int field3477 = 0;
@@ -257,7 +257,7 @@ public class IfType {
 	public int field3516 = 0;
 
 	@OriginalMember(owner = "client!q", name = "nb", descriptor = "I")
-	public int field3432 = 1;
+	public int model1Type = 1;
 
 	@OriginalMember(owner = "client!q", name = "Gc", descriptor = "I")
 	public int height = 0;
@@ -562,7 +562,7 @@ public class IfType {
 			var6 = this.field3378;
 			var7 = this.model2Id;
 		} else {
-			var6 = this.field3432;
+			var6 = this.model1Type;
 			var7 = this.model1Id;
 		}
 		if (var6 == 0) {
@@ -788,7 +788,7 @@ public class IfType {
 		}
 
 		if (this.type == 6) {
-			this.field3432 = 1;
+			this.model1Type = 1;
 
 			this.model1Id = buf.g2();
 			if (this.model1Id == 65535) {
@@ -800,7 +800,7 @@ public class IfType {
 			this.field3457 = buf.g2();
 			this.field3511 = buf.g2();
 			this.field3519 = buf.g2();
-			this.field3487 = buf.g2();
+			this.modelZoom = buf.g2();
 
 			this.modelAnim = buf.g2();
 			if (this.modelAnim == 65535) {
@@ -1135,7 +1135,7 @@ public class IfType {
 
 		if (this.type == 6) {
 			// model
-			this.field3432 = 1;
+			this.model1Type = 1;
 			this.model1Id = buf.g2();
 			this.field3378 = 1;
 			if (this.model1Id == 65535) {
@@ -1157,7 +1157,7 @@ public class IfType {
 				this.modelAnim2 = -1;
 			}
 
-			this.field3487 = buf.g2();
+			this.modelZoom = buf.g2();
 			this.field3457 = buf.g2();
 			this.field3511 = buf.g2();
 		}

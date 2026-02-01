@@ -263,7 +263,7 @@ public class class203 extends class50 {
 			if (~arg1.field4073.method599(255, 0) == -127) {
 				arg1.field4073 = arg1.field4073.substring(1);
 				class223.addChat(2, arg1.field4073, arg1.name);
-			} else if (class240.field4458 == arg1) {
+			} else if (class240.localPlayer == arg1) {
 				class223.addChat(2, arg1.field4073, arg1.name);
 			}
 			arg1.field4140 = 0;
@@ -333,7 +333,7 @@ public class class203 extends class50 {
 			int var16 = class230.in.g1_alt3(24758);
 			int var17 = class230.in.g1();
 			int var18 = class230.in.pos;
-			if (arg1.name != null && arg1.field768 != null) {
+			if (arg1.name != null && arg1.model != null) {
 				long var19 = arg1.name.method630(false);
 				boolean var21 = false;
 				if (~var16 >= -2) {

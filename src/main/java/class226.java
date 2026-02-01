@@ -71,7 +71,7 @@ public class class226 extends Linkable2 {
 				arg3.field4134 = 0;
 				arg3.field4103 = 0;
 				arg3.field4142 = arg2;
-				class60.method433(-116, class240.field4458 == arg3, arg3.field4123, arg3.field4103, arg3.field4138, var4);
+				class60.method433(-116, class240.localPlayer == arg3, arg3.field4123, arg3.field4103, arg3.field4138, var4);
 			}
 			if (var5 == 2) {
 				arg3.field4134 = 0;
@@ -87,7 +87,7 @@ public class class226 extends Linkable2 {
 			if (arg3.field4079 == -1) {
 				return;
 			}
-			class60.method433(12, class240.field4458 == arg3, arg3.field4123, arg3.field4103, arg3.field4138, class15.method75(arg3.field4079, (byte) 48));
+			class60.method433(12, class240.localPlayer == arg3, arg3.field4123, arg3.field4103, arg3.field4138, class15.method75(arg3.field4079, (byte) 48));
 		}
 	}
 

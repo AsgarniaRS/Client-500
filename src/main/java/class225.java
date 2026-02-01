@@ -11,7 +11,7 @@ public class class225 {
 	private static JString FRIENDLISTFULL = class208.method1425("Your friend list is full)3 Max of 100 for free users)1 and 200 for members)3");
 
 	@OriginalMember(owner = "client!ug", name = "k", descriptor = "[Z")
-	public static boolean[] field4230 = new boolean[100];
+	public static boolean[] componentRedrawRequested1 = new boolean[100];
 
 	@OriginalMember(owner = "client!ug", name = "b", descriptor = "Li;")
 	public static JString field4221 = null;
@@ -58,7 +58,7 @@ public class class225 {
 		field4224 = null;
 		FRIENDLISTFULL = null;
 		field4227 = null;
-		field4230 = null;
+		componentRedrawRequested1 = null;
 		field4220 = null;
 		field4234 = null;
 		field4232 = null;
@@ -90,7 +90,7 @@ public class class225 {
 		}
 		JString var5 = arg0.name;
 		if (arg0.vislevel != 0) {
-			var5 = class166.method1142(new JString[]{var5, class168.method1154(arg0.vislevel, class240.field4458.combatLevel, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.vislevel, arg2 ^ 0x394D), class104.field1881}, arg2 ^ 0xFFFFC6B4);
+			var5 = class166.method1142(new JString[]{var5, class168.method1154(arg0.vislevel, class240.localPlayer.combatLevel, 14058), class68.field1238, class145.field2719, class170.method1214(arg0.vislevel, arg2 ^ 0x394D), class104.field1881}, arg2 ^ 0xFFFFC6B4);
 		}
 		if (class28.field475 == 1) {
 			class24.field384++;
@@ -130,7 +130,7 @@ public class class225 {
 					if (var6[var9] != null && var6[var9].equalsIgnoreCase(class158.field3043)) {
 						class110.field2021++;
 						short var10 = 0;
-						if (arg0.vislevel > class240.field4458.combatLevel) {
+						if (arg0.vislevel > class240.localPlayer.combatLevel) {
 							var10 = 2000;
 						}
 						short var11 = 0;

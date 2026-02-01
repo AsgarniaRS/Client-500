@@ -91,7 +91,7 @@ public class class201 {
 		}
 		field3835++;
 		if (class105.field1912 > 0) {
-			class115.method787((byte) -127);
+			class115.logout();
 		} else {
 			class131.setMainState(40, 65536);
 			CollisionMap.stream = class33.loginStream;

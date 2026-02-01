@@ -26,7 +26,7 @@ public class class114 extends Linkable2 {
 	private static JString field2057 = class208.method1425("Unable to find ");
 
 	@OriginalMember(owner = "client!ke", name = "K", descriptor = "I")
-	public static int field2063 = 0;
+	public static int rebootTimer = 0;
 
 	@OriginalMember(owner = "client!ke", name = "N", descriptor = "Li;")
 	public static JString field2065 = field2057;
@@ -97,7 +97,7 @@ public class class114 extends Linkable2 {
 					Packet.field845[var5] = Packet.field845[var5 + 1];
 					GZip.field1120[var5] = GZip.field1120[var5 + 1];
 				}
-				class20.field313 = Linkable.field1211;
+				class20.field313 = Linkable.transmitNum;
 				Isaac.out.method30(121);
 				Isaac.out.p8(arg1);
 				return;
@@ -186,9 +186,9 @@ public class class114 extends Linkable2 {
 		if (arg0 < 3 && (class116.mapl[1][arg7][arg2] & 0x2) == 2) {
 			var9 = arg0 + 1;
 		}
-		LocType.method991(class166.field3202[arg0], 0, arg7, var9, arg1, arg0, arg2);
+		LocType.method991(class166.levelCollisionMap[arg0], 0, arg7, var9, arg1, arg0, arg2);
 		if (arg5 >= 0) {
-			class223.method1505((byte) 93, false, arg0, false, arg6, arg3, false, arg5, var9, class166.field3202[arg0], arg2, arg7);
+			class223.method1505((byte) 93, false, arg0, false, arg6, arg3, false, arg5, var9, class166.levelCollisionMap[arg0], arg2, arg7);
 			return;
 		}
 	}

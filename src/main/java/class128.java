@@ -20,7 +20,7 @@ public class class128 extends class23 {
 	private int field2412 = 4096;
 
 	@OriginalMember(owner = "client!lh", name = "Q", descriptor = "Lob;")
-	public static HashTable field2397 = new HashTable(8);
+	public static HashTable subinterfaces = new HashTable(8);
 
 	@OriginalMember(owner = "client!lh", name = "db", descriptor = "I")
 	public static int field2410 = 0;
@@ -136,7 +136,7 @@ public class class128 extends class23 {
 		}
 		field2413 = null;
 		field2402 = null;
-		field2397 = null;
+		subinterfaces = null;
 		field2404 = null;
 		field2414 = null;
 		field2406 = null;

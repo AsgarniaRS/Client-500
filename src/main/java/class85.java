@@ -94,7 +94,7 @@ public class class85 extends class23 {
 								int var12 = (var10 / 8 << 8) - -(var11 / 8);
 								for (int var13 = 0; ~var13 > ~Isaac.field2733.length; ++var13) {
 									if (~Isaac.field2733[var13] == ~var12 && var3[var13] != null) {
-										class212.method1449(var9, (7 & var10) * 8, class166.field3202, 118, (var11 & 7) * 8, var4, var3[var13], arg0, var8, var6 * 8, var5 * 8);
+										class212.method1449(var9, (7 & var10) * 8, class166.levelCollisionMap, 118, (var11 & 7) * 8, var4, var3[var13], arg0, var8, var6 * 8, var5 * 8);
 										break;
 									}
 								}
@@ -209,7 +209,7 @@ public class class85 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!hh", name = "a", descriptor = "()V")
-	public static final void method579() {
+	public static final void resetMap() {
 		for (int var0 = 0; var0 < class11.field152; ++var0) {
 			for (int var5 = 0; var5 < class48.field899; ++var5) {
 				for (int var6 = 0; var6 < class66.field1202; ++var6) {
@@ -217,18 +217,18 @@ public class class85 extends class23 {
 				}
 			}
 		}
-		for (int var1 = 0; var1 < class62.field1147; ++var1) {
-			for (int var4 = 0; var4 < class62.field1148[var1]; ++var4) {
-				class62.field1149[var1][var4] = null;
+		for (int level = 0; level < class62.levelCount; ++level) {
+			for (int var4 = 0; var4 < class62.leveloccluderCount[level]; ++var4) {
+				class62.levelOccluders[level][var4] = null;
 			}
-			class62.field1148[var1] = 0;
+			class62.leveloccluderCount[level] = 0;
 		}
-		for (int var2 = 0; var2 < class25.field396; ++var2) {
-			class149.field2908[var2] = null;
+		for (int var2 = 0; var2 < class25.dynamicCount; ++var2) {
+			class149.dynamicSprites[var2] = null;
 		}
-		class25.field396 = 0;
-		for (int var3 = 0; var3 < class239.field4449.length; ++var3) {
-			class239.field4449[var3] = null;
+		class25.dynamicCount = 0;
+		for (int var3 = 0; var3 < class239.spriteBuffer.length; ++var3) {
+			class239.spriteBuffer[var3] = null;
 		}
 	}
 }

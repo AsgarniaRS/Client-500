@@ -530,7 +530,7 @@ public class class81 extends class145 {
 															}
 														}
 													}
-													class239.field4449[var39++] = var41;
+													class239.spriteBuffer[var39++] = var41;
 													int var46 = class79.field1435 - var41.field1935;
 													int var47 = var41.field1942 - class79.field1435;
 													if (var47 > var46) {
@@ -549,7 +549,7 @@ public class class81 extends class145 {
 												int var50 = -50;
 												int var51 = -1;
 												for (int var52 = 0; var52 < var39; var52++) {
-													class108 var53 = class239.field4449[var52];
+													class108 var53 = class239.spriteBuffer[var52];
 													if (class143.field2629 != var53.field1936) {
 														if (var53.field1952 > var50) {
 															var50 = var53.field1952;
@@ -557,8 +557,8 @@ public class class81 extends class145 {
 														} else if (var53.field1952 == var50) {
 															int var54 = var53.field1947 - class74.field1353;
 															int var55 = var53.field1951 - class216.field4050;
-															int var56 = class239.field4449[var51].field1947 - class74.field1353;
-															int var57 = class239.field4449[var51].field1951 - class216.field4050;
+															int var56 = class239.spriteBuffer[var51].field1947 - class74.field1353;
+															int var57 = class239.spriteBuffer[var51].field1951 - class216.field4050;
 															if (var54 * var54 + var55 * var55 > var56 * var56 + var57 * var57) {
 																var51 = var52;
 															}
@@ -568,7 +568,7 @@ public class class81 extends class145 {
 												if (var51 == -1) {
 													break;
 												}
-												class108 var58 = class239.field4449[var51];
+												class108 var58 = class239.spriteBuffer[var51];
 												var58.field1936 = class143.field2629;
 												if (!Client.method224(var6, var58.field1935, var58.field1942, var58.field1938, var58.field1937, var58.field1945.method88())) {
 													var58.field1945.method87(var58.field1941, IntHashTable.field1805, class201.field3840, class168.field3244, class159.field3068, var58.field1947 - class74.field1353, var58.field1940 - class241.field4463, var58.field1951 - class216.field4050, var58.field1950);

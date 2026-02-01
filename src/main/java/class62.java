@@ -23,7 +23,7 @@ public class class62 extends class23 {
 	private static JString field1144 = class208.method1425("and choose the (Wcreate account(W");
 
 	@OriginalMember(owner = "client!ff", name = "bb", descriptor = "I")
-	public static int field1147 = 4;
+	public static int levelCount = 4;
 
 	@OriginalMember(owner = "client!ff", name = "eb", descriptor = "I")
 	public static int field1150 = 0;
@@ -32,10 +32,10 @@ public class class62 extends class23 {
 	public static JString field1152 = field1144;
 
 	@OriginalMember(owner = "client!ff", name = "db", descriptor = "[[Lba;")
-	public static class13[][] field1149 = new class13[field1147][500];
+	public static class13[][] levelOccluders = new class13[levelCount][500];
 
 	@OriginalMember(owner = "client!ff", name = "cb", descriptor = "[I")
-	public static int[] field1148 = new int[field1147];
+	public static int[] leveloccluderCount = new int[levelCount];
 
 	@OriginalMember(owner = "client!ff", name = "S", descriptor = "I")
 	public static int field1138;
@@ -111,8 +111,8 @@ public class class62 extends class23 {
 	@OriginalMember(owner = "client!ff", name = "c", descriptor = "(B)V")
 	public static void method442(byte arg0) {
 		field1144 = null;
-		field1149 = null;
-		field1148 = null;
+		levelOccluders = null;
+		leveloccluderCount = null;
 		field1143 = null;
 		field1152 = null;
 		field1140 = null;

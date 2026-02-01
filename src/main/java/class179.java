@@ -20,13 +20,13 @@ public class class179 {
 	public static JString field3565 = class208.method1425("Clientscript error )2 check log for details");
 
 	@OriginalMember(owner = "client!qe", name = "h", descriptor = "[I")
-	public static int[] field3564 = new int[25];
+	public static int[] statXP = new int[25];
 
 	@OriginalMember(owner = "client!qe", name = "n", descriptor = "Lq;")
 	public static IfType field3570 = null;
 
 	@OriginalMember(owner = "client!qe", name = "m", descriptor = "Z")
-	public static boolean field3569 = false;
+	public static boolean cinemaCam = false;
 
 	@OriginalMember(owner = "client!qe", name = "c", descriptor = "I")
 	public static int field3559;
@@ -54,7 +54,7 @@ public class class179 {
 			method1278(null, true);
 		}
 		field3567 = null;
-		field3564 = null;
+		statXP = null;
 		field3560 = null;
 		field3570 = null;
 	}
@@ -79,7 +79,7 @@ public class class179 {
 		class48.field899 = arg1;
 		class66.field1202 = arg2;
 		class238.field4431 = new int[arg0][arg1 + 1][arg2 + 1];
-		class85.method579();
+		class85.resetMap();
 		class150.field2913 = arg3;
 		class18.field304 = new boolean[class150.field2913 + class150.field2913 + 1][class150.field2913 + class150.field2913 + 1];
 		class48.field893 = new boolean[class150.field2913 + class150.field2913 + 2][class150.field2913 + class150.field2913 + 2];

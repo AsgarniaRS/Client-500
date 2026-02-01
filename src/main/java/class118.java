@@ -8,7 +8,7 @@ public class class118 {
 	public int field2138 = -1;
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "I")
-	public static int field2133 = 0;
+	public static int statTransmitNum = 0;
 
 	@OriginalMember(owner = "client!ki", name = "o", descriptor = "Z")
 	public static boolean field2147 = false;
@@ -29,7 +29,7 @@ public class class118 {
 	public static int field2134;
 
 	@OriginalMember(owner = "client!ki", name = "d", descriptor = "I")
-	public int field2136;
+	public int hintOffsetX;
 
 	@OriginalMember(owner = "client!ki", name = "e", descriptor = "I")
 	public int field2137;
@@ -41,7 +41,7 @@ public class class118 {
 	public int field2140;
 
 	@OriginalMember(owner = "client!ki", name = "i", descriptor = "I")
-	public int field2141;
+	public int hintType;
 
 	@OriginalMember(owner = "client!ki", name = "k", descriptor = "I")
 	public static int field2143;
@@ -59,7 +59,7 @@ public class class118 {
 	public static int field2151;
 
 	@OriginalMember(owner = "client!ki", name = "t", descriptor = "I")
-	public int field2152;
+	public int hintOffsetZ;
 
 	@OriginalMember(owner = "client!ki", name = "u", descriptor = "I")
 	public int field2153;
@@ -104,7 +104,7 @@ public class class118 {
 		class228.field4282[0] = arg5;
 
 		field2151++;
-		class7.field100 = Linkable.field1211;
+		class7.field100 = Linkable.transmitNum;
 	}
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(III)V")
@@ -430,10 +430,10 @@ public class class118 {
 		if (class156.field3018 != 0) {
 			if (arg3 >= arg0 && arg3 < arg0 + 16 && arg7 <= arg5 && arg5 < arg7 + 16) {
 				arg6.field3417 -= 4;
-				class200.method1373(65280, arg6);
+				class200.componentUpdated(arg6);
 			} else if (arg0 <= arg3 && arg3 < arg0 + 16 && arg5 >= arg7 + arg4 - 16 && arg7 + arg4 > arg5) {
 				arg6.field3417 += 4;
-				class200.method1373(arg2 ^ 0xFFFF4079, arg6);
+				class200.componentUpdated(arg6);
 			} else if (arg3 >= arg0 - NpcType.field2334 && arg3 < NpcType.field2334 + arg0 + 16 && arg7 + 16 <= arg5 && arg5 < arg7 + arg4 - 16) {
 				int var8 = (arg4 - 32) * arg4 / arg1;
 				if (var8 < 8) {
@@ -442,7 +442,7 @@ public class class118 {
 				int var9 = arg4 - var8 - 32;
 				int var10 = arg5 - var8 / 2 - arg7 - 16;
 				arg6.field3417 = (arg1 - arg4) * var10 / var9;
-				class200.method1373(arg2 + 81799, arg6);
+				class200.componentUpdated(arg6);
 				class1.field9 = true;
 			}
 		}
@@ -450,7 +450,7 @@ public class class118 {
 			int var11 = arg6.field3382;
 			if (arg3 >= arg0 - var11 && arg7 <= arg5 && arg3 < arg0 + 16 && arg5 <= arg7 + arg4) {
 				arg6.field3417 += class90.field1709 * 45;
-				class200.method1373(65280, arg6);
+				class200.componentUpdated(arg6);
 			}
 		}
 		if (arg2 != -16519) {

@@ -20,13 +20,13 @@ public class class110 {
 	public static JString field2017 = field2008;
 
 	@OriginalMember(owner = "client!ka", name = "h", descriptor = "Z")
-	public static boolean field2014 = false;
+	public static boolean playingJingle = false;
 
 	@OriginalMember(owner = "client!ka", name = "l", descriptor = "[I")
 	public static int[] field2018 = new int[50];
 
 	@OriginalMember(owner = "client!ka", name = "n", descriptor = "I")
-	public static int field2020 = -2;
+	public static int componentDrawTime = -2;
 
 	@OriginalMember(owner = "client!ka", name = "m", descriptor = "Li;")
 	public static JString field2019 = class208.method1425("Verbinde mit Server)3)3)3");
@@ -59,9 +59,9 @@ public class class110 {
 		if (arg1.field3467 != null) {
 			class155.method1057(var3, (byte) -99, arg0, arg1.parentId, var4, arg1.field3467);
 		}
-		class168 var6 = (class168) class128.field2397.find((long) arg1.parentId);
+		class168 var6 = (class168) class128.subinterfaces.find((long) arg1.parentId);
 		if (var6 != null) {
-			class212.method1451(var3, var6.field3231, (byte) 34, var4, arg0);
+			class212.method1451(var3, var6.id, (byte) 34, var4, arg0);
 		}
 	}
 
@@ -100,13 +100,13 @@ public class class110 {
 					return var4;
 				}
 				if (var7 == 1) {
-					var9 = class105.field1909[var3[var5++]];
+					var9 = class105.statEffectiveLevel[var3[var5++]];
 				}
 				if (var7 == 2) {
-					var9 = class217.field4068[var3[var5++]];
+					var9 = class217.statBaseLevel[var3[var5++]];
 				}
 				if (var7 == 3) {
-					var9 = class179.field3564[var3[var5++]];
+					var9 = class179.statXP[var3[var5++]];
 				}
 				if (var7 == 4) {
 					int var10 = var3[var5++] << 16;
@@ -125,18 +125,18 @@ public class class110 {
 					var9 = class113.var[var3[var5++]];
 				}
 				if (var7 == 6) {
-					var9 = class90.field1711[class217.field4068[var3[var5++]] - 1];
+					var9 = class90.skillxp[class217.statBaseLevel[var3[var5++]] - 1];
 				}
 				if (var7 == 7) {
 					var9 = class113.var[var3[var5++]] * 100 / 46875;
 				}
 				if (var7 == 8) {
-					var9 = class240.field4458.combatLevel;
+					var9 = class240.localPlayer.combatLevel;
 				}
 				if (var7 == 9) {
 					for (int var15 = 0; var15 < 25; var15++) {
 						if (class17.field255[var15]) {
-							var9 += class217.field4068[var15];
+							var9 += class217.statBaseLevel[var15];
 						}
 					}
 				}
@@ -179,10 +179,10 @@ public class class110 {
 					var8 = 3;
 				}
 				if (var7 == 18) {
-					var9 = (class240.field4458.field4138 >> 7) + class223.field4214;
+					var9 = (class240.localPlayer.field4138 >> 7) + class223.field4214;
 				}
 				if (var7 == 19) {
-					var9 = (class240.field4458.field4123 >> 7) + class190.field3681;
+					var9 = (class240.localPlayer.field4123 >> 7) + class190.field3681;
 				}
 				if (var7 == 20) {
 					var9 = var3[var5++];
@@ -234,11 +234,11 @@ public class class110 {
 
 	@OriginalMember(owner = "client!ka", name = "a", descriptor = "()V")
 	public static final void method765() {
-		for (int var0 = 0; var0 < class25.field396; var0++) {
-			class108 var1 = class149.field2908[var0];
+		for (int var0 = 0; var0 < class25.dynamicCount; var0++) {
+			class108 var1 = class149.dynamicSprites[var0];
 			ClientStream.method917(var1);
-			class149.field2908[var0] = null;
+			class149.dynamicSprites[var0] = null;
 		}
-		class25.field396 = 0;
+		class25.dynamicCount = 0;
 	}
 }

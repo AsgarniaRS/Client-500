@@ -735,7 +735,7 @@ public abstract class Js5 {
 				for (int var9 = 0; var9 < 64; var9++) {
 					for (int var10 = 0; var10 < 64; var10++) {
 						if (arg1 + var9 > 0 && arg1 + var9 < 103 && arg4 + var10 > 0 && arg4 + var10 < 103) {
-							arg3[var8].field1668[arg1 + var9][arg4 + var10] = class70.method470(arg3[var8].field1668[arg1 + var9][arg4 + var10], -16777217);
+							arg3[var8].flags[arg1 + var9][arg4 + var10] = class70.method470(arg3[var8].flags[arg1 + var9][arg4 + var10], -16777217);
 						}
 					}
 				}

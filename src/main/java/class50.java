@@ -85,13 +85,13 @@ public abstract class class50 {
 					class248.field4537 = 0;
 					class43.field739 = false;
 					if (class135.field2516 != null) {
-						class200.method1373(65280, class135.field2516);
+						class200.componentUpdated(class135.field2516);
 					}
 					class135.field2516 = IfType.get(-64, var4);
 					class18.field305 = var3;
 					class219.field4148 = class226.field4241;
 					class48.field894 = class172.field3341;
-					class200.method1373(65280, class135.field2516);
+					class200.componentUpdated(class135.field2516);
 					return;
 				}
 			}

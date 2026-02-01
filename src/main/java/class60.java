@@ -73,7 +73,7 @@ public class class60 extends class23 {
 	public static final void method428(JString arg0, int arg1, byte arg2, JString arg3, JString arg4) {
 		++field1122;
 		if (arg2 >= -68) {
-			method432(-100);
+			getNpcPos(-100);
 		}
 		class118.method803(arg3, (byte) 28, -1, arg0, arg1, arg4);
 	}
@@ -142,7 +142,7 @@ public class class60 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!fd", name = "f", descriptor = "(I)V")
-	public static final void method432(int arg0) {
+	public static final void getNpcPos(int arg0) {
 		++field1128;
 		class223.field4198 = 0;
 		class192.field3704 = 0;
