@@ -1019,7 +1019,7 @@ public class class236 extends class27 {
 				for (int var222 = class150.baseZ; var222 < class150.baseZ + 8; var222++) {
 					if (class134.field2499[class149.minusedLevel][var220][var222] != null) {
 						class134.field2499[class149.minusedLevel][var220][var222] = null;
-						class29.method175(21280, var220, var222);
+						class29.showObject(21280, var220, var222);
 					}
 				}
 			}

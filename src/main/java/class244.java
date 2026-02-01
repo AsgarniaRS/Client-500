@@ -83,7 +83,7 @@ public class class244 extends Linkable {
 					class134.field2499[class149.minusedLevel][var21][var20] = new class248();
 				}
 				class134.field2499[class149.minusedLevel][var21][var20].method1624(new class227(var25), 71);
-				class29.method175(21280, var21, var20);
+				class29.showObject(21280, var21, var20);
 			}
 		} else if (class238.ptype == 173) {
 			// MAP_ANIM
@@ -116,7 +116,7 @@ public class class244 extends Linkable {
 							break;
 						}
 					}
-					class29.method175(21280, var37, var36);
+					class29.showObject(21280, var37, var36);
 				}
 			}
 		} else if (class238.ptype == 44) {
@@ -132,6 +132,7 @@ public class class244 extends Linkable {
 				class220.method1488(0, var51, var47, var46, -1, var45, class149.minusedLevel, var50, arg0 ^ 0xFFFFDC99, var48);
 			}
 		} else if (class238.ptype == 171) {
+			// LOC_ANIM
 			int var52 = class230.in.g1_alt1();
 			int var53 = var52 & 0x3;
 			int var54 = var52 >> 2;
@@ -146,6 +147,7 @@ public class class244 extends Linkable {
 			class113.method776(var54, var58, 12019, var55, var53, class149.minusedLevel, var59, var56);
 		} else {
 			if (class238.ptype == 61) {
+				// LOC_MERGE
 				int var60 = class230.in.g2();
 				int var61 = class230.in.g1_alt2();
 				int var62 = var61 >> 2;
@@ -217,6 +219,7 @@ public class class244 extends Linkable {
 				}
 			}
 			if (class238.ptype == 99) {
+				// OBJ_ADD
 				int var91 = class230.in.g1();
 				int var92 = (var91 & 0x7) + class150.baseZ;
 				int var93 = (var91 >> 4 & 0x7) + class121.baseX;
@@ -230,7 +233,7 @@ public class class244 extends Linkable {
 						class134.field2499[class149.minusedLevel][var93][var92] = new class248();
 					}
 					class134.field2499[class149.minusedLevel][var93][var92].method1624(new class227(var96), arg0 ^ 0xFFFFDCC4);
-					class29.method175(arg0 + 30343, var93, var92);
+					class29.showObject(arg0 + 30343, var93, var92);
 				}
 			} else if (class238.ptype == 150) {
 				// MAP_PROJANIM
@@ -257,6 +260,7 @@ public class class244 extends Linkable {
 					class167.field3222.method1624(new class20(var114), 109);
 				}
 			} else if (class238.ptype == 198) {
+				// OBJ_DEL
 				int var115 = class230.in.g1_alt1();
 				int var116 = (var115 >> 4 & 0x7) + class121.baseX;
 				int var117 = (var115 & 0x7) + class150.baseZ;
@@ -273,10 +277,11 @@ public class class244 extends Linkable {
 						if (var119.method1612(false) == null) {
 							class134.field2499[class149.minusedLevel][var116][var117] = null;
 						}
-						class29.method175(21280, var116, var117);
+						class29.showObject(21280, var116, var117);
 					}
 				}
 			} else if (class238.ptype == 75) {
+				// LOC_DEL
 				int var121 = class230.in.g1();
 				int var122 = var121 >> 2;
 				int var123 = class98.field1794[var122];
@@ -288,6 +293,7 @@ public class class244 extends Linkable {
 					class220.method1488(0, var126, var123, var124, -1, var122, class149.minusedLevel, var127, arg0 + 9063, -1);
 				}
 			} else if (class238.ptype == 52) {
+				// SOUND_AREA
 				int var128 = class230.in.g1();
 				int var129 = class150.baseZ + (var128 & 0x7);
 				int var130 = (var128 >> 4 & 0x7) + class121.baseX;

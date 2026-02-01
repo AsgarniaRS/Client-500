@@ -155,7 +155,7 @@ public class class184 extends class23 {
 				class7.method39(26249);
 				for (int var9 = 0; ~var9 > -105; ++var9) {
 					for (int var16 = 0; ~var16 > -105; ++var16) {
-						class29.method175(21280, var9, var16);
+						class29.showObject(21280, var9, var16);
 					}
 				}
 				class219.method1481(2);

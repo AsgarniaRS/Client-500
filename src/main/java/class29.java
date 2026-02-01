@@ -82,7 +82,7 @@ public abstract class class29 {
 	}
 
 	@OriginalMember(owner = "client!cf", name = "a", descriptor = "(III)V")
-	public static final void method175(int arg0, int arg1, int arg2) {
+	public static final void showObject(int arg0, int arg1, int arg2) {
 		field484++;
 		class248 var3 = class134.field2499[class149.minusedLevel][arg1][arg2];
 		if (var3 == null) {
