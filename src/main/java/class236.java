@@ -123,22 +123,27 @@ public class class236 extends class27 {
 			if (var5 != null) {
 				class93.method673((byte) -124, var5, var4 == null || var4.id != var5.id);
 			}
+
 			if (var4 != null) {
 				var4.unlink();
 				class128.subinterfaces.put((long) var3, var4, -1);
 			}
+
 			IfType var6 = IfType.get(-64, var2);
 			if (var6 != null) {
 				class200.componentUpdated(var6);
 			}
+
 			IfType var7 = IfType.get(-64, var3);
 			if (var7 != null) {
 				class200.componentUpdated(var7);
 				class110.method761(true, var7, (byte) -111);
 			}
+
 			if (class43.field723 != -1) {
 				ClientStream.method914(class43.field723, 1, 4);
 			}
+
 			class238.ptype = -1;
 			return true;
 		} else if (class238.ptype == 244) {
