@@ -73,10 +73,10 @@ public class class234 extends class23 {
 		if (arg0 != 4570) {
 			field4385 = -60;
 		}
-		if ((8 & class116.field2100[arg3][arg2][arg1]) != 0) {
+		if ((8 & class116.mapl[arg3][arg2][arg1]) != 0) {
 			return 0;
 		} else {
-			return ~arg3 < -1 && (2 & class116.field2100[1][arg2][arg1]) != 0 ? arg3 - 1 : arg3;
+			return ~arg3 < -1 && (2 & class116.mapl[1][arg2][arg1]) != 0 ? arg3 - 1 : arg3;
 		}
 	}
 

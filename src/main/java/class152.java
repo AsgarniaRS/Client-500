@@ -124,9 +124,9 @@ public class class152 extends class23 {
 	@OriginalMember(owner = "client!o", name = "f", descriptor = "(I)I")
 	public static final int method1042(int arg0) {
 		++field2951;
-		int var1 = class239.method1586(class79.field1428, class184.field3610, 2, class149.field2909);
-		if (-class108.field1956 + var1 < 800 && ~(class116.field2100[class149.field2909][class79.field1428 >> 7][class184.field3610 >> 7] & 4) != -1) {
-			return class149.field2909;
+		int var1 = Client.getAvH(class79.field1428, class184.field3610, 2, class149.minusedLevel);
+		if (-class108.field1956 + var1 < 800 && ~(class116.mapl[class149.minusedLevel][class79.field1428 >> 7][class184.field3610 >> 7] & 4) != -1) {
+			return class149.minusedLevel;
 		} else {
 			if (arg0 >= -74) {
 				method1041(104);

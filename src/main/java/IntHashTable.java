@@ -350,7 +350,7 @@ public class IntHashTable {
 		int var16 = 0;
 		int var32 = var15 + 1;
 		class97.field1783[var15] = arg2;
-		int[][] var17 = class166.field3202[class149.field2909].field1668;
+		int[][] var17 = class166.field3202[class149.minusedLevel].field1668;
 		boolean var18 = false;
 		while (var32 != var16) {
 			var14 = class97.field1783[var16];
@@ -361,16 +361,16 @@ public class IntHashTable {
 				break;
 			}
 			if (arg1 != 0) {
-				if ((arg1 < 5 || arg1 == 10) && class166.field3202[class149.field2909].method641(var14, arg1 - 1, arg4, arg0, 1, arg6, var13, 120)) {
+				if ((arg1 < 5 || arg1 == 10) && class166.field3202[class149.minusedLevel].method641(var14, arg1 - 1, arg4, arg0, 1, arg6, var13, 120)) {
 					var18 = true;
 					break;
 				}
-				if (arg1 < 10 && class166.field3202[class149.field2909].method649(arg6, var13, arg1 - 1, (byte) 117, arg0, 1, var14, arg4)) {
+				if (arg1 < 10 && class166.field3202[class149.minusedLevel].method649(arg6, var13, arg1 - 1, (byte) 117, arg0, 1, var14, arg4)) {
 					var18 = true;
 					break;
 				}
 			}
-			if (arg8 != 0 && arg5 != 0 && class166.field3202[class149.field2909].method651(1, arg0, arg8, arg7 ^ 0x21CE, var14, arg5, var13, arg4, arg10)) {
+			if (arg8 != 0 && arg5 != 0 && class166.field3202[class149.minusedLevel].method651(1, arg0, arg8, arg7 ^ 0x21CE, var14, arg5, var13, arg4, arg10)) {
 				var18 = true;
 				break;
 			}

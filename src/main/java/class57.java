@@ -226,7 +226,7 @@ public class class57 extends class23 {
 			class34.method227((byte) 120, class70.field1273, class11.field162, class223.field4211);
 		}
 		int var2 = -36 % ((-35 - arg0) / 60);
-		class131.method883(10, 65536);
+		class131.setMainState(10, 65536);
 	}
 
 	@OriginalMember(owner = "client!fa", name = "a", descriptor = "(IIIILq;Lrc;I)V")

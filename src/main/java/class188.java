@@ -81,7 +81,7 @@ public abstract class class188 extends Linkable2 {
 		if (arg1 < 53) {
 			method1315(false);
 		}
-		if (class229.gameState == 0 || class229.gameState == 5) {
+		if (class229.state == 0 || class229.state == 5) {
 			byte var3 = 20;
 			int var4 = 253 - var3;
 			arg2.method141(class132.field2468, 382, 245 - var3, 16777215, -1);
@@ -91,7 +91,7 @@ public abstract class class188 extends Linkable2 {
 			class72.method478(class6.field83 * 3 + 232, var4 + 2, 300 - class6.field83 * 3, 30, 0);
 			arg2.method141(class209.field3965, 382, 276 - var3, 16777215, -1);
 		}
-		if (class229.gameState == 20) {
+		if (class229.state == 20) {
 			class242.field4475.method878(382 - class242.field4475.field2436 / 2, 271 - class242.field4475.field2439 / 2);
 			short var5 = 211;
 			arg2.method141(class209.field3983, 382, var5, 16776960, 0);
@@ -106,7 +106,7 @@ public abstract class class188 extends Linkable2 {
 			arg2.method154(class166.method1142(new JString[]{CollisionMap.field1698, class209.field3972.method596(true)}, -3), 274, var28, 16777215, 0);
 			int var30 = var28 + 15;
 		}
-		if (class229.gameState == 10) {
+		if (class229.state == 10) {
 			class242.field4475.method878(202, 171);
 			if (class65.field1182 == 0) {
 				short var15 = 302;
@@ -176,7 +176,7 @@ public abstract class class188 extends Linkable2 {
 			class186.method1309(false);
 		}
 		class116.field2097[class131.field2462 ? 1 : 0].method878(725, 463);
-		if (class229.gameState <= 5 || class143.field2659 == 2) {
+		if (class229.state <= 5 || class143.field2659 == 2) {
 			return;
 		}
 		if (class32.field518 == null) {

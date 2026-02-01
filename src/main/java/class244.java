@@ -49,7 +49,7 @@ public class class244 extends Linkable {
 		if (arg0 != -9063) {
 			return;
 		}
-		if (class238.packetType == 123) {
+		if (class238.ptype == 123) {
 			int var1 = class230.in.g1();
 			int var2 = (var1 & 0xF) + class150.field2912 * 2;
 			int var3 = (var1 >> 4 & 0xF) + class121.field2215 * 2;
@@ -67,12 +67,12 @@ public class class244 extends Linkable {
 				int var14 = var2 * 64;
 				int var15 = var3 * 64;
 				int var16 = var5 * 64;
-				class77 var17 = new class77(var7, class149.field2909, var15, var14, class239.method1586(var15, var14, 2, class149.field2909) - var8, var10 - -class117.field2115, class117.field2115 + var11, var12, var13, var6, var9);
+				class77 var17 = new class77(var7, class149.minusedLevel, var15, var14, Client.getAvH(var15, var14, 2, class149.minusedLevel) - var8, var10 - -class117.field2115, class117.field2115 + var11, var12, var13, var6, var9);
 				int var18 = var4 * 64;
-				var17.method520(var18, var10 + class117.field2115, class239.method1586(var18, var16, 2, class149.field2909) + -var9, -14596, var16);
+				var17.method520(var18, var10 + class117.field2115, Client.getAvH(var18, var16, 2, class149.minusedLevel) + -var9, -14596, var16);
 				class167.field3222.method1624(new class20(var17), 118);
 			}
-		} else if (class238.packetType == 135) {
+		} else if (class238.ptype == 135) {
 			int var19 = class230.in.g1_alt1();
 			int var20 = (var19 & 0x7) + class150.field2912;
 			int var21 = class121.field2215 + (var19 >> 4 & 0x7);
@@ -83,13 +83,13 @@ public class class244 extends Linkable {
 				class111 var25 = new class111();
 				var25.field2031 = var24;
 				var25.field2032 = var22;
-				if (class134.field2499[class149.field2909][var21][var20] == null) {
-					class134.field2499[class149.field2909][var21][var20] = new class248();
+				if (class134.field2499[class149.minusedLevel][var21][var20] == null) {
+					class134.field2499[class149.minusedLevel][var21][var20] = new class248();
 				}
-				class134.field2499[class149.field2909][var21][var20].method1624(new class227(var25), 71);
+				class134.field2499[class149.minusedLevel][var21][var20].method1624(new class227(var25), 71);
 				class29.method175(21280, var21, var20);
 			}
-		} else if (class238.packetType == 173) {
+		} else if (class238.ptype == 173) {
 			int var26 = class230.in.g1();
 			int var27 = class150.field2912 + (var26 & 0x7);
 			int var28 = (var26 >> 4 & 0x7) + class121.field2215;
@@ -99,10 +99,10 @@ public class class244 extends Linkable {
 			if (var28 >= 0 && var27 >= 0 && var28 < 104 && var27 < 104) {
 				int var32 = var28 * 128 + 64;
 				int var33 = var27 * 128 + 64;
-				class18 var34 = new class18(var29, class149.field2909, var32, var33, class239.method1586(var32, var33, 2, class149.field2909) - var30, var31, class117.field2115);
+				class18 var34 = new class18(var29, class149.minusedLevel, var32, var33, Client.getAvH(var32, var33, 2, class149.minusedLevel) - var30, var31, class117.field2115);
 				class42.field714.method1624(new class242(var34), 124);
 			}
-		} else if (class238.packetType == 232) {
+		} else if (class238.ptype == 232) {
 			int var35 = class230.in.g1();
 			int var36 = (var35 & 0x7) + class150.field2912;
 			int var37 = (var35 >> 4 & 0x7) + class121.field2215;
@@ -110,7 +110,7 @@ public class class244 extends Linkable {
 			int var39 = class230.in.g2();
 			int var40 = class230.in.g2();
 			if (var37 >= 0 && var36 >= 0 && var37 < 104 && var36 < 104) {
-				class248 var41 = class134.field2499[class149.field2909][var37][var36];
+				class248 var41 = class134.field2499[class149.minusedLevel][var37][var36];
 				if (var41 != null) {
 					for (class227 var42 = (class227) var41.method1612(false); var42 != null; var42 = (class227) var41.method1621(arg0 ^ 0xFFFFDCCB)) {
 						class111 var43 = var42.field4260;
@@ -122,7 +122,7 @@ public class class244 extends Linkable {
 					class29.method175(21280, var37, var36);
 				}
 			}
-		} else if (class238.packetType == 44) {
+		} else if (class238.ptype == 44) {
 			int var44 = class230.in.g1();
 			int var45 = var44 >> 2;
 			int var46 = var44 & 0x3;
@@ -132,9 +132,9 @@ public class class244 extends Linkable {
 			int var50 = (var49 >> 4 & 0x7) + class121.field2215;
 			int var51 = class150.field2912 + (var49 & 0x7);
 			if (var50 >= 0 && var51 >= 0 && var50 < 104 && var51 < 104) {
-				class220.method1488(0, var51, var47, var46, -1, var45, class149.field2909, var50, arg0 ^ 0xFFFFDC99, var48);
+				class220.method1488(0, var51, var47, var46, -1, var45, class149.minusedLevel, var50, arg0 ^ 0xFFFFDC99, var48);
 			}
-		} else if (class238.packetType == 171) {
+		} else if (class238.ptype == 171) {
 			int var52 = class230.in.g1_alt1();
 			int var53 = var52 & 0x3;
 			int var54 = var52 >> 2;
@@ -146,9 +146,9 @@ public class class244 extends Linkable {
 			int var57 = class230.in.g1_alt3(24758);
 			int var58 = (var57 >> 4 & 0x7) + class121.field2215;
 			int var59 = (var57 & 0x7) + class150.field2912;
-			class113.method776(var54, var58, 12019, var55, var53, class149.field2909, var59, var56);
+			class113.method776(var54, var58, 12019, var55, var53, class149.minusedLevel, var59, var56);
 		} else {
-			if (class238.packetType == 61) {
+			if (class238.ptype == 61) {
 				int var60 = class230.in.g2();
 				int var61 = class230.in.g1_alt2();
 				int var62 = var61 >> 2;
@@ -185,17 +185,17 @@ public class class244 extends Linkable {
 					int var80 = (var77 + 1 >> 1) + var73;
 					int var81 = (var78 >> 1) + var72;
 					int var82 = (var78 + 1 >> 1) + var72;
-					int[][] var83 = class62.field1137[class149.field2909];
+					int[][] var83 = class62.field1137[class149.minusedLevel];
 					int var84 = (var73 << 7) + (var77 << 6);
 					int var85 = var83[var79][var81] + var83[var80][var81] + var83[var80][var82] + var83[var79][var82] >> 2;
 					int var86 = (var72 << 7) + (var78 << 6);
 					int[][] var87 = null;
-					if (class149.field2909 < 3) {
-						var87 = class62.field1137[class149.field2909 + 1];
+					if (class149.minusedLevel < 3) {
+						var87 = class62.field1137[class149.minusedLevel + 1];
 					}
 					class210 var88 = var76.method999(var62, var87, var83, var84, false, var86, var63, var85, arg0 - 12674);
 					if (var88 != null) {
-						class220.method1488(var70 + 1, var72, var64, 0, var74 + 1, 0, class149.field2909, var73, 0, -1);
+						class220.method1488(var70 + 1, var72, var64, 0, var74 + 1, 0, class149.minusedLevel, var73, 0, -1);
 						var75.field759 = var85;
 						var75.field755 = class117.field2115 + var70;
 						var75.field757 = var72 * 128 + var78 * 64;
@@ -219,7 +219,7 @@ public class class244 extends Linkable {
 					}
 				}
 			}
-			if (class238.packetType == 99) {
+			if (class238.ptype == 99) {
 				int var91 = class230.in.g1();
 				int var92 = (var91 & 0x7) + class150.field2912;
 				int var93 = (var91 >> 4 & 0x7) + class121.field2215;
@@ -229,13 +229,13 @@ public class class244 extends Linkable {
 					class111 var96 = new class111();
 					var96.field2031 = var95;
 					var96.field2032 = var94;
-					if (class134.field2499[class149.field2909][var93][var92] == null) {
-						class134.field2499[class149.field2909][var93][var92] = new class248();
+					if (class134.field2499[class149.minusedLevel][var93][var92] == null) {
+						class134.field2499[class149.minusedLevel][var93][var92] = new class248();
 					}
-					class134.field2499[class149.field2909][var93][var92].method1624(new class227(var96), arg0 ^ 0xFFFFDCC4);
+					class134.field2499[class149.minusedLevel][var93][var92].method1624(new class227(var96), arg0 ^ 0xFFFFDCC4);
 					class29.method175(arg0 + 30343, var93, var92);
 				}
-			} else if (class238.packetType == 150) {
+			} else if (class238.ptype == 150) {
 				int var97 = class230.in.g1();
 				int var98 = class121.field2215 + (var97 >> 4 & 0x7);
 				int var99 = (var97 & 0x7) + class150.field2912;
@@ -254,17 +254,17 @@ public class class244 extends Linkable {
 					int var111 = var101 * 128 + 64;
 					int var112 = var100 * 128 + 64;
 					int var113 = var99 * 128 + 64;
-					class77 var114 = new class77(var103, class149.field2909, var110, var113, class239.method1586(var110, var113, arg0 ^ 0xFFFFDC9B, class149.field2909) - var104, class117.field2115 + var106, var107 + class117.field2115, var108, var109, var102, var105);
-					var114.method520(var112, class117.field2115 + var106, class239.method1586(var112, var111, 2, class149.field2909) + -var105, -14596, var111);
+					class77 var114 = new class77(var103, class149.minusedLevel, var110, var113, Client.getAvH(var110, var113, arg0 ^ 0xFFFFDC9B, class149.minusedLevel) - var104, class117.field2115 + var106, var107 + class117.field2115, var108, var109, var102, var105);
+					var114.method520(var112, class117.field2115 + var106, Client.getAvH(var112, var111, 2, class149.minusedLevel) + -var105, -14596, var111);
 					class167.field3222.method1624(new class20(var114), 109);
 				}
-			} else if (class238.packetType == 198) {
+			} else if (class238.ptype == 198) {
 				int var115 = class230.in.g1_alt1();
 				int var116 = (var115 >> 4 & 0x7) + class121.field2215;
 				int var117 = (var115 & 0x7) + class150.field2912;
 				int var118 = class230.in.g2_alt3(arg0 + 9318);
 				if (var116 >= 0 && var117 >= 0 && var116 < 104 && var117 < 104) {
-					class248 var119 = class134.field2499[class149.field2909][var116][var117];
+					class248 var119 = class134.field2499[class149.minusedLevel][var116][var117];
 					if (var119 != null) {
 						for (class227 var120 = (class227) var119.method1612(false); var120 != null; var120 = (class227) var119.method1621(arg0 ^ 0xFFFFDCCB)) {
 							if ((var118 & 0x7FFF) == var120.field4260.field2032) {
@@ -273,12 +273,12 @@ public class class244 extends Linkable {
 							}
 						}
 						if (var119.method1612(false) == null) {
-							class134.field2499[class149.field2909][var116][var117] = null;
+							class134.field2499[class149.minusedLevel][var116][var117] = null;
 						}
 						class29.method175(21280, var116, var117);
 					}
 				}
-			} else if (class238.packetType == 75) {
+			} else if (class238.ptype == 75) {
 				int var121 = class230.in.g1();
 				int var122 = var121 >> 2;
 				int var123 = class98.field1794[var122];
@@ -287,9 +287,9 @@ public class class244 extends Linkable {
 				int var126 = class150.field2912 + (var125 & 0x7);
 				int var127 = (var125 >> 4 & 0x7) + class121.field2215;
 				if (var127 >= 0 && var126 >= 0 && var127 < 104 && var126 < 104) {
-					class220.method1488(0, var126, var123, var124, -1, var122, class149.field2909, var127, arg0 + 9063, -1);
+					class220.method1488(0, var126, var123, var124, -1, var122, class149.minusedLevel, var127, arg0 + 9063, -1);
 				}
-			} else if (class238.packetType == 52) {
+			} else if (class238.ptype == 52) {
 				int var128 = class230.in.g1();
 				int var129 = class150.field2912 + (var128 & 0x7);
 				int var130 = (var128 >> 4 & 0x7) + class121.field2215;

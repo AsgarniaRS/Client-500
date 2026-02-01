@@ -118,7 +118,7 @@ public class class108 {
 		class97.field1783[var15] = arg1;
 		boolean var16 = false;
 		int var17 = 0;
-		int[][] var18 = class166.field3202[class149.field2909].field1668;
+		int[][] var18 = class166.field3202[class149.minusedLevel].field1668;
 		while (var32 != var17) {
 			var13 = class120.field2205[var17];
 			var14 = class97.field1783[var17];
@@ -128,16 +128,16 @@ public class class108 {
 				break;
 			}
 			if (arg6 != 0) {
-				if ((arg6 < 5 || arg6 == 10) && class166.field3202[class149.field2909].method641(var14, arg6 - 1, arg8, arg11, 2, arg7, var13, -74)) {
+				if ((arg6 < 5 || arg6 == 10) && class166.field3202[class149.minusedLevel].method641(var14, arg6 - 1, arg8, arg11, 2, arg7, var13, -74)) {
 					var16 = true;
 					break;
 				}
-				if (arg6 < 10 && class166.field3202[class149.field2909].method649(arg7, var13, arg6 - 1, (byte) 121, arg11, 2, var14, arg8)) {
+				if (arg6 < 10 && class166.field3202[class149.minusedLevel].method649(arg7, var13, arg6 - 1, (byte) 121, arg11, 2, var14, arg8)) {
 					var16 = true;
 					break;
 				}
 			}
-			if (arg3 != 0 && arg4 != 0 && class166.field3202[class149.field2909].method651(2, arg11, arg3, 1, var14, arg4, var13, arg8, arg9)) {
+			if (arg3 != 0 && arg4 != 0 && class166.field3202[class149.minusedLevel].method651(2, arg11, arg3, 1, var14, arg4, var13, arg8, arg9)) {
 				var16 = true;
 				break;
 			}

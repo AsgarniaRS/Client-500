@@ -80,14 +80,14 @@ public abstract class class50 {
 			if (var2 == 6 || var2 == 8 || var2 == 49 || var2 == 44 || var2 == 13 || var2 == 28 || var2 == 9 || var2 == 2 || var2 == 21 || var2 == 18 || var2 == 12 || var2 == 1001) {
 				int var3 = class165.field3178[class203.field3864 - 1];
 				int var4 = class217.field4062[class203.field3864 - 1];
-				IfType var5 = class239.method1581(-64, var4);
+				IfType var5 = IfType.get(-64, var4);
 				if (class68.method465(class80.method530(-881710560, var5), true) || class159.method1072(class80.method530(-881710560, var5), (byte) -52)) {
 					class248.field4537 = 0;
 					class43.field739 = false;
 					if (class135.field2516 != null) {
 						class200.method1373(65280, class135.field2516);
 					}
-					class135.field2516 = class239.method1581(-64, var4);
+					class135.field2516 = IfType.get(-64, var4);
 					class18.field305 = var3;
 					class219.field4148 = class226.field4241;
 					class48.field894 = class172.field3341;
@@ -145,11 +145,11 @@ public abstract class class50 {
 				class53.method388(0, IntHashTable.field1816, (byte) -78, false, class86.field1552, 255);
 			}
 		}
-		if (class229.gameState == 5) {
+		if (class229.state == 5) {
 			return;
 		}
 		class86.field1550++;
-		if (class229.gameState != 10) {
+		if (class229.state != 10) {
 			return;
 		}
 		if (class143.field2659 != 2) {
@@ -221,7 +221,7 @@ public abstract class class50 {
 					return;
 				}
 				class34.method227((byte) -43, class70.field1306, class70.field1275, GZip.field1117);
-				class131.method883(20, 65536);
+				class131.setMainState(20, 65536);
 				return;
 			}
 			short var18 = 462;
@@ -274,7 +274,7 @@ public abstract class class50 {
 						return;
 					}
 					class34.method227((byte) 16, class70.field1306, class70.field1275, GZip.field1117);
-					class131.method883(20, 65536);
+					class131.setMainState(20, 65536);
 					return;
 				}
 				if (var19 && class209.field3972.length() < 20) {

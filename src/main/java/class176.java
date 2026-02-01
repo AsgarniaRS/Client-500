@@ -95,17 +95,17 @@ public class class176 extends Linkable2 {
 	public static final void method1263(byte arg0) {
 		field3542++;
 		try {
-			if (class117.loginState == 0) {
-				if (class33.stream != null) {
-					class33.stream.close(true);
-					class33.stream = null;
+			if (class117.loginStep == 0) {
+				if (class33.loginStream != null) {
+					class33.loginStream.close(true);
+					class33.loginStream = null;
 				}
 				class6.field71 = 0;
-				class117.loginState = 1;
+				class117.loginStep = 1;
 				class58.field1097 = false;
 				class98.field1801 = null;
 			}
-			if (class117.loginState == 1) {
+			if (class117.loginStep == 1) {
 				if (class98.field1801 == null) {
 					class98.field1801 = NpcType.field2326.method1290(class95.field1761, class168.field3248, 90);
 				}
@@ -113,29 +113,29 @@ public class class176 extends Linkable2 {
 					throw new IOException();
 				}
 				if (class98.field1801.field3136 == 1) {
-					class33.stream = new ClientStream((Socket) class98.field1801.field3131, NpcType.field2326);
-					class117.loginState = 2;
+					class33.loginStream = new ClientStream((Socket) class98.field1801.field3131, NpcType.field2326);
+					class117.loginStep = 2;
 					class98.field1801 = null;
 				}
 			}
-			if (class117.loginState == 2) {
+			if (class117.loginStep == 2) {
 				long var1 = class36.field631 = class209.field3969.method630(false);
 				Isaac.out.pos = 0;
 				Isaac.out.p1(14);
 				int var3 = (int) (var1 >> 16 & 0x1FL);
 				Isaac.out.p1(var3);
-				class33.stream.write(Isaac.out.data, 0, 2);
-				class117.loginState = 3;
+				class33.loginStream.write(Isaac.out.data, 0, 2);
+				class117.loginStep = 3;
 				class230.in.pos = 0;
 			}
-			if (class117.loginState == 3) {
+			if (class117.loginStep == 3) {
 				if (class27.field458 != null) {
 					class27.field458.method403(true);
 				}
 				if (class114.field2058 != null) {
 					class114.field2058.method403(true);
 				}
-				int var4 = class33.stream.read(0);
+				int var4 = class33.loginStream.read(0);
 				if (class27.field458 != null) {
 					class27.field458.method403(true);
 				}
@@ -147,26 +147,26 @@ public class class176 extends Linkable2 {
 					return;
 				}
 				class230.in.pos = 0;
-				class117.loginState = 4;
+				class117.loginStep = 4;
 			}
-			if (class117.loginState == 4) {
+			if (class117.loginStep == 4) {
 				if (class230.in.pos < 8) {
-					int var5 = class33.stream.available(1);
+					int var5 = class33.loginStream.available(1);
 					if (8 - class230.in.pos < var5) {
 						var5 = 8 - class230.in.pos;
 					}
 					if (var5 > 0) {
-						class33.stream.read(class230.in.pos, class230.in.data, (byte) -93, var5);
+						class33.loginStream.read(class230.in.pos, class230.in.data, (byte) -93, var5);
 						class230.in.pos += var5;
 					}
 				}
 				if (class230.in.pos == 8) {
 					class230.in.pos = 0;
 					class33.field528 = class230.in.method321(1054632416);
-					class117.loginState = 5;
+					class117.loginStep = 5;
 				}
 			}
-			if (class117.loginState == 5) {
+			if (class117.loginStep == 5) {
 				Isaac.out.pos = 0;
 				int[] seed = new int[]{(int) (Math.random() * 9.9999999E7D), (int) (Math.random() * 9.9999999E7D), (int) (class33.field528 >> 32), (int) class33.field528};
 				Isaac.out.p1(10);
@@ -179,7 +179,7 @@ public class class176 extends Linkable2 {
 				Isaac.out.rsaenc(class32.field515, class58.field1098, 0);
 
 				class31.login.pos = 0;
-				if (class229.gameState == 40) {
+				if (class229.state == 40) {
 					class31.login.p1(18);
 				} else {
 					class31.login.p1(16);
@@ -219,7 +219,7 @@ public class class176 extends Linkable2 {
 				class31.login.p4(class155.field2996.crc);
 				class31.login.pdata(Isaac.out.data, Isaac.out.pos, 0);
 
-				class33.stream.write(class31.login.data, 0, class31.login.pos);
+				class33.loginStream.write(class31.login.data, 0, class31.login.pos);
 				Isaac.out.method36(seed, (byte) 75);
 
 				for (int var7 = 0; var7 < 4; var7++) {
@@ -229,45 +229,45 @@ public class class176 extends Linkable2 {
 
 				System.out.println("We do get here at least");
 
-				class117.loginState = 6;
+				class117.loginStep = 6;
 			}
-			if (class117.loginState == 6 && class33.stream.available(1) > 0) {
-				int var8 = class33.stream.read(0);
+			if (class117.loginStep == 6 && class33.loginStream.available(1) > 0) {
+				int var8 = class33.loginStream.read(0);
 				System.out.println("var8" + var8);
 
-				if (var8 == 21 && class229.gameState == 20) {
-					class117.loginState = 7;
+				if (var8 == 21 && class229.state == 20) {
+					class117.loginStep = 7;
 				} else if (var8 == 2) {
 					System.out.println("Did we ever get here to set login state? also var 8 " + var8);
-					class117.loginState = 9;
-				} else if (var8 == 15 && class229.gameState == 40) {
+					class117.loginStep = 9;
+				} else if (var8 == 15 && class229.state == 40) {
 					class138.method920(true);
 					return;
 				} else if (var8 == 23 && class196.field3760 < 1) {
 					class196.field3760++;
-					class117.loginState = 0;
+					class117.loginStep = 0;
 				} else {
 					class57.method417(-113, var8);
 					return;
 				}
 			}
-			if (class117.loginState == 7 && class33.stream.available(1) > 0) {
-				class237.field4426 = (class33.stream.read(0) + 3) * 60;
-				class117.loginState = 8;
+			if (class117.loginStep == 7 && class33.loginStream.available(1) > 0) {
+				class237.field4426 = (class33.loginStream.read(0) + 3) * 60;
+				class117.loginStep = 8;
 			}
-			if (class117.loginState == 8) {
+			if (class117.loginStep == 8) {
 				class6.field71 = 0;
 				class34.method227((byte) 126, class166.method1142(new JString[]{class170.method1214(class237.field4426 / 60, 124), class127.field2372}, -3), class110.field2017, class139.field2589);
 				if (--class237.field4426 <= 0) {
-					class117.loginState = 0;
+					class117.loginStep = 0;
 				}
 			} else {
-				if (class117.loginState == 9 && class33.stream.available(1) >= 9) {
-					Linkable.field1208 = class33.stream.read(0);
+				if (class117.loginStep == 9 && class33.loginStream.available(1) >= 9) {
+					Linkable.field1208 = class33.loginStream.read(0);
 					System.out.println("field1208" + Linkable.field1208);
-					class29.field479 = class33.stream.read(0);
+					class29.field479 = class33.loginStream.read(0);
 					System.out.println("field479" + class29.field479);
-					class238.field4430 = class33.stream.read(0);
+					class238.field4430 = class33.loginStream.read(0);
 					System.out.println("field4430" + class238.field4430);
 					if (class238.field4430 == 1) {
 						try {
@@ -280,23 +280,23 @@ public class class176 extends Linkable2 {
 						} catch (Throwable var9) {
 						}
 					}
-					field3537 = class33.stream.read(0);
-					class57.field1077 = class33.stream.read(0) == 1;
-					class220.localPid = class33.stream.read(0);
+					field3537 = class33.loginStream.read(0);
+					class57.field1077 = class33.loginStream.read(0) == 1;
+					class220.localPid = class33.loginStream.read(0);
 					class220.localPid <<= 0x8;
-					class220.localPid += class33.stream.read(0);
-					class6.field72 = class33.stream.read(0);
+					class220.localPid += class33.loginStream.read(0);
+					class6.field72 = class33.loginStream.read(0);
 
-					class33.stream.read(0, class230.in.data, (byte) -93, 1);
+					class33.loginStream.read(0, class230.in.data, (byte) -93, 1);
 					class230.in.pos = 0;
-					class238.packetType = class230.in.method33((byte) -53);
+					class238.ptype = class230.in.method33((byte) -53);
 
-					class33.stream.read(0, class230.in.data, (byte) -93, 2);
+					class33.loginStream.read(0, class230.in.data, (byte) -93, 2);
 					class230.in.pos = 0;
-					class228.packetSize = class230.in.g2();
-					class117.loginState = 10;
+					class228.psize = class230.in.g2();
+					class117.loginStep = 10;
 				}
-				if (class117.loginState != 10) {
+				if (class117.loginStep != 10) {
 					if (arg0 > -39) {
 						field3540 = null;
 					}
@@ -304,7 +304,7 @@ public class class176 extends Linkable2 {
 					if (class6.field71 > 2000) {
 						if (class196.field3760 < 1) {
 							class196.field3760++;
-							class117.loginState = 0;
+							class117.loginStep = 0;
 							if (class220.field4158 == class168.field3248) {
 								class168.field3248 = class49.field911;
 							} else {
@@ -314,19 +314,19 @@ public class class176 extends Linkable2 {
 							class57.method417(-101, -3);
 						}
 					}
-				} else if (class33.stream.available(1) >= class228.packetSize) {
+				} else if (class33.loginStream.available(1) >= class228.psize) {
 					class230.in.pos = 0;
-					class33.stream.read(0, class230.in.data, (byte) -93, class228.packetSize);
+					class33.loginStream.read(0, class230.in.data, (byte) -93, class228.psize);
 					class106.method733(124);
 					class140.field2597 = -1;
-					class43.method278(false, (byte) 106);
-					class238.packetType = -1;
+					class43.rebuildpacket(false, (byte) 106);
+					class238.ptype = -1;
 				}
 			}
 		} catch (IOException var11) {
 			if (class196.field3760 < 1) {
 				class196.field3760++;
-				class117.loginState = 0;
+				class117.loginStep = 0;
 				if (class220.field4158 == class168.field3248) {
 					class168.field3248 = class49.field911;
 				} else {

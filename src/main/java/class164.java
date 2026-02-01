@@ -102,13 +102,13 @@ public class class164 implements class198 {
 								}
 								class152.field2950[var7][var8] = class210.field3992;
 							}
-							var4.field4099 = class239.method1586(var4.field4138, var4.field4123, 2, class149.field2909);
-							NpcType.method861(class149.field2909, var4.field4138, var4.field4123, var4.field4099, 60, var4, var4.field4087, var5, var4.field4095);
+							var4.field4099 = Client.getAvH(var4.field4138, var4.field4123, 2, class149.minusedLevel);
+							NpcType.method861(class149.minusedLevel, var4.field4138, var4.field4123, var4.field4099, 60, var4, var4.field4087, var5, var4.field4095);
 						}
 					} else {
 						var4.field743 = false;
-						var4.field4099 = class239.method1586(var4.field4138, var4.field4123, 2, class149.field2909);
-						NpcType.method857(class149.field2909, var4.field4138, var4.field4123, var4.field4099, var4, var4.field4087, var5, var4.field764, var4.field741, var4.field744, var4.field745);
+						var4.field4099 = Client.getAvH(var4.field4138, var4.field4123, 2, class149.minusedLevel);
+						NpcType.method857(class149.minusedLevel, var4.field4138, var4.field4123, var4.field4099, var4, var4.field4087, var5, var4.field764, var4.field741, var4.field744, var4.field745);
 					}
 				}
 			}

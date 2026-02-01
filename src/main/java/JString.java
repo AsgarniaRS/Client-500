@@ -29,7 +29,7 @@ public class JString implements class187 {
 	public static int field1644 = 2;
 
 	@OriginalMember(owner = "client!i", name = "J", descriptor = "I")
-	public static int field1634 = 0;
+	public static int ptype2 = 0;
 
 	@OriginalMember(owner = "client!i", name = "fb", descriptor = "Li;")
 	public static JString field1655 = field1628;
@@ -958,7 +958,7 @@ public class JString implements class187 {
 		if (arg0 != 31096) {
 			method598(98);
 		}
-		while (class230.in.method31(false, class228.packetSize) >= 27) {
+		while (class230.in.method31(false, class228.psize) >= 27) {
 			int var1 = class230.in.method28(15, -315);
 			if (var1 == 32767) {
 				break;
@@ -1001,7 +1001,7 @@ public class JString implements class187 {
 			var3.field4125 = var3.field3684.walkanim_b;
 			var3.field4094 = var3.field3684.walkanim;
 			var3.field4130 = var3.field3684.turnrightanim;
-			var3.method1476(var4 == 1, class240.field4458.field4089[0] + var5, arg0 ^ 0x7978, class240.field4458.field4143[0] + var8);
+			var3.teleport(var4 == 1, class240.field4458.field4089[0] + var5, arg0 ^ 0x7978, class240.field4458.field4143[0] + var8);
 		}
 		class230.in.method35(8);
 	}

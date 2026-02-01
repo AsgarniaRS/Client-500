@@ -313,7 +313,7 @@ public class SeqType extends Linkable2 {
 			if (arg0 != -37) {
 				field1970 = null;
 			}
-			return arg2 >= 0 && var3.field3553.length > arg2 ? var3.field3553[arg2] : 0;
+			return arg2 >= 0 && var3.objCount.length > arg2 ? var3.objCount[arg2] : 0;
 		}
 	}
 

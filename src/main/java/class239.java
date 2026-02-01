@@ -66,7 +66,7 @@ public class class239 {
 		field4438++;
 		int var1 = class135.field2514 * 128 + 64;
 		int var2 = class171.field3329 * 128 + 64;
-		int var3 = method1586(var1, var2, 2, class149.field2909) - class70.field1264;
+		int var3 = Client.getAvH(var1, var2, 2, class149.minusedLevel) - class70.field1264;
 		if (class79.field1428 < var1) {
 			class79.field1428 += (var1 - class79.field1428) * class160.field3095 / 1000 + class246.field4508;
 			if (var1 < class79.field1428) {
@@ -108,7 +108,7 @@ public class class239 {
 				class108.field1956 = var3;
 			}
 		}
-		int var6 = method1586(var4, var5, 2, class149.field2909) - class66.field1200;
+		int var6 = Client.getAvH(var4, var5, 2, class149.minusedLevel) - class66.field1200;
 		int var7 = var4 - class79.field1428;
 		int var8 = var6 - class108.field1956;
 		int var9 = var5 - class184.field3610;
@@ -172,23 +172,6 @@ public class class239 {
 		class102.field1853 = null;
 	}
 
-	@OriginalMember(owner = "client!w", name = "a", descriptor = "(II)Lq;")
-	public static final IfType method1581(int arg0, int arg1) {
-		if (arg0 != -64) {
-			field4436 = null;
-		}
-		field4443++;
-		int var2 = arg1 >> 16;
-		int var3 = arg1 & 0xFFFF;
-		if (class78.list[var2] == null || class78.list[var2][var3] == null) {
-			boolean var4 = IfType.openInterface(var2, arg0 ^ 0xFFFFFFC0);
-			if (!var4) {
-				return null;
-			}
-		}
-		return class78.list[var2][var3];
-	}
-
 	@OriginalMember(owner = "client!w", name = "a", descriptor = "(Z)V")
 	public static void method1582(boolean arg0) {
 		field4444 = null;
@@ -239,25 +222,4 @@ public class class239 {
 		return EnumType.method358(854010832, arg1, arg2, arg0) ? class34.method229((byte) -69) : null;
 	}
 
-	@OriginalMember(owner = "client!w", name = "a", descriptor = "(IIII)I")
-	public static final int method1586(int arg0, int arg1, int arg2, int arg3) {
-		field4439++;
-		int var4 = arg1 >> 7;
-		if (arg2 != 2) {
-			field4452 = null;
-		}
-		int var5 = arg0 >> 7;
-		if (var5 < 0 || var4 < 0 || var5 > 103 || var4 > 103) {
-			return 0;
-		}
-		int var6 = arg1 & 0x7F;
-		int var7 = arg3;
-		int var8 = arg0 & 0x7F;
-		if (arg3 < 3 && (class116.field2100[1][var5][var4] & 0x2) == 2) {
-			var7 = arg3 + 1;
-		}
-		int var9 = (128 - var8) * class62.field1137[var7][var5][var4] + class62.field1137[var7][var5 + 1][var4] * var8 >> 7;
-		int var10 = (128 - var8) * class62.field1137[var7][var5][var4 + 1] + class62.field1137[var7][var5 + 1][var4 + 1] * var8 >> 7;
-		return (128 - var6) * var9 + var6 * var10 >> 7;
-	}
 }

@@ -139,7 +139,7 @@ public abstract class class241 {
 		class120.field2205[var18] = arg5;
 		int var41 = var18 + 1;
 		class97.field1783[var18] = arg8;
-		int[][] var19 = class166.field3202[class149.field2909].field1668;
+		int[][] var19 = class166.field3202[class149.minusedLevel].field1668;
 		label372:
 		while (var16 != var41) {
 			var15 = class97.field1783[var16];
@@ -150,16 +150,16 @@ public abstract class class241 {
 				break;
 			}
 			if (arg3 != 0) {
-				if ((arg3 < 5 || arg3 == 10) && class166.field3202[class149.field2909].method641(var15, arg3 - 1, arg1, arg4, arg2, arg6, var14, arg9 - 19661241)) {
+				if ((arg3 < 5 || arg3 == 10) && class166.field3202[class149.minusedLevel].method641(var15, arg3 - 1, arg1, arg4, arg2, arg6, var14, arg9 - 19661241)) {
 					var17 = true;
 					break;
 				}
-				if (arg3 < 10 && class166.field3202[class149.field2909].method649(arg6, var14, arg3 - 1, (byte) 127, arg4, arg2, var15, arg1)) {
+				if (arg3 < 10 && class166.field3202[class149.minusedLevel].method649(arg6, var14, arg3 - 1, (byte) 127, arg4, arg2, var15, arg1)) {
 					var17 = true;
 					break;
 				}
 			}
-			if (arg0 != 0 && arg12 != 0 && class166.field3202[class149.field2909].method651(arg2, arg4, arg0, 1, var15, arg12, var14, arg1, arg11)) {
+			if (arg0 != 0 && arg12 != 0 && class166.field3202[class149.minusedLevel].method651(arg2, arg4, arg0, 1, var15, arg12, var14, arg1, arg11)) {
 				var17 = true;
 				break;
 			}

@@ -122,7 +122,7 @@ public class class245 {
 				}
 			}
 		}
-		class15.method73(class240.field4458.field4123, class17.field261, class240.field4458.field4138, class149.field2909, (byte) 6);
+		class15.method73(class240.field4458.field4123, class17.field261, class240.field4458.field4138, class149.minusedLevel, (byte) 6);
 		class17.field261 = arg0;
 	}
 

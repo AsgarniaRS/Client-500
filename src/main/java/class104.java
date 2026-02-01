@@ -302,7 +302,7 @@ public class class104 extends class23 {
 		var4.field3231 = arg2;
 		class128.field2397.put((long) arg1, var4, -1);
 		class149.method1007(arg2, arg3 + -106);
-		IfType var5 = class239.method1581(-64, arg1);
+		IfType var5 = IfType.get(-64, arg1);
 		if (var5 != null) {
 			class200.method1373(arg3 ^ 65385, var5);
 		}

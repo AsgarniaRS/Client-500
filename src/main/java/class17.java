@@ -213,7 +213,7 @@ public class class17 implements MouseListener, MouseMotionListener, FocusListene
 			var5++;
 		}
 		if (!var4) {
-			class223.method1501(class166.method1142(new JString[]{class114.field2065, var3}, arg0 ^ 0xFFFFFFFC), arg0 + 11, 0, IfType.field3455);
+			class223.addChat(0, class166.method1142(new JString[]{class114.field2065, var3}, arg0 ^ 0xFFFFFFFC), IfType.field3455);
 		}
 	}
 

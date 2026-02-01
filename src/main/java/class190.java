@@ -154,11 +154,11 @@ public class class190 {
 		if (arg0 != -25194) {
 			method1330(-13);
 		}
-		if (class245.lowMemory && class157.field3028 != class149.field2909) {
-			class120.method822(class149.field2909, class240.field4458.field4143[0], class140.field2597, class110.field2016, (byte) 126, class240.field4458.field4089[0]);
-		} else if (class172.field3338 != class149.field2909) {
-			class172.field3338 = class149.field2909;
-			class242.method1597(-31422, class149.field2909);
+		if (class245.lowMemory && class157.field3028 != class149.minusedLevel) {
+			class120.method822(class149.minusedLevel, class240.field4458.field4143[0], class140.field2597, class110.field2016, (byte) 126, class240.field4458.field4089[0]);
+		} else if (class172.field3338 != class149.minusedLevel) {
+			class172.field3338 = class149.minusedLevel;
+			class242.method1597(-31422, class149.minusedLevel);
 		}
 	}
 }

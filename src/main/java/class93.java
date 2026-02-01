@@ -68,7 +68,7 @@ public class class93 {
 			field1743 = 72;
 		}
 		class14.method70(-13897, var3);
-		IfType var5 = class239.method1581(-64, var4);
+		IfType var5 = IfType.get(-64, var4);
 		if (var5 != null) {
 			class200.method1373(65280, var5);
 		}

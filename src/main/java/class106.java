@@ -61,9 +61,9 @@ public class class106 {
 		class175.field3522 = true;
 		field1926++;
 		class128.method871((byte) 88);
-		JString.field1634 = -1;
+		JString.ptype2 = -1;
 		Isaac.out.pos = 0;
-		Packet.field821 = -1;
+		Packet.ptype1 = -1;
 		class120.field2186 = 0;
 		Packet.field812 = 0;
 		class104.field1889 = 0;
@@ -1410,10 +1410,10 @@ public class class106 {
 		class149.field2870 = 0;
 		class234.field4381 = 0;
 		class105.field1912 = 0;
-		class101.field1843 = -1;
+		class101.ptype0 = -1;
 		class114.field2063 = 0;
-		class192.field3702 = 0;
-		class238.packetType = -1;
+		class192.timeoutTimer = 0;
+		class238.ptype = -1;
 		class230.in.pos = 0;
 		for (int var1 = 0; var1 < class64.field1171.length; var1++) {
 			class64.field1171[var1] = null;

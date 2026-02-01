@@ -14,7 +14,7 @@ public class class116 extends class23 {
 	private int field2099 = 0;
 
 	@OriginalMember(owner = "client!kg", name = "ab", descriptor = "[[[B")
-	public static byte[][][] field2100 = new byte[4][104][104];
+	public static byte[][][] mapl = new byte[4][104][104];
 
 	@OriginalMember(owner = "client!kg", name = "eb", descriptor = "I")
 	public static int field2104 = 0;
@@ -73,7 +73,7 @@ public class class116 extends class23 {
 		field2106 = null;
 		field2091 = null;
 		field2097 = null;
-		field2100 = null;
+		mapl = null;
 	}
 
 	@OriginalMember(owner = "client!kg", name = "a", descriptor = "(IB)[I")
@@ -135,7 +135,7 @@ public class class116 extends class23 {
 		} else {
 			for (int var2 = 0; var2 < 100 && class12.method61(-122); ++var2) {
 			}
-			if (class229.gameState == 30) {
+			if (class229.state == 30) {
 				class15.method71(false, Isaac.out, 56);
 				Object var3 = class219.field4145.field715;
 				synchronized (class219.field4145.field715) {
@@ -263,11 +263,11 @@ public class class116 extends class23 {
 					Isaac.out.p1(0);
 				}
 				class190.method1330(-25194);
-				if (class229.gameState == 30) {
+				if (class229.state == 30) {
 					class113.method775(-4197);
 					class48.method367(11449);
-					++class192.field3702;
-					if (class192.field3702 > 750) {
+					++class192.timeoutTimer;
+					if (class192.timeoutTimer > 750) {
 						class201.method1382(24);
 					} else {
 						class171.method1216(-11989);
@@ -506,8 +506,8 @@ public class class116 extends class23 {
 																++class31.field498;
 															}
 															try {
-																if (class33.stream != null && Isaac.out.pos > 0) {
-																	class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
+																if (class33.loginStream != null && Isaac.out.pos > 0) {
+																	class33.loginStream.write(Isaac.out.data, 0, Isaac.out.pos);
 																	Isaac.out.pos = 0;
 																	Js5.field2709 = 0;
 																	return;
@@ -522,7 +522,7 @@ public class class116 extends class23 {
 														if (~var35.field3408 > -1) {
 															break;
 														}
-														var36 = class239.method1581(-64, var35.layerId);
+														var36 = IfType.get(-64, var35.layerId);
 													} while (var36 == null || var36.field3467 == null || ~var35.field3408 <= ~var36.field3467.length || var36.field3467[var35.field3408] != var35);
 													class200.method1375(var34, -876775538);
 												}
@@ -531,7 +531,7 @@ public class class116 extends class23 {
 											if (var32.field3408 < 0) {
 												break;
 											}
-											var33 = class239.method1581(-64, var32.layerId);
+											var33 = IfType.get(-64, var32.layerId);
 										} while (var33 == null || var33.field3467 == null || ~var33.field3467.length >= ~var32.field3408 || var33.field3467[var32.field3408] != var32);
 										class200.method1375(var31, -876775538);
 									}
@@ -540,7 +540,7 @@ public class class116 extends class23 {
 								if (var29.field3408 < 0) {
 									break;
 								}
-								var30 = class239.method1581(-64, var29.layerId);
+								var30 = IfType.get(-64, var29.layerId);
 							} while (var30 == null || var30.field3467 == null || var30.field3467.length <= var29.field3408 || var30.field3467[var29.field3408] != var29);
 							class200.method1375(var28, -876775538);
 						}
@@ -558,7 +558,7 @@ public class class116 extends class23 {
 		Packet.field807 = 0;
 		++field2096;
 		if (arg0 > -53) {
-			field2100 = null;
+			mapl = null;
 		}
 	}
 

@@ -85,8 +85,8 @@ public class class39 extends Linkable {
 		class177 var3 = (class177) class64.field1163.find((long) arg2);
 		if (var3 == null) {
 			return -1;
-		} else if (arg0 >= 0 && arg0 < var3.field3555.length) {
-			return var3.field3555[arg0];
+		} else if (arg0 >= 0 && arg0 < var3.objId.length) {
+			return var3.objId[arg0];
 		} else {
 			return -1;
 		}
@@ -100,13 +100,13 @@ public class class39 extends Linkable {
 		field699++;
 		for (class20 var1 = (class20) class167.field3222.method1612(false); var1 != null; var1 = (class20) class167.field3222.method1621(82)) {
 			class77 var2 = var1.field315;
-			if (class149.field2909 != var2.field1390 || class117.field2115 > var2.field1407) {
+			if (class149.minusedLevel != var2.field1390 || class117.field2115 > var2.field1407) {
 				var1.unlink();
 			} else if (var2.field1371 <= class117.field2115) {
 				if (var2.field1387 > 0) {
 					class191 var3 = class225.field4225[var2.field1387 - 1];
 					if (var3 != null && var3.field4138 >= 0 && var3.field4138 < 13312 && var3.field4123 >= 0 && var3.field4123 < 13312) {
-						var2.method520(var3.field4138, class117.field2115, class239.method1586(var3.field4138, var3.field4123, 2, var2.field1390) - var2.field1396, -14596, var3.field4123);
+						var2.method520(var3.field4138, class117.field2115, Client.getAvH(var3.field4138, var3.field4123, 2, var2.field1390) - var2.field1396, -14596, var3.field4123);
 					}
 				}
 				if (var2.field1387 < 0) {
@@ -118,11 +118,11 @@ public class class39 extends Linkable {
 						var5 = class244.field4493[var4];
 					}
 					if (var5 != null && var5.field4138 >= 0 && var5.field4138 < 13312 && var5.field4123 >= 0 && var5.field4123 < 13312) {
-						var2.method520(var5.field4138, class117.field2115, class239.method1586(var5.field4138, var5.field4123, 2, var2.field1390) - var2.field1396, -14596, var5.field4123);
+						var2.method520(var5.field4138, class117.field2115, Client.getAvH(var5.field4138, var5.field4123, 2, var2.field1390) - var2.field1396, -14596, var5.field4123);
 					}
 				}
 				var2.method517(0, class17.field261);
-				NpcType.method861(class149.field2909, (int) var2.field1406, (int) var2.field1391, (int) var2.field1375, 60, var2, var2.field1381, -1L, false);
+				NpcType.method861(class149.minusedLevel, (int) var2.field1406, (int) var2.field1391, (int) var2.field1375, 60, var2, var2.field1381, -1L, false);
 			}
 		}
 	}

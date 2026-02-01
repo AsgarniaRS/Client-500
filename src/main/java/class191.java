@@ -70,12 +70,12 @@ public class class191 extends class218 {
 					int var22 = -var20 / 2;
 					int var23 = var18 * var22 + -(var17 * var21) >> 16;
 					int var24 = var17 * var22 + var18 * var21 >> 16;
-					int var25 = class239.method1586(super.field4138 - -var24, super.field4123 + var23, 2, class149.field2909);
+					int var25 = Client.getAvH(super.field4138 - -var24, super.field4123 + var23, 2, class149.minusedLevel);
 					int var26 = var19 / 2;
 					int var27 = -var20 / 2;
 					int var28 = var17 * var27 + var18 * var26 >> 16;
 					int var29 = var18 * var27 + -(var17 * var26) >> 16;
-					int var30 = class239.method1586(super.field4138 + var28, super.field4123 + var29, 2, class149.field2909);
+					int var30 = Client.getAvH(super.field4138 + var28, super.field4123 + var29, 2, class149.minusedLevel);
 					int var31 = -var19 / 2;
 					int var32 = var20 / 2;
 					int var33 = var17 * var32 + var18 * var31 >> 16;
@@ -83,9 +83,9 @@ public class class191 extends class218 {
 					int var35 = var19 / 2;
 					int var36 = var20 / 2;
 					int var37 = var17 * var36 + var18 * var35 >> 16;
-					int var38 = class239.method1586(super.field4138 - -var33, super.field4123 - -var34, 2, class149.field2909);
+					int var38 = Client.getAvH(super.field4138 - -var33, super.field4123 - -var34, 2, class149.minusedLevel);
 					int var39 = var18 * var36 + -(var17 * var35) >> 16;
-					int var40 = class239.method1586(super.field4138 + var37, super.field4123 - -var39, 2, class149.field2909);
+					int var40 = Client.getAvH(super.field4138 + var37, super.field4123 - -var39, 2, class149.minusedLevel);
 					int var41 = var25 + var40;
 					if (~var41 < ~(var30 - -var38)) {
 						var41 = var30 + var38;

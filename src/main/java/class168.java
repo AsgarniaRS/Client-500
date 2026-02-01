@@ -134,14 +134,14 @@ public class class168 extends Linkable {
 			}
 		} else if (var2 == 3) {
 			int var8 = class230.in.method28(1, -315);
-			class149.field2909 = class230.in.method28(2, -315);
+			class149.minusedLevel = class230.in.method28(2, -315);
 			int var9 = class230.in.method28(1, -315);
 			if (var9 == 1) {
 				class139.field2581[class192.field3704++] = 2047;
 			}
 			int var10 = class230.in.method28(7, -315);
 			int var11 = class230.in.method28(7, -315);
-			class240.field4458.method1476(var8 == 1, var10, 0, var11);
+			class240.field4458.teleport(var8 == 1, var10, 0, var11);
 		} else if (arg0 >= -79) {
 			method1152((byte) -84, 3);
 		}

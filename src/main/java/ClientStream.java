@@ -41,7 +41,7 @@ public class ClientStream implements Runnable {
 	public static class92 field2535 = new class92(64);
 
 	@OriginalMember(owner = "client!mf", name = "w", descriptor = "Z")
-	public static boolean field2557 = false;
+	public static boolean regionmode = false;
 
 	@OriginalMember(owner = "client!mf", name = "c", descriptor = "I")
 	public static int field2537;
@@ -251,7 +251,7 @@ public class ClientStream implements Runnable {
 			}
 		}
 		if (!arg3) {
-			class116.field2100[arg8][arg0][arg6] = 0;
+			class116.mapl[arg8][arg0][arg6] = 0;
 		}
 		while (true) {
 			int var9 = arg1.g1();
@@ -290,7 +290,7 @@ public class ClientStream implements Runnable {
 			} else if (var9 > 81) {
 				class164.field3144[arg8][arg0][arg6] = (byte) (var9 - 81);
 			} else if (!arg3) {
-				class116.field2100[arg8][arg0][arg6] = (byte) (var9 - 49);
+				class116.mapl[arg8][arg0][arg6] = (byte) (var9 - 49);
 			}
 		}
 	}

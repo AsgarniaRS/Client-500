@@ -254,7 +254,7 @@ public class class230 {
 				}
 				if (arg0 == 1 && var4.field3497 != null) {
 					if (var4.field3408 >= 0) {
-						IfType var7 = class239.method1581(-64, var4.parentId);
+						IfType var7 = IfType.get(-64, var4.parentId);
 						if (var7 == null || var7.field3467 == null || var4.field3408 >= var7.field3467.length || var7.field3467[var4.field3408] != var4) {
 							continue;
 						}

@@ -133,7 +133,7 @@ public class class204 extends Linkable {
 			int var21 = Integer.MAX_VALUE & (int) (var16 >>> 32);
 			if (var13 != var16) {
 				var13 = var16;
-				if (var20 == 2 && class202.method1388(class149.field2909, var18, var19, var16)) {
+				if (var20 == 2 && class202.method1388(class149.minusedLevel, var18, var19, var16)) {
 					LocType var22 = class190.method1323(var21, -12450);
 					if (var22.multiloc != null) {
 						var22 = var22.method1000((byte) 118);
@@ -217,7 +217,7 @@ public class class204 extends Linkable {
 					class139.method924(var21, 31, var18, var19, var31);
 				}
 				if (var20 == 3) {
-					class248 var36 = class134.field2499[class149.field2909][var18][var19];
+					class248 var36 = class134.field2499[class149.minusedLevel][var18][var19];
 					if (var36 != null) {
 						for (class227 var37 = (class227) var36.method1614((byte) -25); var37 != null; var37 = (class227) var36.method1619((byte) -34)) {
 							int var38 = var37.field4260.field2032;

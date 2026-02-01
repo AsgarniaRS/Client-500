@@ -69,7 +69,7 @@ public class class121 {
 			}
 			for (int var9 = 0; var9 < 104; var9++) {
 				for (int var37 = 0; var37 < 104; var37++) {
-					class248 var38 = class134.field2499[class149.field2909][var9][var37];
+					class248 var38 = class134.field2499[class149.minusedLevel][var9][var37];
 					if (var38 != null) {
 						int var39 = var9 * 4 + 2 - class240.field4458.field4138 / 32;
 						int var40 = var37 * 4 + 2 - class240.field4458.field4123 / 32;

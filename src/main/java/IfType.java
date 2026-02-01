@@ -526,6 +526,19 @@ public class IfType {
 		class167.open = new boolean[class85.interfaces.getGroupCount()];
 	}
 
+	@OriginalMember(owner = "client!w", name = "a", descriptor = "(II)Lq;")
+	public static final IfType get(int arg0, int arg1) {
+		int var2 = arg1 >> 16;
+		int var3 = arg1 & 0xFFFF;
+		if (class78.list[var2] == null || class78.list[var2][var3] == null) {
+			boolean var4 = openInterface(var2, arg0 ^ 0xFFFFFFC0);
+			if (!var4) {
+				return null;
+			}
+		}
+		return class78.list[var2][var3];
+	}
+
 	@OriginalMember(owner = "client!q", name = "a", descriptor = "(III)V")
 	public final void method1246(int arg0, int arg1, int arg2) {
 		field3413++;

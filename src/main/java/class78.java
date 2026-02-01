@@ -78,9 +78,9 @@ public class class78 extends Linkable {
 			for (int var3 = 0; var3 < 4; var3++) {
 				for (int var4 = 0; var4 < 104; var4++) {
 					for (int var5 = 0; var5 < 104; var5++) {
-						if ((class116.field2100[var3][var4][var5] & 0x1) == 1) {
+						if ((class116.mapl[var3][var4][var5] & 0x1) == 1) {
 							int var6 = var3;
-							if ((class116.field2100[1][var4][var5] & 0x2) == 2) {
+							if ((class116.mapl[1][var4][var5] & 0x2) == 2) {
 								var6 = var3 - 1;
 							}
 							if (var6 >= 0) {
@@ -201,7 +201,7 @@ public class class78 extends Linkable {
 			for (int var63 = 1; var63 < 103; var63++) {
 				for (int var66 = 1; var66 < 103; var66++) {
 					if (!arg1) {
-						if (class245.lowMemory && (class116.field2100[0][var63][var66] & 0x2) == 0 && ((class116.field2100[var12][var63][var66] & 0x10) != 0 || class234.method1557(4570, var66, var63, var12) != class157.field3028)) {
+						if (class245.lowMemory && (class116.mapl[0][var63][var66] & 0x2) == 0 && ((class116.mapl[var12][var63][var66] & 0x10) != 0 || class234.method1557(4570, var66, var63, var12) != class157.field3028)) {
 							continue;
 						}
 						if (var12 < class28.field468) {
@@ -317,7 +317,7 @@ public class class78 extends Linkable {
 		}
 		for (int var13 = 0; var13 < 104; var13++) {
 			for (int var54 = 0; var54 < 104; var54++) {
-				if ((class116.field2100[1][var13][var54] & 0x2) == 2) {
+				if ((class116.mapl[1][var13][var54] & 0x2) == 2) {
 					class157.method1065(var13, var54);
 				}
 			}

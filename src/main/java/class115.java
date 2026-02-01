@@ -103,9 +103,9 @@ public class class115 {
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(B)V")
 	public static final void method787(byte arg0) {
 		field2089++;
-		if (class33.stream != null) {
-			class33.stream.close(true);
-			class33.stream = null;
+		if (class33.loginStream != null) {
+			class33.loginStream.close(true);
+			class33.loginStream = null;
 		}
 		class27.method167((byte) 61);
 		class85.method579();
@@ -119,7 +119,7 @@ public class class115 {
 		class110.field2014 = false;
 		class2.field25 = -1;
 		scene.method288(-25844);
-		class131.method883(10, 65536);
+		class131.setMainState(10, 65536);
 	}
 
 	@OriginalMember(owner = "client!kf", name = "a", descriptor = "(IIIIIZI)V")

@@ -73,49 +73,49 @@ public class class236 extends class27 {
 	}
 
 	@OriginalMember(owner = "client!vg", name = "b", descriptor = "(Z)Z")
-	public static final boolean method1568(boolean arg0) throws IOException {
-		field4398++;
-		if (class33.stream == null) {
+	public static boolean tcpIn(boolean arg0) throws IOException {
+		if (class33.loginStream == null) {
 			return false;
 		}
-		int var1 = class33.stream.available(1);
+		int var1 = class33.loginStream.available(1);
 		if (var1 == 0) {
 			return false;
 		}
-		if (class238.packetType == -1) {
+		if (class238.ptype == -1) {
 			var1--;
-			class33.stream.read(0, class230.in.data, (byte) -93, 1);
+			class33.loginStream.read(0, class230.in.data, (byte) -93, 1);
 			class230.in.pos = 0;
-			class238.packetType = class230.in.method33((byte) -80);
-			class228.packetSize = class15.field224[class238.packetType];
+			class238.ptype = class230.in.method33((byte) -80);
+			class228.psize = class15.SERVERPROT_SIZES[class238.ptype];
 		}
-		if (class228.packetSize == -1) {
+		if (class228.psize == -1) {
 			if (var1 <= 0) {
 				return false;
 			}
-			class33.stream.read(0, class230.in.data, (byte) -93, 1);
+			class33.loginStream.read(0, class230.in.data, (byte) -93, 1);
 			var1--;
-			class228.packetSize = class230.in.data[0] & 0xFF;
+			class228.psize = class230.in.data[0] & 0xFF;
 		}
-		if (class228.packetSize == -2) {
+		if (class228.psize == -2) {
 			if (var1 <= 1) {
 				return false;
 			}
 			var1 -= 2;
-			class33.stream.read(0, class230.in.data, (byte) -93, 2);
+			class33.loginStream.read(0, class230.in.data, (byte) -93, 2);
 			class230.in.pos = 0;
-			class228.packetSize = class230.in.g2();
+			class228.psize = class230.in.g2();
 		}
-		if (class228.packetSize > var1) {
+		if (class228.psize > var1) {
 			return false;
 		}
 		class230.in.pos = 0;
-		class33.stream.read(0, class230.in.data, (byte) -93, class228.packetSize);
-		class192.field3702 = 0;
-		JString.field1634 = Packet.field821;
-		Packet.field821 = class101.field1843;
-		class101.field1843 = class238.packetType;
-		if (class238.packetType == 239) {
+		class33.loginStream.read(0, class230.in.data, (byte) -93, class228.psize);
+		class192.timeoutTimer = 0;
+		JString.ptype2 = Packet.ptype1;
+		Packet.ptype1 = class101.ptype0;
+		class101.ptype0 = class238.ptype;
+
+		if (class238.ptype == 239) {
 			int var2 = class230.in.g4();
 			int var3 = class230.in.g4();
 			class168 var4 = (class168) class128.field2397.find((long) var2);
@@ -127,11 +127,11 @@ public class class236 extends class27 {
 				var4.unlink();
 				class128.field2397.put((long) var3, var4, -1);
 			}
-			IfType var6 = class239.method1581(-64, var2);
+			IfType var6 = IfType.get(-64, var2);
 			if (var6 != null) {
 				class200.method1373(65280, var6);
 			}
-			IfType var7 = class239.method1581(-64, var3);
+			IfType var7 = IfType.get(-64, var3);
 			if (var7 != null) {
 				class200.method1373(65280, var7);
 				class110.method761(true, var7, (byte) -111);
@@ -139,26 +139,26 @@ public class class236 extends class27 {
 			if (class43.field723 != -1) {
 				ClientStream.method914(class43.field723, 1, 4);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 244) {
+		} else if (class238.ptype == 244) {
 			int var8 = class230.in.method320(3);
 			int var9 = class230.in.g2b_alt2();
 			int var10 = class230.in.method312((byte) 63);
-			IfType var11 = class239.method1581(-64, var8);
+			IfType var11 = IfType.get(-64, var8);
 			var11.field3453 = 0;
 			var11.field3443 = var11.field3516 = var10;
 			var11.field3369 = 0;
 			var11.field3368 = var11.field3393 = var9;
 			class200.method1373(65280, var11);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 79) {
-			class43.method278(false, (byte) -120);
-			class238.packetType = -1;
+		} else if (class238.ptype == 79) {
+			class43.rebuildpacket(false, (byte) -120);
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 12) {
-			int var12 = class228.packetSize + class230.in.pos;
+		} else if (class238.ptype == 12) {
+			int var12 = class228.psize + class230.in.pos;
 			int var13 = class230.in.g2();
 			int var14 = class230.in.g2();
 			if (class43.field723 != var13) {
@@ -202,9 +202,9 @@ public class class236 extends class27 {
 					class31.field495.put(var22, new class192(var20), -1);
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 192) {
+		} else if (class238.ptype == 192) {
 			class179.field3569 = true;
 			class135.field2514 = class230.in.g1();
 			class171.field3329 = class230.in.g1();
@@ -214,18 +214,18 @@ public class class236 extends class27 {
 			if (class160.field3095 >= 100) {
 				class184.field3610 = class171.field3329 * 128 + 64;
 				class79.field1428 = class135.field2514 * 128 + 64;
-				class108.field1956 = class239.method1586(class79.field1428, class184.field3610, 2, class149.field2909) - class70.field1264;
+				class108.field1956 = Client.getAvH(class79.field1428, class184.field3610, 2, class149.minusedLevel) - class70.field1264;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 186) {
+		} else if (class238.ptype == 186) {
 			int var28 = class230.in.g4();
 			int var29 = class230.in.g2();
 			IfType var30;
 			if (var28 < 0) {
 				var30 = null;
 			} else {
-				var30 = class239.method1581(-64, var28);
+				var30 = IfType.get(-64, var28);
 			}
 			if (var30 != null) {
 				for (int var31 = 0; var31 < var30.field3390.length; var31++) {
@@ -248,16 +248,17 @@ public class class236 extends class27 {
 					var30.field3390[var33] = var34;
 					var30.field3476[var33] = var35;
 				}
-				class177.method1270(1, var29, var35, var33, var34 - 1);
+				class177.set(1, var29, var35, var33, var34 - 1);
 			}
 			if (var30 != null) {
 				class200.method1373(65280, var30);
 			}
 			class127.method869((byte) 125);
 			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(32767, var29);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 117) {
+		} else if (class238.ptype == 117) {
+			// MESSAGE_GAME
 			JString var36 = class230.in.gjstr();
 			if (var36.method631(0, class156.field3011)) {
 				boolean var37 = false;
@@ -269,22 +270,22 @@ public class class236 extends class27 {
 						break;
 					}
 				}
-				if (!var37 && Client.field563 == 0) {
-					class223.method1501(class54.field1007, 12, 4, var38);
+				if (!var37 && Client.overrideChat == 0) {
+					class223.addChat(4, class54.field1007, var38);
 				}
 			} else if (var36.method631(0, class207.field3929)) {
 				JString var65 = var36.method623(0, (byte) -53, var36.method617(110, SeqType.field1961));
 				boolean var66 = false;
 				long var67 = var65.method630(!arg0);
-				for (int var69 = 0; var69 < Linkable.field1221; var69++) {
-					if (class95.field1765[var69] == var67) {
+				for (int i = 0; i < Linkable.field1221; i++) {
+					if (class95.field1765[i] == var67) {
 						var66 = true;
 						break;
 					}
 				}
-				if (!var66 && Client.field563 == 0) {
+				if (!var66 && Client.overrideChat == 0) {
 					JString var70 = var36.method623(var36.method617(-106, SeqType.field1961) + 1, (byte) -89, var36.length() - 9);
-					class223.method1501(var70, 12, 8, var65);
+					class223.addChat(8, var70, var65);
 				}
 			} else if (var36.method631(0, class86.field1556)) {
 				boolean var42 = false;
@@ -296,21 +297,21 @@ public class class236 extends class27 {
 						break;
 					}
 				}
-				if (!var42 && Client.field563 == 0) {
-					class223.method1501(IfType.field3455, 12, 10, var43);
+				if (!var42 && Client.overrideChat == 0) {
+					class223.addChat(10, IfType.field3455, var43);
 				}
 			} else if (var36.method631(0, class172.field3336)) {
 				JString var64 = var36.method623(0, (byte) -92, var36.method617(-41, class172.field3336));
-				class223.method1501(var64, 12, 11, IfType.field3455);
+				class223.addChat(11, var64, IfType.field3455);
 			} else if (var36.method631(0, class43.field731)) {
 				JString var63 = var36.method623(0, (byte) -89, var36.method617(-63, class43.field731));
-				if (Client.field563 == 0) {
-					class223.method1501(var63, 12, 12, IfType.field3455);
+				if (Client.overrideChat == 0) {
+					class223.addChat(12, var63, IfType.field3455);
 				}
 			} else if (var36.method631(0, class128.field2402)) {
 				JString var47 = var36.method623(0, (byte) -34, var36.method617(99, class128.field2402));
-				if (Client.field563 == 0) {
-					class223.method1501(var47, 12, 13, IfType.field3455);
+				if (Client.overrideChat == 0) {
+					class223.addChat(13, var47, IfType.field3455);
 				}
 			} else if (var36.method631(0, class157.field3027)) {
 				JString var48 = var36.method623(0, (byte) -51, var36.method617(102, SeqType.field1961));
@@ -322,8 +323,8 @@ public class class236 extends class27 {
 						break;
 					}
 				}
-				if (!var51 && Client.field563 == 0) {
-					class223.method1501(IfType.field3455, 12, 14, var48);
+				if (!var51 && Client.overrideChat == 0) {
+					class223.addChat(14, IfType.field3455, var48);
 				}
 			} else if (var36.method631(0, class228.field4277)) {
 				JString var53 = var36.method623(0, (byte) -118, var36.method617(-84, SeqType.field1961));
@@ -335,8 +336,8 @@ public class class236 extends class27 {
 						break;
 					}
 				}
-				if (!var56 && Client.field563 == 0) {
-					class223.method1501(IfType.field3455, 12, 15, var53);
+				if (!var56 && Client.overrideChat == 0) {
+					class223.addChat(15, IfType.field3455, var53);
 				}
 			} else if (var36.method631(0, class37.field665)) {
 				JString var58 = var36.method623(0, (byte) -25, var36.method617(97, SeqType.field1961));
@@ -348,15 +349,15 @@ public class class236 extends class27 {
 						break;
 					}
 				}
-				if (!var61 && Client.field563 == 0) {
-					class223.method1501(IfType.field3455, 12, 16, var58);
+				if (!var61 && Client.overrideChat == 0) {
+					class223.addChat(16, IfType.field3455, var58);
 				}
 			} else {
-				class223.method1501(var36, 12, 0, IfType.field3455);
+				class223.addChat(0, var36, IfType.field3455);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 108) {
+		} else if (class238.ptype == 108) {
 			int var71 = class230.in.g1();
 			if (class230.in.g1() == 0) {
 				class9.field140[var71] = new class131();
@@ -364,10 +365,10 @@ public class class236 extends class27 {
 				class230.in.pos--;
 				class9.field140[var71] = new class131(class230.in);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			class117.field2129 = Linkable.field1211;
 			return true;
-		} else if (class238.packetType == 213) {
+		} else if (class238.ptype == 213) {
 			int var72 = class230.in.g1();
 			class118 var73 = new class118();
 			int var74 = var72 >> 6;
@@ -409,9 +410,9 @@ public class class236 extends class27 {
 				}
 				class64.field1171[var74] = var73;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 146) {
+		} else if (class238.ptype == 146) {
 			int var75 = class230.in.g4_alt1();
 			int var76 = class230.in.method320(3);
 			int var77 = class230.in.g2();
@@ -430,30 +431,30 @@ public class class236 extends class27 {
 				}
 				class31.field495.put(var80, new class192(var75), -1);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 253) {
+		} else if (class238.ptype == 253) {
 			class179.field3569 = false;
 			for (int var83 = 0; var83 < 5; var83++) {
 				class233.field4370[var83] = false;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 214) {
+		} else if (class238.ptype == 214) {
 			int var84 = class230.in.g4_alt3();
 			JString var85 = class230.in.gjstr();
-			IfType var86 = class239.method1581(-64, var84);
+			IfType var86 = IfType.get(-64, var84);
 			if (!var85.method597(-113, var86.text)) {
 				var86.text = var85;
 				class200.method1373(65280, var86);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 19) {
+		} else if (class238.ptype == 19) {
 			class60.method432(0);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 205) {
+		} else if (class238.ptype == 205) {
 			long var87 = class230.in.method321(1054632416);
 			int var89 = class230.in.g2();
 			boolean var90 = false;
@@ -463,7 +464,7 @@ public class class236 extends class27 {
 			}
 			if (var90) {
 				if (EnumType.field885 == 0) {
-					class238.packetType = -1;
+					class238.ptype = -1;
 					return true;
 				}
 				long var92 = var87 & Long.MAX_VALUE;
@@ -497,7 +498,7 @@ public class class236 extends class27 {
 						if (class36.field631 == var87) {
 							class143.field2633 = var91;
 						}
-						class238.packetType = -1;
+						class238.ptype = -1;
 						class77.field1394 = Linkable.field1211;
 						return true;
 					}
@@ -506,7 +507,7 @@ public class class236 extends class27 {
 					}
 				}
 				if (JString.field1647.length <= EnumType.field885) {
-					class238.packetType = -1;
+					class238.ptype = -1;
 					return true;
 				}
 				for (int var100 = EnumType.field885 - 1; var100 > var98; var100--) {
@@ -521,64 +522,64 @@ public class class236 extends class27 {
 					class143.field2633 = var91;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			class77.field1394 = Linkable.field1211;
 			return true;
-		} else if (class238.packetType == 235) {
+		} else if (class238.ptype == 235) {
 			class218.field4136 = class230.in.gjstr();
 			class165.method1134(0, class218.field4136);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 26) {
+		} else if (class238.ptype == 26) {
 			int var101 = class230.in.method320(3);
 			int var102 = class230.in.g2_alt3(255);
 			if (var102 == 65535) {
 				var102 = -1;
 			}
-			IfType var103 = class239.method1581(-64, var101);
+			IfType var103 = IfType.get(-64, var101);
 			if (var103.field3432 != 2 || var103.model1Id != var102) {
 				var103.model1Id = var102;
 				var103.field3432 = 2;
 				class200.method1373(65280, var103);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 101) {
-			if (class228.packetSize == 0) {
+		} else if (class238.ptype == 101) {
+			if (class228.psize == 0) {
 				class4.field54 = class93.field1742;
 			} else {
 				class4.field54 = class230.in.gjstr();
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 191) {
+		} else if (class238.ptype == 191) {
 			boolean var104 = class230.in.g1_alt2() == 1;
 			int var105 = class230.in.g4_alt3();
-			IfType var106 = class239.method1581(-64, var105);
+			IfType var106 = IfType.get(-64, var105);
 			if (var104 != var106.hide) {
 				var106.hide = var104;
 				class200.method1373(65280, var106);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 200) {
+		} else if (class238.ptype == 200) {
 			int var107 = class230.in.g4_alt3();
-			IfType var108 = class239.method1581(-64, var107);
+			IfType var108 = IfType.get(-64, var107);
 			for (int var109 = 0; var109 < var108.field3390.length; var109++) {
 				var108.field3390[var109] = -1;
 				var108.field3390[var109] = 0;
 			}
 			class200.method1373(65280, var108);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 139) {
+		} else if (class238.ptype == 139) {
 			int var110 = class230.in.g4_alt3();
 			int var111 = class230.in.g4_alt3();
 			int var112 = class230.in.g2_alt2();
 			if (var112 == 65535) {
 				var112 = -1;
 			}
-			IfType var113 = class239.method1581(-64, var110);
+			IfType var113 = IfType.get(-64, var110);
 			if (var113.v3) {
 				var113.field3401 = var112;
 				var113.field3484 = var111;
@@ -596,7 +597,7 @@ public class class236 extends class27 {
 				}
 				class200.method1373(65280, var113);
 			} else if (var112 == -1) {
-				class238.packetType = -1;
+				class238.ptype = -1;
 				var113.field3432 = 0;
 				return true;
 			} else {
@@ -608,9 +609,9 @@ public class class236 extends class27 {
 				var113.model1Id = var112;
 				class200.method1373(65280, var113);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 230) {
+		} else if (class238.ptype == 230) {
 			int var116 = class230.in.g1_alt2();
 			int var117 = var116 >> 2;
 			int var118 = var116 & 0x3;
@@ -626,9 +627,9 @@ public class class236 extends class27 {
 			int var125 = var124 - class223.field4214;
 			int var126 = var123 - class190.field3681;
 			class113.method776(var117, var125, 12019, var119, var118, var122, var126, var120);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 77) {
+		} else if (class238.ptype == 77) {
 			int var127 = class230.in.g4_alt3();
 			int var128 = class230.in.g2_alt3(255);
 			int var129 = class230.in.g2();
@@ -640,7 +641,7 @@ public class class236 extends class27 {
 				if (var136 >= 0 && var137 >= 0 && var136 < 104 && var137 < 104) {
 					int var138 = var137 * 128 + 64;
 					int var139 = var136 * 128 + 64;
-					class18 var140 = new class18(var128, var135, var139, var138, class239.method1586(var139, var138, 2, var135) - var130, var129, class117.field2115);
+					class18 var140 = new class18(var128, var135, var139, var138, Client.getAvH(var139, var138, 2, var135) - var130, var129, class117.field2115);
 					class42.field714.method1624(new class242(var140), 52);
 				}
 			} else if (var127 >> 29 != 0) {
@@ -681,22 +682,22 @@ public class class236 extends class27 {
 					}
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 188) {
-			Linkable.field1221 = class228.packetSize / 8;
+		} else if (class238.ptype == 188) {
+			Linkable.field1221 = class228.psize / 8;
 			for (int var141 = 0; var141 < Linkable.field1221; var141++) {
 				class95.field1765[var141] = class230.in.method321(1054632416);
 				Isaac.field2743[var141] = class200.method1377(class95.field1765[var141], (byte) 90);
 			}
 			class20.field313 = Linkable.field1211;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 22) {
+		} else if (class238.ptype == 22) {
 			class105.method727(class230.in, false);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 221) {
+		} else if (class238.ptype == 221) {
 			int var142 = class230.in.g1();
 			int var143 = class230.in.g1();
 			int var144 = class230.in.g1();
@@ -707,10 +708,10 @@ public class class236 extends class27 {
 			class66.field1194[var142] = var144;
 			class194.field3716[var142] = var145;
 			class190.field3676[var142] = var146;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
 			// IFOPEN_TOP
-		} else if (class238.packetType == 86) {
+		} else if (class238.ptype == 86) {
 			int var147 = class230.in.g1();
 			int var148 = class230.in.g2_alt3(255);
 			if (var147 == 1) {
@@ -722,7 +723,7 @@ public class class236 extends class27 {
 			} else if (var147 == 2) {
 				class201.method1380(-77);
 				System.gc();
-				class131.method883(25, 65536);
+				class131.setMainState(25, 65536);
 			}
 			class43.field723 = var148;
 			class149.method1007(var148, -1);
@@ -731,9 +732,9 @@ public class class236 extends class27 {
 			for (int var150 = 0; var150 < 100; var150++) {
 				class225.field4230[var150] = true;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 16) {
+		} else if (class238.ptype == 16) {
 			long var151 = class230.in.method321(1054632416);
 			boolean var153 = true;
 			int var154 = class230.in.g2();
@@ -752,10 +753,10 @@ public class class236 extends class27 {
 					if (class160.field3094[var158] != var154) {
 						class160.field3094[var158] = var154;
 						if (var154 > 0) {
-							class223.method1501(class166.method1142(new JString[]{var157, class171.field3323}, -3), 12, 5, IfType.field3455);
+							class223.addChat(5, class166.method1142(new JString[]{var157, class171.field3323}, -3), IfType.field3455);
 						}
 						if (var154 == 0) {
-							class223.method1501(class166.method1142(new JString[]{var157, class117.field2125}, -3), 12, 5, IfType.field3455);
+							class223.addChat(5, class166.method1142(new JString[]{var157, class117.field2125}, -3), IfType.field3455);
 						}
 					}
 					var157 = null;
@@ -807,29 +808,30 @@ public class class236 extends class27 {
 					break;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 249) {
+		} else if (class238.ptype == 249) {
+			// IF_SETCOLOUR
 			int var170 = class230.in.g2_alt3(255);
 			int var171 = class230.in.g4();
 			int var172 = var170 >> 10 & 0x1F;
 			int var173 = var170 >> 5 & 0x1F;
 			int var174 = var170 & 0x1F;
 			int var175 = (var173 << 11) + (var172 << 19) + (var174 << 3);
-			IfType var176 = class239.method1581(-64, var171);
+			IfType var176 = IfType.get(-64, var171);
 			if (var176.colour != var175) {
 				var176.colour = var175;
 				class200.method1373(65280, var176);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 68) {
+		} else if (class238.ptype == 68) {
 			class127.method869((byte) 124);
 			class240.field4460 = class230.in.g1();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			class208.field3954 = Linkable.field1211;
 			return true;
-		} else if (class238.packetType == 24) {
+		} else if (class238.ptype == 24) {
 			for (int var177 = 0; var177 < class113.var.length; var177++) {
 				if (class168.field3247[var177] != class113.var[var177]) {
 					class113.var[var177] = class168.field3247[var177];
@@ -837,9 +839,9 @@ public class class236 extends class27 {
 					class244.field4497[class70.method470(class226.field4246++, 31)] = var177;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 74) {
+		} else if (class238.ptype == 74) {
 			long var178 = class230.in.method321(1054632416);
 			class230.in.g1b();
 			long var180 = class230.in.method321(1054632416);
@@ -872,7 +874,7 @@ public class class236 extends class27 {
 				}
 				var190++;
 			}
-			if (!var189 && Client.field563 == 0) {
+			if (!var189 && Client.overrideChat == 0) {
 				class167.field3205[class62.field1150] = var187;
 				class62.field1150 = (class62.field1150 + 1) % 100;
 				JString var192 = class26.method162(class21.method103(class230.in, 114).method622(-29988));
@@ -884,23 +886,23 @@ public class class236 extends class27 {
 					class60.method428(class200.method1377(var178, (byte) 99).method614((byte) 83), 9, (byte) -126, var192, class200.method1377(var180, (byte) 79).method614((byte) 83));
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 134) {
+		} else if (class238.ptype == 134) {
 			class150.field2912 = class230.in.g1_alt1();
 			class121.field2215 = class230.in.g1();
-			while (class228.packetSize > class230.in.pos) {
-				class238.packetType = class230.in.g1();
+			while (class228.psize > class230.in.pos) {
+				class238.ptype = class230.in.g1();
 				class244.method1600(-9063);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 84) {
+		} else if (class238.ptype == 84) {
 			class115.field2080 = class230.in.g1();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			class20.field313 = Linkable.field1211;
 			return true;
-		} else if (class238.packetType == 6) {
+		} else if (class238.ptype == 6) {
 			long var193 = class230.in.method321(1054632416);
 			long var195 = (long) class230.in.g2();
 			long var197 = (long) class230.in.g3();
@@ -931,41 +933,41 @@ public class class236 extends class27 {
 				}
 				var203++;
 			}
-			if (!var202 && Client.field563 == 0) {
+			if (!var202 && Client.overrideChat == 0) {
 				class167.field3205[class62.field1150] = var200;
 				class62.field1150 = (class62.field1150 + 1) % 100;
 				JString var205 = class26.method162(class21.method103(class230.in, 67).method622(-29988));
 				if (var199 == 2 || var199 == 3) {
-					class223.method1501(var205, 12, 7, class166.method1142(new JString[]{class28.field472, class200.method1377(var193, (byte) 117).method614((byte) 83)}, -3));
+					class223.addChat(7, var205, class166.method1142(new JString[]{class28.field472, class200.method1377(var193, (byte) 117).method614((byte) 83)}, -3));
 				} else if (var199 == 1) {
-					class223.method1501(var205, 12, 7, class166.method1142(new JString[]{class166.field3203, class200.method1377(var193, (byte) 63).method614((byte) 83)}, -3));
+					class223.addChat(7, var205, class166.method1142(new JString[]{class166.field3203, class200.method1377(var193, (byte) 63).method614((byte) 83)}, -3));
 				} else {
-					class223.method1501(var205, 12, 3, class200.method1377(var193, (byte) 110).method614((byte) 83));
+					class223.addChat(3, var205, class200.method1377(var193, (byte) 110).method614((byte) 83));
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 237) {
+		} else if (class238.ptype == 237) {
 			Linkable.field1206 = class230.in.g1();
 			class10.field142 = class230.in.g1();
 			class128.field2410 = class230.in.g1();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 96) {
+		} else if (class238.ptype == 96) {
 			int var206 = class230.in.g2_alt1();
 			if (var206 == 65535) {
 				var206 = -1;
 			}
 			int var207 = class230.in.g4_alt1();
-			IfType var208 = class239.method1581(-64, var207);
+			IfType var208 = IfType.get(-64, var207);
 			if (var208.field3432 != 1 || var208.model1Id != var206) {
 				var208.field3432 = 1;
 				var208.model1Id = var206;
 				class200.method1373(65280, var208);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 149) {
+		} else if (class238.ptype == 149) {
 			int var209 = class230.in.g2_alt3(255);
 			int var210 = class230.in.g1_alt1();
 			int var211 = class230.in.g2();
@@ -973,9 +975,9 @@ public class class236 extends class27 {
 			if (var212 != null) {
 				class141.method927(var209, !arg0, var210, var212);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 248) {
+		} else if (class238.ptype == 248) {
 			for (int var213 = 0; var213 < class244.field4493.length; var213++) {
 				if (class244.field4493[var213] != null) {
 					class244.field4493[var213].field4079 = -1;
@@ -986,39 +988,39 @@ public class class236 extends class27 {
 					class225.field4225[var214].field4079 = -1;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 187) {
+		} else if (class238.ptype == 187) {
 			long var215 = class230.in.method321(1054632416);
 			int var217 = class230.in.g2();
 			JString var218 = class168.method1152((byte) 62, var217).method1411(class230.in, 80);
 			class118.method803(var218, (byte) 28, var217, class200.method1377(var215, (byte) 65).method614((byte) 83), 19, null);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 177) {
+		} else if (class238.ptype == 177) {
 			int var219 = class230.in.method320(3);
 			class49.field912 = NpcType.field2326.method1294(0, var219);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 88) {
+		} else if (class238.ptype == 88) {
 			class121.field2215 = class230.in.g1_alt1();
 			class150.field2912 = class230.in.g1_alt2();
 			for (int var220 = class121.field2215; var220 < class121.field2215 + 8; var220++) {
 				for (int var222 = class150.field2912; var222 < class150.field2912 + 8; var222++) {
-					if (class134.field2499[class149.field2909][var220][var222] != null) {
-						class134.field2499[class149.field2909][var220][var222] = null;
+					if (class134.field2499[class149.minusedLevel][var220][var222] != null) {
+						class134.field2499[class149.minusedLevel][var220][var222] = null;
 						class29.method175(21280, var220, var222);
 					}
 				}
 			}
 			for (class159 var221 = (class159) class62.field1140.method1612(false); var221 != null; var221 = (class159) class62.field1140.method1621(82)) {
-				if (class121.field2215 <= var221.field3061 && var221.field3061 < class121.field2215 + 8 && class150.field2912 <= var221.field3054 && var221.field3054 < class150.field2912 + 8 && class149.field2909 == var221.field3057) {
+				if (class121.field2215 <= var221.field3061 && var221.field3061 < class121.field2215 + 8 && class150.field2912 <= var221.field3054 && var221.field3054 < class150.field2912 + 8 && class149.minusedLevel == var221.field3057) {
 					var221.field3063 = 0;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 203) {
+		} else if (class238.ptype == 203) {
 			long var223 = class230.in.method321(1054632416);
 			long var225 = (long) class230.in.g2();
 			long var227 = (long) class230.in.g3();
@@ -1046,7 +1048,7 @@ public class class236 extends class27 {
 				}
 				var234++;
 			}
-			if (!var233 && Client.field563 == 0) {
+			if (!var233 && Client.overrideChat == 0) {
 				class167.field3205[class62.field1150] = var231;
 				class62.field1150 = (class62.field1150 + 1) % 100;
 				JString var236 = class168.method1152((byte) 62, var230).method1411(class230.in, 80);
@@ -1058,44 +1060,45 @@ public class class236 extends class27 {
 					class118.method803(var236, (byte) 28, var230, class200.method1377(var223, (byte) 109).method614((byte) 83), 18, null);
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 17) {
-			int var237 = class230.in.g4();
-			int var238 = class230.in.g2();
-			if (var237 < -70000) {
-				var238 += 32768;
+		} else if (class238.ptype == 17) {
+			// UPDATE_INV_PARTIAL
+			int comId = class230.in.g4();
+			int invId = class230.in.g2();
+			if (comId < -70000) {
+				invId += 32768;
 			}
-			IfType var239;
-			if (var237 < 0) {
-				var239 = null;
+			IfType com;
+			if (comId < 0) {
+				com = null;
 			} else {
-				var239 = class239.method1581(-64, var237);
+				com = IfType.get(-64, comId);
 			}
-			while (class230.in.pos < class228.packetSize) {
-				int var240 = class230.in.gsmart();
-				int var241 = class230.in.g2();
-				int var242 = 0;
-				if (var241 != 0) {
-					var242 = class230.in.g1();
-					if (var242 == 255) {
-						var242 = class230.in.g4();
+			while (class230.in.pos < class228.psize) {
+				int slot = class230.in.gsmart();
+				int id = class230.in.g2();
+				int count = 0;
+				if (id != 0) {
+					count = class230.in.g1();
+					if (count == 255) {
+						count = class230.in.g4();
 					}
 				}
-				if (var239 != null && var240 >= 0 && var240 < var239.field3390.length) {
-					var239.field3390[var240] = var241;
-					var239.field3476[var240] = var242;
+				if (com != null && slot >= 0 && slot < com.field3390.length) {
+					com.field3390[slot] = id;
+					com.field3476[slot] = count;
 				}
-				class177.method1270(1, var238, var242, var240, var241 - 1);
+				class177.set(1, invId, count, slot, id - 1);
 			}
-			if (var239 != null) {
-				class200.method1373(65280, var239);
+			if (com != null) {
+				class200.method1373(65280, com);
 			}
 			class127.method869((byte) 127);
-			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(var238, 32767);
-			class238.packetType = -1;
+			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(invId, 32767);
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 11) {
+		} else if (class238.ptype == 11) {
 			byte var243 = class230.in.g1b_alt2();
 			int var244 = class230.in.g2_alt3(255);
 			class168.field3247[var244] = var243;
@@ -1104,17 +1107,17 @@ public class class236 extends class27 {
 				class158.method1070(64, var244);
 			}
 			class244.field4497[class70.method470(class226.field4246++, 31)] = var244;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 100) {
+		} else if (class238.ptype == 100) {
 			int var245 = class230.in.g4();
-			IfType var246 = class239.method1581(-64, var245);
+			IfType var246 = IfType.get(-64, var245);
 			var246.field3432 = 3;
 			var246.model1Id = class240.field4458.field768.method1429(112);
 			class200.method1373(65280, var246);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 25) {
+		} else if (class238.ptype == 25) {
 			int var247 = class230.in.g4();
 			int var248 = class230.in.g2();
 			int var249 = class230.in.g1();
@@ -1123,32 +1126,32 @@ public class class236 extends class27 {
 				class93.method673((byte) -117, var250, var250.field3231 != var248);
 			}
 			class104.method722(var249, var247, var248, (byte) 105);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 10) {
+		} else if (class238.ptype == 10) {
 			int var251 = class230.in.g2_alt1();
 			if (var251 == 65535) {
 				var251 = -1;
 			}
 			class116.method790((byte) -74, var251);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 89) {
+		} else if (class238.ptype == 89) {
 			int var252 = class230.in.g2_alt3(255);
 			if (var252 == 65535) {
 				var252 = -1;
 			}
 			int var253 = class230.in.method340();
 			class4.method23(true, var252, var253);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 66) {
-			byte[] var254 = new byte[class228.packetSize];
-			class230.in.method29(class228.packetSize, var254, false, 0);
-			class165.method1140(-4, class54.method395(0, (byte) -97, var254, class228.packetSize));
-			class238.packetType = -1;
+		} else if (class238.ptype == 66) {
+			byte[] var254 = new byte[class228.psize];
+			class230.in.method29(class228.psize, var254, false, 0);
+			class165.method1140(-4, class54.method395(0, (byte) -97, var254, class228.psize));
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 53) {
+		} else if (class238.ptype == 53) {
 			JString var255 = class230.in.gjstr();
 			Object[] var256 = new Object[var255.length() + 1];
 			for (int var257 = var255.length() - 1; var257 >= 0; var257--) {
@@ -1162,16 +1165,16 @@ public class class236 extends class27 {
 			class39 var258 = new class39();
 			var258.field681 = var256;
 			class200.method1375(var258, -876775538);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 229) {
+		} else if (class238.ptype == 229) {
 			class77.field1394 = Linkable.field1211;
 			long var259 = class230.in.method321(1054632416);
 			if (var259 == 0L) {
 				EnumType.field885 = 0;
 				class222.field4184 = null;
 				class225.field4221 = null;
-				class238.packetType = -1;
+				class238.ptype = -1;
 				JString.field1647 = null;
 				return true;
 			}
@@ -1181,7 +1184,7 @@ public class class236 extends class27 {
 			class170.field3303 = class230.in.g1b();
 			int var263 = class230.in.g1();
 			if (var263 == 255) {
-				class238.packetType = -1;
+				class238.ptype = -1;
 				return true;
 			}
 			EnumType.field885 = var263;
@@ -1215,9 +1218,9 @@ public class class236 extends class27 {
 				}
 			}
 			JString.field1647 = var264;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 129) {
+		} else if (class238.ptype == 129) {
 			long var271 = class230.in.method321(1054632416);
 			class230.in.g1b();
 			long var273 = class230.in.method321(1054632416);
@@ -1247,7 +1250,7 @@ public class class236 extends class27 {
 				}
 				var284++;
 			}
-			if (!var283 && Client.field563 == 0) {
+			if (!var283 && Client.overrideChat == 0) {
 				class167.field3205[class62.field1150] = var279;
 				class62.field1150 = (class62.field1150 + 1) % 100;
 				JString var286 = class168.method1152((byte) 62, var282).method1411(class230.in, 80);
@@ -1259,19 +1262,20 @@ public class class236 extends class27 {
 					class118.method803(var286, (byte) 28, var282, class200.method1377(var271, (byte) 71).method614((byte) 83), 20, class200.method1377(var273, (byte) 67).method614((byte) 83));
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 166) {
+		} else if (class238.ptype == 166) {
 			if (class43.field723 != -1) {
 				ClientStream.method914(class43.field723, 0, 4);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 21) {
-			class43.method278(true, (byte) 33);
-			class238.packetType = -1;
+		} else if (class238.ptype == 21) {
+			// REBUILD_REGION
+			class43.rebuildpacket(true, (byte) 33);
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 233) {
+		} else if (class238.ptype == 233) {
 			JString var287 = class230.in.gjstr();
 			int var288 = class230.in.g1();
 			int var289 = class230.in.g1();
@@ -1282,9 +1286,9 @@ public class class236 extends class27 {
 				class130.field2438[var288 - 1] = var287;
 				class203.field3877[var288 - 1] = var289 == 0;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 70) {
+		} else if (class238.ptype == 70) {
 			for (int var290 = 0; var290 < class28.field465; var290++) {
 				class229 var291 = class106.method734(var290, (byte) 69);
 				if (var291 != null && var291.field4290 == 0) {
@@ -1294,62 +1298,64 @@ public class class236 extends class27 {
 			}
 			class127.method869((byte) 125);
 			class226.field4246 += 32;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 123 || class238.packetType == 52 || class238.packetType == 232 || class238.packetType == 61 || class238.packetType == 135 || class238.packetType == 173 || class238.packetType == 150 || class238.packetType == 198 || class238.packetType == 99 || class238.packetType == 171 || class238.packetType == 75 || class238.packetType == 44) {
+		} else if (class238.ptype == 123 || class238.ptype == 52 || class238.ptype == 232 || class238.ptype == 61 || class238.ptype == 135 || class238.ptype == 173 || class238.ptype == 150 || class238.ptype == 198 || class238.ptype == 99 || class238.ptype == 171 || class238.ptype == 75 || class238.ptype == 44) {
 			class244.method1600(-9063);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 120) {
+		} else if (class238.ptype == 120) {
 			int var292 = class230.in.g2_alt2();
 			int var293 = class230.in.g2_alt2();
 			int var294 = class230.in.g4_alt3();
 			int var295 = class230.in.g2_alt1();
-			IfType var296 = class239.method1581(-64, var294);
+			IfType var296 = IfType.get(-64, var294);
 			if (var296.field3457 != var295 || var296.field3511 != var293 || var296.field3487 != var292) {
 				var296.field3511 = var293;
 				var296.field3487 = var292;
 				var296.field3457 = var295;
 				class200.method1373(65280, var296);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 54) {
+		} else if (class238.ptype == 54) {
 			class127.method869((byte) 125);
 			class199.field3790 = class230.in.g2b();
 			class208.field3954 = Linkable.field1211;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 114) {
+		} else if (class238.ptype == 114) {
+			// TELEPORT (unofficial name)
 			int var297 = class230.in.g1();
 			int var298 = class230.in.g1_alt3(24758);
 			int var299 = class230.in.g1_alt2();
-			class149.field2909 = var297 >> 1;
-			class240.field4458.method1476((var297 & 0x1) == 1, var299, 0, var298);
-			class238.packetType = -1;
+			class149.minusedLevel = var297 >> 1;
+			class240.field4458.teleport((var297 & 0x1) == 1, var299, 0, var298);
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 162) {
+		} else if (class238.ptype == 162) {
 			int var300 = class230.in.g4_alt1();
 			int var301 = class230.in.g2b_alt2();
-			IfType var302 = class239.method1581(-64, var300);
+			IfType var302 = IfType.get(-64, var300);
 			if (var302.modelAnim != var301 || var301 == -1) {
 				var302.modelAnim = var301;
 				var302.field3489 = 0;
 				var302.field3381 = 0;
 				class200.method1373(65280, var302);
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 163) {
+		} else if (class238.ptype == 163) {
 			class121.field2215 = class230.in.g1();
 			class150.field2912 = class230.in.g1_alt1();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 116) {
+		} else if (class238.ptype == 116) {
 			class33.method210(19190);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 223) {
+		} else if (class238.ptype == 223) {
+			// CAM_LOOKAT
 			class179.field3569 = true;
 			Packet.field848 = class230.in.g1();
 			class23.field368 = class230.in.g1();
@@ -1359,7 +1365,7 @@ public class class236 extends class27 {
 			if (Isaac.field2744 >= 100) {
 				int var303 = Packet.field848 * 128 + 64;
 				int var304 = class23.field368 * 128 + 64;
-				int var305 = class239.method1586(var303, var304, 2, class149.field2909) - class66.field1200;
+				int var305 = Client.getAvH(var303, var304, 2, class149.minusedLevel) - class66.field1200;
 				int var306 = var303 - class79.field1428;
 				int var307 = var304 - class184.field3610;
 				int var308 = var305 - class108.field1956;
@@ -1373,41 +1379,41 @@ public class class236 extends class27 {
 					class207.field3936 = 383;
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 241) {
+		} else if (class238.ptype == 241) {
 			int var310 = class230.in.g2();
 			LocType.method998(var310, (byte) 119);
 			class231.field4330[class70.method470(class223.field4200++, 31)] = class70.method470(var310, 32767);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 147) {
+		} else if (class238.ptype == 147) {
 			ClientScript.field4514 = class230.in.g1();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 243) {
+		} else if (class238.ptype == 243) {
 			int var311 = class230.in.g2_alt1();
 			int var312 = class230.in.g2_alt2();
 			class64.field1173 = var311;
 			class207.field3932 = var312;
 			Linkable2.method907((byte) -51);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 189) {
+		} else if (class238.ptype == 189) {
 			class34.field580 = (short) class230.in.g2();
 			if (class34.field580 <= 0) {
 				class34.field580 = 256;
 			}
 			class49.field921 = (short) class230.in.g2_alt2();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			if (class49.field921 <= 0) {
 				class49.field921 = 205;
 			}
 			return true;
-		} else if (class238.packetType == 220) {
+		} else if (class238.ptype == 220) {
 			int var313 = class230.in.g4_alt3();
 			int var314 = class230.in.g2_alt2();
-			IfType var315 = class239.method1581(-64, var313);
+			IfType var315 = IfType.get(-64, var313);
 			if (var315 != null && var315.type == 0) {
 				if (var315.scrollHeight - var315.field3424 < var314) {
 					var314 = var315.scrollHeight - var315.field3424;
@@ -1420,28 +1426,28 @@ public class class236 extends class27 {
 					class200.method1373(65280, var315);
 				}
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 4) {
+		} else if (class238.ptype == 4) {
 			int var316 = class230.in.g2_alt3(255);
 			int var317 = class230.in.g2();
 			int var318 = class230.in.method320(3);
-			IfType var319 = class239.method1581(-64, var318);
-			class238.packetType = -1;
+			IfType var319 = IfType.get(-64, var318);
+			class238.ptype = -1;
 			var319.field3387 = (var317 << 16) + var316;
 			return true;
-		} else if (class238.packetType == 197) {
+		} else if (class238.ptype == 197) {
 			class160.field3085 = (short) class230.in.g2_alt3(255);
 			if (class160.field3085 <= 0) {
 				class160.field3085 = 320;
 			}
 			class221.field4177 = (short) class230.in.g2_alt2();
-			class238.packetType = -1;
+			class238.ptype = -1;
 			if (class221.field4177 <= 0) {
 				class221.field4177 = 256;
 			}
 			return true;
-		} else if (class238.packetType == 113) {
+		} else if (class238.ptype == 113) {
 			int var320 = class230.in.g2();
 			int var321 = class230.in.g1();
 			int var322 = class230.in.g2();
@@ -1449,9 +1455,9 @@ public class class236 extends class27 {
 				var320 = -1;
 			}
 			class92.method669(var321, var322, var320, 0);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 242) {
+		} else if (class238.ptype == 242) {
 			int var323 = class230.in.g4();
 			class168 var324 = (class168) class128.field2397.find((long) var323);
 			if (var324 != null) {
@@ -1461,9 +1467,9 @@ public class class236 extends class27 {
 				class200.method1373(65280, class53.field967);
 				class53.field967 = null;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 72) {
+		} else if (class238.ptype == 72) {
 			int var325 = class230.in.g2_alt2();
 			int var326 = class230.in.g4_alt1();
 			class168.field3247[var325] = var326;
@@ -1472,9 +1478,9 @@ public class class236 extends class27 {
 				class158.method1070(64, var325);
 			}
 			class244.field4497[class70.method470(31, class226.field4246++)] = var325;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 65) {
+		} else if (class238.ptype == 65) {
 			class50.field926 = (short) class230.in.g2();
 			if (class50.field926 <= 0) {
 				class50.field926 = 32767;
@@ -1495,13 +1501,13 @@ public class class236 extends class27 {
 			if (Linkable2.field2529 <= 0) {
 				Linkable2.field2529 = 1;
 			}
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 240) {
+		} else if (class238.ptype == 240) {
 			class115.method787((byte) 28);
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return false;
-		} else if (class238.packetType == 204) {
+		} else if (class238.ptype == 204) {
 			class127.method869((byte) 126);
 			int var327 = class230.in.g1_alt2();
 			int var328 = class230.in.g1_alt1();
@@ -1515,29 +1521,29 @@ public class class236 extends class27 {
 				}
 			}
 			class143.field2644[class70.method470(31, class118.field2133++)] = var327;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 255) {
+		} else if (class238.ptype == 255) {
 			class116.field2104 = 0;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 172) {
+		} else if (class238.ptype == 172) {
 			long var331 = class230.in.method321(1054632416);
 			JString var333 = class26.method162(class21.method103(class230.in, 64).method622(-29988));
-			class223.method1501(var333, 12, 6, class200.method1377(var331, (byte) 124).method614((byte) 83));
-			class238.packetType = -1;
+			class223.addChat(6, var333, class200.method1377(var331, (byte) 124).method614((byte) 83));
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 110) {
-			class230.method1537(NpcType.field2326, 0, class228.packetSize, class230.in);
-			class238.packetType = -1;
+		} else if (class238.ptype == 110) {
+			class230.method1537(NpcType.field2326, 0, class228.psize, class230.in);
+			class238.ptype = -1;
 			return true;
-		} else if (class238.packetType == 184) {
+		} else if (class238.ptype == 184) {
 			class114.field2063 = class230.in.g2_alt1() * 30;
-			class238.packetType = -1;
+			class238.ptype = -1;
 			class208.field3954 = Linkable.field1211;
 			return true;
 		} else {
-			class221.method1490((byte) 0, "T1 - " + class238.packetType + "," + Packet.field821 + "," + JString.field1634 + " - " + class228.packetSize, null);
+			class221.method1490((byte) 0, "T1 - " + class238.ptype + "," + Packet.ptype1 + "," + JString.ptype2 + " - " + class228.psize, null);
 			if (!arg0) {
 				method1567(97, -34, -99, -37, 80, (byte) -34);
 			}

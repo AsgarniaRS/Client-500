@@ -47,7 +47,7 @@ public class class90 extends Linkable {
 	public Js5Local field1703;
 
 	@OriginalMember(owner = "client!ib", name = "B", descriptor = "Z")
-	public static boolean field1708;
+	public static boolean open;
 
 	@OriginalMember(owner = "client!ib", name = "z", descriptor = "[B")
 	public byte[] field1706;
@@ -62,7 +62,7 @@ public class class90 extends Linkable {
 		var3[0] = arg1;
 		int var6 = 0;
 		if (arg2 != -8902) {
-			field1708 = false;
+			open = false;
 		}
 		while (var6 < 4) {
 			if (class27.field461[var6] != arg0) {

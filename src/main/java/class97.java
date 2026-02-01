@@ -85,7 +85,7 @@ public class class97 extends Linkable2 {
 			return;
 		}
 		int var8 = -21 / ((21 - arg5) / 47);
-		int var9 = class239.method1586(arg3, arg7, 2, class149.field2909) - arg2;
+		int var9 = Client.getAvH(arg3, arg7, 2, class149.minusedLevel) - arg2;
 		int var10 = arg7 - class184.field3610;
 		int var11 = arg3 - class79.field1428;
 		int var12 = var9 - class108.field1956;
@@ -116,7 +116,7 @@ public class class97 extends Linkable2 {
 				}
 				Runtime var3 = Runtime.getRuntime();
 				int var4 = (int) ((var3.totalMemory() - var3.freeMemory()) / 1024L);
-				class223.method1501(class166.method1142(new JString[]{class152.field2952, class170.method1214(var4, -93), class110.field2009}, -3), 12, 0, null);
+				class223.addChat(0, class166.method1142(new JString[]{class152.field2952, class170.method1214(var4, -93), class110.field2009}, -3), null);
 			}
 			if (arg0.equalsIgnoreCase(class11.field156)) {
 				class201.method1382(84);
@@ -146,7 +146,7 @@ public class class97 extends Linkable2 {
 			}
 			if (arg0.startsWith(class58.field1103)) {
 				class134.field2505 = arg0.substring(12).method602(arg1 ^ 0xFFFFFF9B).method603(false);
-				class223.method1501(class166.method1142(new JString[]{class93.field1751, class170.method1214(class134.field2505, arg1 - 120)}, -3), 12, 0, null);
+				class223.addChat(0, class166.method1142(new JString[]{class93.field1751, class170.method1214(class134.field2505, arg1 - 120)}, -3), null);
 			}
 			if (arg0.equalsIgnoreCase(class106.field1932)) {
 				class116.field2105 = true;

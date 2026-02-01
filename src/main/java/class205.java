@@ -184,13 +184,13 @@ public class class205 extends Linkable2 {
 	public static final IfType method1415(byte arg0, IfType arg1) {
 		field3914++;
 		if (arg1.layerId != -1) {
-			return class239.method1581(-64, arg1.layerId);
+			return IfType.get(-64, arg1.layerId);
 		}
 		int var2 = arg1.parentId >>> 16;
 		int var3 = 50 % ((-arg0 - 39) / 33);
 		for (class168 var4 = (class168) class128.field2397.method1049(0); var4 != null; var4 = (class168) class128.field2397.method1050((byte) -73)) {
 			if (var4.field3231 == var2) {
-				return class239.method1581(-64, (int) var4.nodeId);
+				return IfType.get(-64, (int) var4.nodeId);
 			}
 		}
 		return null;

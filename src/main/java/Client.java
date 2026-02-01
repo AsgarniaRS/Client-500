@@ -13,7 +13,7 @@ public class Client extends GameShell {
 	public static JString field561 = class208.method1425("titlebox");
 
 	@OriginalMember(owner = "client!client", name = "V", descriptor = "I")
-	public static int field563 = 0;
+	public static int overrideChat = 0;
 
 	@OriginalMember(owner = "client!client", name = "bb", descriptor = "I")
 	public static int field569 = -1;
@@ -69,18 +69,36 @@ public class Client extends GameShell {
 	@OriginalMember(owner = "client!client", name = "ib", descriptor = "Z")
 	public static boolean field576;
 
+	@OriginalMember(owner = "client!w", name = "a", descriptor = "(IIII)I")
+	public static int getAvH(int arg0, int arg1, int arg2, int arg3) {
+		int var4 = arg1 >> 7;
+		int var5 = arg0 >> 7;
+		if (var5 < 0 || var4 < 0 || var5 > 103 || var4 > 103) {
+			return 0;
+		}
+		int var6 = arg1 & 0x7F;
+		int var7 = arg3;
+		int var8 = arg0 & 0x7F;
+		if (arg3 < 3 && (class116.mapl[1][var5][var4] & 0x2) == 2) {
+			var7 = arg3 + 1;
+		}
+		int var9 = (128 - var8) * class62.field1137[var7][var5][var4] + class62.field1137[var7][var5 + 1][var4] * var8 >> 7;
+		int var10 = (128 - var8) * class62.field1137[var7][var5][var4 + 1] + class62.field1137[var7][var5 + 1][var4 + 1] * var8 >> 7;
+		return (128 - var6) * var9 + var6 * var10 >> 7;
+	}
+
 	@OriginalMember(owner = "client!client", name = "h", descriptor = "(I)V")
 	private void method213(int arg0) {
 		field573++;
 		if (class151.field2940 >= 4) {
 			this.error((byte) -49, "js5crc");
-			class229.gameState = 1000;
+			class229.state = 1000;
 			return;
 		}
 		if (class77.ioErrorCount >= 4) {
-			if (class229.gameState <= 5) {
+			if (class229.state <= 5) {
 				this.error((byte) -49, "js5io");
-				class229.gameState = 1000;
+				class229.state = 1000;
 				return;
 			}
 			class77.ioErrorCount = 3;
@@ -113,7 +131,7 @@ public class Client extends GameShell {
 				class101.field1842 = class206.method1420(false);
 			}
 			if (class244.field4495 == 3) {
-				if (class229.gameState <= 5 || class190.field3682.available(arg0 - 9) > 0) {
+				if (class229.state <= 5 || class190.field3682.available(arg0 - 9) > 0) {
 					int var3 = class190.field3682.read(0);
 					if (var3 != 0) {
 						this.method217(var3, 1);
@@ -126,7 +144,7 @@ public class Client extends GameShell {
 				}
 			}
 			if (class244.field4495 == 4) {
-				class80.method529(class229.gameState > 20, 113, class190.field3682);
+				class80.method529(class229.state > 20, 113, class190.field3682);
 				class244.field4495 = 0;
 				class119.field2161 = 0;
 				class62.field1151 = null;
@@ -201,7 +219,7 @@ public class Client extends GameShell {
 		field567 = null;
 		field561 = null;
 		if (arg0 != -10) {
-			field563 = 11;
+			overrideChat = 11;
 		}
 	}
 
@@ -345,19 +363,19 @@ public class Client extends GameShell {
 			class168.field3248 = class220.field4158;
 		}
 		if (class119.field2161 >= 2 && (arg0 == 7 || arg0 == 9)) {
-			if (class229.gameState > 5) {
+			if (class229.state > 5) {
 				class164.field3140 = 3000;
 			} else {
 				this.error((byte) -49, "js5connect_full");
-				class229.gameState = 1000;
+				class229.state = 1000;
 			}
 		} else if (class119.field2161 >= 2 && arg0 == 6) {
 			this.error((byte) -49, "js5connect_outofdate");
-			class229.gameState = 1000;
+			class229.state = 1000;
 		} else if (class119.field2161 >= 4) {
-			if (class229.gameState <= 5) {
+			if (class229.state <= 5) {
 				this.error((byte) -49, "js5connect");
-				class229.gameState = 1000;
+				class229.state = 1000;
 			} else {
 				class164.field3140 = 3000;
 			}
@@ -375,9 +393,9 @@ public class Client extends GameShell {
 			class219.field4145.field717 = false;
 		}
 		class219.field4145 = null;
-		if (class33.stream != null) {
-			class33.stream.close(true);
-			class33.stream = null;
+		if (class33.loginStream != null) {
+			class33.loginStream.close(true);
+			class33.loginStream = null;
 		}
 		class120.method821(HashTable.field2977, 88);
 		class116.method792((byte) -122, HashTable.field2977);
@@ -578,7 +596,7 @@ public class Client extends GameShell {
 			class54.field1011 = class60.method429(class98.field1795, class226.field4245, IfType.field3455, -79, class108.field1959);
 			class6.field83 = 45;
 			class209.field3965 = class2.field24;
-			class131.method883(5, 65536);
+			class131.setMainState(5, 65536);
 			class32.field519 = 70;
 		} else if (class32.field519 == 70) {
 			class85.field1546.fetchAll();
@@ -772,7 +790,7 @@ public class Client extends GameShell {
 				class98.field1795.method967(true, true, -17541);
 				class9.field137.method967(true, true, -17541);
 				CollisionMap.field1671.method967(true, true, -17541);
-				class131.method883(10, 65536);
+				class131.setMainState(10, 65536);
 			}
 		} else if (class155.field2996.fetchAll()) {
 			class68 var59 = new class68(class66.field1193, class155.field2996, class226.field4245, 20, class245.lowMemory);
@@ -799,11 +817,11 @@ public class Client extends GameShell {
 			var2 = true;
 			class53.field971 = false;
 		}
-		if (class229.gameState == 0) {
+		if (class229.state == 0) {
 			class166.method1144(-484, null, class209.field3965, var2, class6.field83);
-		} else if (class229.gameState == 5 || class229.gameState == 10 || class229.gameState == 20) {
+		} else if (class229.state == 5 || class229.state == 10 || class229.state == 20) {
 			class188.method1312(class49.field917, (byte) 75, class54.field1011);
-		} else if (class229.gameState == 25) {
+		} else if (class229.state == 25) {
 			if (class203.field3863 == 1) {
 				if (class196.field3756 > Isaac.field2753) {
 					Isaac.field2753 = class196.field3756;
@@ -819,16 +837,16 @@ public class Client extends GameShell {
 			} else {
 				method221(class242.field4480, false, -22717);
 			}
-		} else if (class229.gameState == 30) {
+		} else if (class229.state == 30) {
 			class245.method1607(arg0 ^ 0x3D71);
-		} else if (class229.gameState == 40) {
+		} else if (class229.state == 40) {
 			method221(class166.method1142(new JString[]{class113.field2042, class142.field2620, class101.field1840}, -3), false, arg0 - 38446);
 		}
 		if (arg0 != 15729) {
-			field563 = -15;
+			overrideChat = -15;
 		}
 		Canvas var6 = HashTable.field2977;
-		if (class229.gameState == 30 && class134.field2505 == 0 && !var2) {
+		if (class229.state == 30 && class134.field2505 == 0 && !var2) {
 			try {
 				Graphics var9 = var6.getGraphics();
 				for (int var10 = 0; var10 < class206.field3925; var10++) {
@@ -840,7 +858,7 @@ public class Client extends GameShell {
 			} catch (Exception var11) {
 				var6.repaint();
 			}
-		} else if (class229.gameState > 0) {
+		} else if (class229.state > 0) {
 			try {
 				Graphics var7 = var6.getGraphics();
 				class202.field3854.draw(0, 0, var7);
@@ -903,24 +921,24 @@ public class Client extends GameShell {
 			int var3 = class167.field3224.method176((byte) -59);
 			class90.field1709 = var3;
 		}
-		if (class229.gameState == 0) {
+		if (class229.state == 0) {
 			this.method219((byte) 104);
 			class108.method740(false);
-		} else if (class229.gameState == 5) {
+		} else if (class229.state == 5) {
 			class50.method376((byte) 66, this);
 			this.method219((byte) -17);
 			class108.method740(false);
-		} else if (class229.gameState == 10) {
+		} else if (class229.state == 10) {
 			class50.method376((byte) 66, this);
-		} else if (class229.gameState == 20) {
+		} else if (class229.state == 20) {
 			class50.method376((byte) 66, this);
 			class176.method1263((byte) -107);
-		} else if (class229.gameState == 25) {
+		} else if (class229.state == 25) {
 			class184.method1299(false);
 		}
-		if (class229.gameState == 30) {
+		if (class229.state == 30) {
 			class116.method791(-100);
-		} else if (class229.gameState == 40) {
+		} else if (class229.state == 40) {
 			class176.method1263((byte) -42);
 			return;
 		}
@@ -932,7 +950,7 @@ public class Client extends GameShell {
 			field567 = null;
 		}
 		field558++;
-		if (class229.gameState != 1000) {
+		if (class229.state != 1000) {
 			boolean var2 = IntHashTable.method689(30203);
 			if (!var2) {
 				this.method213(10);

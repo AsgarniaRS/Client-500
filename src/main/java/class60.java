@@ -156,8 +156,8 @@ public class class60 extends class23 {
 				class225.field4225[var3] = null;
 			}
 		}
-		if (~class228.packetSize != ~class230.in.pos) {
-			throw new RuntimeException("gnp1 pos:" + class230.in.pos + " psize:" + class228.packetSize);
+		if (~class228.psize != ~class230.in.pos) {
+			throw new RuntimeException("gnp1 pos:" + class230.in.pos + " psize:" + class228.psize);
 		} else {
 			for (int var2 = 0; ~class55.field1041 < ~var2; ++var2) {
 				if (class225.field4225[class25.field402[var2]] == null) {

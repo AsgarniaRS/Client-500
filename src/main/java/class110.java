@@ -111,7 +111,7 @@ public class class110 {
 				if (var7 == 4) {
 					int var10 = var3[var5++] << 16;
 					int var11 = var10 + var3[var5++];
-					IfType var12 = class239.method1581(-64, var11);
+					IfType var12 = IfType.get(-64, var11);
 					int var13 = var3[var5++];
 					if (var13 != -1 && (!class71.method472(var13, (byte) -122).field2879 || Linkable.field1215)) {
 						for (int var14 = 0; var14 < var12.field3390.length; var14++) {
@@ -143,7 +143,7 @@ public class class110 {
 				if (var7 == 10) {
 					int var16 = var3[var5++] << 16;
 					int var17 = var16 + var3[var5++];
-					IfType var18 = class239.method1581(-64, var17);
+					IfType var18 = IfType.get(-64, var17);
 					int var19 = var3[var5++];
 					if (var19 != -1 && (!class71.method472(var19, (byte) -127).field2879 || Linkable.field1215)) {
 						for (int var20 = 0; var20 < var18.field3390.length; var20++) {

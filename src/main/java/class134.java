@@ -107,13 +107,13 @@ public class class134 {
 			return;
 		}
 		Js5.field2709 = 0;
-		if (class58.field1097 || class33.stream == null) {
+		if (class58.field1097 || class33.loginStream == null) {
 			return;
 		}
 		class31.field498++;
 		Isaac.out.method30(19);
 		try {
-			class33.stream.write(Isaac.out.data, 0, Isaac.out.pos);
+			class33.loginStream.write(Isaac.out.data, 0, Isaac.out.pos);
 			Isaac.out.pos = 0;
 		} catch (IOException var2) {
 			class58.field1097 = true;
@@ -121,7 +121,7 @@ public class class134 {
 	}
 
 	@OriginalMember(owner = "client!mc", name = "a", descriptor = "(I)V")
-	public static final void method896(int arg0) {
+	public static final void resetProgress(int arg0) {
 		class15.field228 = null;
 		class201.field3842 = null;
 		class143.field2645 = null;

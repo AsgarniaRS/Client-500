@@ -89,22 +89,20 @@ public class class118 {
 
 	@OriginalMember(owner = "client!ki", name = "a", descriptor = "(Li;BILi;ILi;)V")
 	public static final void method803(JString arg0, byte arg1, int arg2, JString arg3, int arg4, JString arg5) {
-		for (int var6 = 99; var6 > 0; var6--) {
-			class194.field3710[var6] = class194.field3710[var6 - 1];
-			class121.field2208[var6] = class121.field2208[var6 - 1];
-			class212.field4021[var6] = class212.field4021[var6 - 1];
-			class228.field4282[var6] = class228.field4282[var6 - 1];
-			class133.field2485[var6] = class133.field2485[var6 - 1];
+		for (int i = 99; i > 0; i--) {
+			class194.field3710[i] = class194.field3710[i - 1];
+			class121.field2208[i] = class121.field2208[i - 1];
+			class212.field4021[i] = class212.field4021[i - 1];
+			class228.field4282[i] = class228.field4282[i - 1];
+			class133.field2485[i] = class133.field2485[i - 1];
 		}
 		class34.field582++;
 		class121.field2208[0] = arg3;
 		class212.field4021[0] = arg0;
-		if (arg1 != 28) {
-			return;
-		}
 		class194.field3710[0] = arg4;
 		class133.field2485[0] = arg2;
 		class228.field4282[0] = arg5;
+
 		field2151++;
 		class7.field100 = Linkable.field1211;
 	}

@@ -119,7 +119,7 @@ public class class127 extends Linkable {
 				}
 				if (!var3) {
 					int var6 = (int) var1.nodeId;
-					IfType var7 = class239.method1581(-64, var6);
+					IfType var7 = IfType.get(-64, var6);
 					if (var7 != null) {
 						class200.method1373(65280, var7);
 					}

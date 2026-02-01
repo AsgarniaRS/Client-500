@@ -193,7 +193,7 @@ public class class149 extends Linkable2 {
 	public static int field2904;
 
 	@OriginalMember(owner = "client!ng", name = "Yb", descriptor = "I")
-	public static int field2909;
+	public static int minusedLevel;
 
 	@OriginalMember(owner = "client!ng", name = "mb", descriptor = "Lob;")
 	private HashTable field2871;
@@ -642,8 +642,8 @@ public class class149 extends Linkable2 {
 					if (!var3.field3684.active) {
 						var4 |= Long.MIN_VALUE;
 					}
-					var3.field4099 = class239.method1586(var3.field4138 + (var3.field4105 - 1) * 64, var3.field4123 - (-(var3.field4105 * 64) + 64), arg1 + 11656, field2909);
-					NpcType.method861(field2909, var3.field4138, var3.field4123, var3.field4099, (var3.field4105 - 1) * 64 + 60, var3, var3.field4087, var4, var3.field4095);
+					var3.field4099 = Client.getAvH(var3.field4138 + (var3.field4105 - 1) * 64, var3.field4123 - (-(var3.field4105 * 64) + 64), arg1 + 11656, minusedLevel);
+					NpcType.method861(minusedLevel, var3.field4138, var3.field4123, var3.field4099, (var3.field4105 - 1) * 64 + 60, var3, var3.field4087, var4, var3.field4095);
 				}
 			}
 		}

@@ -11,7 +11,7 @@ public class class117 extends Linkable2 {
 	public static int field2115 = 0;
 
 	@OriginalMember(owner = "client!kh", name = "M", descriptor = "I")
-	public static int loginState = 0;
+	public static int loginStep = 0;
 
 	@OriginalMember(owner = "client!kh", name = "J", descriptor = "Li;")
 	public static JString field2116 = class208.method1425("Benutzen Sie die (WPasswort -=ndern(W Option");

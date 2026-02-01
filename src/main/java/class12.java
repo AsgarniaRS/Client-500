@@ -187,13 +187,13 @@ public class class12 {
 			if (arg0 > -78) {
 				field183 = -44;
 			}
-			return class236.method1568(true);
+			return class236.tcpIn(true);
 		} catch (IOException var4) {
 			class201.method1382(80);
 			return true;
 		} catch (Exception var5) {
-			String var2 = "T2 - " + class238.packetType + "," + Packet.field821 + "," + JString.field1634 + " - " + class228.packetSize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
-			for (int var3 = 0; class228.packetSize > var3 && var3 < 50; var3++) {
+			String var2 = "T2 - " + class238.ptype + "," + Packet.ptype1 + "," + JString.ptype2 + " - " + class228.psize + "," + (class240.field4458.field4089[0] + class223.field4214) + "," + (class240.field4458.field4143[0] + class190.field3681) + " - ";
+			for (int var3 = 0; class228.psize > var3 && var3 < 50; var3++) {
 				var2 = var2 + class230.in.data[var3] + ",";
 			}
 			class221.method1490((byte) 0, var2, var5);
@@ -237,23 +237,23 @@ public class class12 {
 			return;
 		}
 		if (Isaac.field2731 >= 100 && class6.field72 != 1 || Isaac.field2731 >= 200) {
-			class223.method1501(class225.field4232, 12, 0, IfType.field3455);
+			class223.addChat(0, class225.field4232, IfType.field3455);
 		} else if (arg0 <= -14) {
 			JString var3 = class200.method1377(arg1, (byte) 99).method614((byte) 83);
 			for (int var4 = 0; var4 < Isaac.field2731; var4++) {
 				if (class115.field2088[var4] == arg1) {
-					class223.method1501(class166.method1142(new JString[]{var3, class1.field8}, -3), 12, 0, IfType.field3455);
+					class223.addChat(0, class166.method1142(new JString[]{var3, class1.field8}, -3), IfType.field3455);
 					return;
 				}
 			}
 			for (int var5 = 0; var5 < Linkable.field1221; var5++) {
 				if (class95.field1765[var5] == arg1) {
-					class223.method1501(class166.method1142(new JString[]{SeqType.field1980, var3, class226.field4247}, -3), 12, 0, IfType.field3455);
+					class223.addChat(0, class166.method1142(new JString[]{SeqType.field1980, var3, class226.field4247}, -3), IfType.field3455);
 					return;
 				}
 			}
 			if (var3.method597(-122, class240.field4458.name)) {
-				class223.method1501(class24.field395, 12, 0, IfType.field3455);
+				class223.addChat(0, class24.field395, IfType.field3455);
 			} else {
 				class90.field1712++;
 				class23.field370[Isaac.field2731] = var3;

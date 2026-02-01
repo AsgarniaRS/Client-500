@@ -180,23 +180,23 @@ public class class11 extends class23 {
 		++field158;
 		if (arg1 != 0L) {
 			if (Linkable.field1221 >= 100) {
-				class223.method1501(class118.field2144, 12, 0, IfType.field3455);
+				class223.addChat(0, class118.field2144, IfType.field3455);
 			} else {
 				JString var3 = class200.method1377(arg1, (byte) 123).method614((byte) 83);
 				for (int var4 = 0; ~Linkable.field1221 < ~var4; ++var4) {
 					if (~class95.field1765[var4] == ~arg1) {
-						class223.method1501(class166.method1142(new JString[]{var3, class155.field3001}, -3), arg0 ^ -12, 0, IfType.field3455);
+						class223.addChat(0, class166.method1142(new JString[]{var3, class155.field3001}, -3), IfType.field3455);
 						return;
 					}
 				}
 				for (int var5 = 0; Isaac.field2731 > var5; ++var5) {
 					if (class115.field2088[var5] == arg1) {
-						class223.method1501(class166.method1142(new JString[]{SeqType.field1973, var3, class115.field2087}, -3), arg0 + 20, 0, IfType.field3455);
+						class223.addChat(0, class166.method1142(new JString[]{SeqType.field1973, var3, class115.field2087}, -3), IfType.field3455);
 						return;
 					}
 				}
 				if (var3.method597(-125, class240.field4458.name)) {
-					class223.method1501(field151, 12, 0, IfType.field3455);
+					class223.addChat(0, field151, IfType.field3455);
 				} else {
 					++class159.field3060;
 					class95.field1765[Linkable.field1221] = arg1;

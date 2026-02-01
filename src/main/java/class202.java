@@ -90,9 +90,8 @@ public class class202 {
 	}
 
 	@OriginalMember(owner = "client!sf", name = "c", descriptor = "(I)V")
-	public static final void method1386(int arg0) {
-		field3848++;
-		if (!class90.field1708) {
+	public static void close() {
+		if (!class90.open) {
 			return;
 		}
 		class208.field3948 = null;
@@ -118,16 +117,14 @@ public class class202 {
 		class32.field518 = null;
 		CollisionMap.field1676 = null;
 		class117.method797(25335, 2);
+
 		class147.sendLoginLogoutPacket((byte) -99, true);
-		class90.field1708 = false;
-		if (arg0 >= -53) {
-			method1388(-67, -25, -67, -81L);
-		}
+		class90.open = false;
 	}
 
 	@OriginalMember(owner = "client!sf", name = "d", descriptor = "(I)V")
 	public static final void method1387(int arg0) {
-		Client.field563 = 0;
+		Client.overrideChat = 0;
 		int var1 = (class240.field4458.field4138 >> 7) + class223.field4214;
 		if (arg0 != 0) {
 			method1387(18);
@@ -135,13 +132,13 @@ public class class202 {
 		field3846++;
 		int var2 = (class240.field4458.field4123 >> 7) + class190.field3681;
 		if (var1 >= 3053 && var1 <= 3156 && var2 >= 3056 && var2 <= 3136) {
-			Client.field563 = 1;
+			Client.overrideChat = 1;
 		}
 		if (var1 >= 3072 && var1 <= 3118 && var2 >= 9492 && var2 <= 9535) {
-			Client.field563 = 1;
+			Client.overrideChat = 1;
 		}
-		if (Client.field563 == 1 && var1 >= 3139 && var1 <= 3199 && var2 >= 3008 && var2 <= 3062) {
-			Client.field563 = 0;
+		if (Client.overrideChat == 1 && var1 >= 3139 && var1 <= 3199 && var2 >= 3008 && var2 <= 3062) {
+			Client.overrideChat = 0;
 		}
 	}
 

@@ -168,21 +168,21 @@ public class scene extends class218 {
 					int var33 = var28 / 2;
 					int var34 = var27 * var32 + var29 * var31 >> 16;
 					int var35 = var29 * var32 - var27 * var31 >> 16;
-					int var36 = class239.method1586(super.field4138 + var34, super.field4123 + var35, 2, class149.field2909);
+					int var36 = Client.getAvH(super.field4138 + var34, super.field4123 + var35, 2, class149.minusedLevel);
 					int var37 = -var30 / 2;
 					int var38 = var27 * var37 + var29 * var33 >> 16;
 					int var39 = var29 * var37 + -(var27 * var33) >> 16;
-					int var40 = class239.method1586(super.field4138 + var38, super.field4123 + var39, 2, class149.field2909);
+					int var40 = Client.getAvH(super.field4138 + var38, super.field4123 + var39, 2, class149.minusedLevel);
 					int var41 = var30 / 2;
 					int var42 = -var28 / 2;
 					int var43 = var29 * var41 + -(var27 * var42) >> 16;
 					int var44 = var27 * var41 + var29 * var42 >> 16;
-					int var45 = class239.method1586(super.field4138 - -var44, super.field4123 + var43, 2, class149.field2909);
+					int var45 = Client.getAvH(super.field4138 - -var44, super.field4123 + var43, 2, class149.minusedLevel);
 					int var46 = var28 / 2;
 					int var47 = var30 / 2;
 					int var48 = var29 * var47 - var27 * var46 >> 16;
 					int var49 = var27 * var47 + var29 * var46 >> 16;
-					int var50 = class239.method1586(super.field4138 + var49, super.field4123 + var48, 2, class149.field2909);
+					int var50 = Client.getAvH(super.field4138 + var49, super.field4123 + var48, 2, class149.minusedLevel);
 					int var51 = var36 - -var50;
 					if (~(var40 + var45) > ~var51) {
 						var51 = var40 + var45;

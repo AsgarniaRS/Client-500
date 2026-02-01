@@ -108,9 +108,9 @@ public class class135 extends class23 {
 			var15.method188(arg5);
 		}
 		class125 var16 = (class125) var15;
-		if (~arg6 != ~class239.method1586(arg3 + var11, arg2 + var13, arg1 + 21512, class149.field2909) || ~class239.method1586(arg3 + var12, arg2 + var14, 2, class149.field2909) != ~arg6) {
+		if (~arg6 != ~Client.getAvH(arg3 + var11, arg2 + var13, arg1 + 21512, class149.minusedLevel) || ~Client.getAvH(arg3 + var12, arg2 + var14, 2, class149.minusedLevel) != ~arg6) {
 			for (int var17 = 0; var16.field2273 > var17; ++var17) {
-				var16.field2288[var17] += class239.method1586(var16.field2266[var17] + arg3, var16.field2289[var17] - -arg2, 2, class149.field2909) - arg6;
+				var16.field2288[var17] += Client.getAvH(var16.field2266[var17] + arg3, var16.field2289[var17] - -arg2, 2, class149.minusedLevel) - arg6;
 			}
 			var16.field2260 = false;
 		}
@@ -522,7 +522,7 @@ public class class135 extends class23 {
 							throw new RuntimeException();
 						}
 
-						IfType var48 = class239.method1581(-64, var45);
+						IfType var48 = IfType.get(-64, var45);
 						if (var48.field3467 == null) {
 							var48.field3467 = new IfType[var47 + 1];
 						}
@@ -561,14 +561,14 @@ public class class135 extends class23 {
 							}
 							throw new RuntimeException("Tried to cc_delete static active-component!");
 						}
-						IfType var53 = class239.method1581(-64, var52.parentId);
+						IfType var53 = IfType.get(-64, var52.parentId);
 						var53.field3467[var52.field3408] = null;
 						class200.method1373(65280, var53);
 						continue;
 					}
 					if (opcode == 102) {
 						--isp;
-						IfType var54 = class239.method1581(-64, class108.intStack[isp]);
+						IfType var54 = IfType.get(-64, class108.intStack[isp]);
 						var54.field3467 = null;
 						class200.method1373(65280, var54);
 						continue;
@@ -593,7 +593,7 @@ public class class135 extends class23 {
 					if (opcode == 201) {
 						--isp;
 						int var58 = class108.intStack[isp];
-						IfType var59 = class239.method1581(-64, var58);
+						IfType var59 = IfType.get(-64, var58);
 						if (var59 == null) {
 							class108.intStack[isp++] = 0;
 						} else {
@@ -614,7 +614,7 @@ public class class135 extends class23 {
 								if (opcode >= 2000) {
 									opcode -= 1000;
 									--isp;
-									var60 = class239.method1581(-64, class108.intStack[isp]);
+									var60 = IfType.get(-64, class108.intStack[isp]);
 								} else {
 									var60 = secondary ? class203.field3873 : class129.field2428;
 								}
@@ -681,7 +681,7 @@ public class class135 extends class23 {
 										var65 = !secondary ? class129.field2428 : class203.field3873;
 									} else {
 										--isp;
-										var65 = class239.method1581(-64, class108.intStack[isp]);
+										var65 = IfType.get(-64, class108.intStack[isp]);
 										opcode -= 1000;
 									}
 									--ssp;
@@ -912,7 +912,7 @@ public class class135 extends class23 {
 									}
 								} else if (opcode < 2600) {
 									--isp;
-									IfType var76 = class239.method1581(-64, class108.intStack[isp]);
+									IfType var76 = IfType.get(-64, class108.intStack[isp]);
 									if (opcode == 2500) {
 										class108.intStack[isp++] = var76.field3368;
 										continue;
@@ -939,7 +939,7 @@ public class class135 extends class23 {
 									}
 								} else if (opcode < 2700) {
 									--isp;
-									IfType var77 = class239.method1581(-64, class108.intStack[isp]);
+									IfType var77 = IfType.get(-64, class108.intStack[isp]);
 									if (opcode == 2600) {
 										class108.intStack[isp++] = var77.field3395;
 										continue;
@@ -983,7 +983,7 @@ public class class135 extends class23 {
 								} else if (opcode >= 2800) {
 									if (~opcode > -2901) {
 										--isp;
-										IfType var78 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var78 = IfType.get(-64, class108.intStack[isp]);
 										if (opcode == 2800) {
 											class108.intStack[isp++] = GameShell.method592(1281959627, class80.method530(-881710560, var78));
 											continue;
@@ -2474,7 +2474,7 @@ public class class135 extends class23 {
 												continue;
 											}
 											if (~opcode == -3309) {
-												int var325 = class149.field2909;
+												int var325 = class149.minusedLevel;
 												int var326 = (class240.field4458.field4123 >> 7) + class190.field3681;
 												int var327 = (class240.field4458.field4138 >> 7) + class223.field4214;
 												class108.intStack[isp++] = (var325 << 28) + (var327 << 14) + var326;
@@ -2592,7 +2592,7 @@ public class class135 extends class23 {
 										if (~opcode == -3101) {
 											--ssp;
 											JString var337 = class171.stringStack[ssp];
-											class223.method1501(var337, 12, 0, class81.field1468);
+											class223.addChat(0, var337, class81.field1468);
 											continue;
 										}
 										if (~opcode == -3102) {
@@ -2646,7 +2646,7 @@ public class class135 extends class23 {
 											int var344 = class108.intStack[isp];
 											int var345 = class108.intStack[isp - -1];
 											int var346 = class108.intStack[isp + 2];
-											IfType var347 = class239.method1581(-64, var346);
+											IfType var347 = IfType.get(-64, var346);
 											class80.method532(var344, 2, var345, var347);
 											continue;
 										}
@@ -2670,13 +2670,13 @@ public class class135 extends class23 {
 								} else {
 									if (~opcode == -2701) {
 										--isp;
-										IfType var352 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var352 = IfType.get(-64, class108.intStack[isp]);
 										class108.intStack[isp++] = var352.field3401;
 										continue;
 									}
 									if (~opcode == -2702) {
 										--isp;
-										IfType var353 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var353 = IfType.get(-64, class108.intStack[isp]);
 										if (var353.field3401 == -1) {
 											class108.intStack[isp++] = 0;
 										} else {
@@ -2697,7 +2697,7 @@ public class class135 extends class23 {
 									}
 									if (~opcode == -2704) {
 										--isp;
-										IfType var356 = class239.method1581(-64, class108.intStack[isp]);
+										IfType var356 = IfType.get(-64, class108.intStack[isp]);
 										if (var356.field3467 == null) {
 											class108.intStack[isp++] = 0;
 											continue;
@@ -2731,7 +2731,7 @@ public class class135 extends class23 {
 									var362 = secondary ? class203.field3873 : class129.field2428;
 								} else {
 									--isp;
-									var362 = class239.method1581(-64, class108.intStack[isp]);
+									var362 = IfType.get(-64, class108.intStack[isp]);
 									opcode -= 1000;
 								}
 								if (opcode == 1300) {
@@ -2786,7 +2786,7 @@ public class class135 extends class23 {
 							IfType var366;
 							if (~opcode <= -2001) {
 								--isp;
-								var366 = class239.method1581(-64, class108.intStack[isp]);
+								var366 = IfType.get(-64, class108.intStack[isp]);
 								opcode -= 1000;
 							} else {
 								var366 = !secondary ? class129.field2428 : class203.field3873;
@@ -2969,7 +2969,7 @@ public class class135 extends class23 {
 						} else {
 							opcode -= 1000;
 							--isp;
-							var369 = class239.method1581(-64, class108.intStack[isp]);
+							var369 = IfType.get(-64, class108.intStack[isp]);
 						}
 						if (opcode == 1000) {
 							var369.field3369 = 0;
@@ -3079,12 +3079,12 @@ public class class135 extends class23 {
 					var379.method616(class134.field2498, (byte) 60).method616(class170.method1214(var381, 62), (byte) 109);
 				}
 				if (~class115.modewhere != -1) {
-					class223.method1501(class166.method1142(new JString[]{class18.field288, script.name}, -3), 12, 0, class81.field1468);
+					class223.addChat(0, class166.method1142(new JString[]{class18.field288, script.name}, -3), class81.field1468);
 				}
 				class221.method1490((byte) 0, "CS2 - scr:" + script.nodeId + " op:" + var10 + new String(var379.method613(-113)), var382);
 			} else {
 				if (~class115.modewhere != -1) {
-					class223.method1501(class179.field3565, 12, 0, class81.field1468);
+					class223.addChat(0, class179.field3565, class81.field1468);
 				}
 				class221.method1490((byte) 0, "CS2 - scr:" + script.nodeId + " op:" + var10, var382);
 			}

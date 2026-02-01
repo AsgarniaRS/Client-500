@@ -134,7 +134,7 @@ public class class36 extends class228 implements ImageProducer, ImageObserver {
 		if (!arg2) {
 			method239(123, false);
 		}
-		IfType var3 = class239.method1581(-64, arg1);
+		IfType var3 = IfType.get(-64, arg1);
 		if (~arg0 == 0) {
 			return var3;
 		} else {

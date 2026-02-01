@@ -799,7 +799,7 @@ public class Packet extends Linkable {
 	public static JString field817 = field810;
 
 	@OriginalMember(owner = "client!ea", name = "N", descriptor = "I")
-	public static int field821 = 0;
+	public static int ptype1 = 0;
 
 	@OriginalMember(owner = "client!ea", name = "zb", descriptor = "I")
 	public static int field859 = 0;

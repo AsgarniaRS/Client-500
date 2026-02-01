@@ -167,7 +167,7 @@ public abstract class GameShell extends Applet implements Runnable, FocusListene
 			return null;
 		}
 		for (int var3 = arg0; var3 < var2; var3++) {
-			arg1 = class239.method1581(-64, arg1.layerId);
+			arg1 = IfType.get(-64, arg1.layerId);
 			if (arg1 == null) {
 				return null;
 			}

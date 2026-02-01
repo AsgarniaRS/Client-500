@@ -129,7 +129,7 @@ public class class212 extends class23 {
 							CollisionMap var25 = null;
 							if (!arg7) {
 								int var26 = arg5;
-								if ((2 & class116.field2100[1][var23][var24]) == 2) {
+								if ((2 & class116.mapl[1][var23][var24]) == 2) {
 									var26 = arg5 - 1;
 								}
 								if (var26 >= 0) {

@@ -62,36 +62,36 @@ public class class131 {
 	public static int field2460;
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(II)V")
-	public static final void method883(int arg0, int arg1) {
+	public static final void setMainState(int newState, int arg1) {
 		field2447++;
-		if (class229.gameState == arg0 || arg1 != 65536) {
+		if (class229.state == newState || arg1 != 65536) {
 			return;
 		}
-		if (class229.gameState == 0) {
-			class134.method896(arg1 ^ 0x752457A1);
+		if (class229.state == 0) {
+			class134.resetProgress(arg1 ^ 0x752457A1);
 		}
-		if (arg0 == 20 || arg0 == 40) {
-			class117.loginState = 0;
+		if (newState == 20 || newState == 40) {
+			class117.loginStep = 0;
 			class6.field71 = 0;
 			class196.field3760 = 0;
 		}
-		if (arg0 != 20 && arg0 != 40 && CollisionMap.field1666 != null) {
-			CollisionMap.field1666.close(true);
-			CollisionMap.field1666 = null;
+		if (newState != 20 && newState != 40 && CollisionMap.stream != null) {
+			CollisionMap.stream.close(true);
+			CollisionMap.stream = null;
 		}
-		if (class229.gameState == 25) {
+		if (class229.state == 25) {
 			class113.field2047 = 0;
 			class203.field3863 = 0;
 			Isaac.field2753 = 1;
 			class143.field2654 = 1;
 			class196.field3756 = 0;
 		}
-		if (arg0 == 5 || arg0 == 10 || arg0 == 20) {
+		if (newState == 5 || newState == 10 || newState == 20) {
 			class184.method1300(class9.field137, HashTable.field2977, true, class226.field4245);
 		} else {
-			class202.method1386(-118);
+			class202.close();
 		}
-		class229.gameState = arg0;
+		class229.state = newState;
 	}
 
 	@OriginalMember(owner = "client!m", name = "a", descriptor = "(I)I")
@@ -116,7 +116,7 @@ public class class131 {
 	public static void method886(boolean arg0) {
 		field2454 = null;
 		if (!arg0) {
-			method883(-12, 26);
+			setMainState(-12, 26);
 		}
 		field2463 = null;
 		field2449 = null;
@@ -134,8 +134,8 @@ public class class131 {
 			int var2 = class79.field1428 >> 7;
 			int var3 = class184.field3610 >> 7;
 			int var4 = class240.field4458.field4138 >> 7;
-			if ((class116.field2100[class149.field2909][var2][var3] & 0x4) != 0) {
-				var1 = class149.field2909;
+			if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
+				var1 = class149.minusedLevel;
 			}
 			int var5;
 			if (var2 < var4) {
@@ -160,8 +160,8 @@ public class class131 {
 						var3--;
 					}
 					var9 += var8;
-					if ((class116.field2100[class149.field2909][var2][var3] & 0x4) != 0) {
-						var1 = class149.field2909;
+					if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
+						var1 = class149.minusedLevel;
 					}
 					if (var9 >= 65536) {
 						var9 -= 65536;
@@ -170,8 +170,8 @@ public class class131 {
 						} else if (var4 < var2) {
 							var2--;
 						}
-						if ((class116.field2100[class149.field2909][var2][var3] & 0x4) != 0) {
-							var1 = class149.field2909;
+						if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
+							var1 = class149.minusedLevel;
 						}
 					}
 				}
@@ -185,8 +185,8 @@ public class class131 {
 						var2--;
 					}
 					var11 += var10;
-					if ((class116.field2100[class149.field2909][var2][var3] & 0x4) != 0) {
-						var1 = class149.field2909;
+					if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
+						var1 = class149.minusedLevel;
 					}
 					if (var11 >= 65536) {
 						if (var3 < var6) {
@@ -194,16 +194,16 @@ public class class131 {
 						} else if (var3 > var6) {
 							var3--;
 						}
-						if ((class116.field2100[class149.field2909][var2][var3] & 0x4) != 0) {
-							var1 = class149.field2909;
+						if ((class116.mapl[class149.minusedLevel][var2][var3] & 0x4) != 0) {
+							var1 = class149.minusedLevel;
 						}
 						var11 -= 65536;
 					}
 				}
 			}
 		}
-		if ((class116.field2100[class149.field2909][class240.field4458.field4138 >> 7][class240.field4458.field4123 >> 7] & 0x4) != 0) {
-			var1 = class149.field2909;
+		if ((class116.mapl[class149.minusedLevel][class240.field4458.field4138 >> 7][class240.field4458.field4123 >> 7] & 0x4) != 0) {
+			var1 = class149.minusedLevel;
 		}
 		return var1;
 	}

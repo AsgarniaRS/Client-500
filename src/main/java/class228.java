@@ -1,123 +1,122 @@
-import java.awt.Component;
-import java.awt.Graphics;
-import java.awt.Image;
 import org.openrs2.deob.annotation.OriginalClass;
 import org.openrs2.deob.annotation.OriginalMember;
+
+import java.awt.*;
 
 @OriginalClass("client!uj")
 public abstract class class228 {
 
-    @OriginalMember(owner = "client!uj", name = "d", descriptor = "I")
-    public static int packetSize = 0;
+	@OriginalMember(owner = "client!uj", name = "d", descriptor = "I")
+	public static int psize = 0;
 
-    @OriginalMember(owner = "client!uj", name = "j", descriptor = "I")
-    public static int field4278 = 0;
+	@OriginalMember(owner = "client!uj", name = "j", descriptor = "I")
+	public static int field4278 = 0;
 
-    @OriginalMember(owner = "client!uj", name = "n", descriptor = "[Li;")
-    public static JString[] field4282 = new JString[100];
+	@OriginalMember(owner = "client!uj", name = "n", descriptor = "[Li;")
+	public static JString[] field4282 = new JString[100];
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "[[I")
-    public static int[][] field4269 = new int[104][104];
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "[[I")
+	public static int[][] field4269 = new int[104][104];
 
-    @OriginalMember(owner = "client!uj", name = "o", descriptor = "Li;")
-    public static JString field4283 = class208.method1425("");
+	@OriginalMember(owner = "client!uj", name = "o", descriptor = "Li;")
+	public static JString field4283 = class208.method1425("");
 
-    @OriginalMember(owner = "client!uj", name = "i", descriptor = "Li;")
-    public static JString field4277 = class208.method1425(":duelfriend:");
+	@OriginalMember(owner = "client!uj", name = "i", descriptor = "Li;")
+	public static JString field4277 = class208.method1425(":duelfriend:");
 
-    @OriginalMember(owner = "client!uj", name = "l", descriptor = "Li;")
-    public static JString field4280 = class208.method1425("sl_back");
+	@OriginalMember(owner = "client!uj", name = "l", descriptor = "Li;")
+	public static JString field4280 = class208.method1425("sl_back");
 
-    @OriginalMember(owner = "client!uj", name = "b", descriptor = "I")
-    public static int field4270;
+	@OriginalMember(owner = "client!uj", name = "b", descriptor = "I")
+	public static int field4270;
 
-    @OriginalMember(owner = "client!uj", name = "e", descriptor = "I")
-    public int height;
+	@OriginalMember(owner = "client!uj", name = "e", descriptor = "I")
+	public int height;
 
-    @OriginalMember(owner = "client!uj", name = "g", descriptor = "I")
-    public static int field4275;
+	@OriginalMember(owner = "client!uj", name = "g", descriptor = "I")
+	public static int field4275;
 
-    @OriginalMember(owner = "client!uj", name = "h", descriptor = "I")
-    public int width;
+	@OriginalMember(owner = "client!uj", name = "h", descriptor = "I")
+	public int width;
 
-    @OriginalMember(owner = "client!uj", name = "k", descriptor = "I")
-    public static int field4279;
+	@OriginalMember(owner = "client!uj", name = "k", descriptor = "I")
+	public static int field4279;
 
-    @OriginalMember(owner = "client!uj", name = "m", descriptor = "I")
-    public static int field4281;
+	@OriginalMember(owner = "client!uj", name = "m", descriptor = "I")
+	public static int field4281;
 
-    @OriginalMember(owner = "client!uj", name = "p", descriptor = "I")
-    public static int field4284;
+	@OriginalMember(owner = "client!uj", name = "p", descriptor = "I")
+	public static int field4284;
 
-    @OriginalMember(owner = "client!uj", name = "f", descriptor = "Ljava/awt/Image;")
-    public Image image;
+	@OriginalMember(owner = "client!uj", name = "f", descriptor = "Ljava/awt/Image;")
+	public Image image;
 
-    @OriginalMember(owner = "client!uj", name = "c", descriptor = "[I")
-    public int[] data;
+	@OriginalMember(owner = "client!uj", name = "c", descriptor = "[I")
+	public int[] data;
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(I)V")
-    public final void bind() {
-        class72.bind(this.data, this.width, this.height);
-        field4281++;
-    }
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(I)V")
+	public final void bind() {
+		class72.bind(this.data, this.width, this.height);
+		field4281++;
+	}
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIZLjava/awt/Component;)V")
-    public abstract void method243(int arg0, int arg1, boolean arg2, Component arg3);
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIZLjava/awt/Component;)V")
+	public abstract void method243(int arg0, int arg1, boolean arg2, Component arg3);
 
-    @OriginalMember(owner = "client!uj", name = "b", descriptor = "(I)V")
-    public static void method1524(int arg0) {
-        field4277 = null;
-        field4283 = null;
-        field4269 = null;
-        field4280 = null;
-        field4282 = null;
-        if (arg0 != -1978971583) {
-            packetSize = -127;
-        }
-    }
+	@OriginalMember(owner = "client!uj", name = "b", descriptor = "(I)V")
+	public static void method1524(int arg0) {
+		field4277 = null;
+		field4283 = null;
+		field4269 = null;
+		field4280 = null;
+		field4282 = null;
+		if (arg0 != -1978971583) {
+			psize = -127;
+		}
+	}
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(BIIIILjava/awt/Graphics;)V")
-    public abstract void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5);
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(BIIIILjava/awt/Graphics;)V")
+	public abstract void method242(byte arg0, int arg1, int arg2, int arg3, int arg4, Graphics arg5);
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(III)I")
-    public static final int transferProgress(int archiveId, int groupId) {
-        long key = (long) ((archiveId << 16) + groupId);
-        if (class53.incomingRequest != null && class53.incomingRequest.nodeId == key) {
-            return class149.incomingBuffer.pos * 99 / (class149.incomingBuffer.data.length - class53.incomingRequest.padding) + 1;
-        } else {
-            return 0;
-        }
-    }
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(III)I")
+	public static final int transferProgress(int archiveId, int groupId) {
+		long key = (long) ((archiveId << 16) + groupId);
+		if (class53.incomingRequest != null && class53.incomingRequest.nodeId == key) {
+			return class149.incomingBuffer.pos * 99 / (class149.incomingBuffer.data.length - class53.incomingRequest.padding) + 1;
+		} else {
+			return 0;
+		}
+	}
 
-    @OriginalMember(owner = "client!uj", name = "<init>", descriptor = "()V")
-    protected class228() {
-    }
+	@OriginalMember(owner = "client!uj", name = "<init>", descriptor = "()V")
+	protected class228() {
+	}
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IBI)I")
-    public static final int method1526(int arg0, byte arg1, int arg2) {
-        field4275++;
-        if (arg1 != -77) {
-            transferProgress(-54, 103);
-        }
-        int var3 = 0;
-        while (arg2 > 0) {
-            var3 = arg0 & 0x1 | var3 << 1;
-            arg0 >>>= 0x1;
-            arg2--;
-        }
-        return var3;
-    }
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(IBI)I")
+	public static final int method1526(int arg0, byte arg1, int arg2) {
+		field4275++;
+		if (arg1 != -77) {
+			transferProgress(-54, 103);
+		}
+		int var3 = 0;
+		while (arg2 > 0) {
+			var3 = arg0 & 0x1 | var3 << 1;
+			arg0 >>>= 0x1;
+			arg2--;
+		}
+		return var3;
+	}
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIILjava/awt/Graphics;)V")
-    public abstract void draw(int x, int y, Graphics g);
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIILjava/awt/Graphics;)V")
+	public abstract void draw(int x, int y, Graphics g);
 
-    @OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIBI)I")
-    public static final int method1527(int arg0, int arg1, byte arg2, int arg3) {
-        if (arg2 != -38) {
-            method1524(-127);
-        }
-        field4284++;
-        int var4 = 256 - arg1;
-        return ((arg3 & 0xFF00FF) * var4 + (arg0 & 0xFF00FF) * arg1 & 0xFF00FF00) + ((arg0 & 0xFF00) * arg1 + (arg3 & 0xFF00) * var4 & 0xFF0000) >> 8;
-    }
+	@OriginalMember(owner = "client!uj", name = "a", descriptor = "(IIBI)I")
+	public static final int method1527(int arg0, int arg1, byte arg2, int arg3) {
+		if (arg2 != -38) {
+			method1524(-127);
+		}
+		field4284++;
+		int var4 = 256 - arg1;
+		return ((arg3 & 0xFF00FF) * var4 + (arg0 & 0xFF00FF) * arg1 & 0xFF00FF00) + ((arg0 & 0xFF00) * arg1 + (arg3 & 0xFF00) * var4 & 0xFF0000) >> 8;
+	}
 }

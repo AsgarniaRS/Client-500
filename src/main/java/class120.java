@@ -222,7 +222,6 @@ public class class120 extends class23 {
 
 	@OriginalMember(owner = "client!l", name = "a", descriptor = "(IIIIBI)V")
 	public static final void method822(int arg0, int arg1, int arg2, int arg3, byte arg4, int arg5) {
-		++field2192;
 		if (~class140.field2597 != ~arg2 || class110.field2016 != arg3 || ~class157.field3028 != ~arg0 && class245.lowMemory) {
 			class157.field3028 = arg0;
 			if (!class245.lowMemory) {
@@ -233,7 +232,7 @@ public class class120 extends class23 {
 			if (arg4 < 114) {
 				CHATCOMMAND = null;
 			}
-			class131.method883(25, 65536);
+			class131.setMainState(25, 65536);
 			Client.method221(class242.field4480, true, -22717);
 			int var6 = class223.field4214;
 			int var7 = class190.field3681;
@@ -265,10 +264,10 @@ public class class120 extends class23 {
 					var26.field4123 -= var8 * 128;
 				}
 			}
-			class149.field2909 = arg0;
+			class149.minusedLevel = arg0;
 			byte var14 = 0;
 			byte var15 = 104;
-			class240.field4458.method1476(false, arg5, 0, arg1);
+			class240.field4458.teleport(false, arg5, 0, arg1);
 			byte var16 = 0;
 			byte var17 = 1;
 			if (~var9 > -1) {

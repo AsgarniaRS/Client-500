@@ -45,9 +45,9 @@ public class class246 extends class219 {
 			return 0;
 		} else {
 			int var5 = 0;
-			for (int var6 = 0; var6 < var3.field3553.length; var6++) {
-				if (var3.field3555[var6] == arg2) {
-					var5 += var3.field3553[var6];
+			for (int var6 = 0; var6 < var3.objCount.length; var6++) {
+				if (var3.objId[var6] == arg2) {
+					var5 += var3.objCount[var6];
 				}
 			}
 			return var5;

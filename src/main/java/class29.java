@@ -84,9 +84,9 @@ public abstract class class29 {
 	@OriginalMember(owner = "client!cf", name = "a", descriptor = "(III)V")
 	public static final void method175(int arg0, int arg1, int arg2) {
 		field484++;
-		class248 var3 = class134.field2499[class149.field2909][arg1][arg2];
+		class248 var3 = class134.field2499[class149.minusedLevel][arg1][arg2];
 		if (var3 == null) {
-			class27.method168(class149.field2909, arg1, arg2);
+			class27.method168(class149.minusedLevel, arg1, arg2);
 			return;
 		}
 		int var4 = -99999999;
@@ -106,7 +106,7 @@ public abstract class class29 {
 			}
 		}
 		if (var5 == null) {
-			class27.method168(class149.field2909, arg1, arg2);
+			class27.method168(class149.minusedLevel, arg1, arg2);
 			return;
 		}
 		class111 var7 = null;
@@ -124,7 +124,7 @@ public abstract class class29 {
 			}
 		}
 		long var10 = (long) ((arg2 << 7) + arg1 + 1610612736);
-		class94.method676(class149.field2909, arg1, arg2, class239.method1586(arg1 * 128 + 64, arg2 * 128 - -64, 2, class149.field2909), var5.field4260, var10, var7, var8);
+		class94.method676(class149.minusedLevel, arg1, arg2, Client.getAvH(arg1 * 128 + 64, arg2 * 128 - -64, 2, class149.minusedLevel), var5.field4260, var10, var7, var8);
 	}
 
 	@OriginalMember(owner = "client!cf", name = "a", descriptor = "(B)I")

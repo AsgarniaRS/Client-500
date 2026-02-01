@@ -262,9 +262,9 @@ public class class203 extends class50 {
 			arg1.field4073 = class230.in.gjstr();
 			if (~arg1.field4073.method599(255, 0) == -127) {
 				arg1.field4073 = arg1.field4073.substring(1);
-				class223.method1501(arg1.field4073, 12, 2, arg1.name);
+				class223.addChat(2, arg1.field4073, arg1.name);
 			} else if (class240.field4458 == arg1) {
-				class223.method1501(arg1.field4073, 12, 2, arg1.name);
+				class223.addChat(2, arg1.field4073, arg1.name);
 			}
 			arg1.field4140 = 0;
 			arg1.field4085 = 0;
@@ -348,7 +348,7 @@ public class class203 extends class50 {
 						var21 = true;
 					}
 				}
-				if (!var21 && ~Client.field563 == -1) {
+				if (!var21 && ~Client.overrideChat == -1) {
 					class54.field1006.pos = 0;
 					int var23 = -1;
 					class230.in.method315(class54.field1006.data, 0, var17, 109);

@@ -173,9 +173,9 @@ public class class114 extends Linkable2 {
 		if (arg7 < 1 || arg2 < 1 || arg7 > 102 || arg2 > 102) {
 			return;
 		}
-		if (class245.lowMemory && (class116.field2100[0][arg7][arg2] & 0x2) == 0) {
+		if (class245.lowMemory && (class116.mapl[0][arg7][arg2] & 0x2) == 0) {
 			int var8 = arg0;
-			if ((class116.field2100[arg0][arg7][arg2] & 0x8) != 0) {
+			if ((class116.mapl[arg0][arg7][arg2] & 0x8) != 0) {
 				var8 = 0;
 			}
 			if (class157.field3028 != var8) {
@@ -183,7 +183,7 @@ public class class114 extends Linkable2 {
 			}
 		}
 		int var9 = arg0;
-		if (arg0 < 3 && (class116.field2100[1][arg7][arg2] & 0x2) == 2) {
+		if (arg0 < 3 && (class116.mapl[1][arg7][arg2] & 0x2) == 2) {
 			var9 = arg0 + 1;
 		}
 		LocType.method991(class166.field3202[arg0], 0, arg7, var9, arg1, arg0, arg2);

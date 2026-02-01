@@ -26,7 +26,7 @@ public class class192 extends Linkable {
 	public static JString field3693 = field3701;
 
 	@OriginalMember(owner = "client!rg", name = "F", descriptor = "I")
-	public static int field3702 = 0;
+	public static int timeoutTimer = 0;
 
 	@OriginalMember(owner = "client!rg", name = "H", descriptor = "I")
 	public static int field3704 = 0;

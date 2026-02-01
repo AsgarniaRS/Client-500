@@ -92,7 +92,7 @@ public class class184 extends class23 {
 				if (var19 != null) {
 					int var20 = (Isaac.field2733[var4] >> 8) * 64 - class223.field4214;
 					int var21 = (Isaac.field2733[var4] & 255) * 64 + -class190.field3681;
-					if (ClientStream.field2557) {
+					if (ClientStream.regionmode) {
 						var20 = 10;
 						var21 = 10;
 					}
@@ -114,7 +114,7 @@ public class class184 extends class23 {
 				for (int var6 = 0; ~var6 > -5; ++var6) {
 					for (int var17 = 0; ~var17 > -105; ++var17) {
 						for (int var18 = 0; var18 < 104; ++var18) {
-							class116.field2100[var6][var17][var18] = 0;
+							class116.mapl[var6][var17][var18] = 0;
 						}
 					}
 				}
@@ -124,12 +124,12 @@ public class class184 extends class23 {
 				class219.method1481(2);
 				class134.method895(true, (byte) 49);
 				class208.method1427(1, arg0);
-				if (!ClientStream.field2557) {
+				if (!ClientStream.regionmode) {
 					class143.method936(false, 54);
 					class134.method895(true, (byte) 49);
 					class190.method1329(true, false);
 				}
-				if (ClientStream.field2557) {
+				if (ClientStream.regionmode) {
 					class36.method239(0, false);
 					class134.method895(true, (byte) 49);
 					class85.method576(false, 22711);
@@ -141,11 +141,11 @@ public class class184 extends class23 {
 				class134.method895(true, (byte) 49);
 				class219.method1481(2);
 				int var7 = class28.field468;
-				if (~class149.field2909 > ~var7) {
-					var7 = class149.field2909;
+				if (~class149.minusedLevel > ~var7) {
+					var7 = class149.minusedLevel;
 				}
-				if (~var7 > ~(class149.field2909 + -1)) {
-					int var8 = class149.field2909 + -1;
+				if (~var7 > ~(class149.minusedLevel + -1)) {
+					int var8 = class149.minusedLevel + -1;
 				}
 				if (class245.lowMemory) {
 					scene.setMinlevel(class28.field468);
@@ -166,7 +166,7 @@ public class class184 extends class23 {
 					Isaac.out.p4(1057001181);
 					++ClientScript.field4525;
 				}
-				if (!ClientStream.field2557) {
+				if (!ClientStream.regionmode) {
 					int var10 = (class140.field2597 + -6) / 8;
 					int var11 = (class110.field2016 + -6) / 8;
 					int var12 = (class140.field2597 + 6) / 8;
@@ -180,7 +180,7 @@ public class class184 extends class23 {
 						}
 					}
 				}
-				class131.method883(30, 65536);
+				class131.setMainState(30, 65536);
 				class219.method1481(2);
 				Isaac.out.method30(213);
 				class108.method740(false);
@@ -245,7 +245,7 @@ public class class184 extends class23 {
 	@OriginalMember(owner = "client!qj", name = "a", descriptor = "(Lnb;Ljava/awt/Component;ZLnb;)V")
 	public static final void method1300(Js5 arg0, Component arg1, boolean arg2, Js5 arg3) {
 		++field3611;
-		if (!class90.field1708) {
+		if (!class90.open) {
 			class72.method481();
 			byte[] var4 = arg0.getFile(0, class110.field2011);
 			JString.field1640 = new class169(var4, arg1);
@@ -315,7 +315,7 @@ public class class184 extends class23 {
 				class117.method797(25335, 2);
 			}
 			class147.sendLoginLogoutPacket((byte) -112, false);
-			class90.field1708 = arg2;
+			class90.open = arg2;
 			class221.method1495(35);
 			class34.field589 = new class169(128, 254);
 			CollisionMap.field1676 = new class169(128, 254);

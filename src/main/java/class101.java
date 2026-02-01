@@ -17,7 +17,7 @@ public class class101 extends Linkable2 {
 	private static JString CHATCOL_RED;
 
 	@OriginalMember(owner = "client!jc", name = "Q", descriptor = "I")
-	public static int field1843;
+	public static int ptype0;
 
 	@OriginalMember(owner = "client!jc", name = "M", descriptor = "Li;")
 	public static JString field1839;
@@ -171,7 +171,7 @@ public class class101 extends Linkable2 {
 			var0 += var0;
 		}
 		CHATCOL_RED = class208.method1425("red:");
-		field1843 = 0;
+		ptype0 = 0;
 		field1839 = CHATCOL_RED;
 		field1845 = class208.method1425("Please wait )2 attempting to reestablish)3");
 		field1840 = field1845;

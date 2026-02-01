@@ -95,12 +95,12 @@ public class Linkable2 extends Linkable {
 		if (class64.field1173 > 383) {
 			class64.field1173 = 383;
 		}
-		int var4 = class239.method1586(class37.field666, class233.field4368, 2, class149.field2909);
+		int var4 = Client.getAvH(class37.field666, class233.field4368, 2, class149.minusedLevel);
 		if (var1 > 3 && var2 > 3 && var1 < 100 && var2 < 100) {
 			for (int var5 = var1 - 4; var5 <= var1 + 4; var5++) {
 				for (int var6 = var2 - 4; var6 <= var2 + 4; var6++) {
-					int var7 = class149.field2909;
-					if (var7 < 3 && (class116.field2100[1][var5][var6] & 0x2) == 2) {
+					int var7 = class149.minusedLevel;
+					if (var7 < 3 && (class116.mapl[1][var5][var6] & 0x2) == 2) {
 						var7++;
 					}
 					int var8 = var4 - class62.field1137[var7][var5][var6];

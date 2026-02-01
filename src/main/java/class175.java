@@ -227,14 +227,14 @@ public class class175 {
 			Isaac.out.p2_alt2(var2);
 			Isaac.out.p4_alt3(var3);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 36) {
 			Isaac.out.method30(109);
 			Isaac.out.p4(var3);
 			class246.field4511++;
-			IfType var14 = class239.method1581(-64, var3);
+			IfType var14 = IfType.get(-64, var3);
 			if (var14.field3394 != null && var14.field3394[0][0] == 5) {
 				int var15 = var14.field3394[0][1];
 				class113.var[var15] = 1 - class113.var[var15];
@@ -242,16 +242,16 @@ public class class175 {
 			}
 		}
 		if (var4 == 1001) {
-			IfType var16 = class239.method1581(-64, var3);
+			IfType var16 = IfType.get(-64, var3);
 			if (var16 == null || var16.field3476[var2] < 100000) {
 				Isaac.out.method30(191);
 				Isaac.out.p2(var7);
 				class157.field3032++;
 			} else {
-				class223.method1501(class166.method1142(new JString[]{class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894}, -3), 12, 0, IfType.field3455);
+				class223.addChat(0, class166.method1142(new JString[]{class170.method1214(var16.field3476[var2], 51), SeqType.field1975, class71.method472(var7, (byte) -118).field2894}, -3), IfType.field3455);
 			}
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 1) {
@@ -274,7 +274,7 @@ public class class175 {
 			Isaac.out.p4_alt1(var3);
 			Isaac.out.p2_alt2(var7);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (arg0 != 2) {
@@ -287,7 +287,7 @@ public class class175 {
 			class16.field245++;
 			Isaac.out.p2_alt3(var7);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(arg0 ^ 0xFFFFFFC2, var3);
+			class57.field1091 = IfType.get(arg0 ^ 0xFFFFFFC2, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 35) {
@@ -342,7 +342,7 @@ public class class175 {
 			Isaac.out.p4_alt2(var3);
 			Isaac.out.p2_alt3(var7);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 14) {
@@ -378,7 +378,7 @@ public class class175 {
 		}
 		if (var4 == 12) {
 			EnumType.method363(-125);
-			IfType var23 = class239.method1581(-64, var3);
+			IfType var23 = IfType.get(-64, var3);
 			class28.field475 = 1;
 			class58.field1105 = var2;
 			class209.field3967 = var3;
@@ -412,11 +412,11 @@ public class class175 {
 			Isaac.out.p2_alt3(var2);
 			Isaac.out.p2(var7);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 10) {
-			class50.method374(class149.field2909, var2, var3);
+			class50.method374(class149.minusedLevel, var2, var3);
 		}
 		if (var4 == 1004) {
 			class101.method707(0, var3, var5, var2);
@@ -451,7 +451,7 @@ public class class175 {
 			Isaac.out.p2_alt2(var2);
 			Isaac.out.p4_alt3(var3);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 13) {
@@ -461,7 +461,7 @@ public class class175 {
 			Isaac.out.p2(var7);
 			Isaac.out.p4(var3);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 41) {
@@ -504,7 +504,7 @@ public class class175 {
 			Isaac.out.p4(var3);
 			Isaac.out.p2_alt3(var2);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(arg0 - 66, var3);
+			class57.field1091 = IfType.get(arg0 - 66, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 26 && class101.method707(0, var3, var5, var2)) {
@@ -591,14 +591,14 @@ public class class175 {
 			Isaac.out.p2_alt3(var7);
 			Isaac.out.p2_alt3(var2);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(arg0 - 66, var3);
+			class57.field1091 = IfType.get(arg0 - 66, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 20) {
 			Isaac.out.method30(109);
 			Isaac.out.p4(var3);
 			class246.field4511++;
-			IfType var37 = class239.method1581(-64, var3);
+			IfType var37 = IfType.get(-64, var3);
 			if (var37.field3394 != null && var37.field3394[0][0] == 5) {
 				int var38 = var37.field3394[0][1];
 				if (class113.var[var38] != var37.field3488[0]) {
@@ -614,7 +614,7 @@ public class class175 {
 			Isaac.out.p2_alt2(var7);
 			Isaac.out.p4(var3);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 47 && class53.field967 == null) {
@@ -644,7 +644,7 @@ public class class175 {
 			Isaac.out.p2_alt3(class223.field4214 + var2);
 		}
 		if (var4 == 11) {
-			IfType var40 = class239.method1581(-64, var3);
+			IfType var40 = IfType.get(-64, var3);
 			boolean var41 = true;
 			if (var40.field3441 > 0) {
 				var41 = class53.method389(arg0 + 122, var40);
@@ -662,7 +662,7 @@ public class class175 {
 			Isaac.out.p4_alt1(var3);
 			Isaac.out.p2_alt2(var7);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 5) {
@@ -690,7 +690,7 @@ public class class175 {
 			Isaac.out.p2_alt2(var2);
 			Isaac.out.p4(class209.field3967);
 			class139.field2575 = 0;
-			class57.field1091 = class239.method1581(-64, var3);
+			class57.field1091 = IfType.get(-64, var3);
 			class93.field1743 = var2;
 		}
 		if (var4 == 37) {
@@ -776,7 +776,7 @@ public class class175 {
 		}
 		if (class28.field475 != 0) {
 			class28.field475 = 0;
-			class200.method1373(65280, class239.method1581(-64, class209.field3967));
+			class200.method1373(65280, IfType.get(-64, class209.field3967));
 		}
 		if (class10.field145) {
 			EnumType.method363(arg0 ^ 0xFFFFFF9D);

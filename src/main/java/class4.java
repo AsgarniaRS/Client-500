@@ -151,9 +151,9 @@ public class class4 extends Linkable2 {
 		if (var2 == null) {
 			return;
 		}
-		for (int var3 = 0; var3 < var2.field3555.length; var3++) {
-			var2.field3555[var3] = -1;
-			var2.field3553[var3] = 0;
+		for (int var3 = 0; var3 < var2.objId.length; var3++) {
+			var2.objId[var3] = -1;
+			var2.objCount[var3] = 0;
 		}
 		if (arg0 != -2) {
 			pUid(null, (byte) -120);

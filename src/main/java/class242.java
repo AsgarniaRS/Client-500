@@ -116,10 +116,10 @@ public class class242 extends Linkable2 {
 		for (int var6 = 1; var6 < 103; var6++) {
 			int var22 = (103 - var6) * 2048 + 24628;
 			for (int var23 = 1; var23 < 103; var23++) {
-				if ((class116.field2100[arg1][var23][var6] & 0x18) == 0) {
+				if ((class116.mapl[arg1][var23][var6] & 0x18) == 0) {
 					class119.method817(var3, var22, 512, arg1, var23, var6);
 				}
-				if (arg1 < 3 && (class116.field2100[arg1 + 1][var23][var6] & 0x8) != 0) {
+				if (arg1 < 3 && (class116.mapl[arg1 + 1][var23][var6] & 0x8) != 0) {
 					class119.method817(var3, var22, 512, arg1 + 1, var23, var6);
 				}
 				var22 += 4;
@@ -130,10 +130,10 @@ public class class242 extends Linkable2 {
 		int var8 = ((int) (Math.random() * 20.0D) + 228 << 16) + (((int) (Math.random() * 20.0D) + 228 << 8) - (-((int) (Math.random() * 20.0D)) - 238)) - 10;
 		for (int var9 = 1; var9 < 103; var9++) {
 			for (int var21 = 1; var21 < 103; var21++) {
-				if ((class116.field2100[arg1][var21][var9] & 0x18) == 0) {
+				if ((class116.mapl[arg1][var21][var9] & 0x18) == 0) {
 					class128.method873(var9, var7, true, arg1, var8, var21);
 				}
-				if (arg1 < 3 && (class116.field2100[arg1 + 1][var21][var9] & 0x8) != 0) {
+				if (arg1 < 3 && (class116.mapl[arg1 + 1][var21][var9] & 0x8) != 0) {
 					class128.method873(var9, var7, true, arg1 + 1, var8, var21);
 				}
 			}
@@ -141,7 +141,7 @@ public class class242 extends Linkable2 {
 		class50.field930 = 0;
 		for (int var10 = 0; var10 < 104; var10++) {
 			for (int var11 = 0; var11 < 104; var11++) {
-				long var12 = class74.method501(class149.field2909, var10, var11);
+				long var12 = class74.method501(class149.minusedLevel, var10, var11);
 				if (var12 != 0L) {
 					LocType var14 = class190.method1323(Integer.MAX_VALUE & (int) (var12 >>> 32), arg0 + 18972);
 					int var15 = var14.mapfunction;
@@ -149,7 +149,7 @@ public class class242 extends Linkable2 {
 						int var16 = var10;
 						int var17 = var11;
 						if (var15 != 22 && var15 != 29 && var15 != 34 && var15 != 36 && var15 != 46 && var15 != 47 && var15 != 48) {
-							int[][] var18 = class166.field3202[class149.field2909].field1668;
+							int[][] var18 = class166.field3202[class149.minusedLevel].field1668;
 							for (int var19 = 0; var19 < 10; var19++) {
 								int var20 = (int) (Math.random() * 4.0D);
 								if (var20 == 0 && var16 > 0 && var10 - 3 < var16 && (var18[var16 - 1][var17] & 0x12C0108) == 0) {

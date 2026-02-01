@@ -8,7 +8,7 @@ public class class229 extends Linkable2 {
 	public int field4290 = 0;
 
 	@OriginalMember(owner = "client!v", name = "E", descriptor = "I")
-	public static int gameState = 0;
+	public static int state = 0;
 
 	@OriginalMember(owner = "client!v", name = "F", descriptor = "[I")
 	public static int[] field4287 = new int[]{76, 8, 137, 4, 0, 1, 38, 2, 19};

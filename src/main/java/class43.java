@@ -114,32 +114,22 @@ public class class43 extends class23 {
 	}
 
 	@OriginalMember(owner = "client!di", name = "a", descriptor = "(ZB)V")
-	public static final void method278(boolean arg0, byte arg1) {
-		ClientStream.field2557 = arg0;
-		if (!ClientStream.field2557) {
-			int var3 = (-class230.in.pos + class228.packetSize) / 16;
+	public static final void rebuildpacket(boolean region, byte arg1) {
+		ClientStream.regionmode = region;
+		if (!ClientStream.regionmode) {
+			int var3 = (-class230.in.pos + class228.psize) / 16;
 			class17.mapKeys = new int[var3][4];
 			for (int var4 = 0; ~var3 < ~var4; ++var4) {
 				for (int var15 = 0; var15 < 4; ++var15) {
 					class17.mapKeys[var4][var15] = class230.in.g4_alt1();
-					System.out.println(class17.mapKeys[var4][var15]);
 				}
 			}
 			int var5 = class230.in.g2_alt2();
-			System.out.println("var5 " + var5);
-
 			boolean var6 = false;
 			int var7 = class230.in.g2_alt3(255);
-			System.out.println("var7 " + var7);
-
 			int var8 = class230.in.g2();
-			System.out.println("var8 " + var8);
-
 			int var9 = class230.in.g1_alt3(24758);
-			System.out.println("var9 " + var9);
-
 			int var10 = class230.in.g2();
-			System.out.println("var10 " + var10);
 
 			class128.field2404 = new int[var3];
 			Isaac.field2733 = new int[var3];
@@ -187,7 +177,7 @@ public class class43 extends class23 {
 				}
 			}
 			class230.in.method35(8);
-			int var20 = (-class230.in.pos + class228.packetSize) / 16;
+			int var20 = (-class230.in.pos + class228.psize) / 16;
 			class17.mapKeys = new int[var20][4];
 			for (int var21 = 0; ~var20 < ~var21; ++var21) {
 				for (int var35 = 0; var35 < 4; ++var35) {
@@ -238,7 +228,7 @@ public class class43 extends class23 {
 		class53 var1 = class166.field3190;
 		synchronized (class166.field3190) {
 			if (arg0 != 31) {
-				method278(true, (byte) -120);
+				rebuildpacket(true, (byte) -120);
 			}
 			if (~class48.field898 == ~class203.field3860) {
 				return false;

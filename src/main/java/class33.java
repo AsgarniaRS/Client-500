@@ -80,7 +80,7 @@ public class class33 extends Linkable2 {
 	private int field547;
 
 	@OriginalMember(owner = "client!cj", name = "hb", descriptor = "Lmf;")
-	public static ClientStream stream;
+	public static ClientStream loginStream;
 
 	@OriginalMember(owner = "client!cj", name = "G", descriptor = "[S")
 	private short[] field529;
@@ -211,8 +211,8 @@ public class class33 extends Linkable2 {
 				class244.field4493[var3] = null;
 			}
 		}
-		if (class228.packetSize != class230.in.pos) {
-			throw new RuntimeException("gpp1 pos:" + class230.in.pos + " psize:" + class228.packetSize);
+		if (class228.psize != class230.in.pos) {
+			throw new RuntimeException("gpp1 pos:" + class230.in.pos + " psize:" + class228.psize);
 		}
 		for (int var2 = 0; var2 < class55.field1027; var2++) {
 			if (class244.field4493[IfType.field3430[var2]] == null) {
@@ -244,7 +244,7 @@ public class class33 extends Linkable2 {
 		if (arg0 < 78) {
 			return;
 		}
-		stream = null;
+		loginStream = null;
 		field554 = null;
 		CLOSE = null;
 		field551 = null;

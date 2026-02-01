@@ -5,10 +5,10 @@ import org.openrs2.deob.annotation.OriginalMember;
 public class class177 extends Linkable {
 
 	@OriginalMember(owner = "client!qc", name = "w", descriptor = "[I")
-	public int[] field3553 = new int[1];
+	public int[] objCount = new int[1];
 
 	@OriginalMember(owner = "client!qc", name = "y", descriptor = "[I")
-	public int[] field3555 = new int[]{-1};
+	public int[] objId = new int[]{-1};
 
 	@OriginalMember(owner = "client!qc", name = "v", descriptor = "Li;")
 	private static JString field3552 = class208.method1425("Allocated memory");
@@ -36,7 +36,7 @@ public class class177 extends Linkable {
 	}
 
 	@OriginalMember(owner = "client!qc", name = "a", descriptor = "(IIIII)V")
-	public static final void method1270(int arg0, int arg1, int arg2, int arg3, int arg4) {
+	public static final void set(int arg0, int arg1, int arg2, int arg3, int arg4) {
 		class177 var5 = (class177) class64.field1163.find((long) arg1);
 		field3554++;
 		if (arg0 != 1) {
@@ -46,21 +46,21 @@ public class class177 extends Linkable {
 			var5 = new class177();
 			class64.field1163.put((long) arg1, var5, arg0 - 2);
 		}
-		if (var5.field3555.length <= arg3) {
+		if (var5.objId.length <= arg3) {
 			int[] var6 = new int[arg3 + 1];
 			int[] var7 = new int[arg3 + 1];
-			for (int var8 = 0; var8 < var5.field3555.length; var8++) {
-				var7[var8] = var5.field3555[var8];
-				var6[var8] = var5.field3553[var8];
+			for (int i = 0; i < var5.objId.length; i++) {
+				var7[i] = var5.objId[i];
+				var6[i] = var5.objCount[i];
 			}
-			for (int var9 = var5.field3555.length; var9 < arg3; var9++) {
-				var7[var9] = -1;
-				var6[var9] = 0;
+			for (int i = var5.objId.length; i < arg3; i++) {
+				var7[i] = -1;
+				var6[i] = 0;
 			}
-			var5.field3553 = var6;
-			var5.field3555 = var7;
+			var5.objCount = var6;
+			var5.objId = var7;
 		}
-		var5.field3555[arg3] = arg4;
-		var5.field3553[arg3] = arg2;
+		var5.objId[arg3] = arg4;
+		var5.objCount[arg3] = arg2;
 	}
 }

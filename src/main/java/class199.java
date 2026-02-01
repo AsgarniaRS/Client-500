@@ -264,7 +264,7 @@ public class class199 extends Linkable2 {
 	public static final void method1372(int arg0) {
 		for (class242 var1 = (class242) class42.field714.method1612(false); var1 != null; var1 = (class242) class42.field714.method1621(arg0 + 83)) {
 			class18 var2 = var1.field4476;
-			if (class149.field2909 != var2.field292 || var2.field302) {
+			if (class149.minusedLevel != var2.field292 || var2.field302) {
 				var1.unlink();
 			} else if (var2.field287 <= class117.field2115) {
 				var2.method90(class17.field261, false);
